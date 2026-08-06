@@ -1,6 +1,9 @@
-# Gold Water Fire — static site, no build step
+# Gold Water Fire — static site. No framework; the build step is a plain Node
+# script (scripts/build.mjs) that renders content/pages/*.json through the
+# shared template in templates/. See SOP-AGENTIC-SEO-WEBSITES.md.
 
 [build]
+  command = "npm run build"
   publish = "."
 
 [[headers]]
@@ -28,6 +31,38 @@
 
 [[redirects]]
   from = "/CLAIMS-TO-VERIFY.md"
+  to = "/"
+  status = 404
+  force = true
+
+# Source directories for the template pipeline — not secrets (the repo is
+# public anyway), just no reason to serve them on the live domain.
+[[redirects]]
+  from = "/content/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/templates/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/worker/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package.json"
   to = "/"
   status = 404
   force = true
