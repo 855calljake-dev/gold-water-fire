@@ -1,0 +1,168 @@
+import { BRAND, esc, absUrl } from "./lib.mjs";
+
+const NAV = [
+  { href: "/water-damage-restoration.html", label: "Water Damage" },
+  { href: "/fire-damage-restoration.html", label: "Fire Damage" },
+  { href: "/reconstruction.html", label: "Reconstruction" },
+  { href: "/about.html", label: "About" },
+  { href: "/contact.html", label: "Contact" },
+];
+
+function localBusinessSchema() {
+  return {
+    "@type": "HomeAndConstructionBusiness",
+    name: BRAND.name,
+    telephone: "+1-480-999-3339",
+    email: BRAND.email,
+    url: BRAND.siteUrl + "/",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: BRAND.addressLine1,
+      addressLocality: BRAND.city,
+      addressRegion: BRAND.region,
+      postalCode: BRAND.postalCode,
+      addressCountry: "US",
+    },
+    areaServed: { "@type": "AdministrativeArea", name: "Phoenix Metropolitan Area, Arizona" },
+  };
+}
+
+function serviceSchema(serviceType) {
+  return {
+    "@type": "Service",
+    serviceType,
+    provider: { "@type": "HomeAndConstructionBusiness", name: BRAND.name, telephone: "+1-480-999-3339" },
+    areaServed: { "@type": "AdministrativeArea", name: "Phoenix Metropolitan Area, Arizona" },
+  };
+}
+
+function faqSchema(faqs) {
+  return {
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
+// Stacked schema per SOP-AGENTIC-SEO-WEBSITES.md §3 — LocalBusiness + Service + FAQ
+// together outperforms a single schema type for AI citation.
+function schemaBlock({ serviceType, faqs }) {
+  const graph = [localBusinessSchema()];
+  if (serviceType) graph.push(serviceSchema(serviceType));
+  if (faqs && faqs.length) graph.push(faqSchema(faqs));
+  const payload = graph.length === 1 ? { "@context": "https://schema.org", ...graph[0] }
+    : { "@context": "https://schema.org", "@graph": graph };
+  return `<script type="application/ld+json">\n${JSON.stringify(payload, null, 2)}\n</script>`;
+}
+
+function header(activePath) {
+  return `
+  <div class="top-bar">
+    <div class="wrap">
+      <span>Fire &amp; water damage restoration — Phoenix Metro Area</span>
+      <a class="phone" href="${BRAND.phoneHref}">${BRAND.phone}</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand-block" href="/" aria-label="${esc(BRAND.name)} home">
+        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.png" alt="" width="188" height="240" loading="eager"></span>
+        <span class="brand-text">
+          <span class="brand"><span class="gold-word">Gold</span> Water <span class="fire-word">Fire</span></span>
+          <span class="tagline">Restoration Services</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        ${NAV.map((n) => `<a href="${n.href}"${n.href === activePath ? ' class="active"' : ""}>${esc(n.label)}</a>`).join("\n        ")}
+      </nav>
+      <a class="btn-call" href="${BRAND.phoneHref}">Call ${BRAND.phone}</a>
+    </div>
+  </header>`;
+}
+
+function footer() {
+  return `
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>${esc(BRAND.name)}</h4>
+          <p>Fire and water damage restoration and reconstruction serving the Phoenix, AZ metro area. ${esc(BRAND.license)}.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/water-damage-restoration.html">Water Damage Restoration</a></li>
+            <li><a href="/fire-damage-restoration.html">Fire Damage Restoration</a></li>
+            <li><a href="/reconstruction.html">Reconstruction &amp; Rebuild</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="${BRAND.phoneHref}">${BRAND.phone}</a></li>
+            <li><a href="mailto:${BRAND.email}">${BRAND.email}</a></li>
+            <li>${esc(BRAND.addressLine1)}<br>${esc(BRAND.addressLine2)}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> ${esc(BRAND.name)}. ${esc(BRAND.license)}.</span>
+        <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai — automated operations for real businesses</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>`;
+}
+
+// shell(): the ONE place header/nav/footer/NAP/schema-boilerplate live.
+// Every page — hand-composed or generated — renders through this.
+export function shell({
+  path,
+  title,
+  description,
+  h1AsTitle,
+  ogImage = "/assets/img/og-image.jpg",
+  robotsNoindex = false,
+  serviceType,
+  faqs,
+  bodyHtml,
+  extraHead = "",
+}) {
+  const canonical = absUrl(path);
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${canonical}">
+  ${robotsNoindex ? '<meta name="robots" content="noindex">' : ""}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${esc(h1AsTitle || title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:url" content="${canonical}">
+  <meta property="og:image" content="${absUrl(ogImage)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  ${schemaBlock({ serviceType, faqs })}
+  ${extraHead}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+${header(path)}
+  <main id="main">
+${bodyHtml}
+  </main>
+${footer()}
+</body>
+</html>
+`;
+}

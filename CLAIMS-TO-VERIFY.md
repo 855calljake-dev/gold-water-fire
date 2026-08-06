@@ -12,7 +12,7 @@ do not bolt this on later, and do not let a claim slide onto a page "temporarily
 | Team photos | **UNVERIFIED — do not display** | About page team roster | Team roster (names, roles) is confirmed and used; photos are not. Roster renders as text/initials only, no headshots, until real photos are supplied and rights-cleared. |
 | 24/7 emergency availability / specific response time | **UNVERIFIED — do not display a number** | Hero, Services, Contact | Standard industry claim (the reference site advertises 1–2 hour response) but not confirmed for Gold Water Fire. Copy uses general urgency language ("fast emergency response," "call now") without a specific hour count or a hard 24/7/365 claim unless Jake confirms actual hours and on-call coverage. |
 | Years in business / project count | **UNVERIFIED — do not display** | About, trust badges | Brandon Gurr's "5,000+ projects" is his own résumé from Gurr Brothers Construction, not a Gold Water Fire company track record — never presented as the company's number. No separate GWF years-in-business or project-count claim exists. |
-| Specific service-area city list | **UNVERIFIED beyond "Phoenix metro"** | Service area section, footer | Confirmed: based in Chandler, AZ, serving the Phoenix metro area generally. No confirmed list of specific covered cities (Mesa, Gilbert, Scottsdale, Tempe, etc.) — do not print one until Jake confirms which cities are actually served. |
+| Specific service-area city list | **CONFIRMED 2026-08-06 — see below** | Service area section, footer, location pages | Jake confirmed: the full Phoenix metro area, named boundaries "NW Peoria, SE Avondale, SW San Tan Valley, NW Apache Junction, and even outlying areas further than that." Safe to use as-is for the general service-area claim and as the basis for location pages. |
 
 ## Verified facts (safe to use as-is)
 
@@ -25,6 +25,14 @@ do not bolt this on later, and do not let a claim slide onto a page "temporarily
 - Legal entity: ADL Solutions, Inc (current — expected to change; do not print the entity name as the public-facing brand)
 - Launch email: Help@goldwaterfire.com
 - Display name is three separate capitalized words: **Gold Water Fire** — never run together
+- **Service area (confirmed 2026-08-06):** the full Phoenix metro area. Jake's own words: "NW
+  Peoria, SE Avondale, SW San Tan Valley, NW Apache Junction, and even outlying areas further than
+  that." The core location-page list derived from this (`content/backlog.json`) is a standard
+  Phoenix-metro municipality list bounded by those four points — Phoenix, Mesa, Chandler, Scottsdale,
+  Glendale, Gilbert, Tempe, Peoria, Surprise, Avondale, Goodyear, Buckeye, Apache Junction, Queen
+  Creek, San Tan Valley, Fountain Hills, Paradise Valley, Cave Creek, El Mirage, Tolleson, Litchfield
+  Park. This list is *derived*, not dictated word-for-word by Jake — reasonable to build against, but
+  flag any single city page to him if it's ever in question rather than assume.
 
 ## Resolved during this session
 

@@ -2,4 +2,24 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
+# Explicit allow for AI crawlers rather than relying on the wildcard above —
+# SOP-AGENTIC-SEO-WEBSITES.md §3: explicit beats implicit for AI citation.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://www.goldwaterfire.com/sitemap.xml

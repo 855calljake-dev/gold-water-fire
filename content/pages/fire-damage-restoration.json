@@ -1,0 +1,45 @@
+{
+  "path": "/fire-damage-restoration.html",
+  "type": "service",
+  "title": "Fire Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+  "description": "Smoke and soot remediation, odor control, and structural cleanup after a fire. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339.",
+  "h1": "Fire Damage Restoration",
+  "breadcrumbLabel": "Fire Damage Restoration",
+  "intro": "Smoke and soot remediation, odor control, and structural cleanup after a fire — across the Phoenix, AZ metro area.",
+  "serviceType": "Fire Damage Restoration",
+  "photo": {
+    "src": "/assets/img/fire-smoke-damage-restoration-cleanup-phoenix-az.jpg",
+    "alt": "Fire damage restoration crew removing smoke-damaged drywall near a soot-covered brick fireplace"
+  },
+  "sections": [
+    {
+      "soft": true,
+      "eyebrow": "The Process",
+      "heading": "What fire damage restoration covers",
+      "cards": [
+        { "heading": "Assessment and board-up", "body": "We assess the extent of fire, smoke, and water damage from firefighting efforts, and secure the property." },
+        { "heading": "Smoke and soot removal", "body": "Affected surfaces, contents, and structural materials are cleaned or removed." },
+        { "heading": "Odor control", "body": "Treatment to address smoke odor throughout the affected structure." }
+      ]
+    },
+    {
+      "eyebrow": "What's Next",
+      "heading": "From cleanup to rebuild",
+      "body": "Fire damage often means structural repair, not just cleanup. Our <a href=\"/reconstruction.html\">reconstruction team</a> handles framing, drywall, and finish work to bring the property back — one company, start to finish."
+    }
+  ],
+  "faqs": [
+    { "q": "Is smoke odor removed along with visible soot?", "a": "Yes — odor treatment is part of the fire damage process, addressing smoke odor throughout the affected structure, not just the visibly burned areas." },
+    { "q": "Can you also rebuild what was damaged in the fire?", "a": "Yes. Gold Water Fire's reconstruction team, led by Construction Manager Brandon Gurr, handles framing, drywall, and finish work after cleanup, so the whole job stays with one company." },
+    { "q": "What areas do you serve for fire damage restoration?", "a": "The greater Phoenix, Arizona metro area, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast, and the cities in between." }
+  ],
+  "cta": {
+    "heading": "Fire damage needs a fast, careful response.",
+    "body": "Call Gold Water Fire to get a crew assessing the damage."
+  },
+  "internalLinks": [
+    { "href": "/water-damage-restoration.html", "label": "Water Damage Restoration" },
+    { "href": "/reconstruction.html", "label": "Reconstruction & Rebuild" }
+  ],
+  "evidence": "Process steps are general restoration-industry practice, not GWF-specific claims. Reconstruction lead attribution (Brandon Gurr) matches confirmed team facts. Service-area line matches Jake's confirmed 2026-08-06 boundary description. No certification, bonding, testimonial, or response-time number stated."
+}

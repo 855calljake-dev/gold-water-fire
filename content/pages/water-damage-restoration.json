@@ -1,0 +1,45 @@
+{
+  "path": "/water-damage-restoration.html",
+  "type": "service",
+  "title": "Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+  "description": "Water extraction, structural drying, and cleanup after leaks, pipe breaks, and flooding. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339.",
+  "h1": "Water Damage Restoration",
+  "breadcrumbLabel": "Water Damage Restoration",
+  "intro": "Extraction, drying, and cleanup after leaks, pipe breaks, water heater failures, and flooding — across the Phoenix, AZ metro area.",
+  "serviceType": "Water Damage Restoration",
+  "photo": {
+    "src": "/assets/img/water-damage-restoration-drying-equipment-phoenix-az.jpg",
+    "alt": "Water damage restoration technician running air movers and a dehumidifier in a flooded living room"
+  },
+  "sections": [
+    {
+      "eyebrow": "The Process",
+      "heading": "What water damage restoration covers",
+      "cards": [
+        { "heading": "Water extraction", "body": "Standing water removed from floors, carpet, and structural cavities as soon as our crew arrives." },
+        { "heading": "Structural drying", "body": "Equipment placed and monitored to dry the structure and reduce the risk of secondary damage." },
+        { "heading": "Cleanup and prep", "body": "Affected materials cleaned or removed, and the space prepared for repair or reconstruction if needed." }
+      ]
+    },
+    {
+      "soft": true,
+      "eyebrow": "Common Causes",
+      "heading": "What we respond to",
+      "body": "Burst or leaking pipes, water heater failures, washing machine and dishwasher supply-line failures, roof and plumbing leaks, and flooding. If a job also needs rebuild work — flooring, drywall, cabinetry — our own <a href=\"/reconstruction.html\">reconstruction team</a> picks it up without bringing in a second contractor."
+    }
+  ],
+  "faqs": [
+    { "q": "How fast does water damage need to be addressed?", "a": "Standing water and wet building materials support mold growth within 24–48 hours, so extraction and drying should start as soon as possible after the source of water is stopped." },
+    { "q": "Do you handle both the water damage and any repairs afterward?", "a": "Yes. Gold Water Fire's own reconstruction team handles framing, drywall, and flooring repair after mitigation, so you're not coordinating a second contractor." },
+    { "q": "What areas do you serve for water damage restoration?", "a": "The greater Phoenix, Arizona metro area, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast, and the cities in between." }
+  ],
+  "cta": {
+    "heading": "Water damage gets worse the longer it sits.",
+    "body": "Call Gold Water Fire to get a crew assessing the damage."
+  },
+  "internalLinks": [
+    { "href": "/fire-damage-restoration.html", "label": "Fire Damage Restoration" },
+    { "href": "/reconstruction.html", "label": "Reconstruction & Rebuild" }
+  ],
+  "evidence": "Process steps and causes are general restoration-industry practice, not GWF-specific claims. Service-area line matches Jake's confirmed 2026-08-06 boundary description in CLAIMS-TO-VERIFY.md. No certification, bonding, testimonial, or response-time number stated — none are confirmed."
+}

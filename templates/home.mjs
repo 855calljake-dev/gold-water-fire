@@ -1,76 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gold Water Fire | Fire &amp; Water Damage Restoration — Phoenix, AZ Metro</title>
-  <meta name="description" content="Gold Water Fire provides fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339.">
-  <link rel="canonical" href="https://www.goldwaterfire.com/">
-  
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Gold Water Fire | Fire &amp; Water Damage Restoration — Phoenix, AZ Metro">
-  <meta property="og:description" content="Gold Water Fire provides fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339.">
-  <meta property="og:url" content="https://www.goldwaterfire.com/">
-  <meta property="og:image" content="https://www.goldwaterfire.com/assets/img/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Gold Water Fire",
-  "telephone": "+1-480-999-3339",
-  "email": "Help@goldwaterfire.com",
-  "url": "https://www.goldwaterfire.com/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "221 E Willis Rd Ste 8",
-    "addressLocality": "Chandler",
-    "addressRegion": "AZ",
-    "postalCode": "85286",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Phoenix Metropolitan Area, Arizona"
-  }
-}
-</script>
-  
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+import { shell } from "./shell.mjs";
 
-  <div class="top-bar">
-    <div class="wrap">
-      <span>Fire &amp; water damage restoration — Phoenix Metro Area</span>
-      <a class="phone" href="tel:+14809993339">(480) 999-3339</a>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand-block" href="/" aria-label="Gold Water Fire home">
-        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.png" alt="" width="188" height="240" loading="eager"></span>
-        <span class="brand-text">
-          <span class="brand"><span class="gold-word">Gold</span> Water <span class="fire-word">Fire</span></span>
-          <span class="tagline">Restoration Services</span>
-        </span>
-      </a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="/water-damage-restoration.html">Water Damage</a>
-        <a href="/fire-damage-restoration.html">Fire Damage</a>
-        <a href="/reconstruction.html">Reconstruction</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-      <a class="btn-call" href="tel:+14809993339">Call (480) 999-3339</a>
-    </div>
-  </header>
-  <main id="main">
-
+export function renderHome() {
+  const bodyHtml = `
     <section class="hero">
       <div class="wrap">
         <div>
@@ -202,39 +133,13 @@
         <p>Call now to talk to Gold Water Fire about your property.</p>
         <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
       </div>
-    </section>
-  </main>
+    </section>`;
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h4>Gold Water Fire</h4>
-          <p>Fire and water damage restoration and reconstruction serving the Phoenix, AZ metro area. AZ ROC #264344 · KB-2.</p>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/water-damage-restoration.html">Water Damage Restoration</a></li>
-            <li><a href="/fire-damage-restoration.html">Fire Damage Restoration</a></li>
-            <li><a href="/reconstruction.html">Reconstruction &amp; Rebuild</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+14809993339">(480) 999-3339</a></li>
-            <li><a href="mailto:Help@goldwaterfire.com">Help@goldwaterfire.com</a></li>
-            <li>221 E Willis Rd Ste 8<br>Chandler, AZ 85286</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year"></span> Gold Water Fire. AZ ROC #264344 · KB-2.</span>
-        <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai — automated operations for real businesses</a>
-      </div>
-    </div>
-  </footer>
-  <script src="/assets/js/main.js"></script>
-</body>
-</html>
+  return shell({
+    path: "/",
+    title: "Gold Water Fire | Fire & Water Damage Restoration — Phoenix, AZ Metro",
+    description: "Gold Water Fire provides fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339.",
+    h1AsTitle: "Gold Water Fire | Fire & Water Damage Restoration — Phoenix, AZ Metro",
+    bodyHtml,
+  });
+}
