@@ -1,0 +1,36 @@
+{
+  "note": "Planned pages for the agentic drafting worker. Educational topics run first per SOP-AGENTIC-SEO-WEBSITES.md §5 (zero experience-claim risk, proves the pipeline). Location pages wait until an educational batch has been reviewed clean. status: pending | drafted | live | skipped.",
+  "items": [
+    {
+      "type": "educational",
+      "slug": "what-to-do-first-hour-water-damage",
+      "topic": "What to do in the first hour after a pipe bursts or you discover water damage",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "signs-of-hidden-water-damage",
+      "topic": "How to spot hidden water damage in a home before it becomes a bigger problem — signs behind walls, under floors, in ceilings",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "why-smoke-odor-lingers-after-a-fire",
+      "topic": "Why smoke odor lingers in a home long after a fire is out, and what actually removes it (as opposed to just masking it)",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-damage-vs-flood-damage-insurance",
+      "topic": "The practical difference between water damage and flood damage, and why homeowners insurance treats them differently",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "what-to-expect-restoration-crew-arrival",
+      "topic": "What actually happens when a restoration crew arrives at a property for the first time — the walkthrough, the equipment, the first decisions",
+      "status": "pending"
+    }
+  ],
+  "location_backlog_note": "Location pages (service x city) wait on Jake reviewing an educational batch clean, per SOP §5. City list source: CLAIMS-TO-VERIFY.md 'Service area' entry."
+}
