@@ -4,6 +4,17 @@ Scheduled worker that drafts new pages from `content/backlog.json` and opens a
 GitHub pull request. **It never merges anything and never touches `main`
 directly.** Spec: `bytomorrow-bos/doctrine/SOP-AGENTIC-SEO-WEBSITES.md`.
 
+Deployed on Railway (project `gold-water-fire`, service `gwf-content-worker`).
+**`.railway/railway.ts` is the authoritative deploy config** — infrastructure
+as code, applied with `railway config apply`. It defines the source repo,
+build/deploy settings, and non-secret env vars; secrets are set directly in
+Railway's dashboard, never in this file (see its own header comment). This
+superseded the dashboard-only "config as code path" pattern agent-runtime
+uses (`bytomorrow-platform/railway.runtime.toml`) — Railway shipped a real
+IaC SDK (`railway` on npm, IaC support) after that pattern was written;
+`doctrine/BYTOMORROW-TECH-STACK.md`'s account-status notes should get a
+follow-up correction for this.
+
 ## Run it
 
 ```bash
