@@ -2,6 +2,24 @@ import { findForbiddenClaims } from "./facts.mjs";
 
 const UNSAFE_HTML = /<script|<style|on\w+\s*=|javascript:/i;
 const ALLOWED_INLINE_TAG = /<(?!\/?a(\s|>))[a-z][^>]*>/i; // any tag that isn't <a ...> or </a>
+const HREF_RE = /href="([^"]*)"/gi;
+
+// The site's real internal paths — kept in sync with templates/shell.mjs's
+// NAV plus known non-nav pages. A drafted page linking anywhere else 404s.
+// Caught here 2026-08-06: the model invented a "/services/" prefix that
+// doesn't exist on the actual site, in every page of the first live batch.
+const VALID_INTERNAL_LINKS = new Set([
+  "/", "/water-damage-restoration.html", "/fire-damage-restoration.html",
+  "/reconstruction.html", "/about.html", "/contact.html",
+]);
+
+function extractHrefs(fields) {
+  const hrefs = [];
+  for (const field of fields) {
+    for (const m of field.matchAll(HREF_RE)) hrefs.push(m[1]);
+  }
+  return hrefs;
+}
 
 function flattenText(page) {
   const parts = [page.title, page.description, page.h1, page.intro, page.evidence];
@@ -38,6 +56,16 @@ export function checkPage(page) {
   for (const field of bodyFields(page)) {
     if (UNSAFE_HTML.test(field)) problems.push(`Unsafe HTML in body field: ${field.slice(0, 80)}`);
     if (ALLOWED_INLINE_TAG.test(field)) problems.push(`Disallowed HTML tag (only <a> is permitted) in: ${field.slice(0, 80)}`);
+  }
+
+  const linkedHrefs = [
+    ...extractHrefs(bodyFields(page)),
+    ...(page.internalLinks || []).map((l) => l.href),
+  ];
+  for (const href of linkedHrefs) {
+    if (href.startsWith("/") && !VALID_INTERNAL_LINKS.has(href)) {
+      problems.push(`Broken internal link (not a real page): ${href}`);
+    }
   }
 
   if (!page.slug || !/^[a-z0-9-]+$/.test(page.slug)) problems.push(`Invalid slug: ${page.slug}`);

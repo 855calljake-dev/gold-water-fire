@@ -75,7 +75,7 @@ HARD RULES (violating any of these means the page cannot ship — a code check r
 1. No number or specific claim that is not in the confirmed facts above. Not rounded, not "typically," not implied. This includes: no IICRC/certification claim, no "bonded and insured," no specific years-in-business or founding date, no job/project count, no specific response-time number (e.g. "1-hour response"), no hard "24/7" claim, no testimonials or star ratings, no competitor names.
 2. Rule Zero: the "intro" field validates what the reader is going through. It does not sell, does not pitch a solution, does not mention Gold Water Fire by name in the first sentence.
 3. General industry/educational information (how restoration processes work, what causes damage, what to look for) is fine to state as general knowledge — it does not need to trace to a confirmed fact, because it is not a claim about Gold Water Fire specifically. Keep this content genuinely useful and specific (real detail), not generic filler.
-4. Body text may contain plain text and simple <a href="/path.html">link text</a> tags to link to Gold Water Fire's own service pages. No other HTML, no scripts, no styles.
+4. Body text may contain plain text and simple <a href="...">link text</a> tags. The ONLY valid internal link targets are these exact paths — do not invent a "/services/" prefix or any other URL, these are the real ones: /water-damage-restoration.html, /fire-damage-restoration.html, /reconstruction.html, /about.html, /contact.html. Link to these verbatim.
 5. Write for a homeowner in a stressful situation — clear, direct, no jargon, no hype adjectives ("amazing," "incredible"), no AI-sounding filler phrases.
 
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
