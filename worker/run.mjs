@@ -51,23 +51,41 @@ async function main() {
   let totalCostEstimate = 0;
 
   for (const item of pending) {
-    try {
-      const { page, usage } = await draftPage({ item, apiKey: cfg.anthropicApiKey, model: cfg.model });
-      page.type = item.type;
-      const check = checkPage(page);
-      // Opus 5 approx $15/$75 per MTok in/out — rough budget guard, not billing-accurate.
-      totalCostEstimate += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
+    let lastProblems = null;
+    let shipped = false;
 
-      if (!check.ok) {
-        console.log(`[work] REJECTED ${item.slug}: ${check.problems.join(" | ")}`);
-        failed.push({ slug: item.slug, problems: check.problems });
-        continue;
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        const { page, usage } = await draftPage({
+          item, apiKey: cfg.anthropicApiKey, model: cfg.model,
+          retryFeedback: attempt > 1 ? lastProblems : undefined,
+        });
+        page.type = item.type;
+        const check = checkPage(page);
+        // Opus 5 approx $15/$75 per MTok in/out — rough budget guard, not billing-accurate.
+        totalCostEstimate += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
+
+        if (!check.ok) {
+          console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): ${check.problems.join(" | ")}`);
+          if (process.env.RUNTIME_DEBUG) {
+            console.log(`[debug] faqs=${JSON.stringify(page.faqs)}`);
+            console.log(`[debug] sections=${(page.sections || []).length}, stopReason logged separately`);
+          }
+          lastProblems = check.problems;
+          continue;
+        }
+        console.log(`[work] OK ${item.slug} -> ${page.path}${attempt > 1 ? " (after retry)" : ""}`);
+        drafted.push({ item, page });
+        shipped = true;
+        break;
+      } catch (err) {
+        console.log(`[work] ERROR drafting ${item.slug} (attempt ${attempt}): ${err.message}`);
+        lastProblems = [err.message];
       }
-      console.log(`[work] OK ${item.slug} -> ${page.path}`);
-      drafted.push({ item, page });
-    } catch (err) {
-      console.log(`[work] ERROR drafting ${item.slug}: ${err.message}`);
-      failed.push({ slug: item.slug, problems: [err.message] });
+    }
+
+    if (!shipped) {
+      failed.push({ slug: item.slug, problems: lastProblems || ["unknown failure"] });
     }
 
     if (totalCostEstimate > cfg.maxBudgetUsd) {

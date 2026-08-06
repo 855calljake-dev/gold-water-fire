@@ -81,10 +81,14 @@ HARD RULES (violating any of these means the page cannot ship — a code check r
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
 }
 
-export async function draftPage({ item, apiKey, model }) {
-  const userPrompt = item.type === "educational"
+export async function draftPage({ item, apiKey, model, retryFeedback }) {
+  let userPrompt = item.type === "educational"
     ? `Write an educational/how-to page on this topic: "${item.topic}"\n\nThis is general-knowledge content aimed at ranking in search and helping someone right now, not a sales pitch for a specific job Gold Water Fire has done. Slug: ${item.slug}. Suggested path: /guides/${item.slug}.html.`
     : `Write a location page for ${item.city}, matching the service: ${item.service}. Slug: ${item.slug}. Suggested path: ${item.path}. Include real, locally-relevant detail (housing stock era, climate/seasonal risk pattern, anything genuinely specific to this city) rather than generic copy — the same paragraph must not work for a different city.`;
+
+  if (retryFeedback?.length) {
+    userPrompt += `\n\nYour previous attempt was rejected for: ${retryFeedback.join("; ")}. The emit_page tool's minItems on "faqs" (at least 2) and "sections" (at least 2) is a hint, not enforced by the API -- you must actually include that many. Fix these specific problems and resubmit the complete page.`;
+  }
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -95,8 +99,13 @@ export async function draftPage({ item, apiKey, model }) {
     },
     body: JSON.stringify({
       model,
-      max_tokens: 3000,
-      temperature: 0.4,
+      // 3000 was too tight: a full page (4 sections + cards + faqs + cta)
+      // was hitting stop_reason=max_tokens before ever reaching "faqs",
+      // verified via debug logging 2026-08-06 -- every rejected draft had
+      // faqs=undefined for exactly this reason, not a compliance issue.
+      max_tokens: 8000,
+      // temperature is deprecated/rejected on claude-opus-5 (verified against
+      // a live API error 2026-08-06) -- omit rather than pin a value.
       system: systemPrompt(),
       messages: [{ role: "user", content: userPrompt }],
       tools: [PAGE_SCHEMA],
@@ -114,5 +123,8 @@ export async function draftPage({ item, apiKey, model }) {
   if (!toolUse) throw new Error("Model did not call emit_page: " + JSON.stringify(data));
 
   const usage = data.usage || {};
+  if (process.env.RUNTIME_DEBUG) {
+    console.log(`[debug] stop_reason=${data.stop_reason}, output_tokens=${usage.output_tokens}`);
+  }
   return { page: toolUse.input, usage };
 }
