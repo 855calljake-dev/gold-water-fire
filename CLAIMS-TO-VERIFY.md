@@ -1,0 +1,43 @@
+# CLAIMS TO VERIFY — Gold Water Fire
+
+**Gate, not a to-do list.** Nothing in this file appears on the live site until Jake confirms it in
+writing and this file is updated to say so. Built from day one per Jake's kickoff instruction —
+do not bolt this on later, and do not let a claim slide onto a page "temporarily."
+
+| Claim | Status | Where it would appear | Note |
+|---|---|---|---|
+| IICRC firm certification | **UNVERIFIED — do not display** | Trust badges, About, Services | Common in this trade (see reference site) but not confirmed for Gold Water Fire. No cert number, no badge, no "IICRC certified" language anywhere on the site until Jake supplies it. |
+| Bonded / insured status | **UNVERIFIED — do not display** | Trust badges, footer, About | Do not print "licensed, bonded, and insured" as a block — only the AZ ROC license (#264344 · KB-2) is confirmed. |
+| Customer testimonials / reviews | **UNVERIFIED — do not display** | Homepage, About, dedicated testimonials section | No testimonial content exists yet. No star ratings, review counts, or quoted customers anywhere on the site. |
+| Team photos | **UNVERIFIED — do not display** | About page team roster | Team roster (names, roles) is confirmed and used; photos are not. Roster renders as text/initials only, no headshots, until real photos are supplied and rights-cleared. |
+| 24/7 emergency availability / specific response time | **UNVERIFIED — do not display a number** | Hero, Services, Contact | Standard industry claim (the reference site advertises 1–2 hour response) but not confirmed for Gold Water Fire. Copy uses general urgency language ("fast emergency response," "call now") without a specific hour count or a hard 24/7/365 claim unless Jake confirms actual hours and on-call coverage. |
+| Years in business / project count | **UNVERIFIED — do not display** | About, trust badges | Brandon Gurr's "5,000+ projects" is his own résumé from Gurr Brothers Construction, not a Gold Water Fire company track record — never presented as the company's number. No separate GWF years-in-business or project-count claim exists. |
+| Specific service-area city list | **UNVERIFIED beyond "Phoenix metro"** | Service area section, footer | Confirmed: based in Chandler, AZ, serving the Phoenix metro area generally. No confirmed list of specific covered cities (Mesa, Gilbert, Scottsdale, Tempe, etc.) — do not print one until Jake confirms which cities are actually served. |
+
+## Verified facts (safe to use as-is)
+
+- Phone: (480) 999-3339
+- Address: 221 E Willis Rd Ste 8, Chandler, AZ 85286
+- AZ ROC license: #264344 · KB-2
+- Co-founders: Jim Bennett and Jake Taylor
+- Brandon Gurr: Construction Manager (formerly Gurr Brothers Construction — his own résumé, not a Gold Water Fire track record)
+- Team: Kristine (Office Admin), Brooke (Water and Mitigation Scheduling Assistant), Johnny (Reconstruction Team Lead)
+- Legal entity: ADL Solutions, Inc (current — expected to change; do not print the entity name as the public-facing brand)
+- Launch email: Help@goldwaterfire.com
+- Display name is three separate capitalized words: **Gold Water Fire** — never run together
+
+## Resolved during this session
+
+- **Phoenix mark** — found in `~/Downloads/GWF - Phoenix.jpg` and `GWF - Logo and Typography
+  Sheet.png` (survived the earlier GoldWaterFire repo/folder deletion because they were saved to
+  Downloads, not inside the deleted project). Processed into
+  `assets/brand/gold-water-fire-phoenix-mark.png` (transparent) and wired into the header, footer,
+  favicon, apple-touch-icon, and OG image. Brand colors confirmed from the sheet: Gold = gold/amber,
+  Water = navy blue, Fire = red-orange — CSS updated to match sampled hex values.
+- **Site imagery** — no real Gold Water Fire before/after job photos exist (the company has no
+  completed jobs yet). Checked ADL Solutions' `07 Marketing/Showcase` archive on Jake's suggestion;
+  it turned out to be ADL's accessibility-modification (ramp/ADA) portfolio for named individual
+  clients — veterans, elderly, tribal Medicaid recipients — a different trade and a different
+  consent scope, not reused here. Used Higgsfield-generated illustrative imagery instead (no real
+  recognizable people, watermarked, captioned "Illustrative imagery" on every page it appears).
+  Replace with real photos once Gold Water Fire completes and rights-clears actual jobs.

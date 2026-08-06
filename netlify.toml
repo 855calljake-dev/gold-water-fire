@@ -1,0 +1,33 @@
+# Gold Water Fire — static site, no build step
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Team roster JSON drives the About page — must never cache stale
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Publish dir is "." so repo-root docs would otherwise be served to the public.
+# CLAIMS-TO-VERIFY.md in particular must never be public — it's an internal
+# gate on unverified claims (certifications, testimonials, team photos).
+# admin/config.yml stays readable on purpose — Decap needs to fetch it.
+# force = true is required: without it Netlify serves the real file and
+# skips the rule, because a static file at that path wins by default.
+[[redirects]]
+  from = "/README.md"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/CLAIMS-TO-VERIFY.md"
+  to = "/"
+  status = 404
+  force = true

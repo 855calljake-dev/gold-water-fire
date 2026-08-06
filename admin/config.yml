@@ -1,0 +1,36 @@
+# Decap CMS config — gives Jake/Kristine a form-based editor at /admin
+# for the team roster. Edits commit straight to the repo, which triggers
+# a Netlify redeploy.
+#
+# SETUP (one-time, see README): enable the GitHub OAuth provider on the
+# Netlify site for 855calljake-dev/gold-water-fire.
+
+backend:
+  name: github
+  repo: 855calljake-dev/gold-water-fire
+  branch: main
+  base_url: https://api.netlify.com
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+site_url: https://www.goldwaterfire.com
+logo_url: /assets/img/gold-water-fire-phoenix-mark.png
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "team"
+        label: "Team"
+        file: "data/team.json"
+        description: "Add, edit, or remove team members shown on the About page."
+        fields:
+          - label: "Team Members"
+            name: "team"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text", required: false }

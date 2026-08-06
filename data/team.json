@@ -1,0 +1,34 @@
+{
+  "team": [
+    {
+      "name": "Jim Bennett",
+      "role": "Co-Founder",
+      "bio": "Co-founded Gold Water Fire alongside Jake Taylor."
+    },
+    {
+      "name": "Jake Taylor",
+      "role": "Co-Founder",
+      "bio": "Co-founded Gold Water Fire alongside Jim Bennett."
+    },
+    {
+      "name": "Brandon Gurr",
+      "role": "Construction Manager",
+      "bio": "Formerly of Gurr Brothers Construction. Leads reconstruction and rebuild work."
+    },
+    {
+      "name": "Kristine",
+      "role": "Office Admin",
+      "bio": "Keeps the office running."
+    },
+    {
+      "name": "Brooke",
+      "role": "Water and Mitigation Scheduling Assistant",
+      "bio": "Schedules water damage and mitigation response."
+    },
+    {
+      "name": "Johnny",
+      "role": "Reconstruction Team Lead",
+      "bio": "Leads the reconstruction crew on rebuild projects."
+    }
+  ]
+}
