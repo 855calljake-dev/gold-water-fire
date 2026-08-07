@@ -1,0 +1,78 @@
+{
+  "slug": "what-to-expect-restoration-crew-arrival",
+  "path": "/guides/what-to-expect-restoration-crew-arrival.html",
+  "title": "What Happens When a Restoration Crew Arrives | Gold Water Fire | Phoenix, AZ",
+  "description": "A step-by-step look at the first hours of a restoration job: the walkthrough, moisture readings, equipment setup, and the decisions made on day one.",
+  "h1": "What Actually Happens When a Restoration Crew Arrives at Your Home",
+  "breadcrumbLabel": "Restoration Crew Arrival",
+  "intro": "You made the call, and now there are strangers about to walk through your front door while your floor is soaked or your kitchen smells like smoke. Most people have never been through this before, so there's no way to know what's normal. Are they going to tear the house apart? Do you need to move furniture first? Should you be following them around, or staying out of the way? Not knowing what the next two hours look like is its own kind of stress, on top of everything else already going on.",
+  "sections": [
+    {
+      "eyebrow": "Step one",
+      "heading": "The walkthrough comes before anything gets touched",
+      "body": "Nothing gets cut, pulled, or hauled out until someone has walked the whole property. A crew lead will usually start at the source — the burst supply line, the failed water heater, the room where the fire started — and then work outward, because water and smoke both travel much farther than the visible damage suggests.\n\nExpect the walkthrough to include areas you didn't think were affected. Water follows gravity and framing: it runs along the top plate of a wall, drops into a wall cavity two rooms away, and shows up under a cabinet toe-kick or in a downstairs ceiling. Smoke follows air movement — it gets pulled into return vents, up stairwells, and into closets that were closed the whole time. A crew that only inspects the obviously wet room is missing the part that causes problems later.\n\nYou'll also be asked questions that sound unrelated: when did you first notice it, was the AC running, has anyone shut off the water, is the house on a slab or is there a crawlspace, are there pets, does anyone in the home have asthma or a compromised immune system. Those answers change the plan. Say if you don't know — a guess is worse than an unknown."
+    },
+    {
+      "eyebrow": "Step two",
+      "heading": "The tools they bring out first, and what each one is telling them",
+      "body": "Most of the initial equipment isn't for drying. It's for measuring, because you can't dry what you haven't mapped.\n\nA moisture meter is the one you'll see first. Pin meters press two metal probes into drywall, wood, or subfloor and read the moisture content at that depth. Pinless meters scan a surface without leaving holes and are used to sweep large areas fast. A crew typically finds a dry spot far from the damage first — that's the baseline reading for your house — and then works toward the wet area until numbers climb. The line where readings return to baseline is the actual edge of the loss, and it's often several feet past where the carpet feels wet underfoot.\n\nA thermal imaging camera shows temperature differences, not moisture. Evaporating water cools a surface, so wet drywall reads colder than dry drywall. It's a fast way to find suspect areas behind walls and ceilings, but every hit gets confirmed with a meter, because a cold spot can also just be a stud, a duct, or missing insulation.\n\nA thermo-hygrometer reads temperature and relative humidity. Those two numbers together give the crew the grains-per-pound of moisture in the air, which is how they decide whether the ambient air is dry enough to accept evaporation from your materials at all. In Phoenix that matters both ways: outdoor air is usually dry enough to help in the cooler months, and during monsoon season it isn't.\n\nOn fire jobs, add a flashlight and a lot of surface testing — dry chem sponge swipes on painted walls to see whether soot lifts clean or smears, checks of duct registers, and a look at how far the heat traveled versus how far the smoke traveled. Those are different boundaries and they get treated differently."
+    },
+    {
+      "eyebrow": "Step three",
+      "heading": "The first real decisions: what stays, what comes out, and where the air goes",
+      "body": "Three decisions usually get made before any equipment gets plugged in.\n\nFirst, is the water clean, gray, or contaminated? A supply line break is category one. A washing machine or dishwasher discharge is category two. Sewage, toilet backflow past the trap, or flooding from outside is category three, and it changes everything — porous materials in the affected zone come out rather than get dried, and containment goes up. Time also degrades category: clean water sitting for days in a warm house is no longer clean water.\n\nSecond, dry in place or remove? Solid hardwood, tile over a healthy slab, and framing lumber can often be dried where they are. Wet carpet pad, saturated MDF cabinet bases, insulation, and drywall that has wicked several inches up from the floor usually come out, because they either hold water indefinitely or lose structural integrity when wet. When drywall does get cut, it's typically a clean horizontal line — often a flood cut a foot or two up — so the patch is straightforward later. Baseboards may be removed and weep holes drilled behind them so a wall cavity can be dried without demolishing it.\n\nThird, where does the air go and where does it stop? Containment plastic, negative air machines, and sealing off returns keep dust, spores, and smoke odor from spreading into clean parts of the house. Only after that do air movers get placed — angled along surfaces, not pointed straight at them — and dehumidifiers get positioned to pull the evaporated moisture back out of the air. Air movers without a dehumidifier just move humid air around and can push moisture into unaffected rooms.\n\nBefore the crew leaves, they should record the initial moisture readings, photograph everything, and tell you what equipment is running, roughly how loud it will be, and when someone is coming back to re-read. Daily monitoring readings are what prove the structure actually dried, and they're also what an insurance adjuster looks at."
+    },
+    {
+      "eyebrow": "Your part",
+      "heading": "What you can do while all this is happening",
+      "body": "You don't need to clean up before the crew arrives, and you shouldn't put yourself at risk to do it. A few things genuinely help:\n\nStop the source if it's safe and simple — the fixture shutoff or the main. If you have to touch anything electrical in standing water, don't; wait.\n\nPhotograph and video everything before items get moved, including inside cabinets and closets. Your own documentation is separate from the crew's and it's yours to keep.\n\nMove what's small, dry, and irreplaceable to a safe room: documents, photos, medications, electronics, anything with sentimental value. Leave heavy furniture alone.\n\nStart a running list of damaged contents as you notice them, with rough purchase dates. It's much easier to build that list over days than to reconstruct it from memory later.\n\nAsk who your point of contact is and how to reach them. Restoration jobs involve mitigation crews, sometimes a separate rebuild crew, and an insurance adjuster, and knowing which person owns which question saves a lot of frustration. If your job involves putting the house back together afterward, that's a distinct phase with its own scope and timeline — see <a href=\"/reconstruction.html\">reconstruction and rebuild</a> for how that side works.\n\nMore on the two most common loss types: <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does the first visit usually take?",
+      "a": "It depends on the size of the property and how far the damage traveled. The inspection and moisture mapping generally take longer than people expect, because the crew has to find the edges of the damage before deciding on a plan. Equipment setup follows once the scope is understood. Ask the crew lead for their estimate on your specific property rather than assuming a standard length."
+    },
+    {
+      "q": "Do I have to leave the house while equipment is running?",
+      "a": "Often no. Air movers and dehumidifiers are loud and they raise the room temperature, but many people stay in unaffected parts of the home. You may need to relocate if the affected area includes the only bathroom or kitchen, if there is contaminated water, or if a fire has left smoke odor and soot throughout the living space. That call gets made during the walkthrough."
+    },
+    {
+      "q": "Why are they cutting drywall instead of just drying it?",
+      "a": "Drywall wicks water upward and holds it, and the paper facing feeds mold growth. If a meter shows the wall is saturated well above the floor, or if the water was contaminated, removing the affected section dries the cavity faster and more reliably than trying to dry the material in place. The cut is usually made at a clean, consistent height so the patch is simple later."
+    },
+    {
+      "q": "Should I call my insurance company before or after the restoration crew?",
+      "a": "Either order works, and many people do both within the same hour. Mitigation — stopping the damage from getting worse — generally shouldn't wait for an adjuster to visit, and most policies expect a homeowner to take reasonable steps to prevent further loss. Documenting the original condition with photos before anything is moved protects you in either sequence."
+    }
+  ],
+  "cta": {
+    "heading": "Talk to someone about what you're looking at",
+    "body": "If you have water, smoke, or soot in your home anywhere in the Phoenix metro area — from Peoria and Surprise across to Mesa, Queen Creek, and San Tan Valley — call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. You can also reach us through the <a href=\"/contact.html\">contact page</a>. AZ ROC #264344 · KB-2."
+  },
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact"
+    }
+  ],
+  "evidence": "This page describes standard restoration industry practice — moisture metering, thermal imaging, water categorization, containment, and drying equipment — as general knowledge; the only company-specific statements are the confirmed name, phone, email, ROC license number, and Phoenix-metro service area.",
+  "type": "educational"
+}
