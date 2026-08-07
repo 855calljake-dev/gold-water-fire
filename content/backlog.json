@@ -30,6 +30,726 @@
       "slug": "what-to-expect-restoration-crew-arrival",
       "topic": "What actually happens when a restoration crew arrives at a property for the first time — the walkthrough, the equipment, the first decisions",
       "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "phoenix-water-damage-restoration",
+      "city": "Phoenix",
+      "service": "Water Damage Restoration",
+      "path": "/phoenix/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "phoenix-fire-damage-restoration",
+      "city": "Phoenix",
+      "service": "Fire Damage Restoration",
+      "path": "/phoenix/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "phoenix-reconstruction",
+      "city": "Phoenix",
+      "service": "Reconstruction & Rebuild",
+      "path": "/phoenix/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "mesa-water-damage-restoration",
+      "city": "Mesa",
+      "service": "Water Damage Restoration",
+      "path": "/mesa/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "mesa-fire-damage-restoration",
+      "city": "Mesa",
+      "service": "Fire Damage Restoration",
+      "path": "/mesa/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "mesa-reconstruction",
+      "city": "Mesa",
+      "service": "Reconstruction & Rebuild",
+      "path": "/mesa/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "chandler-water-damage-restoration",
+      "city": "Chandler",
+      "service": "Water Damage Restoration",
+      "path": "/chandler/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "chandler-fire-damage-restoration",
+      "city": "Chandler",
+      "service": "Fire Damage Restoration",
+      "path": "/chandler/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "chandler-reconstruction",
+      "city": "Chandler",
+      "service": "Reconstruction & Rebuild",
+      "path": "/chandler/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "scottsdale-water-damage-restoration",
+      "city": "Scottsdale",
+      "service": "Water Damage Restoration",
+      "path": "/scottsdale/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "scottsdale-fire-damage-restoration",
+      "city": "Scottsdale",
+      "service": "Fire Damage Restoration",
+      "path": "/scottsdale/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "scottsdale-reconstruction",
+      "city": "Scottsdale",
+      "service": "Reconstruction & Rebuild",
+      "path": "/scottsdale/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "glendale-water-damage-restoration",
+      "city": "Glendale",
+      "service": "Water Damage Restoration",
+      "path": "/glendale/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "glendale-fire-damage-restoration",
+      "city": "Glendale",
+      "service": "Fire Damage Restoration",
+      "path": "/glendale/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "glendale-reconstruction",
+      "city": "Glendale",
+      "service": "Reconstruction & Rebuild",
+      "path": "/glendale/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "gilbert-water-damage-restoration",
+      "city": "Gilbert",
+      "service": "Water Damage Restoration",
+      "path": "/gilbert/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "gilbert-fire-damage-restoration",
+      "city": "Gilbert",
+      "service": "Fire Damage Restoration",
+      "path": "/gilbert/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "gilbert-reconstruction",
+      "city": "Gilbert",
+      "service": "Reconstruction & Rebuild",
+      "path": "/gilbert/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tempe-water-damage-restoration",
+      "city": "Tempe",
+      "service": "Water Damage Restoration",
+      "path": "/tempe/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tempe-fire-damage-restoration",
+      "city": "Tempe",
+      "service": "Fire Damage Restoration",
+      "path": "/tempe/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tempe-reconstruction",
+      "city": "Tempe",
+      "service": "Reconstruction & Rebuild",
+      "path": "/tempe/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "peoria-water-damage-restoration",
+      "city": "Peoria",
+      "service": "Water Damage Restoration",
+      "path": "/peoria/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "peoria-fire-damage-restoration",
+      "city": "Peoria",
+      "service": "Fire Damage Restoration",
+      "path": "/peoria/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "peoria-reconstruction",
+      "city": "Peoria",
+      "service": "Reconstruction & Rebuild",
+      "path": "/peoria/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "surprise-water-damage-restoration",
+      "city": "Surprise",
+      "service": "Water Damage Restoration",
+      "path": "/surprise/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "surprise-fire-damage-restoration",
+      "city": "Surprise",
+      "service": "Fire Damage Restoration",
+      "path": "/surprise/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "surprise-reconstruction",
+      "city": "Surprise",
+      "service": "Reconstruction & Rebuild",
+      "path": "/surprise/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "avondale-water-damage-restoration",
+      "city": "Avondale",
+      "service": "Water Damage Restoration",
+      "path": "/avondale/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "avondale-fire-damage-restoration",
+      "city": "Avondale",
+      "service": "Fire Damage Restoration",
+      "path": "/avondale/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "avondale-reconstruction",
+      "city": "Avondale",
+      "service": "Reconstruction & Rebuild",
+      "path": "/avondale/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "goodyear-water-damage-restoration",
+      "city": "Goodyear",
+      "service": "Water Damage Restoration",
+      "path": "/goodyear/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "goodyear-fire-damage-restoration",
+      "city": "Goodyear",
+      "service": "Fire Damage Restoration",
+      "path": "/goodyear/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "goodyear-reconstruction",
+      "city": "Goodyear",
+      "service": "Reconstruction & Rebuild",
+      "path": "/goodyear/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "buckeye-water-damage-restoration",
+      "city": "Buckeye",
+      "service": "Water Damage Restoration",
+      "path": "/buckeye/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "buckeye-fire-damage-restoration",
+      "city": "Buckeye",
+      "service": "Fire Damage Restoration",
+      "path": "/buckeye/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "buckeye-reconstruction",
+      "city": "Buckeye",
+      "service": "Reconstruction & Rebuild",
+      "path": "/buckeye/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "apache-junction-water-damage-restoration",
+      "city": "Apache Junction",
+      "service": "Water Damage Restoration",
+      "path": "/apache-junction/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "apache-junction-fire-damage-restoration",
+      "city": "Apache Junction",
+      "service": "Fire Damage Restoration",
+      "path": "/apache-junction/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "apache-junction-reconstruction",
+      "city": "Apache Junction",
+      "service": "Reconstruction & Rebuild",
+      "path": "/apache-junction/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "queen-creek-water-damage-restoration",
+      "city": "Queen Creek",
+      "service": "Water Damage Restoration",
+      "path": "/queen-creek/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "queen-creek-fire-damage-restoration",
+      "city": "Queen Creek",
+      "service": "Fire Damage Restoration",
+      "path": "/queen-creek/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "queen-creek-reconstruction",
+      "city": "Queen Creek",
+      "service": "Reconstruction & Rebuild",
+      "path": "/queen-creek/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "san-tan-valley-water-damage-restoration",
+      "city": "San Tan Valley",
+      "service": "Water Damage Restoration",
+      "path": "/san-tan-valley/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "san-tan-valley-fire-damage-restoration",
+      "city": "San Tan Valley",
+      "service": "Fire Damage Restoration",
+      "path": "/san-tan-valley/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "san-tan-valley-reconstruction",
+      "city": "San Tan Valley",
+      "service": "Reconstruction & Rebuild",
+      "path": "/san-tan-valley/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "fountain-hills-water-damage-restoration",
+      "city": "Fountain Hills",
+      "service": "Water Damage Restoration",
+      "path": "/fountain-hills/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "fountain-hills-fire-damage-restoration",
+      "city": "Fountain Hills",
+      "service": "Fire Damage Restoration",
+      "path": "/fountain-hills/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "fountain-hills-reconstruction",
+      "city": "Fountain Hills",
+      "service": "Reconstruction & Rebuild",
+      "path": "/fountain-hills/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "paradise-valley-water-damage-restoration",
+      "city": "Paradise Valley",
+      "service": "Water Damage Restoration",
+      "path": "/paradise-valley/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "paradise-valley-fire-damage-restoration",
+      "city": "Paradise Valley",
+      "service": "Fire Damage Restoration",
+      "path": "/paradise-valley/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "paradise-valley-reconstruction",
+      "city": "Paradise Valley",
+      "service": "Reconstruction & Rebuild",
+      "path": "/paradise-valley/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "cave-creek-water-damage-restoration",
+      "city": "Cave Creek",
+      "service": "Water Damage Restoration",
+      "path": "/cave-creek/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "cave-creek-fire-damage-restoration",
+      "city": "Cave Creek",
+      "service": "Fire Damage Restoration",
+      "path": "/cave-creek/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "cave-creek-reconstruction",
+      "city": "Cave Creek",
+      "service": "Reconstruction & Rebuild",
+      "path": "/cave-creek/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "el-mirage-water-damage-restoration",
+      "city": "El Mirage",
+      "service": "Water Damage Restoration",
+      "path": "/el-mirage/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "el-mirage-fire-damage-restoration",
+      "city": "El Mirage",
+      "service": "Fire Damage Restoration",
+      "path": "/el-mirage/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "el-mirage-reconstruction",
+      "city": "El Mirage",
+      "service": "Reconstruction & Rebuild",
+      "path": "/el-mirage/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tolleson-water-damage-restoration",
+      "city": "Tolleson",
+      "service": "Water Damage Restoration",
+      "path": "/tolleson/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tolleson-fire-damage-restoration",
+      "city": "Tolleson",
+      "service": "Fire Damage Restoration",
+      "path": "/tolleson/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "tolleson-reconstruction",
+      "city": "Tolleson",
+      "service": "Reconstruction & Rebuild",
+      "path": "/tolleson/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "litchfield-park-water-damage-restoration",
+      "city": "Litchfield Park",
+      "service": "Water Damage Restoration",
+      "path": "/litchfield-park/water-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "litchfield-park-fire-damage-restoration",
+      "city": "Litchfield Park",
+      "service": "Fire Damage Restoration",
+      "path": "/litchfield-park/fire-damage-restoration.html",
+      "status": "pending"
+    },
+    {
+      "type": "location",
+      "slug": "litchfield-park-reconstruction",
+      "city": "Litchfield Park",
+      "service": "Reconstruction & Rebuild",
+      "path": "/litchfield-park/reconstruction.html",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "category-1-2-3-water-damage-explained",
+      "topic": "The difference between Category 1, 2, and 3 water damage, and why it changes how a job is handled",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-heater-failure-water-damage",
+      "topic": "What to do when a water heater fails and floods a home, and why the tank's age matters",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "washing-machine-supply-line-failure",
+      "topic": "Washing machine supply-line failures — why they happen and what to check before they do",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "dishwasher-leak-hidden-cabinet-damage",
+      "topic": "Dishwasher leaks and the hidden damage they cause under cabinets and flooring before anyone notices",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "roof-leak-vs-plumbing-leak",
+      "topic": "How to tell a roof leak from a plumbing leak when water shows up on a ceiling",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "slab-leaks-signs-and-what-happens-next",
+      "topic": "Signs of a slab leak in an Arizona home, and what happens once one is found",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "irrigation-sprinkler-water-intrusion",
+      "topic": "How landscaping irrigation and sprinkler systems cause water intrusion against a home's foundation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ac-condensate-line-clog-water-damage",
+      "topic": "AC condensate line clogs — a very Arizona-specific water damage cause tied to summer AC use",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "monsoon-season-flooding-arizona-homes",
+      "topic": "How Arizona monsoon season causes flooding in homes, and what actually goes wrong",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "insurance-coverage-water-damage-explained",
+      "topic": "What homeowners insurance typically covers for water damage, and what it typically excludes",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "how-long-does-water-damage-restoration-take",
+      "topic": "How long water damage restoration actually takes, and what determines the timeline",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "can-you-stay-home-during-water-damage-restoration",
+      "topic": "Whether it's safe or practical to stay in a home during water damage restoration",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "what-is-structural-drying",
+      "topic": "What structural drying actually is and why it takes longer than it looks like it should",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "why-carpet-gets-removed-after-water-damage",
+      "topic": "Why carpet and pad often can't be saved after water damage, even when it looks fine",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-damage-rental-property-responsibility",
+      "topic": "Who's responsible for water damage in a rental property — landlord, tenant, and insurance roles",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "electrical-fire-causes-and-prevention",
+      "topic": "Common electrical fire causes in homes and how most of them are preventable",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "kitchen-cooking-fire-prevention",
+      "topic": "Why kitchen and cooking fires are the most common house fire, and how to prevent one",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "wildfire-smoke-damage-arizona-homes",
+      "topic": "How wildfire smoke damages homes near Arizona's wildland-urban interface, even without flames reaching the property",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hvac-system-after-a-fire",
+      "topic": "What happens to an HVAC system after a house fire, and why it usually needs professional cleaning",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "soot-vs-smoke-damage-cleaning",
+      "topic": "The difference between soot and smoke damage, and why they're cleaned differently",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "how-fire-insurance-claims-work",
+      "topic": "How a homeowners insurance fire claim typically proceeds, step by step",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "salvaging-belongings-after-house-fire",
+      "topic": "What can typically be salvaged after a house fire, and what usually can't",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "electrical-safety-checks-after-a-fire",
+      "topic": "Why electrical systems need a safety check after a fire before power is restored",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "fire-damage-in-attics-often-missed",
+      "topic": "Why attic fire damage is easy to miss during an initial assessment",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "permit-requirements-reconstruction-arizona",
+      "topic": "Permit requirements for home reconstruction work across Phoenix-metro cities",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "how-long-does-room-reconstruction-take",
+      "topic": "How long a full room reconstruction typically takes after mitigation is complete",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "matching-flooring-paint-after-partial-repairs",
+      "topic": "The challenge of matching flooring and paint after a partial repair, and how it's usually solved",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "working-with-insurance-adjuster-reconstruction",
+      "topic": "How to work with your insurance adjuster during the reconstruction phase of a claim",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "mold-risk-first-48-hours-after-water-damage",
+      "topic": "The mold risk window after water damage, and what to watch for in the first 48 hours",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "arizona-monsoon-season-home-prep-checklist",
+      "topic": "A practical home prep checklist ahead of Arizona's monsoon season",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "what-to-do-before-restoration-crew-arrives",
+      "topic": "What to do in the time between calling for help and a restoration crew arriving",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "documenting-damage-for-insurance-before-cleanup",
+      "topic": "How to document property damage for insurance before any cleanup starts",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "questions-to-ask-a-restoration-contractor",
+      "topic": "Questions worth asking a restoration contractor before hiring one",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "insurance-claim-timeline-property-damage",
+      "topic": "A realistic timeline for a property damage insurance claim, start to finish",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "difference-between-mitigation-and-restoration",
+      "topic": "The difference between mitigation and restoration, and why the two terms get confused",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "additional-living-expenses-coverage-explained",
+      "topic": "What 'additional living expenses' coverage means when a home is temporarily uninhabitable",
+      "status": "pending"
     }
   ],
   "location_backlog_note": "Location pages (service x city) wait on Jake reviewing an educational batch clean, per SOP §5. City list source: CLAIMS-TO-VERIFY.md 'Service area' entry."
