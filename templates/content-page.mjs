@@ -85,6 +85,6 @@ ${faqHtml}
     </section>`;
 
   return shell({
-    path, title, description, h1AsTitle: h1, serviceType, faqs, bodyHtml,
+    path, title, description, h1AsTitle: h1, serviceType, faqs, breadcrumbLabel, bodyHtml,
   });
 }

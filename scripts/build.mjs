@@ -51,6 +51,32 @@ async function buildSitemap(urlPaths) {
   await writeFile(path.join(ROOT, "sitemap.xml"), xml, "utf8");
 }
 
+// IndexNow: push new/changed URLs to Bing/Yandex/Naver/Seznam on publish.
+// Google doesn't support IndexNow (SOP-AGENTIC-SEO-WEBSITES.md §3.1) — this
+// is for the other engines only. Verification key file lives at repo root:
+// <key>.txt containing the key itself, matching keyLocation below.
+const INDEXNOW_KEY = "a489af8cc4dde1196efe6d29cce4c5fb";
+
+async function pingIndexNow(urlPaths) {
+  if (process.env.CONTEXT !== "production") return; // only real deploys, not previews/local builds
+  try {
+    const res = await fetch("https://api.indexnow.org/indexnow", {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({
+        host: "www.goldwaterfire.com",
+        key: INDEXNOW_KEY,
+        keyLocation: absUrl(`/${INDEXNOW_KEY}.txt`),
+        urlList: urlPaths.map((p) => absUrl(p)),
+      }),
+    });
+    console.log(`IndexNow: submitted ${urlPaths.length} URLs, status ${res.status}`);
+  } catch (err) {
+    // Non-fatal — a failed ping must never break the build.
+    console.warn("IndexNow submission failed (non-fatal):", err.message);
+  }
+}
+
 async function buildLlmsTxt(pages) {
   // Emerging AI-crawler standard, SOP-AGENTIC-SEO-WEBSITES.md §3. Cheap,
   // curated pointer to what matters on the site — not auto-dumping everything.
@@ -100,6 +126,7 @@ async function main() {
 
   await buildSitemap(written);
   await buildLlmsTxt(pages);
+  await pingIndexNow(written.filter((p) => !["/thanks.html", "/404.html"].includes(p)));
 
   console.log(`Built ${written.length} pages + sitemap.xml + llms.txt`);
   for (const p of written) console.log("  " + p);

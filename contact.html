@@ -19,23 +19,44 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Gold Water Fire",
-  "telephone": "+1-480-999-3339",
-  "email": "Help@goldwaterfire.com",
-  "url": "https://www.goldwaterfire.com/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "221 E Willis Rd Ste 8",
-    "addressLocality": "Chandler",
-    "addressRegion": "AZ",
-    "postalCode": "85286",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Phoenix Metropolitan Area, Arizona"
-  }
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Gold Water Fire",
+      "telephone": "+1-480-999-3339",
+      "email": "Help@goldwaterfire.com",
+      "url": "https://www.goldwaterfire.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "221 E Willis Rd Ste 8",
+        "addressLocality": "Chandler",
+        "addressRegion": "AZ",
+        "postalCode": "85286",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Phoenix Metropolitan Area, Arizona"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.goldwaterfire.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://www.goldwaterfire.com/contact.html"
+        }
+      ]
+    }
+  ]
 }
 </script>
   

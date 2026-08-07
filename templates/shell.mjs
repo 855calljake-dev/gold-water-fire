@@ -47,12 +47,23 @@ function faqSchema(faqs) {
   };
 }
 
-// Stacked schema per SOP-AGENTIC-SEO-WEBSITES.md §3 — LocalBusiness + Service + FAQ
-// together outperforms a single schema type for AI citation.
-function schemaBlock({ serviceType, faqs }) {
+function breadcrumbSchema(breadcrumbLabel, path) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: absUrl("/") },
+      { "@type": "ListItem", position: 2, name: breadcrumbLabel, item: absUrl(path) },
+    ],
+  };
+}
+
+// Stacked schema per SOP-AGENTIC-SEO-WEBSITES.md §3 — LocalBusiness + Service + FAQ +
+// BreadcrumbList together outperforms a single schema type for AI citation.
+function schemaBlock({ serviceType, faqs, breadcrumbLabel, path }) {
   const graph = [localBusinessSchema()];
   if (serviceType) graph.push(serviceSchema(serviceType));
   if (faqs && faqs.length) graph.push(faqSchema(faqs));
+  if (breadcrumbLabel && path && path !== "/") graph.push(breadcrumbSchema(breadcrumbLabel, path));
   const payload = graph.length === 1 ? { "@context": "https://schema.org", ...graph[0] }
     : { "@context": "https://schema.org", "@graph": graph };
   return `<script type="application/ld+json">\n${JSON.stringify(payload, null, 2)}\n</script>`;
@@ -130,6 +141,7 @@ export function shell({
   robotsNoindex = false,
   serviceType,
   faqs,
+  breadcrumbLabel,
   bodyHtml,
   extraHead = "",
 }) {
@@ -152,7 +164,7 @@ export function shell({
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
-  ${schemaBlock({ serviceType, faqs })}
+  ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path })}
   ${extraHead}
 </head>
 <body>
