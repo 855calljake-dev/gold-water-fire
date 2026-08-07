@@ -6,7 +6,7 @@ export function renderContact() {
       <div class="wrap">
         <div class="breadcrumb"><a href="/">Home</a> / Contact</div>
         <h1>Request Service</h1>
-        <p>Call for the fastest response, or send us the details and we'll follow up.</p>
+        <p>Free inspection, no obligation. Call for the fastest response, or send us the details and we'll follow up.</p>
       </div>
     </section>
 

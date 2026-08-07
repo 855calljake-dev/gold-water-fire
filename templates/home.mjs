@@ -10,13 +10,13 @@ export function renderHome() {
           <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business — one crew, start to finish, day or night.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
-            <a class="btn-secondary" href="/contact.html">Request Service</a>
+            <a class="btn-secondary" href="/contact.html">Get a Free Inspection</a>
           </div>
           <div class="hero-facts">
+            <div class="fact"><strong>Free</strong>Inspection</div>
             <div class="fact"><strong>24/7</strong>Emergency response</div>
             <div class="fact"><strong>AZ ROC #264344 · KB-2</strong>Licensed contractor</div>
             <div class="fact"><strong>Chandler, AZ</strong>Serving the Phoenix metro area</div>
-            <div class="fact"><strong>Jim Bennett &amp; Jake Taylor</strong>Locally owned and operated</div>
           </div>
         </div>
       </div>
