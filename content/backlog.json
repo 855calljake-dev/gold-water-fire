@@ -23,13 +23,13 @@
       "type": "educational",
       "slug": "water-damage-vs-flood-damage-insurance",
       "topic": "The practical difference between water damage and flood damage, and why homeowners insurance treats them differently",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "what-to-expect-restoration-crew-arrival",
       "topic": "What actually happens when a restoration crew arrives at a property for the first time — the walkthrough, the equipment, the first decisions",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -37,7 +37,7 @@
       "city": "Phoenix",
       "service": "Water Damage Restoration",
       "path": "/phoenix/water-damage-restoration.html",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -45,7 +45,7 @@
       "city": "Phoenix",
       "service": "Fire Damage Restoration",
       "path": "/phoenix/fire-damage-restoration.html",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -53,7 +53,7 @@
       "city": "Phoenix",
       "service": "Reconstruction & Rebuild",
       "path": "/phoenix/reconstruction.html",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
