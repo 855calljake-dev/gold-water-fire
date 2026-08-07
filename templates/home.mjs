@@ -2,16 +2,18 @@ import { shell } from "./shell.mjs";
 
 export function renderHome() {
   const bodyHtml = `
-    <section class="hero">
+    <section class="hero hero-photo">
       <div class="wrap">
         <div>
+          <span class="badge-247"><span class="dot"></span>24/7 Emergency Response</span>
           <h1>Fire and water damage restoration for the <span class="gold-word">Phoenix</span> metro area.</h1>
-          <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business — one crew, start to finish.</p>
+          <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business — one crew, start to finish, day or night.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
             <a class="btn-secondary" href="/contact.html">Request Service</a>
           </div>
           <div class="hero-facts">
+            <div class="fact"><strong>24/7</strong>Emergency response</div>
             <div class="fact"><strong>AZ ROC #264344 · KB-2</strong>Licensed contractor</div>
             <div class="fact"><strong>Chandler, AZ</strong>Serving the Phoenix metro area</div>
             <div class="fact"><strong>Jim Bennett &amp; Jake Taylor</strong>Locally owned and operated</div>
@@ -137,9 +139,9 @@ export function renderHome() {
 
   return shell({
     path: "/",
-    title: "Gold Water Fire | Fire & Water Damage Restoration — Phoenix, AZ Metro",
-    description: "Gold Water Fire provides fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339.",
-    h1AsTitle: "Gold Water Fire | Fire & Water Damage Restoration — Phoenix, AZ Metro",
+    title: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+    description: "24/7 emergency fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339, day or night.",
+    h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
     bodyHtml,
   });
 }

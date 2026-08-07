@@ -24,15 +24,20 @@ export default defineRailway(() => {
       startCommand: "npm run worker",
       // UTC. 0 9 * * * = 2 AM Phoenix year-round (AZ doesn't observe DST) —
       // same reasoning as agent-runtime's cron in bytomorrow-platform.
-      // Firing on schedule does NOT mean it publishes: RUNTIME_MODE defaults
-      // to "dry" below, and only a human flips it to "live" deliberately.
       cronSchedule: "0 9 * * *",
       restartPolicyType: "NEVER",
     },
+    // RUNTIME_MODE=live as of 2026-08-07 -- Jake's explicit direction ("new
+    // pages daily") after batch 1 was reviewed and merged clean, matching
+    // SOP-AGENTIC-SEO-WEBSITES.md §5's own stated cadence: first batch
+    // manually triggered and reviewed, recurring schedule only after that.
+    // Still never publishes anything by itself -- every run's only write is
+    // a GitHub PR (recorder.mjs), merging is still Jake's, always. Live mode
+    // is a decision about drafting cadence, not about the release gate.
     variables: {
-      RUNTIME_MODE: { value: "dry" },
+      RUNTIME_MODE: { value: "live" },
       RUNTIME_MODEL: { value: "claude-opus-5" },
-      RUNTIME_MAX_PAGES: { value: "3" },
+      RUNTIME_MAX_PAGES: { value: "5" },
       RUNTIME_MAX_BUDGET_USD: { value: "5" },
       GITHUB_REPO: { value: "855calljake-dev/gold-water-fire" },
       GITHUB_BRANCH: { value: "main" },

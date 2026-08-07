@@ -62,7 +62,7 @@ function header(activePath) {
   return `
   <div class="top-bar">
     <div class="wrap">
-      <span>Fire &amp; water damage restoration — Phoenix Metro Area</span>
+      <span>24/7 Emergency Response — Fire &amp; Water Damage — Phoenix Metro Area</span>
       <a class="phone" href="${BRAND.phoneHref}">${BRAND.phone}</a>
     </div>
   </div>
