@@ -4,8 +4,10 @@ Static site, no build step. Fire and water damage restoration and reconstruction
 Phoenix, AZ metro area. A ByTomorrow Tier-1 client site — see `bytomorrow-bos` (`CLAUDE.md` §6,
 `doctrine/SESSION-LEDGER.md`) for tenant record and onboarding history.
 
-**Not yet deployed.** Local scaffold and content only, per Jake's explicit gate: confirm before
-build, deploy, or domain cutover.
+**LIVE 2026-08-06** at `https://www.goldwaterfire.com/` (Netlify, DNS at GoDaddy). Marked by Jake
+as a demo for his team for now — real client-facing launch (public marketing, ad spend, etc.) is a
+separate decision. Email is **not** connected yet — `Help@goldwaterfire.com` is printed on the site
+but nothing receives it; Jake has said this gets wired up later, don't let it drift unaddressed.
 
 ## Structure
 
@@ -49,7 +51,8 @@ Items that need action once a Netlify site exists (none of these are set by `net
 4. Confirm `og:image` resolves as an absolute URL (`https://www.goldwaterfire.com/assets/img/og-image.jpg`).
 5. Request `/README.md` and `/CLAIMS-TO-VERIFY.md` directly over HTTP and confirm both 404 —
    `netlify.toml` blocks them, but verify post-deploy.
-6. Send a real message to `Help@goldwaterfire.com` and confirm it arrives before publishing that
-   address anywhere.
+6. **Still open, 2026-08-06:** `Help@goldwaterfire.com` is published on the live site (footer,
+   schema, contact page) but no mailbox exists behind it yet — Jake has explicitly deferred this,
+   don't let it slide unaddressed once real (non-demo) traffic is expected.
 7. This is a static multi-page site (not an SPA) — direct-link/refresh/crawl of every route should
    already work without a rewrite rule, but request each route directly once deployed to confirm.
