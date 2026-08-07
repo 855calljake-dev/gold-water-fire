@@ -86,6 +86,8 @@ export function renderContact() {
     description: "Request service or ask a question. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339 or send a request online.",
     h1AsTitle: "Contact | Gold Water Fire",
     breadcrumbLabel: "Contact",
+    datePublished: "2026-08-06T11:55:09-07:00",
+    dateModified: "2026-08-07T10:36:36-07:00",
     bodyHtml,
   });
 }

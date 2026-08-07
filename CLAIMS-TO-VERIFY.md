@@ -51,3 +51,14 @@ do not bolt this on later, and do not let a claim slide onto a page "temporarily
   consent scope, not reused here. Used Higgsfield-generated illustrative imagery instead (no real
   recognizable people, watermarked, captioned "Illustrative imagery" on every page it appears).
   Replace with real photos once Gold Water Fire completes and rights-clears actual jobs.
+- **Tier-1 checklist items 12–14 (2026-08-07)** — audited live against production, all three real:
+  `og:image` was the sitewide default on every page regardless of the page's own photo; no page
+  anywhere carried `datePublished`/`dateModified` in any form; JSON-LD never emitted `ImageObject`
+  even on photo pages. Fixed in the shared shell (`templates/shell.mjs`): `og:image` now resolves to
+  `photo.src` when present, falling back to the sitewide default only when a page has none;
+  `datePublished`/`dateModified` added to the content-page field contract and to `home.mjs`/
+  `about.mjs`/`contact.mjs` directly (real dates pulled from git history, not fabricated), rendered
+  as `article:published_time`/`article:modified_time` OG tags and as a `WebPage` node in the same
+  `@graph`; `ImageObject` added to the graph whenever a page has a photo. `thanks.html`/`404.html`
+  (noindex, excluded from the sitemap already) deliberately carry no date metadata — out of scope,
+  not an oversight. Verified live post-deploy, not just in the build output.

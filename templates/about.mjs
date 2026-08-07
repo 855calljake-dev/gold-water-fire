@@ -44,6 +44,8 @@ export function renderAbout() {
     description: "Gold Water Fire is a licensed Arizona restoration and reconstruction contractor based in Chandler, AZ, co-founded by Jim Bennett and Jake Taylor.",
     h1AsTitle: "About | Gold Water Fire",
     breadcrumbLabel: "About",
+    datePublished: "2026-08-06T11:55:09-07:00",
+    dateModified: "2026-08-07T10:36:36-07:00",
     bodyHtml,
   });
 }

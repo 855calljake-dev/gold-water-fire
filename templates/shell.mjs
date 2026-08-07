@@ -57,13 +57,35 @@ function breadcrumbSchema(breadcrumbLabel, path) {
   };
 }
 
+function imageObjectSchema(photo) {
+  return {
+    "@type": "ImageObject",
+    url: absUrl(photo.src),
+    contentUrl: absUrl(photo.src),
+    description: photo.alt,
+  };
+}
+
+function webPageSchema({ path, datePublished, dateModified }) {
+  return {
+    "@type": "WebPage",
+    "@id": absUrl(path) + "#webpage",
+    url: absUrl(path),
+    datePublished,
+    dateModified: dateModified || datePublished,
+  };
+}
+
 // Stacked schema per SOP-AGENTIC-SEO-WEBSITES.md §3 — LocalBusiness + Service + FAQ +
-// BreadcrumbList together outperforms a single schema type for AI citation.
-function schemaBlock({ serviceType, faqs, breadcrumbLabel, path }) {
+// BreadcrumbList + ImageObject + WebPage (dates) together outperforms a single schema
+// type for AI citation. BYTOMORROW-TECH-STACK.md Tier-1 checklist item 14.
+function schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified }) {
   const graph = [localBusinessSchema()];
   if (serviceType) graph.push(serviceSchema(serviceType));
   if (faqs && faqs.length) graph.push(faqSchema(faqs));
   if (breadcrumbLabel && path && path !== "/") graph.push(breadcrumbSchema(breadcrumbLabel, path));
+  if (photo) graph.push(imageObjectSchema(photo));
+  if (datePublished) graph.push(webPageSchema({ path, datePublished, dateModified }));
   const payload = graph.length === 1 ? { "@context": "https://schema.org", ...graph[0] }
     : { "@context": "https://schema.org", "@graph": graph };
   return `<script type="application/ld+json">\n${JSON.stringify(payload, null, 2)}\n</script>`;
@@ -137,15 +159,21 @@ export function shell({
   title,
   description,
   h1AsTitle,
-  ogImage = "/assets/img/og-image.jpg",
+  ogImage,
   robotsNoindex = false,
   serviceType,
   faqs,
   breadcrumbLabel,
+  photo,
+  datePublished,
+  dateModified,
   bodyHtml,
   extraHead = "",
 }) {
   const canonical = absUrl(path);
+  // Tier-1 checklist item 12 (BYTOMORROW-TECH-STACK.md): resolve to the page's own
+  // photo before falling back to the sitewide default — never the reverse.
+  const resolvedOgImage = ogImage || photo?.src || "/assets/img/og-image.jpg";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -159,12 +187,14 @@ export function shell({
   <meta property="og:title" content="${esc(h1AsTitle || title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${absUrl(ogImage)}">
+  <meta property="og:image" content="${absUrl(resolvedOgImage)}">
+  ${datePublished ? `<meta property="article:published_time" content="${datePublished}">` : ""}
+  ${datePublished ? `<meta property="article:modified_time" content="${dateModified || datePublished}">` : ""}
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
-  ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path })}
+  ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified })}
   ${extraHead}
 </head>
 <body>

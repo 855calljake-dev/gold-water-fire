@@ -4,11 +4,14 @@ import { esc } from "./lib.mjs";
 // The reusable template for service, educational, and location pages —
 // the page type this whole pipeline exists to generate at volume.
 // Field contract (SOP-AGENTIC-SEO-WEBSITES.md §4): slug, title, description,
-// h1, breadcrumbLabel, intro, sections[], faqs[], photo, cta, evidence.
+// h1, breadcrumbLabel, intro, sections[], faqs[], photo, cta, evidence,
+// datePublished (set once, at first draft), dateModified (updated on every
+// content edit) — Tier-1 checklist item 13, BYTOMORROW-TECH-STACK.md.
 export function renderContentPage(data) {
   const {
     path, title, description, h1, breadcrumbLabel, intro,
     sections = [], faqs = [], photo, cta, serviceType, internalLinks = [],
+    datePublished, dateModified,
   } = data;
 
   const sectionsHtml = sections.map((s) => {
@@ -85,6 +88,7 @@ ${faqHtml}
     </section>`;
 
   return shell({
-    path, title, description, h1AsTitle: h1, serviceType, faqs, breadcrumbLabel, bodyHtml,
+    path, title, description, h1AsTitle: h1, serviceType, faqs, breadcrumbLabel, photo,
+    datePublished, dateModified, bodyHtml,
   });
 }

@@ -142,6 +142,8 @@ export function renderHome() {
     title: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
     description: "24/7 emergency fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339, day or night.",
     h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+    datePublished: "2026-08-06T08:54:02-07:00",
+    dateModified: "2026-08-07T09:41:39-07:00",
     bodyHtml,
   });
 }
