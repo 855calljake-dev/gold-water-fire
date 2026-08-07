@@ -78,3 +78,9 @@
   to = "/"
   status = 404
   force = true
+
+[[redirects]]
+  from = "/IMAGERY-REFERENCES.md"
+  to = "/"
+  status = 404
+  force = true
