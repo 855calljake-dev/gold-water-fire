@@ -61,6 +61,13 @@ async function main() {
           retryFeedback: attempt > 1 ? lastProblems : undefined,
         });
         page.type = item.type;
+        // Tier-1 checklist item 13 (BYTOMORROW-TECH-STACK.md): every page needs
+        // datePublished/dateModified. The content-page template contract has
+        // supported these fields since 4b46664, but nothing in this pipeline
+        // ever set them -- every worker-drafted page was silently missing this
+        // metadata. Set once here so it can never be forgotten per-page again.
+        page.datePublished = dateStr;
+        page.dateModified = dateStr;
         const check = checkPage(page);
         // Opus 5 approx $15/$75 per MTok in/out — rough budget guard, not billing-accurate.
         totalCostEstimate += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
