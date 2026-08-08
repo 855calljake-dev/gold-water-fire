@@ -5,30 +5,35 @@
       "type": "educational",
       "slug": "what-to-do-first-hour-water-damage",
       "topic": "What to do in the first hour after a pipe bursts or you discover water damage",
+      "faithLoopPhase": "invitation",
       "status": "live"
     },
     {
       "type": "educational",
       "slug": "signs-of-hidden-water-damage",
       "topic": "How to spot hidden water damage in a home before it becomes a bigger problem — signs behind walls, under floors, in ceilings",
+      "faithLoopPhase": "reflection",
       "status": "live"
     },
     {
       "type": "educational",
       "slug": "why-smoke-odor-lingers-after-a-fire",
       "topic": "Why smoke odor lingers in a home long after a fire is out, and what actually removes it (as opposed to just masking it)",
+      "faithLoopPhase": "reflection",
       "status": "live"
     },
     {
       "type": "educational",
       "slug": "water-damage-vs-flood-damage-insurance",
       "topic": "The practical difference between water damage and flood damage, and why homeowners insurance treats them differently",
+      "faithLoopPhase": "reflection",
       "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "what-to-expect-restoration-crew-arrival",
       "topic": "What actually happens when a restoration crew arrives at a property for the first time — the walkthrough, the equipment, the first decisions",
+      "faithLoopPhase": "invitation",
       "status": "drafted"
     },
     {
@@ -37,6 +42,7 @@
       "city": "Phoenix",
       "service": "Water Damage Restoration",
       "path": "/phoenix/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "drafted"
     },
     {
@@ -45,6 +51,7 @@
       "city": "Phoenix",
       "service": "Fire Damage Restoration",
       "path": "/phoenix/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "drafted"
     },
     {
@@ -53,6 +60,7 @@
       "city": "Phoenix",
       "service": "Reconstruction & Rebuild",
       "path": "/phoenix/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "drafted"
     },
     {
@@ -61,6 +69,7 @@
       "city": "Mesa",
       "service": "Water Damage Restoration",
       "path": "/mesa/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -69,6 +78,7 @@
       "city": "Mesa",
       "service": "Fire Damage Restoration",
       "path": "/mesa/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -77,6 +87,7 @@
       "city": "Mesa",
       "service": "Reconstruction & Rebuild",
       "path": "/mesa/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -85,6 +96,7 @@
       "city": "Chandler",
       "service": "Water Damage Restoration",
       "path": "/chandler/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -93,6 +105,7 @@
       "city": "Chandler",
       "service": "Fire Damage Restoration",
       "path": "/chandler/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -101,6 +114,7 @@
       "city": "Chandler",
       "service": "Reconstruction & Rebuild",
       "path": "/chandler/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -109,6 +123,7 @@
       "city": "Scottsdale",
       "service": "Water Damage Restoration",
       "path": "/scottsdale/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -117,6 +132,7 @@
       "city": "Scottsdale",
       "service": "Fire Damage Restoration",
       "path": "/scottsdale/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -125,6 +141,7 @@
       "city": "Scottsdale",
       "service": "Reconstruction & Rebuild",
       "path": "/scottsdale/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -133,6 +150,7 @@
       "city": "Glendale",
       "service": "Water Damage Restoration",
       "path": "/glendale/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -141,6 +159,7 @@
       "city": "Glendale",
       "service": "Fire Damage Restoration",
       "path": "/glendale/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -149,6 +168,7 @@
       "city": "Glendale",
       "service": "Reconstruction & Rebuild",
       "path": "/glendale/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -157,6 +177,7 @@
       "city": "Gilbert",
       "service": "Water Damage Restoration",
       "path": "/gilbert/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -165,6 +186,7 @@
       "city": "Gilbert",
       "service": "Fire Damage Restoration",
       "path": "/gilbert/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -173,6 +195,7 @@
       "city": "Gilbert",
       "service": "Reconstruction & Rebuild",
       "path": "/gilbert/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -181,6 +204,7 @@
       "city": "Tempe",
       "service": "Water Damage Restoration",
       "path": "/tempe/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -189,6 +213,7 @@
       "city": "Tempe",
       "service": "Fire Damage Restoration",
       "path": "/tempe/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -197,6 +222,7 @@
       "city": "Tempe",
       "service": "Reconstruction & Rebuild",
       "path": "/tempe/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -205,6 +231,7 @@
       "city": "Peoria",
       "service": "Water Damage Restoration",
       "path": "/peoria/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -213,6 +240,7 @@
       "city": "Peoria",
       "service": "Fire Damage Restoration",
       "path": "/peoria/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -221,6 +249,7 @@
       "city": "Peoria",
       "service": "Reconstruction & Rebuild",
       "path": "/peoria/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -229,6 +258,7 @@
       "city": "Surprise",
       "service": "Water Damage Restoration",
       "path": "/surprise/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -237,6 +267,7 @@
       "city": "Surprise",
       "service": "Fire Damage Restoration",
       "path": "/surprise/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -245,6 +276,7 @@
       "city": "Surprise",
       "service": "Reconstruction & Rebuild",
       "path": "/surprise/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -253,6 +285,7 @@
       "city": "Avondale",
       "service": "Water Damage Restoration",
       "path": "/avondale/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -261,6 +294,7 @@
       "city": "Avondale",
       "service": "Fire Damage Restoration",
       "path": "/avondale/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -269,6 +303,7 @@
       "city": "Avondale",
       "service": "Reconstruction & Rebuild",
       "path": "/avondale/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -277,6 +312,7 @@
       "city": "Goodyear",
       "service": "Water Damage Restoration",
       "path": "/goodyear/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -285,6 +321,7 @@
       "city": "Goodyear",
       "service": "Fire Damage Restoration",
       "path": "/goodyear/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -293,6 +330,7 @@
       "city": "Goodyear",
       "service": "Reconstruction & Rebuild",
       "path": "/goodyear/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -301,6 +339,7 @@
       "city": "Buckeye",
       "service": "Water Damage Restoration",
       "path": "/buckeye/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -309,6 +348,7 @@
       "city": "Buckeye",
       "service": "Fire Damage Restoration",
       "path": "/buckeye/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -317,6 +357,7 @@
       "city": "Buckeye",
       "service": "Reconstruction & Rebuild",
       "path": "/buckeye/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -325,6 +366,7 @@
       "city": "Apache Junction",
       "service": "Water Damage Restoration",
       "path": "/apache-junction/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -333,6 +375,7 @@
       "city": "Apache Junction",
       "service": "Fire Damage Restoration",
       "path": "/apache-junction/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -341,6 +384,7 @@
       "city": "Apache Junction",
       "service": "Reconstruction & Rebuild",
       "path": "/apache-junction/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -349,6 +393,7 @@
       "city": "Queen Creek",
       "service": "Water Damage Restoration",
       "path": "/queen-creek/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -357,6 +402,7 @@
       "city": "Queen Creek",
       "service": "Fire Damage Restoration",
       "path": "/queen-creek/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -365,6 +411,7 @@
       "city": "Queen Creek",
       "service": "Reconstruction & Rebuild",
       "path": "/queen-creek/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -373,6 +420,7 @@
       "city": "San Tan Valley",
       "service": "Water Damage Restoration",
       "path": "/san-tan-valley/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -381,6 +429,7 @@
       "city": "San Tan Valley",
       "service": "Fire Damage Restoration",
       "path": "/san-tan-valley/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -389,6 +438,7 @@
       "city": "San Tan Valley",
       "service": "Reconstruction & Rebuild",
       "path": "/san-tan-valley/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -397,6 +447,7 @@
       "city": "Fountain Hills",
       "service": "Water Damage Restoration",
       "path": "/fountain-hills/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -405,6 +456,7 @@
       "city": "Fountain Hills",
       "service": "Fire Damage Restoration",
       "path": "/fountain-hills/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -413,6 +465,7 @@
       "city": "Fountain Hills",
       "service": "Reconstruction & Rebuild",
       "path": "/fountain-hills/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -421,6 +474,7 @@
       "city": "Paradise Valley",
       "service": "Water Damage Restoration",
       "path": "/paradise-valley/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -429,6 +483,7 @@
       "city": "Paradise Valley",
       "service": "Fire Damage Restoration",
       "path": "/paradise-valley/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -437,6 +492,7 @@
       "city": "Paradise Valley",
       "service": "Reconstruction & Rebuild",
       "path": "/paradise-valley/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -445,6 +501,7 @@
       "city": "Cave Creek",
       "service": "Water Damage Restoration",
       "path": "/cave-creek/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -453,6 +510,7 @@
       "city": "Cave Creek",
       "service": "Fire Damage Restoration",
       "path": "/cave-creek/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -461,6 +519,7 @@
       "city": "Cave Creek",
       "service": "Reconstruction & Rebuild",
       "path": "/cave-creek/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -469,6 +528,7 @@
       "city": "El Mirage",
       "service": "Water Damage Restoration",
       "path": "/el-mirage/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -477,6 +537,7 @@
       "city": "El Mirage",
       "service": "Fire Damage Restoration",
       "path": "/el-mirage/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -485,6 +546,7 @@
       "city": "El Mirage",
       "service": "Reconstruction & Rebuild",
       "path": "/el-mirage/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -493,6 +555,7 @@
       "city": "Tolleson",
       "service": "Water Damage Restoration",
       "path": "/tolleson/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -501,6 +564,7 @@
       "city": "Tolleson",
       "service": "Fire Damage Restoration",
       "path": "/tolleson/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -509,6 +573,7 @@
       "city": "Tolleson",
       "service": "Reconstruction & Rebuild",
       "path": "/tolleson/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -517,6 +582,7 @@
       "city": "Litchfield Park",
       "service": "Water Damage Restoration",
       "path": "/litchfield-park/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -525,6 +591,7 @@
       "city": "Litchfield Park",
       "service": "Fire Damage Restoration",
       "path": "/litchfield-park/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
@@ -533,222 +600,259 @@
       "city": "Litchfield Park",
       "service": "Reconstruction & Rebuild",
       "path": "/litchfield-park/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "category-1-2-3-water-damage-explained",
       "topic": "The difference between Category 1, 2, and 3 water damage, and why it changes how a job is handled",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "water-heater-failure-water-damage",
       "topic": "What to do when a water heater fails and floods a home, and why the tank's age matters",
+      "faithLoopPhase": "invitation",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "washing-machine-supply-line-failure",
       "topic": "Washing machine supply-line failures — why they happen and what to check before they do",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "dishwasher-leak-hidden-cabinet-damage",
       "topic": "Dishwasher leaks and the hidden damage they cause under cabinets and flooring before anyone notices",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "roof-leak-vs-plumbing-leak",
       "topic": "How to tell a roof leak from a plumbing leak when water shows up on a ceiling",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "slab-leaks-signs-and-what-happens-next",
       "topic": "Signs of a slab leak in an Arizona home, and what happens once one is found",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "irrigation-sprinkler-water-intrusion",
       "topic": "How landscaping irrigation and sprinkler systems cause water intrusion against a home's foundation",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "ac-condensate-line-clog-water-damage",
       "topic": "AC condensate line clogs — a very Arizona-specific water damage cause tied to summer AC use",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "monsoon-season-flooding-arizona-homes",
       "topic": "How Arizona monsoon season causes flooding in homes, and what actually goes wrong",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "insurance-coverage-water-damage-explained",
       "topic": "What homeowners insurance typically covers for water damage, and what it typically excludes",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "how-long-does-water-damage-restoration-take",
       "topic": "How long water damage restoration actually takes, and what determines the timeline",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "can-you-stay-home-during-water-damage-restoration",
       "topic": "Whether it's safe or practical to stay in a home during water damage restoration",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "what-is-structural-drying",
       "topic": "What structural drying actually is and why it takes longer than it looks like it should",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "why-carpet-gets-removed-after-water-damage",
       "topic": "Why carpet and pad often can't be saved after water damage, even when it looks fine",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "water-damage-rental-property-responsibility",
       "topic": "Who's responsible for water damage in a rental property — landlord, tenant, and insurance roles",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "electrical-fire-causes-and-prevention",
       "topic": "Common electrical fire causes in homes and how most of them are preventable",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "kitchen-cooking-fire-prevention",
       "topic": "Why kitchen and cooking fires are the most common house fire, and how to prevent one",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "wildfire-smoke-damage-arizona-homes",
       "topic": "How wildfire smoke damages homes near Arizona's wildland-urban interface, even without flames reaching the property",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "hvac-system-after-a-fire",
       "topic": "What happens to an HVAC system after a house fire, and why it usually needs professional cleaning",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "soot-vs-smoke-damage-cleaning",
       "topic": "The difference between soot and smoke damage, and why they're cleaned differently",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "how-fire-insurance-claims-work",
       "topic": "How a homeowners insurance fire claim typically proceeds, step by step",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "salvaging-belongings-after-house-fire",
       "topic": "What can typically be salvaged after a house fire, and what usually can't",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "electrical-safety-checks-after-a-fire",
       "topic": "Why electrical systems need a safety check after a fire before power is restored",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "fire-damage-in-attics-often-missed",
       "topic": "Why attic fire damage is easy to miss during an initial assessment",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "permit-requirements-reconstruction-arizona",
       "topic": "Permit requirements for home reconstruction work across Phoenix-metro cities",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "how-long-does-room-reconstruction-take",
       "topic": "How long a full room reconstruction typically takes after mitigation is complete",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "matching-flooring-paint-after-partial-repairs",
       "topic": "The challenge of matching flooring and paint after a partial repair, and how it's usually solved",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "working-with-insurance-adjuster-reconstruction",
       "topic": "How to work with your insurance adjuster during the reconstruction phase of a claim",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "mold-risk-first-48-hours-after-water-damage",
       "topic": "The mold risk window after water damage, and what to watch for in the first 48 hours",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "arizona-monsoon-season-home-prep-checklist",
       "topic": "A practical home prep checklist ahead of Arizona's monsoon season",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "what-to-do-before-restoration-crew-arrives",
       "topic": "What to do in the time between calling for help and a restoration crew arriving",
+      "faithLoopPhase": "invitation",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "documenting-damage-for-insurance-before-cleanup",
       "topic": "How to document property damage for insurance before any cleanup starts",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "questions-to-ask-a-restoration-contractor",
       "topic": "Questions worth asking a restoration contractor before hiring one",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "insurance-claim-timeline-property-damage",
       "topic": "A realistic timeline for a property damage insurance claim, start to finish",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "difference-between-mitigation-and-restoration",
       "topic": "The difference between mitigation and restoration, and why the two terms get confused",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "additional-living-expenses-coverage-explained",
       "topic": "What 'additional living expenses' coverage means when a home is temporarily uninhabitable",
+      "faithLoopPhase": "reflection",
       "status": "pending"
     }
   ],

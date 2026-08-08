@@ -1,5 +1,37 @@
 import { CONFIRMED_FACTS } from "./facts.mjs";
 
+/**
+ * Required alongside the evidence gate, not optional — Jake's ruling 2026-08-08
+ * (bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md §2 item 5; 2nd Brain wiki
+ * 01-Foundation/04-faith-loop-and-pride-cycle.md "Extended to every BT-BOS
+ * commercial tenant"). Every BT-BOS tenant is commercial, so the Anvil
+ * Commercial-face rule applies here too, same as bytomorrow-platform's own SEO
+ * pipeline (commit d371899, src/lib/jobs/seo-page-draft.ts) — this is the same
+ * map, ported. Canonical sequence: Shame -> Reflection -> Invitation ->
+ * Sacrifice -> Faith -> Peace, per the wiki file, not content-by-jake.md's
+ * differently-sequenced variant.
+ *
+ * The phase name itself must never appear in rendered output — these strings
+ * are tone direction for the model, never copy to echo back.
+ */
+const FAITH_LOOP_TONE = {
+  reflection:
+    "Emotional register (do not name this, just write in it): Reflection. The reader is sitting " +
+    "with a problem they haven't fully named yet. Validate it fully — the ache of not " +
+    "understanding why this keeps happening — before offering any resolution. Do not rush toward " +
+    "an answer or a next step; let the problem be seen clearly first.",
+  invitation:
+    "Emotional register (do not name this, just write in it): Invitation. The reader already " +
+    "knows the problem; they need one small, low-stakes door to open, not a full commitment. " +
+    "Offer the next step lightly — 'what if this isn't as hard as it feels' — never pressure or " +
+    "imply they're behind for not having acted already.",
+  "sacrifice-faith":
+    "Emotional register (do not name this, just write in it): Sacrifice into Faith. The reader is " +
+    "close to deciding to stop handling this alone. Earn that — show plainly why trusting someone " +
+    "else with this specific thing is reasonable — rather than demanding the CTA outright. The ask " +
+    "should feel like the natural next sentence, not a pivot.",
+};
+
 const PAGE_SCHEMA = {
   name: "emit_page",
   description: "Emit one page's content, matching Gold Water Fire's static site content contract.",
@@ -65,11 +97,13 @@ const PAGE_SCHEMA = {
   },
 };
 
-function systemPrompt() {
+function systemPrompt(faithLoopPhase) {
   return `You are drafting one page of website content for Gold Water Fire, a fire and water damage restoration and reconstruction contractor.
 
 CONFIRMED FACTS — the only facts you may state as true about the company:
 ${CONFIRMED_FACTS}
+
+${FAITH_LOOP_TONE[faithLoopPhase] ?? FAITH_LOOP_TONE.reflection}
 
 HARD RULES (violating any of these means the page cannot ship — a code check re-verifies these after you respond, so do not rely on phrasing around them):
 1. No number or specific claim that is not in the confirmed facts above. Not rounded, not "typically," not implied. This includes: no IICRC/certification claim, no "bonded and insured," no specific years-in-business or founding date, no job/project count, no specific response-time number (e.g. "1-hour response"), no hard "24/7" claim, no testimonials or star ratings, no competitor names.
@@ -77,6 +111,7 @@ HARD RULES (violating any of these means the page cannot ship — a code check r
 3. General industry/educational information (how restoration processes work, what causes damage, what to look for) is fine to state as general knowledge — it does not need to trace to a confirmed fact, because it is not a claim about Gold Water Fire specifically. Keep this content genuinely useful and specific (real detail), not generic filler.
 4. Body text may contain plain text and simple <a href="...">link text</a> tags. The ONLY valid internal link targets are these exact paths — do not invent a "/services/" prefix or any other URL, these are the real ones: /water-damage-restoration.html, /fire-damage-restoration.html, /reconstruction.html, /about.html, /contact.html. Link to these verbatim.
 5. Write for a homeowner in a stressful situation — clear, direct, no jargon, no hype adjectives ("amazing," "incredible"), no AI-sounding filler phrases.
+6. Never write the words "Faith Loop," "Reflection," "Invitation," "Sacrifice," or any label for the emotional register above. It is a direction for how you write, never content to name — the page must read as plain, unstructured human writing.
 
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
 }
@@ -106,7 +141,7 @@ export async function draftPage({ item, apiKey, model, retryFeedback }) {
       max_tokens: 8000,
       // temperature is deprecated/rejected on claude-opus-5 (verified against
       // a live API error 2026-08-06) -- omit rather than pin a value.
-      system: systemPrompt(),
+      system: systemPrompt(item.faithLoopPhase),
       messages: [{ role: "user", content: userPrompt }],
       tools: [PAGE_SCHEMA],
       tool_choice: { type: "tool", name: "emit_page" },
