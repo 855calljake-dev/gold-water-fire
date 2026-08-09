@@ -35,6 +35,7 @@ to open a PR, and even in live mode the only write is that PR.
 | `draft.mjs` | One Anthropic API call per backlog item, forced tool-call for structured output. Model: Opus 5, per `CONTENT-PIPELINE.md`'s drafting-model routing. |
 | `evidenceGate.mjs` | Structural check — not left to prompt compliance. Rejects unconfirmed claims and any HTML beyond a plain `<a>` link. |
 | `recorder.mjs` | The only code that writes to GitHub. Uses the Contents API directly (branch, file writes, PR) — no local clone needed for a few JSON files. |
+| `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK — same style as `draft.mjs`. |
 
 ## Three things that are load-bearing (same shape as agent-runtime, sized down)
 
@@ -54,12 +55,21 @@ service that isn't running concurrent schedules against itself, not a full
 double-fire guard. Revisit if this worker ever runs on tighter-than-daily
 cadence.
 
+**No page ships without an approved image.** SOP §8.5, strengthened
+2026-08-08: an image isn't optional polish, it's a release requirement. If
+`image.mjs` fails for a page, that page is dropped from this run entirely —
+not shipped text-only, not partially merged — and stays `pending` in the
+backlog for the next run to try again. A missing/wrong `HIGGSFIELD_API_KEY`
+therefore blocks the *entire* batch, by design, same as a missing
+`ANTHROPIC_API_KEY` would.
+
 ## Environment
 
 | Variable | Required | Notes |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | yes | Freshly scoped for this service. Never a reused personal/dev key. |
 | `GITHUB_PUSH_TOKEN` | yes | Fine-grained PAT scoped to **only** `855calljake-dev/gold-water-fire`, contents + pull-requests write. Same reasoning as `DOCTRINE_PUSH_TOKEN` in agent-runtime. |
+| `HIGGSFIELD_API_KEY` | yes | Required in every mode, not just live — SOP §8.5 makes an image a release requirement, so even a dry run needs to exercise real generation. **Not deployed to this service yet as of 2026-08-08** (`KEY-INVENTORY.md`) — must be added before this worker will run at all. |
 | `RUNTIME_MODE` | no | `dry` (default) or `live`. |
 | `RUNTIME_MODEL` | no | Defaults to `claude-opus-5`. |
 | `RUNTIME_MAX_PAGES` | no | Default 3 — pages drafted per run. |

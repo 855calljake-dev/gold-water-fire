@@ -10,6 +10,7 @@ import { fileURLToPath } from "node:url";
 import { loadConfig } from "./config.mjs";
 import { draftPage } from "./draft.mjs";
 import { checkPage } from "./evidenceGate.mjs";
+import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
 import { findOpenBatchPr, openContentBatchPr } from "./recorder.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -81,8 +82,27 @@ async function main() {
           lastProblems = check.problems;
           continue;
         }
+
+        // SOP-AGENTIC-SEO-WEBSITES.md §8.5, strengthened 2026-08-08: an
+        // approved image is a release requirement now. Text passing the
+        // evidence gate is not enough to ship this run -- if image
+        // generation fails, this item does not go in `drafted[]` at all
+        // (stays "pending" in the backlog, tried again next run) rather
+        // than shipping a page whose image someone could accidentally merge
+        // without noticing is missing. Not retried against the text-attempt
+        // loop -- an image failure is not a text quality problem, so
+        // re-drafting the text would waste tokens for no reason.
+        const image = await generateImage({ item, apiKey: cfg.higgsfieldApiKey });
+        totalCostEstimate += IMAGE_COST_USD_ESTIMATE;
+        if (!image) {
+          console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);
+          lastProblems = ["image generation failed"];
+          break;
+        }
+        page.photo = { src: `/assets/img/${image.filename}`, alt: image.alt };
+
         console.log(`[work] OK ${item.slug} -> ${page.path}${attempt > 1 ? " (after retry)" : ""}`);
-        drafted.push({ item, page });
+        drafted.push({ item, page, image });
         shipped = true;
         break;
       } catch (err) {
@@ -109,8 +129,8 @@ async function main() {
   }
 
   if (!cfg.isLive) {
-    console.log(`[record] DRY RUN — would open a PR with ${drafted.length} page(s). No GitHub write performed.`);
-    for (const d of drafted) console.log(`  - ${d.page.path}: ${d.page.title}`);
+    console.log(`[record] DRY RUN — would open a PR with ${drafted.length} page(s), each with an image. No GitHub write performed.`);
+    for (const d of drafted) console.log(`  - ${d.page.path}: ${d.page.title} (image: ${d.image.filename})`);
     process.exit(failed.length ? 1 : 0);
   }
 
@@ -129,6 +149,7 @@ async function main() {
     baseBranch: cfg.branch,
     dateStr,
     pages: drafted.map((d) => d.page),
+    images: drafted.map((d) => d.image),
     backlogUpdate,
     summaryLines,
   });

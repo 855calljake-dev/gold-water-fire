@@ -34,7 +34,7 @@ export async function findOpenBatchPr({ token, repo, dateStr }) {
   return prs.length ? prs[0] : null;
 }
 
-export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pages, backlogUpdate, summaryLines }) {
+export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pages, images, backlogUpdate, summaryLines }) {
   const branchName = `content-batch-${dateStr}-${Date.now()}`;
 
   const baseRef = await gh(token, `/repos/${repo}/git/ref/heads/${baseBranch}`);
@@ -52,6 +52,22 @@ export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pag
       body: JSON.stringify({
         message: `Draft: ${page.title}`,
         content: b64(JSON.stringify(page, null, 2) + "\n"),
+        branch: branchName,
+      }),
+    });
+  }
+
+  // SOP-AGENTIC-SEO-WEBSITES.md §8.5: the image lands in the SAME PR as its
+  // page, opened by this same call -- no separate image-approval flow.
+  // Contents API PUT wants base64 for binary files too, same endpoint as
+  // the JSON writes above, just raw bytes instead of a UTF-8 string.
+  for (const image of images || []) {
+    const filePath = `assets/img/${image.filename}`;
+    await gh(token, `/repos/${repo}/contents/${filePath}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        message: `Image: ${image.filename}`,
+        content: image.buffer.toString("base64"),
         branch: branchName,
       }),
     });

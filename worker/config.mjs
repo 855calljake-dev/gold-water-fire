@@ -17,6 +17,10 @@ export function loadConfig() {
     mode,
     isLive: mode === "live",
     anthropicApiKey: required("ANTHROPIC_API_KEY"),
+    // SOP-AGENTIC-SEO-WEBSITES.md §8.5, strengthened 2026-08-08: an approved
+    // image is a release requirement now, not optional -- required in every
+    // mode (including dry) so dry runs actually exercise the full gate.
+    higgsfieldApiKey: required("HIGGSFIELD_API_KEY"),
     // Read AND push credential — same reasoning as agent-runtime's
     // DOCTRINE_PUSH_TOKEN: required in every mode because GitHub's Contents
     // API needs auth to read the repo too, not only to write.
