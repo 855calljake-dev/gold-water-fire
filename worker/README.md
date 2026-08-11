@@ -109,12 +109,13 @@ a dead provider used to cost ~$2/night in discarded drafts. `image.mjs` now
 fails fast — the first account-level error (401/403/404) aborts the run rather
 than drafting the remaining four pages. 429 is excluded, being transient.
 
-**Open item — page weight.** Generated PNGs run ~1.9MB at 2048×1152. The
-site's hand-made images are ~270KB JPEGs, so worker output is roughly 7× heavier
-than what's already there. On a site whose entire purpose is search, that is a
-real Core Web Vitals cost. Not addressed: converting would mean a new system
-dependency (ImageMagick in `nixpacks.toml`) or an output-format parameter that
-Higgsfield's catalog doesn't document (`input_schema` comes back null).
+**Page weight — FIXED (§8.3), same day.** Generated PNGs arrive ~1.9MB at
+2048×1152 against the site's own ~270KB JPEGs — ~7× heavier, a real Core Web
+Vitals cost on a site built for search. `optimizeForWeb()` now converts through
+ImageMagick before tagging: max 1600px, q82 progressive JPEG. Measured on real
+output: **1,899,757 → 90,777 bytes, 95% smaller**, metadata intact, quality
+holds. Checked first that it couldn't be avoided — Higgsfield's CDN ignores
+every transform parameter and the catalog exposes no output-format option.
 
 **CLOSED: the `exiftool` deploy gap.** `SOP-AGENTIC-SEO-WEBSITES.md` §8.3.1
 flagged that the Railway image had no `exiftool`, so §8.3.1's metadata step
