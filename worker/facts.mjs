@@ -27,6 +27,20 @@ export const FORBIDDEN_PATTERNS = [
   { label: "hard 24/7 availability claim", re: /24\/7|24-hour|around the clock/i },
   { label: "testimonial/review language", re: /\b(said|told us|reviewed by|stars?)\b.{0,30}\b(customer|client)\b|"[^"]{15,}"\s*[-–—]\s*[A-Z][a-z]+/ },
   { label: "competitor mention", re: /\b(Preferred Choice|ServPro|ServiceMaster|Restoration 1|Paul Davis|BELFOR)\b/i },
+  // draft.mjs's hard rule 6 says the emotional register is direction for HOW
+  // the model writes and never content to echo back. That was prompt-only,
+  // and this file exists precisely because prompt compliance is not
+  // verification -- the same reasoning as every rule above it. A leaked
+  // "Faith Loop" on a live restoration page would read as nonsense to a
+  // homeowner and expose the internal system to a competitor reading the
+  // site.
+  //
+  // Matches the SYSTEM terms only, not the bare phase words. "Reflection"
+  // and "invitation" have ordinary English uses that could legitimately
+  // appear in restoration copy, and a gate that rejects real drafts for
+  // using a common word would get switched off. These compounds have no
+  // innocent reading on a page about water damage.
+  { label: "internal Faith Loop / Pride Cycle label leaked into copy", re: /\bfaith[\s-]?loop\b|\bpride[\s-]?cycle\b|\bsacrifice[\s-]faith\b|\bemotional register\b|\bscrollkeeper\b/i },
 ];
 
 export function findForbiddenClaims(text) {
