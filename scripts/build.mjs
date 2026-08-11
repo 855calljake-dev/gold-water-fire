@@ -7,7 +7,7 @@
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { renderContentPage } from "../templates/content-page.mjs";
+import { renderContentPage, renderGuidesIndex } from "../templates/content-page.mjs";
 import { renderHome } from "../templates/home.mjs";
 import { renderAbout } from "../templates/about.mjs";
 import { renderContact } from "../templates/contact.mjs";
@@ -114,9 +114,13 @@ async function main() {
   const written = [];
 
   for (const data of pages) {
-    const html = renderContentPage(data);
+    const html = renderContentPage(data, pages);
     written.push(await writeHtml(data.path, html));
   }
+
+  // Checklist item 15: the guides hub. Generated from the same page data, so
+  // every future educational page appears here with zero extra effort.
+  written.push(await writeHtml("/guides/index.html", renderGuidesIndex(pages)));
 
   written.push(await writeHtml("/", renderHome()));
   written.push(await writeHtml("/about.html", renderAbout()));
