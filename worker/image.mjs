@@ -114,11 +114,26 @@ function buildPrompt(item) {
 // construction); this appends a geography token so every filename carries
 // one, matching the convention's own worked example
 // ("water-damage-drying-equipment-exposed-studs-arizona.png").
-function buildFilename(item) {
+function buildFilename(item, ext) {
   const geography = item.type === "location"
     ? item.city.toLowerCase().replace(/[^a-z0-9]+/g, "-")
     : "phoenix";
-  return `${item.slug}-${geography}-az.jpg`;
+  return `${item.slug}-${geography}-az.${ext}`;
+}
+
+// The extension has to match the actual bytes, not what we hoped for.
+// exiftool picks its parser from the file extension and hard-refuses a
+// mismatch -- "Not a valid JPG (looks more like a PNG)" -- which the §8.3.1
+// fail-soft then swallows, shipping an untagged image and logging it as a
+// missing binary. That is exactly what happened on the first real generation
+// (2026-08-11): this function named every file .jpg, and Higgsfield returns
+// PNG. Sniffing the magic bytes means the name follows the file, and a
+// provider that switches format later can't silently break tagging again.
+function detectImageExtension(buffer) {
+  if (buffer.length >= 8 && buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4e && buffer[3] === 0x47) return "png";
+  if (buffer.length >= 3 && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) return "jpg";
+  if (buffer.length >= 12 && buffer.toString("ascii", 0, 4) === "RIFF" && buffer.toString("ascii", 8, 12) === "WEBP") return "webp";
+  return null;
 }
 
 function buildAlt(item) {
@@ -327,10 +342,19 @@ export async function generateImage({ item, page, apiKey }) {
     if (!imgRes.ok) throw new Error(`Downloading generated image failed: ${imgRes.status}`);
     const rawBuffer = Buffer.from(await imgRes.arrayBuffer());
 
+    const ext = detectImageExtension(rawBuffer);
+    if (!ext) {
+      // A 200 that isn't a recognizable image is not something to ship and
+      // hope about -- §8.5 would rather drop the page than publish a mystery
+      // file under an image name.
+      console.log(`[image] Downloaded file is not a recognized image (first bytes: ${rawBuffer.subarray(0, 8).toString("hex")}) -- not shipping`);
+      return null;
+    }
+
     // §8.3.1: tag before the buffer goes anywhere. recorder.mjs commits
     // whatever it's handed, so this is the last point at which the file that
     // ships and the file that gets tagged are guaranteed to be the same one.
-    const filename = buildFilename(item);
+    const filename = buildFilename(item, ext);
     const buffer = await embedSeoMetadata(rawBuffer, { item, page, filename });
 
     return {
