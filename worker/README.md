@@ -76,10 +76,10 @@ the page its release. That makes a missing binary invisible by design, so
 
 ## Known state, 2026-08-11 (read this before debugging a quiet run)
 
-**STILL BLOCKED, but the cause is now known and only one of three parts is
-left — and it isn't code.** The first run with working Higgsfield credentials
-(09:01 UTC) failed all five pages with `404 {"detail":"model_not_found"}`.
-Troubleshot the same day against the live API with the real credential:
+**WORKING as of 2026-08-11.** A real image generates and ships with its
+metadata embedded. Getting there took four separate fixes, all found by
+running against the live API rather than reasoning about it — the history is
+kept because each one was invisible until the one before it was fixed:
 
 1. ~~`MODEL_ID = "nano_banana_pro"`~~ **FIXED.** `GET /models` returns this
    account's real catalog, and **no `nano_banana_pro` exists in it at any
@@ -87,26 +87,34 @@ Troubleshot the same day against the live API with the real credential:
 2. ~~`resolution: "1k"`~~ **FIXED.** A closed set: `422 Input should be '720p'
    or '1080p'`. Even with the right slug, every request would still have
    failed validation. Now `1080p`.
-3. **`403 {"detail":"not_enough_credits"}` — OPEN, and not fixable in this
-   repo.** Every text2image model on the account returns it, including the
-   ones the catalog prices at 0 credits. **The Higgsfield account is out of
-   credits and someone has to top it up at cloud.higgsfield.ai.**
+3. ~~`403 {"detail":"not_enough_credits"}`~~ **RESOLVED — Jake funded the API
+   balance.** Worth keeping straight: the API on `cloud.higgsfield.ai` /
+   `platform.higgsfield.ai` is a **separate wallet** from the consumer
+   subscription on `higgsfield.ai`, under the same login. App-plan credits do
+   not fund API calls — confirmed by both the v1 and v2 API surfaces returning
+   "not enough credits" while the app showed thousands. If images start
+   failing with 403 again, top up the API side, not the app plan.
+4. ~~`buildFilename()` hardcoded `.jpg`~~ **FIXED, and this one was the
+   nastiest.** Higgsfield returns **PNG**. exiftool picks its parser from the
+   file extension and hard-refuses a mismatch, so §8.3.1's fail-soft swallowed
+   it and shipped the image untagged while logging *"exiftool may not be
+   installed on this host"* — a present binary blamed for a naming bug. Only a
+   real generated file could surface it. Filenames now follow the magic bytes.
 
-The corrected request is confirmed valid up to exactly that point: it now
-returns 403 (credits) rather than 404 (no such model) or 422 (bad body).
+First real image: 87s end to end, PNG, all 14 metadata fields verified reading
+back off the file.
 
-Until credits exist, §8.5 still means no images → **no pages at all**. The run
-spends the Opus money *before* it discovers the image is unavailable, so this
-used to cost ~$2/night in discarded drafts; **`image.mjs` now fails fast** —
-the first account-level image error (401/403/404) aborts the whole run instead
-of drafting the remaining four pages, cutting that to roughly one draft. Rate
-limiting (429) is deliberately excluded, being transient.
+**Cost control:** the run spends Opus money *before* it attempts the image, so
+a dead provider used to cost ~$2/night in discarded drafts. `image.mjs` now
+fails fast — the first account-level error (401/403/404) aborts the run rather
+than drafting the remaining four pages. 429 is excluded, being transient.
 
-**Why the account is out of credits when the Higgsfield app shows thousands:**
-the API on `cloud.higgsfield.ai`/`platform.higgsfield.ai` is billed separately
-from the consumer subscription on `higgsfield.ai`. App-plan credits do not fund
-API calls — they're two wallets. Topping up the app plan will not fix this; the
-API side has to be funded on its own.
+**Open item — page weight.** Generated PNGs run ~1.9MB at 2048×1152. The
+site's hand-made images are ~270KB JPEGs, so worker output is roughly 7× heavier
+than what's already there. On a site whose entire purpose is search, that is a
+real Core Web Vitals cost. Not addressed: converting would mean a new system
+dependency (ImageMagick in `nixpacks.toml`) or an output-format parameter that
+Higgsfield's catalog doesn't document (`input_schema` comes back null).
 
 **CLOSED: the `exiftool` deploy gap.** `SOP-AGENTIC-SEO-WEBSITES.md` §8.3.1
 flagged that the Railway image had no `exiftool`, so §8.3.1's metadata step
