@@ -257,11 +257,31 @@ async function pollUntilDone(requestId, apiKey) {
   throw new Error(`Higgsfield generation timed out after ${POLL_TIMEOUT_MS}ms`);
 }
 
+// Statuses that mean "this will fail identically for every other page in
+// this run": a bad credential, an exhausted balance, a model that doesn't
+// exist on this account. Nothing page-specific can change any of them, so
+// there is no point drafting four more pages with Opus to find out.
+// Deliberately NOT including 429 -- rate limiting is transient and the next
+// page may well succeed.
+const ACCOUNT_LEVEL_STATUSES = new Set([401, 403, 404]);
+
 /**
  * Generate one illustrative image for a backlog item. Never throws -- a
- * failure here must not crash the run or block other pages (§8.5). Returns
- * null on any failure; the caller (run.mjs) is responsible for treating
- * null as "this page does not ship this run," not for retrying internally.
+ * failure here must not crash the run or block other pages (§8.5).
+ *
+ * Returns one of three things:
+ *   - `{ filename, alt, buffer, costUsd }` on success
+ *   - `null` on a failure specific to this page; run.mjs treats that as
+ *     "this page does not ship this run" and moves on to the next one
+ *   - `{ accountFailure: true, reason }` when the failure is account-level
+ *     and will recur for every remaining page -- run.mjs stops the run
+ *
+ * That third case exists because of what this pipeline costs when it is
+ * broken. Text is drafted BEFORE its image is attempted, so a dead image
+ * provider means every page burns a full Opus draft and is then thrown away
+ * by §8.5's release gate. That is exactly what happened 2026-08-11:
+ * ~$2/night for five discarded drafts, nightly, while the account sat at
+ * `not_enough_credits`. Failing fast turns that into one wasted draft.
  *
  * `page` is the drafted page this image illustrates, already through the
  * evidence gate -- it exists here only so §8.3.1's embedded metadata can be
@@ -282,7 +302,11 @@ export async function generateImage({ item, page, apiKey }) {
       }),
     });
     if (!submitRes.ok) {
-      console.log(`[image] Higgsfield submit failed ${submitRes.status}: ${await submitRes.text()}`);
+      const body = await submitRes.text();
+      console.log(`[image] Higgsfield submit failed ${submitRes.status}: ${body}`);
+      if (ACCOUNT_LEVEL_STATUSES.has(submitRes.status)) {
+        return { accountFailure: true, reason: `Higgsfield ${submitRes.status} ${body.slice(0, 160)}` };
+      }
       return null;
     }
     const submitData = await submitRes.json();

@@ -72,6 +72,12 @@ async function main() {
   const drafted = [];
   const failed = [];
   let totalCostEstimate = 0;
+  // Set when image.mjs reports a failure that will recur for every remaining
+  // page (dead credential, no credits, wrong model). See the fail-fast note
+  // in image.mjs: text is drafted before its image is attempted, so without
+  // this the run pays for a full Opus draft per page and §8.5 throws every
+  // one away.
+  let abortReason = null;
 
   for (const item of pending) {
     let lastProblems = null;
@@ -115,6 +121,11 @@ async function main() {
         // loop -- an image failure is not a text quality problem, so
         // re-drafting the text would waste tokens for no reason.
         const image = await generateImage({ item, page, apiKey: cfg.higgsfieldApiKey });
+        if (image?.accountFailure) {
+          abortReason = image.reason;
+          lastProblems = [`image generation unavailable: ${image.reason}`];
+          break;
+        }
         totalCostEstimate += IMAGE_COST_USD_ESTIMATE;
         if (!image) {
           console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);
@@ -135,6 +146,13 @@ async function main() {
 
     if (!shipped) {
       failed.push({ slug: item.slug, problems: lastProblems || ["unknown failure"] });
+    }
+
+    if (abortReason) {
+      const skipped = pending.length - (pending.indexOf(item) + 1);
+      console.log(`[work] ABORTING RUN -- ${abortReason}`);
+      console.log(`[work] This fails identically for every page, so ${skipped} remaining page(s) were not drafted. Nothing to fix in the backlog; fix the image provider.`);
+      break;
     }
 
     if (totalCostEstimate > cfg.maxBudgetUsd) {

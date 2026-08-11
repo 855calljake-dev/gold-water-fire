@@ -95,12 +95,18 @@ Troubleshot the same day against the live API with the real credential:
 The corrected request is confirmed valid up to exactly that point: it now
 returns 403 (credits) rather than 404 (no such model) or 422 (bad body).
 
-Until credits exist, §8.5 still means no images → **no pages at all**, and the
-cron still drafts five pages with Opus nightly and discards every one, ~$2 a
-night. Worth knowing: the run spends the Opus money *before* it discovers the
-image is unavailable. If the credits gap is going to stay open for a while,
-either pause the cron or add a fail-fast so the first account-level image
-error (401/403/404) aborts the run instead of drafting four more pages.
+Until credits exist, §8.5 still means no images → **no pages at all**. The run
+spends the Opus money *before* it discovers the image is unavailable, so this
+used to cost ~$2/night in discarded drafts; **`image.mjs` now fails fast** —
+the first account-level image error (401/403/404) aborts the whole run instead
+of drafting the remaining four pages, cutting that to roughly one draft. Rate
+limiting (429) is deliberately excluded, being transient.
+
+**Why the account is out of credits when the Higgsfield app shows thousands:**
+the API on `cloud.higgsfield.ai`/`platform.higgsfield.ai` is billed separately
+from the consumer subscription on `higgsfield.ai`. App-plan credits do not fund
+API calls — they're two wallets. Topping up the app plan will not fix this; the
+API side has to be funded on its own.
 
 **CLOSED: the `exiftool` deploy gap.** `SOP-AGENTIC-SEO-WEBSITES.md` §8.3.1
 flagged that the Railway image had no `exiftool`, so §8.3.1's metadata step
