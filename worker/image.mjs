@@ -142,6 +142,65 @@ function buildAlt(item) {
     : `Restoration technician illustrating: ${item.topic}`;
 }
 
+// §8.3, page weight (Jake's call 2026-08-11: "let's make the images
+// lighter"). Higgsfield returns a ~1.9MB PNG at 2048x1152. Gold Water Fire's
+// hand-made images are 1600x893 JPEGs at ~270KB, so unconverted worker output
+// was roughly 7x heavier than the house convention -- a straight Core Web
+// Vitals cost on a site whose entire purpose is ranking. These constants
+// match the existing images rather than inventing a new standard.
+const TARGET_WIDTH = 1600;
+const JPEG_QUALITY = 82;
+
+// ImageMagick 7 ships `magick`; Debian/Ubuntu's `imagemagick` package is
+// still 6.x, where the binary is `convert`. Railway's Nixpacks image is
+// Ubuntu, so the deployed side is the one that needs `convert` -- try both
+// rather than assuming the local dev spelling is what production has.
+const MAGICK_BINARIES = ["magick", "convert"];
+
+// Convert to a web-weight JPEG before anything else touches the bytes.
+// Fails soft, like the metadata step: if ImageMagick isn't on the host the
+// original image still ships, just heavy. A page losing its image over a
+// compression step would invert §8.5, same reasoning as embedSeoMetadata().
+//
+// Runs BEFORE embedSeoMetadata() deliberately -- conversion rewrites the file
+// and would discard anything written first. `-strip` clears whatever the
+// generator left behind so the only metadata on the shipped file is ours.
+async function optimizeForWeb(buffer, sourceExt, filenameHint) {
+  const inPath = join(tmpdir(), `gwf-src-${process.pid}-${filenameHint}.${sourceExt}`);
+  const outPath = join(tmpdir(), `gwf-opt-${process.pid}-${filenameHint}.jpg`);
+  try {
+    await writeFile(inPath, buffer);
+    let lastErr = null;
+    for (const bin of MAGICK_BINARIES) {
+      try {
+        await execFileAsync(bin, [
+          inPath,
+          "-resize", `${TARGET_WIDTH}x>`,   // ">" = only shrink, never upscale
+          "-strip",
+          "-interlace", "Plane",            // progressive: better perceived load
+          "-sampling-factor", "4:2:0",
+          "-colorspace", "sRGB",
+          "-quality", String(JPEG_QUALITY),
+          outPath,
+        ]);
+        const optimized = await readFile(outPath);
+        const pct = Math.round((1 - optimized.length / buffer.length) * 100);
+        console.log(`[image] Optimized ${sourceExt.toUpperCase()} -> JPEG via ${bin}: ${buffer.length} -> ${optimized.length} bytes (${pct}% smaller, max ${TARGET_WIDTH}px wide)`);
+        return { buffer: optimized, ext: "jpg" };
+      } catch (err) {
+        lastErr = err;
+      }
+    }
+    throw lastErr ?? new Error("no ImageMagick binary found");
+  } catch (err) {
+    console.log(`[image] Optimization SKIPPED (${err.message}) -- shipping the original ${sourceExt.toUpperCase()} at ${buffer.length} bytes; ImageMagick may not be installed on this host`);
+    return { buffer, ext: sourceExt };
+  } finally {
+    await unlink(inPath).catch(() => {});
+    await unlink(outPath).catch(() => {});
+  }
+}
+
 // §8.3.1: an image file is indexable content on its own -- Google Images and
 // AI crawlers read embedded IPTC/XMP/EXIF off the file, a separate signal
 // from the page's <img alt="">. Shells out to the `exiftool` CLI rather than
@@ -342,8 +401,8 @@ export async function generateImage({ item, page, apiKey }) {
     if (!imgRes.ok) throw new Error(`Downloading generated image failed: ${imgRes.status}`);
     const rawBuffer = Buffer.from(await imgRes.arrayBuffer());
 
-    const ext = detectImageExtension(rawBuffer);
-    if (!ext) {
+    const sourceExt = detectImageExtension(rawBuffer);
+    if (!sourceExt) {
       // A 200 that isn't a recognizable image is not something to ship and
       // hope about -- §8.5 would rather drop the page than publish a mystery
       // file under an image name.
@@ -351,11 +410,12 @@ export async function generateImage({ item, page, apiKey }) {
       return null;
     }
 
-    // §8.3.1: tag before the buffer goes anywhere. recorder.mjs commits
-    // whatever it's handed, so this is the last point at which the file that
-    // ships and the file that gets tagged are guaranteed to be the same one.
-    const filename = buildFilename(item, ext);
-    const buffer = await embedSeoMetadata(rawBuffer, { item, page, filename });
+    // Compress first, then tag. recorder.mjs commits whatever it's handed, so
+    // the tagging step has to be last -- this is the final point at which the
+    // file that ships and the file that got tagged are the same bytes.
+    const optimized = await optimizeForWeb(rawBuffer, sourceExt, item.slug);
+    const filename = buildFilename(item, optimized.ext);
+    const buffer = await embedSeoMetadata(optimized.buffer, { item, page, filename });
 
     return {
       filename,

@@ -16,5 +16,13 @@
 # The leading "..." is required, not stylistic: without it this array REPLACES
 # the provider's own apt packages instead of extending them
 # (nixpacks.com/docs/configuration/file).
+#
+# `imagemagick` is the second one, added 2026-08-11 (Jake: "let's make the
+# images lighter"). Higgsfield returns ~1.9MB PNGs; the site's own images are
+# 1600px JPEGs at ~270KB, so worker output shipped ~7x heavier than the house
+# convention. worker/image.mjs converts before tagging, and fails soft the
+# same way, so a host without it ships heavy rather than shipping nothing.
+# Note Ubuntu's package is ImageMagick 6, whose binary is `convert`, not
+# `magick` -- image.mjs tries both.
 [phases.setup]
-aptPkgs = ["...", "libimage-exiftool-perl"]
+aptPkgs = ["...", "libimage-exiftool-perl", "imagemagick"]
