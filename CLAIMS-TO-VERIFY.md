@@ -49,7 +49,11 @@ do not bolt this on later, and do not let a claim slide onto a page "temporarily
   it turned out to be ADL's accessibility-modification (ramp/ADA) portfolio for named individual
   clients — veterans, elderly, tribal Medicaid recipients — a different trade and a different
   consent scope, not reused here. Used Higgsfield-generated illustrative imagery instead (no real
-  recognizable people, watermarked, captioned "Illustrative imagery" on every page it appears).
+  recognizable people, watermarked). ~~Captioned "Illustrative imagery" on every page it appears~~
+  — superseded 2026-08-10: the caption is now the page's own H1, bare, per `bytomorrow-bos`
+  `SOP-AGENTIC-SEO-WEBSITES.md` §8.3. **This does not relax anything on this list.** Nothing here
+  was ever gated on that caption; the imagery is still illustrative and still must not be presented
+  as a completed Gold Water Fire job in surrounding page copy, alt text, or JSON-LD.
   Replace with real photos once Gold Water Fire completes and rights-clears actual jobs.
 - **Tier-1 checklist items 12–14 (2026-08-07)** — audited live against production, all three real:
   `og:image` was the sitewide default on every page regardless of the page's own photo; no page

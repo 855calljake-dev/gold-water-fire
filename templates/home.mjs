@@ -1,12 +1,21 @@
 import { shell } from "./shell.mjs";
 
 export function renderHome() {
+  // SOP-AGENTIC-SEO-WEBSITES.md §8.3, Jake's ruling 2026-08-09, cross-tenant:
+  // an image caption is the page's own H1, bare. Home isn't a per-page template
+  // — renderHome() takes no data, so there's no page.h1 to read — and the hero
+  // renders the H1 with a gold accent word. So it lives here once, plain for the
+  // caption and marked up for the hero, rather than being typed in two places
+  // that can drift apart.
+  const h1 = "Fire and water damage restoration for the Phoenix metro area.";
+  const heroH1 = h1.replace("Phoenix", '<span class="gold-word">Phoenix</span>');
+
   const bodyHtml = `
     <section class="hero hero-photo">
       <div class="wrap">
         <div>
           <span class="badge-247"><span class="dot"></span>24/7 Emergency Response</span>
-          <h1>Fire and water damage restoration for the <span class="gold-word">Phoenix</span> metro area.</h1>
+          <h1>${heroH1}</h1>
           <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business — one crew, start to finish, day or night.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
@@ -49,7 +58,7 @@ export function renderHome() {
             <a class="card-link" href="/reconstruction.html">See how it works &rarr;</a>
           </div>
         </div>
-        <p class="img-note">Illustrative imagery — not photos of an actual Gold Water Fire job or staff member.</p>
+        <p class="img-note">${h1}</p>
       </div>
     </section>
 

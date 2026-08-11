@@ -29,11 +29,18 @@ but nothing receives it; Jake has said this gets wired up later, don't let it dr
 ## Imagery
 
 Homepage and service-page photography is Higgsfield-generated illustrative imagery (no real
-recognizable people, not captioned as an actual completed job) — Gold Water Fire has no completed
-jobs yet to photograph. Every such image carries an on-page "Illustrative imagery" note and a
-watermark (phoenix mark + wordmark) burned in via `assets/brand/gold-water-fire-phoenix-mark.png`.
-Replace with real job photography as real jobs are completed and rights-cleared; drop the
-illustrative-note and swap the file in place once real.
+recognizable people) — Gold Water Fire has no completed jobs yet to photograph. Every such image
+carries a watermark (phoenix mark + wordmark) burned in via
+`assets/brand/gold-water-fire-phoenix-mark.png`. Replace with real job photography as real jobs are
+completed and rights-cleared; swap the file in place once real.
+
+**Captions (`bytomorrow-bos` `SOP-AGENTIC-SEO-WEBSITES.md` §8.3, Jake's ruling 2026-08-09,
+cross-tenant):** an image caption is the page's own H1, bare — nothing appended, no disclaimer or
+hedge clause about the image not being a real job. ~~A fixed "Illustrative imagery — not a photo of
+an actual Gold Water Fire job or staff member." sentence, identical on every image sitewide~~ is
+superseded: it was real crawlable page text that said nothing about the page it sat on. Rendered by
+the template (`templates/content-page.mjs`, `templates/home.mjs`), never burned into the image file
+— the layout layer stays accurate and editable, a burned-in caption doesn't.
 
 ## Before this goes live (Tier-1 launch checklist)
 

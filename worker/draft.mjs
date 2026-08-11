@@ -41,10 +41,16 @@ const PAGE_SCHEMA = {
     properties: {
       slug: { type: "string", description: "kebab-case, matches the backlog item's slug" },
       path: { type: "string", description: "URL path, e.g. /guides/some-slug.html" },
-      title: { type: "string", description: "<title> tag, include 'Gold Water Fire' and 'Phoenix, AZ'" },
-      description: { type: "string", description: "meta description, under 160 characters" },
-      h1: { type: "string" },
-      breadcrumbLabel: { type: "string" },
+      // Plain-text fields. The template escapes these at render time, so an
+      // HTML entity here double-escapes and ships visibly broken -- "&amp;"
+      // renders as "&amp;" on the page, not "&". This happened for real:
+      // phoenix-reconstruction's drafted h1/title came back as "Reconstruction
+      // &amp; Rebuild" and shipped that way to the live <h1> and <title>
+      // (fixed 2026-08-10). Only `body` and `a` accept markup, and they say so.
+      title: { type: "string", description: "<title> tag, include 'Gold Water Fire' and 'Phoenix, AZ'. Plain text -- write '&' as a literal ampersand, never '&amp;' or any other HTML entity or tag." },
+      description: { type: "string", description: "meta description, under 160 characters. Plain text, no HTML entities or tags." },
+      h1: { type: "string", description: "Plain text, no HTML entities or tags -- write '&' as a literal ampersand. Also rendered verbatim as the page image's caption (SOP-AGENTIC-SEO-WEBSITES.md 8.3)." },
+      breadcrumbLabel: { type: "string", description: "Plain text, no HTML entities or tags." },
       intro: { type: "string", description: "Opening paragraph. Rule Zero: validates the reader's situation, does not sell. No solution pitched here." },
       sections: {
         type: "array",
@@ -54,8 +60,8 @@ const PAGE_SCHEMA = {
           type: "object",
           required: ["heading", "body"],
           properties: {
-            eyebrow: { type: "string" },
-            heading: { type: "string" },
+            eyebrow: { type: "string", description: "Plain text, no HTML entities or tags." },
+            heading: { type: "string", description: "Plain text, no HTML entities or tags." },
             body: { type: "string", description: "Plain text or simple <a href> links only. No other HTML." },
             soft: { type: "boolean" },
             cards: {
@@ -63,7 +69,10 @@ const PAGE_SCHEMA = {
               items: {
                 type: "object",
                 required: ["heading", "body"],
-                properties: { heading: { type: "string" }, body: { type: "string" } },
+                properties: {
+                  heading: { type: "string", description: "Plain text, no HTML entities or tags." },
+                  body: { type: "string" },
+                },
               },
             },
           },
@@ -76,13 +85,17 @@ const PAGE_SCHEMA = {
         items: {
           type: "object",
           required: ["q", "a"],
-          properties: { q: { type: "string" }, a: { type: "string" } },
+          properties: { q: { type: "string", description: "Plain text, no HTML entities or tags." }, a: { type: "string" } },
         },
       },
       cta: {
         type: "object",
         required: ["heading", "body"],
-        properties: { heading: { type: "string" }, body: { type: "string" } },
+        // Both escaped by the template, unlike section/card body.
+        properties: {
+          heading: { type: "string", description: "Plain text, no HTML entities or tags." },
+          body: { type: "string", description: "Plain text, no HTML entities or tags." },
+        },
       },
       internalLinks: {
         type: "array",

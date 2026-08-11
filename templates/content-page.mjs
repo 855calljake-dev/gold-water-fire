@@ -55,13 +55,22 @@ export function renderContentPage(data) {
       </div>
     </section>` : "";
 
+  // SOP-AGENTIC-SEO-WEBSITES.md §8.3, Jake's ruling 2026-08-09, cross-tenant:
+  // the caption is the page's own H1, bare — nothing appended, no disclaimer
+  // clause. It replaced a fixed sentence repeated identically on every image
+  // sitewide, which was real crawlable text that said nothing about the page
+  // it sat on. Reference implementation: jaketaylor-home-loans's
+  // templates/content-page.mjs. That one is a <figcaption> because its markup
+  // is a <figure>; this stays a <p class="img-note"> because .service-photo
+  // clips its children (border-radius + overflow:hidden) — the ruling is about
+  // what the caption says, not which element carries it.
   const photoHtml = photo ? `
     <section>
       <div class="wrap">
         <div class="service-photo">
           <img src="${photo.src}" alt="${esc(photo.alt)}" loading="lazy" width="1600" height="893">
         </div>
-        <p class="img-note">Illustrative imagery — not a photo of an actual Gold Water Fire job or staff member.</p>
+        <p class="img-note">${esc(h1)}</p>
       </div>
     </section>` : "";
 
