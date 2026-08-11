@@ -12,14 +12,13 @@
 
 const API_BASE = "https://platform.higgsfield.ai";
 
-// §8.1: credential shape needs reconciling at implementation time, not
-// assumed. KEY-INVENTORY.md records a single HIGGSFIELD_API_KEY value (no
-// separate ID/secret pair recorded) -- Higgsfield's documented header format
-// is "Authorization: Key {id}:{secret}". Passing the stored value through
-// verbatim (not parsed/split) is correct either way: if Jake stored it as
-// one "id:secret" string, this works unmodified; if it turns out to be
-// stored differently, this is the one line to fix once that's confirmed
-// against a live account.
+// §8.1: credential shape confirmed live 2026-08-08, not assumed --
+// cloud.higgsfield.ai issues an ID and a Secret as two separate values from
+// one "Create API Key" action. config.mjs reads both
+// (HIGGSFIELD_CONTENT_API_KEY_ID / _SECRET) and combines them into the
+// single "id:secret" string Higgsfield's documented header format expects
+// ("Authorization: Key {id}:{secret}") before this module ever sees it --
+// this function stays unaware it was ever two values.
 function authHeader(apiKey) {
   return `Key ${apiKey}`;
 }

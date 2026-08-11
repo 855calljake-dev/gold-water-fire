@@ -20,7 +20,14 @@ export function loadConfig() {
     // SOP-AGENTIC-SEO-WEBSITES.md §8.5, strengthened 2026-08-08: an approved
     // image is a release requirement now, not optional -- required in every
     // mode (including dry) so dry runs actually exercise the full gate.
-    higgsfieldApiKey: required("HIGGSFIELD_API_KEY"),
+    //
+    // §8.1's auth-shape question is resolved, not assumed: Higgsfield's
+    // cloud.higgsfield.ai console issues an ID and a Secret as two separate
+    // values from one "Create API Key" action, confirmed live 2026-08-08.
+    // Combined here into the single "ID:SECRET" string Higgsfield's
+    // documented "Authorization: Key {id}:{secret}" header expects --
+    // image.mjs stays unaware this is two values, same as before.
+    higgsfieldApiKey: `${required("HIGGSFIELD_CONTENT_API_KEY_ID")}:${required("HIGGSFIELD_CONTENT_API_KEY_SECRET")}`,
     // Read AND push credential — same reasoning as agent-runtime's
     // DOCTRINE_PUSH_TOKEN: required in every mode because GitHub's Contents
     // API needs auth to read the repo too, not only to write.
