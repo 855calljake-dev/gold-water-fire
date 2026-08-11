@@ -19,6 +19,31 @@
 const AIRTABLE_API = "https://api.airtable.com/v0";
 export const TENANT = "gold-water-fire";
 
+/**
+ * A dry run must never leave telemetry. Found 2026-08-11 by running one: a
+ * manual `RUNTIME_MODE=dry` test wrote `agentic-seo ran` into the Runs table,
+ * which SATISFIES the daily report's roster presence check -- so a test on a
+ * developer's laptop would mark the surface as having fired and suppress the
+ * DID NOT FIRE line for a cron that never ran. That is the precise inverse of
+ * the guarantee the whole report is built on (SOP-DAILY-OPS-REPORT.md §2:
+ * silence looks like success), and it is worse than no telemetry, because it
+ * manufactures a false all-clear rather than merely missing one.
+ *
+ * Skipping rather than tagging rows is deliberate. A `Mode` column would keep
+ * the data, but then every reader -- the digest, a filtered view, a future
+ * query -- has to remember to exclude dry rows, and the one that forgets
+ * reintroduces exactly this bug silently. Nothing recorded cannot be
+ * misread.
+ *
+ * It also gives the right answer in the case that matters most: if the
+ * production cron were ever misconfigured to dry mode, it would record
+ * nothing and the report would correctly say DID NOT FIRE -- because a dry
+ * run genuinely did not do the job.
+ */
+function isDryRun() {
+  return (process.env.RUNTIME_MODE || "dry").toLowerCase() !== "live";
+}
+
 function config() {
   const pat = process.env.AIRTABLE_OPS_PAT;
   const baseId = process.env.AIRTABLE_OPS_BASE_ID;
@@ -52,6 +77,10 @@ async function createRows(cfg, table, rows) {
  * signal and the report's roster infers it.
  */
 export async function recordRun({ date, surface, status, attempted, published, failures, spendUsd, durationSec, note }) {
+  if (isDryRun()) {
+    console.log(`[ops] DRY RUN -- telemetry NOT recorded for ${surface}. A dry run must not satisfy the daily report's roster check; see isDryRun().`);
+    return false;
+  }
   const cfg = config();
   if (!cfg) {
     console.log("[ops] telemetry not configured (AIRTABLE_OPS_PAT / AIRTABLE_OPS_BASE_ID) -- this run will show as DID NOT FIRE in the daily report");
@@ -81,6 +110,7 @@ export async function recordRun({ date, surface, status, attempted, published, f
 
 /** One row per thing produced -- the named list behind a number in the email. */
 export async function recordArtifacts(artifacts) {
+  if (isDryRun()) return 0; // same reasoning as recordRun -- no dry-run residue in real telemetry
   if (!artifacts?.length) return 0;
   const cfg = config();
   if (!cfg) return 0;
