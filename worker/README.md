@@ -74,6 +74,41 @@ the page its release. That makes a missing binary invisible by design, so
 `run.mjs` logs `[orient] exiftool ... present` / `NOT AVAILABLE` on every run
 — check that line before trusting that a run's images were actually tagged.
 
+## Known state, 2026-08-11 (read this before debugging a quiet run)
+
+**BLOCKED: the pipeline ships nothing.** The first run with working Higgsfield
+credentials (09:01 UTC, gwf-content-worker) failed all five pages identically:
+
+```
+[image] Higgsfield submit failed 404: {"detail":"model_not_found"}
+[work] REJECTED mesa-water-damage-restoration: image generation failed -- page not shipped this run
+[record] Nothing passed the evidence gate — no PR opened.
+```
+
+`MODEL_ID`/endpoint in `image.mjs` is wrong — see the comment block above that
+constant for what the 404 does and does not prove. Because §8.5 makes an image
+a release requirement, no images means **no pages at all**, so the daily cron
+drafts five pages with Opus, discards every one, and burns ~$2/day. This is a
+full outage of the content pipeline, not a degradation, and it will repeat
+every night until the model slug is fixed. Nothing else in the run is broken:
+config, drafting, and the evidence gate all worked.
+
+**CLOSED: the `exiftool` deploy gap.** `SOP-AGENTIC-SEO-WEBSITES.md` §8.3.1
+flagged that the Railway image had no `exiftool`, so §8.3.1's metadata step
+would fail soft on every real run. `nixpacks.toml` fixes it, and this is
+confirmed on the service itself, not inferred from the config — the build log
+shows `Setting up libimage-exiftool-perl (12.76+dfsg-1)`, and the 09:01 UTC run
+opened with:
+
+```
+[orient] exiftool 12.76 present -- generated images will carry embedded SEO metadata (§8.3.1)
+```
+
+Note what that does **not** yet prove: because of the 404 above, no image has
+ever been generated on Railway, so the metadata step has not run end to end in
+production. It is verified against a real JPEG locally, and the binary it needs
+is verified present on the service. Those are two separate facts.
+
 ## System dependency: `exiftool`
 
 The metadata step above shells out to the `exiftool` CLI rather than adding an

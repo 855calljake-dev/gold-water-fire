@@ -37,16 +37,39 @@ function authHeader(apiKey) {
   return `Key ${apiKey}`;
 }
 
-// §8.1/§8.4: model id per Higgsfield's own docs (docs.higgsfield.ai) --
-// their published examples only show "higgsfield-ai/soul/standard" and
-// "reve/text-to-image", not this one, so it was tested rather than trusted:
-// a real request to POST /nano_banana_pro with a deliberately-fake key
+// ============================================================
+// BROKEN IN PRODUCTION -- this request 404s on every real run.
+// ============================================================
+// ~~a real request to POST /nano_banana_pro with a deliberately-fake key
 // returned 401 "Invalid credentials", not 404 -- meaning the route itself
-// is real and correctly matched before auth was even checked. That's the
-// strongest confirmation available without a live key (HIGGSFIELD_API_KEY
-// isn't deployed to this service yet -- KEY-INVENTORY.md). Only the actual
-// credential value remains genuinely unverified; the endpoint shape is not
-// a guess anymore.
+// is real and correctly matched before auth was even checked ... the
+// endpoint shape is not a guess anymore.~~ That inference was wrong, and
+// the first run with real credentials disproved it: 2026-08-11 09:01 UTC on
+// gwf-content-worker, all five pages failed identically with
+//
+//     [image] Higgsfield submit failed 404: {"detail":"model_not_found"}
+//
+// A fake key returning 401 only proved auth is checked before the model is
+// resolved -- it said nothing about whether the model exists. Nothing here
+// is confirmed except that this combination does not work.
+//
+// Consequence, by §8.5's own design: zero images means zero pages ship. The
+// run drafts all five pages with Opus, throws every one away, and burns
+// ~$2/day doing it. The pipeline is fully down until this is fixed -- it is
+// NOT a partial degradation.
+//
+// What is actually known, not assumed:
+//   - The path here has no version prefix. Higgsfield's own SDK
+//     (github.com/higgsfield-ai/higgsfield-js) documents per-model paths of
+//     the form /v1/text2image/{slug}; jaketaylor-home-loans/worker/image.mjs
+//     uses /v1/text2image/nano-banana-pro (hyphens), also never live-tested.
+//   - Published examples name "higgsfield-ai/soul/standard" and
+//     "reve/text-to-image". No example anywhere names this model.
+//   - "model_not_found" is a body detail, not a bare route 404, which hints
+//     the route resolved and the SLUG is what was rejected -- a hint, not a
+//     finding. Do not repeat the earlier mistake of promoting a plausible
+//     inference to "confirmed."
+// Fix requires one live request per candidate against the real credential.
 const MODEL_ID = "nano_banana_pro";
 
 // §8.2: priced from the live account. nano_banana_pro = 2 credits/image,
