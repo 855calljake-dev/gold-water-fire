@@ -14,6 +14,7 @@ import { draftPage } from "./draft.mjs";
 import { checkPage } from "./evidenceGate.mjs";
 import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
 import { findOpenBatchPr, openContentBatchPr } from "./recorder.mjs";
+import { recordRun, recordArtifacts, buildMenuUrl } from "./telemetry.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const execFileAsync = promisify(execFile);
@@ -57,6 +58,11 @@ async function main() {
     const existing = await findOpenBatchPr({ token: cfg.githubToken, repo: cfg.repo, dateStr });
     if (existing) {
       console.log(`[orient] Open batch PR already exists for today: ${existing.html_url}. Exiting without drafting again.`);
+      // Recorded even though it produced nothing: the run DID fire, and an
+      // unrecorded early exit is indistinguishable from a dead cron in the
+      // daily report (SOP-DAILY-OPS-REPORT.md §2).
+      await recordRun({ date: dateStr, surface: "agentic-seo", status: "ran", attempted: 0, published: 0,
+        failures: [], spendUsd: {}, note: `Open batch PR already exists: ${existing.html_url}` });
       process.exit(0);
     }
   }
@@ -65,6 +71,10 @@ async function main() {
   const pending = backlog.items.filter((i) => i.status === "pending").slice(0, cfg.maxPagesPerRun);
   if (!pending.length) {
     console.log("[work] No pending backlog items. Nothing to do.");
+    // Same reasoning as above -- and an empty backlog is itself worth seeing
+    // in the report, since it means the machine has run out of work.
+    await recordRun({ date: dateStr, surface: "agentic-seo", status: "ran", attempted: 0, published: 0,
+      failures: [], spendUsd: {}, note: "Backlog empty -- no pending items" });
     process.exit(0);
   }
   console.log(`[work] Drafting ${pending.length} page(s): ${pending.map((i) => i.slug).join(", ")}`);
@@ -80,6 +90,30 @@ async function main() {
   // The budget cap still applies to the sum.
   const spend = { anthropicUsd: 0, higgsfieldUsd: 0, imagesGenerated: 0 };
   const totalSpend = () => spend.anthropicUsd + spend.higgsfieldUsd;
+  // One row per thing this run produced or failed to produce, for the daily
+  // ops report (bytomorrow-bos SOP-DAILY-OPS-REPORT.md). Collected as we go
+  // rather than reconstructed at the end, so a rejection keeps the actual
+  // reason it was rejected instead of a summary of it.
+  const artifactRows = [];
+  const startedAt = Date.now();
+
+  // Every remaining exit path goes through here, so there is exactly one
+  // place that decides what this run reported -- and no path that exits
+  // without reporting at all.
+  const finish = async ({ status, published, note, exitCode }) => {
+    await recordRun({
+      date: dateStr, surface: "agentic-seo", status,
+      attempted: pending.length, published,
+      failures: failed.flatMap((f) => f.problems),
+      // Per account, never blended: they are separately funded and run dry
+      // independently.
+      spendUsd: { Anthropic: spend.anthropicUsd, Higgsfield: spend.higgsfieldUsd },
+      durationSec: Math.round((Date.now() - startedAt) / 1000),
+      note,
+    });
+    await recordArtifacts(artifactRows);
+    process.exit(exitCode);
+  };
   // Set when image.mjs reports a failure that will recur for every remaining
   // page (dead credential, no credits, wrong model). See the fail-fast note
   // in image.mjs: text is drafted before its image is attempted, so without
@@ -116,6 +150,10 @@ async function main() {
             console.log(`[debug] sections=${(page.sections || []).length}, stopReason logged separately`);
           }
           lastProblems = check.problems;
+          if (attempt === 2) {
+            artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
+              status: "rejected", menuUrl: buildMenuUrl(page), reason: check.problems.join(" | ") });
+          }
           continue;
         }
 
@@ -137,6 +175,8 @@ async function main() {
         if (!image) {
           console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);
           lastProblems = ["image generation failed"];
+          artifactRows.push({ date: dateStr, surface: "images", type: "image", name: item.slug,
+            status: "failed", reason: "image generation failed" });
           break;
         }
         // Counted only once an image actually came back. The old code added
@@ -149,6 +189,13 @@ async function main() {
         page.photo = { src: `/assets/img/${image.filename}`, alt: image.alt };
 
         console.log(`[work] OK ${item.slug} -> ${page.path}${attempt > 1 ? " (after retry)" : ""}`);
+        // "awaiting-review", never "published": this worker's only write is a
+        // PR, and the release gate is Jake's merge (SOP §2 rule 4). Counting a
+        // draft as published is the exact overstatement house rule 3 forbids.
+        artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title,
+          status: "awaiting-review", menuUrl: buildMenuUrl(page) });
+        artifactRows.push({ date: dateStr, surface: "images", type: "image", name: image.filename,
+          status: "awaiting-review", menuUrl: buildMenuUrl(page), costUsd: IMAGE_COST_USD_ESTIMATE });
         drafted.push({ item, page, image });
         shipped = true;
         break;
@@ -183,13 +230,15 @@ async function main() {
 
   if (!drafted.length) {
     console.log("[record] Nothing passed the evidence gate — no PR opened.");
-    process.exit(failed.length ? 1 : 0);
+    await finish({ status: "failed", published: 0, exitCode: failed.length ? 1 : 0,
+      note: abortReason ? `Aborted: ${abortReason}` : "Nothing passed the evidence gate" });
   }
 
   if (!cfg.isLive) {
     console.log(`[record] DRY RUN — would open a PR with ${drafted.length} page(s), each with an image. No GitHub write performed.`);
     for (const d of drafted) console.log(`  - ${d.page.path}: ${d.page.title} (image: ${d.image.filename})`);
-    process.exit(failed.length ? 1 : 0);
+    await finish({ status: failed.length ? "partial" : "ran", published: 0, exitCode: failed.length ? 1 : 0,
+      note: `DRY RUN — ${drafted.length} page(s) would have been proposed` });
   }
 
   const backlogUpdate = {
@@ -213,7 +262,13 @@ async function main() {
   });
 
   console.log(`[record] Opened PR #${result.prNumber}: ${result.prUrl}`);
-  process.exit(failed.length ? 1 : 0);
+  // Still not "published" -- the pages are in a PR awaiting Jake's merge. The
+  // daily report counts published separately, from what actually merged.
+  for (const row of artifactRows) {
+    if (row.status === "awaiting-review") row.directUrl = result.prUrl;
+  }
+  await finish({ status: failed.length ? "partial" : "ran", published: 0, exitCode: failed.length ? 1 : 0,
+    note: `PR #${result.prNumber} opened, awaiting review: ${result.prUrl}` });
 }
 
 main().catch((err) => {
