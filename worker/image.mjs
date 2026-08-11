@@ -37,45 +37,52 @@ function authHeader(apiKey) {
   return `Key ${apiKey}`;
 }
 
-// ============================================================
-// BROKEN IN PRODUCTION -- this request 404s on every real run.
-// ============================================================
+// §8.1/§8.4: model slug and request body, both read off the live API with
+// the real credential on 2026-08-11 -- not from docs, not inferred.
+//
 // ~~a real request to POST /nano_banana_pro with a deliberately-fake key
 // returned 401 "Invalid credentials", not 404 -- meaning the route itself
-// is real and correctly matched before auth was even checked ... the
-// endpoint shape is not a guess anymore.~~ That inference was wrong, and
-// the first run with real credentials disproved it: 2026-08-11 09:01 UTC on
-// gwf-content-worker, all five pages failed identically with
+// is real ... the endpoint shape is not a guess anymore.~~ Wrong, and the
+// first run with real credentials disproved it: every page failed with
+// `404 {"detail":"model_not_found"}`. A fake key returning 401 only proved
+// auth is checked BEFORE the model is resolved. Left visible on purpose:
+// the mistake was promoting a plausible inference to "confirmed."
 //
-//     [image] Higgsfield submit failed 404: {"detail":"model_not_found"}
+// What GET /models actually returns for this account -- the whole catalog,
+// 13 entries, and **no nano_banana_pro among them at any spelling**. The
+// only text2image models this account can call:
 //
-// A fake key returning 401 only proved auth is checked before the model is
-// resolved -- it said nothing about whether the model exists. Nothing here
-// is confirmed except that this combination does not work.
+//     higgsfield-ai/soul/standard      1.0000 credits
+//     higgsfield-ai/soul/v2/standard   0.0000
+//     higgsfield-ai/soul/cinema        0.0000
+//     higgsfield-ai/soul/character     1.0000   (needs a reference input)
+//     higgsfield-ai/soul/reference     1.0000   (needs a reference input)
+//     higgsfield-ai/popcorn/auto       1.4720
 //
-// Consequence, by §8.5's own design: zero images means zero pages ship. The
-// run drafts all five pages with Opus, throws every one away, and burns
-// ~$2/day doing it. The pipeline is fully down until this is fixed -- it is
-// NOT a partial degradation.
-//
-// What is actually known, not assumed:
-//   - The path here has no version prefix. Higgsfield's own SDK
-//     (github.com/higgsfield-ai/higgsfield-js) documents per-model paths of
-//     the form /v1/text2image/{slug}; jaketaylor-home-loans/worker/image.mjs
-//     uses /v1/text2image/nano-banana-pro (hyphens), also never live-tested.
-//   - Published examples name "higgsfield-ai/soul/standard" and
-//     "reve/text-to-image". No example anywhere names this model.
-//   - "model_not_found" is a body detail, not a bare route 404, which hints
-//     the route resolved and the SLUG is what was rejected -- a hint, not a
-//     finding. Do not repeat the earlier mistake of promoting a plausible
-//     inference to "confirmed."
-// Fix requires one live request per candidate against the real credential.
-const MODEL_ID = "nano_banana_pro";
+// soul/character and soul/reference are excluded by §8.3, not by preference:
+// the automated path must never take a photo-of-a-real-person reference
+// input. soul/standard is Higgsfield's photoreal line and matches the
+// documentary style §8.3 asks for. Swapping to popcorn/auto or
+// soul/v2/standard is this one line if Jake prefers their look.
+const MODEL_ID = "higgsfield-ai/soul/standard";
 
-// §8.2: priced from the live account. nano_banana_pro = 2 credits/image,
-// Ultra plan ~$99-129/mo for 3,000 credits -> ~$0.066-0.086/image. Using the
-// higher end as the conservative budget estimate.
-export const IMAGE_COST_USD_ESTIMATE = 0.086;
+// Body shape, also confirmed live rather than copied: `prompt` sits at the
+// TOP level. POST with `{input:{prompt}}` returns
+// `422 {"loc":["body","prompt"],"msg":"Field required"}` -- so the nested
+// `input` wrapper that jaketaylor-home-loans/worker/image.mjs sends is
+// wrong, and this file's flat body was right all along. Worth fixing there.
+//
+// `resolution` is a closed set: 422 says "Input should be '720p' or
+// '1080p'". The "1k" this file used before is not a valid value, so even
+// with the correct slug every request would still have failed validation.
+const RESOLUTION = "1080p";
+
+// §8.2: repriced 2026-08-11 off the live catalog, which reports
+// soul/standard at 1.0000 credits -- not the 2 credits the old
+// nano_banana_pro assumption used. At the Ultra plan's ~$99-129/mo for 3,000
+// credits that's ~$0.033-0.043/image; the higher end is kept as the
+// conservative budget estimate, same convention as before.
+export const IMAGE_COST_USD_ESTIMATE = 0.043;
 
 const POLL_INTERVAL_MS = 3000;
 const POLL_TIMEOUT_MS = 90_000;
@@ -271,7 +278,7 @@ export async function generateImage({ item, page, apiKey }) {
       body: JSON.stringify({
         prompt: buildPrompt(item),
         aspect_ratio: "16:9",
-        resolution: "1k",
+        resolution: RESOLUTION,
       }),
     });
     if (!submitRes.ok) {

@@ -76,22 +76,31 @@ the page its release. That makes a missing binary invisible by design, so
 
 ## Known state, 2026-08-11 (read this before debugging a quiet run)
 
-**BLOCKED: the pipeline ships nothing.** The first run with working Higgsfield
-credentials (09:01 UTC, gwf-content-worker) failed all five pages identically:
+**STILL BLOCKED, but the cause is now known and only one of three parts is
+left — and it isn't code.** The first run with working Higgsfield credentials
+(09:01 UTC) failed all five pages with `404 {"detail":"model_not_found"}`.
+Troubleshot the same day against the live API with the real credential:
 
-```
-[image] Higgsfield submit failed 404: {"detail":"model_not_found"}
-[work] REJECTED mesa-water-damage-restoration: image generation failed -- page not shipped this run
-[record] Nothing passed the evidence gate — no PR opened.
-```
+1. ~~`MODEL_ID = "nano_banana_pro"`~~ **FIXED.** `GET /models` returns this
+   account's real catalog, and **no `nano_banana_pro` exists in it at any
+   spelling**. Now `higgsfield-ai/soul/standard`.
+2. ~~`resolution: "1k"`~~ **FIXED.** A closed set: `422 Input should be '720p'
+   or '1080p'`. Even with the right slug, every request would still have
+   failed validation. Now `1080p`.
+3. **`403 {"detail":"not_enough_credits"}` — OPEN, and not fixable in this
+   repo.** Every text2image model on the account returns it, including the
+   ones the catalog prices at 0 credits. **The Higgsfield account is out of
+   credits and someone has to top it up at cloud.higgsfield.ai.**
 
-`MODEL_ID`/endpoint in `image.mjs` is wrong — see the comment block above that
-constant for what the 404 does and does not prove. Because §8.5 makes an image
-a release requirement, no images means **no pages at all**, so the daily cron
-drafts five pages with Opus, discards every one, and burns ~$2/day. This is a
-full outage of the content pipeline, not a degradation, and it will repeat
-every night until the model slug is fixed. Nothing else in the run is broken:
-config, drafting, and the evidence gate all worked.
+The corrected request is confirmed valid up to exactly that point: it now
+returns 403 (credits) rather than 404 (no such model) or 422 (bad body).
+
+Until credits exist, §8.5 still means no images → **no pages at all**, and the
+cron still drafts five pages with Opus nightly and discards every one, ~$2 a
+night. Worth knowing: the run spends the Opus money *before* it discovers the
+image is unavailable. If the credits gap is going to stay open for a while,
+either pause the cron or add a fail-fast so the first account-level image
+error (401/403/404) aborts the run instead of drafting four more pages.
 
 **CLOSED: the `exiftool` deploy gap.** `SOP-AGENTIC-SEO-WEBSITES.md` §8.3.1
 flagged that the Railway image had no `exiftool`, so §8.3.1's metadata step
