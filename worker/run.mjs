@@ -4,6 +4,8 @@
 // (or --live) is the only way to write anything, and even then the only
 // write is a pull request — merging is Jake's, always.
 
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -14,6 +16,25 @@ import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
 import { findOpenBatchPr, openContentBatchPr } from "./recorder.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const execFileAsync = promisify(execFile);
+
+// SOP-AGENTIC-SEO-WEBSITES.md §8.3.1 closes with an explicit instruction:
+// "Don't treat this as shipped for a given tenant until the binary is
+// confirmed present on that tenant's actual worker service." Because the
+// metadata step fails soft by design, a host without exiftool produces
+// perfectly successful-looking runs that quietly ship untagged images. This
+// probe is what makes that difference legible -- every run states in its
+// first lines which of the two happened, so the answer to "is it actually
+// installed on Railway" is a log line, not an assumption. Runs BEFORE
+// loadConfig() deliberately: a missing env var must not hide this.
+async function reportExiftool() {
+  try {
+    const { stdout } = await execFileAsync("exiftool", ["-ver"]);
+    console.log(`[orient] exiftool ${stdout.trim()} present -- generated images will carry embedded SEO metadata (§8.3.1)`);
+  } catch (err) {
+    console.log(`[orient] exiftool NOT AVAILABLE (${err.message}) -- images will ship WITHOUT embedded SEO metadata (§8.3.1 fails soft, run continues)`);
+  }
+}
 
 function todayStr() {
   // Injected so a scheduled run and a manual run agree on "today," and so
@@ -27,6 +48,7 @@ async function loadBacklog() {
 }
 
 async function main() {
+  await reportExiftool();
   const cfg = loadConfig();
   const dateStr = todayStr();
   console.log(`[orient] mode=${cfg.mode} model=${cfg.model} date=${dateStr}`);
@@ -92,7 +114,7 @@ async function main() {
         // without noticing is missing. Not retried against the text-attempt
         // loop -- an image failure is not a text quality problem, so
         // re-drafting the text would waste tokens for no reason.
-        const image = await generateImage({ item, apiKey: cfg.higgsfieldApiKey });
+        const image = await generateImage({ item, page, apiKey: cfg.higgsfieldApiKey });
         totalCostEstimate += IMAGE_COST_USD_ESTIMATE;
         if (!image) {
           console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);

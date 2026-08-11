@@ -35,7 +35,7 @@ to open a PR, and even in live mode the only write is that PR.
 | `draft.mjs` | One Anthropic API call per backlog item, forced tool-call for structured output. Model: Opus 5, per `CONTENT-PIPELINE.md`'s drafting-model routing. |
 | `evidenceGate.mjs` | Structural check — not left to prompt compliance. Rejects unconfirmed claims and any HTML beyond a plain `<a>` link. |
 | `recorder.mjs` | The only code that writes to GitHub. Uses the Contents API directly (branch, file writes, PR) — no local clone needed for a few JSON files. |
-| `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK — same style as `draft.mjs`. |
+| `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK — same style as `draft.mjs`. Then embeds IPTC/XMP/EXIF SEO metadata into the file (§8.3.1) via the `exiftool` CLI. |
 
 ## Three things that are load-bearing (same shape as agent-runtime, sized down)
 
@@ -62,6 +62,27 @@ not shipped text-only, not partially merged — and stays `pending` in the
 backlog for the next run to try again. Missing/wrong Higgsfield credentials
 therefore blocks the *entire* batch, by design, same as a missing
 `ANTHROPIC_API_KEY` would.
+
+**Every generated image carries its own embedded SEO metadata.** SOP §8.3.1,
+Jake's ruling 2026-08-09, cross-tenant: the image *file* is indexable content
+independent of the page around it, so `image.mjs` writes IPTC/XMP/EXIF
+(Title, Description, Creator, Copyright, Credit, Keywords, and city/state on
+location pages) into every file before it ships — all of it derived from the
+page being illustrated, never a boilerplate string. Unlike the image itself,
+this step **fails soft**: an untagged image still ships rather than costing
+the page its release. That makes a missing binary invisible by design, so
+`run.mjs` logs `[orient] exiftool ... present` / `NOT AVAILABLE` on every run
+— check that line before trusting that a run's images were actually tagged.
+
+## System dependency: `exiftool`
+
+The metadata step above shells out to the `exiftool` CLI rather than adding an
+npm dependency — a system binary, matching this worker's "plain script, no
+SDK" ethos. It is **not** in the base Nixpacks Node image, so `nixpacks.toml`
+at the repo root installs it (`libimage-exiftool-perl`) for the Railway build.
+That file exists solely for this service; Netlify ignores it.
+
+Locally: `brew install exiftool` (macOS), `apt-get install libimage-exiftool-perl` (Debian).
 
 ## Environment
 

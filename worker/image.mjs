@@ -9,6 +9,20 @@
 // without an image" by simply not including the item in `drafted[]` when
 // this returns null. This file only ever reports success or failure; it
 // never decides whether a page is allowed to go out without a photo.
+//
+// §8.3.1 (Jake's ruling 2026-08-09, cross-tenant): every generated image
+// carries embedded IPTC/XMP/EXIF metadata before it ships. Ported here from
+// jaketaylor-home-loans/worker/image.mjs, which built it first. See
+// embedSeoMetadata() below for the two deliberate deviations from that
+// reference implementation.
+
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { writeFile, readFile, unlink } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+
+const execFileAsync = promisify(execFile);
 
 const API_BASE = "https://platform.higgsfield.ai";
 
@@ -83,6 +97,119 @@ function buildAlt(item) {
     : `Restoration technician illustrating: ${item.topic}`;
 }
 
+// §8.3.1: an image file is indexable content on its own -- Google Images and
+// AI crawlers read embedded IPTC/XMP/EXIF off the file, a separate signal
+// from the page's <img alt="">. Shells out to the `exiftool` CLI rather than
+// adding an npm dependency: a system binary matches this worker family's
+// "plain script, no SDK" ethos, the same reasoning §8.1 gives for calling
+// Higgsfield through fetch() instead of its SDK.
+//
+// FAILS SOFT, on purpose: returns the original buffer unchanged if exiftool
+// isn't installed on the host. A missing metadata pass must never cost the
+// page its image -- §8.5 makes the image itself a release requirement, and
+// dropping a whole page because a secondary tagging step couldn't run would
+// invert that. `[image] SEO metadata` is logged either way so a silent
+// degradation is still visible in the run log.
+//
+// Two deliberate deviations from the JTHL reference implementation, both
+// verified against exiftool 13.55 before writing rather than assumed:
+//   1. Keywords/Subject are passed as repeated flags, not one comma-joined
+//      string. JTHL's `-Keywords=a,b,c` lands as a SINGLE keyword containing
+//      commas; repeating the flag produces the real multi-value list that
+//      IPTC/XMP consumers expect.
+//   2. Tags are group-qualified (`-XMP-dc:Title`, `-IPTC:ObjectName`,
+//      `-EXIF:Artist`) instead of bare. Bare `-Title=` writes only XMP-dc,
+//      so JTHL's images carry no IPTC title at all; and its bare `-Title`
+//      followed by `-XMP:Title` was two writes to the same one field.
+// Both are worth folding back into JTHL and the SOP -- noted, not silently
+// diverged.
+function buildMetadataArgs({ item, page, copyrightYear }) {
+  const owner = "Gold Water Fire";
+  // Both halves are confirmed facts (facts.mjs). Year comes from the page's
+  // own datePublished, not a bare new Date() -- run.mjs deliberately keeps
+  // every date in this pipeline traceable to its one injected value, and a
+  // hardcoded year would silently go stale in January.
+  const copyright = `© ${copyrightYear} ${owner} · AZ ROC #264344 KB-2`;
+
+  // Derived from the page actually being illustrated -- never boilerplate.
+  // `page` here has already passed the evidence gate, so these strings
+  // describe checked content.
+  const keywords = [
+    owner,
+    item.type === "location" ? item.service : item.topic,
+    item.type === "location" ? `${item.city}, Arizona` : "Phoenix, Arizona",
+    "restoration contractor",
+  ].filter(Boolean);
+
+  const args = [
+    "-overwrite_original",
+    `-XMP-dc:Title=${page.title}`,
+    // IPTC caps ObjectName at 64 bytes and truncates mid-word with a minor
+    // warning. Cut it on a word boundary here so the title reads as a phrase
+    // rather than being sheared in half.
+    `-IPTC:ObjectName=${truncateOnWord(page.title, 64)}`,
+    `-XMP-dc:Description=${page.description}`,
+    `-IPTC:Caption-Abstract=${page.description}`,
+    `-EXIF:ImageDescription=${page.description}`,
+    `-EXIF:Artist=${owner}`,
+    `-XMP-dc:Creator=${owner}`,
+    `-IPTC:By-line=${owner}`,
+    `-EXIF:Copyright=${copyright}`,
+    `-IPTC:CopyrightNotice=${copyright}`,
+    `-XMP-dc:Rights=${copyright}`,
+    `-IPTC:Credit=${owner}`,
+    `-IPTC:Source=https://www.goldwaterfire.com`,
+  ];
+
+  // Real geo signal on location pages, from the page's own city -- not
+  // stamped onto educational pages, which aren't about a specific place.
+  if (item.type === "location") {
+    args.push(`-IPTC:City=${item.city}`);
+    args.push("-IPTC:Province-State=Arizona");
+    args.push("-IPTC:Country-PrimaryLocationName=United States");
+  }
+
+  // Clear first, then append: exiftool merges into existing list tags, and
+  // Higgsfield could hand back a file that already carries its own.
+  args.push("-IPTC:Keywords=", "-XMP-dc:Subject=");
+  for (const kw of keywords) {
+    args.push(`-IPTC:Keywords=${kw}`, `-XMP-dc:Subject=${kw}`);
+  }
+
+  return args;
+}
+
+// Titles here are "<the page's real subject> | Gold Water Fire ...", and they
+// run past IPTC's 64-byte ObjectName limit often enough to matter. Cutting at
+// the title's own separator keeps the subject clause whole instead of leaving
+// a sheared brand fragment ("... | Gold"); nothing is lost, because the full
+// title is still in XMP-dc:Title and the brand is in By-line/Credit/Keywords.
+// Falls back to a word boundary for a title with no separator in range.
+function truncateOnWord(text, limit) {
+  if (text.length <= limit) return text;
+  const cut = text.slice(0, limit);
+  const lastSeparator = Math.max(cut.lastIndexOf("|"), cut.lastIndexOf("—"), cut.lastIndexOf(" - "));
+  const boundary = lastSeparator > 0 ? lastSeparator : cut.lastIndexOf(" ");
+  return (boundary > 0 ? cut.slice(0, boundary) : cut).replace(/[\s|,·—-]+$/, "");
+}
+
+export async function embedSeoMetadata(buffer, { item, page, filename }) {
+  const tmpPath = join(tmpdir(), `gwf-img-${process.pid}-${filename}`);
+  try {
+    await writeFile(tmpPath, buffer);
+    const copyrightYear = (page.datePublished || "").slice(0, 4) || String(new Date().getUTCFullYear());
+    await execFileAsync("exiftool", [...buildMetadataArgs({ item, page, copyrightYear }), tmpPath]);
+    const tagged = await readFile(tmpPath);
+    console.log(`[image] SEO metadata embedded in ${filename} (${buffer.length} -> ${tagged.length} bytes)`);
+    return tagged;
+  } catch (err) {
+    console.log(`[image] SEO metadata SKIPPED for ${filename} (${err.message}) -- image ships untagged; exiftool may not be installed on this host`);
+    return buffer;
+  } finally {
+    await unlink(tmpPath).catch(() => {});
+  }
+}
+
 async function pollUntilDone(requestId, apiKey) {
   const deadline = Date.now() + POLL_TIMEOUT_MS;
   while (Date.now() < deadline) {
@@ -105,8 +232,12 @@ async function pollUntilDone(requestId, apiKey) {
  * failure here must not crash the run or block other pages (§8.5). Returns
  * null on any failure; the caller (run.mjs) is responsible for treating
  * null as "this page does not ship this run," not for retrying internally.
+ *
+ * `page` is the drafted page this image illustrates, already through the
+ * evidence gate -- it exists here only so §8.3.1's embedded metadata can be
+ * derived from real page content instead of a boilerplate string.
  */
-export async function generateImage({ item, apiKey }) {
+export async function generateImage({ item, page, apiKey }) {
   try {
     const submitRes = await fetch(`${API_BASE}/${MODEL_ID}`, {
       method: "POST",
@@ -140,10 +271,16 @@ export async function generateImage({ item, apiKey }) {
 
     const imgRes = await fetch(imageUrl);
     if (!imgRes.ok) throw new Error(`Downloading generated image failed: ${imgRes.status}`);
-    const buffer = Buffer.from(await imgRes.arrayBuffer());
+    const rawBuffer = Buffer.from(await imgRes.arrayBuffer());
+
+    // §8.3.1: tag before the buffer goes anywhere. recorder.mjs commits
+    // whatever it's handed, so this is the last point at which the file that
+    // ships and the file that gets tagged are guaranteed to be the same one.
+    const filename = buildFilename(item);
+    const buffer = await embedSeoMetadata(rawBuffer, { item, page, filename });
 
     return {
-      filename: buildFilename(item),
+      filename,
       alt: buildAlt(item),
       buffer,
       costUsd: IMAGE_COST_USD_ESTIMATE,

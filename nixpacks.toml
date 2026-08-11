@@ -1,0 +1,20 @@
+# Build config for the gwf-content-worker Railway service (.railway/railway.ts,
+# builder: NIXPACKS). Nothing else in this repo uses it -- the site itself is
+# static and deploys on Netlify, which ignores this file entirely.
+#
+# Why it exists: SOP-AGENTIC-SEO-WEBSITES.md §8.3.1 requires every generated
+# image to carry embedded IPTC/XMP/EXIF metadata, and worker/image.mjs does
+# that by shelling out to the `exiftool` CLI (a system binary, not an npm
+# dependency -- same "plain script, no SDK" reasoning §8.1 gives for calling
+# Higgsfield through fetch()). Nixpacks' Node provider image has no exiftool,
+# so without this the metadata step would fail soft on every single real run:
+# images ship, pages ship, nothing errors, and none of it is tagged. That is
+# exactly the deploy gap §8.3.1 flagged as open.
+#
+# `libimage-exiftool-perl` is the Debian package that provides /usr/bin/exiftool.
+#
+# The leading "..." is required, not stylistic: without it this array REPLACES
+# the provider's own apt packages instead of extending them
+# (nixpacks.com/docs/configuration/file).
+[phases.setup]
+aptPkgs = ["...", "libimage-exiftool-perl"]
