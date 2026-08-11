@@ -71,7 +71,15 @@ async function main() {
 
   const drafted = [];
   const failed = [];
-  let totalCostEstimate = 0;
+  // Tracked per provider, not as one number, because they are separately
+  // funded accounts that run dry independently -- Anthropic bills a card,
+  // Higgsfield's API draws a prepaid balance that is NOT the same wallet as
+  // the higgsfield.ai app subscription (confirmed 2026-08-11: both the v1
+  // and v2 API surfaces returned "not enough credits" while the app showed
+  // thousands). A single blended figure hides which account needs attention.
+  // The budget cap still applies to the sum.
+  const spend = { anthropicUsd: 0, higgsfieldUsd: 0, imagesGenerated: 0 };
+  const totalSpend = () => spend.anthropicUsd + spend.higgsfieldUsd;
   // Set when image.mjs reports a failure that will recur for every remaining
   // page (dead credential, no credits, wrong model). See the fail-fast note
   // in image.mjs: text is drafted before its image is attempted, so without
@@ -99,7 +107,7 @@ async function main() {
         page.dateModified = dateStr;
         const check = checkPage(page);
         // Opus 5 approx $15/$75 per MTok in/out — rough budget guard, not billing-accurate.
-        totalCostEstimate += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
+        spend.anthropicUsd += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
 
         if (!check.ok) {
           console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): ${check.problems.join(" | ")}`);
@@ -126,12 +134,18 @@ async function main() {
           lastProblems = [`image generation unavailable: ${image.reason}`];
           break;
         }
-        totalCostEstimate += IMAGE_COST_USD_ESTIMATE;
         if (!image) {
           console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);
           lastProblems = ["image generation failed"];
           break;
         }
+        // Counted only once an image actually came back. The old code added
+        // the estimate unconditionally, which billed the run for images that
+        // were never generated -- harmless when it was one blended number,
+        // actively misleading now that this reports a per-account figure and
+        // an image count.
+        spend.higgsfieldUsd += IMAGE_COST_USD_ESTIMATE;
+        spend.imagesGenerated += 1;
         page.photo = { src: `/assets/img/${image.filename}`, alt: image.alt };
 
         console.log(`[work] OK ${item.slug} -> ${page.path}${attempt > 1 ? " (after retry)" : ""}`);
@@ -155,13 +169,17 @@ async function main() {
       break;
     }
 
-    if (totalCostEstimate > cfg.maxBudgetUsd) {
-      console.log(`[work] Budget cap reached ($${totalCostEstimate.toFixed(2)} > $${cfg.maxBudgetUsd}), stopping this run.`);
+    if (totalSpend() > cfg.maxBudgetUsd) {
+      console.log(`[work] Budget cap reached ($${totalSpend().toFixed(2)} > $${cfg.maxBudgetUsd}), stopping this run.`);
       break;
     }
   }
 
-  console.log(`[work] Estimated cost this run: $${totalCostEstimate.toFixed(2)}`);
+  // Per account, so a dry Higgsfield balance or a runaway drafting bill is
+  // attributable at a glance instead of buried in one blended number.
+  console.log(`[work] Estimated spend this run: $${totalSpend().toFixed(2)} total`);
+  console.log(`[work]   Anthropic (drafting):  $${spend.anthropicUsd.toFixed(2)}`);
+  console.log(`[work]   Higgsfield (images):   $${spend.higgsfieldUsd.toFixed(2)} across ${spend.imagesGenerated} image(s) @ ~$${IMAGE_COST_USD_ESTIMATE}`);
 
   if (!drafted.length) {
     console.log("[record] Nothing passed the evidence gate — no PR opened.");
