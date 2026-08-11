@@ -150,6 +150,9 @@ Locally: `brew install exiftool` (macOS), `apt-get install libimage-exiftool-per
 | `GITHUB_PUSH_TOKEN` | yes | Fine-grained PAT scoped to **only** `855calljake-dev/gold-water-fire`, contents + pull-requests write. Same reasoning as `DOCTRINE_PUSH_TOKEN` in agent-runtime. |
 | `HIGGSFIELD_CONTENT_API_KEY_ID` | yes | Required in every mode, not just live — SOP §8.5 makes an image a release requirement, so even a dry run needs to exercise real generation. Half of Higgsfield's ID/Secret pair — cloud.higgsfield.ai issues both from one "Create API Key" action. |
 | `HIGGSFIELD_CONTENT_API_KEY_SECRET` | yes | The other half of the pair above. `config.mjs` combines both into the `id:secret` string Higgsfield's API expects — never store them pre-combined. |
+| `AIRTABLE_OPS_PAT` | no | Write-scoped Airtable PAT for the ops base. **Without it the worker still runs, but records nothing — and the daily report will show this tenant as `DID NOT FIRE`.** Deliberately separate from the read-only tenant `AIRTABLE_PAT` in `KEY-INVENTORY.md`. |
+| `AIRTABLE_OPS_BASE_ID` | no | `appAHLoykhxuB6twM` (ByTomorrow Ops). Already set on the Railway service. |
+| `AIRTABLE_OPS_RUNS_TABLE` / `_ARTIFACTS_TABLE` | no | Table ids, already set. Default to the names `Runs`/`Artifacts` if unset. |
 | `RUNTIME_MODE` | no | `dry` (default) or `live`. |
 | `RUNTIME_MODEL` | no | Defaults to `claude-opus-5`. |
 | `RUNTIME_MAX_PAGES` | no | Default 3 — pages drafted per run. |
