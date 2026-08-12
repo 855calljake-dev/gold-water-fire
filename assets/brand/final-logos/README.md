@@ -4,6 +4,25 @@
 vendors.** Everything here is vector SVG: it prints sharp at any size, from a
 favicon to a truck door to a building sign.
 
+## Two typeface sets — pick one and stay with it
+
+| Folder | Typeface | Character |
+|---|---|---|
+| `sans-montserrat/` | Montserrat | Matches the wordmark on the brand sheet's primary logo. Modern, wide, geometric. |
+| `serif-cinzel/` | Cinzel | Matches the typography panel on the brand sheet. Classical, engraved, formal. |
+
+**The brand sheet contradicts itself** — its typography swatch names Cinzel, a
+serif, while the logo drawn beside it is set in a sans. Both sets exist here so
+that is a choice rather than an accident. **Montserrat is the closer match to
+the logo Jake has actually been showing people**, and is the default
+recommendation; the double-storey `a` and flat-barred `G` in the sheet's
+wordmark rule out Poppins and the other geometric sans candidates.
+
+Whichever you pick, use it everywhere. Two typefaces across shirts, trucks and
+signage reads as two companies.
+
+Each folder holds the identical set of twelve files and its own font file.
+
 Anything elsewhere in the repo — including the PNGs in `assets/img/` — is a
 derivative for the website. If a file here and a file there disagree, this
 folder wins.
@@ -39,9 +58,9 @@ substrate, and a number guessed here would be worse than one they pick.
 
 ## Typography
 
-**Cinzel Bold**, licensed under the SIL Open Font License. The font file is
-included here (`Cinzel-VariableFont_wght.ttf`) for anyone setting *new* type in
-the brand.
+**Montserrat Bold** or **Cinzel Bold** depending on the set you chose, both
+licensed under the SIL Open Font License. The font file sits in each folder for
+anyone setting *new* type in the brand.
 
 You do **not** need it to print these logos — see below.
 
