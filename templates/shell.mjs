@@ -28,6 +28,12 @@ function localBusinessSchema() {
       addressCountry: "US",
     },
     areaServed: { "@type": "AdministrativeArea", name: "Phoenix Metropolitan Area, Arizona" },
+    // Google reads these for the knowledge panel and both were simply absent,
+    // so nothing on the site ever told it which image is the logo. Raster on
+    // purpose: the structured-data guidance wants a crawlable image, and PNG
+    // is the safe answer while SVG support across their tooling is uneven.
+    logo: absUrl("/assets/img/logo-badge-512.png"),
+    image: absUrl("/assets/img/logo-badge-512.png"),
   };
 }
 
@@ -107,7 +113,7 @@ function header(activePath) {
   <header class="site-header">
     <div class="wrap">
       <a class="brand-block" href="/" aria-label="${esc(BRAND.name)} home">
-        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.png" alt="" width="188" height="240" loading="eager"></span>
+        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.svg" alt="" width="188" height="240" loading="eager"></span>
         <span class="brand-text">
           <span class="brand"><span class="gold-word">Gold</span> Water <span class="fire-word">Fire</span></span>
           <span class="tagline">Restoration Services</span>
@@ -195,6 +201,10 @@ export function shell({
   ${datePublished ? `<meta property="article:published_time" content="${datePublished}">` : ""}
   ${datePublished ? `<meta property="article:modified_time" content="${dateModified || datePublished}">` : ""}
   <meta name="twitter:card" content="summary_large_image">
+  <!-- SVG first: modern browsers take it and render the mark sharp at any
+       size, including the 2x/3x tab icons a 48px .ico can only fake. The
+       .ico stays for older browsers, which ignore the SVG line. -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/gold-water-fire-phoenix-mark.svg">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">

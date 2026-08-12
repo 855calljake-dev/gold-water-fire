@@ -2,12 +2,13 @@
   "name": "gold-water-fire",
   "private": true,
   "type": "module",
-  "description": "Gold Water Fire — static site, no framework. Content-as-data + one shared template, per SOP-AGENTIC-SEO-WEBSITES.md.",
+  "description": "Gold Water Fire \u2014 static site, no framework. Content-as-data + one shared template, per SOP-AGENTIC-SEO-WEBSITES.md.",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "worker": "node worker/run.mjs"
+    "worker": "node worker/run.mjs",
+    "serve": "node scripts/build.mjs && python3 -m http.server 8080"
   }
 }

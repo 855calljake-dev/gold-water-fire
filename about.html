@@ -15,6 +15,10 @@
   <meta property="article:published_time" content="2026-08-06T11:55:09-07:00">
   <meta property="article:modified_time" content="2026-08-07T10:36:36-07:00">
   <meta name="twitter:card" content="summary_large_image">
+  <!-- SVG first: modern browsers take it and render the mark sharp at any
+       size, including the 2x/3x tab icons a 48px .ico can only fake. The
+       .ico stays for older browsers, which ignore the SVG line. -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/gold-water-fire-phoenix-mark.svg">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -39,7 +43,9 @@
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Phoenix Metropolitan Area, Arizona"
-      }
+      },
+      "logo": "https://www.goldwaterfire.com/assets/img/logo-badge-512.png",
+      "image": "https://www.goldwaterfire.com/assets/img/logo-badge-512.png"
     },
     {
       "@type": "BreadcrumbList",
@@ -83,7 +89,7 @@
   <header class="site-header">
     <div class="wrap">
       <a class="brand-block" href="/" aria-label="Gold Water Fire home">
-        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.png" alt="" width="188" height="240" loading="eager"></span>
+        <span class="brand-mark"><img src="/assets/img/gold-water-fire-phoenix-mark.svg" alt="" width="188" height="240" loading="eager"></span>
         <span class="brand-text">
           <span class="brand"><span class="gold-word">Gold</span> Water <span class="fire-word">Fire</span></span>
           <span class="tagline">Restoration Services</span>

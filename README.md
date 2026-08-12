@@ -63,3 +63,20 @@ Items that need action once a Netlify site exists (none of these are set by `net
    don't let it slide unaddressed once real (non-demo) traffic is expected.
 7. This is a static multi-page site (not an SPA) — direct-link/refresh/crawl of every route should
    already work without a rewrite rule, but request each route directly once deployed to confirm.
+
+## Viewing the site locally
+
+```bash
+npm run serve
+```
+
+Then open **http://localhost:8080** — not the file itself.
+
+Opening `index.html` from Finder will look broken: every asset path in this
+site is root-absolute (`/assets/css/style.css`), and under a `file://` URL the
+browser resolves that against the filesystem root, not the project folder. The
+CSS, images and links all 404 and you get unstyled HTML. It is not a build
+problem; the same files work correctly the moment they are served over HTTP.
+
+`npm run serve` builds first, then serves the folder, so what you see is what
+Netlify will publish.
