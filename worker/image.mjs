@@ -85,7 +85,15 @@ const RESOLUTION = "1080p";
 export const IMAGE_COST_USD_ESTIMATE = 0.043;
 
 const POLL_INTERVAL_MS = 3000;
-const POLL_TIMEOUT_MS = 90_000;
+// Raised 90s -> 240s on 2026-08-12. The first fully-working live run lost 2
+// of 5 pages to "Higgsfield generation timed out after 90000ms" — and a
+// measured generation had already taken 87s, so the old cap sat about three
+// seconds above the typical case. Anything slower than average failed, which
+// is why the loss rate was 40% rather than occasional. §8.5 turns a lost image
+// into a lost page, so a marginal timeout is a marginal publication rate.
+// 240s is ~2.75x the measured time; the run is a nightly cron with nothing
+// waiting on it, so patience costs nothing and impatience costs pages.
+const POLL_TIMEOUT_MS = 240_000;
 
 // §8.3: illustrative only, text-to-image only in the automated path -- no
 // photo-of-a-real-person edit/reference inputs, ever, no exceptions an
