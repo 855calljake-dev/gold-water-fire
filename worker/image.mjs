@@ -99,10 +99,22 @@ const POLL_TIMEOUT_MS = 240_000;
 // photo-of-a-real-person edit/reference inputs, ever, no exceptions an
 // unattended worker could reach for. Matches the documentary restoration-
 // photography style already established by hand for GWF's existing images.
-function buildPrompt(item) {
-  const subject = item.type === "location"
+//
+// `subjectOverride` re-rolls one page's image with a different scene without
+// touching the rules below it. Added 2026-08-12 after Jake rejected a
+// reconstruction image whose doors were malformed — unframed slabs, mismatched
+// jambs, hardware that did not exist. Image models are unreliable at door
+// furniture, and the fix is to change the SUBJECT, not to regenerate the same
+// prompt and hope.
+//
+// The override replaces the subject clause ONLY. Every §8.3 rule after it --
+// non-identifiable person, no logos, no text, no watermark -- is always
+// appended and cannot be overridden from a call site. A content rule that a
+// caller can switch off is not a content rule.
+function buildPrompt(item, subjectOverride) {
+  const subject = subjectOverride || (item.type === "location"
     ? `${item.service} in a residential property in ${item.city}, Arizona`
-    : item.topic;
+    : item.topic);
 
   return [
     "Photorealistic documentary-style photograph, restoration technician in plain workwear",
@@ -369,7 +381,7 @@ const ACCOUNT_LEVEL_STATUSES = new Set([401, 403, 404]);
  * evidence gate -- it exists here only so §8.3.1's embedded metadata can be
  * derived from real page content instead of a boilerplate string.
  */
-export async function generateImage({ item, page, apiKey }) {
+export async function generateImage({ item, page, apiKey, subjectOverride }) {
   try {
     const submitRes = await fetch(`${API_BASE}/${MODEL_ID}`, {
       method: "POST",
@@ -378,7 +390,7 @@ export async function generateImage({ item, page, apiKey }) {
         "content-type": "application/json",
       },
       body: JSON.stringify({
-        prompt: buildPrompt(item),
+        prompt: buildPrompt(item, subjectOverride),
         aspect_ratio: "16:9",
         resolution: RESOLUTION,
       }),
