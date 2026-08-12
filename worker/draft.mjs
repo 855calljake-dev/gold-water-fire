@@ -129,6 +129,54 @@ HARD RULES (violating any of these means the page cannot ship — a code check r
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
 }
 
+const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
+
+function decodeString(value) {
+  return value.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (whole, name) => {
+    const key = name.toLowerCase();
+    if (key in ENTITIES) return ENTITIES[key];
+    if (key.startsWith("#x")) return String.fromCodePoint(parseInt(key.slice(2), 16));
+    if (key.startsWith("#")) return String.fromCodePoint(parseInt(key.slice(1), 10));
+    return whole;
+  });
+}
+
+function decodeField(obj, key) {
+  if (obj && typeof obj[key] === "string") obj[key] = decodeString(obj[key]);
+}
+
+/**
+ * The model sometimes writes HTML entities into plain-text fields. It emitted
+ * "Mesa Reconstruction &amp; Rebuild" as a title; the template then escaped
+ * that string correctly, as it must, and the ampersand reached the live
+ * <title> and <h1> as "&amp;amp;". It shipped on 2026-08-12 before anyone
+ * noticed, and an older guide page had the same defect.
+ *
+ * Fixed here, where model output enters the pipeline, rather than by making
+ * the template escape less. The template is right; one that tries to guess
+ * whether a string is already encoded will eventually guess wrong in the
+ * other direction, which is a worse bug because it lets markup through.
+ *
+ * ONLY the fields the template escapes are decoded. `intro`,
+ * `sections[].body`, `sections[].cards[].body` and `faqs[].a` are
+ * interpolated RAW so they can carry the plain <a> links the schema allows --
+ * there "&amp;" is already correct, and decoding it would emit a bare
+ * ampersand into raw markup. A first attempt walked every string blindly and
+ * corrupted a body field that was perfectly fine; reading the diff caught it.
+ * If the template's escaping ever changes, this list has to change with it.
+ */
+export function decodeEscapedFields(page) {
+  for (const k of ["title", "h1", "description", "breadcrumbLabel", "evidence"]) decodeField(page, k);
+  for (const s of page.sections || []) {
+    for (const k of ["eyebrow", "heading"]) decodeField(s, k);
+    for (const c of s.cards || []) decodeField(c, "heading");
+  }
+  for (const f of page.faqs || []) decodeField(f, "q");
+  for (const k of ["heading", "body"]) decodeField(page.cta, k);
+  for (const l of page.internalLinks || []) decodeField(l, "label");
+  return page;
+}
+
 export async function draftPage({ item, apiKey, model, retryFeedback }) {
   let userPrompt = item.type === "educational"
     ? `Write an educational/how-to page on this topic: "${item.topic}"\n\nThis is general-knowledge content aimed at ranking in search and helping someone right now, not a sales pitch for a specific job Gold Water Fire has done. Slug: ${item.slug}. Suggested path: /guides/${item.slug}.html.`
@@ -174,5 +222,5 @@ export async function draftPage({ item, apiKey, model, retryFeedback }) {
   if (process.env.RUNTIME_DEBUG) {
     console.log(`[debug] stop_reason=${data.stop_reason}, output_tokens=${usage.output_tokens}`);
   }
-  return { page: toolUse.input, usage };
+  return { page: decodeEscapedFields(toolUse.input), usage };
 }
