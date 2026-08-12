@@ -7,7 +7,7 @@
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { renderContentPage, renderGuidesIndex } from "../templates/content-page.mjs";
+import { renderContentPage, renderGuidesIndex, renderAreasIndex } from "../templates/content-page.mjs";
 import { renderHome } from "../templates/home.mjs";
 import { renderAbout } from "../templates/about.mjs";
 import { renderContact } from "../templates/contact.mjs";
@@ -121,6 +121,10 @@ async function main() {
   // Checklist item 15: the guides hub. Generated from the same page data, so
   // every future educational page appears here with zero extra effort.
   written.push(await writeHtml("/guides/index.html", renderGuidesIndex(pages)));
+  // Companion hub for the location pages, split out of /guides/ so each list
+  // stays about one thing. Same generation model: every future city page
+  // appears here automatically.
+  written.push(await writeHtml("/service-areas/index.html", renderAreasIndex(pages)));
 
   written.push(await writeHtml("/", renderHome()));
   written.push(await writeHtml("/about.html", renderAbout()));

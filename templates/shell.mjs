@@ -8,6 +8,12 @@ const NAV = [
   // reachable from human nav, not only the sitemap. Before this link the
   // five guides were orphans and /guides/ itself 404'd.
   { href: "/guides/", label: "Guides" },
+  // Same reasoning as the Guides link above, one step further. The worker
+  // publishes a location page per city per service, so this list grows without
+  // anyone touching the nav. Before this hub existed every one of them was
+  // dumped onto /guides/ under a heading about plain-language guides, which is
+  // wrong for the reader and dilutes the guides' own keyword focus.
+  { href: "/service-areas/", label: "Service Areas" },
   { href: "/about.html", label: "About" },
   { href: "/contact.html", label: "Contact" },
 ];

@@ -130,7 +130,13 @@ ${relatedHtml}
 // internal linking. Uses the shared shell: nav, footer, schema all standard.
 export function renderGuidesIndex(pages) {
   const guides = pages.filter((p) => p.type === "educational");
-  const rest = pages.filter((p) => p.type !== "educational");
+  // Services only. Location pages moved to /service-areas/ on 2026-08-12:
+  // this hub used to list every non-guide page, so the five actual guides sat
+  // in a list alongside every city page under a heading promising
+  // "plain-language guides". The worker adds a location page per city per
+  // service, so that list was on its way to ~100 entries with the guides
+  // buried in it.
+  const services = pages.filter((p) => p.type === "service");
 
   const card = (p) =>
     `<div class="card"><h3><a href="${p.path}">${esc(p.h1)}</a></h3><p>${esc(p.description)}</p><p style="font-size:0.8rem;opacity:0.7">Updated ${esc(p.dateModified || p.datePublished || "")}</p></div>`;
@@ -155,8 +161,9 @@ export function renderGuidesIndex(pages) {
           <h2>When you need us, not a guide</h2>
         </div>
         <div class="card-grid">
-          ${rest.map(card).join("\n          ")}
+          ${services.map(card).join("\n          ")}
         </div>
+        <p style="margin-top:18px"><a href="/service-areas/">See every city we serve →</a></p>
       </div>
     </section>`;
 
@@ -171,6 +178,87 @@ export function renderGuidesIndex(pages) {
     breadcrumbLabel: "Guides",
     datePublished: "2026-08-10",
     dateModified: newest || "2026-08-10",
+    bodyHtml,
+  });
+}
+
+// The service-areas hub. Split out of the guides hub on 2026-08-12 — see the
+// note in renderGuidesIndex for why.
+//
+// Grouped by city rather than listed flat, because the worker's backlog is
+// city x service: a flat list repeats "Water Damage Restoration in ..." down
+// the page and gets unreadable at the ~100 pages the backlog holds. Grouping
+// also matches how someone actually looks for this ("do they cover Gilbert?").
+//
+// City is derived from the URL, not from a field. Location pages live at
+// /<city>/<service>.html by construction, so the path is the one thing
+// guaranteed to be present and correct on every one of them.
+export function renderAreasIndex(pages) {
+  const locations = pages.filter((p) => p.type === "location");
+  const services = pages.filter((p) => p.type === "service");
+
+  const cityOf = (p) => (p.path.match(/^\/([^/]+)\//) || [, ""])[1];
+  const pretty = (slug) =>
+    slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+
+  const byCity = new Map();
+  for (const p of locations) {
+    const c = cityOf(p);
+    if (!byCity.has(c)) byCity.set(c, []);
+    byCity.get(c).push(p);
+  }
+  const cities = [...byCity.keys()].sort();
+
+  const cityBlock = (c) => `
+          <div class="card">
+            <h3>${esc(pretty(c))}, AZ</h3>
+            <ul style="margin:8px 0 0;padding-left:18px">
+              ${byCity.get(c)
+                .sort((a, b) => a.h1.localeCompare(b.h1))
+                .map((p) => `<li><a href="${p.path}">${esc(p.h1)}</a></li>`)
+                .join("\n              ")}
+            </ul>
+          </div>`;
+
+  const serviceCard = (p) =>
+    `<div class="card"><h3><a href="${p.path}">${esc(p.h1)}</a></h3><p>${esc(p.description)}</p></div>`;
+
+  const bodyHtml = `
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Service Areas</span>
+          <h2>Where Gold Water Fire works</h2>
+          <p>Based in Chandler and working across the greater Phoenix metro area. Pick your city for what restoration and rebuild look like where you live.</p>
+        </div>
+        <div class="card-grid">${cities.map(cityBlock).join("")}
+        </div>
+      </div>
+    </section>
+    <section class="soft">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2>What we do, wherever you are</h2>
+        </div>
+        <div class="card-grid">
+          ${services.map(serviceCard).join("\n          ")}
+        </div>
+        <p style="margin-top:18px">Not sure where to start? <a href="/guides/">Read the guides</a> or <a href="/contact.html">get a free inspection</a>.</p>
+      </div>
+    </section>`;
+
+  const newest = locations.map((p) => p.dateModified || p.datePublished).filter(Boolean).sort().at(-1);
+
+  return shell({
+    path: "/service-areas/",
+    title: "Service Areas | Fire & Water Damage Restoration Across Phoenix Metro | Gold Water Fire",
+    description:
+      "Cities Gold Water Fire serves across the Phoenix, AZ metro — fire and water damage restoration and reconstruction in Mesa, Chandler, Phoenix and the surrounding valley.",
+    h1AsTitle: "Service Areas",
+    breadcrumbLabel: "Service Areas",
+    datePublished: "2026-08-12",
+    dateModified: newest || "2026-08-12",
     bodyHtml,
   });
 }
