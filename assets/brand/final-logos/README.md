@@ -38,8 +38,16 @@ folder wins.
 | Truck doors and vehicle wrap | `lockup-horizontal-caps-truck.svg` |
 | Tall or square space (yard signs, ads) | `lockup-stacked-full-color.svg` |
 | Social profile picture, stickers, coins | `badge-round-full-color.svg` |
+| **Badge on a white or light page — web, decks, print collateral** | **`badge-round-on-light.svg`** |
 | Embroidery, one-colour print, engraving | `phoenix-mark-black.svg` or `-white` |
 | App icon, favicon, watermark | `phoenix-mark-full-color.svg` |
+
+**`badge-round-on-light.svg` is the everyday one.** It has no navy disc, so it
+drops onto any white or light background without a visible box around it, and
+"WATER" is set in midnight blue rather than white — white type on a white
+page is invisible, and navy is what the flat lockups already use for that
+word. Use `badge-round-full-color.svg` (navy disc) only where the badge needs
+to sit on a photo or a dark field.
 
 Every lockup also exists in white and black — use the **white** file on dark
 garments and the **black** file for single-colour processes.
