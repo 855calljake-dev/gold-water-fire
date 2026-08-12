@@ -1,8 +1,26 @@
 # Gold Water Fire content-drafting worker
 
-Scheduled worker that drafts new pages from `content/backlog.json` and opens a
-GitHub pull request. **It never merges anything and never touches `main`
-directly.** Spec: `bytomorrow-bos/doctrine/SOP-AGENTIC-SEO-WEBSITES.md`.
+Scheduled worker that drafts new pages from `content/backlog.json`, opens a
+GitHub pull request, and — since **2026-08-12** — merges it, which publishes.
+Spec: `bytomorrow-bos/doctrine/SOP-AGENTIC-SEO-WEBSITES.md`.
+
+~~**It never merges anything and never touches `main` directly.**~~ **GWF
+graduated 2026-08-12** (Jake's ruling). SOP §5.3: two clean approved batches
+and a tenant moves to autonomous daily drafting *and* publishing, with no
+standing human gate — this tenant only, never inherited by another. GWF cleared
+three (PRs #1, #3, #4), and §8.5's precondition, an automated image module
+(`image.mjs`), is live and shipped the images in #4.
+
+**The PR still gets opened.** It is the per-batch audit record and the revert
+handle — one squashed commit per batch, so `git revert -m 1 <sha>` takes a bad
+batch back off the live site in one step. What changed is that nothing waits in
+it. Set `RUNTIME_AUTO_PUBLISH=false` to re-gate a single run (a content-rule
+change under test, a batch you want to eyeball) without a code change.
+
+**What still stops a page:** the evidence gate (below) rejects it before the PR
+exists, and a page whose image fails to generate is not shipped at all. What no
+longer stops one is a human reading it. That is the deliberate trade — the gate
+is now structural only.
 
 Deployed on Railway (project `gold-water-fire`, service `gwf-content-worker`).
 **`.railway/railway.ts` is the authoritative deploy config** — infrastructure
@@ -165,8 +183,19 @@ Values go in Railway. Never in this repo.
 
 ## Cadence (SOP §5)
 
-The Railway cron fires daily, but **fires in dry mode by default** — the
-schedule existing is not the same as it publishing anything. `RUNTIME_MODE`
+The Railway cron fires daily at 09:00 UTC. `RUNTIME_MODE=live` has been the
+standing value since 2026-08-07, and since **2026-08-12** a live run publishes
+rather than queueing for review — the trial is over and the tenant is graduated
+(SOP §5.3).
+
+~~The schedule existing is not the same as it publishing anything. `RUNTIME_MODE`
 only becomes `live` when a human sets it deliberately, after reviewing a batch
 clean. First batch: educational pages, manually triggered, reviewed by Jake.
-Location pages and a truly unattended schedule are a later, separate decision.
+Location pages and a truly unattended schedule are a later, separate decision.~~
+
+**One batch per day**, enforced by looking for a PR whose branch starts with
+`content-batch-<today>` in *any* state — open, merged or closed. That check
+used to query the exact branch name, which never matched because the worker
+appends a timestamp to it; the daily gate had never actually fired. Fixed
+2026-08-12, and it matters more now that a batch merges within seconds of being
+opened, so "is there an open PR" no longer answers the question.

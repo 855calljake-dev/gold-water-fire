@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 // ORIENT -> WORK -> RECORD, mirroring bytomorrow-platform's agent-runtime
 // shape (src/runtime/run.ts) at Tier-1 scale. Dry by default; RUNTIME_MODE=live
-// (or --live) is the only way to write anything, and even then the only
-// write is a pull request — merging is Jake's, always.
+// (or --live) is the only way to write anything.
+//
+// GRADUATED 2026-08-12: ~~the only write is a pull request — merging is Jake's,
+// always~~. Per SOP-AGENTIC-SEO-WEBSITES.md §5.3, two clean approved batches
+// graduate a tenant to autonomous drafting AND publishing; GWF cleared three,
+// and Jake released the gate on 2026-08-12. A live run now opens the batch PR
+// and merges it, which deploys. The PR is kept as the per-batch audit record
+// and the revert handle. RUNTIME_AUTO_PUBLISH=false restores the old gate.
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -13,7 +19,7 @@ import { loadConfig } from "./config.mjs";
 import { draftPage } from "./draft.mjs";
 import { checkPage } from "./evidenceGate.mjs";
 import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
-import { findOpenBatchPr, openContentBatchPr } from "./recorder.mjs";
+import { deGraduate, findBatchPrForDate, mergeBatchPr, openContentBatchPr, readGraduationState } from "./recorder.mjs";
 import { recordRun, recordArtifacts, buildMenuUrl } from "./telemetry.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -52,17 +58,29 @@ async function main() {
   await reportExiftool();
   const cfg = loadConfig();
   const dateStr = todayStr();
-  console.log(`[orient] mode=${cfg.mode} model=${cfg.model} date=${dateStr}`);
+  // Graduation is a state this worker READS, never one it assumes. A tenant
+  // that de-graduated on a previous run stays gated until a human puts it
+  // back, and the run says which of the two it is in its first lines.
+  let autoPublish = cfg.autoPublish;
+  let gradeNote = cfg.autoPublish ? "auto" : "GATED (RUNTIME_AUTO_PUBLISH=false)";
+  if (cfg.isLive && autoPublish) {
+    const grad = await readGraduationState({ token: cfg.githubToken, repo: cfg.repo, branch: cfg.branch });
+    if (grad.state !== "graduated") {
+      autoPublish = false;
+      gradeNote = `GATED — de-graduated ${grad.since || "(date unrecorded)"}: ${grad.reason || "reason unrecorded"}`;
+    }
+  }
+  console.log(`[orient] mode=${cfg.mode} model=${cfg.model} date=${dateStr} publish=${gradeNote}`);
 
   if (cfg.isLive) {
-    const existing = await findOpenBatchPr({ token: cfg.githubToken, repo: cfg.repo, dateStr });
+    const existing = await findBatchPrForDate({ token: cfg.githubToken, repo: cfg.repo, dateStr });
     if (existing) {
-      console.log(`[orient] Open batch PR already exists for today: ${existing.html_url}. Exiting without drafting again.`);
+      console.log(`[orient] Today's batch already ran (${existing.batchState}): ${existing.html_url}. Exiting without drafting again.`);
       // Recorded even though it produced nothing: the run DID fire, and an
       // unrecorded early exit is indistinguishable from a dead cron in the
       // daily report (SOP-DAILY-OPS-REPORT.md §2).
       await recordRun({ date: dateStr, surface: "agentic-seo", status: "ran", attempted: 0, published: 0,
-        failures: [], spendUsd: {}, note: `Open batch PR already exists: ${existing.html_url}` });
+        failures: [], spendUsd: {}, note: `Today's batch already ran (${existing.batchState}): ${existing.html_url}` });
       process.exit(0);
     }
   }
@@ -81,6 +99,9 @@ async function main() {
 
   const drafted = [];
   const failed = [];
+  // Structural gate refusals only — the de-graduation trigger. Kept separate
+  // from `failed`, which also collects provider and network failures.
+  const gateRejections = [];
   // Tracked per provider, not as one number, because they are separately
   // funded accounts that run dry independently -- Anthropic bills a card,
   // Higgsfield's API draws a prepaid balance that is NOT the same wallet as
@@ -153,6 +174,12 @@ async function main() {
           if (attempt === 2) {
             artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
               status: "rejected", menuUrl: buildMenuUrl(page), reason: check.problems.join(" | ") });
+            // A page the structural gate refused, twice. This is the exact
+            // trigger BYTOMORROW-OPERATING-SYSTEM.md's 2026-08-09 ruling names
+            // for de-graduation -- schema, claims, links, slug. Image and API
+            // failures are NOT this: they say the provider broke, not that the
+            // model wrote something it shouldn't have.
+            gateRejections.push(`${item.slug}: ${check.problems.join(" | ")}`);
           }
           continue;
         }
@@ -234,8 +261,25 @@ async function main() {
       note: abortReason ? `Aborted: ${abortReason}` : "Nothing passed the evidence gate" });
   }
 
+  // De-graduation, decided BEFORE anything is written: a batch that contained
+  // a structural gate failure does not publish, even the pages inside it that
+  // passed. The ruling drops the TENANT back to manual review, not the page --
+  // the reasoning being that a gate catching something is evidence the drafting
+  // is off, and the pages that slipped past the same gate in the same run are
+  // exactly the ones nobody should assume are fine.
+  if (autoPublish && gateRejections.length) {
+    autoPublish = false;
+    const reason = `Structural gate failure on an autonomous batch (${dateStr}): ${gateRejections.join(" ;; ")}`;
+    console.log(`[record] DE-GRADUATING — ${gateRejections.length} page(s) refused by the evidence gate.`);
+    console.log("[record] Per BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09, GWF drops back to manual review. This batch will NOT be published.");
+    if (cfg.isLive) {
+      await deGraduate({ token: cfg.githubToken, repo: cfg.repo, branch: cfg.branch, dateStr, reason });
+      console.log(`[record] Wrote content/graduation.json on ${cfg.branch}. Two clean approved batches re-graduate it — update the BOS tenant register too.`);
+    }
+  }
+
   if (!cfg.isLive) {
-    console.log(`[record] DRY RUN — would open a PR with ${drafted.length} page(s), each with an image. No GitHub write performed.`);
+    console.log(`[record] DRY RUN — would open a PR with ${drafted.length} page(s), each with an image${autoPublish ? ", and merge it to publish" : " and leave it open for review"}. No GitHub write performed.`);
     for (const d of drafted) console.log(`  - ${d.page.path}: ${d.page.title} (image: ${d.image.filename})`);
     await finish({ status: failed.length ? "partial" : "ran", published: 0, exitCode: failed.length ? 1 : 0,
       note: `DRY RUN — ${drafted.length} page(s) would have been proposed` });
@@ -259,16 +303,49 @@ async function main() {
     images: drafted.map((d) => d.image),
     backlogUpdate,
     summaryLines,
+    autoPublish,
   });
 
   console.log(`[record] Opened PR #${result.prNumber}: ${result.prUrl}`);
-  // Still not "published" -- the pages are in a PR awaiting Jake's merge. The
-  // daily report counts published separately, from what actually merged.
   for (const row of artifactRows) {
     if (row.status === "awaiting-review") row.directUrl = result.prUrl;
   }
-  await finish({ status: failed.length ? "partial" : "ran", published: 0, exitCode: failed.length ? 1 : 0,
-    note: `PR #${result.prNumber} opened, awaiting review: ${result.prUrl}` });
+
+  if (!autoPublish) {
+    // Still not "published" -- the pages are in a PR awaiting Jake's merge. The
+    // daily report counts published separately, from what actually merged.
+    const why = gateRejections.length
+      ? `DE-GRADUATED this run (${gateRejections.length} gate refusal(s)) — needs review`
+      : "RUNTIME_AUTO_PUBLISH=false";
+    console.log(`[record] Left open for review (${why}): ${result.prUrl}`);
+    await finish({ status: gateRejections.length ? "partial" : (failed.length ? "partial" : "ran"), published: 0,
+      exitCode: failed.length ? 1 : 0,
+      note: `PR #${result.prNumber} opened, awaiting review (${why}): ${result.prUrl}` });
+  }
+
+  // House rule 3 / hard rule 5: a page counts as published only after the
+  // merge call returns success. A failed merge leaves the PR open -- which is
+  // the old gated behaviour, a safe state to be left in -- and the run reports
+  // "failed" rather than quietly claiming a batch went live.
+  let merge;
+  try {
+    merge = await mergeBatchPr({
+      token: cfg.githubToken, repo: cfg.repo, prNumber: result.prNumber,
+      title: `Content batch ${dateStr}: ${drafted.length} page(s) published (#${result.prNumber})`,
+    });
+  } catch (err) {
+    console.log(`[record] MERGE FAILED — ${err.message}`);
+    console.log(`[record] The batch is drafted and safe in PR #${result.prNumber}; it is NOT live. Merge it by hand or fix the cause and it publishes on the next run.`);
+    await finish({ status: "failed", published: 0, exitCode: 1,
+      note: `PR #${result.prNumber} opened but merge FAILED (${err.message}) — batch drafted, NOT published: ${result.prUrl}` });
+  }
+
+  console.log(`[record] Published — merged PR #${result.prNumber} as ${merge.sha.slice(0, 7)}. Netlify builds from main; IndexNow pings on that build.`);
+  for (const row of artifactRows) {
+    if (row.status === "awaiting-review") row.status = "published";
+  }
+  await finish({ status: failed.length ? "partial" : "ran", published: drafted.length, exitCode: failed.length ? 1 : 0,
+    note: `PR #${result.prNumber} merged (${merge.sha.slice(0, 7)}) — ${drafted.length} page(s) published: ${result.prUrl}` });
 }
 
 main().catch((err) => {

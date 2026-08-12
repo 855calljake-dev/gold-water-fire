@@ -34,6 +34,17 @@ export function loadConfig() {
     githubToken: required("GITHUB_PUSH_TOKEN"),
     repo: process.env.GITHUB_REPO || "855calljake-dev/gold-water-fire",
     branch: process.env.GITHUB_BRANCH || "main",
+    // GRADUATED 2026-08-12 (Jake's ruling). SOP-AGENTIC-SEO-WEBSITES.md §5.3:
+    // two clean approved batches and the tenant graduates to autonomous daily
+    // drafting AND publishing, no standing human gate. GWF cleared three
+    // (PRs #1, #3, #4 merged), and §8.5's precondition -- an automated image
+    // module -- is live and produced images in #4.
+    //
+    // Default true, not opt-in: this repo IS the graduated tenant, so a run
+    // that forgets an env var must not silently fall back to a gate nobody is
+    // watching any more. RUNTIME_AUTO_PUBLISH=false re-gates it (a batch that
+    // needs eyes, a content-rule change under test) without a code change.
+    autoPublish: (process.env.RUNTIME_AUTO_PUBLISH || "true").toLowerCase() !== "false",
     model: process.env.RUNTIME_MODEL || "claude-opus-5", // CONTENT-PIPELINE.md: drafting page copy = Opus 5
     maxPagesPerRun: Number(process.env.RUNTIME_MAX_PAGES || 3),
     maxBudgetUsd: Number(process.env.RUNTIME_MAX_BUDGET_USD || 5),
