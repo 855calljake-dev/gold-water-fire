@@ -70,7 +70,7 @@
       "service": "Water Damage Restoration",
       "path": "/mesa/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -106,7 +106,7 @@
       "service": "Fire Damage Restoration",
       "path": "/chandler/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -115,7 +115,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/chandler/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -124,7 +124,7 @@
       "service": "Water Damage Restoration",
       "path": "/scottsdale/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -133,7 +133,7 @@
       "service": "Fire Damage Restoration",
       "path": "/scottsdale/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
