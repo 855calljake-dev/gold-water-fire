@@ -65,8 +65,19 @@ export default defineRailway(() => {
       AIRTABLE_OPS_ARTIFACTS_TABLE: { value: "tblIVErkGAIaPNud1" },
       RUNTIME_MODE: { value: "live" },
       RUNTIME_MODEL: { value: "claude-opus-5" },
-      RUNTIME_MAX_PAGES: { value: "5" },
-      RUNTIME_MAX_BUDGET_USD: { value: "5" },
+      // Raised 5 -> 10 on 2026-08-12, Jake's call, once the pipeline was
+      // actually working end to end. 93 pending items at 5/night is ~19
+      // nights; at 10 it is ~10. Drafting faster does not lower the bar --
+      // the evidence gate and Jake's merge still sit between a draft and a
+      // published page.
+      RUNTIME_MAX_PAGES: { value: "10" },
+      // Raised WITH the page count, deliberately, not as an afterthought.
+      // A run costs roughly $0.40/page (~$0.36 Opus + $0.043 image), so 10
+      // pages is ~$4.00 against the old $5 cap -- one retry would have
+      // tripped it and truncated the batch mid-run, which reads exactly like
+      // a broken pipeline. $8 keeps the cap a real guard against a runaway
+      // loop while leaving headroom for a normal night.
+      RUNTIME_MAX_BUDGET_USD: { value: "8" },
       GITHUB_REPO: { value: "855calljake-dev/gold-water-fire" },
       GITHUB_BRANCH: { value: "main" },
     },
