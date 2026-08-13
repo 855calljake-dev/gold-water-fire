@@ -65,6 +65,15 @@
     },
     {
       "type": "location",
+      "slug": "mesa-water-damage-restoration",
+      "city": "Mesa",
+      "service": "Water Damage Restoration",
+      "path": "/mesa/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
+      "status": "drafted"
+    },
+    {
+      "type": "location",
       "slug": "mesa-fire-damage-restoration",
       "city": "Mesa",
       "service": "Fire Damage Restoration",
@@ -92,12 +101,39 @@
     },
     {
       "type": "location",
-      "slug": "mesa-water-damage-restoration",
-      "city": "Mesa",
-      "service": "Water Damage Restoration",
-      "path": "/mesa/water-damage-restoration.html",
+      "slug": "chandler-fire-damage-restoration",
+      "city": "Chandler",
+      "service": "Fire Damage Restoration",
+      "path": "/chandler/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
+    },
+    {
+      "type": "location",
+      "slug": "chandler-reconstruction",
+      "city": "Chandler",
+      "service": "Reconstruction & Rebuild",
+      "path": "/chandler/reconstruction.html",
+      "faithLoopPhase": "sacrifice-faith",
+      "status": "drafted"
+    },
+    {
+      "type": "location",
+      "slug": "scottsdale-water-damage-restoration",
+      "city": "Scottsdale",
+      "service": "Water Damage Restoration",
+      "path": "/scottsdale/water-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
+      "status": "drafted"
+    },
+    {
+      "type": "location",
+      "slug": "scottsdale-fire-damage-restoration",
+      "city": "Scottsdale",
+      "service": "Fire Damage Restoration",
+      "path": "/scottsdale/fire-damage-restoration.html",
+      "faithLoopPhase": "sacrifice-faith",
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -128,24 +164,6 @@
     },
     {
       "type": "location",
-      "slug": "chandler-fire-damage-restoration",
-      "city": "Chandler",
-      "service": "Fire Damage Restoration",
-      "path": "/chandler/fire-damage-restoration.html",
-      "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
-    },
-    {
-      "type": "location",
-      "slug": "chandler-reconstruction",
-      "city": "Chandler",
-      "service": "Reconstruction & Rebuild",
-      "path": "/chandler/reconstruction.html",
-      "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
-    },
-    {
-      "type": "location",
       "slug": "glendale-water-damage-restoration",
       "city": "Glendale",
       "service": "Water Damage Restoration",
@@ -168,24 +186,6 @@
       "city": "Glendale",
       "service": "Reconstruction & Rebuild",
       "path": "/glendale/reconstruction.html",
-      "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
-    },
-    {
-      "type": "location",
-      "slug": "scottsdale-water-damage-restoration",
-      "city": "Scottsdale",
-      "service": "Water Damage Restoration",
-      "path": "/scottsdale/water-damage-restoration.html",
-      "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
-    },
-    {
-      "type": "location",
-      "slug": "scottsdale-fire-damage-restoration",
-      "city": "Scottsdale",
-      "service": "Fire Damage Restoration",
-      "path": "/scottsdale/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
       "status": "pending"
     },
