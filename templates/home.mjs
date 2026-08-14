@@ -16,7 +16,7 @@ export function renderHome() {
         <div>
           <span class="badge-247"><span class="dot"></span>24/7 Emergency Response</span>
           <h1>${heroH1}</h1>
-          <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business — one crew, start to finish, day or night.</p>
+          <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business, with one crew, start to finish, day or night.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
             <a class="btn-secondary" href="/contact.html">Get a Free Inspection</a>
@@ -36,7 +36,7 @@ export function renderHome() {
         <div class="section-head">
           <span class="eyebrow">What We Do</span>
           <h2>Three services, one crew, no handoffs</h2>
-          <p>From the first call to the final walkthrough, Gold Water Fire manages restoration and reconstruction under one roof — no juggling separate contractors for cleanup and rebuild.</p>
+          <p>From the first call to the final walkthrough, Gold Water Fire manages restoration and reconstruction under one roof, with no juggling separate contractors for cleanup and rebuild.</p>
         </div>
         <div class="card-grid">
           <div class="card has-media">
@@ -76,7 +76,7 @@ export function renderHome() {
         </div>
         <div class="item">
           <strong>Restoration + Reconstruction</strong>
-          <span>Cleanup and rebuild from the same company — no second contractor to hire.</span>
+          <span>Cleanup and rebuild from the same company, with no second contractor to hire.</span>
         </div>
         <div class="item">
           <strong>Chandler-based</strong>
@@ -124,7 +124,7 @@ export function renderHome() {
             <span class="num">3</span>
             <div>
               <h4>Restoration and rebuild</h4>
-              <p>If reconstruction is needed, our own team handles repairs — walls, flooring, and finishes — through to completion.</p>
+              <p>If reconstruction is needed, our own team handles repairs (walls, flooring, and finishes) through to completion.</p>
             </div>
           </li>
           <li>
@@ -148,9 +148,9 @@ export function renderHome() {
 
   return shell({
     path: "/",
-    title: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+    title: "24/7 Fire & Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
     description: "24/7 emergency fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339, day or night.",
-    h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+    h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
     photo: {
       src: "/assets/img/restoration-contractor-phoenix-az-metro-home-exterior.jpg",
       alt: "Single-story home in the Phoenix, Arizona metro area at dusk",

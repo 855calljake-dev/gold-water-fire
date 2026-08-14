@@ -82,7 +82,7 @@ export function renderContact() {
 
   return shell({
     path: "/contact.html",
-    title: "Contact | Gold Water Fire — Phoenix, AZ Metro",
+    title: "Contact | Gold Water Fire, Phoenix, AZ Metro",
     description: "Request service or ask a question. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339 or send a request online.",
     h1AsTitle: "Contact | Gold Water Fire",
     breadcrumbLabel: "Contact",

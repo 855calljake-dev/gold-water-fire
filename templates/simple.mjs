@@ -21,7 +21,7 @@ export function renderThanks() {
     robotsNoindex: true,
     bodyHtml: simpleBody({
       heading: "Request received.",
-      body: "Thanks — we'll follow up shortly. For active flooding or fire, call (480) 999-3339 now.",
+      body: "Thanks, we'll follow up shortly. For active flooding or fire, call (480) 999-3339 now.",
       ctas: [
         { href: "tel:+14809993339", label: "Call (480) 999-3339" },
         { href: "/", label: "Back to Home" },

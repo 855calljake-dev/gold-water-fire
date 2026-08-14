@@ -1,11 +1,11 @@
 {
   "path": "/water-damage-restoration.html",
   "type": "service",
-  "title": "Water Damage Restoration | Gold Water Fire — Phoenix, AZ Metro",
+  "title": "Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
   "description": "Water extraction, structural drying, and cleanup after leaks, pipe breaks, and flooding. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339.",
   "h1": "Water Damage Restoration",
   "breadcrumbLabel": "Water Damage Restoration",
-  "intro": "Extraction, drying, and cleanup after leaks, pipe breaks, water heater failures, and flooding — across the Phoenix, AZ metro area.",
+  "intro": "Extraction, drying, and cleanup after leaks, pipe breaks, water heater failures, and flooding, across the Phoenix, AZ metro area.",
   "serviceType": "Water Damage Restoration",
   "photo": {
     "src": "/assets/img/water-damage-restoration-drying-equipment-phoenix-az.jpg",
@@ -27,7 +27,7 @@
       "soft": true,
       "eyebrow": "Common Causes",
       "heading": "What we respond to",
-      "body": "Burst or leaking pipes, water heater failures, washing machine and dishwasher supply-line failures, roof and plumbing leaks, and flooding. If a job also needs rebuild work — flooring, drywall, cabinetry — our own <a href=\"/reconstruction.html\">reconstruction team</a> picks it up without bringing in a second contractor."
+      "body": "Burst or leaking pipes, water heater failures, washing machine and dishwasher supply-line failures, roof and plumbing leaks, and flooding. If a job also needs rebuild work (flooring, drywall, cabinetry), our own <a href=\"/reconstruction.html\">reconstruction team</a> picks it up without bringing in a second contractor."
     }
   ],
   "faqs": [
@@ -43,5 +43,5 @@
     { "href": "/fire-damage-restoration.html", "label": "Fire Damage Restoration" },
     { "href": "/reconstruction.html", "label": "Reconstruction & Rebuild" }
   ],
-  "evidence": "Process steps and causes are general restoration-industry practice, not GWF-specific claims. Service-area line matches Jake's confirmed 2026-08-06 boundary description in CLAIMS-TO-VERIFY.md. No certification, bonding, testimonial, or response-time number stated — none are confirmed."
+  "evidence": "Process steps and causes are general restoration-industry practice, not GWF-specific claims. Service-area line matches Jake's confirmed 2026-08-06 boundary description in CLAIMS-TO-VERIFY.md. No certification, bonding, testimonial, or response-time number stated. None are confirmed."
 }

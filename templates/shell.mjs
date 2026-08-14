@@ -111,7 +111,7 @@ function header(activePath) {
   return `
   <div class="top-bar">
     <div class="wrap">
-      <span>24/7 Emergency Response — Fire &amp; Water Damage — Phoenix Metro Area</span>
+      <span>24/7 Emergency Response · Fire &amp; Water Damage · Phoenix Metro Area</span>
       <a class="phone" href="${BRAND.phoneHref}">${BRAND.phone}</a>
     </div>
   </div>
@@ -161,7 +161,7 @@ function footer() {
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="year"></span> ${esc(BRAND.name)}. ${esc(BRAND.license)}.</span>
-        <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai — automated operations for real businesses</a>
+        <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai, automated operations for real businesses</a>
       </div>
     </div>
   </footer>

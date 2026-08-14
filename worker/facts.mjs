@@ -9,10 +9,10 @@ export const CONFIRMED_FACTS = `
 - Address: 221 E Willis Rd Ste 8, Chandler, AZ 85286
 - AZ ROC license: #264344 · KB-2
 - Co-founders: Jim Bennett and Jake Taylor
-- Brandon Gurr: Construction Manager, leads reconstruction/rebuild work (formerly Gurr Brothers Construction — that is HIS résumé, never state it as Gold Water Fire's own job count or years in business)
+- Brandon Gurr: Construction Manager, leads reconstruction/rebuild work (formerly Gurr Brothers Construction, which is HIS résumé, never state it as Gold Water Fire's own job count or years in business)
 - Team: Kristine (Office Admin), Brooke (Water and Mitigation Scheduling Assistant), Johnny (Reconstruction Team Lead)
 - Three services: Water Damage Restoration, Fire Damage Restoration, Reconstruction & Rebuild
-- Service area: the full Phoenix, Arizona metro area — named boundary description from the owner: "NW Peoria, SE Avondale, SW San Tan Valley, NW Apache Junction, and outlying areas further than that." Safe to name specific cities within that area (Phoenix, Mesa, Chandler, Scottsdale, Glendale, Gilbert, Tempe, Peoria, Surprise, Avondale, Goodyear, Buckeye, Apache Junction, Queen Creek, San Tan Valley, Fountain Hills, Paradise Valley, Cave Creek, El Mirage, Tolleson, Litchfield Park).
+- Service area: the full Phoenix, Arizona metro area, with this named boundary description from the owner: "NW Peoria, SE Avondale, SW San Tan Valley, NW Apache Junction, and outlying areas further than that." Safe to name specific cities within that area (Phoenix, Mesa, Chandler, Scottsdale, Glendale, Gilbert, Tempe, Peoria, Surprise, Avondale, Goodyear, Buckeye, Apache Junction, Queen Creek, San Tan Valley, Fountain Hills, Paradise Valley, Cave Creek, El Mirage, Tolleson, Litchfield Park).
 `.trim();
 
 // Structural evidence gate — SOP-AGENTIC-SEO-WEBSITES.md §2. Checked in code

@@ -11,7 +11,7 @@
     {
       "type": "educational",
       "slug": "signs-of-hidden-water-damage",
-      "topic": "How to spot hidden water damage in a home before it becomes a bigger problem — signs behind walls, under floors, in ceilings",
+      "topic": "How to spot hidden water damage in a home before it becomes a bigger problem: signs behind walls, under floors, in ceilings",
       "faithLoopPhase": "reflection",
       "status": "live"
     },
@@ -32,7 +32,7 @@
     {
       "type": "educational",
       "slug": "what-to-expect-restoration-crew-arrival",
-      "topic": "What actually happens when a restoration crew arrives at a property for the first time — the walkthrough, the equipment, the first decisions",
+      "topic": "What actually happens when a restoration crew arrives at a property for the first time: the walkthrough, the equipment, the first decisions",
       "faithLoopPhase": "invitation",
       "status": "drafted"
     },
@@ -606,7 +606,7 @@
     {
       "type": "educational",
       "slug": "ac-condensate-line-clog-water-damage",
-      "topic": "AC condensate line clogs — a very Arizona-specific water damage cause tied to summer AC use",
+      "topic": "AC condensate line clogs, a very Arizona-specific water damage cause tied to summer AC use",
       "faithLoopPhase": "reflection",
       "status": "pending"
     },
@@ -802,14 +802,14 @@
     {
       "type": "educational",
       "slug": "washing-machine-supply-line-failure",
-      "topic": "Washing machine supply-line failures — why they happen and what to check before they do",
+      "topic": "Washing machine supply-line failures, why they happen and what to check before they do",
       "faithLoopPhase": "reflection",
       "status": "pending"
     },
     {
       "type": "educational",
       "slug": "water-damage-rental-property-responsibility",
-      "topic": "Who's responsible for water damage in a rental property — landlord, tenant, and insurance roles",
+      "topic": "Who's responsible for water damage in a rental property: landlord, tenant, and insurance roles",
       "faithLoopPhase": "reflection",
       "status": "pending"
     },

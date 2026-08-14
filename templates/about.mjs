@@ -40,7 +40,7 @@ export function renderAbout() {
 
   return shell({
     path: "/about.html",
-    title: "About | Gold Water Fire — Phoenix, AZ Metro",
+    title: "About | Gold Water Fire, Phoenix, AZ Metro",
     description: "Gold Water Fire is a licensed Arizona restoration and reconstruction contractor based in Chandler, AZ, co-founded by Jim Bennett and Jake Taylor.",
     h1AsTitle: "About | Gold Water Fire",
     breadcrumbLabel: "About",

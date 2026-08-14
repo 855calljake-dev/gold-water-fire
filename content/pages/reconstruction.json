@@ -1,11 +1,11 @@
 {
   "path": "/reconstruction.html",
   "type": "service",
-  "title": "Reconstruction & Rebuild | Gold Water Fire — Phoenix, AZ Metro",
-  "description": "Repair and rebuild after fire or water damage — framing, drywall, flooring, and finishes, led by our in-house construction team. Phoenix, AZ metro area. Call (480) 999-3339.",
+  "title": "Reconstruction & Rebuild | Gold Water Fire, Phoenix, AZ Metro",
+  "description": "Repair and rebuild after fire or water damage: framing, drywall, flooring, and finishes, led by our in-house construction team. Phoenix, AZ metro area. Call (480) 999-3339.",
   "h1": "Reconstruction & Rebuild",
   "breadcrumbLabel": "Reconstruction & Rebuild",
-  "intro": "Repair and rebuild damaged structures back to move-in condition — framing, drywall, flooring, and finishes, led by our in-house construction team.",
+  "intro": "Repair and rebuild damaged structures back to move-in condition: framing, drywall, flooring, and finishes, led by our in-house construction team.",
   "serviceType": "Reconstruction and Rebuild",
   "photo": {
     "src": "/assets/img/reconstruction-rebuild-restoration-phoenix-az.jpg",
@@ -18,7 +18,7 @@
       "soft": true,
       "eyebrow": "One Company, Start To Finish",
       "heading": "Why reconstruction stays in-house",
-      "body": "Once mitigation is complete, most properties still need real construction work: framing, drywall, flooring, paint, and finishes. Gold Water Fire's reconstruction work is led by Construction Manager Brandon Gurr and Reconstruction Team Lead Johnny — so the same company that handled the cleanup handles the rebuild, with no second contractor to coordinate.",
+      "body": "Once mitigation is complete, most properties still need real construction work: framing, drywall, flooring, paint, and finishes. Gold Water Fire's reconstruction work is led by Construction Manager Brandon Gurr and Reconstruction Team Lead Johnny, so the same company that handled the cleanup handles the rebuild, with no second contractor to coordinate.",
       "cards": [
         { "heading": "Structural repair", "body": "Framing, subfloor, and drywall repair or replacement." },
         { "heading": "Flooring and finishes", "body": "Flooring, trim, paint, and finish work to bring rooms back to move-in condition." },
@@ -28,7 +28,7 @@
   ],
   "faqs": [
     { "q": "Who leads Gold Water Fire's reconstruction work?", "a": "Construction Manager Brandon Gurr and Reconstruction Team Lead Johnny lead reconstruction and rebuild projects." },
-    { "q": "Do I need to hire a separate contractor for repairs after mitigation?", "a": "No — reconstruction is handled in-house by the same company that does the water or fire mitigation, so there's no second contractor to coordinate." },
+    { "q": "Do I need to hire a separate contractor for repairs after mitigation?", "a": "No. Reconstruction is handled in-house by the same company that does the water or fire mitigation, so there's no second contractor to coordinate." },
     { "q": "What areas do you serve for reconstruction?", "a": "The greater Phoenix, Arizona metro area, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast, and the cities in between." }
   ],
   "cta": {

@@ -147,7 +147,7 @@ export function renderGuidesIndex(pages) {
         <div class="section-head">
           <span class="eyebrow">Guides</span>
           <h2>Straight answers about water and fire damage</h2>
-          <p>Written plainly, one question per page — what to do, what to expect, and what actually matters when it happens to your home.</p>
+          <p>Written plainly, one question per page: what to do, what to expect, and what actually matters when it happens to your home.</p>
         </div>
         <div class="card-grid">
           ${guides.map(card).join("\n          ")}
@@ -173,7 +173,7 @@ export function renderGuidesIndex(pages) {
     path: "/guides/",
     title: "Water & Fire Damage Guides | Gold Water Fire",
     description:
-      "Plain-language guides on water damage, fire damage, insurance, and what to expect from a restoration crew — from Gold Water Fire in Phoenix.",
+      "Plain-language guides on water damage, fire damage, insurance, and what to expect from a restoration crew, from Gold Water Fire in Phoenix.",
     h1AsTitle: "Guides",
     breadcrumbLabel: "Guides",
     datePublished: "2026-08-10",
@@ -254,7 +254,7 @@ export function renderAreasIndex(pages) {
     path: "/service-areas/",
     title: "Service Areas | Fire & Water Damage Restoration Across Phoenix Metro | Gold Water Fire",
     description:
-      "Cities Gold Water Fire serves across the Phoenix, AZ metro — fire and water damage restoration and reconstruction in Mesa, Chandler, Phoenix and the surrounding valley.",
+      "Cities Gold Water Fire serves across the Phoenix, AZ metro: fire and water damage restoration and reconstruction in Mesa, Chandler, Phoenix and the surrounding valley.",
     h1AsTitle: "Service Areas",
     breadcrumbLabel: "Service Areas",
     datePublished: "2026-08-12",
