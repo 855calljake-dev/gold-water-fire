@@ -232,7 +232,7 @@
       "service": "Water Damage Restoration",
       "path": "/peoria/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -241,7 +241,7 @@
       "service": "Fire Damage Restoration",
       "path": "/peoria/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -250,7 +250,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/peoria/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -259,7 +259,7 @@
       "service": "Water Damage Restoration",
       "path": "/surprise/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -268,7 +268,7 @@
       "service": "Fire Damage Restoration",
       "path": "/surprise/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -277,7 +277,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/surprise/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -286,7 +286,7 @@
       "service": "Water Damage Restoration",
       "path": "/goodyear/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -295,7 +295,7 @@
       "service": "Fire Damage Restoration",
       "path": "/goodyear/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -304,7 +304,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/goodyear/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -313,7 +313,7 @@
       "service": "Water Damage Restoration",
       "path": "/buckeye/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
