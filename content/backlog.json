@@ -322,7 +322,7 @@
       "service": "Fire Damage Restoration",
       "path": "/buckeye/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -331,7 +331,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/buckeye/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -340,7 +340,7 @@
       "service": "Water Damage Restoration",
       "path": "/san-tan-valley/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -349,7 +349,7 @@
       "service": "Fire Damage Restoration",
       "path": "/san-tan-valley/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -358,7 +358,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/san-tan-valley/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -367,7 +367,7 @@
       "service": "Water Damage Restoration",
       "path": "/avondale/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -376,7 +376,7 @@
       "service": "Fire Damage Restoration",
       "path": "/avondale/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -385,7 +385,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/avondale/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -394,7 +394,7 @@
       "service": "Water Damage Restoration",
       "path": "/queen-creek/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -403,7 +403,7 @@
       "service": "Fire Damage Restoration",
       "path": "/queen-creek/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
