@@ -412,7 +412,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/queen-creek/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -421,7 +421,7 @@
       "service": "Water Damage Restoration",
       "path": "/apache-junction/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -430,7 +430,7 @@
       "service": "Fire Damage Restoration",
       "path": "/apache-junction/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -439,7 +439,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/apache-junction/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -448,7 +448,7 @@
       "service": "Water Damage Restoration",
       "path": "/el-mirage/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -457,7 +457,7 @@
       "service": "Fire Damage Restoration",
       "path": "/el-mirage/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -466,7 +466,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/el-mirage/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -475,7 +475,7 @@
       "service": "Water Damage Restoration",
       "path": "/fountain-hills/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -484,7 +484,7 @@
       "service": "Fire Damage Restoration",
       "path": "/fountain-hills/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -493,7 +493,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/fountain-hills/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
