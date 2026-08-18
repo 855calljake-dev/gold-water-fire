@@ -502,7 +502,7 @@
       "service": "Water Damage Restoration",
       "path": "/paradise-valley/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -511,7 +511,7 @@
       "service": "Fire Damage Restoration",
       "path": "/paradise-valley/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -520,7 +520,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/paradise-valley/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -529,7 +529,7 @@
       "service": "Water Damage Restoration",
       "path": "/tolleson/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -538,7 +538,7 @@
       "service": "Fire Damage Restoration",
       "path": "/tolleson/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -547,7 +547,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/tolleson/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -556,7 +556,7 @@
       "service": "Water Damage Restoration",
       "path": "/litchfield-park/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -574,7 +574,7 @@
       "service": "Reconstruction & Rebuild",
       "path": "/litchfield-park/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -583,7 +583,7 @@
       "service": "Water Damage Restoration",
       "path": "/cave-creek/water-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
