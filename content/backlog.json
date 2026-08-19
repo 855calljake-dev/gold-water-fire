@@ -565,7 +565,7 @@
       "service": "Fire Damage Restoration",
       "path": "/litchfield-park/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -592,7 +592,7 @@
       "service": "Fire Damage Restoration",
       "path": "/cave-creek/fire-damage-restoration.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "location",
@@ -601,21 +601,21 @@
       "service": "Reconstruction & Rebuild",
       "path": "/cave-creek/reconstruction.html",
       "faithLoopPhase": "sacrifice-faith",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "ac-condensate-line-clog-water-damage",
       "topic": "AC condensate line clogs, a very Arizona-specific water damage cause tied to summer AC use",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "additional-living-expenses-coverage-explained",
       "topic": "What 'additional living expenses' coverage means when a home is temporarily uninhabitable",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -629,28 +629,28 @@
       "slug": "can-you-stay-home-during-water-damage-restoration",
       "topic": "Whether it's safe or practical to stay in a home during water damage restoration",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "category-1-2-3-water-damage-explained",
       "topic": "The difference between Category 1, 2, and 3 water damage, and why it changes how a job is handled",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "difference-between-mitigation-and-restoration",
       "topic": "The difference between mitigation and restoration, and why the two terms get confused",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "dishwasher-leak-hidden-cabinet-damage",
       "topic": "Dishwasher leaks and the hidden damage they cause under cabinets and flooring before anyone notices",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
