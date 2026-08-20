@@ -1,0 +1,98 @@
+{
+  "slug": "hvac-system-after-a-fire",
+  "path": "/guides/hvac-system-after-a-fire.html",
+  "title": "What Happens to an HVAC System After a House Fire | Gold Water Fire, Phoenix, AZ",
+  "description": "Why smoke odor keeps coming back through the vents after a fire, what soot does inside ductwork and equipment, and how HVAC cleaning is handled.",
+  "h1": "What Happens to an HVAC System After a House Fire, and Why It Usually Needs Professional Cleaning",
+  "breadcrumbLabel": "HVAC After a Fire",
+  "intro": "The walls got painted. The carpet was replaced. Somebody scrubbed the ceilings and the cabinets and it looked, for a few days, like the fire had been dealt with. Then the AC kicked on in the afternoon and the smell came back, faint at first, then unmistakable, and you stood in the middle of a clean room wondering what you had missed. That confusion is worth sitting with, because it is not a sign you cleaned wrong. It usually means the smoke went somewhere nobody opened up, and it has been quietly waiting there the whole time.",
+  "sections": [
+    {
+      "eyebrow": "What actually happened",
+      "heading": "The system was breathing while the house burned",
+      "body": "A forced-air HVAC system does one thing: it pulls air from your house, moves it across a coil, and pushes it back out through the supply ducts. If the blower was running when the fire started, or if it cycled on at any point before power was cut, it did exactly that job with smoke instead of air. Even when the system was off, heat and pressure from a fire push smoke into every opening it can find, and return grilles, supply registers, and the gaps around duct boots are wide open by design.\n\nSmoke is not just odor. It is a suspension of fine carbon particles, unburned fuel, acids, and oils, and it condenses on the first cool surface it touches. Inside an HVAC system, cool surfaces are everywhere: sheet metal, the evaporator coil, the blower wheel, the inside of flex duct. What settles there is not dust. It is a sticky, slightly acidic film that keeps releasing odor as air passes over it, which is why the smell reappears on a schedule that matches your thermostat."
+    },
+    {
+      "eyebrow": "Component by component",
+      "heading": "Where soot collects and what it does there",
+      "body": "Different parts of the system hold soot differently, and that matters because cleaning one part and skipping another usually means the odor returns. Here is what tends to be found where.",
+      "cards": [
+        {
+          "heading": "The blower wheel and motor housing",
+          "body": "The blower wheel has dozens of small curved blades, and soot packs into them the way lint packs into a dryer vent. A loaded wheel moves less air, works the motor harder, and re-aerosolizes particles every time it spins up. It is also one of the most commonly skipped components because reaching it means pulling the blower assembly out of the air handler."
+        },
+        {
+          "heading": "The evaporator coil",
+          "body": "The coil is a dense stack of aluminum fins, often damp with condensation during cooling season, which is the ideal surface for smoke residue to stick to and stay. A sooted coil loses cooling capacity, and because condensate runs across it and down into the drain pan, odor and residue can go with it."
+        },
+        {
+          "heading": "Ductwork, rigid and flexible",
+          "body": "Sheet metal duct can usually be cleaned. Flexible duct with an interior fabric or plastic liner is another matter, because residue works into a porous surface that cannot be scrubbed the way metal can. Insulated duct board is similar. In a lot of fire jobs the honest answer for flex and duct board is replacement rather than cleaning."
+        },
+        {
+          "heading": "Filters, plenums, and registers",
+          "body": "The filter is the easy part and should be replaced, not cleaned, but the filter housing, the return and supply plenums, and the boots behind every register hold residue too. Registers themselves are usually removed, washed, and reinstalled after the duct interior is addressed."
+        }
+      ]
+    },
+    {
+      "eyebrow": "Why DIY rarely finishes the job",
+      "heading": "The difference between deodorizing and removing",
+      "body": "Most consumer approaches to smoke odor are masking approaches. Ozone machines, fogging products, and air fresheners can change how a space smells for a while, but they do not remove a physical film from the inside of a blower wheel. When the source is still there, the odor comes back, and it comes back strongest on hot afternoons when the system runs the most and the residue warms up.\n\nThere is also a safety layer. Smoke residue is mildly corrosive, and left on metal it can pit surfaces and attack electrical contacts over time. On a gas furnace, soot near the heat exchanger and burner assembly is a reason to have the equipment inspected before it is fired again, because combustion components fouled with debris do not burn cleanly. Running a heavily contaminated system also redistributes particles into rooms that were never touched by the fire, which is how a kitchen fire ends up making a back bedroom smell.\n\nA thorough approach generally means the system stays off and the return and supply openings get sealed while other cleaning happens, so demolition dust and airborne soot do not get pulled into ducts that were clean. Then the system is opened, inspected, and cleaned component by component, with porous parts replaced rather than treated. Only after that does deodorizing make sense, as a finishing step on a system that is already clean."
+    },
+    {
+      "eyebrow": "Working through it",
+      "heading": "Questions worth asking before anyone starts",
+      "body": "If you are getting estimates or talking to your insurance adjuster, a few specific questions tend to surface what a scope actually covers. Ask whether the blower assembly will be removed for cleaning or only cleaned in place. Ask whether the evaporator coil is included, and whether the drain pan and condensate line are being addressed. Ask what happens to flexible duct and any insulated duct board, cleaning or replacement, and why. Ask whether the system will be sealed off during the rest of the cleaning and reconstruction work. Ask whether a licensed HVAC technician is inspecting the equipment before it is returned to service.\n\nHVAC work usually sits at the seam between the cleaning phase and the rebuild phase, which is part of why it gets missed. It helps to know how those phases connect. Our overview of <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> walks through smoke and soot cleanup, and <a href=\"/reconstruction.html\">reconstruction and rebuild</a> covers what happens once the structure is ready to be put back together. If firefighting water was involved, ducts in a crawlspace or under a slab may also need attention, which is covered under <a href=\"/water-damage-restoration.html\">water damage restoration</a>.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does the smoke smell come back only when the AC runs?",
+      "a": "Because the source is inside the system, not in the room. Smoke residue that condensed on the blower wheel, the evaporator coil, and duct surfaces releases odor when air moves across it and when it warms up. The room can be spotless and still smell the moment the blower starts."
+    },
+    {
+      "q": "Can ductwork be cleaned, or does it have to be replaced?",
+      "a": "It depends on the material. Bare sheet metal duct can generally be cleaned because the surface is non-porous. Flexible duct with a fabric or plastic liner, and insulated duct board, are porous enough that smoke residue works into the surface, and replacement is often the more reliable answer."
+    },
+    {
+      "q": "Is it safe to run my HVAC system after a fire?",
+      "a": "Running it before the system has been inspected and cleaned tends to spread soot into parts of the house that were not affected, and residue on gas furnace combustion components is a reason to have the equipment looked at before it is fired again. The usual practice is to leave the system off and seal the return and supply openings until it can be evaluated."
+    },
+    {
+      "q": "Does an ozone treatment fix smoke odor in the ducts?",
+      "a": "Deodorizing treatments can reduce odor temporarily, but they do not remove the physical film of soot and oils from inside the equipment. If the residue is still there, the smell generally returns. Deodorizing works best as a last step after the system has actually been cleaned."
+    }
+  ],
+  "cta": {
+    "heading": "If the smell keeps coming back, we can look at the system",
+    "body": "Gold Water Fire handles fire damage cleanup and the rebuild that follows across the Phoenix metro area, from Peoria and Avondale out to Queen Creek, San Tan Valley, and Apache Junction. Call (480) 999-3339 or email Help@goldwaterfire.com and tell us what you are smelling and when. AZ ROC #264344 KB-2."
+  },
+  "evidence": "All technical content is general HVAC and fire restoration knowledge (smoke condensation on cool surfaces, blower and coil contamination, porous versus non-porous duct materials); the only company statements are the confirmed name, phone, email, license, services, and service area.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-20",
+  "dateModified": "2026-08-20",
+  "photo": {
+    "src": "/assets/img/hvac-system-after-a-fire-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What happens to an HVAC system after a house fire, and why it usually needs professional cleaning"
+  }
+}
