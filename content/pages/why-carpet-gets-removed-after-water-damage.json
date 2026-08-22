@@ -1,0 +1,84 @@
+{
+  "slug": "why-carpet-gets-removed-after-water-damage",
+  "path": "/guides/why-carpet-gets-removed-after-water-damage.html",
+  "title": "Why Carpet and Pad Often Cannot Be Saved After Water Damage | Gold Water Fire, Phoenix, AZ",
+  "description": "Why carpet pad is usually removed after a flood even when the carpet looks fine, what water category means, and how drying decisions get made in Phoenix homes.",
+  "h1": "Why Carpet & Pad Often Cannot Be Saved After Water Damage, Even When It Looks Fine",
+  "breadcrumbLabel": "Why Carpet Gets Removed After Water Damage",
+  "intro": "You walked the room in socks and felt the squish, and then a day later the carpet looked almost normal again. The color came back. The nap dried on top. And someone told you it all has to come out anyway, and nothing about that sat right. Maybe this is the second time this has happened in the same corner of the house, and you have never gotten a straight answer about why the fix never seems to stick. That confusion is fair. Carpet is one of the few things in a house that can look completely recovered while the layers underneath it are still holding water, and nobody tells you that until you are already standing in the middle of it.",
+  "sections": [
+    {
+      "eyebrow": "The part you cannot see",
+      "heading": "Carpet is three materials, and they dry at three different speeds",
+      "body": "What you call \"the carpet\" is really an assembly. On top is the face yarn, the fibers you walk on, usually nylon, polyester, or olefin. Those fibers are mostly non-absorbent and they release water fast, which is exactly why the surface looks and feels dry so quickly. Underneath that is the primary and secondary backing, held together with latex adhesive. Below that sits the pad, and below the pad is the subfloor: concrete slab in most Phoenix-area homes, or plywood on a second story.\n\nThe pad is the problem. Most residential pad is rebond, the multicolored foam made from scrap urethane chips pressed together with binder. It is engineered to be open and springy, which means it is also engineered to hold an enormous amount of water relative to its weight, and to hold it in thousands of tiny closed pockets rather than in one drainable mass. A rebond pad can stay saturated for days under carpet that feels dry to a bare hand. Moisture meters and thermal imaging exist precisely because touch is unreliable here.\n\nSo when a restorer pulls back a corner and tells you the pad is gone, they are usually not talking about the thing you were looking at."
+    },
+    {
+      "eyebrow": "Category and time",
+      "heading": "Two questions decide whether carpet stays: what the water was, and how long it sat",
+      "body": "Restoration work generally sorts water into three categories. Clean water from a supply line, a water heater, or a refrigerator line starts as Category 1. Water that has picked up contaminants, like discharge from a washing machine, a dishwasher, or an overflowed tub with soap and body soil in it, is Category 2. Sewage, toilet backflow past the trap, and any groundwater or storm intrusion is Category 3.\n\nWith Category 1 water caught quickly, carpet can often be saved by floating it: detaching it from the tack strip, removing and discarding the pad, and forcing warm dry air underneath the carpet while dehumidifiers pull the moisture out of the air. Notice that even in the best case the pad usually still goes. It is cheap to replace and nearly impossible to dry reliably in place.\n\nTime changes the category. Clean water that sits warm for a day or two stops being clean, because the fibers, dust, and soil already in the carpet give bacteria something to eat. In an Arizona house in summer, that clock runs faster, not slower. And Category 3 water is a removal decision from the start, for both carpet and pad, because you cannot decontaminate a porous assembly that has raw sewage in it, no matter how good the extraction was."
+    },
+    {
+      "eyebrow": "The other failure modes",
+      "heading": "Delamination, staining, and the smell that comes back in August",
+      "body": "Even when the water was clean and the drying was aggressive, carpet can fail for mechanical reasons. Delamination is the common one: the latex holding the primary backing to the secondary backing softens when it stays wet, and the two layers separate. You feel it as a loose ripple or a soft, bubbly spot underfoot weeks later. Once it delaminates, it cannot be restretched flat and it will keep wrinkling.\n\nJute backing, found in some older and some wool carpets, shrinks when it gets wet and dries, which pulls the whole piece tight and can tear it off the tack strip at the edges. Wicking is another one: as the backing dries, it pulls dissolved soil and dye up into the face fibers, so a brown line appears along the wall a week after everything looked fine.\n\nThen there is odor. Musty smell that shows up on hot days or when the AC kicks on is usually microbial growth in the pad or at the pad-to-slab interface, feeding on the binder and the trapped organic soil. It is not a cleaning problem. Deodorizer over the top of it buys a few weeks. This is the pattern behind the question a lot of people are actually asking: why does this keep happening in the same room? Often because the water event was handled at the surface each time, and the layer that actually held the moisture was never opened up."
+    },
+    {
+      "eyebrow": "What honest handling looks like",
+      "heading": "Removal is not automatically the answer, and neither is saving it",
+      "body": "A reasonable process is not \"tear everything out.\" It is: find and stop the source, extract standing water with a weighted extraction tool that presses water out of the backing rather than just vacuuming the surface, then measure. Moisture readings in the pad, the subfloor, the tack strip area, and the bottom few inches of drywall tell you what is actually wet, which is usually a larger footprint than the visible stain. Slab-on-grade adds its own wrinkle, because concrete holds moisture and releases it slowly back into whatever sits on top of it, so a pad replaced too early on a still-damp slab can be wet again in a week.\n\nFrom there, the honest answer varies by room. Clean water, caught same day, carpet in good shape: float the carpet, replace the pad. Water that traveled under a wall into a closet or under cabinets: expect the drying plan to extend past the carpet entirely. Contaminated water: the carpet and pad in the affected area come out, and the focus shifts to cleaning and drying the structure underneath.\n\nWhen carpet does come out, what is underneath sometimes needs work too, and that is where drying stops and rebuilding starts. You can read how we handle each side of that on our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page and our <a href=\"/reconstruction.html\">reconstruction and rebuild</a> page. If the water event came out of a fire response, the hose and sprinkler water is its own situation, covered under <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My carpet feels completely dry. Why does the pad still have to come out?",
+      "a": "Face fibers are largely non-absorbent and release water quickly, so the top can feel dry within hours. Rebond pad underneath is open-cell foam that holds water in thousands of small pockets and can stay saturated for days. Touch will not tell you, and a moisture meter reading through the assembly usually will."
+    },
+    {
+      "q": "Can carpet ever be saved after a flood?",
+      "a": "Yes, in the right conditions. Clean supply-line water, caught quickly, on carpet that is in decent shape and has not delaminated, can often be dried in place by floating the carpet and forcing air under it. The pad is usually still replaced, because it is inexpensive and unreliable to dry."
+    },
+    {
+      "q": "What if the water came from a toilet or a sewer backup?",
+      "a": "Grossly contaminated water is a removal decision for porous materials. Carpet and pad in the affected area come out, and the work shifts to cleaning, disinfecting, and drying the structure underneath. Porous assemblies cannot be reliably decontaminated in place once sewage is in them."
+    },
+    {
+      "q": "Why does the same room keep smelling musty months later?",
+      "a": "That usually points to microbial growth in the pad or at the pad-to-slab interface, or to a slab that was still releasing moisture when new pad went down. It tends to show up on hot days or when the AC starts moving air. Deodorizing the surface does not address it, because the source sits under the carpet."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what is actually wet under your floor",
+    "body": "If you are looking at a room that dried on the surface and still does not feel right, it is worth having someone measure before you decide anything. Gold Water Fire serves the Phoenix metro area, from Peoria and Avondale out to Queen Creek, San Tan Valley, and Apache Junction. Call (480) 999-3339 or email Help@goldwaterfire.com, or reach us through our contact page."
+  },
+  "evidence": "This page states only general restoration industry knowledge about carpet construction, water categories, drying methods, and failure modes, plus the confirmed company name, phone, email, service area, and service pages; no company-specific claims, numbers, certifications, or response times are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Our Team"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-22",
+  "dateModified": "2026-08-22",
+  "photo": {
+    "src": "/assets/img/why-carpet-gets-removed-after-water-damage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Why carpet and pad often can't be saved after water damage, even when it looks fine"
+  }
+}
