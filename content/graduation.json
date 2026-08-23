@@ -1,0 +1,6 @@
+{
+  "state": "manual-review",
+  "since": "2026-08-23",
+  "reason": "Structural gate failure on an autonomous batch (2026-08-23): water-softener-failure-flooding: Forbidden claim pattern(s) detected: hard 24/7 availability claim ;; shower-pan-leak-signs: Forbidden claim pattern(s) detected: bonded/insured claim",
+  "howToReGraduate": "Two clean approved batches again (SOP-AGENTIC-SEO-WEBSITES.md §5.3 / BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09). Then set state back to \"graduated\" here AND in the bytomorrow-bos tenant register (CLAUDE.md §6) — both, or they disagree."
+}
