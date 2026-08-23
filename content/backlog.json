@@ -860,14 +860,14 @@
       "slug": "toilet-overflow-subfloor-damage",
       "topic": "What happens to a subfloor after a toilet overflow, and why the damage is usually worse than the visible water",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "refrigerator-water-line-leak",
       "topic": "How a refrigerator ice maker water line fails slowly, and the floor damage it causes before anyone notices",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -881,21 +881,21 @@
       "slug": "pool-equipment-leak-into-home",
       "topic": "When pool equipment and plumbing leaks find their way into the house",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "burst-pipe-while-away-from-home",
       "topic": "What a burst pipe does to a house over days when nobody is home",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "sewer-backup-cleanup-basics",
       "topic": "Why a sewer backup is handled differently from clean water, and what that changes",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -909,21 +909,21 @@
       "slug": "foundation-crack-water-seepage",
       "topic": "Foundation cracks, water seepage, and telling a structural problem from a moisture one",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "gutter-and-drainage-failure-water-intrusion",
       "topic": "How gutter and site drainage failures push water into a home",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "window-seal-failure-water-damage",
       "topic": "Failed window seals and flashing as a slow water intrusion path",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
