@@ -1,3 +1,10 @@
 .DS_Store
 assets/img/_source/
 node_modules/
+
+# Real job-site photos live beside the repo for GBP upload staging and must
+# NEVER be committed: this repo is PUBLIC and every photo carries GPS EXIF of
+# a customer's home. Added 2026-08-26 the day the folder appeared, while it
+# was still untracked.
+GWF - Original Photos/
+GWF - GBP Ready/
