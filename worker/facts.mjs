@@ -20,11 +20,22 @@ export const CONFIRMED_FACTS = `
 // substring/regex match against the full rendered text of a draft.
 export const FORBIDDEN_PATTERNS = [
   { label: "IICRC certification claim", re: /IICRC/i },
-  { label: "bonded/insured claim", re: /\bbonded\b|\binsured\b/i },
+  // Scoped to credential claims 2026-08-26, settling issue #22. The bare-word
+  // version rejected "a shower pan bonded to the substrate" (construction
+  // sense) on 2026-08-23 and de-graduated the tenant over it. The claim this
+  // guards is still UNVERIFIED in CLAIMS-TO-VERIFY.md: Gold Water Fire must
+  // not be described as bonded or insured. Technical senses and
+  // insurance-speak ("the insured" as policyholder) pass.
+  { label: "bonded/insured credential claim", re: /\b(bonded and insured|insured and bonded|licensed,? bonded|fully (?:bonded|insured)|we (?:are|'re) (?:bonded|insured)|(?:bonded|insured) (?:company|contractor|business|team|crew|technicians?|staff|professionals?))\b/i },
   { label: "specific years-in-business or founding-year claim", re: /\b(19|20)\d{2}\b.{0,20}\b(founded|since|established)\b|\bfounded in\b|\bsince \d{4}\b/i },
   { label: "job/project count claim", re: /\b\d[\d,]*\+?\s*(jobs|projects|homes|properties|customers)\b/i },
   { label: "specific response-time number", re: /\b(one|two|three|1|2|3)[\s-]?(hour|hr)\b.{0,20}\bresponse\b/i },
-  { label: "hard 24/7 availability claim", re: /24\/7|24-hour|around the clock/i },
+  // REMOVED 2026-08-26, settling issue #22: 24/7 emergency availability was
+  // CONFIRMED by Jake on 2026-08-07 (CLAIMS-TO-VERIFY.md) and the template top
+  // bar displays it on every page, so this pattern forbade drafts from stating
+  // a confirmed, site-wide claim and de-graduated the tenant on 2026-08-23
+  // over an innocent use. The adjacent specific-response-time pattern below
+  // still stands: "24/7" is confirmed, "1-hour response" is not.
   { label: "testimonial/review language", re: /\b(said|told us|reviewed by|stars?)\b.{0,30}\b(customer|client)\b|"[^"]{15,}"\s*[-–—]\s*[A-Z][a-z]+/ },
   { label: "competitor mention", re: /\b(Preferred Choice|ServPro|ServiceMaster|Restoration 1|Paul Davis|BELFOR)\b/i },
   // draft.mjs's hard rule 6 says the emotional register is direction for HOW
