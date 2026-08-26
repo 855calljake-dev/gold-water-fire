@@ -1,0 +1,90 @@
+{
+  "slug": "sewer-backup-cleanup-basics",
+  "path": "/guides/sewer-backup-cleanup-basics.html",
+  "title": "Sewer Backup Cleanup Basics | Gold Water Fire | Phoenix, AZ",
+  "description": "Why sewer backups are handled differently from clean water leaks, what has to be removed, and what changes about drying, testing and rebuild.",
+  "h1": "Why a Sewer Backup Is Handled Differently from Clean Water, & What That Changes",
+  "breadcrumbLabel": "Sewer Backup Cleanup Basics",
+  "intro": "There is a particular kind of quiet that follows a sewer backup. The water is not water in the way a burst supply line is water, and everyone in the house knows it without being told. You are standing at the edge of a hallway trying to decide whether to step in, whether the carpet is gone, whether it is safe for the kids or the dog to be home tonight. Nobody prepares for this one, and the instinct to grab a mop and start pushing it toward a drain is completely human.",
+  "sections": [
+    {
+      "eyebrow": "The categories",
+      "heading": "Not all water damage is the same water",
+      "body": "The restoration industry sorts water into three broad categories, and the category drives nearly every decision that follows. Category 1 is clean water from a sanitary source: a supply line, a water heater inlet, a refrigerator ice maker. Category 2, sometimes called gray water, carries meaningful contamination but not sewage: a washing machine discharge, a dishwasher overflow, a toilet overflow with urine but no solids. Category 3, black water, is grossly contaminated and can carry bacteria, viruses and other pathogens. Sewer backups, toilet overflows past the trap, and flooding from outdoors are all Category 3. A key detail people miss: clean water does not stay clean. Once Category 1 water sits and passes through building materials, dust, and whatever is on the floor, it degrades toward Category 2 and then Category 3. Time and temperature both push it in that direction, and an Arizona house in summer pushes it fast.",
+      "cards": [
+        {
+          "heading": "Category 1",
+          "body": "Clean at the source. Often dryable in place if it is caught early and has not migrated into contaminated areas."
+        },
+        {
+          "heading": "Category 2",
+          "body": "Contaminated but not sewage. Some porous materials can be saved, many cannot, and cleaning is part of the job, not just drying."
+        },
+        {
+          "heading": "Category 3",
+          "body": "Sewage, ground water, or water that sat long enough to become hazardous. Removal comes before drying, and porous materials generally go."
+        }
+      ]
+    },
+    {
+      "eyebrow": "What actually changes",
+      "heading": "Remove first, dry second",
+      "body": "With clean water, the goal is usually to dry the structure in place and save materials. With a sewer backup, that order flips. You cannot dry contamination out of something, drying only removes moisture, so any porous material holding sewage has to come out of the building before drying begins. In practice, that usually means carpet and pad are removed and discarded, not cleaned. Drywall is cut above the wet line, commonly a few inches above where the water reached, so the wall cavity can be cleaned and dried. Insulation in affected cavities comes out because it holds contaminated water and cannot be reliably cleaned. Particleboard cabinet bases and MDF baseboard swell and hold contamination and usually do not survive. Non-porous and semi-porous surfaces are a different story. Tile, sealed concrete, framing lumber, and hard-surface cabinetry can often be cleaned, treated with an appropriate antimicrobial, and kept. Solid hardwood is a case-by-case call depending on how long it sat and whether the contamination reached the subfloor. Containment matters more too: a sewage job typically gets sealed off from the rest of the house with plastic and negative air pressure so cleanup does not spread the problem to clean rooms."
+    },
+    {
+      "eyebrow": "Safety and sequence",
+      "heading": "What to do, and what to leave alone",
+      "body": "Before anything else, keep people and pets out of the affected area, including anyone who takes the long way around by walking through it in socks. Do not run the HVAC system if return vents are in the affected space, since that can move contaminated air through the whole house. Stop using drains and fixtures on the affected line, because every flush and every load of laundry adds to what is already on the floor. If the water is near outlets or a panel, treat electricity as a live hazard and shut off the circuit if you can do it from a dry spot. Take photos and video before anything is moved, from the doorway if you need to, since insurance adjusters will want to see the extent and the affected contents. Then step back. Wet vacs, household bleach and box fans are the three things people reach for, and all three can make a sewage job worse: a shop vac becomes a contaminated tool, bleach does not sanitize porous material and reacts badly with other cleaners, and a fan blowing across contaminated water aerosolizes it. The other half of the job is the cause. A single-fixture backup is often a local clog. Multiple fixtures backing up at once, or a toilet gurgling when the washer drains, usually points at the main line, which can mean roots, a collapse, or a city-side blockage. Cleanup that happens before the line is cleared just gets to happen twice."
+    },
+    {
+      "eyebrow": "After the cleanup",
+      "heading": "Verification, then putting the house back",
+      "body": "Two separate finish lines exist on a Category 3 job, and it helps to know both. The first is that the space is clean and dry: moisture meters and a moisture map confirm framing and subfloor have returned to a normal reading for the materials and the climate, not just that the surface feels dry. The second is that what came out gets replaced. Cut drywall, removed insulation, baseboard, flooring, and cabinet bases are all reconstruction work, and it is worth knowing whether the company doing the cleanup also handles the rebuild or hands you off. Gold Water Fire does both, with <a href=\"/water-damage-restoration.html\">water damage restoration</a> handling the removal and drying and <a href=\"/reconstruction.html\">reconstruction and rebuild</a> closing the walls and floors back up. Keep every photo, the list of what was discarded, and any documentation of readings. Insurance policies handle sewage backup differently from other water losses, often through a separate endorsement with its own limit, so the paperwork matters more here than on a simple supply-line leak.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can carpet be saved after a sewer backup?",
+      "a": "Almost never. Carpet pad is highly absorbent and is discarded in essentially every sewage loss. The carpet itself is porous on both the face and the backing, and standard practice is removal rather than cleaning in place. There are limited exceptions for high-value rugs sent out for specialized off-site cleaning, but wall-to-wall carpet in a Category 3 area generally goes."
+    },
+    {
+      "q": "How far up the wall does drywall have to be cut?",
+      "a": "It depends on how high the water wicked, not just where the visible line is. Drywall pulls moisture upward well past the waterline, so the cut is typically made several inches above the highest wet reading found with a moisture meter. If insulation in the cavity got wet, it comes out with the drywall. Cutting at a consistent height also makes the patch cleaner to rebuild later."
+    },
+    {
+      "q": "Is it safe to stay in the house?",
+      "a": "That depends on where the backup happened and how much of the home it reached. A contained backup in a garage or a single bathroom with the area sealed off is very different from sewage across a hallway that connects bedrooms and kitchen. Consider whether anyone in the home is immunocompromised, pregnant, elderly or very young, and whether the HVAC has been pulling air from the affected space."
+    },
+    {
+      "q": "Do I need the plumber before or after the cleanup crew?",
+      "a": "Ideally at the same time, but the line has to be cleared before drying can finish, otherwise the backup can return into a space that is halfway restored. Many people call both on the same day and let the plumber work first while the cleanup crew sets containment and starts removing standing water and ruined materials."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if what you are looking at is a big deal",
+    "body": "You do not have to have it figured out before you call. If you want a second opinion on whether the water in your house needs professional handling or just a mop and some patience, call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. We work across the Phoenix metro area, from Peoria to San Tan Valley and out past Apache Junction, and a question is welcome even if it turns out to be nothing."
+  },
+  "evidence": "All process detail here is general restoration industry practice (water categories, removal of porous materials, containment, moisture verification) and is not presented as a claim about Gold Water Fire's own history, credentials, response times or job counts; only the confirmed phone, email, services and service area are stated about the company.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-26",
+  "dateModified": "2026-08-26",
+  "photo": {
+    "src": "/assets/img/sewer-backup-cleanup-basics-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Why a sewer backup is handled differently from clean water, and what that changes"
+  }
+}
