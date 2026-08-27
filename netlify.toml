@@ -6,10 +6,18 @@
   command = "npm run build"
   publish = "."
 
+# Images are overwritten in place under a stable, slug-based filename, so new
+# bytes arrive at an unchanged URL. Under the previous rule (max-age=604800,
+# no revalidation) a replaced image stayed invisible to anyone who had loaded
+# the page in the past week, which is how a corrected image can look uncorrected.
+# max-age keeps the fast path for an hour; stale-while-revalidate then serves
+# the cached copy instantly for up to a week while fetching the new one in the
+# background, so freshness costs no visible latency. Real fix is content-hashed
+# filenames, which needs a worker change; this is the one-line mitigation.
 [[headers]]
   for = "/assets/img/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=604800"
 
 # Team roster JSON drives the About page — must never cache stale
 [[headers]]
