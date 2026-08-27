@@ -143,6 +143,22 @@ async function main() {
   // The budget cap still applies to the sum.
   const spend = { anthropicUsd: 0, higgsfieldUsd: 0, imagesGenerated: 0 };
   const totalSpend = () => spend.anthropicUsd + spend.higgsfieldUsd;
+  // Anthropic list prices, USD per MTok, keyed by the model this run actually
+  // drafts with -- read from platform.claude.com/docs/en/about-claude/pricing
+  // on 2026-08-27 (Sonnet 5's $2/$10 launch price is now the standing price).
+  // Replaces a hardcoded $15/$75 that overstated every recorded figure 3x
+  // against a $5/$25 model. Per bytomorrow-bos SOP-COST-TIERING: a model
+  // change and its rate change land in the same commit, and an unknown model
+  // falls back to the highest current rate so the budget cap trips early
+  // rather than never.
+  const ANTHROPIC_USD_PER_MTOK = {
+    "claude-opus-5": { input: 5, output: 25 },
+    "claude-sonnet-5": { input: 2, output: 10 },
+  };
+  const anthropicRate = ANTHROPIC_USD_PER_MTOK[cfg.model] || { input: 10, output: 50 };
+  if (!ANTHROPIC_USD_PER_MTOK[cfg.model]) {
+    console.log(`[work] WARNING: no price entry for model ${cfg.model}; recording at fallback $10/$50 per MTok`);
+  }
   // One row per thing this run produced or failed to produce, for the daily
   // ops report (bytomorrow-bos SOP-DAILY-OPS-REPORT.md). Collected as we go
   // rather than reconstructed at the end, so a rejection keeps the actual
@@ -193,8 +209,7 @@ async function main() {
         page.datePublished = dateStr;
         page.dateModified = dateStr;
         const check = checkPage(page);
-        // Opus 5 approx $15/$75 per MTok in/out — rough budget guard, not billing-accurate.
-        spend.anthropicUsd += ((usage.input_tokens || 0) * 15 + (usage.output_tokens || 0) * 75) / 1_000_000;
+        spend.anthropicUsd += ((usage.input_tokens || 0) * anthropicRate.input + (usage.output_tokens || 0) * anthropicRate.output) / 1_000_000;
 
         if (!check.ok) {
           console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): ${check.problems.join(" | ")}`);
