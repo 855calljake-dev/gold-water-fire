@@ -1,0 +1,60 @@
+{
+  "slug": "water-heater-expansion-tank-failure",
+  "path": "/guides/water-heater-expansion-tank-failure.html",
+  "title": "Water Heater Expansion Tank & Pressure Relief Valve Failures | Gold Water Fire, Phoenix, AZ",
+  "description": "Why a water heater keeps dripping, weeping, or spraying from the relief valve, how expansion tanks fail, and what the water is telling you. Phoenix metro guide.",
+  "h1": "Expansion Tank & Pressure Relief Valve Failures on a Water Heater",
+  "breadcrumbLabel": "Water Heater Expansion Tank Failure",
+  "intro": "You mopped it up the first time and assumed it was condensation. Then it happened again, and the drain pan had water sitting in it, and the little copper pipe on the side of the heater was wet again by evening. Maybe a plumber came out, tightened something, and it stopped for two weeks. Maybe nobody came and you just started putting a towel down. Either way, there is a version of this that is harder than the mess itself: the not knowing. You cannot tell if this is a slow nuisance or the early warning of something that will let go all at once while you are at work. Nobody has explained why it keeps coming back, so every time you walk past the garage you check, and you are tired of checking.",
+  "sections": [
+    {
+      "eyebrow": "What the water is telling you",
+      "heading": "The relief valve is usually the messenger, not the problem",
+      "body": "Every tank water heater has a temperature and pressure relief valve, the T&P valve, threaded into the top or upper side of the tank with a discharge pipe running down toward the floor or the pan. Its entire job is to open if the water inside exceeds roughly the pressure or temperature it is rated for, and dump water rather than let the tank become a hazard. So when you find water at the bottom of that discharge pipe, the valve is very often doing exactly what it was built to do. It is reporting that something upstream of it is wrong. That is why tightening it, or swapping it, or shutting the little test lever, so often buys only a few weeks. Replacing a messenger does not change the message. There are really only three things it can be reporting: the pressure in your system is too high, the temperature in the tank is too high, or the valve itself has failed and no longer seals. Sorting out which one matters more than stopping the drip, because two of those three will keep escalating."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my relief valve only leak in the evening or overnight?",
+      "a": "That is a classic thermal expansion pattern. The valve weeps when the burner or element has just finished a heating cycle and pressure has spiked, then it reseals as the water cools and pressure drops. Evenings and early mornings are when most households draw hot water and trigger long recovery cycles. A leak that comes and goes on a schedule points toward pressure or expansion, not usually toward a cracked tank."
+    },
+    {
+      "q": "Can I just cap the discharge pipe or plug the valve to stop the mess?",
+      "a": "No. That pipe is the pressure escape path for the tank. Blocking or capping it, or threading a valve onto it, removes the safety function entirely and turns a water problem into a serious hazard. If the drip is soaking something, catch the water and get the underlying pressure or temperature issue diagnosed instead."
+    },
+    {
+      "q": "How do I tell if my expansion tank is dead?",
+      "a": "Two quick indicators. Tap along the side of it: a healthy tank sounds hollow toward the top and solid toward the bottom, while a waterlogged one sounds solid all the way. And press the valve stem on the cap with the tank isolated or depressurized. Air means the bladder is likely intact, water means it has failed. A plumber should confirm the precharge against your actual static pressure."
+    },
+    {
+      "q": "The leak has been going for months and the drywall behind the heater feels soft. Is that still just a plumbing fix?",
+      "a": "Once water has been sitting against drywall, framing, or a subfloor long enough to soften it, you have two separate problems. A plumber resolves the source. The saturated materials need drying and, if they have deteriorated, removal and rebuild. Water wicks upward and sideways through porous material, so the damage is often wider than the wet spot you can see."
+    }
+  ],
+  "cta": {
+    "heading": "When the drip has already gotten into the wall or floor",
+    "body": "If you have found soft drywall, buckled flooring, staining on a ceiling below, or a musty smell near the water heater, call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. We handle water damage restoration and the reconstruction that follows across the Phoenix metro area, from Peoria and Avondale out through San Tan Valley and Apache Junction."
+  },
+  "evidence": "This page states only general plumbing and restoration knowledge about thermal expansion, T&P valves, and expansion tanks, plus the confirmed company name, phone, email, services, and service area; no company-specific metrics, certifications, or performance claims are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-27",
+  "dateModified": "2026-08-27",
+  "photo": {
+    "src": "/assets/img/water-heater-expansion-tank-failure-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Expansion tank and pressure relief valve failures on a water heater"
+  }
+}
