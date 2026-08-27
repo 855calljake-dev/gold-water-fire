@@ -20,6 +20,7 @@ import { draftPage } from "./draft.mjs";
 import { checkPage } from "./evidenceGate.mjs";
 import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
 import { deGraduate, findBatchPrForDate, mergeBatchPr, openContentBatchPr, readGraduationState } from "./recorder.mjs";
+import { verifyClaims, VERIFIER_MODEL } from "./verify.mjs";
 import { recordRun, recordArtifacts, buildMenuUrl } from "./telemetry.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -134,6 +135,11 @@ async function main() {
   // Structural gate refusals only — the de-graduation trigger. Kept separate
   // from `failed`, which also collects provider and network failures.
   const gateRejections = [];
+  // Claim-verifier verdicts, one per drafted attempt that reached the
+  // verifier (§2.2). Surfaced in the PR body so shadow-phase spot-checks read
+  // straight off the batch PR, and deliberately NOT a de-graduation input —
+  // see the comment at the call site.
+  const verifierResults = [];
   // Tracked per provider, not as one number, because they are separately
   // funded accounts that run dry independently -- Anthropic bills a card,
   // Higgsfield's API draws a prepaid balance that is NOT the same wallet as
@@ -229,6 +235,55 @@ async function main() {
             gateRejections.push(`${item.slug}: ${check.problems.join(" | ")}`);
           }
           continue;
+        }
+
+        // Claim verifier — SOP-AGENTIC-SEO-WEBSITES.md §2.2, after the
+        // structural gate, before any image spend. Fresh context: it sees the
+        // confirmed-facts spec and the page text, never the drafting prompt.
+        // Priced at the VERIFIER's model rates, not cfg.model: drafting runs
+        // Sonnet during the trial while verification stays on Opus per
+        // SOP-COST-TIERING §3 (verify at or above the drafting tier).
+        //
+        // DELIBERATE: verifier failures do NOT feed gateRejections, so they
+        // never trigger self-de-graduation. The structural gate earned that
+        // power; a new judgment gate does not get tenant-demotion authority
+        // before shadow calibration proves its false-positive rate (§2.2's
+        // rollout rule, written after the 2026-08-23 false-positive
+        // de-graduation). Revisiting that is a bytomorrow-bos ruling.
+        if (cfg.verifyMode !== "off") {
+          const v = await verifyClaims({ page, apiKey: cfg.anthropicApiKey });
+          const vRate = ANTHROPIC_USD_PER_MTOK[VERIFIER_MODEL] || { input: 10, output: 50 };
+          spend.anthropicUsd += ((v.usage.input_tokens || 0) * vRate.input + (v.usage.output_tokens || 0) * vRate.output) / 1_000_000;
+          const claimNote = v.claims.map((c) => `[cat ${c.category}] "${c.quote}" (${c.why})`).join(" ;; ");
+          verifierResults.push({ slug: item.slug, mode: cfg.verifyMode, verdict: v.verdict, detail: v.reason || claimNote || "clean" });
+
+          if (cfg.verifyMode === "enforce") {
+            if (v.verdict === "error") {
+              // Fail closed (§2.2): no verdict, no ship. Not a text-quality
+              // problem, so no re-draft — the page stays pending for the next
+              // run, same shape as an image failure.
+              console.log(`[work] REJECTED ${item.slug}: claim verifier unavailable (${v.reason}) -- fail closed, page not shipped this run`);
+              lastProblems = [`claim verifier unavailable: ${v.reason}`];
+              artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
+                status: "failed", reason: `claim verifier unavailable: ${v.reason}` });
+              break;
+            }
+            if (v.verdict === "fail") {
+              console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): claim verifier -- ${claimNote}`);
+              lastProblems = v.claims.map((c) => `remove or ground this ungrounded claim: "${c.quote}" -- ${c.why}`);
+              if (attempt === 2) {
+                artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
+                  status: "rejected", menuUrl: buildMenuUrl(page), reason: `claim verifier: ${claimNote}` });
+              }
+              continue;
+            }
+            console.log(`[work] claim verifier PASS ${item.slug}`);
+          } else {
+            // Shadow: observe and record, never block. An error here is a
+            // logged non-event by design — shadow exists to measure, and a
+            // broken verifier must not stop a healthy batch.
+            console.log(`[work] claim verifier (shadow) ${v.verdict.toUpperCase()} ${item.slug}${v.verdict === "fail" ? ` -- ${claimNote}` : ""}${v.verdict === "error" ? ` -- ${v.reason}` : ""}`);
+          }
         }
 
         // SOP-AGENTIC-SEO-WEBSITES.md §8.5, strengthened 2026-08-08: an
@@ -340,6 +395,14 @@ async function main() {
     }),
   };
   const summaryLines = drafted.map((d) => `- \`${d.page.path}\` — ${d.page.title}\n  Evidence: ${d.page.evidence}`);
+  if (verifierResults.length) {
+    // The shadow-phase audit trail: two clean spot-checked batches here are
+    // the §2.2 bar for flipping RUNTIME_VERIFY_MODE to enforce.
+    summaryLines.push(`\n**Claim verifier (${cfg.verifyMode})** — SOP-AGENTIC-SEO-WEBSITES.md §2.2, model ${VERIFIER_MODEL}:`);
+    for (const r of verifierResults) {
+      summaryLines.push(`- ${r.verdict.toUpperCase()} \`${r.slug}\`${r.detail && r.detail !== "clean" ? ` — ${r.detail}` : ""}`);
+    }
+  }
 
   const result = await openContentBatchPr({
     token: cfg.githubToken,

@@ -48,5 +48,15 @@ export function loadConfig() {
     model: process.env.RUNTIME_MODEL || "claude-opus-5", // CONTENT-PIPELINE.md: drafting page copy = Opus 5
     maxPagesPerRun: Number(process.env.RUNTIME_MAX_PAGES || 3),
     maxBudgetUsd: Number(process.env.RUNTIME_MAX_BUDGET_USD || 5),
+    // Claim verifier rollout mode, SOP-AGENTIC-SEO-WEBSITES.md §2.2 (deployed
+    // 2026-08-27, HANDOFF-CLAIM-VERIFIER.md step 1). "shadow": run on every
+    // page, log the verdict into the run output and the PR body, block
+    // nothing. "enforce": a fail retries with the verifier's quotes as
+    // feedback, then drops the page; a verifier error fails closed (page not
+    // shipped). "off": escape hatch, skip entirely. Default shadow, NOT
+    // enforce: §2.2's rollout rule — a new judgment gate does not hard-block
+    // until two shadow batches have been human-spot-checked. Flip via env, no
+    // code change.
+    verifyMode: (process.env.RUNTIME_VERIFY_MODE || "shadow").toLowerCase(),
   };
 }
