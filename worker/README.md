@@ -53,7 +53,9 @@ to open a PR, and even in live mode the only write is that PR.
 | `draft.mjs` | One Anthropic API call per backlog item, forced tool-call for structured output. Model: Opus 5, per `CONTENT-PIPELINE.md`'s drafting-model routing. |
 | `evidenceGate.mjs` | Structural check — not left to prompt compliance. Rejects unconfirmed claims and any HTML beyond a plain `<a>` link. |
 | `recorder.mjs` | The only code that writes to GitHub. Uses the Contents API directly (branch, file writes, PR) — no local clone needed for a few JSON files. |
-| `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK — same style as `draft.mjs`. Then embeds IPTC/XMP/EXIF SEO metadata into the file (§8.3.1) via the `exiftool` CLI. |
+| `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK, same style as `draft.mjs`. Then compress (§8.3), text-gate (§8.3.2), embed IPTC/XMP/EXIF SEO metadata (§8.3.1) via the `exiftool` CLI, in that order. |
+| `imageTextGate.mjs` | §8.3.2. OCRs the compressed image and refuses it if the model drew words. The one step in the image path that does **not** fail soft. Allowlists this tenant's own `GOLD` / `WATER` / `FIRE` wordmark. |
+| `imageTextGate.test.mjs` | `npm run test:imagegate`. Runs the gate over real production images, including the two pulled off the live site for carrying garbled text, and one it provably does not catch. |
 
 ## Three things that are load-bearing (same shape as agent-runtime, sized down)
 
@@ -151,15 +153,76 @@ ever been generated on Railway, so the metadata step has not run end to end in
 production. It is verified against a real JPEG locally, and the binary it needs
 is verified present on the service. Those are two separate facts.
 
-## System dependency: `exiftool`
+## System dependencies: `exiftool`, ImageMagick, `tesseract`
 
-The metadata step above shells out to the `exiftool` CLI rather than adding an
-npm dependency — a system binary, matching this worker's "plain script, no
-SDK" ethos. It is **not** in the base Nixpacks Node image, so `nixpacks.toml`
-at the repo root installs it (`libimage-exiftool-perl`) for the Railway build.
+All three are CLIs shelled out to rather than npm dependencies, matching this
+worker's "plain script, no SDK" ethos. None is in the base Nixpacks Node image,
+so `nixpacks.toml` at the repo root installs all of them for the Railway build.
 That file exists solely for this service; Netlify ignores it.
 
-Locally: `brew install exiftool` (macOS), `apt-get install libimage-exiftool-perl` (Debian).
+Locally: `brew install exiftool imagemagick tesseract` (macOS);
+`apt-get install libimage-exiftool-perl imagemagick tesseract-ocr tesseract-ocr-eng` (Debian).
+
+**They do not fail the same way, and that is the important part.**
+
+| Binary | Missing means | Direction |
+|---|---|---|
+| `exiftool` | images ship untagged | fails soft |
+| ImageMagick | images ship heavy | fails soft |
+| `tesseract` | **no image ships, so no page ships** | **fails hard** |
+
+The §8.3.2 text gate is deliberately the opposite of the two steps either side
+of it. A missing weight check costs page speed and a missing metadata pass
+costs some SEO; a missing text check ships gibberish onto a live page. So an
+image that could not be checked is treated as an image that failed, and §8.5
+then drops the page.
+
+**Name `tesseract-ocr-eng` explicitly, and do not "simplify" `nixpacks.toml`
+back to one package.** `tesseract-ocr` installs, reports a version and runs
+perfectly well without the English trained data, and then errors on every
+single image. Under a hard-fail gate that is a silent total stop, and it looks
+exactly like a quiet night. `jaketaylor-home-loans` hit precisely that on
+2026-08-26.
+
+That is also why `run.mjs` probes for both halves in its first log line:
+
+```
+[orient] tesseract 5.5.3 present, English data installed -- §8.3.2 image text gate ACTIVE
+```
+
+and, when it is not there:
+
+```
+[orient] tesseract NOT AVAILABLE (...). §8.3.2 does NOT fail soft: every generated
+         image will be rejected unchecked and NO page will publish this run.
+```
+
+**Deploy status: NOT yet confirmed on Railway.** The packages are in
+`nixpacks.toml` as of 2026-08-26, and the next deploy's build log plus that
+first `[orient]` line are what turns this into a fact. Same standard §8.3.1
+set for `exiftool`, and the same reason: a config file saying a binary is
+installed is not the binary being installed.
+
+## What the text gate cannot do
+
+`npm run test:imagegate` going green does **not** mean no garbled image can
+reach the site, and the test says so out loud rather than leaving it implied.
+
+Of the five defective images found on this tenant by the 2026-08-26 visual
+audit of all 111, OCR ranked **one**. The washing-machine image is in the test
+corpus as a permanent known false negative: tesseract reads zero tokens in it
+at any confidence, so no threshold anywhere would have caught it, and only a
+human eye did. It is asserted to PASS. If a future change starts catching it,
+the test fails and tells you that you improved something.
+
+**Pixel checking is not visual review.** The gate is a backstop against one
+specific failure, a model that draws lettering legible enough to read. The
+cheaper half of the fix is upstream in `buildPrompt()`: GWF asks for
+photorealistic scenes and has a defect rate of 1 in 111 by OCR, while JTHL
+asked for conceptual diagram-style illustrations and shipped 4 bad images in
+10. A diagram's job is to explain, so the model reaches for labels and
+headings. A photograph of two technicians in a fire-damaged room has nothing to
+label. Keep the prompt scene-shaped.
 
 ## Environment
 

@@ -29,10 +29,28 @@ but nothing receives it; Jake has said this gets wired up later, don't let it dr
 ## Imagery
 
 Homepage and service-page photography is Higgsfield-generated illustrative imagery (no real
-recognizable people) — Gold Water Fire has no completed jobs yet to photograph. Every such image
-carries a watermark (phoenix mark + wordmark) burned in via
-`assets/brand/gold-water-fire-phoenix-mark.png`. Replace with real job photography as real jobs are
-completed and rights-cleared; swap the file in place once real.
+recognizable people), Gold Water Fire has no completed jobs yet to photograph. Replace with real job
+photography as real jobs are completed and rights-cleared; swap the file in place once real.
+
+**Watermarking, corrected 2026-08-26.** ~~Every such image carries a watermark (phoenix mark +
+wordmark) burned in via `assets/brand/gold-water-fire-phoenix-mark.png`.~~ That was never true of
+worker output and has not been true of the site since the worker started drafting. **Exactly four
+images carry the navy "GOLD WATER FIRE" band**, all four hand-made and all four added in the initial
+build (`12f0990`): `fire-smoke-damage-restoration-cleanup`, `reconstruction-rebuild-restoration`,
+`restoration-contractor-phoenix-az-metro-home-exterior`, and
+`water-damage-restoration-drying-equipment`. The fifth hand-made image, the night hero, deliberately
+carries none because HTML text sits over it. **`worker/image.mjs` has never composited a mark**, and
+`composite` appears nowhere in `worker/`, at any commit. So the remaining ~106 images, every one the
+worker has ever produced, are unmarked.
+
+Measured, not eyeballed: all 111 live images were run through `worker/imageTextGate.mjs`, and those
+four are the only ones whose brand tokens OCR reads at all (confidence 96 and 97).
+
+**This is recorded, not resolved.** Whether the site should mark all of its images, or none, or keep
+the four as they are, is Jake's call. `bytomorrow-bos` `SOP-AGENTIC-SEO-WEBSITES.md` §8.3 is explicit
+that a tenant's existing mark convention is not stripped on a session's own initiative, and §8.3's
+own text currently describes this tenant as carrying no mark at all, which is the other half of the
+same error. The text gate allowlists `GOLD`, `WATER` and `FIRE` so the four keep passing either way.
 
 **Captions (`bytomorrow-bos` `SOP-AGENTIC-SEO-WEBSITES.md` §8.3, Jake's ruling 2026-08-09,
 cross-tenant):** an image caption is the page's own H1, bare — nothing appended, no disclaimer or
