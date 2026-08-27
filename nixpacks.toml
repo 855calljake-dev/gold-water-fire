@@ -24,5 +24,20 @@
 # same way, so a host without it ships heavy rather than shipping nothing.
 # Note Ubuntu's package is ImageMagick 6, whose binary is `convert`, not
 # `magick` -- image.mjs tries both.
+#
+# `tesseract-ocr` and `tesseract-ocr-eng` are the third and fourth, added
+# 2026-08-26 for the SOP-AGENTIC-SEO-WEBSITES.md §8.3.2 image text gate
+# (worker/imageTextGate.mjs). This one is NOT like the two above it: it fails
+# HARD. A host without tesseract rejects every generated image unchecked, and
+# §8.5 then drops every page, so the batch comes back empty rather than coming
+# back untagged. worker/run.mjs probes for it in its first log line, because
+# that outcome is otherwise indistinguishable from a quiet night.
+#
+# BOTH packages are named on purpose. `tesseract-ocr` does not pull the English
+# trained data through apt Recommends reliably, and without `tesseract-ocr-eng`
+# the binary installs, reports a version, runs, and then errors on every single
+# image. Under a hard-fail gate that is a silent total stop. Found on
+# jaketaylor-home-loans the same day the gate shipped there; do not "simplify"
+# this back to one package.
 [phases.setup]
-aptPkgs = ["...", "libimage-exiftool-perl", "imagemagick"]
+aptPkgs = ["...", "libimage-exiftool-perl", "imagemagick", "tesseract-ocr", "tesseract-ocr-eng"]

@@ -16,11 +16,21 @@
 // embedSeoMetadata() below for the two deliberate deviations from that
 // reference implementation.
 
+// §8.3.2 (Jake's design 2026-08-26, cross-tenant): the image text gate, added
+// here 2026-08-26. It is the one step in this file that does NOT fail soft.
+// The prompt below has said "no visible logos, no text, no brand markings, no
+// watermark" since it was written and the model ignored it: the audit of all
+// 111 live images on 2026-08-26 found five carrying machine-invented
+// lettering, one of which OCR ranked at confidence 95 and four of which only a
+// human eye caught. A prompt is not a defence. See imageTextGate.mjs for the
+// rule, the brand allowlist this tenant needs, and what the gate cannot catch.
+
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { writeFile, readFile, unlink } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { scanForRenderedText } from "./imageTextGate.mjs";
 
 const execFileAsync = promisify(execFile);
 
@@ -434,6 +444,29 @@ export async function generateImage({ item, page, apiKey, subjectOverride }) {
     // the tagging step has to be last -- this is the final point at which the
     // file that ships and the file that got tagged are the same bytes.
     const optimized = await optimizeForWeb(rawBuffer, sourceExt, item.slug);
+
+    // §8.3.2 text gate, and its placement AFTER optimizeForWeb is deliberate:
+    // the threshold of 65 was measured on this site's 1600px JPEGs, which is
+    // what actually ships. Checking the raw 2048px PNG would be checking a
+    // different artifact at a resolution the numbers were never taken at.
+    //
+    // Returning null is not a shrug, it is the whole enforcement. run.mjs
+    // already refuses to ship a page whose image came back null (§8.5,
+    // strengthened 2026-08-08), so a text rejection is simply an image
+    // failure and the backlog item stays `pending` for the next run. There is
+    // deliberately no second mechanism here.
+    //
+    // Not an accountFailure: the provider is working fine, it drew words. The
+    // next page may well come back clean, so the run keeps going.
+    const textCheck = await scanForRenderedText(optimized.buffer, optimized.ext, item.slug);
+    if (!textCheck.ok) {
+      console.log(`[image] TEXT GATE REJECTED ${item.slug} (§8.3.2): ${textCheck.reason}`);
+      return null;
+    }
+    if (textCheck.allowed.length) {
+      console.log(`[image] Text gate passed ${item.slug}; brand tokens allowlisted: ${textCheck.allowed.map((t) => `${t.text}(${t.conf.toFixed(0)})`).join(", ")}`);
+    }
+
     const filename = buildFilename(item, optimized.ext);
     const buffer = await embedSeoMetadata(optimized.buffer, { item, page, filename });
 

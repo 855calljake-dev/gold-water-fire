@@ -43,6 +43,37 @@ async function reportExiftool() {
   }
 }
 
+// The same probe for tesseract, and it matters more, because §8.3.2 fails HARD
+// in the opposite direction to exiftool above. A host missing tesseract does
+// not ship a slightly worse image, it ships nothing: every generated image is
+// rejected unchecked, §8.5 then drops every page, and the run ends with an
+// empty batch. From a distance that is indistinguishable from "the worker had
+// nothing to do tonight", which is why this states the answer in the log
+// rather than leaving it to be inferred from a quiet morning.
+//
+// The English trained data is checked SEPARATELY and by name, not assumed to
+// arrive with the binary. `tesseract-ocr` installs and runs perfectly well
+// without `tesseract-ocr-eng`, and then errors on every single image. JTHL hit
+// exactly that on 2026-08-26, which is why both packages are named in
+// nixpacks.toml and why both halves are reported here.
+//
+// Runs BEFORE loadConfig() on purpose: a missing env var must not hide it.
+async function reportTesseract() {
+  try {
+    const { stdout } = await execFileAsync("tesseract", ["--version"]);
+    const version = stdout.trim().split("\n")[0];
+    const langs = await execFileAsync("tesseract", ["--list-langs"]).then((r) => r.stdout).catch(() => "");
+    const hasEng = /^eng$/m.test(langs);
+    if (hasEng) {
+      console.log(`[orient] ${version} present, English data installed -- §8.3.2 image text gate ACTIVE`);
+    } else {
+      console.log(`[orient] ${version} present but English data MISSING -- §8.3.2 will reject EVERY image and no page will publish this run. Install tesseract-ocr-eng (nixpacks.toml aptPkgs).`);
+    }
+  } catch (err) {
+    console.log(`[orient] tesseract NOT AVAILABLE (${err.message}). §8.3.2 does NOT fail soft: every generated image will be rejected unchecked and NO page will publish this run. Install tesseract-ocr + tesseract-ocr-eng (nixpacks.toml aptPkgs).`);
+  }
+}
+
 function todayStr() {
   // Injected so a scheduled run and a manual run agree on "today," and so
   // this file has no bare Date.now()/new Date() call outside this one spot.
@@ -55,6 +86,7 @@ async function loadBacklog() {
 }
 
 async function main() {
+  await reportTesseract();
   await reportExiftool();
   const cfg = loadConfig();
   const dateStr = todayStr();
