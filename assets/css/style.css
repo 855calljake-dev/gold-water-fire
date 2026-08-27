@@ -731,3 +731,111 @@ footer.site-footer {
   color: var(--muted);
   margin: 8px 0 0;
 }
+
+/* Guides side menu (2026-08-26). Two-column layout on the guides section:
+   article left, a sticky scrolling index of every guide (grouped by topic)
+   and every city right. Generated per build from content/pages, so it grows
+   with the backlog without anyone touching it. */
+.guide-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 0 40px;
+  align-items: start;
+}
+.guide-main {
+  min-width: 0;
+}
+/* The outer .guide-layout is itself a .wrap (24px side padding); zero the
+   inner wraps so article text lines up with the hero above, except inside
+   tinted bands, where text needs breathing room from the band edge. */
+.guide-main section > .wrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+.guide-main section.soft > .wrap,
+.guide-main section.cta-band > .wrap {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.side-menu {
+  position: sticky;
+  top: 24px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  margin: 64px 0;
+  padding: 20px 16px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+.side-menu-head {
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy-dark);
+  margin: 20px 0 6px;
+}
+.side-menu-head:first-child {
+  margin-top: 0;
+}
+.side-menu-head a {
+  text-decoration: none;
+}
+.side-menu-head a:hover {
+  color: var(--ember);
+}
+.side-menu-group h3 {
+  font-size: 0.8rem;
+  margin: 14px 0 4px;
+  color: var(--ember);
+}
+.side-menu-group h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+.side-menu-group h3 a:hover {
+  text-decoration: underline;
+}
+.side-menu-group h3 .count {
+  color: var(--muted);
+  font-weight: 400;
+}
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.side-menu li a {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.35;
+}
+.side-menu li a:hover {
+  background: var(--white);
+  color: var(--navy-dark);
+}
+.side-menu li.current > a {
+  background: var(--white);
+  color: var(--navy-dark);
+  font-weight: 700;
+}
+.side-menu-cities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1020px) {
+  .guide-layout {
+    display: block;
+  }
+  .side-menu {
+    position: static;
+    max-height: none;
+    margin: 0 0 48px;
+  }
+}

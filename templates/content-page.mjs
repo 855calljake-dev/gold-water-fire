@@ -1,5 +1,6 @@
 import { shell } from "./shell.mjs";
 import { esc } from "./lib.mjs";
+import { withSideMenu, groupGuidesByTopic } from "./side-menu.mjs";
 
 // The reusable template for service, educational, and location pages —
 // the page type this whole pipeline exists to generate at volume.
@@ -98,14 +99,16 @@ export function renderContentPage(data, allPages = []) {
 
   const linksHtml = internalLinks.length ? ` ${internalLinks.map((l) => `<a href="${l.href}">${esc(l.label)}</a>`).join(" &middot; ")}` : "";
 
-  const bodyHtml = `
+  const heroHtml = `
     <section class="page-hero">
       <div class="wrap">
         <div class="breadcrumb"><a href="/">Home</a> / ${esc(breadcrumbLabel)}</div>
         <h1>${esc(h1)}</h1>
         <p>${intro}</p>
       </div>
-    </section>
+    </section>`;
+
+  const articleHtml = `
 ${photoHtml}
 ${sectionsHtml}
 ${faqHtml}
@@ -119,6 +122,14 @@ ${relatedHtml}
       </div>
     </section>`;
 
+  // Guides get the two-column layout with the scrolling side menu (Jake,
+  // 2026-08-26). Service and location pages keep the full-width layout: the
+  // menu is the guides section's index, not sitewide chrome.
+  const bodyHtml =
+    data.type === "educational"
+      ? heroHtml + withSideMenu(articleHtml, allPages, path)
+      : heroHtml + articleHtml;
+
   return shell({
     path, title, description, h1AsTitle: h1, serviceType, faqs, breadcrumbLabel, photo,
     datePublished, dateModified, bodyHtml,
@@ -129,7 +140,6 @@ ${relatedHtml}
 // service and location pages listed below so the hub also strengthens their
 // internal linking. Uses the shared shell: nav, footer, schema all standard.
 export function renderGuidesIndex(pages) {
-  const guides = pages.filter((p) => p.type === "educational");
   // Services only. Location pages moved to /service-areas/ on 2026-08-12:
   // this hub used to list every non-guide page, so the five actual guides sat
   // in a list alongside every city page under a heading promising
@@ -141,7 +151,28 @@ export function renderGuidesIndex(pages) {
   const card = (p) =>
     `<div class="card"><h3><a href="${p.path}">${esc(p.h1)}</a></h3><p>${esc(p.description)}</p><p style="font-size:0.8rem;opacity:0.7">Updated ${esc(p.dateModified || p.datePublished || "")}</p></div>`;
 
-  const bodyHtml = `
+  // Grouped by topic since 2026-08-26, same reasoning as the 2026-08-12
+  // split above one step further: a flat list was readable at 5 guides and
+  // is not at 50, and the backlog is headed for hundreds. Topic ids are the
+  // side menu's anchor targets.
+  const topicSections = groupGuidesByTopic(pages)
+    .map(
+      (g, i) => `
+    <section${i % 2 ? ' class="soft"' : ""} id="topic-${g.key}">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Guides</span>
+          <h2>${esc(g.label)}</h2>
+        </div>
+        <div class="card-grid">
+          ${g.pages.map(card).join("\n          ")}
+        </div>
+      </div>
+    </section>`
+    )
+    .join("\n");
+
+  const introHtml = `
     <section>
       <div class="wrap">
         <div class="section-head">
@@ -149,11 +180,10 @@ export function renderGuidesIndex(pages) {
           <h2>Straight answers about water and fire damage</h2>
           <p>Written plainly, one question per page: what to do, what to expect, and what actually matters when it happens to your home.</p>
         </div>
-        <div class="card-grid">
-          ${guides.map(card).join("\n          ")}
-        </div>
       </div>
-    </section>
+    </section>`;
+
+  const servicesHtml = `
     <section class="soft">
       <div class="wrap">
         <div class="section-head">
@@ -166,6 +196,8 @@ export function renderGuidesIndex(pages) {
         <p style="margin-top:18px"><a href="/service-areas/">See every city we serve →</a></p>
       </div>
     </section>`;
+
+  const bodyHtml = introHtml + withSideMenu(topicSections + servicesHtml, pages, "/guides/");
 
   const newest = pages.map((p) => p.dateModified || p.datePublished).filter(Boolean).sort().at(-1);
 
@@ -209,8 +241,9 @@ export function renderAreasIndex(pages) {
   }
   const cities = [...byCity.keys()].sort();
 
+  // The id is the anchor target the guides side menu links to, /service-areas/#<city>.
   const cityBlock = (c) => `
-          <div class="card">
+          <div class="card" id="${esc(c)}">
             <h3>${esc(pretty(c))}, AZ</h3>
             <ul style="margin:8px 0 0;padding-left:18px">
               ${byCity.get(c)
