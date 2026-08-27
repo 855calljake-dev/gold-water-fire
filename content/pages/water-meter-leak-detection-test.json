@@ -1,0 +1,95 @@
+{
+  "slug": "water-meter-leak-detection-test",
+  "path": "/guides/water-meter-leak-detection-test.html",
+  "title": "Using Your Water Meter to Confirm a Hidden Leak | Gold Water Fire, Phoenix, AZ",
+  "description": "A step by step water meter shutoff test to confirm a hidden leak in your Phoenix home, plus how to read the low flow indicator and narrow down where water is going.",
+  "h1": "Using Your Water Meter to Confirm a Hidden Leak",
+  "breadcrumbLabel": "Water Meter Leak Test",
+  "intro": "The bill went up again and nobody in the house is doing anything different. There is a spot on the baseboard that dries out and then comes back. A faint smell in one room, only some days. You have looked at it, put your hand on the wall, and walked away because there was nothing to point at. That is a hard place to sit in, because a problem you cannot name is a problem you cannot decide about. You are not being dramatic and you are not imagining it. Water that is hidden behaves exactly like this: it gives you evidence in pieces, on its own schedule, and it never announces itself all at once.",
+  "sections": [
+    {
+      "eyebrow": "Why the meter matters",
+      "heading": "The meter is the one witness that does not guess",
+      "body": "Everything else you have to work with is interpretation. A stain could be old. A smell could be the dog. A high bill could be summer irrigation. The meter is different, because it counts water that leaves the city main and enters your property, and it does not care where that water ends up. If every fixture and appliance in the house is off and the meter is still moving, water is going somewhere you did not send it. That is the whole logic of the test, and it is why plumbers, insurance adjusters and restoration crews all start here. In the Phoenix metro, most homes have a curbside meter in a concrete or plastic box set into the ground near the sidewalk or in the front landscaping, usually with a lid marked WATER. Newer boxes may hold a digital or encoder register instead of the old sweep dial. Both can be read, they just show it differently."
+    },
+    {
+      "eyebrow": "The test",
+      "heading": "How to run the shutoff test, step by step",
+      "body": "Give yourself about half an hour of quiet where nobody is going to flush a toilet or start a load of laundry. Read the meter, wait, read it again. That is it. The care goes into making sure nothing legitimate is using water during the wait.",
+      "cards": [
+        {
+          "heading": "1. Turn off everything that uses water",
+          "body": "Ice makers, water softeners with a regeneration cycle, reverse osmosis systems, pool autofill valves, evaporative coolers, and drip or sprinkler timers all draw water without a person present. In Arizona, irrigation timers and pool autofill are the two most common reasons a meter test comes back false positive. Put the irrigation controller on OFF, not just between cycles."
+        },
+        {
+          "heading": "2. Open the meter box and find the low flow indicator",
+          "body": "Use a screwdriver or hook to lift the lid, and look before you reach in: spiders and scorpions like these boxes. On a dial meter, the small triangle, star or gear shaped disc is the low flow indicator. It spins on very small flows the big dial will not visibly register. On a digital register, look for a flashing faucet icon or a plus sign that appears when flow is detected."
+        },
+        {
+          "heading": "3. Watch the indicator for two full minutes",
+          "body": "With the house still, that disc should be completely motionless. Any rotation, even slow creeping, means water is moving right now. A digital meter may need you to wave a light or press the button to wake the display, then watch the flow icon."
+        },
+        {
+          "heading": "4. If it is still, take a reading and wait",
+          "body": "Some leaks are intermittent or too slow to see in two minutes. Write down every digit on the register including the fixed decimals, then leave the house untouched for one to two hours. Read it again. Any change with nothing running is a leak. Photograph both readings with the time visible, that record is useful later."
+        }
+      ]
+    },
+    {
+      "eyebrow": "Narrowing it down",
+      "heading": "Inside the house or outside it",
+      "body": "Once the meter tells you there is a leak, the next question is which side of the wall it is on, and that answer changes who you call and how urgent it is. Find your main shutoff valve, usually where the supply line enters the house, often in the garage, on an exterior wall, or in a wall box near the front of the home. Close it, then repeat the meter reading and wait.\n\nIf the meter stops moving with the main valve closed, the leak is downstream of that valve, meaning inside the house or in the supply lines under the slab. If the meter keeps moving with the main closed, the leak is between the meter and the valve, which usually means the buried service line in the yard. Yard line leaks in this valley often show as a green patch in dead grass, a soft spot in the decomposed granite, or a slow seep at a driveway edge.\n\nBefore you conclude anything, rule out toilets. A flapper leaking past the seal is the single most common cause of a moving meter and leaves no visible water at all. Put a few drops of food coloring in each tank, wait fifteen minutes without flushing, and check the bowl. Color in the bowl means that toilet is your leak. Also check the pressure relief line on the water heater, the condensate and supply lines on softeners, and any hose bib that drips when closed."
+    },
+    {
+      "eyebrow": "What comes next",
+      "heading": "When the leak has already been feeding a wall",
+      "body": "There is a difference between finding a leak and finding out what it has been doing. A pinhole in copper inside a wall cavity, a slab line leak, or a failed shower pan can run for weeks at a rate too small to notice on the meter dial but more than enough to keep gypsum board and framing wet. That is when you start getting the pieces of evidence that brought you here: the baseboard that swells and then flattens, the cool spot on the floor, the tile grout that darkens along one line, the smell that comes and goes with the air conditioning.\n\nWet building materials do not go back to normal on their own in a closed wall, even in a dry climate, because the cavity holds humidity long after the surface looks fine. Drywall paper, wood framing and the underside of flooring will support microbial growth while the room above them looks perfectly ordinary. Moisture meters and thermal imaging exist because the eye genuinely cannot see the boundary of a wet area.\n\nSo the honest answer to what comes next depends on what your test showed. A running toilet is a Saturday errand. A meter that keeps moving with the main closed is a plumber and a shovel. A confirmed leak with damp materials around it is drying and, if the material is gone too far, repair. Our <a href=\"/water-damage-restoration.html\">water damage restoration</a> work covers locating the extent of moisture, drying the structure and documenting it, and when the wall, cabinetry or flooring has to come out, our <a href=\"/reconstruction.html\">reconstruction and rebuild</a> team handles putting it back. If you would rather just talk it through with someone before deciding anything, <a href=\"/contact.html\">reach out</a> or call (480) 999-3339.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much water can a leak lose before it shows on the meter dial?",
+      "a": "The large dial on a residential meter is not sensitive enough for very small flows, which is why the low flow indicator exists. That small triangle, star or gear will rotate on flows far too slight to move the main dial noticeably. If you want to catch the slowest leaks, take a written reading and wait one to two hours rather than relying on what you can see in a minute."
+    },
+    {
+      "q": "My meter is not moving but I still think something is wrong. What now?",
+      "a": "A still meter rules out a pressurized supply leak at that moment, but it does not rule out everything. Drain line leaks, condensate line problems from the air conditioner, shower pan or grout failures, roof or window flashing leaks, and intermittent appliance leaks all put water into a structure without the supply side running. Repeat the reading test over a longer window, and pay attention to whether the symptom tracks with rain, with the AC running, or with someone using a particular shower."
+    },
+    {
+      "q": "Should I leave my main water valve off while I figure this out?",
+      "a": "If the meter confirmed a leak and you are not going to be home, shutting the main off limits how much water keeps going into the building. Know where the valve is and turn it slowly, since older gate valves in this area can be stiff or brittle. Turning off the supply also means no water for the house, so plan around it, and remember that a slab or wall cavity that is already wet will stay wet after the flow stops."
+    },
+    {
+      "q": "Does a confirmed leak mean I need work done inside the wall?",
+      "a": "Not always. The repair is a plumbing question, but whether building materials need attention depends on how long water was present and what it touched. Drying is often possible without removing much material if the moisture is caught early and monitored. When framing, drywall or flooring has been wet long enough to lose integrity, replacement becomes the practical route. You can read more about how we approach that on our <a href=\"/about.html\">about page</a>."
+    }
+  ],
+  "cta": "{\"heading\":\"Talk it through before you decide anything\",\"body\":\"If your meter test came back moving, or if you are still not sure what you are looking at, you can call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. We work throughout the Phoenix metro area, from Peoria and Avondale out to Queen Creek, San Tan Valley and Apache Junction. AZ ROC #264344 KB-2.",
+  "evidence": "All leak testing steps, meter mechanics and moisture behavior described here are general plumbing and restoration knowledge, not claims about Gold Water Fire; the only company specifics used are the confirmed name, phone, email, ROC license, services and service area.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-27",
+  "dateModified": "2026-08-27",
+  "photo": {
+    "src": "/assets/img/water-meter-leak-detection-test-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Using your water meter to confirm a hidden leak"
+  }
+}
