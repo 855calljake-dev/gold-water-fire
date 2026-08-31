@@ -1,0 +1,52 @@
+{
+  "slug": "thermal-imaging-for-water-detection",
+  "path": "/guides/thermal-imaging-for-water-detection.html",
+  "title": "What Thermal Imaging Can and Cannot Show After Water Damage | Gold Water Fire | Phoenix, AZ",
+  "description": "A clear look at what thermal cameras actually detect during a water loss inspection, and where they fall short, from a Phoenix, AZ restoration contractor.",
+  "h1": "What Thermal Imaging Can and Cannot Show During a Water Loss Inspection",
+  "breadcrumbLabel": "Thermal Imaging for Water Detection",
+  "intro": "If you've watched someone walk your home with a thermal camera after a leak or a flood, you've probably had a moment of wondering what that screen is really telling you. The colors look convincing. The camera moves slowly across a wall or ceiling like it's finding something important. But if no one explains what those colors mean, it's easy to walk away either falsely reassured or falsely alarmed, and either one leaves you no closer to understanding what's actually happening inside your walls.",
+  "sections": "\n<parameter name=\"sections\">[\n{\"eyebrow\":\"How it works\",\"heading\":\"Thermal cameras read temperature, not water\",\"body\":\"A thermal imaging camera, sometimes called an infrared camera, does not see moisture directly. It reads surface temperature differences and turns them into a color map. Wet materials often show up cooler than the surrounding dry material because evaporation pulls heat away from the surface, and because water changes how a material holds and releases heat compared to air. That temperature difference is what shows up as a blue or purple patch on a wall or ceiling. It's a real, useful signal, but it's a proxy for water, not a direct measurement of it.\"},\n{\"eyebrow\":\"What it's good for\",\"heading\":\"Where thermal imaging genuinely helps\",\"body\":\"Used correctly, a thermal camera is one of the fastest ways to scan a large area and flag places that deserve a closer look. It can pick up patterns that are hard to see with the eye alone: a cooler stripe following a pipe run inside a wall, a broader cool patch spreading from a ceiling penetration, or an uneven pattern across a slab that hints at a slab leak. On a job with multiple rooms, that speed matters. It lets an inspector narrow down where to spend time with tools that actually confirm moisture, rather than opening walls at random or guessing based on visible staining alone.\",\"cards\":[{\"heading\":\"Fast area scanning\",\"body\":\"Covers a wall, ceiling, or floor much faster than a manual moisture-meter grid, which helps prioritize where to look closer.\"},{\"heading\":\"Spotting hidden patterns\",\"body\":\"Can reveal temperature patterns behind drywall or under flooring that aren't yet visible as staining, bubbling, or discoloration on the surface.\"},{\"heading\":\"Documenting spread\",\"body\":\"Creates a visual record of how far a temperature anomaly extends, which is useful for understanding the scope of an affected area.\"}]},\n{\"eyebrow\":\"Where it falls short\",\"heading\":\"What a thermal camera cannot tell you on its own\",\"body\":\"This is the part that gets skipped too often. A thermal camera cannot confirm that a cool spot is actually wet. Cool patches can come from missing insulation, an air leak, a cold water supply line running behind a wall, direct sunlight hitting one side of a surface, or even a difference in the material itself, like a stud versus the drywall around it. It also cannot tell you how deep moisture goes, whether it has reached structural framing, or how long the material has been wet. And once materials have dried on the surface, even if moisture is trapped deeper inside, the temperature difference that made the camera useful in the first place may no longer be visible at all.\",\"cards\":[{\"heading\":\"No moisture confirmation\"},{\"heading\":\"No depth reading\"},{\"heading\":\"Fooled by other heat sources\"},{\"heading\":\"Blind to already-dried surfaces\"}]},\n{\"eyebrow\":\"How it's meant to be used\",\"heading\":\"Why it's paired with a moisture meter, not used alone\",\"body\":\"Because a thermal camera shows temperature patterns rather than confirmed moisture, a responsible inspection uses it as a first pass, then follows up with direct-contact tools. A pin or pinless moisture meter physically measures moisture content in the material itself, which is what actually confirms whether a cool patch on the thermal image is water, or just a cold stud or a draft. The thermal scan tells you where to check. The moisture meter tells you what's really there. Skipping the second step and reporting a thermal reading as a moisture finding is one of the more common ways inspections go wrong.\"},\n{\"eyebrow\":\"What this means for you\",\"heading\":\"Questions worth asking during an inspection\",\"body\":\"If someone is inspecting your home with a thermal camera, it's reasonable to ask what tool they're using to confirm any spot the camera flags, and to ask them to show you the moisture meter reading alongside the thermal image. It's also worth asking whether they checked areas that might not show a temperature difference at all, like flooring that's already dried on the surface but still holding moisture underneath. A thorough inspection uses thermal imaging as one part of a broader process, not the whole story. You can read more about how a full water damage assessment fits together on our <a href=\\\"/water-damage-restoration.html\\\">water damage restoration</a> page.\"}\n]",
+  "faqs": [
+    {
+      "q": "Can thermal imaging see water inside walls?",
+      "a": "It can show a temperature difference that often correlates with water inside a wall, but it does not directly see the water. Confirming actual moisture requires a moisture meter or another direct-contact measurement alongside the thermal scan."
+    },
+    {
+      "q": "Why would a thermal camera miss an active leak?",
+      "a": "If a surface has already dried, or if the leak is small and slow, the temperature difference may not be strong enough to register. Insulation, airflow, and the material itself can also mask a temperature change that would otherwise show up."
+    },
+    {
+      "q": "Is a thermal camera reading the same as a moisture reading?",
+      "a": "No. A thermal image shows surface temperature patterns. A moisture meter measures moisture content directly in the material. They answer different questions, and a sound inspection uses both together rather than relying on one alone."
+    },
+    {
+      "q": "Can thermal imaging show how long an area has been wet?",
+      "a": "Not reliably. Thermal imaging shows a snapshot of temperature at the moment of the scan. It doesn't record history, so it can't tell you whether an area has been wet for a day or several weeks."
+    }
+  ],
+  "cta": "\n<parameter name=\"heading\">Not sure what a thermal scan of your home actually found?",
+  "body": "Gold Water Fire can walk through what the readings mean and confirm moisture with direct testing, not just a color on a screen. Call (480) 999-3339 or reach out through our contact page to talk through what you're seeing.",
+  "evidence": "This page describes general thermal imaging and moisture inspection principles as industry knowledge and makes no specific claims about jobs, certifications, or outcomes performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "photo": {
+    "src": "/assets/img/thermal-imaging-for-water-detection-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What thermal imaging can and cannot show during a water loss inspection"
+  }
+}

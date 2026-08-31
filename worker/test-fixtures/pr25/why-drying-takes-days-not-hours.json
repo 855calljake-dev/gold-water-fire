@@ -1,0 +1,75 @@
+{
+  "slug": "why-drying-takes-days-not-hours",
+  "path": "/guides/why-drying-takes-days-not-hours.html",
+  "title": "Why Structural Drying Takes Days, Not Hours | Gold Water Fire Phoenix, AZ",
+  "description": "Wondering why your floors still feel damp days after a leak? Here's what's actually happening inside your walls and floors during structural drying.",
+  "h1": "Why Structural Drying Takes Days Rather Than Hours",
+  "breadcrumbLabel": "Why Drying Takes Days Not Hours",
+  "intro": "If you've had water damage and the surfaces look dry but someone keeps telling you the job isn't done yet, that disconnect is confusing and honestly a little maddening. You mopped up the water. The carpet feels fine underfoot. Why are there still fans running on day three? It's a fair question, and the answer isn't obvious unless you understand what's happening below the surface, in places you can't see and can't touch to check for yourself.",
+  "sections": [
+    {
+      "eyebrow": "What's actually going on",
+      "heading": "Water hides in places you can't check by hand",
+      "body": "When water spreads across a floor or down a wall, the part you can see and touch is only the surface of the problem. Water moves into porous materials through capillary action, the same force that lets a paper towel pull liquid upward against gravity. Drywall, wood subfloor, baseboards, and framing lumber all absorb moisture this way, and once it's inside the material, it doesn't just evaporate off the top layer. It has to migrate back out to the surface before it can leave the structure at all. That migration is slow, and it happens whether or not anyone is watching."
+    },
+    {
+      "eyebrow": "The science of it",
+      "heading": "Evaporation is a physical process with a physical speed limit",
+      "body": "Drying a structure means moving moisture from inside building materials into the air, and then moving that humid air out of the space. Both steps take time no matter how much equipment is running. Warmer air holds more moisture, air movement across a wet surface speeds evaporation, and dehumidifiers pull moisture out of the air so it can keep accepting more. But wood, drywall, and concrete release water at different rates depending on density and thickness. A wet baseboard might release its moisture in a day. A soaked subfloor or a block wall can hold water for much longer, because the moisture has to travel further to reach the surface."
+    },
+    {
+      "eyebrow": "What restoration crews are watching",
+      "heading": "Moisture meters tell a different story than your eyes",
+      "body": "A material can look and feel dry while still holding moisture well above what's safe to close a wall back up over. That's why drying crews use moisture meters to test material readings against a dry standard, usually an unaffected area of the same material in the same building, rather than relying on a visual check. Monitoring continues over multiple days because materials dry unevenly. A wall might read dry at the bottom and wet a foot higher, or dry on the surface and wet at the core. Stopping too early based on how something looks or feels is one of the most common reasons water damage turns into hidden mold weeks later."
+    },
+    {
+      "eyebrow": "Why the timeline varies",
+      "heading": "Every structure dries at its own pace",
+      "body": "How long drying takes depends on the materials involved, how much water was absorbed, the humidity and temperature in the space, how much airflow the equipment can generate, and whether the water was clean or contaminated (contaminated water can require removal of materials rather than drying them in place). A small, contained leak in a single room dries faster than water that traveled under flooring into multiple rooms or down into wall cavities. This is general information about how drying works, not a prediction of how long any specific job will take, since that depends entirely on the conditions in that particular home."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "If my carpet already feels dry, why do the fans and dehumidifiers need to stay?",
+      "a": "Carpet and pad dry faster than the subfloor underneath them, and surface dryness doesn't mean the materials below are dry. Equipment usually stays until moisture readings confirm the whole structure, not just the top layer, has reached a safe level."
+    },
+    {
+      "q": "Can I just open the windows and use my own fans instead?",
+      "a": "Airflow helps, but without dehumidification, moisture pulled out of materials just stays in the room's air and can resettle or move into other materials. In Arizona's dry climate this can help more than in humid regions, but it usually isn't enough on its own for a saturated structure."
+    },
+    {
+      "q": "How do I know when drying is actually finished?",
+      "a": "The reliable way is moisture meter readings compared against a dry standard in the same material, checked over multiple days, rather than a visual or touch check."
+    },
+    {
+      "q": "Does the type of water involved change the drying process?",
+      "a": "Yes. Clean water from a supply line is treated differently than water from a sewage backup or floodwater, which may require removing and replacing certain materials rather than drying them, due to contamination concerns."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if your space is actually dry yet?",
+    "body": "If you're dealing with water damage in the Phoenix area and want a clear read on what's happening inside your walls and floors, Gold Water Fire can walk you through it. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general building science and industry drying practices, not specific claims about Gold Water Fire's past jobs or outcomes.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "photo": {
+    "src": "/assets/img/why-drying-takes-days-not-hours-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Why structural drying takes days rather than hours"
+  }
+}
