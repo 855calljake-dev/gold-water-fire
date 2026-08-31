@@ -1,8 +1,6 @@
 {
-  "state": "graduated",
-  "since": "2026-08-26",
-  "ruledBy": "Jake, 2026-08-26, direct instruction: settle #22 and re-graduate GWF",
-  "bar": "SOP-AGENTIC-SEO-WEBSITES.md section 5.3 asks for two clean approved batches after a de-graduation. Jake's ruling overrides that bar deliberately: one human-reviewed batch (PR #21, ten pages, images OCR-verified, merged 2026-08-26) plus the root cause fixed in code, not waited out. The 2026-08-23 de-graduation was triggered by two gate false positives: a 24/7 pattern that contradicted the tenant's own CLAIMS-TO-VERIFY confirmation of 2026-08-07, and a bare-word bonded pattern tripping on construction prose. Both patterns corrected and seed-tested in the same commit that flips this state.",
-  "howToRevoke": "Set state to manual-review here AND note it in the bytomorrow-bos tenant register (CLAUDE.md section 6), both, or they disagree. worker/recorder.mjs deGraduate() writes this file automatically on a structural gate failure during an autonomous batch.",
-  "watchFor": "A graduated tenant's failure mode is silence. The daily brief checks whether a batch published in the last 24h; a de-graduation shows up there as a PR titled awaiting review instead of published."
+  "state": "manual-review",
+  "since": "2026-08-31",
+  "reason": "Structural gate failure on an autonomous batch (2026-08-31): tile-and-grout-water-damage: Fewer than 2 FAQs: visible Q&A is required per SOP-AGENTIC-SEO-WEBSITES.md §3",
+  "howToReGraduate": "Two clean approved batches again (SOP-AGENTIC-SEO-WEBSITES.md §5.3 / BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09). Then set state back to \"graduated\" here AND in the bytomorrow-bos tenant register (CLAUDE.md §6) — both, or they disagree."
 }
