@@ -1,0 +1,71 @@
+{
+  "slug": "what-moisture-meters-measure",
+  "path": "/guides/what-moisture-meters-measure.html",
+  "title": "What Moisture Meters Actually Measure | Gold Water Fire Phoenix, AZ",
+  "description": "Why two moisture meter readings on the same wall can differ, and what the numbers actually mean. A plain guide for Phoenix, AZ homeowners.",
+  "h1": "What a Moisture Meter Reads, and Why Two Readings on the Same Wall Can Differ",
+  "breadcrumbLabel": "Moisture Meter Readings",
+  "intro": "You watched someone press a small device against your wall, saw a number pop up, then watched them move it eighteen inches over and get a completely different number. Nobody explained why, and now you're left staring at a wall that looks the same everywhere, wondering which number is the true one, or if either of them means what you think it means. That confusion is fair. Moisture readings look like they should be simple, a single fact about a single wall, and instead they behave like they're telling you five different stories at once.",
+  "sections": [
+    {
+      "heading": "What the number on the screen is actually measuring",
+      "body": "A moisture meter does not measure water directly the way a scale measures weight. Most meters used in homes fall into two types: pin meters, which push two small probes into the material and measure electrical resistance between them, and pinless meters, which use an electromagnetic signal to sense moisture in the material just beneath the sensor pad. Wetter material conducts electricity more easily (pin meters) or changes the signal differently (pinless meters), so the meter converts that electrical behavior into a number on a percentage scale. That number is a relative reading calibrated to a reference material, usually wood, and it shifts depending on what the wall is actually made of, how deep the moisture sits, and how the meter's signal interacts with whatever is inside the wall cavity."
+    },
+    {
+      "heading": "Why moving the meter a few inches can change the number",
+      "body": "Drywall is not a uniform material once you factor in what's behind it. A stud, a nail, a wire, a pipe, or a patch of old joint compound can all read differently than the open drywall around them because they conduct or block the meter's signal differently. Pinless meters read a cone-shaped area beneath the sensor, not a single point, so if that cone happens to pass near a metal fastener or a stud, the reading can spike or drop even though the moisture content of the drywall itself hasn't changed. Pin meters are more localized, but two pinholes an inch apart can still land on different densities of paper backing or different depths of wet insulation behind the board. Neither reading is wrong. They're both accurately reporting what's happening at that exact spot, which is exactly why one spot check rarely tells the full story."
+    },
+    {
+      "heading": "Why the same wall reads differently at different heights",
+      "body": "Water moves through building materials by gravity and by wicking, and it doesn't move evenly. A wall that took on water at the baseboard will often show its highest readings low and dry out as you move up, tracing roughly the shape of how far the water traveled before it stopped being pulled upward by capillary action. But moisture can also travel sideways along a top plate, or move upward faster through porous materials like some insulation types than through the drywall paper itself. This is why a useful moisture check isn't one reading, it's a pattern of readings taken in a grid across the wall, compared against a dry reference area in the same room, so the shape of the wet area (not just one number) tells you where the water came from and how far it traveled."
+    },
+    {
+      "heading": "What the numbers mean once you have several of them",
+      "body": "A single reading in isolation is hard to interpret because normal, dry material still shows a baseline number that varies by material type, so the useful comparison is always relative: how does this reading compare to a dry area of the same material in the same house. A pattern of elevated readings that fades gradually as you move away from a source points to standing water or a slow leak. A sharp, isolated hot spot with dry material around it often points to something more localized, like a small point source or an object in the wall interfering with the signal rather than actual moisture. Reading the pattern, not chasing a single number, is what turns a moisture meter from a confusing gadget into a useful diagnostic tool."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a higher moisture meter number always worse?",
+      "a": "Not by itself. The number only means something in comparison to a dry reference reading taken from unaffected material in the same house, since different materials have different normal baselines. A high number in isolation, without a dry comparison point, doesn't tell you much on its own."
+    },
+    {
+      "q": "Why did two different readings on the same spot come out different minutes apart?",
+      "a": "This can happen if the meter was repositioned slightly, if the material's surface temperature changed, or if a pin meter's probes landed in a slightly different spot than before. Small positional differences matter more with pin meters because they're reading a very localized point rather than an area."
+    },
+    {
+      "q": "Can a moisture meter tell me if mold is growing?",
+      "a": "No. A moisture meter only measures moisture content in the material, not whether mold is present. Mold growth depends on moisture level, time, temperature, and the material itself, so a moisture reading is one input into that judgment, not a mold test."
+    },
+    {
+      "q": "Why do walls near plumbing or exterior corners often read higher even when dry?",
+      "a": "Metal pipes, fasteners, and certain building materials can interfere with a meter's signal even without added moisture, especially with pinless meters that read a broader area beneath the sensor. This is one reason a single reading near plumbing or hardware should always be checked against a dry reference spot nearby."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your own readings mean?",
+    "body": "If you're trying to figure out how far water traveled in your home, a walkthrough with someone who reads the full pattern, not just one number, can save you from guessing. Contact Gold Water Fire to talk through what you're seeing."
+  },
+  "evidence": "This page describes general moisture meter principles and building science, not a specific claim about a Gold Water Fire job.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "photo": {
+    "src": "/assets/img/what-moisture-meters-measure-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What a moisture meter reads, and why two readings on the same wall can differ"
+  }
+}
