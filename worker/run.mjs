@@ -9,6 +9,15 @@
 // and Jake released the gate on 2026-08-12. A live run now opens the batch PR
 // and merges it, which deploys. The PR is kept as the per-batch audit record
 // and the revert handle. RUNTIME_AUTO_PUBLISH=false restores the old gate.
+//
+// WHAT A SINGLE FAILING PAGE COSTS, changed 2026-08-31 by Jake's ruling:
+// "if there is a stop, only stop on the page that is flagged and publish the
+// rest of the batch." Before this, one page refused by the structural gate
+// withheld the whole batch AND de-graduated the tenant. On 2026-08-31 that
+// cost eight good pages and GWF's graduation over one page missing its FAQs.
+// A dropped page now leaves the batch alone: it stays `pending` in the backlog
+// and the next run picks it up, which is already how an image failure behaves.
+// De-graduation is kept, but it fires on a RATE. See DEGRADUATION_ constants.
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -25,6 +34,57 @@ import { recordRun, recordArtifacts, buildMenuUrl } from "./telemetry.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const execFileAsync = promisify(execFile);
+
+// ===========================================================================
+// WHEN A BATCH DE-GRADUATES THE TENANT.
+//
+// The 2026-08-09 ruling that created de-graduation is kept, and so is the
+// reason for it: a structural gate refusal can mean the drafting model has
+// gone wrong in a way that will repeat, and a self-limiting failure is better
+// than a compounding one. What changed on 2026-08-31 is the trigger. It used
+// to be ANY single refusal, which cannot tell a formatting miss from a broken
+// model, and treated both as the second.
+//
+// One page failing is a formatting miss. Most of a batch failing is a broken
+// model. So both of these have to be true before the tenant drops:
+//
+//   at least DEGRADUATION_MIN_FAILURES pages refused, AND
+//   they are at least DEGRADUATION_FAILURE_RATE of everything this run gated.
+//
+// The minimum is what protects a good batch from one bad page. Two separate
+// pages tripping the same structural gate in one run is a pattern; one is not.
+// Checked against the two runs that actually happened: 2026-08-31 refused 1 of
+// 9 and would now publish the other 8 and stay graduated, and 2026-08-23's
+// two false-positive refusals inside a five page batch come to 40 percent,
+// under the rate, so that de-graduation would not have happened either.
+//
+// The rate is what still catches the case the ruling was written for. Half a
+// batch refused is not a formatting miss.
+const DEGRADUATION_MIN_FAILURES = 2;
+const DEGRADUATION_FAILURE_RATE = 0.5;
+
+// THE THIRD TRIGGER, and the one closest to the old behaviour: a run that
+// gated pages, refused at least one of them structurally, and published
+// nothing at all. That outcome is indistinguishable from the whole-batch stop
+// this change removes, and it is exactly the case the 2026-08-09 ruling was
+// written for, so it de-graduates regardless of the rate arithmetic.
+//
+// Deliberately requires a structural refusal. A batch emptied by a dead image
+// provider or an exhausted wallet publishes nothing too, and that says the
+// provider broke, not that the model wrote something it should not have.
+// Demoting the tenant for an outage would be the same false positive in a new
+// costume.
+function shouldDeGraduate({ gateRejections, gatedCount, publishedCount }) {
+  if (!gateRejections.length) return null;
+  if (!publishedCount) {
+    return `every page in this batch was dropped and nothing published; ${gateRejections.length} of ${gatedCount} were refused by the structural gate`;
+  }
+  const rate = gateRejections.length / Math.max(gatedCount, 1);
+  if (gateRejections.length >= DEGRADUATION_MIN_FAILURES && rate >= DEGRADUATION_FAILURE_RATE) {
+    return `${gateRejections.length} of ${gatedCount} pages (${Math.round(rate * 100)} percent) were refused by the structural gate, at or over the ${Math.round(DEGRADUATION_FAILURE_RATE * 100)} percent rate that reads as a broken drafter rather than a bad page`;
+  }
+  return null;
+}
 
 // SOP-AGENTIC-SEO-WEBSITES.md §8.3.1 closes with an explicit instruction:
 // "Don't treat this as shipped for a given tenant until the binary is
@@ -135,6 +195,19 @@ async function main() {
   // Structural gate refusals only — the de-graduation trigger. Kept separate
   // from `failed`, which also collects provider and network failures.
   const gateRejections = [];
+  // EVERY PAGE THIS RUN DROPPED, and why, in the shape the PR body renders.
+  // Added 2026-08-31 with Jake's drop-the-page ruling. The batch no longer
+  // stops on a refusal, so a short batch has to explain its own page count on
+  // the PR that carries it. GWF has no run-record file (JTHL's
+  // content/run-records.jsonl), so this PR body IS the whole audit trail for a
+  // dropped page and it has to name every one.
+  //
+  // `kind` is set at the point of failure rather than inferred afterwards from
+  // the reason string. A refusal, a dead image provider and an item the run
+  // never reached leave identical evidence in the backlog (all three stay
+  // `pending`), and telling them apart is the entire point of writing this
+  // down.
+  const drops = [];
   // Claim-verifier verdicts, one per drafted attempt that reached the
   // verifier (§2.2). Surfaced in the PR body so shadow-phase spot-checks read
   // straight off the batch PR, and deliberately NOT a de-graduation input —
@@ -198,6 +271,8 @@ async function main() {
 
   for (const item of pending) {
     let lastProblems = null;
+    // Which of the several ways a page can fail actually happened. See `drops`.
+    let lastKind = null;
     let shipped = false;
 
     for (let attempt = 1; attempt <= 2; attempt++) {
@@ -224,6 +299,7 @@ async function main() {
             console.log(`[debug] sections=${(page.sections || []).length}, stopReason logged separately`);
           }
           lastProblems = check.problems;
+          lastKind = "evidence-gate";
           if (attempt === 2) {
             artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
               status: "rejected", menuUrl: buildMenuUrl(page), reason: check.problems.join(" | ") });
@@ -264,6 +340,7 @@ async function main() {
               // run, same shape as an image failure.
               console.log(`[work] REJECTED ${item.slug}: claim verifier unavailable (${v.reason}) -- fail closed, page not shipped this run`);
               lastProblems = [`claim verifier unavailable: ${v.reason}`];
+              lastKind = "claim-verifier-unavailable";
               artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
                 status: "failed", reason: `claim verifier unavailable: ${v.reason}` });
               break;
@@ -271,6 +348,7 @@ async function main() {
             if (v.verdict === "fail") {
               console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): claim verifier -- ${claimNote}`);
               lastProblems = v.claims.map((c) => `remove or ground this ungrounded claim: "${c.quote}" -- ${c.why}`);
+              lastKind = "claim-verifier";
               if (attempt === 2) {
                 artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
                   status: "rejected", menuUrl: buildMenuUrl(page), reason: `claim verifier: ${claimNote}` });
@@ -299,11 +377,13 @@ async function main() {
         if (image?.accountFailure) {
           abortReason = image.reason;
           lastProblems = [`image generation unavailable: ${image.reason}`];
+          lastKind = "image-account-failure";
           break;
         }
         if (!image) {
           console.log(`[work] REJECTED ${item.slug}: image generation failed -- page not shipped this run`);
           lastProblems = ["image generation failed"];
+          lastKind = "image-failed";
           artifactRows.push({ date: dateStr, surface: "images", type: "image", name: item.slug,
             status: "failed", reason: "image generation failed" });
           break;
@@ -331,22 +411,41 @@ async function main() {
       } catch (err) {
         console.log(`[work] ERROR drafting ${item.slug} (attempt ${attempt}): ${err.message}`);
         lastProblems = [err.message];
+        lastKind = "draft-error";
       }
     }
 
     if (!shipped) {
-      failed.push({ slug: item.slug, problems: lastProblems || ["unknown failure"] });
+      const problems = lastProblems || ["unknown failure"];
+      failed.push({ slug: item.slug, problems });
+      // Dropped, not fatal to the batch. Since 2026-08-31 the run carries on
+      // to the next item and publishes whatever passed; this item stays
+      // `pending` in content/backlog.json (it never reaches `drafted`, and the
+      // backlog update below only advances drafted slugs) so the next run
+      // picks it up again. That is the whole retry mechanism. Do not add a
+      // second one.
+      drops.push({ slug: item.slug, kind: lastKind || "unknown", reason: problems.join(" | ") });
     }
 
     if (abortReason) {
-      const skipped = pending.length - (pending.indexOf(item) + 1);
+      const notReached = pending.slice(pending.indexOf(item) + 1);
       console.log(`[work] ABORTING RUN -- ${abortReason}`);
-      console.log(`[work] This fails identically for every page, so ${skipped} remaining page(s) were not drafted. Nothing to fix in the backlog; fix the image provider.`);
+      console.log(`[work] This fails identically for every page, so ${notReached.length} remaining page(s) were not drafted. Nothing to fix in the backlog; fix the image provider.`);
+      // A row each, rather than left out. "Was it refused, or was it never
+      // reached?" is a question the backlog cannot answer on its own, and both
+      // answers leave the slug `pending`.
+      for (const skippedItem of notReached) {
+        drops.push({ slug: skippedItem.slug, kind: "not-attempted", reason: `run stopped at ${item.slug}: ${abortReason}` });
+      }
       break;
     }
 
     if (totalSpend() > cfg.maxBudgetUsd) {
+      const notReached = pending.slice(pending.indexOf(item) + 1);
       console.log(`[work] Budget cap reached ($${totalSpend().toFixed(2)} > $${cfg.maxBudgetUsd}), stopping this run.`);
+      for (const skippedItem of notReached) {
+        drops.push({ slug: skippedItem.slug, kind: "not-attempted", reason: `budget cap reached at ${item.slug}: $${totalSpend().toFixed(2)} of $${cfg.maxBudgetUsd}` });
+      }
       break;
     }
   }
@@ -357,27 +456,57 @@ async function main() {
   console.log(`[work]   Anthropic (drafting):  $${spend.anthropicUsd.toFixed(2)}`);
   console.log(`[work]   Higgsfield (images):   $${spend.higgsfieldUsd.toFixed(2)} across ${spend.imagesGenerated} image(s) @ ~$${IMAGE_COST_USD_ESTIMATE}`);
 
+  // Every page that dropped, named in the run log before anything is written.
+  // The PR body carries the same list, but a run that publishes nothing opens
+  // no PR, and then this is the only place it is said at all.
+  if (drops.length) {
+    console.log(`[record] ${drops.length} page(s) dropped from this batch, each stays pending for a later run:`);
+    for (const d of drops) console.log(`[record]   ${d.slug} (${d.kind}): ${d.reason}`);
+  }
+
+  // DE-GRADUATION, decided BEFORE anything is written and BEFORE the empty
+  // batch exit below, which it used to sit after. That ordering was a real
+  // hole: a batch where every single page was refused reached the early exit
+  // and returned without ever consulting the de-graduation rule, so the one
+  // outcome most obviously meaning "the drafter is broken" was the one outcome
+  // that could not demote the tenant. Found and fixed 2026-08-31.
+  //
+  // What it no longer does is withhold a batch over one bad page. Under the
+  // 2026-08-09 rule, any single refusal set autoPublish false and the pages
+  // that passed were held back with it. Jake's 2026-08-31 ruling reverses that
+  // default: the flagged page stops, the batch publishes. De-graduation is now
+  // the exception for when the run looks like a broken drafter rather than a
+  // bad page, per shouldDeGraduate() at the top of this file.
+  //
+  // When it DOES fire, the batch is still withheld. That is deliberate and it
+  // is the surviving half of the old ruling: at that rate the pages that got
+  // past the same gate in the same run are exactly the ones nobody should
+  // assume are fine, so they go into a PR a person opens rather than onto the
+  // live site.
+  const gatedCount = drafted.length + failed.length;
+  let deGraduationReason = null;
+  if (autoPublish) {
+    const why = shouldDeGraduate({ gateRejections, gatedCount, publishedCount: drafted.length });
+    if (why) {
+      autoPublish = false;
+      deGraduationReason = `Structural gate failures on an autonomous batch (${dateStr}): ${why}. Refusals: ${gateRejections.join(" ;; ")}`;
+      console.log(`[record] DE-GRADUATING — ${why}.`);
+      console.log("[record] Per BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09 as amended 2026-08-31, GWF drops back to manual review and this batch will NOT be published.");
+      if (cfg.isLive) {
+        await deGraduate({ token: cfg.githubToken, repo: cfg.repo, branch: cfg.branch, dateStr, reason: deGraduationReason });
+        console.log(`[record] Wrote content/graduation.json on ${cfg.branch}. Re-graduating is Jake's, not this worker's — update the BOS tenant register too.`);
+      } else {
+        console.log("[record] DRY RUN, so content/graduation.json was NOT written.");
+      }
+    } else if (gateRejections.length) {
+      console.log(`[record] ${gateRejections.length} of ${gatedCount} page(s) refused by the structural gate, under the de-graduation rate. The tenant stays graduated and the rest of the batch publishes (Jake's ruling, 2026-08-31).`);
+    }
+  }
+
   if (!drafted.length) {
     console.log("[record] Nothing passed the evidence gate — no PR opened.");
     await finish({ status: "failed", published: 0, exitCode: failed.length ? 1 : 0,
       note: abortReason ? `Aborted: ${abortReason}` : "Nothing passed the evidence gate" });
-  }
-
-  // De-graduation, decided BEFORE anything is written: a batch that contained
-  // a structural gate failure does not publish, even the pages inside it that
-  // passed. The ruling drops the TENANT back to manual review, not the page --
-  // the reasoning being that a gate catching something is evidence the drafting
-  // is off, and the pages that slipped past the same gate in the same run are
-  // exactly the ones nobody should assume are fine.
-  if (autoPublish && gateRejections.length) {
-    autoPublish = false;
-    const reason = `Structural gate failure on an autonomous batch (${dateStr}): ${gateRejections.join(" ;; ")}`;
-    console.log(`[record] DE-GRADUATING — ${gateRejections.length} page(s) refused by the evidence gate.`);
-    console.log("[record] Per BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09, GWF drops back to manual review. This batch will NOT be published.");
-    if (cfg.isLive) {
-      await deGraduate({ token: cfg.githubToken, repo: cfg.repo, branch: cfg.branch, dateStr, reason });
-      console.log(`[record] Wrote content/graduation.json on ${cfg.branch}. Two clean approved batches re-graduate it — update the BOS tenant register too.`);
-    }
   }
 
   if (!cfg.isLive) {
@@ -414,6 +543,12 @@ async function main() {
     backlogUpdate,
     summaryLines,
     autoPublish,
+    // Added 2026-08-31. A batch that no longer stops on a refusal has to say
+    // what it left behind, or the PR reads as a complete run that happened to
+    // be short. This repo has no run-record file, so the body is the only
+    // durable account of a dropped page there is.
+    drops,
+    deGraduationReason,
   });
 
   console.log(`[record] Opened PR #${result.prNumber}: ${result.prUrl}`);
@@ -424,11 +559,11 @@ async function main() {
   if (!autoPublish) {
     // Still not "published" -- the pages are in a PR awaiting Jake's merge. The
     // daily report counts published separately, from what actually merged.
-    const why = gateRejections.length
-      ? `DE-GRADUATED this run (${gateRejections.length} gate refusal(s)) — needs review`
+    const why = deGraduationReason
+      ? `DE-GRADUATED this run: ${deGraduationReason}`
       : "RUNTIME_AUTO_PUBLISH=false";
     console.log(`[record] Left open for review (${why}): ${result.prUrl}`);
-    await finish({ status: gateRejections.length ? "partial" : (failed.length ? "partial" : "ran"), published: 0,
+    await finish({ status: deGraduationReason ? "partial" : (failed.length ? "partial" : "ran"), published: 0,
       exitCode: failed.length ? 1 : 0,
       note: `PR #${result.prNumber} opened, awaiting review (${why}): ${result.prUrl}` });
   }
@@ -455,7 +590,7 @@ async function main() {
     if (row.status === "awaiting-review") row.status = "published";
   }
   await finish({ status: failed.length ? "partial" : "ran", published: drafted.length, exitCode: failed.length ? 1 : 0,
-    note: `PR #${result.prNumber} merged (${merge.sha.slice(0, 7)}) — ${drafted.length} page(s) published: ${result.prUrl}` });
+    note: `PR #${result.prNumber} merged (${merge.sha.slice(0, 7)}): ${drafted.length} page(s) published, ${drops.length} dropped and left pending: ${result.prUrl}` });
 }
 
 main().catch((err) => {

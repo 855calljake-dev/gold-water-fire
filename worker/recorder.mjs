@@ -47,7 +47,7 @@ export async function findBatchPrForDate({ token, repo, dateStr }) {
   return { ...pr, batchState: pr.merged_at ? "published" : pr.state };
 }
 
-export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pages, images, backlogUpdate, summaryLines, autoPublish }) {
+export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pages, images, backlogUpdate, summaryLines, autoPublish, drops, deGraduationReason }) {
   const branchName = `content-batch-${dateStr}-${Date.now()}`;
 
   const baseRef = await gh(token, `/repos/${repo}/git/ref/heads/${baseBranch}`);
@@ -102,18 +102,82 @@ export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pag
   // The PR survives graduation even though nothing waits in it. It is the
   // per-batch audit record: what shipped, on what evidence, in one revertable
   // squash commit. Direct-to-main writes would have neither.
+  //
+  // `git revert <sha>`, with no `-m 1`. Corrected 2026-08-31 from the older
+  // line this block carried. A squash merge lands as a single-parent commit,
+  // and `-m` is a mainline selector that only means anything on a merge commit
+  // with two parents. Modern git tolerates the extra flag; older git errors on
+  // it, so the plain form is the one that works everywhere.
   const header = autoPublish
     ? [
-        "**Published automatically — this tenant is graduated (SOP-AGENTIC-SEO-WEBSITES.md §5.3).**",
+        "**Published automatically. This tenant is graduated (SOP-AGENTIC-SEO-WEBSITES.md §5.3).**",
         "",
         "No standing human gate. This PR is the audit record of the batch, not a request to review it.",
-        "To pull a page back off the live site, revert this merge commit: `git revert -m 1 <sha>`.",
+        "To pull a page back off the live site, revert this merge commit: `git revert <sha>`.",
       ]
-    : [
-        "**Awaiting Jake's review — nothing here is live until this merges.**",
+    : deGraduationReason
+      ? [
+          "**DE-GRADUATED ON THIS RUN. Nothing here is live, and the next run will not publish either.**",
+          "",
+          `Why: ${deGraduationReason}`,
+          "",
+          "The structural gate refused enough of this batch to read as a broken drafter rather than a bad",
+          "page (worker/run.mjs, DEGRADUATION_MIN_FAILURES and DEGRADUATION_FAILURE_RATE). At that rate the",
+          "pages below are not trustworthy either just because they got past the same gate in the same run,",
+          "so the whole batch is held here for a person instead of published.",
+          "",
+          "`content/graduation.json` on the default branch now reads `manual-review`. Putting this tenant",
+          "back is Jake's call, not this worker's, and the bytomorrow-bos tenant register has to be updated",
+          "with it or the two disagree.",
+        ]
+      : [
+          "**Awaiting Jake's review. Nothing here is live until this merges.**",
+          "",
+          "Opened with `RUNTIME_AUTO_PUBLISH=false`, which re-gates a graduated tenant for one run.",
+        ];
+
+  // WHAT THIS RUN LEFT BEHIND. Added 2026-08-31 with Jake's ruling that a
+  // flagged page stops on its own and the rest of the batch publishes.
+  //
+  // A batch that no longer halts on a refusal comes out short, and a short
+  // batch with no explanation reads as a complete one. This repo has no
+  // run-record file the way JTHL does (content/run-records.jsonl), so this
+  // table is the entire durable account of a dropped page: nothing else
+  // outlives the process. Every dropped slug is named, with the reason it was
+  // dropped, verbatim.
+  const dropLabels = {
+    "evidence-gate": "dropped, structural evidence gate",
+    "claim-verifier": "dropped, claim verifier",
+    "claim-verifier-unavailable": "dropped, claim verifier unavailable (fail closed)",
+    "image-failed": "dropped, image generation failed",
+    "image-account-failure": "dropped, image account failure",
+    "draft-error": "dropped, drafting error",
+    "not-attempted": "not attempted, run stopped early",
+    unknown: "dropped, reason not classified",
+  };
+  // Cells are prose a person reads on a published PR, so Hard Rule 7
+  // (bytomorrow-bos CLAUDE.md, no em dashes, standing and cross-tenant)
+  // applies to them even when the sentence came from a provider's error
+  // message rather than from us.
+  const cell = (v) =>
+    String(v || "")
+      .replace(/\|/g, "\\|")
+      .replace(/\n+/g, " ")
+      .replace(/\s*\u2014\s*/g, ", ");
+  const dropSection = (drops || []).length
+    ? [
         "",
-        "Opened with `RUNTIME_AUTO_PUBLISH=false`, which re-gates a graduated tenant for one run.",
-      ];
+        "### Pages this run dropped",
+        "",
+        `${drops.length} backlog item(s) did not make it into this batch. Each one stays \`pending\` in`,
+        "`content/backlog.json` and the next scheduled run picks it up again. That is the whole retry",
+        "mechanism, and it is the same one an image failure has always used.",
+        "",
+        "| Item | Outcome | Why |",
+        "| --- | --- | --- |",
+        ...drops.map((d) => `| \`${cell(d.slug)}\` | ${dropLabels[d.kind] || cell(d.kind)} | ${cell(d.reason) || "-"} |`),
+      ]
+    : [];
 
   const pr = await gh(token, `/repos/${repo}/pulls`, {
     method: "POST",
@@ -133,6 +197,7 @@ export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pag
         "",
         "### Pages in this batch",
         ...summaryLines,
+        ...dropSection,
       ].join("\n"),
     }),
   });
