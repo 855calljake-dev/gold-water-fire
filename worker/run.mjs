@@ -523,13 +523,18 @@ async function main() {
       return match ? { ...i, status: "drafted" } : i;
     }),
   };
-  const summaryLines = drafted.map((d) => `- \`${d.page.path}\` — ${d.page.title}\n  Evidence: ${d.page.evidence}`);
+  // Colon, not an em dash. These lines are prose a reader sees in the PR body,
+  // so Hard Rule 7 (bytomorrow-bos CLAUDE.md, standing and cross-tenant)
+  // applies to them. Corrected 2026-08-31: this line had put an em dash in
+  // every PR body this worker has ever opened, and no test looked until the
+  // drop table added one that does.
+  const summaryLines = drafted.map((d) => `- \`${d.page.path}\`: ${d.page.title}\n  Evidence: ${d.page.evidence}`);
   if (verifierResults.length) {
     // The shadow-phase audit trail: two clean spot-checked batches here are
     // the §2.2 bar for flipping RUNTIME_VERIFY_MODE to enforce.
-    summaryLines.push(`\n**Claim verifier (${cfg.verifyMode})** — SOP-AGENTIC-SEO-WEBSITES.md §2.2, model ${VERIFIER_MODEL}:`);
+    summaryLines.push(`\n**Claim verifier (${cfg.verifyMode})**, SOP-AGENTIC-SEO-WEBSITES.md §2.2, model ${VERIFIER_MODEL}:`);
     for (const r of verifierResults) {
-      summaryLines.push(`- ${r.verdict.toUpperCase()} \`${r.slug}\`${r.detail && r.detail !== "clean" ? ` — ${r.detail}` : ""}`);
+      summaryLines.push(`- ${r.verdict.toUpperCase()} \`${r.slug}\`${r.detail && r.detail !== "clean" ? `: ${r.detail}` : ""}`);
     }
   }
 

@@ -13,6 +13,7 @@
     "test:imagegate": "node worker/imageTextGate.test.mjs",
     "test:evidencegate": "node worker/evidenceGate.test.mjs",
     "test:verify": "node worker/verify.test.mjs",
-    "test": "npm run test:evidencegate && npm run test:imagegate && npm run test:verify"
+    "test:batchdrop": "node --test worker/batchDrop.test.mjs",
+    "test": "npm run test:evidencegate && npm run test:imagegate && npm run test:verify && npm run test:batchdrop"
   }
 }
