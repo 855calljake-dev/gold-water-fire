@@ -224,8 +224,14 @@ export function checkShape(page) {
   checkObjectArray(problems, "internalLinks", page.internalLinks, ["href", "label"], { required: false, minLength: 0 });
 
   // photo -> photo.src / photo.alt, optional here (the no-image-no-ship rule
-  // lives in run.mjs, not in the shape contract)
-  if (page.photo !== undefined) {
+  // lives in run.mjs, not in the shape contract). `null` is accepted as
+  // "no photo" and nothing else is: the template guards this one on
+  // truthiness (`photo ? ... : ""`, and `photo?.src` in shell.mjs), so null
+  // renders correctly, and five live pages already store it that way. The
+  // array fields get no such latitude, because `internalLinks = []` is a
+  // default parameter and defaults do not fire on null: a null there is a
+  // `.length` on null at render time.
+  if (page.photo !== undefined && page.photo !== null) {
     if (!isPlainObject(page.photo)) {
       problems.push(shapeProblem("photo", typeName(page.photo), "an object with `src` and `alt`"));
     } else {

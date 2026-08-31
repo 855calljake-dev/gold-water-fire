@@ -2,7 +2,7 @@
   "name": "gold-water-fire",
   "private": true,
   "type": "module",
-  "description": "Gold Water Fire — static site, no framework. Content-as-data + one shared template, per SOP-AGENTIC-SEO-WEBSITES.md.",
+  "description": "Gold Water Fire static site, no framework. Content-as-data plus one shared template, per SOP-AGENTIC-SEO-WEBSITES.md.",
   "engines": {
     "node": ">=20"
   },
@@ -10,6 +10,9 @@
     "build": "node scripts/build.mjs",
     "worker": "node worker/run.mjs",
     "serve": "node scripts/build.mjs && python3 -m http.server 8080",
-    "test:imagegate": "node worker/imageTextGate.test.mjs"
+    "test:imagegate": "node worker/imageTextGate.test.mjs",
+    "test:evidencegate": "node worker/evidenceGate.test.mjs",
+    "test:verify": "node worker/verify.test.mjs",
+    "test": "npm run test:evidencegate && npm run test:imagegate && npm run test:verify"
   }
 }
