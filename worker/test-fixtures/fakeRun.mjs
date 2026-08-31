@@ -104,6 +104,10 @@ function fakePage(slug, index, flavor) {
     title: `Understanding ${slug.replace(/-/g, " ")} in the Phoenix metro`,
     description: `A plain explanation of ${slug.replace(/-/g, " ")} for a homeowner working it out.`.slice(0, 160),
     h1: `Understanding ${slug.replace(/-/g, " ")}`,
+    // Required by evidenceGate.mjs's shape contract (added 2026-08-31 by the
+    // concurrent PR #25 fix). The template reads it directly, so a page
+    // without one is refused before any prose scan runs.
+    breadcrumbLabel: slug.replace(/-/g, " "),
     intro: `You are trying to make sense of this before deciding anything. ${paragraph(words, index, 2)}${emDash}`,
     sections: [
       { heading: `What ${words[0]} means here`, body: `${paragraph(words, index + 1)}\n\n${paragraph(words, index + 4)}` },
