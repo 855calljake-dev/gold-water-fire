@@ -22,6 +22,39 @@ exists, and a page whose image fails to generate is not shipped at all. What no
 longer stops one is a human reading it. That is the deliberate trade — the gate
 is now structural only.
 
+**A stopped page stops alone.** Jake's ruling, 2026-08-31: "if there is a stop,
+only stop on the page that is flagged and publish the rest of the batch." A
+page refused by the evidence gate after its two attempts is dropped from the
+batch; the run carries on and publishes what passed. The dropped slug never
+reaches the batch, so the backlog advance leaves it `pending` and the next run
+drafts it again. That is the entire retry mechanism, and it is the same one an
+image failure has always used. Every dropped page is named on the PR body, in
+its own table, with the reason verbatim. This repo has no run-record file, so
+that table is the only durable account of a dropped page there is.
+
+Before this, one refusal withheld the whole batch. On 2026-08-31 that cost
+eight good pages and the tenant's graduation over one page missing its second
+FAQ.
+
+**De-graduation is kept, and now fires on a rate.** The 2026-08-09 ruling
+exists because a gate refusal can mean the drafting model has gone wrong in a
+way that will repeat, and a self-limiting failure beats a compounding one. What
+changed is the trigger, because "any single refusal" cannot tell a formatting
+miss from a broken drafter. `run.mjs` carries two named constants,
+`DEGRADUATION_MIN_FAILURES` (2) and `DEGRADUATION_FAILURE_RATE` (0.5), and both
+have to be met: at least two pages refused, and at least half of everything the
+run gated. A third trigger stands on its own, a run that refused at least one
+page structurally and published nothing at all, because that outcome is
+indistinguishable from the whole-batch stop this replaced. It deliberately
+requires a structural refusal, so a dead image provider emptying a batch does
+not demote the tenant for an outage.
+
+When de-graduation does fire, the batch is still withheld into an open PR
+rather than published. At that rate the pages that got past the same gate in
+the same run are not trustworthy either.
+
+`npm run test:batchdrop` runs all of this end to end against a stubbed fetch.
+
 Deployed on Railway (project `gold-water-fire`, service `gwf-content-worker`).
 **`.railway/railway.ts` is the authoritative deploy config** — infrastructure
 as code, applied with `railway config apply`. It defines the source repo,
