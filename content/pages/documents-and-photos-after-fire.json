@@ -1,0 +1,88 @@
+{
+  "slug": "documents-and-photos-after-fire",
+  "path": "/guides/documents-and-photos-after-fire.html",
+  "title": "Recovering Documents & Photographs After a Fire | Gold Water Fire | Phoenix, AZ",
+  "description": "How to recover smoke, soot, and water-damaged documents and photos after a fire, what can be saved, what can't, and steps to take right now.",
+  "h1": "Recovering Documents and Photographs After a Fire",
+  "breadcrumbLabel": "Documents & Photos After Fire",
+  "intro": "You're standing in a room that used to hold your whole life on paper, birth certificates, the deed, photos of people who aren't around anymore, and it's all covered in soot or soaked from the hose water that put the fire out. Some of it looks fine from across the room and falls apart when you touch it. Some of it looks ruined but isn't. There's no way to know which is which just by looking, and nobody handed you a manual for this. If you're trying to figure out what's actually gone and what still has a chance, that instinct to slow down before you start throwing things away is the right one.",
+  "sections": [
+    {
+      "heading": "Why paper and photos react the way they do",
+      "body": "Fire damage to documents rarely comes from flame alone. Heat dries paper fibers and makes them brittle, smoke deposits an acidic soot film that keeps working on the paper for weeks if it's not removed, and the water used to fight the fire soaks whatever the flame didn't reach. That combination is why a box of papers can look untouched on top and be pulp underneath, or why photographs stuck together in a drawer that never saw a flame. Photographic paper is especially sensitive because the emulsion layer, the part that actually holds the image, can soften with heat and humidity and fuse to whatever it's touching, including other photos.",
+      "soft": false
+    },
+    {
+      "heading": "What to do in the first hours",
+      "body": "Time and handling matter more than almost anything else at this stage. If documents or photos are wet, the biggest enemy after the fire itself is mold, which can start growing within a day or two in Arizona's humidity swings inside a damaged structure. If you can safely access the affected area, separate wet items from dry ones so damp paper doesn't spread moisture to material that's still salvageable. Don't force apart photos or documents that are stuck together while wet, this usually tears the image or text layer. Don't use a hairdryer, iron, or direct sunlight to speed drying, fast heat causes curling, cracking, and further fusing. If you can't process items immediately, wet paper and photos can be kept in a frost-free freezer, wrapped in wax paper between sheets, to pause deterioration until you're ready to work on them.",
+      "cards": [
+        {
+          "heading": "Handle wet paper minimally",
+          "body": "Support it flat with something rigid underneath, like a cookie sheet, rather than picking it up by a corner."
+        },
+        {
+          "heading": "Air dry with airflow, not heat",
+          "body": "A fan pointed nearby (not directly at fragile pages) and low humidity help more than any heat source."
+        },
+        {
+          "heading": "Photograph everything first",
+          "body": "Before you dry, clean, or discard anything, take pictures of documents and photos as they are, useful for insurance and for records if the item doesn't survive."
+        }
+      ]
+    },
+    {
+      "heading": "Cleaning soot without spreading it",
+      "body": "Dry soot sits on the surface of paper and photos until it gets wet or rubbed, at which point it smears into the fibers and becomes far harder to remove. For documents that are dry but sooty, a soft brush or a barely-used vacuum with a brush attachment held slightly above the surface can lift loose particles without grinding them in. Never wipe a sooty photograph with a cloth, dry or wet, the emulsion surface can scratch or smear permanently. Documents that are both wet and sooty are the hardest case: cleaning attempts often do more damage than the soot itself, and in those cases it's usually better to dry the item first and address staining afterward, if at all.",
+      "soft": false
+    },
+    {
+      "heading": "What usually can and can't be saved",
+      "body": "Paper that is charred or has turned to ash cannot be reconstructed. Paper that is scorched at the edges but intact in the center, or wet but not disintegrating, often can be dried and stabilized even if it stays discolored. Photographs printed on true photographic paper sometimes survive water exposure if separated and dried before the emulsion fully bonds to an adjacent surface, but once fused, separating them usually destroys the image. Digital-era prints made on inkjet paper behave differently than older darkroom prints and can be more sensitive to water. If a document is irreplaceable and valuable, like a property deed, and it's too damaged to be certain, many people request a certified replacement copy from the issuing agency rather than relying on the original.",
+      "soft": false
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can water-damaged photographs actually be saved?",
+      "a": "Sometimes. If they're separated while still wet and air dried flat away from direct heat or sun, many photos survive with some discoloration or texture change. Once photos have dried while stuck together, separation usually tears the image layer, so speed and gentle handling in the first hours matter most."
+    },
+    {
+      "q": "Is it safe to keep smoke-damaged documents in the house while I sort them?",
+      "a": "Soot residue is acidic and can continue to degrade paper over time, and in Arizona's heat, any residual moisture in a closed room can turn into mold within a couple of days. It's generally better to move affected boxes or files to a dry, ventilated space as soon as it's safe to do so."
+    },
+    {
+      "q": "Should I try to dry everything myself or get help?",
+      "a": "Small amounts of paperwork are often manageable at home with careful air drying. Large volumes of wet documents, water-damaged photo collections, or anything mixed in with structural water damage from firefighting efforts is harder to manage alone, since mold risk and further water intrusion complicate the timeline."
+    },
+    {
+      "q": "What should I do first if the fire also damaged the room these items were stored in?",
+      "a": "Get an assessment of the structural and water damage before spending too much time on paperwork, since ongoing moisture or air quality issues in the room can undo any drying progress. Our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page walks through what that assessment usually covers."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with more than just paperwork?",
+    "body": "If the fire also left smoke, soot, or water damage in your home, Gold Water Fire serves the Phoenix metro area and can help you figure out what needs attention first. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general document and photo preservation practices as industry knowledge; no specific claim about Gold Water Fire's own work is made.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/documents-and-photos-after-fire-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Recovering documents and photographs after a fire"
+  }
+}
