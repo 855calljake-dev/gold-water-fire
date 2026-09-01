@@ -1,0 +1,75 @@
+{
+  "slug": "dryer-vent-fire-prevention",
+  "path": "/guides/dryer-vent-fire-prevention.html",
+  "title": "Dryer Vent Lint Fire Prevention Guide | Gold Water Fire Phoenix, AZ",
+  "description": "Why dryer lint builds up into a fire risk and the maintenance steps that stop it. A practical guide for Phoenix area homeowners.",
+  "h1": "Dryer Vent Lint as a Fire Cause, and the Maintenance That Prevents It",
+  "breadcrumbLabel": "Dryer Vent Fire Prevention",
+  "intro": "If you have ever pulled a hot, damp, half-dried load of laundry out of the dryer and wondered what is going on with that machine, you are not imagining it. A dryer that suddenly takes two or three cycles to finish a load that used to take one is usually trying to tell you something, and most people do not know how to listen until something worse happens. It is a strange kind of worry, because it is so ordinary. Nobody expects the laundry room to be the place where a house fire starts.",
+  "sections": [
+    {
+      "heading": "Why lint is more dangerous than it looks",
+      "body": "Lint is made of tiny fibers shed from clothing and linens every time they tumble. It is extremely fine, it is bone dry by the time it collects in the trap and the vent line, and it burns fast. On its own, a lint trap full of fuzz is a nuisance. The real danger builds when lint escapes past the trap and accumulates inside the exhaust duct, where it mixes with heat, a spinning motor, and often very little airflow to carry it safely outside. A dryer's heating element or motor bearing can run far hotter than most people assume, and a clogged vent traps that heat inside the duct instead of venting it out with the exhaust air. Add a spark from a worn belt or a small motor fault, and a duct packed with lint has everything it needs."
+    },
+    {
+      "heading": "The warning signs most people miss",
+      "body": "A dryer fire rarely starts out of nowhere. There are usually signals for weeks or months beforehand, they just look like ordinary appliance wear rather than a fire risk. Clothes coming out hotter than usual to the touch. Cycles that run longer than they used to for the same size load. A burning or dusty smell, especially right when the dryer starts. The outside dryer vent hood barely moves when you hold your hand near it during a cycle, or the vent cover flap does not open at all. Visible lint building up around the dryer drum opening, behind the machine, or at the exterior vent cap. Any one of these on its own might mean nothing, but together they describe a vent system that is not clearing exhaust air the way it should."
+    },
+    {
+      "heading": "What actually causes the blockage",
+      "body": "The lint trap catches most fibers, but never all of them, and the rest travel into the duct with every load. Long duct runs, sharp 90 degree turns, sagging flexible ductwork, and vents that terminate a long way from the dryer all give lint more surface area to catch on and build up over time. Homes with the dryer vent running through an attic or a long interior chase are especially prone to this because the airflow has farther to travel and more turns to navigate. Birds and rodents nesting in exterior vent caps are another common culprit, since a partially blocked cap outside can back up the entire line even if the duct itself is clean."
+    },
+    {
+      "heading": "The maintenance that actually prevents it",
+      "body": "Clean the lint trap before or after every single load, not once a week. Wash the trap screen with warm water every few months, since dryer sheets leave a residue that clogs the fine mesh even when it looks clean. Have the full vent duct, not just the trap, cleaned out on a regular schedule, and more often if the duct run is long, has bends, or passes through an attic. Check the exterior vent hood periodically to make sure the flap opens freely and nothing has nested inside. Use rigid or semi-rigid metal ducting instead of flexible foil or plastic accordion duct where possible, since smooth rigid duct gives lint far less to catch on. Keep the area around and behind the dryer clear of lint, dust, and stored items, and never run a dryer unattended overnight or while no one is home if you already suspect airflow problems."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my dryer vent is clogged?",
+      "a": "Longer dry times, clothes or the dryer itself feeling unusually hot, a burning or musty smell during the cycle, and weak or absent airflow at the exterior vent hood are the clearest signs. If you notice more than one of these, it is worth checking the full duct run rather than just the lint trap."
+    },
+    {
+      "q": "How often should a dryer vent be cleaned?",
+      "a": "This depends on how long and complex the duct run is and how heavily the dryer is used, so there is no single number that fits every home. As a general rule, a shorter, straighter run needs less frequent attention than a long run with bends or an attic crossing, but any household should watch for the warning signs above rather than relying on a fixed schedule alone."
+    },
+    {
+      "q": "Is a dryer fire covered by homeowners insurance?",
+      "a": "Coverage depends on your specific policy and the circumstances of the fire, so this is a question for your insurance provider or agent rather than something we can answer generally."
+    },
+    {
+      "q": "What should I do if I already had a dryer vent fire?",
+      "a": "Once everyone is safe and the fire department has cleared the property, the priority is assessing smoke, heat, and water damage before repairs begin. You can read more about how that process works on our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page."
+    }
+  ],
+  "cta": {
+    "heading": "Already dealing with fire or smoke damage from a dryer vent fire?",
+    "body": "If a dryer vent fire has already happened in your Phoenix area home, Gold Water Fire can walk you through what comes next. Call (480) 999-3339 or reach out through our <a href=\"/contact.html\">contact page</a> to talk through what you're seeing."
+  },
+  "evidence": "This page presents general fire safety and appliance maintenance information based on widely known causes of dryer vent fires, and makes no specific claims about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/dryer-vent-fire-prevention-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Dryer vent lint as a fire cause, and the maintenance that prevents it"
+  }
+}
