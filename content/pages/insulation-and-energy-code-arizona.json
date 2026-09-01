@@ -1,0 +1,79 @@
+{
+  "slug": "insulation-and-energy-code-arizona",
+  "path": "/guides/insulation-and-energy-code-arizona.html",
+  "title": "Insulation & Arizona Energy Code During a Rebuild | Gold Water Fire Phoenix, AZ",
+  "description": "What Arizona energy code means for insulation choices during a fire or water damage rebuild, and why replacing wet or burned insulation isn't optional.",
+  "h1": "Insulation and Arizona Energy Code Requirements During a Rebuild",
+  "breadcrumbLabel": "Insulation & Energy Code",
+  "intro": "If a wall or ceiling in your home has been opened up after a fire or a water leak, you're probably not thinking about insulation ratings right now. You're thinking about how long this is going to take, what it's going to cost, and whether the house will actually feel like your house again when it's done. But insulation is one of those things that gets decided quietly in the middle of a rebuild, often without much explanation, and it affects your comfort and your utility bills for years afterward. It's fair to want to understand what's actually required and why, before someone starts closing up your walls.",
+  "sections": [
+    {
+      "heading": "Why insulation almost always has to be replaced, not just dried",
+      "body": "Fiberglass batt insulation that gets saturated by water loses its loft and much of its ability to trap air, which is what gives insulation its R-value in the first place. Once it compresses and mats down, it doesn't spring back, even after it dries. Cellulose insulation is worse in this respect because it can hold moisture for a long time and become a breeding ground for mold inside a closed wall cavity where you can't see it. Insulation exposed to fire and smoke has its own problem: it absorbs odor compounds and soot particles that are very difficult to fully remove, so even insulation that wasn't burned but sat in a smoke-filled space often needs to come out. In both cases, the practical answer during a rebuild is usually full removal and replacement rather than trying to salvage what's there."
+    },
+    {
+      "heading": "What Arizona's energy code actually requires",
+      "body": "Arizona follows versions of the International Energy Conservation Code (IECC), adopted and sometimes modified at the city or county level, so the exact requirement can vary slightly depending on where your home sits within the Phoenix metro area. In broad terms, the code sets minimum R-values for different parts of the house: attics and ceilings typically need the highest R-value since that's where the most heat gain happens in our climate, exterior walls need a lower but still specific R-value, and floors over unconditioned space (like a garage) have their own requirement. When a wall or ceiling is opened during repair work, the rebuild generally has to bring that assembly up to current code, not just match whatever was there before. This is a common surprise for homeowners: if your house was built decades ago with lighter insulation than today's standard, a repair to one wall can mean that wall now needs to meet a higher R-value than the rest of the house."
+    },
+    {
+      "heading": "Attic, wall, and slab considerations specific to this climate",
+      "body": "Phoenix-area homes live and die by their attic insulation because of how much radiant heat comes through the roof for most of the year. Blown-in fiberglass or cellulose in the attic is common, and the code minimum here tends to be the highest R-value called out anywhere in the house. Exterior walls in our climate zone need less insulation than a house in a cold climate would, but they still have a real minimum, and spray foam is sometimes used in wall cavities during a rebuild because it also acts as an air barrier, which matters a lot when the AC is running most of the year. Slab-on-grade homes, which are common in the valley, don't usually have the same under-floor insulation questions that a home with a crawl space or basement would, but ductwork running through unconditioned attic space is a related issue worth asking about, since duct insulation and sealing has its own code requirements too."
+    },
+    {
+      "heading": "Getting the inspection and paperwork right",
+      "body": "Most jurisdictions in the Phoenix metro require an insulation inspection before drywall goes back up, because once the wall is closed, no one can verify what's actually inside it. This inspection is separate from a final building inspection and happens earlier in the process. If it gets skipped or rushed, it can hold up the rest of the rebuild or create a problem later if you ever sell the home and an inspector or appraiser asks about permit history. Ask whoever is managing your rebuild which specific jurisdiction's code applies to your address, since Phoenix, Mesa, Chandler, Gilbert, and the surrounding cities and unincorporated areas don't all administer the exact same version of the code or the same inspection process."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I really have to replace insulation that only got a little wet?",
+      "a": "If it was saturated at any point, yes, in most cases. Compressed fiberglass doesn't regain its original loft even after drying, and cellulose can trap moisture inside a closed wall for weeks without anyone knowing, which sets up conditions for mold. A brief, minor dampening that didn't reach saturation is a different situation, which is why it matters to have someone actually assess the material rather than assume."
+    },
+    {
+      "q": "Does a small repair really have to meet the full current energy code?",
+      "a": "Generally, yes, for the section of the home being opened up and re-insulated. This is a common source of unexpected cost, especially in older homes, because it means one repaired wall can end up better insulated than the rest of the house."
+    },
+    {
+      "q": "Why does my attic need so much more insulation than my walls?",
+      "a": "In the Phoenix area, the roof and attic take on far more direct heat than exterior walls do, so energy codes set a higher minimum R-value there. It's also usually the most cost-effective place to improve a home's overall energy performance, which is part of why code weights it so heavily."
+    },
+    {
+      "q": "Who handles the insulation inspection during a rebuild?",
+      "a": "It's typically scheduled with your local building department before drywall is installed, and it's a separate step from the final inspection. Whoever is managing your reconstruction should be coordinating this, since the exact process differs by city within the Phoenix metro."
+    }
+  ],
+  "cta": {
+    "heading": "Rebuilding after fire or water damage and unsure what code requires?",
+    "body": "Gold Water Fire's reconstruction team, led by Brandon Gurr and Johnny, works through insulation and energy code requirements as part of the rebuild itself. Call (480) 999-3339 or email Help@goldwaterfire.com to talk through what your specific repair involves."
+  },
+  "evidence": "This page states general Arizona/IECC energy code and building science information as industry knowledge; no specific claim about Gold Water Fire's own project history, certifications, or numbers is made.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild services"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/insulation-and-energy-code-arizona-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Insulation and Arizona energy code requirements during a rebuild"
+  }
+}
