@@ -1,0 +1,85 @@
+{
+  "breadcrumbLabel": "Fire Department Water Damage",
+  "cta": {
+    "heading": "Dealing with water damage after a fire was put out?",
+    "body": "Gold Water Fire handles both sides of this kind of loss, the fire damage and the water damage underneath it. Call (480) 999-3339 or email Help@goldwaterfire.com to talk through what you're looking at."
+  },
+  "description": "The fire is out, but now there's water everywhere. Here's why that happens, what it does to your home over time, and what to check first.",
+  "evidence": "This page states general fire suppression and water damage facts and does not make any specific claim about Gold Water Fire's past jobs.",
+  "faqs": [
+    {
+      "q": "Will my homeowners insurance cover the water damage from firefighting, or just the fire damage?",
+      "a": "Most homeowners policies cover both, since the water damage is a direct result of a covered fire loss. The claim usually treats them as one event rather than two separate ones, but it's worth reading your specific policy language or asking your adjuster directly, since coverage details vary."
+    },
+    {
+      "q": "How long does it take for water damage to turn into mold after a fire?",
+      "a": "Mold can begin developing within 24 to 48 hours in warm, humid conditions, which is common after a fire since the building may still be hot and the air saturated. This is one of the reasons drying out a fire-damaged structure is time-sensitive, separate from the smoke and soot cleanup."
+    },
+    {
+      "q": "Can I just let the water dry out on its own after a fire?",
+      "a": "Air drying alone often isn't enough. Water that has soaked into drywall, subfloors, or framing can stay trapped even after surfaces look and feel dry, which allows rot, mold, and structural weakening to continue out of sight."
+    },
+    {
+      "q": "Is the water from firefighting efforts considered clean water?",
+      "a": "No. Water used to fight a fire typically picks up soot, ash, and combustion byproducts as it runs through a structure, plus whatever chemicals were in the burned materials themselves. It's generally treated as contaminated water, not clean water, which changes how it needs to be handled."
+    }
+  ],
+  "h1": "The Water Damage Left Behind After the Fire Is Out",
+  "intro": "The fire trucks are gone. The smoke has cleared enough that you can walk back inside. And somehow, standing in your own living room, the thing you're staring at isn't scorched wood or blackened walls, it's water. Pooling on the floor, dripping through the ceiling, soaking into carpet that used to be dry. It feels strange to be worried about water when what just happened was a fire. Nobody really prepares you for this part, the part where putting the fire out becomes its own kind of damage, and you're left wondering how much worse this is going to get before anyone can tell you what's actually salvageable.",
+  "sections": [
+    {
+      "eyebrow": "Why this happens",
+      "heading": "Fighting a fire almost always means adding water to the problem",
+      "body": "A structure fire is usually put out with a large volume of water delivered quickly, often through hose lines that move far more water than any household plumbing ever would. That water has to go somewhere. It runs down walls, pools on floors, seeps into subfloors, and works its way into wall cavities, ceilings, and insulation. In a multi-story home, water used on an upper floor can travel down through light fixtures, electrical outlets, and stairwells, damaging rooms that the fire itself never touched. This is a normal, expected part of fire suppression, not a sign that anything went wrong. But it does mean that after a fire, you're often dealing with two separate kinds of damage at once: what burned, and what got soaked."
+    },
+    {
+      "eyebrow": "What makes it different",
+      "heading": "This isn't the same as a burst pipe or a slow leak",
+      "body": "Water from firefighting efforts is rarely clean. As it moves through a burning structure, it picks up soot, ash, and whatever chemical residue came from burned insulation, furniture, or building materials. That combination changes how the water needs to be treated. It's not just a matter of drying things out, surfaces and materials that absorbed that water may also be holding onto contaminants that plain drying won't remove. Porous materials like drywall, carpet padding, and upholstered furniture are usually the hardest hit, because they soak up water quickly and hold onto it long after the surface looks dry."
+    },
+    {
+      "eyebrow": "What tends to get missed",
+      "heading": "The damage you can't see is often worse than the damage you can",
+      "body": "It's easy to focus on the visible puddles and soaked carpet, but water moves in ways that aren't obvious. It can travel behind walls, under flooring, and into spaces like crawlspaces or basements where it sits unnoticed. Wood framing can absorb water and begin to warp or weaken over days, even if the surface has dried. Drywall can look intact while the material behind it stays wet, creating conditions for mold growth well before anyone notices a smell or a stain. This is why a walk-through that only checks what's visible can miss a significant part of the actual damage."
+    },
+    {
+      "eyendex": "A general timeline",
+      "eyebrow": "How the clock works against you",
+      "heading": "The first 24 to 48 hours matter more than people expect",
+      "body": "Mold doesn't need much time to start developing, especially in the kind of warm, humid environment a recently burned structure often creates. Trapped moisture combined with residual heat can create ideal conditions for mold growth within a day or two. Structural materials like wood and drywall also begin to weaken the longer they stay saturated, and metal fixtures or fasteners can start to corrode. None of this means immediate panic is necessary, but it does mean that time is a real factor, not just an inconvenience, when it comes to how much of a home and its contents can ultimately be saved."
+    },
+    {
+      "eyebrow": "Where to start",
+      "heading": "What to look at first if you're standing in this right now",
+      "body": "Start by identifying where water has pooled or is still actively dripping, since standing water left in place causes ongoing damage the longer it sits. Check ceilings and walls for soft spots, sagging, or discoloration, which can indicate water trapped behind the surface. Pull back rugs or furniture if it's safe to do so, since water often collects underneath without being obvious at a glance. Avoid running electrical equipment in areas that got wet until it's been checked, since water and electrical systems together create a real safety risk. If you're working through insurance, document what you're seeing with photos before anything gets moved or cleaned up, since that record can matter later. For a closer look at how the fire-related damage itself gets assessed and addressed, see our page on <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>, and for more on how standing water and trapped moisture get handled, see <a href=\"/water-damage-restoration.html\">water damage restoration</a>."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "path": "/guides/fire-department-water-damage.html",
+  "slug": "fire-department-water-damage",
+  "title": "Water Damage After a Fire Is Out: What Happens Next | Gold Water Fire Phoenix, AZ",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/fire-department-water-damage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The water damage left behind after the fire is out"
+  }
+}
