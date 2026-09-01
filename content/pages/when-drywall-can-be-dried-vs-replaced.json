@@ -1,0 +1,79 @@
+{
+  "breadcrumbLabel": "Drywall: Dry in Place or Replace",
+  "cta": {
+    "heading": "Not sure what your walls need after water damage?",
+    "body": "Gold Water Fire can walk through the affected area with you, explain what's happening inside the wall, and lay out the drying or removal plan in plain terms. Call (480) 999-3339 or reach out through the contact page."
+  },
+  "description": "Learn when water damaged drywall can be dried in place and when it needs to be cut out, based on water type, saturation, and how long it's been wet.",
+  "evidence": "This page presents general drywall and water damage restoration knowledge and does not make specific claims about Gold Water Fire's past jobs.",
+  "faqs": [
+    {
+      "q": "How long can drywall stay wet before it has to be replaced?",
+      "a": "There's no single number that applies to every situation. What matters more is the water source, how much the drywall absorbed, and whether drying equipment gets to it before mold has a chance to establish. Clean water that's addressed quickly can often be dried. The same wall left wet for days, especially in a warm closed room, is a different story."
+    },
+    {
+      "q": "Can I just paint over drywall that got wet and dried on its own?",
+      "a": "It's risky. Drywall that air dried without equipment may look fine on the surface but still hold moisture in the core or inside the wall cavity where you can't see it. Painting over it traps that moisture and can hide mold growth that keeps developing behind the paint."
+    },
+    {
+      "q": "Does insulation behind the drywall change the decision?",
+      "a": "Yes, significantly. Fiberglass batt insulation that gets wet tends to lose its shape and effectiveness and is very difficult to dry in place, which often means the drywall has to come out to remove and replace the insulation behind it, even if the drywall itself might have survived on its own."
+    },
+    {
+      "q": "What does a moisture meter tell a restoration crew that I can't see by looking?",
+      "a": "A moisture meter measures how much water is actually inside the material, not just what's visible on the surface. Drywall can look completely dry to the eye while still holding damaging levels of moisture inside, which is why meter readings, not visual inspection alone, usually guide the decision to dry in place or remove."
+    }
+  ],
+  "h1": "When Drywall Can Be Dried in Place, and When It Has to Come Out",
+  "intro": "Standing in a room looking at a water stained wall, it's hard to know if you're looking at a problem that will resolve with some fans and a few days, or a problem that's going to mean cutting into your walls. That uncertainty is its own kind of stress, especially when every day you wait feels like it might be making things worse, or when you're worried about spending money on drying equipment for a wall that was going to need replacing anyway. There's a real difference between the two situations, and the difference comes down to a handful of specific factors, not a guess.",
+  "sections": [
+    {
+      "heading": "The water type matters more than almost anything else",
+      "body": "Restoration professionals generally sort water into categories based on what it contains. Clean water, from a supply line or an overflowing sink, carries the least risk to porous materials like drywall. Gray water, which might come from a washing machine or dishwasher, carries some contamination. Black water, from sewage backups or flooding, is treated differently because of the health risk it carries, not just the moisture level. Drywall that's been touched by contaminated water is far more likely to need removal, regardless of how quickly it's dried, because drying doesn't address contamination inside a porous material."
+    },
+    {
+      "heading": "How long the drywall sat wet changes the equation",
+      "body": "Time is one of the biggest factors in whether drywall can be saved. Drywall that's caught within the first day or so of getting wet, especially with clean water, has a real chance of being dried successfully with the right equipment and airflow. Drywall that's been wet for several days, particularly in a warm or humid space, is much more likely to have already started breaking down structurally or growing mold inside the wall cavity where it can't be seen. This is part of why a wall that seems fine on day one can turn into a removal situation by day four."
+    },
+    {
+      "heading": "Saturation level: wicking versus soaking",
+      "body": "There's a difference between drywall that got splashed or had water wick up a few inches from the bottom, and drywall that was fully saturated top to bottom, such as in a flood or a burst pipe that ran for hours. Lightly wicked drywall, especially the bottom few inches near a baseboard, is sometimes cut out in a strip (often called a flood cut) while the rest of the wall above is dried in place. Fully saturated panels usually lose their structural integrity, the paper facing can delaminate from the gypsum core, and at that point drying in place isn't really an option anymore."
+    },
+    {
+      "heading": "What's behind the drywall matters too",
+      "body": "Drywall doesn't exist in isolation. Behind it is often insulation, electrical wiring, and framing. Wet fiberglass insulation is difficult to dry effectively and often has to be removed and replaced even when the drywall in front of it might have survived. If there's insulation behind a wet wall, that alone can tip the decision toward opening the wall, since leaving saturated insulation sealed inside a cavity is asking for a mold problem down the line, whether or not the drywall itself is technically salvageable."
+    },
+    {
+      "heading": "How professionals actually make the call",
+      "body": "Rather than guessing from what's visible, restoration technicians typically use a moisture meter to check readings inside the wall material itself, sometimes at multiple heights, to map exactly how far the water traveled and how saturated the material is. This is combined with a look at how the wall responds, whether it's still firm or has started to feel soft or spongy, whether there's any bulging or visible tape line separation, and how it smells. That combination, meter readings plus physical inspection, is generally a more reliable guide than looking at a stain and guessing."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "path": "/guides/when-drywall-can-be-dried-vs-replaced.html",
+  "slug": "when-drywall-can-be-dried-vs-replaced",
+  "title": "When Drywall Can Be Dried vs. Replaced | Gold Water Fire Phoenix, AZ",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/when-drywall-can-be-dried-vs-replaced-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: When drywall can be dried in place and when it has to come out"
+  }
+}
