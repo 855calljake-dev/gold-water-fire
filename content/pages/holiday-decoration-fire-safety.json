@@ -1,0 +1,81 @@
+{
+  "slug": "holiday-decoration-fire-safety",
+  "path": "/guides/holiday-decoration-fire-safety.html",
+  "title": "Holiday Decoration & Lighting Fire Safety | Gold Water Fire Phoenix, AZ",
+  "description": "A clear guide to holiday lighting and decoration fire risks, what causes them, and how to reduce danger in your home this season.",
+  "h1": "Holiday Decoration and Lighting Fire Safety",
+  "breadcrumbLabel": "Holiday Decoration Fire Safety",
+  "intro": "There's a particular kind of unease that shows up this time of year when you're stringing lights across the mantel or plugging in a tree that's been sitting dry in a box for eleven months. Maybe you've noticed a warm cord, a flickering bulb, or an outlet that's carrying more than it should, and you've wondered if you're overthinking it or if something is actually wrong. That uncertainty is common, and it doesn't mean you're careless. It means you're paying attention to a season where small oversights can add up in ways that aren't always obvious until it's too late to undo them.",
+  "sections": [
+    {
+      "eyebrow": "Why this time of year is different",
+      "heading": "Why holiday decorating carries more fire risk than people expect",
+      "body": "Dry trees, overloaded outlets, and decorations left running unattended for hours are a combination that doesn't exist most of the rest of the year. A live tree loses moisture steadily after it's cut, and a dried-out tree can ignite and spread flame far faster than most people expect. Older strands of lights, decorations pulled from storage without a check, and extension cords daisy-chained together to reach one more outlet all raise the odds quietly, without any single obvious warning sign."
+    },
+    {
+      "eyebrow": "What actually goes wrong",
+      "heading": "The most common causes behind holiday fires",
+      "body": "Electrical failures are consistently a major factor: worn insulation, pinched cords behind furniture, and lights rated for indoor use strung outside in the elements. Candles left burning near garland, curtains, or paper decorations are another recurring cause, especially when they're placed for visual effect rather than safety. Space heaters run near trees or gift-wrapped boxes to keep a room warm during gatherings add heat sources into rooms already full of combustible material."
+    },
+    {
+      "heading": "Checking your lights and cords before you plug in",
+      "body": "Before hanging any strand, inspect it for frayed wire, exposed copper, cracked sockets, or bulbs that are loose in their housing. Cords that feel warm to the touch after use, outlets that spark when plugged in, or breakers that trip repeatedly are all signs the circuit is being asked to carry more than it should. Indoor and outdoor lights are rated differently for a reason: outdoor-rated strands are built to handle moisture and temperature swings that indoor lights are not."
+    },
+    {
+      "heading": "Tree, candle, and decoration placement",
+      "body": "Keep live trees away from fireplaces, heat vents, and space heaters, and check water levels daily if the stand holds any. Artificial trees should be labeled fire-resistant, though that label describes how the material resists ignition, not that it cannot burn. Candles are safest kept away from garland, wrapping paper, and fabric decorations, and should never be left burning in a room with no one present. Unplug decorative lighting before leaving the house or going to sleep."
+    },
+    {
+      "heading": "When damage happens anyway",
+      "body": "Even careful households sometimes end up dealing with scorched walls, smoke odor that has settled into fabric and drywall, or water damage from a fire suppression response. If that happens, understanding what a professional evaluation involves can help you know what to expect. You can read more about how fire damage is typically assessed and addressed on our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page, or see how water intrusion from firefighting efforts is handled on our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are LED holiday lights safer than older incandescent strands?",
+      "a": "LED lights run cooler than incandescent bulbs, which reduces heat buildup around the strand and nearby materials like garland or wrapping paper. They still carry electrical current, though, so a damaged cord or overloaded outlet can still create risk regardless of bulb type."
+    },
+    {
+      "q": "How many light strands can I safely connect together?",
+      "a": "This depends on the wattage rating printed on the packaging or the cord tag for each specific product, and on the capacity of the outlet or extension cord being used. Checking the manufacturer's stated rating for your specific lights is more reliable than guessing based on past experience."
+    },
+    {
+      "q": "Is it safe to leave a live tree up for the whole holiday season?",
+      "a": "A live tree becomes drier and more flammable the longer it sits, especially if the stand runs low on water. Many people find it safer to bring the tree in closer to when it will be decorated and remove it before it dries out significantly, rather than keeping one up for many weeks."
+    },
+    {
+      "q": "What should I do if I find a decoration that's already damaged, like a melted plug or scorched cord?",
+      "a": "Stop using it immediately and don't attempt to repair the wiring yourself. Damaged cords and plugs are generally not safe to tape or patch, and replacing the item is the more reliable option."
+    }
+  ],
+  "cta": {
+    "heading": "If holiday damage has already happened in your home",
+    "body": "Gold Water Fire serves the greater Phoenix metro area, including Mesa, Chandler, Scottsdale, Glendale, and surrounding communities, for fire and water damage restoration and reconstruction. Call (480) 999-3339 or email Help@goldwaterfire.com to talk through what you're seeing and what comes next."
+  },
+  "evidence": "This page states only general fire safety and holiday decoration information drawn from common industry knowledge; no specific claim about Gold Water Fire's history, certifications, or job outcomes is made.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/holiday-decoration-fire-safety-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Holiday decoration and lighting fire safety"
+  }
+}
