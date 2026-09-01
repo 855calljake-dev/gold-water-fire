@@ -1,0 +1,75 @@
+{
+  "slug": "emergency-mitigation-authorization",
+  "path": "/guides/emergency-mitigation-authorization.html",
+  "title": "The Emergency Mitigation Authorization You Sign on Day One | Gold Water Fire Phoenix, AZ",
+  "description": "What the emergency mitigation authorization form actually means before you sign it, explained in plain language for homeowners in Phoenix, AZ.",
+  "h1": "The Emergency Mitigation Authorization You Sign on Day One",
+  "breadcrumbLabel": "Emergency Mitigation Authorization",
+  "intro": "There is water on the floor, or smoke still hanging in the air, and someone is handing you a clipboard. You have not slept, you have not called your insurance company yet, and now you are being asked to sign something with words like \"authorization to perform services\" before you have had a chance to think. That moment feels rushed no matter how calm the crew is being, and it is fair to want to understand what you are actually agreeing to before your name goes on the line.",
+  "sections": [
+    {
+      "heading": "What this document actually is",
+      "body": "The paper handed to you on day one is usually called a work authorization or emergency mitigation authorization. In plain terms, it gives the restoration company permission to begin emergency work right away, things like extracting standing water, setting up drying equipment, or boarding up a fire-damaged opening, instead of waiting days for an insurance adjuster to inspect first. Mitigation has a clock attached to it. Water that sits for 48 hours behaves very differently than water removed on hour one, and soot left untreated continues to etch into surfaces the longer it stays. The authorization exists so that clock does not run out while paperwork is still being sorted."
+    },
+    {
+      "heading": "What it usually covers, and what it does not",
+      "body": "Most authorization forms are scoped narrowly to emergency mitigation, not full reconstruction. That distinction matters. Signing an authorization for water extraction and structural drying is not the same as signing a contract for a rebuilt kitchen or a new roof. If a company presents one form that seems to cover everything from the first pump-out to the final paint color, slow down and ask them to separate the emergency work from the repair work. A reasonable authorization should describe: the scope of emergency services being authorized, who is financially responsible if insurance does not cover the full amount, and whether the company is permitted to communicate directly with your insurance carrier on your behalf.",
+      "cards": [
+        {
+          "heading": "Scope of work",
+          "body": "Look for language that names the specific emergency tasks, water extraction, dehumidification, debris removal, board-up, rather than open-ended wording that could stretch to cover anything later."
+        },
+        {
+          "heading": "Payment responsibility",
+          "body": "Understand who owes what if your insurer denies part of the claim or pays less than the invoiced amount. This is often the most important paragraph on the page and the easiest one to skim past."
+        },
+        {
+          "heading": "Insurance communication",
+          "body": "Many forms include a clause letting the contractor speak with your adjuster directly. That can save you time, but you should know it is happening and that you can still ask questions or attend those calls yourself."
+        },
+        {
+          "heading": "Right to cancel or scope changes",
+          "body": "Ask how the form handles changes if the damage turns out to be worse, or better, than it looked on day one. Emergency scopes often shift once walls are opened or moisture readings come back."
+        }
+      ]
+    },
+    {
+      "heading": "Questions worth asking before you sign anything",
+      "body": "You are allowed to ask for a minute to read the form fully, even in an emergency. A company doing this the right way will not rush you past that. Reasonable questions include: Is this authorization only for emergency mitigation, or does it also commit me to repair work? What happens if my insurance adjuster disagrees with the scope once they inspect? Can I get a copy of this signed document for my own records right now, not mailed later? None of these questions delay the actual water removal or drying equipment from being set up. The physical work and the paperwork can move in parallel."
+    },
+    {
+      "heading": "Why the timing of mitigation matters so much",
+      "body": "Insurance policies generally expect homeowners to take reasonable steps to prevent further damage after a loss, which is part of why same-day mitigation work exists as its own category separate from repairs. Delaying extraction or drying does not just risk mold growth and material loss, it can also affect how a claim is evaluated later, since carriers may ask what steps were taken to limit the damage once it was discovered. Understanding the authorization form is really about understanding that this early window of work is treated differently, contractually and financially, than the rebuild that comes after it. For more on how the mitigation and reconstruction phases connect, see our pages on <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/reconstruction.html\">reconstruction</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to sign an authorization before emergency work starts?",
+      "a": "In most cases, yes, because the company needs your permission to begin work on your property and to establish who is financially responsible for it. You can still read it carefully and ask questions before signing."
+    },
+    {
+      "q": "Is signing the mitigation authorization the same as agreeing to a full repair contract?",
+      "a": "It should not be. A mitigation authorization typically covers only emergency services like extraction, drying, or board-up. Repair or reconstruction work is generally a separate agreement with its own scope and pricing."
+    },
+    {
+      "q": "What if I do not understand something in the document?",
+      "a": "Ask before you sign. A legitimate authorization form should be something the technician on site can explain in plain language, including what happens if insurance pays less than expected."
+    },
+    {
+      "q": "Can I cancel the authorization after signing it?",
+      "a": "Cancellation terms vary by form and by state, so read the specific language in front of you. If it is not written down, ask the company directly and get the answer in writing before work begins."
+    }
+  ],
+  "cta": {
+    "heading": "Have questions about a form in front of you right now?",
+    "body": "If you are dealing with water or fire damage in the Phoenix area and want a plain answer about an authorization form, reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com. You can also read more about our team on the <a href=\"/about.html\">about page</a> or reach out through <a href=\"/contact.html\">contact</a>."
+  },
+  "evidence": "This page states general information about how emergency mitigation authorization forms typically function in the restoration industry, and does not make any specific claim about Gold Water Fire's own contracts, timelines, or certifications.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/emergency-mitigation-authorization-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The emergency mitigation authorization you sign on day one"
+  }
+}
