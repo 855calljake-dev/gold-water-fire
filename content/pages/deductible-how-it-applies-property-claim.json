@@ -1,0 +1,76 @@
+{
+  "slug": "deductible-how-it-applies-property-claim",
+  "path": "/guides/deductible-how-it-applies-property-claim.html",
+  "title": "How Your Deductible Applies on a Property Damage Claim | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language look at how homeowners insurance deductibles work on water and fire damage claims, and what actually gets subtracted from your payout.",
+  "h1": "How Your Deductible Applies on a Property Damage Claim",
+  "breadcrumbLabel": "Deductible on a Property Claim",
+  "intro": "Somewhere between the moment you found the damage and the moment you opened your insurance policy to check the fine print, a new kind of stress set in. It's one thing to deal with water pooling under a cabinet or smoke damage across a ceiling. It's another to sit there doing math you didn't ask to do, trying to figure out what your policy actually covers, what a deductible even means in this situation, and whether filing a claim is going to cost you more than it helps. If you've read your declarations page three times and still aren't sure how the numbers work, that confusion is normal. Insurance language is written for insurance people, not for someone standing in a hallway looking at a stained ceiling.",
+  "sections": [
+    {
+      "heading": "What a deductible actually is",
+      "body": "A deductible is the portion of a covered loss you're responsible for before your insurance company pays the rest. It's not a fee you pay upfront and it's not something that gets billed to you separately. Instead, it's subtracted from the total claim payout. If your policy has a $1,000 deductible and the approved repair cost comes to $8,000, your insurer issues payment for $7,000 and you cover the remaining $1,000, usually through what the contractor bills you directly or what doesn't get reimbursed."
+    },
+    {
+      "heading": "Percentage deductibles versus flat-dollar deductibles",
+      "body": "Most homeowners policies use a flat-dollar deductible, something like $500, $1,000, or $2,500, that applies the same way regardless of the size of the claim. But some policies, especially in areas prone to specific perils, use a percentage deductible instead, calculated as a percentage of your home's insured value rather than a fixed number. A 2% deductible on a home insured for $350,000 works out very differently than a flat $1,000. It's worth knowing which type your policy uses before damage happens, because the difference changes what a claim is actually worth pursuing."
+    },
+    {
+      "heading": "How the deductible interacts with the claim total",
+      "body": "The deductible is applied once per claim, not once per repair category. If a single water damage event affects flooring, drywall, and cabinetry, that's typically treated as one claim with one deductible, not three separate deductions. This matters when you're trying to estimate what you'll actually receive. The adjuster's scope of work and the final approved estimate are what the deductible gets subtracted from, not your own guess at repair costs."
+    },
+    {
+      "heading": "When a claim isn't worth filing",
+      "body": "If the estimated damage is close to or below your deductible amount, filing a claim may not make financial sense, since you'd be covering the full cost yourself either way while a claim still shows up on your loss history. This is part of why getting an accurate, itemized estimate before deciding how to proceed matters. It's not just about the sticker shock of the damage itself, it's about knowing whether insurance is even the right tool for this particular repair.",
+      "eyebrow": "A practical checkpoint"
+    },
+    {
+      "heading": "Multiple deductibles on the same event",
+      "body": "In some cases, a single incident can trigger more than one deductible; for example, a storm that causes both wind damage and follow-on water intrusion might be treated under separate policy provisions if your coverage separates those perils. This is uncommon but not rare, and it's another reason to read the specific language in your policy rather than assume every loss works the same way. If you're dealing with both water and fire damage from a connected event, ask your adjuster directly whether one deductible applies or two."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does my deductible reset every year?",
+      "a": "For most standard homeowners policies, the deductible applies per claim, not per year, so it doesn't accumulate or reduce with prior claims. Some policies do have separate annual deductibles for specific perils like hurricanes or named storms, so it's worth checking your specific policy language."
+    },
+    {
+      "q": "Do I pay the deductible directly to the insurance company?",
+      "a": "No. The deductible isn't paid to your insurer. It's subtracted from the total claim payout, meaning you're responsible for that portion of the repair cost, typically settled directly with the contractor doing the work."
+    },
+    {
+      "q": "Can a contractor waive or cover my deductible for me?",
+      "a": "Be cautious of anyone offering to waive your deductible. In many states this practice is against the law and can also violate the terms of your insurance policy, potentially putting your entire claim at risk."
+    },
+    {
+      "q": "What if the damage estimate changes after the adjuster's first visit?",
+      "a": "It's common for a scope of work to change once repairs begin, especially with water or fire damage where hidden issues surface behind walls or under flooring. Supplemental estimates can be submitted to the insurer, and the deductible still applies only once to the overall approved claim, not again to each supplement."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your deductible means for your specific situation?",
+    "body": "If you're dealing with water or fire damage in the Phoenix area and want a clear, itemized look at what repairs actually involve, Gold Water Fire can walk the property with you and lay out the scope in plain terms. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance concepts and standard policy structures; it does not state any specific claim, number, or outcome belonging to Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/deductible-how-it-applies-property-claim-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: How your deductible applies on a property damage claim"
+  }
+}
