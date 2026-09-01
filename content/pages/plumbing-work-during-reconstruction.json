@@ -1,0 +1,75 @@
+{
+  "slug": "plumbing-work-during-reconstruction",
+  "path": "/guides/plumbing-work-during-reconstruction.html",
+  "title": "Plumbing Work During Reconstruction: What Gets Inspected | Gold Water Fire Phoenix, AZ",
+  "description": "What happens to plumbing during a reconstruction after water damage, what inspectors check, and why walls sometimes stay open longer than expected.",
+  "h1": "Plumbing Work During Reconstruction, and What Gets Inspected",
+  "breadcrumbLabel": "Plumbing Work During Reconstruction",
+  "intro": "If you're staring at open walls weeks after a leak was supposedly fixed, wondering why the plumber isn't the one closing everything back up, that confusion is normal. Water damage repair and plumbing repair are not the same job, and the handoff between them is rarely explained clearly to the person who actually lives in the house. You just want to know when this ends and whether the pipe problem is actually gone for good.",
+  "sections": [
+    {
+      "heading": "Why plumbing and reconstruction are two separate jobs",
+      "body": "A plumber's job is to find the failure point in the pipe, fitting, valve, or supply line and stop the leak. Once that's done, their scope is technically finished. But the water that leaked out doesn't just disappear. It travels along framing, under flooring, and behind drywall, often much further than the visible wet spot suggests. Reconstruction picks up from there: drying the structure, removing anything saturated beyond repair, and rebuilding it. The two trades often need to coordinate closely, because you can't safely close up a wall until both the leak is fixed and the framing behind it has actually dried out, not just looked dry."
+    },
+    {
+      "heading": "What typically happens to plumbing before rebuild starts",
+      "body": "Before any wall, floor, or ceiling goes back together, the plumbing in that area usually gets pressure tested to confirm the original failure point was the only one and that the repair is holding under normal water pressure, not just gravity. Supply lines, drain lines, and any fittings disturbed during the leak or during demolition get checked for slow drips that wouldn't show up in a quick visual look. If old galvanized or polybutylene piping is exposed during this process, it's common for that section to get flagged, since these older materials are known to fail again even when a single leak point has already been patched."
+    },
+    {
+      "heading": "What inspectors and code officials look at",
+      "body": "Depending on the scope of work and local permitting requirements, a rough-in inspection may need to happen before walls are closed, checking that pipe slope, venting, and fitting connections meet code. A final inspection after rebuild typically checks fixture connections, shutoff valve access, and that any water heater or main line work meets current code, which may differ from what was originally installed if the home is older. Permits and inspections exist specifically to catch problems while the walls are still open, since almost nothing is harder to find, or more expensive to fix, once drywall and flooring are back in place."
+    },
+    {
+      "heading": "Signs the plumbing side isn't actually finished",
+      "body": "A musty smell that returns after drying, discoloration reappearing on a ceiling or baseboard, or a water bill that stays high after the visible repair are all signs worth raising before reconstruction moves forward. Moisture meters and sometimes thermal imaging are used during reconstruction specifically to confirm framing and subfloor are dry all the way through, not just on the surface, because trapped moisture behind new drywall becomes a mold problem instead of a plumbing problem."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does the same company handle the plumbing repair and the reconstruction?",
+      "a": "Sometimes, but not always. A licensed plumber typically handles the pipe repair itself, while a restoration and reconstruction contractor handles the drying, demolition, and rebuild around it. Coordination between the two is what determines how smoothly the job goes."
+    },
+    {
+      "q": "Why do walls stay open longer than expected after a leak?",
+      "a": "Walls usually stay open until the affected framing and insulation have fully dried and, if required, until a rough-in inspection has passed. Closing a wall too early can trap moisture that leads to mold or a second round of demolition later."
+    },
+    {
+      "q": "Is a permit always required for plumbing work during reconstruction?",
+      "a": "It depends on the scope of the work and local jurisdiction rules. Repiping, moving fixtures, or water heater replacement more often require a permit than a like-for-like fitting repair. A licensed contractor can confirm what your specific job requires."
+    },
+    {
+      "q": "What older pipe materials tend to cause repeat leaks?",
+      "a": "Galvanized steel and polybutylene piping are both known to degrade over time and can fail again in a different spot even after one leak is patched. If either is found during reconstruction, it's worth asking about the condition of the rest of the run."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what stage your repair is actually at?",
+    "body": "If you're dealing with water damage and trying to understand what still needs to happen before your walls close back up, Gold Water Fire can walk through it with you. Call (480) 999-3339 or reach out through the contact page."
+  },
+  "evidence": "This page describes general plumbing and reconstruction practices and inspection standards; it makes no specific claims about jobs completed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/plumbing-work-during-reconstruction-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Plumbing work during a reconstruction, and what gets inspected"
+  }
+}
