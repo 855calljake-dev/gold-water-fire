@@ -1,0 +1,75 @@
+{
+  "slug": "proof-of-loss-explained",
+  "path": "/guides/proof-of-loss-explained.html",
+  "title": "Proof of Loss Explained: What It Is and When You Need One | Gold Water Fire, Phoenix, AZ",
+  "description": "Confused by a proof of loss request from your insurer? Here is what the document actually is, why it's asked for, and how to approach it without missing a deadline.",
+  "h1": "What a Proof of Loss Is and When You're Asked for One",
+  "breadcrumbLabel": "Proof of Loss Explained",
+  "intro": "Somewhere between the damage happening and the check arriving, a lot of homeowners hit a wall they didn't see coming: a letter or email asking for a \"sworn proof of loss,\" often with a deadline attached and language that sounds more like a legal filing than an insurance form. If you're staring at one of these right now, wondering whether you filled something out wrong, or why your claim suddenly feels harder instead of easier, that reaction makes sense. Most people only encounter this paperwork once or twice in their life, usually during a week that already has enough going on.",
+  "sections": [
+    {
+      "heading": "What a proof of loss actually is",
+      "body": "A proof of loss is a formal, signed statement you submit to your insurance company that lays out the details of your claim: what happened, when it happened, what was damaged or destroyed, and the dollar amount you're claiming for the loss. Unlike the initial claim report (usually a phone call or online form right after the damage occurs), a proof of loss is typically a sworn document, meaning you're signing it under penalty of perjury that the information is accurate. It's not a formality. Insurers use it as the official record of what you're asking them to pay, and it can become the basis for how the claim is evaluated, negotiated, or disputed later."
+    },
+    {
+      "heading": "When insurers ask for one",
+      "body": "Not every claim requires a proof of loss. Many smaller or straightforward claims get resolved with an adjuster's inspection and report alone. But you're more likely to be asked for a sworn proof of loss when the claim is larger, when there's a dispute about the cause or scope of damage, when the policy specifically requires it as a condition of payment, or when the insurer wants a documented, itemized figure before issuing payment. Some state laws and most standard policies set a specific window, often measured in days after the loss or after the insurer's request, so missing the date can actually jeopardize the claim itself. If your policy or adjuster mentions a deadline, treat it as real."
+    },
+    {
+      "heading": "What typically goes into the document",
+      "body": "A proof of loss generally includes the date and cause of the damage, a description of the property affected, an itemized list of damaged items or structural components with their value or repair cost, the total amount being claimed, and your signature, often notarized. Supporting documentation, such as photos, receipts, contractor estimates, and inventory lists, is usually attached or referenced. The more specific and well-documented the itemization, the fewer follow-up questions tend to come back from the insurer."
+    },
+    {
+      "heading": "Why this step trips people up",
+      "body": "Part of the difficulty is timing: a proof of loss is often due while you're still living out of a hotel room or waiting on contractor estimates, which makes it hard to pin down a final number with confidence. Part of it is language: 'sworn statement,' 'itemized,' and 'actual cash value' aren't terms most people use day to day, and getting them wrong can mean a document gets kicked back or a claim gets delayed. And part of it is simply not knowing this step was coming at all, since it's rarely explained clearly when the policy is first purchased. If you're feeling behind on this, you're not behind, you're just encountering something that was never fully explained to begin with."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is a proof of loss the same as the initial claim I filed?",
+      "a": "No. The initial claim is usually a quick report that damage occurred. A proof of loss is a more formal, often sworn document submitted later, itemizing the damage and the exact amount you're claiming."
+    },
+    {
+      "q": "What happens if I miss the deadline?",
+      "a": "Deadlines for a proof of loss are often written into the policy or set by state law, and missing one can give the insurer grounds to delay or deny payment. If you're unsure of your deadline, check your policy documents or ask your adjuster directly and get the answer in writing."
+    },
+    {
+      "q": "Do I need a contractor estimate before I can submit a proof of loss?",
+      "a": "It helps to have documentation, such as estimates, receipts, and photos, to support the numbers you're claiming. Some insurers will accept a proof of loss with a good-faith estimate and allow it to be amended if final costs change."
+    },
+    {
+      "q": "Can I fill out a proof of loss myself, or do I need help?",
+      "a": "Many homeowners complete it themselves using their policy, adjuster notes, and documentation of the damage. If the claim is large or complicated, some people bring in a public adjuster or attorney to review it before signing, since it is a sworn statement."
+    }
+  ],
+  "cta": {
+    "heading": "Documenting fire or water damage for your claim?",
+    "body": "Gold Water Fire helps Phoenix-area homeowners document and scope water damage, fire damage, and reconstruction needs, the kind of detail that supports a proof of loss or any other insurance paperwork. Reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're facing."
+  },
+  "evidence": "This page explains general insurance claim concepts and terminology; it makes no specific claims about Gold Water Fire's history, certifications, or job outcomes.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/proof-of-loss-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What a proof of loss is and when you are asked for one"
+  }
+}
