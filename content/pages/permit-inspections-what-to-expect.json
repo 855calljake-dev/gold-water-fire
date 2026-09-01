@@ -1,0 +1,90 @@
+{
+  "slug": "permit-inspections-what-to-expect",
+  "path": "/guides/permit-inspections-what-to-expect.html",
+  "title": "Permit Inspections During a Rebuild: What to Expect | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language look at how permit inspections work during a fire or water damage rebuild, what inspectors check, and why the process takes the time it does.",
+  "h1": "What to Expect from Permit Inspections During a Rebuild",
+  "breadcrumbLabel": "Permit Inspections What to Expect",
+  "intro": "If you're staring down a rebuild after fire or water damage, the idea of permits and inspections can feel like one more hurdle between you and your normal life. You just want your kitchen back, or your bedroom, or your ceiling that doesn't have a tarp over it. Instead, you're hearing words like \"rough-in inspection\" and \"final sign-off\" and wondering how many more steps stand between now and done. That confusion is normal. Nobody explains this part clearly until you're already in the middle of it.",
+  "sections": [
+    {
+      "heading": "Why permits exist in a rebuild at all",
+      "body": "When a home has been damaged by fire or water, the repair often isn't just cosmetic. Drywall gets torn out down to the studs, electrical wiring may need to be replaced, plumbing lines get reworked, and sometimes framing itself is compromised. Any time work touches structural, electrical, plumbing, or mechanical systems, most Arizona jurisdictions require a permit before the work starts and an inspection before it's covered up or considered finished. The permit isn't paperwork for paperwork's sake. It's the mechanism a city or county uses to confirm that what's behind your new drywall actually meets code, because once that drywall goes up, nobody can see it again without cutting it open."
+    },
+    {
+      "heading": "The typical inspection stages",
+      "body": "Most rebuilds that involve structural or system repairs move through a handful of inspection checkpoints, though the exact sequence depends on the scope of work and the local building department.",
+      "cards": [
+        {
+          "heading": "Rough-in inspection",
+          "body": "This happens after framing, electrical wiring, plumbing lines, and HVAC ductwork are installed but before any walls are closed up. The inspector is checking that wiring is run correctly, connections are solid, and nothing is hidden that would be unsafe once covered."
+        },
+        {
+          "heading": "Insulation inspection",
+          "body": "In some jurisdictions, insulation gets its own checkpoint before drywall goes up, confirming the right type and coverage is in place for energy code compliance."
+        },
+        {
+          "heading": "Final inspection",
+          "body": "Once drywall, flooring, fixtures, and finishes are complete, a final inspection confirms the space is safe to occupy and that everything matches what was permitted. This is usually the last step before the permit is officially closed."
+        }
+      ]
+    },
+    {
+      "heading": "What an inspector is actually looking at",
+      "body": "Inspectors aren't grading finish work or paint color. They're checking specific, code-based items: proper wire gauge and connections, correct spacing on outlets and smoke detectors, adequate support and slope on plumbing lines, fire-rated materials in the right locations, and structural framing that matches approved plans. If something doesn't pass, it's rarely about the whole project failing. Usually it's a specific item that needs correction, like a missing fire block or an outlet that's not GFCI protected, and once that's fixed, a re-inspection can be scheduled fairly quickly."
+    },
+    {
+      "heading": "Why this can feel slower than expected",
+      "body": "Inspection scheduling depends on the local building department's queue, not on how fast the contractor wants to move. Some jurisdictions offer next-day scheduling, others take longer depending on volume. If an item doesn't pass, that section of work has to wait for a re-inspection before it can be closed up, which can add days. None of this means something has gone wrong. It's simply how the process is built to work: verify before you cover, and don't skip steps just because everyone is eager to move forward."
+    },
+    {
+      "heading": "What homeowners can do to stay oriented",
+      "body": "You're allowed to ask which inspections have been scheduled, which have passed, and what's left. A permit's status is usually public record and can often be looked up through the city or county's building department website using the permit number. Knowing where things stand doesn't speed up the inspection, but it does replace uncertainty with an actual answer. For more on how rebuild timelines fit into a full restoration project, see our page on <a href=\"/reconstruction.html\">Reconstruction & Rebuild</a>.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do all repairs after fire or water damage require a permit?",
+      "a": "Not all of them. Cosmetic repairs like painting or replacing carpet typically don't need a permit. Work that touches electrical, plumbing, structural framing, or mechanical systems usually does, since those are the areas where hidden problems create real safety risk."
+    },
+    {
+      "q": "What happens if work is covered up before an inspection?",
+      "a": "If drywall or flooring goes in before a required inspection, the inspector may ask for it to be opened back up so the work underneath can be verified. This is one of the main reasons rebuild schedules build in inspection windows before closing up walls."
+    },
+    {
+      "q": "How long does a permit inspection usually take to schedule?",
+      "a": "It varies by city or county building department and depends on their current inspection volume. Some jurisdictions offer same-week scheduling, others take longer. Checking directly with the local building department gives the most accurate picture for a specific address."
+    },
+    {
+      "q": "Who is responsible for scheduling inspections during a rebuild?",
+      "a": "This is typically handled by the contractor managing the permitted work, since they coordinate the sequence of framing, systems, and finishes around each required checkpoint."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a rebuild and not sure where the permit process stands?",
+    "body": "Gold Water Fire's reconstruction team, led by Brandon Gurr and Johnny, handles the coordination that goes into a fire or water damage rebuild, including the inspection steps along the way. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our contact page to talk through where your project is."
+  },
+  "evidence": "This page states general permitting and inspection practices common to Arizona building departments and does not make any specific claim about Gold Water Fire's own job history, certifications, or timelines.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/permit-inspections-what-to-expect-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What to expect from permit inspections during a rebuild"
+  }
+}
