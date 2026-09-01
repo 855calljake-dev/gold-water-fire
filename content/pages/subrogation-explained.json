@@ -1,0 +1,79 @@
+{
+  "slug": "subrogation-explained",
+  "path": "/guides/subrogation-explained.html",
+  "title": "Subrogation Explained: Why Your Insurer May Pursue Someone Else | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language guide to insurance subrogation after water or fire damage: what it means, when it happens, and what it does (and doesn't) mean for you.",
+  "h1": "Subrogation Explained: Why Your Insurer May Pursue Someone Else",
+  "breadcrumbLabel": "Subrogation Explained",
+  "intro": "You got a check from your insurance company, or maybe you're still waiting on one, and somewhere in the paperwork or a phone call, someone mentioned the word \"subrogation.\" Nobody explained it well. Maybe they used it to explain a delay. Maybe you're wondering if this means you did something wrong, or if it changes what you're owed, or if you're about to get pulled into some legal fight you never signed up for. Sitting with an unfamiliar insurance term while your home is torn up and you're just trying to get life back to normal is its own kind of exhausting, on top of everything else that's already happened.",
+  "sections": [
+    {
+      "eyebrow": "The basics",
+      "heading": "What subrogation actually means",
+      "body": "Subrogation is the process by which your insurance company, after paying your claim, tries to recover that money from whoever they believe actually caused the damage. It's a legal right most insurers hold under the policy you signed. In plain terms: your insurer pays you first so you can get repairs moving, then separately investigates whether a third party, a manufacturer, a contractor, a neighbor, a water heater company, or someone else, was at fault. If they find fault and can prove it, they go after that party's insurance company or the party directly to get their money back. This happens entirely between insurance companies and does not typically require anything further from you beyond what you already provided during the claims process."
+    },
+    {
+      "eyebrow": "When it shows up",
+      "heading": "Common situations where subrogation applies",
+      "body": "Subrogation tends to come up when the cause of damage points to something or someone outside your own household. A defective water heater or supply line that failed before its expected lifespan. A washing machine hose that ruptured due to a manufacturing flaw. A plumber whose recent repair failed and caused a flood. A neighbor's pipe that burst and damaged your unit in a shared building. A fire that started in faulty wiring installed by a licensed electrician. In each of these cases, your insurer pays your claim as usual, then looks at whether the product manufacturer, the contractor, or another party's insurance should ultimately bear the cost. If the damage was caused by normal wear, an act of nature, or something with no identifiable at-fault party, subrogation typically doesn't apply at all."
+    },
+    {
+      "eyebrow": "What it means for you",
+      "heading": "Does subrogation affect your claim or your money",
+      "body": "For most homeowners, subrogation happens in the background and doesn't change what you receive. Your insurer already paid your claim according to your policy terms, minus your deductible. If subrogation succeeds later, one thing that can change is your deductible: some policies reimburse you for some or all of your deductible if the insurer recovers money from the at-fault party. It's worth asking your adjuster directly whether your policy includes deductible recovery through subrogation, since this varies by policy and isn't something to assume either way. What subrogation does not typically mean is that you owe anything, that your claim gets reopened against you, or that you need to hire a lawyer. It's a dispute between insurance companies, not between you and anyone else."
+    },
+    {
+      "eyebrow": "Documentation matters",
+      "heading": "How the damage was documented can matter later",
+      "body": "Because subrogation cases rely on proving what caused the damage and when, thorough documentation from the start helps everyone, including you. Photos of the failed component before it's removed, notes on when a leak or fire was first noticed, and a clear record of what work was done and why all become part of the record insurers use to sort out fault. This is one reason a documented, methodical approach to water damage restoration or fire damage restoration matters beyond just getting your home dried out or cleaned up. It creates a paper trail that can support your insurer's case if they pursue subrogation, and that paper trail exists regardless of whether subrogation ever happens."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to do anything if my insurer decides to pursue subrogation?",
+      "a": "Usually not. Subrogation is handled between your insurance company and the party they believe is at fault, often through that party's insurer. You may be asked for statements or documentation you already provided, but you generally don't need to take action or hire representation."
+    },
+    {
+      "q": "Will subrogation delay my repairs?",
+      "a": "No. Your insurer pays your claim first, based on your policy, and pursues subrogation afterward as a separate process. Repairs and the subrogation investigation run on different tracks."
+    },
+    {
+      "q": "Can I get my deductible back through subrogation?",
+      "a": "Sometimes, depending on your specific policy. If your insurer successfully recovers money from the at-fault party, some policies include a provision to reimburse part or all of your deductible. Ask your adjuster whether your policy includes this."
+    },
+    {
+      "q": "What if I don't know what caused the damage?",
+      "a": "That's common, and it's part of what an investigation is for. Insurers, and sometimes independent investigators, look at physical evidence, like a failed pipe fitting or scorched wiring, to determine cause. You aren't expected to identify the cause yourself."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water or fire damage and unsure what happens next",
+    "body": "If you're in the middle of a claim and trying to understand your options, our team can walk through what we're seeing on-site and how it's typically documented. Reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance industry practice around subrogation and does not make any specific claim about Gold Water Fire's own casework, certifications, or outcomes.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/subrogation-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Subrogation, and why your insurer may pursue someone else"
+  }
+}

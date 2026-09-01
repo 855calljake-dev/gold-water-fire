@@ -1,0 +1,80 @@
+{
+  "slug": "re-entering-a-home-after-a-fire",
+  "path": "/guides/re-entering-a-home-after-a-fire.html",
+  "title": "What to Know Before Re-Entering a Home After a Fire | Gold Water Fire Phoenix, AZ",
+  "description": "A practical safety guide for homeowners in Phoenix, AZ on what to check before going back into a house after a fire, from structural risk to air quality.",
+  "h1": "What to Know Before Re-Entering a Home After a Fire",
+  "breadcrumbLabel": "Re-Entering a Home After a Fire",
+  "intro": "The fire is out, but that does not mean the danger is over. Standing outside your own home, waiting for someone to say it is safe to go back in, is its own kind of exhausting. You want to check on your things, find important papers, feed the pets you could not reach, and every hour that passes feels like one more thing slipping out of your control. It makes sense to want answers right now.",
+  "sections": [
+    {
+      "heading": "Wait for official clearance first",
+      "body": "Fire departments and inspectors clear a structure for a reason. Heat can weaken framing, floors, and roof supports in ways that are not visible from the doorway, and a home that looks intact can still have compromised load-bearing walls or a roof that is at risk of collapse. If firefighters or a building inspector have told you to stay out, that instruction holds even if the smoke has cleared and the house looks quiet from the street. Once you do have clearance, treat the first walkthrough as a slow, careful look around rather than a normal visit home."
+    },
+    {
+      "heading": "Check for hidden structural and utility hazards",
+      "body": "Before moving through any room, look at the ceiling and floor for sagging, warping, or soot patterns that suggest heat traveled somewhere unexpected. Avoid leaning on walls or railings that were near the fire. Gas lines, electrical panels, and water lines can all be damaged by heat even when the wiring or piping looks fine on the surface, so do not turn on electrical switches, run water, or relight pilot lights until a professional has checked them. If you smell gas at any point, leave immediately and call the gas utility from outside the home."
+    },
+    {
+      "heading": "Protect yourself from smoke and soot exposure",
+      "body": "Soot is not just cosmetic residue. It can carry fine particulates and chemical byproducts from burned synthetic materials like plastics, foam, and treated fabrics, and these can settle into HVAC systems, upholstery, and porous surfaces throughout the house, not just the room where the fire started. Wear a well-fitting mask, gloves, and long sleeves during early walkthroughs, and avoid touching soot-covered surfaces with bare skin. Keep windows open if it is safe to do so and the outdoor air quality allows it, to help ventilate lingering smoke odor."
+    },
+    {
+      "heading": "Document before you disturb anything",
+      "body": "Once you are cleared to be inside, take photos and video of every room before you move, clean, or discard anything. Insurance adjusters rely on this documentation, and it is much harder to reconstruct what a room looked like after items have already been moved or thrown away. Note visible damage to walls, ceilings, flooring, and personal belongings, and keep a written list as you go. This is also the point to start separating items that might be salvageable from those that clearly are not.",
+      "eyebrow": "Documentation matters"
+    },
+    {
+      "heading": "Know what usually cannot be saved",
+      "body": "Food, medicine, and cosmetics that were exposed to heat, smoke, or the chemicals in fire suppressant should be thrown out, even if packaging looks undamaged, since heat and smoke particles can penetrate seals. Soft materials like mattresses, pillows, and stuffed furniture usually absorb smoke odor too deeply to fully clean. Hard surfaces, some clothing, and many personal documents often have a better chance of being restored with the right cleaning approach, which is why sorting early and carefully matters more than rushing to clean everything at once."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How soon can I go back into my house after a fire is put out?",
+      "a": "Only after the fire department or a building inspector has formally cleared the structure. Smoke clearing and flames being out does not mean the building is structurally safe."
+    },
+    {
+      "q": "Is it safe to run the air conditioning or heating after a fire?",
+      "a": "Not until the HVAC system has been checked. Soot and smoke particles can be pulled into ductwork and recirculated through the house if the system is run before it is inspected and cleaned."
+    },
+    {
+      "q": "Can I clean smoke damage myself before an inspection?",
+      "a": "It is best to document damage with photos first and avoid heavy cleaning until you understand what is structurally and electrically safe to touch, since some cleaning methods can push soot deeper into porous materials."
+    },
+    {
+      "q": "What items should I prioritize checking for first?",
+      "a": "Important documents, medications, and anything irreplaceable are usually top priority once you are cleared to enter, but always follow the safety guidance above before handling anything in the space."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what to do next with your home?",
+    "body": "If you are looking at a fire-damaged home in the Phoenix area and are not sure where to start, it is okay to just ask a few questions first. Reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, no pressure, just answers."
+  },
+  "evidence": "This page is general fire safety and restoration guidance based on standard practice, not a specific claim about work Gold Water Fire has performed.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/re-entering-a-home-after-a-fire-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What to know before re-entering a home after a fire"
+  }
+}

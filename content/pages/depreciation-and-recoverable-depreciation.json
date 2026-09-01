@@ -1,0 +1,57 @@
+{
+  "slug": "depreciation-and-recoverable-depreciation",
+  "path": "/guides/depreciation-and-recoverable-depreciation.html",
+  "title": "Depreciation and Recoverable Depreciation Explained | Gold Water Fire Phoenix, AZ",
+  "description": "What depreciation and recoverable depreciation mean on a property claim, and how homeowners in Phoenix, AZ can make sense of a claim payout.",
+  "h1": "Depreciation and Recoverable Depreciation on a Property Claim",
+  "breadcrumbLabel": "Depreciation and Recoverable Depreciation",
+  "intro": "You opened your claim paperwork expecting a number that would cover the repair, and instead found two numbers, a bigger one and a smaller one, with a gap between them that nobody explained in plain language. That gap has a name and a reason, but insurance documents rarely take the time to walk you through it. If you're staring at a check that feels smaller than it should be, or trying to figure out why your insurer paid you less than the estimate they themselves generated, you're not missing something obvious. This is genuinely confusing, and it's confusing on purpose in some ways, because the terminology assumes a familiarity most people never needed until now.",
+  "sections": [
+    {
+      "heading": "What depreciation means on a claim",
+      "body": "Depreciation is the reduction in value an item has because of its age, wear, and expected lifespan. An insurer doesn't pay to replace your 12-year-old water heater with a brand new one at full price, because the old one wasn't worth full price the day before it failed. The adjuster calculates what that item was actually worth right before the loss, subtracts that depreciation from the cost of a new replacement, and that lower figure is called Actual Cash Value, often shortened to ACV. This applies to flooring, cabinets, roofing, drywall, and most other building materials and contents affected by fire or water damage, each with its own expected lifespan used in the calculation."
+    },
+    {
+      "heading": "Recoverable depreciation: the part you can still get back",
+      "body": "Recoverable depreciation is the difference between the ACV payment and the full Replacement Cost Value (RCV), the amount it actually costs to repair or replace the item today. If your policy includes Replacement Cost Value coverage, that depreciated amount isn't gone, it's being held back until you complete the repair and show proof. Once the work is done and documented, most policies allow you to submit for that second payment. This is why the first check you receive is often intentionally lower than the repair estimate: it's the ACV portion, and the recoverable depreciation is the second half waiting on documentation."
+    },
+    {
+      "heading": "Non-recoverable depreciation and why it matters",
+      "body": "Not all depreciation can be recovered. If a policy only provides Actual Cash Value coverage rather than Replacement Cost Value, the depreciated amount is simply gone, it's called non-recoverable depreciation. Some policies also carry non-recoverable depreciation on specific categories, like roofing over a certain age, even when the rest of the policy is RCV. Knowing which type of coverage applies to your specific policy, and to each category of damaged property within it, changes what you can realistically expect to receive."
+    },
+    {
+      "heading": "How to actually get the recoverable depreciation released",
+      "body": "Insurers typically require proof that the repair or replacement was completed before releasing the withheld recoverable depreciation. That usually means a paid invoice, a completion certificate, or itemized documentation matching the original estimate's line items. Keep every receipt, every before-and-after photo, and every contractor invoice organized by category, because a mismatch between what was estimated and what was actually replaced can slow down or reduce that second payment. There is also often a time limit, sometimes measured in months from the date of loss, so acting on the repair rather than letting the paperwork sit is what protects the second check. For a general sense of how the repair side of a claim unfolds, see our guides on <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>, and if the loss involves structural rebuilding, our <a href=\"/reconstruction.html\">reconstruction and rebuild</a> page walks through that process."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between ACV and RCV on my claim?",
+      "a": "ACV (Actual Cash Value) is the depreciated value of the item right before the loss. RCV (Replacement Cost Value) is what it costs to replace it new today. If your policy has RCV coverage, you're typically paid ACV first and can recover the depreciated difference after the repair is completed and documented."
+    },
+    {
+      "q": "Why did my insurance company hold back part of my payment?",
+      "a": "That withheld portion is the recoverable depreciation. Insurers commonly release it only after you complete the repair and submit proof, such as paid invoices or a completion certificate, matching the original estimate."
+    },
+    {
+      "q": "Is there a deadline to claim recoverable depreciation?",
+      "a": "Many policies set a window, often measured in months from the date of loss, to complete repairs and submit for the second payment. Check your specific policy documents or ask your adjuster directly, since this window varies by insurer and policy."
+    },
+    {
+      "q": "Can I lose recoverable depreciation if I don't do the repair?",
+      "a": "Generally yes. Recoverable depreciation is contingent on completing the repair or replacement and providing documentation. If the work isn't done within the policy's timeframe, that portion of the payout is typically forfeited."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a claim and not sure what's next?",
+    "body": "If you're trying to sort out documentation for a water or fire damage repair in the Phoenix, AZ area, Gold Water Fire can talk through what the repair side of the process looks like. Call (480) 999-3339 or email Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance claim terminology and industry-standard concepts (ACV, RCV, recoverable and non-recoverable depreciation) and does not make any specific claim about Gold Water Fire's own work, pricing, or history.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/depreciation-and-recoverable-depreciation-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Depreciation and recoverable depreciation on a property claim"
+  }
+}

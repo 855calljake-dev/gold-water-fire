@@ -1,0 +1,75 @@
+{
+  "slug": "public-adjuster-vs-insurance-adjuster",
+  "path": "/guides/public-adjuster-vs-insurance-adjuster.html",
+  "title": "Public Adjuster vs Insurance Adjuster: What's the Difference | Gold Water Fire Phoenix, AZ",
+  "description": "Confused about who's who after a claim? Here's the real difference between a public adjuster and an insurance adjuster, explained for Phoenix, AZ homeowners.",
+  "h1": "A Public Adjuster and an Insurance Adjuster Do Different Jobs",
+  "breadcrumbLabel": "Public Adjuster vs Insurance Adjuster",
+  "intro": "You just found out there are two different kinds of \"adjuster\" involved in your claim, and nobody explained which one actually works for you. If you're rereading paperwork trying to figure out whose name is on what, or wondering why the person who inspected your damage doesn't seem to be the same person deciding what gets paid, that confusion is completely reasonable. Insurance claims use a lot of similar-sounding titles for people with very different jobs and very different loyalties, and most homeowners only learn the difference after they're already in the middle of a claim.",
+  "sections": [
+    {
+      "heading": "Who does each adjuster actually work for",
+      "body": "An insurance adjuster, sometimes called a staff adjuster or company adjuster, is employed by (or contracted to work on behalf of) your insurance company. Their job is to evaluate your claim, inspect the damage, and determine what the policy covers, but their paycheck comes from the insurer, not from you. A public adjuster is hired directly by the homeowner. They work for you, not the insurance company, and their job is to build and present your claim in a way that reflects the full scope of the damage. Neither one is inherently the good guy or the bad guy. They simply represent different sides of the same transaction, and understanding that upfront changes how you read everything else in the process."
+    },
+    {
+      "heading": "What each one is actually looking at",
+      "body": "The insurance adjuster's inspection is focused on verifying your claim against your specific policy: what's covered, what's excluded, what the depreciation schedule looks like, and what dollar amount the company is willing to approve. A public adjuster's job, when one is hired, is to independently document damage that might otherwise be underestimated, missed, or valued too low, and to negotiate on the homeowner's behalf if there's a disagreement about scope or payout. You are not required to hire a public adjuster for every claim. Many straightforward claims settle fine without one. But if you feel the insurance adjuster's assessment doesn't match what a contractor is telling you about the actual repair scope, that's usually the moment homeowners start asking whether they need their own representation."
+    },
+    {
+      "heading": "Where a restoration contractor fits into this",
+      "body": "A restoration contractor is a third role entirely, separate from both adjusters. Contractors document damage, perform mitigation and repairs, and can provide detailed scope-of-work estimates that either adjuster may reference, but a contractor doesn't work for the insurance company and isn't your public adjuster either. Detailed documentation from the contractor doing the actual work, photos, moisture readings, room-by-room notes, can matter a great deal in a claim dispute, simply because it reflects what's physically happening in the home rather than a summary judgment made during a single inspection walk-through. If you're dealing with <a href=\"/water-damage-restoration.html\">water damage</a> or <a href=\"/fire-damage-restoration.html\">fire damage</a>, that documentation trail often starts the same day mitigation work begins."
+    },
+    {
+      "heading": "When the two assessments don't match",
+      "body": "It's common for an insurance adjuster's initial scope and a contractor's repair estimate to come in differently, especially with hidden damage like moisture behind walls or smoke residue in HVAC systems that isn't visible during a quick inspection. That gap doesn't automatically mean anyone did anything wrong. It often just means the visible damage and the full damage aren't the same thing yet. If that gap is significant, homeowners can request a re-inspection, provide additional contractor documentation, or decide a public adjuster is worth the cost for their specific situation. There's no single right answer here, it depends on the size of the claim and how far apart the two numbers are."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to hire a public adjuster after a loss?",
+      "a": "No. Hiring a public adjuster is optional and is a decision homeowners make for themselves, usually when they feel the insurance company's valuation doesn't reflect the actual scope of damage. Plenty of claims are resolved directly with the insurance adjuster without one."
+    },
+    {
+      "q": "Does the insurance adjuster work for me?",
+      "a": "No. The insurance adjuster is employed by or contracted to your insurance company. Their job is to evaluate the claim against your policy terms, not to represent your personal interests the way a public adjuster would."
+    },
+    {
+      "q": "Can a restoration contractor act as my public adjuster?",
+      "a": "No, they're different roles with different licensing. A restoration contractor documents and repairs the physical damage. A public adjuster is licensed specifically to negotiate insurance claims on a homeowner's behalf."
+    },
+    {
+      "q": "Why did my contractor's estimate come in higher than the insurance adjuster's number?",
+      "a": "This often happens because some damage, like moisture trapped behind drywall or smoke residue inside ductwork, isn't visible during a single walk-through inspection but becomes clear once mitigation work starts."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your damage actually involves?",
+    "body": "If you're trying to sort out what's really going on before you deal with adjusters or paperwork, Gold Water Fire can walk your property and document what we see. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page describes general roles and industry practices around insurance and public adjusters; it makes no specific claims about Gold Water Fire's job history, certifications, or claim outcomes.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/public-adjuster-vs-insurance-adjuster-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: A public adjuster and an insurance adjuster do different jobs"
+  }
+}

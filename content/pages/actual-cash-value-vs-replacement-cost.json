@@ -1,0 +1,83 @@
+{
+  "slug": "actual-cash-value-vs-replacement-cost",
+  "path": "/guides/actual-cash-value-vs-replacement-cost.html",
+  "title": "Actual Cash Value vs Replacement Cost After Damage | Gold Water Fire, Phoenix, AZ",
+  "description": "Confused why your insurance check seems short after fire or water damage? Learn the difference between actual cash value and replacement cost coverage.",
+  "h1": "Actual Cash Value vs Replacement Cost: Why Your Check Might Not Match the Repair Bill",
+  "breadcrumbLabel": "ACV vs Replacement Cost",
+  "intro": "You opened the claim check expecting it to cover the repair, and instead you're staring at a number that doesn't add up. Maybe it's a few thousand dollars short of the contractor's estimate. Maybe there's a second, smaller check promised \"later\" that nobody explained clearly. If you're rereading your policy documents trying to figure out where the rest of the money went, you're not missing something obvious. Insurance settlement math is genuinely hard to follow, and most homeowners only encounter these terms for the first time after something has already gone wrong in their house.",
+  "sections": [
+    {
+      "eyebrow": "The two numbers on your policy",
+      "heading": "What actual cash value and replacement cost actually mean",
+      "body": "Actual cash value, often shortened to ACV, is what an item or part of your home is worth right now, factoring in age and wear. It's the replacement cost minus depreciation. So a 12-year-old roof or a water heater that was already halfway through its expected lifespan gets valued at what it's worth today, not what a brand new one costs at the store. Replacement cost, or RCV, is the full amount it takes to actually replace that same item or material with something new, at today's prices, with no deduction for age or use. Those two numbers can be close together on something you bought last year. They can be very far apart on a 20-year-old carpet or an original 1990s kitchen."
+    },
+    {
+      "eyebrow": "Why the check felt short",
+      "heading": "How the two-check structure works on a replacement cost policy",
+      "body": "Most homeowner policies today are written as replacement cost policies, but they don't pay the full replacement amount up front. Instead, the insurer typically issues the ACV amount first, the depreciated value, and holds back the difference (called recoverable depreciation) until the work is actually completed. Once repairs are done and you submit proof, such as invoices or a completion certificate, you can request the second payment to bring the total up to full replacement cost. This is the most common reason a first check looks short: it isn't the final number, it's the first of two. If your policy is an ACV-only policy, however, that first check is the only one coming, and the depreciated amount is what you're working with for the whole repair."
+    },
+    {
+      "eyebrow": "Where the confusion multiplies",
+      "heading": "Why depreciation gets applied item by item, not to the whole claim",
+      "body": "Depreciation isn't a flat percentage taken off the total claim. It's calculated line by line on the adjuster's estimate: age and condition of the flooring, the drywall, the cabinetry, the roofing material, even paint. That means your settlement sheet might have dozens of small depreciation deductions rather than one obvious number, which makes it hard to see at a glance why the total dropped. It's worth asking your adjuster for the depreciation breakdown in writing, item by item, rather than just the summary total. That document is what you'll compare against your final invoices when it's time to request the recoverable depreciation payment."
+    },
+    {
+      "eyebrow": "What to do with this information",
+      "heading": "Questions worth asking before repairs start",
+      "body": "Before any work begins, it helps to know exactly which policy type you have, whether there's a recoverable depreciation holdback, what the deadline is to complete repairs and claim it (many policies set a window, commonly around 180 days, though this varies by carrier and should be confirmed on your specific policy), and whether certain categories of damage, like flooring or personal contents, are handled under different valuation rules than structural repairs. A licensed contractor doing the repair work, whether that's <a href=\"/water-damage-restoration.html\">water damage restoration</a>, <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>, or full <a href=\"/reconstruction.html\">reconstruction and rebuild</a> work, can walk through the scope of repairs with you so you understand what's being billed against which check."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "If my policy is replacement cost, why did I only get part of the money at first?",
+      "a": "Replacement cost policies commonly pay the depreciated (actual cash value) amount first, then release the remaining recoverable depreciation once repairs are finished and documented. It's a two-step payment structure, not a denial of the rest of the claim."
+    },
+    {
+      "q": "What happens if I never finish the repairs?",
+      "a": "If repairs aren't completed, or aren't completed within the window your policy allows, you may not be able to collect the recoverable depreciation portion at all. That's why it's worth confirming your policy's deadline early rather than assuming there's no rush."
+    },
+    {
+      "q": "Is actual cash value ever the better deal?",
+      "a": "Rarely, for the homeowner. ACV settlements are lower by design because they subtract for age and wear. Replacement cost coverage exists specifically so you're not stuck paying the depreciation gap out of pocket to restore your home to its prior condition."
+    },
+    {
+      "q": "Does depreciation apply to labor too, or just materials?",
+      "a": "It varies by policy and by state, and some carriers depreciate labor along with materials while others depreciate materials only. This is a detail worth confirming directly with your adjuster since it affects the final holdback amount."
+    }
+  ],
+  "cta": {
+    "heading": "Trying to make sense of your settlement paperwork?",
+    "body": "Gold Water Fire can walk through your scope of damage with you and explain what repairs involve, so you can compare that against what your policy documents describe. Call (480) 999-3339 or email Help@goldwaterfire.com."
+  },
+  "evidence": "This page states only general insurance industry concepts (ACV, RCV, recoverable depreciation, typical policy structures) as general knowledge, and makes no specific claims about Gold Water Fire's own history, certifications, or job outcomes.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/actual-cash-value-vs-replacement-cost-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Actual cash value and replacement cost, and the difference on your check"
+  }
+}

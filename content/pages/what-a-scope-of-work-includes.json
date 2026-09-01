@@ -1,0 +1,94 @@
+{
+  "slug": "what-a-scope-of-work-includes",
+  "path": "/guides/what-a-scope-of-work-includes.html",
+  "title": "What a Scope of Work Document Includes, Line by Line | Gold Water Fire Phoenix, AZ",
+  "description": "A line-by-line breakdown of what belongs in a restoration scope of work, so you can read your document with confidence before signing anything.",
+  "h1": "What a Scope of Work Document Includes, Line by Line",
+  "breadcrumbLabel": "Scope of Work Explained",
+  "intro": "You've got a document in front of you, pages of line items, codes, and dollar figures, and it might as well be written in another language. You know something happened to your home. You know someone is supposed to fix it. But the paper in your hand doesn't feel like it connects those two things in any way you can verify. That gap, between what you're being told and what you actually understand, is exhausting on top of everything else you're already dealing with.",
+  "sections": [
+    {
+      "heading": "What a scope of work is actually for",
+      "body": "A scope of work is the written translation of a damage inspection into a task list. It exists so that three different people, an adjuster, a contractor, and a homeowner, can look at the same page and agree on what work is being done, in what order, and roughly what it should cost. When it's done well, it removes guesswork. When it's vague or missing pieces, it becomes the source of every disagreement that follows: change orders nobody expected, work that wasn't priced, or a final bill that doesn't match what was discussed at the start."
+    },
+    {
+      "heading": "The line items you should expect to see",
+      "body": "Most scopes are organized room by room or area by area, and within each area you'll typically find these categories.",
+      "cards": [
+        {
+          "heading": "Demolition and removal",
+          "body": "Anything being torn out gets its own line: drywall, flooring, cabinetry, baseboard, insulation. Each line usually specifies the material, the quantity (square feet or linear feet), and sometimes the depth of damage, like drywall removed to a certain height above the floor."
+        },
+        {
+          "heading": "Drying and mitigation equipment",
+          "body": "For water damage, you'll see line items for air movers, dehumidifiers, and sometimes air scrubbers, usually billed per unit per day. This is where monitoring logs matter, because the number of days equipment ran should be documented, not estimated after the fact."
+        },
+        {
+          "heading": "Cleaning and content handling",
+          "body": "This covers cleaning of salvageable surfaces and belongings, plus any packing, moving, or storage of contents that had to be relocated out of the work area during repairs."
+        },
+        {
+          "heading": "Reconstruction and materials",
+          "body": "Once demolition and drying are complete, the rebuild lines describe what's going back: drywall hung and finished, paint, flooring, trim, and any specialty materials. Quantities here should roughly mirror what was removed in the demolition section."
+        }
+      ]
+    },
+    {
+      "heading": "The details that separate a solid scope from a vague one",
+      "body": "Beyond the categories above, a thorough scope names specific quantities (not just 'flooring' but square footage and material type), specifies unit pricing so you can see the math behind each total, and notes any items marked as 'to be determined' pending further inspection, like hidden moisture behind a wall that can't be assessed until demolition opens it up. It should also separate labor from materials on major line items, and flag anything that requires a specialist, such as electrical or HVAC work, rather than folding it into general repair language. If a scope reads more like a summary paragraph than an itemized list, that's usually a sign it needs more detail before work begins."
+    },
+    {
+      "heading": "Questions worth asking before you sign",
+      "body": "Ask what happens if hidden damage is found once walls are opened, since this is the single most common reason a final cost differs from the original scope. Ask whether the quantities listed were measured directly or estimated, and ask how change orders are documented if the scope needs to change mid-project. None of these questions are confrontational, they're the same questions any careful reader would ask of a long, technical document before agreeing to it.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who writes the scope of work, the contractor or the insurance adjuster?",
+      "a": "It can come from either side, or both. An adjuster may write an initial scope based on their inspection, and a contractor may write their own based on a separate walkthrough. When the two differ, the line-by-line detail is what allows them to be reconciled."
+    },
+    {
+      "q": "Why does my scope have a line marked as an estimate or placeholder?",
+      "a": "Some damage can't be fully assessed until demolition opens up a wall, floor, or ceiling cavity. Those lines are usually flagged as pending further inspection rather than priced with a fixed number, since pricing them before the damage is visible would just be a guess."
+    },
+    {
+      "q": "Does a longer scope of work mean more expensive repairs?",
+      "a": "Not necessarily. A longer, more detailed scope usually means the damage was documented thoroughly, which tends to reduce surprises later. A short, vague scope can hide gaps that turn into unexpected costs once work is underway."
+    },
+    {
+      "q": "What should I do if a line item on my scope doesn't make sense?",
+      "a": "Ask for it to be explained in plain terms before signing. A well-written scope should be understandable without specialized knowledge, and a contractor or adjuster should be able to walk you through any line without difficulty."
+    }
+  ],
+  "cta": {
+    "heading": "Have a scope of work you're trying to make sense of?",
+    "body": "If you're looking at a document for water damage, fire damage, or reconstruction work in the Phoenix area and want it explained in plain language, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general scope-of-work document structure and terminology as commonly used in the restoration industry; it makes no specific claims about Gold Water Fire's own past projects, pricing, or job counts.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/what-a-scope-of-work-includes-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What a scope of work document includes, line by line"
+  }
+}

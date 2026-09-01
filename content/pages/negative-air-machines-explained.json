@@ -1,0 +1,71 @@
+{
+  "slug": "negative-air-machines-explained",
+  "path": "/guides/negative-air-machines-explained.html",
+  "title": "Negative Air Machines vs Air Scrubbers Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Confused by the equipment left in your home after water or fire damage? Here's what negative air machines and air scrubbers actually do, and why.",
+  "h1": "Negative Air Machines and Air Scrubbers: What Each One Actually Does",
+  "breadcrumbLabel": "Negative Air Machines Explained",
+  "intro": "If a restoration crew rolled loud, boxy machines into your home and gave you a quick explanation on their way out the door, it's normal to still have questions once you're standing there alone with the noise and the hum. You're not being difficult by wanting to understand what's running in your house, why it has to stay on, and what it's actually removing from the air you and your family are breathing. That confusion is worth taking seriously, not brushing past.",
+  "sections": [
+    {
+      "heading": "Two different jobs, often confused",
+      "body": "Negative air machines and air scrubbers get talked about interchangeably, but they solve different problems. A negative air machine is about pressure and direction. It pulls air out of a contained space (like a room being dried out or a section sealed off during demolition) and exhausts it outside, which keeps contaminated or moisture-heavy air from drifting into the rest of the house. An air scrubber is about filtration. It pulls air in, runs it through a series of filters (often including a HEPA stage), and pushes clean air back into the room. One controls where the air goes. The other controls what's in it."
+    },
+    {
+      "heading": "Why negative air matters during water and fire cleanup",
+      "body": "When a room has been affected by water damage or a fire, the air inside it can carry things you don't want spreading through the rest of your home: mold spores, soot particles, dust from debris, or musty moisture-laden air. A negative air machine creates lower air pressure inside the work area compared to the surrounding rooms, so when a door opens or there's a gap under a barrier, air flows into the contaminated space instead of out of it. This is standard practice on jobs involving demolition, mold-affected material removal, or sealed-off soot cleanup, because it keeps the mess where the work is happening."
+    },
+    {
+      "heading": "Why air scrubbers matter for what you're breathing",
+      "body": "An air scrubber doesn't care about pressure or containment. Its job is to clean the air that passes through it. In a fire-damaged home, that might mean pulling out fine soot and smoke particulate that settles deep into fabric and drywall. In a water-damaged space, it can help address musty odor and airborne mold spores that show up as materials dry out. Multiple passes matter here: the more times the air in a room cycles through the scrubber, the more particulate gets captured. That's part of why these machines are often left running for a stretch rather than for just a few minutes."
+    },
+    {
+      "heading": "When you might see both running at once",
+      "body": "On larger jobs, especially ones involving both structural drying and any kind of demolition or soot removal, it's common to see a negative air machine controlling containment while an air scrubber cleans the air inside that same contained zone. They're not doing the same work, they're doing complementary work. If you're only seeing one type of machine in your home, that's not necessarily wrong, it depends on what the specific damage calls for. If you want a second opinion on your specific situation, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> pages walk through what each type of job typically involves."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it safe to be in the house while these machines are running?",
+      "a": "Contained areas with negative air machines are typically sealed off from the rest of the living space specifically so the rest of the home stays livable. Ask whoever is running the equipment to walk you through exactly what's sealed off and why, so you know what's happening in your own home."
+    },
+    {
+      "q": "Why does the machine have to run for so long?",
+      "a": "Air scrubbers work by cycling air through filters repeatedly. A single pass doesn't capture everything, so runtime is tied to how many times the air in a space needs to circulate through the filter to bring particulate down. Drying equipment has a similar logic: it runs until moisture readings, not a fixed clock, say the material is dry."
+    },
+    {
+      "q": "Do I need both a negative air machine and an air scrubber?",
+      "a": "It depends on the type and scope of the damage. A contained demolition or mold-affected area often calls for both: containment to keep contaminants from spreading, and filtration to clean the air inside that containment. A straightforward drying job may only need dehumidification and airflow equipment."
+    },
+    {
+      "q": "Why is the air still smelling like smoke or feels musty even with the machine on?",
+      "a": "Odor can linger in soft materials, carpet padding, and wall cavities even after visible cleanup, and it can take time for scrubbing equipment to bring airborne odor down noticeably. Persistent smell after equipment has run for a while is worth mentioning to whoever is managing the job, since it may point to material that still needs attention."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your situation actually needs?",
+    "body": "If you're trying to figure out whether your water or fire damage calls for containment, filtration, or both, Gold Water Fire can walk through it with you. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to get started."
+  },
+  "evidence": "This page describes general industry practices around negative air and air scrubbing equipment and does not make any specific claim about Gold Water Fire's equipment, staffing, or job history.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/negative-air-machines-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Negative air machines and air scrubbers, and what each one is for"
+  }
+}

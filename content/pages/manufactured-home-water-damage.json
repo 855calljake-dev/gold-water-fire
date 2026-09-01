@@ -1,0 +1,78 @@
+{
+  "slug": "manufactured-home-water-damage",
+  "path": "/guides/manufactured-home-water-damage.html",
+  "title": "Water Damage in a Manufactured Home: What's Different | Gold Water Fire Phoenix, AZ",
+  "description": "Manufactured and mobile homes handle water damage differently than site-built houses. Here's why it spreads faster, hides longer, and needs a different response.",
+  "h1": "Water Damage in a Manufactured Home Behaves Differently, and That Changes Everything",
+  "breadcrumbLabel": "Manufactured Home Water Damage",
+  "intro": "If you've found water where it shouldn't be in a manufactured or mobile home, and you're not sure how bad it really is underneath, that uncertainty is fair. These homes don't show damage the way a regular house does. A stain on the ceiling or a soft patch in the floor can mean something small, or it can mean water has been traveling through the belly wrap and floor joists for weeks. Not knowing which one you're looking at is unsettling, and it's a very common place to be standing right now.",
+  "sections": [
+    {
+      "heading": "Why manufactured homes hide water damage longer",
+      "body": "A site-built house has a concrete foundation, gaps you can inspect, and crawl spaces or basements where water pools and gets noticed. A manufactured home has none of that in the same way. Underneath the floor is a sealed belly wrap, a layer of insulation, and steel or wood framing that sits close to the ground or on blocks. When a supply line, drain, or roof seam leaks, the water often runs along that belly wrap before it ever reaches a spot where you'd see a stain. By the time you notice sagging floor, a musty smell, or a soft spot near a tub or sink, the water has usually already been sitting for a while."
+    },
+    {
+      "heading": "The parts of a manufactured home most at risk",
+      "cards": [
+        {
+          "heading": "Plumbing belly and floor joists",
+          "body": "Supply and drain lines often run through the belly cavity. A slow leak there soaks the subfloor from underneath, so the floor can feel soft or bounce before any ceiling or wall shows a sign."
+        },
+        {
+          "heading": "Roof seams and marriage lines",
+          "body": "Double-wide and triple-wide homes have a seam where sections join. That seam, along with roof vents and skylights, is a common entry point for rainwater that then travels sideways along the ceiling before dripping somewhere else entirely."
+        },
+        {
+          "heading": "Window and door flashing",
+          "body": "Manufactured home walls are often thinner and use different flashing details than a stick-built house. Gaps here let water into the wall cavity, where it can sit against particleboard or OSB sheathing that swells and weakens faster than solid lumber."
+        },
+        {
+          "heading": "Skirting and ground moisture",
+          "body": "The skirting around the base is meant to block pests and wind, not manage standing water. If grading around the home directs water toward the skirting, moisture can wick up into the belly wrap from below with no visible leak at all."
+        }
+      ]
+    },
+    {
+      "heading": "Why the materials react faster and worse",
+      "body": "Many manufactured homes, especially older ones, use particleboard subflooring, thinner wall paneling, and lighter-gauge framing than a site-built home. Particleboard absorbs water and loses structural strength much faster than plywood or dimensional lumber. That's part of why a leak that would leave a site-built floor merely damp can leave a manufactured home floor soft, spongy, or unsafe to walk on within days. The same goes for wall paneling: it can delaminate and swell in a way that solid drywall usually doesn't until much later in a leak."
+    },
+    {
+      "heading": "What this means for drying and repair",
+      "body": "Standard drying approaches built around open crawl spaces or basements don't always translate directly to a manufactured home's sealed underbelly. Getting airflow and dehumidification into that cavity, or accessing it at all, often takes a different approach than pulling a baseboard and opening a wall in a regular house. Skipping that step and only drying what's visible from inside the home is one of the most common reasons trapped moisture keeps causing problems long after the surface looks dry. If you're dealing with an active leak right now, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what a proper drying process looks like."
+    },
+    {
+      "heading": "Signs it's more than a small leak",
+      "body": "A few signs tend to show up specifically in manufactured homes: floors that feel soft or bouncy near plumbing fixtures, a persistent musty smell that doesn't track to any visible wet spot, ceiling panels that separate at the seams, or skirting panels that feel damp or warped at the base. Any one of these on its own could be minor. Together, or if they've been present for more than a few days, they usually point to water that has already spread beyond what's visible."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is water damage worse in a manufactured home than a regular house?",
+      "a": "It can progress faster because common materials like particleboard subflooring and thinner wall paneling absorb water and lose strength more quickly than the plywood and solid lumber typically used in site-built homes. The underlying cause of the leak isn't different, but the home's response to it often is."
+    },
+    {
+      "q": "Why does the floor feel soft before I see any water?",
+      "a": "Plumbing in a manufactured home often runs through the belly cavity beneath the floor. A leak there soaks the subfloor from underneath, so softness or bounce in the floor can show up well before any stain or drip appears inside the living space."
+    },
+    {
+      "q": "Can the belly wrap be dried without removing the flooring?",
+      "a": "Sometimes, depending on how the home is built and how far the water has traveled, but reaching that cavity for airflow and moisture removal usually requires a different access approach than a typical house. A hands-on inspection is the only reliable way to know what a specific home needs."
+    },
+    {
+      "q": "Does insurance treat manufactured home water damage differently?",
+      "a": "Policies and coverage details vary by carrier and by policy, so it's worth reviewing your specific policy or asking your agent directly rather than assuming it matches a standard homeowner's policy."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what's happening under the floor?",
+    "body": "Gold Water Fire serves manufactured and site-built homes throughout the Phoenix metro area, from NW Peoria to SE Avondale, SW San Tan Valley, and NW Apache Junction. Call (480) 999-3339 or email Help@goldwaterfire.com to talk through what you're seeing before it spreads further."
+  },
+  "evidence": "This page states only general, widely known facts about manufactured home construction and water damage behavior, and makes no specific claim about Gold Water Fire's own job history or credentials.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/manufactured-home-water-damage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Water damage in a manufactured home, and how it differs"
+  }
+}

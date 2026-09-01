@@ -1,0 +1,103 @@
+{
+  "slug": "smoke-damage-in-ductwork",
+  "path": "/guides/smoke-damage-in-ductwork.html",
+  "title": "Smoke and Soot in Ductwork After a Fire | Gold Water Fire Phoenix, AZ",
+  "description": "What smoke and soot in HVAC ductwork after a house fire means, why it lingers, and how it gets addressed. Guide for Phoenix, AZ homeowners.",
+  "h1": "Smoke and Soot in Ductwork After a House Fire",
+  "breadcrumbLabel": "Smoke Damage in Ductwork",
+  "intro": "The fire is out, the smoke has cleared from the air you can see, but the smell is still there every time the air conditioner kicks on. You've cleaned the walls, maybe even replaced some drywall, and yet a few hours after closing everything up, that burnt smell creeps back into the room. If you're standing in your house wondering why this won't just go away, you're not imagining it and you're not doing anything wrong. There's a reason this particular kind of damage is so hard to shake, and it has almost nothing to do with what you can see.",
+  "sections": [
+    {
+      "heading": "Why ductwork holds onto smoke long after the fire is out",
+      "body": "A home's HVAC system is built to move air through every room, which means during a fire it also moves smoke, soot, and combustion gases through every room. Once the fire is extinguished, that same ductwork keeps recirculating whatever settled inside it. Soot particles are often microscopic and slightly sticky, especially from fires involving plastics, synthetics, or petroleum-based materials, so they cling to the interior metal or fiberglass lining of the ducts rather than blowing straight through. Every time the system runs, it stirs up a fresh pass of that residue and pushes the odor back into living spaces, even in rooms far from where the fire started.",
+      "eyebrow": "The basics"
+    },
+    {
+      "heading": "The difference between visible soot and what's trapped in the system",
+      "body": "Wiping down walls, ceilings, and furniture addresses the soot you can reach and see. Ductwork is a closed system, so residue inside supply and return lines, inside the air handler cabinet, across the evaporator coil, and along the blower assembly stays out of sight and out of reach of ordinary cleaning. This is why a house can look freshly cleaned and still smell like smoke: the visible layer is gone, but the system recirculating the air hasn't been addressed at all."
+    },
+    {
+      "heading": "What actually causes the lingering smell",
+      "body": "Smoke odor isn't just about visible soot, it comes from volatile compounds that soak into porous materials and off-gas slowly over time. Ductwork insulation, the fibrous lining inside some duct types, and even dust buildup on coils can absorb these compounds and release them gradually, especially when heated by a running system. That's part of why the smell can seem worse in summer, when the AC runs longer and hotter air passing over residue speeds up off-gassing.",
+      "eyebrow": "Why it lingers"
+    },
+    {
+      "heading": "Signs your ductwork needs attention after a fire",
+      "cards": [
+        {
+          "heading": "Smell returns after cleaning",
+          "body": "If walls and floors are clean but the smoky smell reappears once the HVAC cycles on, the system itself is likely holding residue."
+        },
+        {
+          "heading": "Visible soot at vents or returns",
+          "body": "Dark streaking or soot buildup around supply registers or return grilles usually means the ducts behind them carry the same residue further in."
+        },
+        {
+          "heading": "Fire was anywhere near the air handler or ducts",
+          "body": "Even a fire confined to one room can pull smoke into nearby ductwork if a return vent or the air handler itself was in or near the affected space."
+        },
+        {
+          "heading": "Whole-house odor after a localized fire",
+          "body": "Smoke smell showing up in rooms untouched by the fire is a strong sign the HVAC system distributed residue while it was running or shortly after."
+        }
+      ]
+    },
+    {
+      "heading": "What's generally involved in addressing it",
+      "body": "Addressing smoke residue in a duct system generally starts with an inspection of the ductwork, air handler, coil, and blower to see how far residue traveled and how heavy it is. Depending on what's found, the response can range from thorough duct cleaning and coil cleaning to sealing or, in more heavily contaminated systems, replacing sections of ductwork that can't be fully restored. Filters get replaced, and often the air handler cabinet itself needs cleaning since soot tends to settle there before recirculating. This is specialized work, not a standard duct-cleaning service call, because the residue involved is different from ordinary dust and requires different handling."
+    },
+    {
+      "heading": "Related reading",
+      "body": "Ductwork is usually one piece of a larger picture after a fire. For more on how the rest of a property is typically assessed and treated, see our guide on <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>. If water was used to fight the fire or suppression systems activated, that introduces its own separate set of issues covered in <a href=\"/water-damage-restoration.html\">water damage restoration</a>. And if parts of the home need to be rebuilt once damaged materials are removed, that falls under <a href=\"/reconstruction.html\">reconstruction and rebuild</a> work.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just run the AC longer to air out the smoke smell?",
+      "a": "Running the system longer usually makes it worse, not better, because it keeps pulling air across the same contaminated coil and duct surfaces and pushing that residue back into the house. It's better to leave the system off until the ductwork has been evaluated."
+    },
+    {
+      "q": "Does a normal duct cleaning fix smoke damage?",
+      "a": "Standard duct cleaning is built for dust and allergens, not for the sticky, odor-producing residue left by combustion. Smoke-contaminated ductwork usually needs a more thorough approach that addresses the air handler, coil, and insulation lining, not just the duct interior."
+    },
+    {
+      "q": "Will the smoke smell eventually go away on its own?",
+      "a": "If the source is trapped inside the ductwork or air handler, the smell typically won't resolve on its own, since the system keeps recirculating the same residue every time it runs. The smell fading and then returning is a common sign that the source hasn't actually been removed."
+    },
+    {
+      "q": "How do I know if my ductwork was affected if the fire was in another room?",
+      "a": "If a return air vent was open or near the fire, or if the fire produced heavy smoke that filled the room before it was extinguished, smoke was likely pulled into the system. A physical inspection of the ducts, coil, and air handler is the only reliable way to confirm it."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if your ductwork was affected?",
+    "body": "If you're dealing with lingering smoke odor after a fire anywhere in the Phoenix metro area, Gold Water Fire can take a look at your ductwork and air handler alongside the rest of the property. Reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're seeing."
+  },
+  "evidence": "This page describes general HVAC and fire restoration industry knowledge about smoke residue behavior in ductwork, not a specific claim about a Gold Water Fire job.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/smoke-damage-in-ductwork-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Smoke and soot in ductwork after a house fire"
+  }
+}

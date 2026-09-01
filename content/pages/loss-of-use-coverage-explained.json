@@ -1,0 +1,97 @@
+{
+  "slug": "loss-of-use-coverage-explained",
+  "path": "/guides/loss-of-use-coverage-explained.html",
+  "title": "Loss of Use Coverage Explained | Gold Water Fire, Phoenix, AZ",
+  "description": "Not sure what loss of use coverage actually pays for after fire or water damage? Here's a plain-language breakdown of what it covers and what it doesn't.",
+  "h1": "Loss of Use Coverage and What It Is Meant to Cover",
+  "breadcrumbLabel": "Loss of Use Coverage Explained",
+  "intro": "If you've had to leave your home because of fire or water damage, you're probably dealing with more than the damage itself. There's the hotel bill, the extra gas money, the takeout because your kitchen is unusable, the question of whether your insurance is actually going to help with any of it. Somewhere in your policy there's a line about \"loss of use,\" and if you're like most people, you've never had a reason to understand what it actually means until now. That confusion, on top of everything else, is exhausting.",
+  "sections": [
+    {
+      "heading": "What loss of use coverage actually is",
+      "body": "Loss of use coverage, sometimes labeled Coverage D or 'additional living expenses' (ALE) on a homeowners policy, is meant to cover the difference between your normal cost of living and your cost of living while your home is uninhabitable due to a covered loss. It is not extra money. It's reimbursement for expenses you would not have had if the damage hadn't happened. The logic behind it is simple: if a fire or a burst pipe forces you out of your house, your insurer recognizes that you still need somewhere to sleep and something to eat, and that those things now cost more than they did when you had a working kitchen and a bed at home."
+    },
+    {
+      "heading": "What it's typically meant to cover",
+      "body": "Every policy is written differently, so read yours closely, but loss of use coverage is generally intended for costs directly tied to being displaced.",
+      "cards": [
+        {
+          "heading": "Temporary housing",
+          "body": "Hotel stays, extended-stay rentals, or short-term apartment leases while your home is being dried out, repaired, or rebuilt."
+        },
+        {
+          "heading": "Extra food costs",
+          "body": "The difference between what you'd normally spend on groceries and what you're spending eating out or ordering in because you don't have a working kitchen."
+        },
+        {
+          "heading": "Pet boarding",
+          "body": "Some policies include cost coverage for boarding pets if your temporary housing doesn't allow them."
+        },
+        {
+          "heading": "Storage and moving costs",
+          "body": "Costs to move and store belongings during repairs, in some policies, particularly when reconstruction requires the home to be gutted."
+        }
+      ]
+    },
+    {
+      "heading": "What it usually does not cover",
+      "body": "This is where a lot of homeowners get tripped up. Loss of use is not a blank check, and it's not meant to upgrade your lifestyle during repairs. It typically will not cover expenses you would have had anyway (your normal mortgage or rent, for instance, is usually still due even while you're displaced, since loss of use is meant to cover the difference in cost, not double-pay your housing). It generally does not cover damage to the structure itself or your belongings, that falls under separate dwelling and personal property coverage. It also usually will not cover indefinite displacement. Most policies cap loss of use by a dollar limit, a time limit, or both, and insurers expect repairs to move forward at a reasonable pace, not stall indefinitely."
+    },
+    {
+      "heading": "How the timeline for coverage usually works",
+      "body": "Loss of use coverage generally kicks in once the home is officially deemed uninhabitable, and it usually continues until repairs are complete or your policy's limit is reached, whichever comes first. Insurers typically want documentation: dates you left the home, receipts for hotel or rental costs, and often some evidence tying the displacement directly to the covered damage. Keeping a simple log of when you left, why, and what you're spending as a result can make the reimbursement process considerably smoother when your adjuster asks for it."
+    },
+    {
+      "heading": "Why this matters while repairs are underway",
+      "body": "Understanding what's covered can shape decisions you make early on, like whether to stay with family versus book a hotel, or how long you can reasonably wait before reconstruction starts. If your home has fire or water damage and you're trying to figure out what happens next, our guides on <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> and <a href=\"/water-damage-restoration.html\">water damage restoration</a> walk through what the repair process actually looks like, and our <a href=\"/reconstruction.html\">reconstruction</a> page covers what's involved when a home needs to be rebuilt, not just repaired."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is loss of use coverage the same as additional living expenses (ALE)?",
+      "a": "Yes, in most homeowners policies these terms describe the same coverage. Some policies call it Coverage D, others call it ALE, but the intent is the same: covering the added cost of living somewhere else while your home is uninhabitable."
+    },
+    {
+      "q": "Does loss of use cover my mortgage payment while I'm displaced?",
+      "a": "Generally, no. Your mortgage or rent is a cost you'd have regardless of the damage, so loss of use is typically meant to cover the additional expense of temporary housing on top of what you already owe, not replace an existing payment."
+    },
+    {
+      "q": "How long does loss of use coverage usually last?",
+      "a": "It depends on your policy. Most have either a dollar cap, a time limit, or both, and coverage generally continues until repairs are finished or that limit is reached. Check your policy declarations page for the specific terms."
+    },
+    {
+      "q": "What if my insurer says my house is still habitable but I don't feel safe staying there?",
+      "a": "This is a common point of disagreement. Habitability determinations are usually made by the insurer or an adjuster based on specific conditions like utility function, structural safety, and air quality. If you disagree, it's worth documenting the conditions in detail and discussing it directly with your adjuster."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure where your damage stands or what happens next?",
+    "body": "If you're dealing with fire or water damage anywhere in the Phoenix metro area and trying to sort out what repairs are ahead of you, Gold Water Fire is a phone call away at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance concepts as they commonly appear in homeowners policies and does not make any specific claim about Gold Water Fire's own services, pricing, or process.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/loss-of-use-coverage-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Loss of use coverage and what it is meant to cover"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "smoke-alarm-placement-and-testing",
+  "path": "/guides/smoke-alarm-placement-and-testing.html",
+  "title": "Smoke Alarm Placement, Testing & Replacement Guide | Gold Water Fire Phoenix, AZ",
+  "description": "Where to put smoke alarms, how often to test them, and when to replace them. A clear guide for Phoenix area homeowners who want to get this right.",
+  "h1": "Smoke Alarm Placement, Testing, and Replacement Intervals",
+  "breadcrumbLabel": "Smoke Alarm Placement & Testing",
+  "intro": "Maybe you just moved into a house and you're not sure if the alarms already installed are even working. Maybe one of them started chirping at 2am and now you're standing on a chair trying to figure out if it needs a battery or if it's just done. Or maybe nothing has happened at all, you just realized you can't remember the last time you actually tested one, and that realization is sitting uncomfortably with you. That gap between \"there's an alarm on my ceiling\" and \"I actually know it will work when it matters\" is a real thing to sit with, and it's worth working through carefully rather than just hoping for the best.",
+  "sections": [
+    {
+      "heading": "Where smoke alarms actually need to go",
+      "body": "Placement matters more than most people assume. Smoke rises and spreads along the ceiling, so alarms are designed to catch it there, but the specific rooms and spacing make a real difference in how much warning you get.",
+      "cards": [
+        {
+          "heading": "Inside every bedroom",
+          "body": "Doors block sound more than people expect, especially with a fan or AC running. An alarm in the hallway alone often isn't loud enough to wake someone through a closed bedroom door, which is why current guidance calls for one inside each sleeping room, not just outside them."
+        },
+        {
+          "heading": "Outside each sleeping area",
+          "body": "In addition to inside bedrooms, place one in the hallway or common area immediately outside each cluster of bedrooms. In a single-story home this might be one hallway alarm; in a home with bedrooms on both ends, you need coverage outside each group."
+        },
+        {
+          "heading": "On every level of the home",
+          "body": "Basements, main floors, and upper floors each need their own alarm, even if no one sleeps there. Include finished basements and any level with a fireplace, wood stove, or major appliance."
+        },
+        {
+          "heading": "What to avoid",
+          "body": "Keep alarms away from kitchens (at least 10 feet from cooking appliances), bathrooms, and the direct airflow of supply vents or ceiling fans, all of which can cause false alarms or blow smoke away from the sensor before it triggers."
+        }
+      ]
+    },
+    {
+      "heading": "Mounting height and room shape",
+      "body": "Smoke alarms should be mounted on the ceiling whenever possible, at least 4 inches from the nearest wall. If ceiling mounting isn't an option, wall mounting is acceptable as long as the alarm is placed high, between 4 and 12 inches from the ceiling. For rooms with vaulted or sloped ceilings, install the alarm within 3 feet of the peak, since smoke tends to pool at the highest point of the roofline first. Avoid dead air spaces in corners where the ceiling meets the wall at a sharp angle, since smoke doesn't circulate well into those pockets."
+    },
+    {
+      "heading": "Testing: what it actually checks and how often",
+      "body": "Pressing the test button confirms the horn and the basic circuitry work, but it doesn't tell you much about the smoke sensor's real sensitivity. Still, it's the single easiest habit that keeps a system reliable.",
+      "cards": [
+        {
+          "heading": "Monthly button test",
+          "body": "Press and hold the test button until the alarm sounds. Do this for every alarm in the house on the same day each month so none get skipped. If an alarm doesn't sound within a few seconds, treat it as a failure, not a fluke."
+        },
+        {
+          "heading": "Battery habits",
+          "body": "For alarms with replaceable batteries, swap them at least once a year regardless of whether the alarm has started chirping. A chirp usually means the battery is already critically low, not that you have time to plan around it."
+        },
+        {
+          "heading": "Clean the sensor",
+          "body": "Dust, cooking residue, and cobwebs inside the sensor chamber can cause false alarms or dull the sensor's response. Vacuum the vents on the alarm cover every few months with a soft brush attachment."
+        },
+        {
+          "heading": "Interconnected systems",
+          "body": "If your alarms are wired together so one triggers all of them, test that one alarm's activation actually sounds every unit in the house, not just the one you pressed."
+        }
+      ]
+    },
+    {
+      "heading": "When to replace, not just re-battery",
+      "body": "Smoke alarms have a working lifespan built into the sensor itself, and no amount of fresh batteries fixes a sensor that's aged out. Most alarms have a manufacture date stamped on the back, inside the battery compartment or on the unit's body, and that date, not the install date, is what starts the clock. Widely followed guidance from fire safety organizations puts the replacement interval at 10 years from manufacture for standard smoke alarms. If you don't know the manufacture date and the alarm came with the house, the safest assumption is that it's overdue. Alarms that fail their monthly test even after a fresh battery, or that sound erratically, weakly, or delayed, should be replaced immediately rather than waited out. Combination smoke and carbon monoxide alarms often have shorter CO sensor lifespans than the smoke sensor, so check both dates if your unit is a combo model."
+    },
+    {
+      "heading": "Hardwired versus battery-only alarms",
+      "body": "Hardwired alarms tied into the home's electrical system with battery backup are more reliable because they don't depend entirely on someone remembering to swap a battery, and they're usually interconnected so one alarm triggers all of them. Battery-only alarms are easier to install and relocate but put the entire burden of maintenance on the household's memory. Either type still needs the same 10-year replacement regardless of power source, since it's the sensor that ages, not the battery."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many smoke alarms does a typical house need?",
+      "a": "At minimum, one inside every bedroom, one outside each sleeping area, and one on every level of the home including basements. A three-bedroom, two-story house with bedrooms grouped together might need five or six alarms total to meet that coverage."
+    },
+    {
+      "q": "Why does my smoke alarm keep chirping even after I changed the battery?",
+      "a": "A persistent chirp after a fresh battery usually points to a battery that isn't seated correctly, a battery compartment issue, dust in the sensor, or an alarm that has reached the end of its working life and needs full replacement, not just a new battery."
+    },
+    {
+      "q": "Can I put a smoke alarm near the kitchen?",
+      "a": "Keep it at least 10 feet from cooking appliances. Closer than that, normal cooking smoke and steam trigger frequent false alarms, which often leads people to disable the unit entirely, which defeats the purpose."
+    },
+    {
+      "q": "Do smoke alarms expire even if they still beep during a test?",
+      "a": "Yes. The test button only confirms the horn and circuit work, not that the smoke sensor is still accurately detecting smoke at low concentrations. Check the manufacture date on the back of the unit and replace it at 10 years regardless of test results."
+    }
+  ],
+  "cta": {
+    "heading": "If a fire has already happened in your home",
+    "body": "This guide is about preventing the next one. If smoke or fire damage has already affected your home anywhere in the Phoenix area, Gold Water Fire can walk the property with you and explain what restoration and rebuild actually involves. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page states general fire-safety guidance (alarm placement, testing habits, and the widely cited 10-year sensor replacement interval) as industry-standard educational information, not as a specific claim about Gold Water Fire's own work or history.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/smoke-alarm-placement-and-testing-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Smoke alarm placement, testing, and replacement intervals"
+  }
+}

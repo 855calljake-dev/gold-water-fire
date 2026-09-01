@@ -1,0 +1,79 @@
+{
+  "slug": "electrical-work-during-reconstruction",
+  "path": "/guides/electrical-work-during-reconstruction.html",
+  "title": "Electrical Work During Reconstruction: What Gets Inspected | Gold Water Fire Phoenix, AZ",
+  "description": "A guide to how electrical work is handled during fire or water damage reconstruction, what inspectors check, and why wiring often needs a closer look than drywall.",
+  "h1": "Electrical Work During Reconstruction, and What Gets Inspected",
+  "breadcrumbLabel": "Electrical Work During Reconstruction",
+  "intro": "If you're staring at a rebuild estimate and wondering why the electrical line item feels bigger or slower than everything else, that confusion makes sense. Wiring is hidden inside walls, it doesn't always show visible damage the way drywall or flooring does, and yet it's one of the parts of a home that inspectors and code officials care about most after a fire or a flood. Not knowing why an outlet that \"still works\" might still need to be replaced, or why a permit is holding up work you thought was almost done, is a frustrating place to sit. It's worth understanding what's actually happening before anyone tells you what to do next.",
+  "sections": [
+    {
+      "eyebrow": "Why wiring gets extra scrutiny",
+      "heading": "Electrical damage is often invisible until it fails",
+      "body": "Water and heat both attack electrical systems in ways that don't always show up right away. Water can corrode connections inside a junction box for weeks before a breaker trips or an outlet stops working. Heat from a fire, even in a room that never fully burned, can degrade the insulation around wiring without leaving obvious scorch marks. That's part of why an inspector won't just look at what's visible. Anything that was exposed to water intrusion, smoke, or high heat is treated as a question mark until it's tested, not assumed safe because the lights still turn on."
+    },
+    {
+      "eyebrow": "What typically happens on site",
+      "heading": "The general sequence of electrical work in a reconstruction",
+      "body": "Most rebuilds follow a similar order once the damaged materials are removed. First, an electrician assesses what's behind the walls: wiring runs, panel condition, outlets, switches, and any fixtures that were in the affected area. Damaged or suspect wiring gets pulled and replaced rather than patched, since splicing into compromised wire creates a weak point that can fail later. New wiring is run to meet current code, which may be different from what was originally installed if the home is older. Only after that work is roughed in, and often after it's inspected, does drywall or other finish material go back up. Closing walls over electrical work before it's approved is the kind of shortcut that causes problems down the line, both for safety and for anyone trying to sell or insure the home later."
+    },
+    {
+      "eyebrow": "What an inspector actually checks",
+      "heading": "The specific things that get evaluated",
+      "body": "Local building departments generally look at a consistent set of items during an electrical inspection tied to reconstruction work: proper wire gauge for the circuit load, secure and correctly rated connections inside boxes, grounding and bonding, GFCI or AFCI protection where code requires it (kitchens, bathrooms, garages, and other specific locations), panel labeling, and clearances around the electrical panel itself. If smoke or fire reached the attic or wall cavities, inspectors also pay attention to any wiring that ran through those spaces, since insulation damage can be uneven and hard to see from outside the jacket. None of this is about finding fault with a homeowner. It's about confirming the system will behave safely once walls are closed and nobody can see it anymore."
+    },
+    {
+      "eyebrow": "Permits and why they matter here",
+      "heading": "Why electrical work almost always needs a permit",
+      "body": "Most jurisdictions in the Phoenix metro area require a permit for electrical work tied to reconstruction, especially when wiring is being replaced or a panel is involved. The permit process is what triggers the inspection in the first place. Skipping it might feel faster in the moment, but unpermitted electrical work can create real problems later: it can complicate an insurance claim, come up during a home sale inspection, or simply mean nobody with training ever confirmed the work was done safely. Asking whether a permit has been pulled, and what inspections are scheduled, is a reasonable question to ask any contractor doing electrical work in a rebuild."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does all the wiring in a damaged room need to be replaced, or just what looks burned or wet?",
+      "a": "It depends on what an electrician finds once walls are opened. Wiring that was directly exposed to water, heat, or smoke is often replaced even if it looks intact, because damage to the internal insulation isn't always visible from outside. Wiring outside the affected area that wasn't exposed usually doesn't need to be touched."
+    },
+    {
+      "q": "Can drywall go back up before the electrical inspection happens?",
+      "a": "Generally, no. Most jurisdictions require electrical work to be inspected and approved while it's still open and visible, before insulation or drywall covers it. Closing walls too early usually means opening them back up for the inspector."
+    },
+    {
+      "q": "Why would an older home need updated wiring during a reconstruction instead of just replacing what was there?",
+      "a": "Electrical code has changed over the decades, particularly around grounding, GFCI and AFCI protection, and circuit capacity. When walls are already open for reconstruction, code generally requires the new work to meet current standards rather than replicate outdated wiring exactly as it was."
+    },
+    {
+      "q": "How long does the electrical portion of a reconstruction usually take?",
+      "a": "It varies by the scope of damage, the size of the home, and how quickly permits and inspections are scheduled through the local jurisdiction, so there isn't one timeline that fits every project."
+    }
+  ],
+  "cta": {
+    "heading": "Rebuilding after fire or water damage in the Phoenix area",
+    "body": "If you're dealing with a home that needs electrical work as part of a larger reconstruction, Gold Water Fire's team can walk through what your specific situation involves. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general electrical code and inspection practices as industry knowledge, not as specific claims about Gold Water Fire's past work; all company facts referenced (name, contact, service scope) match the confirmed facts provided.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild services"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/electrical-work-during-reconstruction-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Electrical work during a reconstruction, and what gets inspected"
+  }
+}

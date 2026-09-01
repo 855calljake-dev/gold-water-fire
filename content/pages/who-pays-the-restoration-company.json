@@ -1,0 +1,79 @@
+{
+  "slug": "who-pays-the-restoration-company",
+  "path": "/guides/who-pays-the-restoration-company.html",
+  "title": "Who Pays the Restoration Company, and When | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language guide to how payment actually works after water or fire damage: what you pay, what insurance pays, and when each piece is due.",
+  "h1": "Who Actually Pays the Restoration Company, and When",
+  "breadcrumbLabel": "Who Pays the Restoration Company",
+  "intro": "If you're staring at a soaked carpet or a scorched wall and trying to figure out whose credit card this lands on, you're not alone in feeling stuck on that question. Most people have never had to hire an emergency contractor before, and the money side of it, who pays, how much, and on what timeline, is rarely explained anywhere before you actually need to know it. It's a fair thing to be confused about. The paperwork, the adjuster, the contract you're being asked to sign while your house is still wet, none of it comes with a clear map. Before anything else, it helps to just lay out how the pieces actually fit together.",
+  "sections": [
+    {
+      "heading": "The short version: it depends on who you hired to do what",
+      "body": "In most residential water and fire damage situations, there are three possible payers in play: you (the homeowner), your property insurance carrier, and in some cases a third party (like a landlord, HOA, or the party at fault if the damage came from a neighboring unit or a burst shared line). Which one actually cuts the check for the restoration company depends on the type of work, the cause of the damage, and the specific agreement you sign at the start of the job. There is rarely one universal answer, which is part of why this feels so murky in the moment."
+    },
+    {
+      "heading": "Emergency mitigation vs. full reconstruction: two different money conversations",
+      "body": "Restoration work generally happens in two phases, and they are often billed differently. The first phase is emergency mitigation: extracting water, running dryers, removing damaged materials, boarding up a fire-damaged opening. This work usually starts before any insurance claim is finalized, because delay causes more damage (mold, structural issues, secondary smoke staining). The second phase is reconstruction and rebuild: replacing drywall, flooring, cabinetry, and everything else that was removed or destroyed. Insurance claims typically separate these two phases in their own line items, and payment timing for each can differ. Understanding this split matters because it explains why you might get billed, or asked for a deposit, at one stage and not another."
+    },
+    {
+      "heading": "How the insurance claim actually moves money",
+      "body": "When a claim is approved, the insurance company issues payment based on their own estimate of the damage, often using software like Xactimate. That payment can arrive as a single check made out to you, a check made out to both you and the restoration company, or (less commonly) a direct payment to the contractor if you've signed an assignment of benefits or similar authorization. The insurer's estimate does not always match the contractor's actual estimate for the work needed. When there's a gap between the two, that difference becomes a conversation between you, the contractor, and sometimes a public adjuster, not something that resolves automatically."
+    },
+    {
+      "heading": "Your deductible is yours no matter what",
+      "body": "Regardless of how the rest of the claim shakes out, your policy deductible is your responsibility to pay, not the insurance company's. A restoration company invoicing a claim will typically expect the deductible amount from you directly, either up front or at the time of final invoicing, while the remainder is billed to or collected from the insurer. If a contractor ever offers to waive your deductible entirely as part of the deal, treat that as a red flag: it is not a normal or lawful practice in most states and can void coverage or expose you to liability."
+    },
+    {
+      "heading": "When there's no insurance claim at all",
+      "body": "Not every job goes through insurance. Some homeowners choose to pay out of pocket, either because the damage is below their deductible, they're worried about a rate increase, or the cause of the damage isn't a covered peril under their policy (some slow leaks, flood water from outside the home, and certain maintenance-related issues fall into this category). In those cases, payment is a direct arrangement between you and the restoration company: typically a deposit to begin work, progress payments tied to phases of the job, and a final payment at completion, all spelled out in the contract before work starts."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to pay the restoration company before insurance pays me?",
+      "a": "It depends on the contract you sign. Many restoration companies will bill your insurance directly for the portion insurance covers and collect your deductible from you separately. Others require a deposit up front regardless of insurance status, especially for emergency mitigation work that starts before a claim is fully processed. Always ask this question before signing anything."
+    },
+    {
+      "q": "What happens if the insurance estimate is lower than the contractor's estimate?",
+      "a": "This is common. Insurance estimates are generated from standardized software and adjuster inspections, which don't always capture every condition found once walls are opened or materials are removed. When there's a gap, you, the contractor, and your adjuster typically negotiate a supplement, which is an additional payment request based on documented findings. This can take time and is worth asking about early."
+    },
+    {
+      "q": "Can a restoration company bill my insurance directly?",
+      "a": "Many can, if you sign an authorization allowing the insurer to pay the contractor directly rather than paying you first. This is a common arrangement and is meant to simplify the process, but you should still read exactly what you're authorizing and keep a copy for your own records."
+    },
+    {
+      "q": "Is the deductible negotiable?",
+      "a": "Your deductible amount is set by your insurance policy, not by the restoration company, so it isn't something a contractor can change. What a contractor can do is help you understand where that cost falls in the overall invoice so it isn't a surprise at the end of the job."
+    }
+  ],
+  "cta": {
+    "heading": "Have questions about how payment works on your specific situation?",
+    "body": "Every claim and every property is a little different. If you want to talk through what your job might look like before committing to anything, you can reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, or visit our contact page to get started."
+  },
+  "evidence": "This page describes general insurance and restoration payment practices as commonly structured in the industry; it does not state any specific pricing, timeline, or claim outcome as a fact about Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/who-pays-the-restoration-company-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Who actually pays the restoration company, and when"
+  }
+}
