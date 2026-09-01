@@ -1,0 +1,72 @@
+{
+  "slug": "tile-roof-underlayment-failure",
+  "path": "/guides/tile-roof-underlayment-failure.html",
+  "title": "Tile Roof Underlayment Failure: The Hidden Leak | Gold Water Fire Phoenix, AZ",
+  "description": "Tile roofs can look perfect from the ground while the underlayment beneath fails. Learn why this happens in Phoenix heat and how the damage actually shows up.",
+  "h1": "Tile Roof Underlayment Failure: The Leak You Cannot See From the Ground",
+  "breadcrumbLabel": "Tile Roof Underlayment Failure",
+  "intro": "You've stood in the driveway and looked up, and the tile looks fine. No cracked pieces, nothing slipped out of place, nothing a neighbor would even notice. But there's a stain spreading on a ceiling somewhere inside, or a musty smell in a closet that wasn't there last month, and you can't make the two things add up. It's a strange, unsettling kind of problem, the not knowing where water is even getting in when everything visible says the roof is doing its job.",
+  "sections": [
+    {
+      "heading": "The tile isn't the roof, it's the armor over the roof",
+      "body": "This is the part that surprises most homeowners: the tile itself almost never stops water. It's designed to shed the bulk of rain and block UV and hail, but tile is installed with gaps, overlaps, and breathing room by design. The actual waterproof barrier is the underlayment, a layer of felt or synthetic sheeting stapled or nailed to the roof deck underneath every tile. Water is expected to get past the tile in a wind-driven rain. It's the underlayment's job to carry that water down to the eaves and out, never letting it reach the wood deck. When the underlayment is intact, this system works quietly for decades. When it isn't, the tile keeps looking perfect while the actual defense underneath has already given out."
+    },
+    {
+      "heading": "Why underlayment fails in the Phoenix heat cycle",
+      "body": "Underlayment doesn't usually fail from a single storm. It fails from years of thermal cycling. Arizona roof decks can swing from cool overnight temperatures to well over 150 degrees on the surface under summer sun, day after day. That constant expansion and contraction dries out asphalt-saturated felt, making it brittle. Older organic felt underlayment is especially vulnerable, it can crack, curl at the seams, or simply crumble when disturbed. Add in the weight and foot traffic from any roof access (satellite work, solar installers, HVAC service, even someone walking the roofline to clear debris) and cracked, brittle underlayment tears easily right where a tile was lifted and reset. Because the tile goes back down looking untouched, there's no visible sign that the seal underneath it is gone."
+    },
+    {
+      "heading": "What the damage actually looks like indoors",
+      "body": "Because the leak path is horizontal before it's vertical, water can travel several feet under the tile field before it finds a nail hole, a low spot in the deck, or a seam to drip through. That means the stain on your ceiling is often nowhere near the actual failure point on the roof. Signs to watch for: a ceiling stain that grows slowly after rain rather than appearing all at once, a musty smell in an attic or top-floor closet, discoloration on rafters or sheathing visible from the attic, or granules and debris showing up in gutters that suggest underlayment breakdown rather than just normal tile wear. Some of the worst cases show almost no interior sign at all until the wood decking itself has softened, because the water has been quietly wicking into insulation and framing for a long stretch of time before it ever reaches drywall."
+    },
+    {
+      "heading": "Why this isn't a patch-it-and-move-on problem",
+      "body": "Underlayment is installed once, under the entire tile field, and it's not something that gets touched again until the roof is redone or a section is opened up. That means a single failed run of underlayment is rarely an isolated event, if one section dried out and cracked from heat cycling, the sections around it are usually at a similar point in their life. Finding one leak often means there's a decision to make about the underlayment's overall condition, not just the one spot that happened to show a stain first. Diagnosing it usually means lifting tile near the suspected area to inspect the felt or synthetic layer directly, since a ceiling stain by itself doesn't tell you how far the deterioration extends.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "If my tile roof isn't damaged, why would it leak?",
+      "a": "Tile is designed to let some water through by design, it relies on the underlayment beneath it to actually stop water from reaching the wood deck. Tile can look completely intact while the underlayment underneath has cracked, torn, or aged past its useful life."
+    },
+    {
+      "q": "How long does tile roof underlayment usually last?",
+      "a": "It depends heavily on the material and the roof's sun exposure, and varies a lot from one roof to the next, so it's not something to estimate without a physical inspection of the actual underlayment on your roof."
+    },
+    {
+      "q": "Can I tell if my underlayment has failed just by looking at my ceiling?",
+      "a": "Not reliably. Water often travels sideways under the tile field before it drips down, so the interior stain can appear several feet from the actual failure point on the roof."
+    },
+    {
+      "q": "Does this mean my whole roof needs to be redone?",
+      "a": "Not necessarily, but because underlayment is installed as one continuous layer, a failure in one area often signals that surrounding sections are at a similar stage of wear. It usually takes a physical inspection under the tile to know the real extent."
+    }
+  ],
+  "cta": {
+    "heading": "Seeing a stain with no obvious source?",
+    "body": "If water is showing up indoors and you can't explain it from the roof looking fine, our team can help you understand what's happening and what it means for your home. Reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page describes general roofing and underlayment principles and does not claim specific work, certifications, or outcomes performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/tile-roof-underlayment-failure-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Tile roof underlayment failure, the leak you cannot see from the ground"
+  }
+}
