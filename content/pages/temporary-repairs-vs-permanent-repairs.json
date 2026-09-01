@@ -1,0 +1,79 @@
+{
+  "slug": "temporary-repairs-vs-permanent-repairs",
+  "path": "/guides/temporary-repairs-vs-permanent-repairs.html",
+  "title": "Temporary vs Permanent Repairs on a Claim | Gold Water Fire Phoenix, AZ",
+  "description": "Why insurance claims list both temporary and permanent repairs, what each covers, and how to keep the paperwork straight during water or fire damage recovery.",
+  "h1": "Temporary Repairs and Permanent Repairs, and Why Both Appear on a Claim",
+  "breadcrumbLabel": "Temporary vs Permanent Repairs",
+  "intro": "If you've stared at an insurance estimate and noticed the same room listed twice, once for a quick fix and once for the real repair, you're not misreading it and you're not being overcharged. It's a strange thing to sit with: your house is already disrupted, and now the paperwork itself seems to be repeating tasks. You just want to know what actually needs to happen to your home, and why it looks like it's being described in two different ways at once.",
+  "sections": [
+    {
+      "heading": "Why there are two categories in the first place",
+      "body": "After a pipe break, a roof leak, or a fire, there is almost always an immediate action needed to stop things from getting worse, and a separate, later action needed to actually rebuild what was lost. Insurance carriers and contractors split these into two categories because they happen at different times, are billed differently, and sometimes involve different crews entirely. Temporary repairs are about damage control. Permanent repairs are about restoring the home to its finished condition. A claim that only listed one or the other would be missing half the story of what your property actually went through."
+    },
+    {
+      "heading": "What counts as a temporary repair",
+      "body": "Temporary repairs (sometimes called mitigation or emergency services on an estimate) are the steps taken in the first hours or days to prevent damage from spreading. This includes things like extracting standing water, setting up drying equipment, tarping a damaged roof, boarding up broken windows or doors, shutting off a water source, or removing wet materials that would otherwise grow mold. None of this makes the home look finished. It is meant to hold the line, not to complete the job. Most property insurance policies actually require the homeowner to take reasonable steps to prevent further damage, which is part of why this category exists as its own line item rather than getting folded into the final repair."
+    },
+    {
+      "heading": "What counts as a permanent repair",
+      "body": "Permanent repairs are the rebuild: new drywall, flooring, paint, cabinetry, roofing materials, trim, and anything else needed to bring the space back to a livable, finished condition. These repairs usually cannot start until the structure has fully dried out, been tested for moisture, and been cleared of any contamination. That waiting period is often the most frustrating part for a homeowner, because the emergency work is done, the space looks empty or torn open, and the finished repair hasn't started yet. That gap is normal. It reflects drying and inspection timelines, not neglect."
+    },
+    {
+      "heading": "How this shows up on your claim paperwork",
+      "body": "An adjuster or estimator will typically break a claim into separate line items or even separate scopes: one for emergency mitigation work, one for the reconstruction phase. This isn't padding the claim, it's documentation. Each phase has its own labor, equipment, and materials, and insurers want to see that the money spent maps to actual, necessary work at each stage. If you're reviewing an estimate and see a category for board-up or extraction and a separate category for drywall and paint, that's this same split showing up in writing."
+    },
+    {
+      "heading": "What to watch for as a homeowner",
+      "body": "Keep photos and notes from the emergency stage, before drying equipment is removed and before materials are torn out, since that documentation is often what supports the claim once the visible evidence of the original damage is gone. It also helps to ask directly whether the same company will be handling both phases or if the work will transition to a different crew, since that affects scheduling and who to call with questions partway through. For a look at how these phases connect on the water side specifically, see <a href=\"/water-damage-restoration.html\">water damage restoration</a>, and for fire-related emergency and rebuild work, see <a href=\"/fire-damage-restoration.html\">fire damage restoration</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does insurance pay for both temporary and permanent repairs?",
+      "a": "Most policies cover reasonable emergency mitigation to prevent further damage, along with the cost to repair the covered loss itself. Coverage details vary by policy and by the specific cause of damage, so it's worth reviewing your policy language or asking your adjuster directly how each phase is being categorized."
+    },
+    {
+      "q": "Can permanent repairs start before the temporary work is finished?",
+      "a": "Generally no, because permanent materials like drywall, flooring, and paint need a dry, stable structure underneath them. Starting finish work before drying and inspection is complete risks trapping moisture and causing problems later, like warping or mold growth behind new materials."
+    },
+    {
+      "q": "Why does my home look worse after the emergency repairs than before?",
+      "a": "Emergency work often involves removing wet drywall, flooring, or insulation to stop mold growth and allow proper drying. This can make a space look more damaged temporarily, even though it's a necessary step toward the permanent repair rather than a sign of new damage."
+    },
+    {
+      "q": "Who decides when a space is ready for permanent repairs?",
+      "a": "This is usually determined by moisture readings and drying equipment monitoring showing the structure has returned to a normal, dry condition. Reconstruction typically doesn't begin until those readings confirm the space is ready."
+    }
+  ],
+  "cta": {
+    "heading": "Trying to make sense of your own claim paperwork?",
+    "body": "If you're in the Phoenix area and want to talk through what's temporary versus permanent in your situation, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general insurance and restoration industry practices around mitigation and reconstruction phases, and does not make any specific claim about Gold Water Fire's own job history, response times, or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/temporary-repairs-vs-permanent-repairs-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Temporary repairs and permanent repairs, and why both appear on a claim"
+  }
+}
