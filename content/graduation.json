@@ -1,6 +1,12 @@
 {
-  "state": "manual-review",
+  "state": "graduated",
   "since": "2026-08-31",
-  "reason": "Structural gate failure on an autonomous batch (2026-08-31): tile-and-grout-water-damage: Fewer than 2 FAQs: visible Q&A is required per SOP-AGENTIC-SEO-WEBSITES.md §3",
-  "howToReGraduate": "Two clean approved batches again (SOP-AGENTIC-SEO-WEBSITES.md §5.3 / BYTOMORROW-OPERATING-SYSTEM.md 2026-08-09). Then set state back to \"graduated\" here AND in the bytomorrow-bos tenant register (CLAUDE.md §6) — both, or they disagree."
+  "reason": "Re-graduated by Jake, 2026-08-31, after the three fixes that the 2026-08-31 de-graduation exposed all landed on main: the image text gate (b880de2/53a8f5b), shape and tool-call-markup validation in evidenceGate.mjs (d0229f2), and drop-the-page-not-the-batch with de-graduation moved to a rate (56e9316).",
+  "overrides": "SOP-AGENTIC-SEO-WEBSITES.md 5.3 asks for two clean approved batches before re-entry. Jake waived that here, deliberately and for the second time (precedent: 2026-08-26, 99ef181). The reasoning both times: the root cause was fixed in code and proven by tests, which is stronger evidence than two batches that happened not to trip anything.",
+  "previousDeGraduation": {
+    "date": "2026-08-31",
+    "reason": "tile-and-grout-water-damage: Fewer than 2 FAQs",
+    "note": "Under the rate-based rule shipped the same day (MIN_FAILURES=2 AND FAILURE_RATE=0.5), that single refusal in a nine-page run would no longer demote the tenant. It would drop that page and publish the other eight."
+  },
+  "howToRevoke": "Set state to manual-review here AND in the bytomorrow-bos tenant register (CLAUDE.md section 6), both, or they disagree. worker/run.mjs calls deGraduate() automatically when structural refusals reach the rate. RUNTIME_AUTO_PUBLISH=false gates a single run without touching this file, which is the safe way to test."
 }
