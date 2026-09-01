@@ -1,0 +1,57 @@
+{
+  "slug": "contents-vs-structure-coverage",
+  "path": "/guides/contents-vs-structure-coverage.html",
+  "title": "Contents vs Structure Coverage Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Confused by contents coverage vs dwelling coverage after water or fire damage? Here's what each one actually pays for and where homeowners get tripped up.",
+  "h1": "Contents Coverage and Structure Coverage: What's the Difference?",
+  "breadcrumbLabel": "Contents vs Structure Coverage",
+  "intro": "You're standing in a room that doesn't look like your room anymore, holding an insurance policy that suddenly reads like a foreign language. Somewhere in there is a line about \"dwelling\" and another about \"personal property,\" and you're trying to figure out which one covers the couch, which one covers the drywall, and why the adjuster keeps talking about them like they're two completely different claims. It's a fair question to be stuck on. Most homeowners never have a reason to learn this distinction until the day they suddenly, urgently do.",
+  "sections": [
+    {
+      "heading": "Structure coverage: the building itself",
+      "body": "Structure coverage, often called dwelling coverage on your declarations page, pays to repair or rebuild the physical parts of your home. That means framing, drywall, flooring, cabinetry, built-in appliances, insulation, roofing, and the systems wired or plumbed into the walls. If a pipe bursts and soaks the subfloor, or a fire scorches the studs behind a wall, the cost of tearing out and rebuilding that structure typically falls under this part of the policy. Attached structures like a garage or an attached patio cover are usually included too, though detached structures like a shed often fall under a separate limit."
+    },
+    {
+      "heading": "Contents coverage: everything inside it",
+      "body": "Contents coverage, also called personal property coverage, is for the things you own that aren't part of the building itself: furniture, clothing, electronics, area rugs, artwork, kitchenware, and similar belongings. If smoke damages your furniture or standing water ruins a rug and a bookshelf, those losses are usually assessed separately from the structural repair. Contents claims often involve a line-by-line inventory, and insurers may apply depreciation to older items, which is why documenting what you owned before the loss matters so much."
+    },
+    {
+      "heading": "Where the two get tangled together",
+      "body": "Real damage rarely respects the line between structure and contents. A kitchen fire can scorch the cabinets (structure) while ruining the dishes inside them (contents). A slow leak can rot a section of subfloor (structure) while destroying the boxes stored on top of it (contents). This is exactly why claims can feel disorganized: you're not filing one claim, you're often tracking two categories of loss inside one incident, each with its own valuation rules and sometimes its own coverage limit."
+    },
+    {
+      "heading": "Why documentation matters for both",
+      "body": "For structure claims, photos of the damaged area before any cleanup or demolition help establish what needs to be rebuilt. For contents claims, a list of the items affected, ideally with photos, purchase dates, or receipts, gives the adjuster something concrete to value instead of relying on memory alone. Walking through each room and noting what was damaged, even roughly, before items get moved or discarded, tends to make both sides of the claim go more smoothly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does homeowners insurance always split contents and structure into separate limits?",
+      "a": "Most standard policies list dwelling coverage and personal property coverage as separate limits on the declarations page, each with its own maximum payout. The exact percentages and limits vary by policy, so checking your own declarations page is the only way to know your specific numbers."
+    },
+    {
+      "q": "What if damaged items and damaged structure happen in the same room?",
+      "a": "It's common for one incident, like a burst pipe or a fire, to affect both the building and the belongings inside it. Adjusters typically evaluate these as two categories within the same claim, so it helps to think of them as separate line items even though they came from one event."
+    },
+    {
+      "q": "Do built-in items like cabinets count as structure or contents?",
+      "a": "Items permanently attached to the home, such as built-in cabinetry, countertops, or fixtures, are generally treated as part of the structure. Freestanding furniture and portable appliances are generally treated as contents. When something is borderline, it's worth asking your adjuster directly how they're classifying it."
+    },
+    {
+      "q": "Why does my contents claim feel more complicated than my structure claim?",
+      "a": "Contents claims often require itemizing individual belongings and can involve depreciation based on age and condition, while structure claims are usually based on repair or rebuild estimates from a contractor. The itemization step is what tends to make contents claims feel slower or more detailed."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure where your damage falls?",
+    "body": "If you're trying to sort out what happened to your home versus what happened to your belongings, our team can walk through the property with you and document both clearly. Reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to get started."
+  },
+  "evidence": "This page explains general homeowners insurance concepts as industry background and does not make any specific claim about Gold Water Fire's own work, certifications, or history.",
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/contents-vs-structure-coverage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Contents coverage and structure coverage on a homeowners policy"
+  }
+}
