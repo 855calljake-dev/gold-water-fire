@@ -1,0 +1,75 @@
+{
+  "slug": "commercial-property-water-damage",
+  "path": "/guides/commercial-property-water-damage.html",
+  "title": "Commercial Property Water Damage: What Changes | Gold Water Fire Phoenix, AZ",
+  "description": "Water damage in a commercial building follows different rules than a house. Here's what actually changes: structure, systems, tenants, and timeline.",
+  "h1": "Water Damage in a Commercial Property, and What Changes",
+  "breadcrumbLabel": "Commercial Property Water Damage",
+  "intro": "You're standing in a building that isn't just your problem to solve alone. There are tenants asking questions, employees who need somewhere to work tomorrow, maybe a lease that says nothing useful about who handles this. A pipe let go, or a roof gave out in a storm, and now you're trying to figure out how bad it actually is while everyone around you wants an answer you don't have yet. That gap between \"something is wrong\" and \"here's what happens next\" is its own kind of exhausting, especially when the building itself seems to be hiding how far the water traveled.",
+  "sections": [
+    {
+      "heading": "Why commercial water damage behaves differently than residential",
+      "body": "A house has a footprint you can walk in an afternoon. A commercial building often has suspended ceilings, raised flooring, HVAC plenums, and multi-tenant walls that all move water in directions you wouldn't expect in a home. Water dropped from a rooftop unit can travel across a ceiling grid and show up in a tenant space three doors down. Slab-on-grade construction common in office and retail buildings means moisture can wick sideways under flooring for weeks before a bubble or stain ever appears. The scale is different too: a saturated area in a house is measured in rooms, while in a commercial space it's often measured in square footage across departments, storage, or multiple units at once."
+    },
+    {
+      "heading": "Materials, codes, and shared systems change the response",
+      "body": "Commercial buildings frequently use different materials than homes, things like commercial-grade carpet tile, exposed structural steel, fire-rated assemblies, and suspended acoustic ceilings, each of which absorbs and releases moisture differently. Many commercial spaces also share HVAC, electrical, and plumbing systems across units, which means a water event in one tenant's space can trigger inspection or shutdown requirements in an adjoining one. Local and state building codes for commercial occupancy are also more involved than residential codes, particularly around fire-rated wall assemblies, ADA-compliant reconstruction, and electrical work in shared spaces, so repairs often need documentation and inspection steps a homeowner would never encounter."
+    },
+    {
+      "heading": "Business operations add a layer that homes don't have",
+      "body": "In a home, the main question is usually where people will sleep. In a commercial property, the questions multiply: can employees safely work near the affected area, does a retail floor need to close, is there equipment or inventory at risk, and does the lease or a tenant agreement dictate who is responsible for what. Drying and mitigation work often has to happen around a working business rather than an empty structure, which changes scheduling, containment, and sometimes requires phased work so parts of the building can reopen while others are still being addressed."
+    },
+    {
+      "heading": "What to look at first if you're facing this right now",
+      "body": "Start by identifying the source and whether it's still active, a live leak behaves very differently than water damage from an event that has already stopped. Check whether the affected area touches shared walls, ceilings, or systems with neighboring units. Look for immediate safety issues: standing water near electrical panels or outlets, sagging ceiling tiles that could collapse, or slippery flooring in walkways. Document what you're seeing with photos and notes on time and location, since commercial insurance claims and any tenant or landlord disputes tend to depend heavily on a clear record of what happened and when."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is commercial water damage always worse than residential water damage?",
+      "a": "Not necessarily worse, but it's usually more complicated. The physical damage can be similar in scale to a large home, but the number of people affected, the building systems involved, and the operational questions around keeping a business running make the situation harder to manage even when the water damage itself is moderate."
+    },
+    {
+      "q": "Who is usually responsible for water damage in a leased commercial space, the landlord or the tenant?",
+      "a": "It depends entirely on the lease language, which varies widely from one commercial agreement to another. Some leases place structural and building-system responsibility on the landlord while tenants cover their own contents and improvements, but there is no universal rule, so the lease itself is the place to look first."
+    },
+    {
+      "q": "Can a business stay open while water damage repairs happen?",
+      "a": "Sometimes, depending on where the damage is and how contained it can be kept. Work is often phased so unaffected areas stay operational while the damaged section is dried, cleaned, and repaired, but this depends on the extent of the damage and whether shared systems like HVAC are involved."
+    },
+    {
+      "q": "How is drying out a suspended ceiling different from drying a home ceiling?",
+      "a": "Suspended ceiling grids and tiles are typically not designed to be dried in place the way drywall sometimes can be. Wet ceiling tiles usually need to be removed, and the plenum space above needs airflow and monitoring since it often houses ductwork, wiring, and other building systems that don't tolerate trapped moisture well."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water damage in a commercial building right now",
+    "body": "If you're trying to sort out the scope of what happened and what it means for your building, Gold Water Fire can talk through it with you. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to get started."
+  },
+  "evidence": "This page states general facts about commercial building construction, codes, and restoration practices as industry knowledge, and does not attribute any specific claim, number, or outcome to Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "photo": {
+    "src": "/assets/img/commercial-property-water-damage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Water damage in a commercial property, and what changes"
+  }
+}
