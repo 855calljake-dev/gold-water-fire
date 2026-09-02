@@ -65,7 +65,10 @@
       "a": "Not always. The repair is a plumbing question, but whether building materials need attention depends on how long water was present and what it touched. Drying is often possible without removing much material if the moisture is caught early and monitored. When framing, drywall or flooring has been wet long enough to lose integrity, replacement becomes the practical route. You can read more about how we approach that on our <a href=\"/about.html\">about page</a>."
     }
   ],
-  "cta": "{\"heading\":\"Talk it through before you decide anything\",\"body\":\"If your meter test came back moving, or if you are still not sure what you are looking at, you can call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. We work throughout the Phoenix metro area, from Peoria and Avondale out to Queen Creek, San Tan Valley and Apache Junction. AZ ROC #264344 KB-2.",
+  "cta": {
+    "heading": "Talk it through before you decide anything",
+    "body": "If your meter test came back moving, or if you are still not sure what you are looking at, you can call Gold Water Fire at (480) 999-3339 or email Help@goldwaterfire.com. We work throughout the Phoenix metro area, from Peoria and Avondale out to Queen Creek, San Tan Valley and Apache Junction. AZ ROC #264344 KB-2."
+  },
   "evidence": "All leak testing steps, meter mechanics and moisture behavior described here are general plumbing and restoration knowledge, not claims about Gold Water Fire; the only company specifics used are the confirmed name, phone, email, ROC license, services and service area.",
   "internalLinks": [
     {
