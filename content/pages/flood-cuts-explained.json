@@ -1,0 +1,79 @@
+{
+  "slug": "flood-cuts-explained",
+  "path": "/guides/flood-cuts-explained.html",
+  "title": "What Is a Flood Cut? Explained | Gold Water Fire | Phoenix, AZ",
+  "description": "What a flood cut is, why it's usually made at a certain height, and what happens to your walls after water damage. A clear guide for Phoenix, AZ homeowners.",
+  "h1": "What a Flood Cut Is, and Why It's Made the Way It Is",
+  "breadcrumbLabel": "Flood Cuts Explained",
+  "intro": "Standing in a room where the bottom two feet of every wall has been cut open is disorienting. You called someone to deal with water, and now there's drywall dust on the floor and a jagged line running around the whole room like someone took a ruler to your house and started cutting. If you're wondering why this step happens, whether it was really necessary, or why it looks the way it does, that reaction makes sense. Most people have never seen a flood cut before they needed one.",
+  "sections": [
+    {
+      "heading": "What a flood cut actually is",
+      "body": "A flood cut is the removal of a section of drywall along the bottom of a wall, usually cut in a straight horizontal line above the highest point the water reached. Instead of pulling out random damaged pieces, the cut is made deliberately in one continuous line around the affected room. This gives a clean, even edge to work from and makes it possible to see, dry, and treat everything behind the wall rather than guessing at what's hidden."
+    },
+    {
+      "heading": "Why the cut is usually made higher than the waterline",
+      "body": "Water doesn't stop where it looks like it stopped. Drywall is porous, and it wicks moisture upward through capillary action, often several inches above the visible waterline. That's why a flood cut is typically made a bit higher than where the water appeared to reach, commonly in the range of 12 to 24 inches up, depending on how long the water sat and what material got wet. Cutting only to the visible line often leaves wet drywall in place, which can lead to hidden mold growth inside the wall cavity weeks later. Cutting higher than necessary wastes material and adds repair cost. Getting that height right is a judgment call based on moisture readings, not a guess."
+    },
+    {
+      "heading": "How the height gets decided",
+      "body": "Before any cutting happens, a moisture meter is used to probe the wall at different heights to find where the material actually goes from wet to dry. This isn't visual guesswork. The goal is to find the true boundary of saturation, which is often invisible from the surface, and cut just above it so nothing wet is left sealed inside the wall."
+    },
+    {
+      "heading": "What's behind the wall once it's opened",
+      "body": "Once the drywall is removed, the cavity behind it becomes visible: insulation, framing, electrical wiring, and sometimes baseboards or subfloor connections. Wet insulation almost always has to be removed and replaced, since it holds moisture and doesn't dry effectively in place. The exposed wood framing gets inspected and treated or dried, since untreated wet framing is one of the more common places mold takes hold undetected."
+    },
+    {
+      "heading": "What happens after the cut is made",
+      "body": "Once the wall cavity is open, drying equipment such as air movers and dehumidifiers is typically positioned to dry the framing and surrounding materials over the following days. Moisture readings continue to be checked until the structure reads dry, not just dry to the touch. Only after that point does rebuilding, which includes new insulation, drywall, texture, and paint, make sense to start. Trying to close a wall back up before the framing is fully dry is one of the more common causes of repeat problems down the line. For a closer look at how that drying and rebuilding process works, see our pages on <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/reconstruction.html\">reconstruction and rebuild</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does every water damage situation require a flood cut?",
+      "a": "No. If water intrusion was minor and drywall didn't absorb significant moisture, drying in place may be enough. Flood cuts are typically used when drywall and insulation have been saturated long enough that in-place drying isn't reliable."
+    },
+    {
+      "q": "Can I just dry the wall instead of cutting it open?",
+      "a": "Sometimes, if the moisture is limited and caught early. But insulation behind drywall doesn't dry well on its own, and wet insulation left in place is a common source of hidden mold. A moisture reading, not a visual check, is what determines whether cutting is needed."
+    },
+    {
+      "q": "Why not just cut exactly at the waterline to save drywall?",
+      "a": "Because water wicks upward into drywall above the visible line through capillary action. Cutting exactly at the waterline often leaves wet material sealed inside the wall, which can lead to problems that show up later, sometimes as mold or a musty odor."
+    },
+    {
+      "q": "How long does the wall stay open after a flood cut?",
+      "a": "It depends on how wet the framing and cavity were and how long they take to reach a dry moisture reading. Rebuilding shouldn't start until the structure behind the wall is confirmed dry, not just dry on the surface."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water damage in your home right now?",
+    "body": "If you're trying to figure out what needs to happen next, Gold Water Fire serves the Phoenix, AZ metro area and can walk through what your situation actually needs. Reach us at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page describes general drywall, moisture, and restoration industry practices and does not claim specific certifications, response times, or job history for Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/flood-cuts-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What a flood cut is, why it is made at that height, and what happens next"
+  }
+}
