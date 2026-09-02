@@ -12,6 +12,7 @@ import { renderHome } from "../templates/home.mjs";
 import { renderAbout } from "../templates/about.mjs";
 import { renderContact } from "../templates/contact.mjs";
 import { renderThanks, render404 } from "../templates/simple.mjs";
+import { renderCraftsmanship } from "../templates/craftsmanship.mjs";
 import { BRAND, absUrl } from "../templates/lib.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -89,6 +90,7 @@ async function buildLlmsTxt(pages) {
     "",
     `- [Home](${absUrl("/")}): overview, service area, and contact`,
     `- [About](${absUrl("/about.html")}): company and team`,
+    `- [Craftsmanship](${absUrl("/craftsmanship.html")}): photo gallery of reconstruction work by members of the team`,
     `- [Contact](${absUrl("/contact.html")})`,
   ];
   const byType = { service: [], educational: [], location: [] };
@@ -111,12 +113,24 @@ async function buildLlmsTxt(pages) {
 
 async function main() {
   const pages = await loadPageData();
+  // Real-photo gallery data (content/craftsmanship.json). Loaded here once
+  // and passed down: the gallery page renders all of it, home renders the
+  // featured six, and every content page gets a topic-matched three-image
+  // strip. A missing file degrades to no strips rather than a failed build.
+  let craft = null;
+  try {
+    craft = JSON.parse(await readFile(path.join(ROOT, "content", "craftsmanship.json"), "utf8"));
+  } catch {
+    console.warn("content/craftsmanship.json not found; building without craftsmanship strips");
+  }
   const written = [];
 
   for (const data of pages) {
-    const html = renderContentPage(data, pages);
+    const html = renderContentPage(data, pages, craft);
     written.push(await writeHtml(data.path, html));
   }
+
+  if (craft) written.push(await writeHtml("/craftsmanship.html", renderCraftsmanship(craft)));
 
   // Checklist item 15: the guides hub. Generated from the same page data, so
   // every future educational page appears here with zero extra effort.
@@ -126,7 +140,7 @@ async function main() {
   // appears here automatically.
   written.push(await writeHtml("/service-areas/index.html", renderAreasIndex(pages)));
 
-  written.push(await writeHtml("/", renderHome()));
+  written.push(await writeHtml("/", renderHome(craft)));
   written.push(await writeHtml("/about.html", renderAbout()));
   written.push(await writeHtml("/contact.html", renderContact()));
   written.push(await writeHtml("/thanks.html", renderThanks()));

@@ -4,6 +4,10 @@ const NAV = [
   { href: "/water-damage-restoration.html", label: "Water Damage" },
   { href: "/fire-damage-restoration.html", label: "Fire Damage" },
   { href: "/reconstruction.html", label: "Reconstruction" },
+  // Real photographs of team members' reconstruction work — the wording
+  // rules for everything under this link live in templates/craftsmanship.mjs
+  // and CLAIMS-TO-VERIFY.md.
+  { href: "/craftsmanship.html", label: "Craftsmanship" },
   // Checklist item 15 (BYTOMORROW-TECH-STACK.md): content pages must be
   // reachable from human nav, not only the sitemap. Before this link the
   // five guides were orphans and /guides/ itself 404'd.

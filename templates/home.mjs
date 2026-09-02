@@ -1,6 +1,31 @@
 import { shell } from "./shell.mjs";
+import { esc } from "./lib.mjs";
+import { CREDIT_LINE } from "./craftsmanship.mjs";
 
-export function renderHome() {
+// Six hand-picked finished-work shots for the homepage. Data and wording
+// rules live with the gallery (templates/craftsmanship.mjs); this renders
+// nothing when the craftsmanship data is absent, so the home build never
+// breaks on missing data.
+function craftGalleryStrip(craft) {
+  const featured = (craft?.images || []).filter((img) => img.featured).slice(0, 6);
+  if (!featured.length) return "";
+  return `
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Craftsmanship</span>
+          <h2>The standard our team works to</h2>
+          <p>${esc(CREDIT_LINE)}</p>
+        </div>
+        <div class="card-grid">
+          ${featured.map((img) => `<div class="card has-media"><div class="card-media"><img src="${img.file}" alt="${esc(img.alt)}" loading="lazy" width="${img.width}" height="${img.height}"></div></div>`).join("\n          ")}
+        </div>
+        <p class="img-note"><a href="/craftsmanship.html">See the full craftsmanship gallery &rarr;</a></p>
+      </div>
+    </section>`;
+}
+
+export function renderHome(craft = null) {
   // SOP-AGENTIC-SEO-WEBSITES.md §8.3, Jake's ruling 2026-08-09, cross-tenant:
   // an image caption is the page's own H1, bare. Home isn't a per-page template
   // — renderHome() takes no data, so there's no page.h1 to read — and the hero
@@ -89,6 +114,8 @@ export function renderHome() {
       </div>
     </section>
 
+    ${craftGalleryStrip(craft)}
+
     <section class="photo-band">
       <img src="/assets/img/restoration-contractor-phoenix-az-metro-home-exterior.jpg" alt="Single-story home in the Phoenix, Arizona metro area at dusk" loading="lazy" width="1600" height="893">
       <div class="caption">
@@ -156,7 +183,7 @@ export function renderHome() {
       alt: "Single-story home in the Phoenix, Arizona metro area at dusk",
     },
     datePublished: "2026-08-06T08:54:02-07:00",
-    dateModified: "2026-08-07T11:10:31-07:00",
+    dateModified: "2026-09-02T12:00:00-07:00",
     bodyHtml,
   });
 }
