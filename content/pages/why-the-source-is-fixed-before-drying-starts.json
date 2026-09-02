@@ -1,0 +1,72 @@
+{
+  "slug": "why-the-source-is-fixed-before-drying-starts",
+  "path": "/guides/why-the-source-is-fixed-before-drying-starts.html",
+  "title": "Why the Water Source Must Be Fixed Before Drying Starts | Gold Water Fire Phoenix, AZ",
+  "description": "Running fans before the leak is stopped just wastes time and money. Here's why finding and fixing the water source always comes first in Phoenix, AZ.",
+  "h1": "Why the Water Source Is Stopped and Repaired Before Any Drying Equipment Goes In",
+  "breadcrumbLabel": "Why the Source Is Fixed First",
+  "intro": "You just found water somewhere it isn't supposed to be, and the first instinct is to grab towels, maybe rent a fan, and start soaking things up. It feels productive. But if you've ever done that and watched the same wet spot come back a day later, or felt like you were drying the same carpet twice, you already know something wasn't right about the order of operations. That confusion, the sense that you're fighting the same problem on a loop, is worth paying attention to before you spend another dollar or another weekend on it.",
+  "sections": [
+    {
+      "heading": "The logic behind the order",
+      "body": "Drying equipment removes moisture that is already in the air, in the flooring, and in the walls. It does nothing to stop new moisture from arriving. If a supply line is still leaking behind a wall, or a water heater is still weeping onto a slab, running air movers and dehumidifiers in that space is just drying water that is about to be replaced by more water. The math never catches up. This is why any competent drying plan starts with one question: where is the water actually coming from, and has it stopped. Until that answer is yes, equipment placement is close to guesswork."
+    },
+    {
+      "heading": "What finding the source actually involves",
+      "body": "A water source is not always where the damage shows up. Water travels along the path of least resistance, following framing, subfloor seams, and gravity, so a stain on a ceiling might trace back to a bathroom two rooms away, and a damp baseboard might point to a slab leak nowhere near the wet carpet. Tracing the source usually means checking supply lines, shutoff valves, water heater connections, HVAC condensate lines, roof penetrations, and appliance hoses, sometimes with moisture meters or thermal imaging to see what is happening inside a wall without opening it up. Skipping this step and jumping straight to drying is one of the most common reasons water damage keeps recurring in the same spot."
+    },
+    {
+      "heading": "What repair looks like before drying begins",
+      "body": "Once the source is identified, it has to be physically stopped, not just paused. That might mean shutting off a valve, replacing a failed supply line, patching a roof penetration, or addressing a slow leak inside a wall cavity that will need to be opened for access anyway. In some cases the fix is quick. In others, part of the repair overlaps with the reconstruction that follows drying, since a wall that had to be cut open for a plumbing repair is also a wall that will need to be closed back up later. Either way, the goal at this stage is simple: confirm there is no more water actively entering the structure before equipment is turned on."
+    },
+    {
+      "heading": "Why skipping this step costs more later",
+      "body": "Drying a space with an active, unaddressed source doesn't just waste electricity running fans and dehumidifiers longer than necessary. It can mask the real extent of the damage, since materials that look dry on the surface may still be wicking moisture from below. It also risks secondary damage: mold growth in wall cavities that were never actually dried, warped flooring from repeated wet-dry cycles, and corrosion in areas that keep getting revisited by moisture. Getting the sequence right the first time, source before drying, tends to be faster and less expensive than any amount of extra equipment run time.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can drying equipment run while the leak is still being repaired?",
+      "a": "It's generally not effective to run drying equipment in a space where water is still actively entering. The equipment will keep working against new moisture instead of removing what's already there, which extends the timeline and can hide how much damage has actually occurred."
+    },
+    {
+      "q": "How do you find a water source that isn't visible?",
+      "a": "Common methods include moisture meters to measure dampness in materials, thermal imaging cameras to spot temperature differences that indicate moisture inside walls or under flooring, and a physical check of likely culprits like supply lines, shutoff valves, water heaters, and roof or window penetrations."
+    },
+    {
+      "q": "What if the source can't be identified right away?",
+      "a": "Sometimes tracing a leak takes time, especially with slab leaks or damage inside wall cavities. In those cases, containing the water and limiting its spread comes first, with drying held off in earnest until the source is confirmed stopped."
+    },
+    {
+      "q": "Does this apply to all types of water damage?",
+      "a": "The same principle applies whether the source is a burst pipe, a roof leak, an appliance failure, or plumbing behind a wall. Whatever the cause, confirming it has stopped is the necessary first step before any drying process can be considered reliable."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water damage in your home right now?",
+    "body": "If you're trying to figure out where water is coming from or what to do next, Gold Water Fire serves the Phoenix, AZ metro area and can help you sort through it. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page describes general water damage restoration practice and does not make specific claims about Gold Water Fire's past jobs, timelines, or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/why-the-source-is-fixed-before-drying-starts-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Why the water source is stopped and repaired before any drying equipment goes in"
+  }
+}
