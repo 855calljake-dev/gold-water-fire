@@ -1,0 +1,93 @@
+{
+  "slug": "window-replacement-after-damage",
+  "path": "/guides/window-replacement-after-damage.html",
+  "title": "Window Replacement After Fire or Water Damage | Gold Water Fire | Phoenix, AZ",
+  "description": "How fire and water damage affect window frames, glass, and seals, and how to tell if a window needs replacing or can be restored.",
+  "h1": "Window Replacement After Fire or Water Damage",
+  "breadcrumbLabel": "Window Replacement After Damage",
+  "intro": "Standing in a room looking at a window that used to feel solid and now doesn't, it's hard to know what you're actually looking at. Is that warping in the frame cosmetic or structural? Is the fogging between the panes from the fire, from water, or just age that got exposed by the damage? There's no obvious line between \"this window is fine\" and \"this window needs to go,\" and that gray area is exactly where a lot of homeowners get stuck, sometimes for weeks, while the rest of the repair waits on a decision nobody handed them a clear way to make.",
+  "sections": [
+    {
+      "heading": "Why windows take damage that isn't always visible",
+      "body": "Fire and water each attack windows in different ways, and the damage doesn't always show up where you'd expect. Heat from a fire can warp aluminum or vinyl frames well before the glass itself cracks, and it can break down the seals around insulated glass units even in rooms that never saw flame, just heat and smoke. Water damage works more slowly but just as thoroughly: wood frames and sills absorb moisture, swell, and eventually soften or rot, while the wood at the base of a window can hide water damage for weeks behind paint that still looks fine. In both cases, the part you can see (a cracked pane, a stained sill) is often the least of what's actually going on inside the frame and wall."
+    },
+    {
+      "heading": "Signs a window needs to be replaced, not repaired",
+      "body": "A few signs tend to mean replacement rather than repair is the more realistic path. Persistent fogging or moisture between panes usually means the seal has failed and the insulated unit needs to be replaced, not just cleaned. A frame that no longer closes and latches squarely, or that has visibly warped, has usually lost the structural integrity that keeps it weathertight. Soft, spongy, or discolored wood at the sill or jamb is a sign of rot that will keep spreading if left in place. And any glass that was directly exposed to flame or extreme heat should be treated as compromised even if it looks intact, since thermal stress can leave cracks that aren't visible yet.",
+      "cards": [
+        {
+          "heading": "Seal failure",
+          "body": "Fogging or moisture trapped between panes of an insulated window almost always means the seal is gone for good, not something that clears up on its own."
+        },
+        {
+          "heading": "Frame warping",
+          "body": "If a window won't close flush or latch without force, heat or prolonged moisture has likely distorted the frame itself."
+        },
+        {
+          "heading": "Soft or rotted wood",
+          "body": "Discolored, soft, or spongy wood at the sill or jamb signals rot that spreads if it isn't addressed at the source."
+        },
+        {
+          "heading": "Heat-stressed glass",
+          "body": "Glass exposed to direct flame or high heat can develop invisible stress cracks that show up later under normal temperature changes."
+        }
+      ]
+    },
+    {
+      "heading": "What can often be salvaged",
+      "body": "Not every affected window needs full replacement. Surface soot and smoke residue on glass and frames can usually be cleaned rather than replaced, as long as the seals and structure underneath weren't compromised by heat. Minor water exposure that didn't reach standing moisture, caught early, sometimes only affects finish or paint rather than the wood itself. The way to know the difference is a close inspection of the frame material, the seal integrity, and how long moisture or heat was in contact with the window, not just how the surface looks from across the room."
+    },
+    {
+      "heading": "Why window damage rarely stands alone",
+      "body": "Windows sit inside a wall system, so damage severe enough to affect a window frame or sill has usually also reached the surrounding framing, insulation, or drywall. That's part of why window condition is worth assessing as part of the full water damage or fire damage picture rather than in isolation. Related reading: <a href=\"/water-damage-restoration.html\">Water Damage Restoration</a>, <a href=\"/fire-damage-restoration.html\">Fire Damage Restoration</a>, and <a href=\"/reconstruction.html\">Reconstruction & Rebuild</a> for how window and frame repair fits into a larger rebuild."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a window be cleaned instead of replaced after smoke damage?",
+      "a": "Sometimes. If the glass and frame were exposed to smoke but not direct flame or high heat, cleaning can often restore them. The seals and frame material need to be checked closely, since smoke damage often travels with heat exposure that isn't obvious at a glance."
+    },
+    {
+      "q": "How do I know if water damage has reached the window frame structurally?",
+      "a": "Soft or spongy wood, discoloration that spreads rather than staying in one spot, and a window that no longer closes or latches evenly are all signs moisture has reached the structural wood, not just the surface finish."
+    },
+    {
+      "q": "Does foggy glass between panes always mean the window needs replacing?",
+      "a": "Persistent fogging between panes almost always means the seal on the insulated glass unit has failed. That part typically needs to be replaced rather than repaired, since the seal can't be restored once it's broken."
+    },
+    {
+      "q": "Should window replacement be handled separately from the rest of the fire or water repair?",
+      "a": "It doesn't have to be. Since window damage is often connected to surrounding framing or wall damage, it's usually more efficient to assess and address it as part of the overall restoration or reconstruction rather than as a standalone fix."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your windows are telling you?",
+    "body": "Gold Water Fire can take a look at the windows alongside the rest of the fire or water damage and help you understand what's actually salvageable. Call (480) 999-3339 or reach out through the <a href=\"/contact.html\">contact page</a>."
+  },
+  "evidence": "This page states general industry knowledge about how fire and water affect window materials and seals, and makes no specific claims about Gold Water Fire's own project history or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/window-replacement-after-damage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Window replacement after fire or water damage"
+  }
+}

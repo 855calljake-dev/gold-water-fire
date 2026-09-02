@@ -1,0 +1,94 @@
+{
+  "slug": "electronics-after-smoke-exposure",
+  "path": "/guides/electronics-after-smoke-exposure.html",
+  "title": "What Smoke Does to Electronics After a Fire | Gold Water Fire Phoenix, AZ",
+  "description": "Smoke residue can quietly damage electronics long after a fire is out. Learn what happens inside your devices and what is realistic to recover.",
+  "h1": "What Smoke Exposure Does to Electronics, and What Can Be Recovered",
+  "breadcrumbLabel": "Electronics After Smoke Exposure",
+  "intro": "You walk back into the house after a fire, and the TV looks fine. The laptop still has its screen. Nothing looks melted, so it's tempting to think the electronics dodged the worst of it. Then a week later the TV won't turn on, or the laptop starts overheating for no reason, and you're left wondering if you're imagining it or if something is actually still wrong. That confusion is normal. Smoke damage to electronics doesn't announce itself the way fire damage to furniture does. It works quietly, and it doesn't always show up right away.",
+  "sections": [
+    {
+      "eyebrow": "Why it's not as simple as it looks",
+      "heading": "Smoke damage is a chemistry problem, not just a soot problem",
+      "body": "When something burns, it releases more than visible soot. It releases fine particulate matter, acidic residues, and gases that carry chlorides and sulfur compounds depending on what burned (plastics, wiring insulation, furniture foam, drywall). Those particles are small enough to drift into vents, seams, and gaps in a device's housing. Once inside, they settle on circuit boards and metal contacts. The soot itself is often mildly acidic or corrosive, and over hours and days it keeps reacting with the metal it's sitting on. This is why a device can power on the day of a fire and fail a week or two later: the corrosion is progressive, not instant."
+    },
+    {
+      "heading": "What's actually happening inside the device",
+      "body": "Three things tend to happen at once inside a smoke-exposed electronic device. First, corrosive residue settles on exposed circuitry and begins to oxidize metal contacts, connectors, and solder joints. Second, soot particles can bridge tiny gaps between components, creating unintended electrical paths that cause shorts, glitches, or intermittent failures. Third, smoke odor and fine particulate get pulled into cooling fans and vents, where they coat internal surfaces and can restrict airflow, leading to overheating over time. None of this requires visible flame damage. A device that was never near the fire itself can still be affected if it was in a room that filled with smoke."
+    },
+    {
+      "heading": "What tends to be recoverable",
+      "cards": [
+        {
+          "heading": "Often salvageable",
+          "body": "Devices with sealed or mostly sealed housings, cleaned promptly: desktop towers, some TVs, routers, and external hard drives. If soot exposure was light and the device is professionally cleaned before corrosion sets in, function can often be restored."
+        },
+        {
+          "heading": "Case by case",
+          "body": "Laptops, gaming consoles, and printers have more moving parts, vents, and internal fans, giving smoke more places to settle. Recovery depends heavily on how much residue got inside and how quickly it was addressed."
+        },
+        {
+          "heading": "Higher risk",
+          "body": "Anything already showing signs of failure (won't power on, overheating, visible corrosion on ports) has likely progressed past simple cleaning. Data on drives may still be recoverable even if the device housing it is not."
+        },
+        {
+          "heading": "Usually not worth pursuing",
+          "body": "Low-cost consumer electronics with heavy visible soot inside, or units already corroded at the connector level, are often more expensive to attempt to save than to replace."
+        }
+      ]
+    },
+    {
+      "heading": "What not to do before it's assessed",
+      "body": "Don't power on a device that was in a smoke-affected area if it hasn't been checked, even if it looks untouched. Powering up a board with soot bridging components can cause a short that turns a cleanable device into scrap. Don't wipe screens or vents with household cleaners, since some residues react with moisture and become harder to remove. And don't assume silence means safety: a device that powered on fine once can still fail later as corrosion continues to develop on the inside."
+    },
+    {
+      "heading": "Where electronics fit into the bigger cleanup",
+      "body": "Electronics are usually a smaller piece of a much larger smoke and soot cleanup that includes HVAC systems, soft materials, and structural surfaces. If you're dealing with a fire that affected more than a device or two, it helps to look at the full picture. Our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page walks through how soot and odor are addressed throughout a home, and if the fire involved water from suppression efforts as well, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page covers that overlap.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My electronics still turn on after the fire. Are they actually fine?",
+      "a": "Not necessarily. Corrosion from smoke residue can be progressive, meaning a device that works today can fail days or weeks later as soot continues reacting with internal metal contacts. Powering on successfully once is not proof that a device escaped damage."
+    },
+    {
+      "q": "Can smoke smell alone damage electronics, even without visible soot?",
+      "a": "Smoke odor is carried by the same fine particulate and gas that causes corrosion, so if you can smell smoke in a room, particulate has likely settled on anything in that room, including electronics, even if you can't see it."
+    },
+    {
+      "q": "Is it worth trying to recover data from a smoke-damaged hard drive?",
+      "a": "Often yes. The data on a drive's platters can survive even when the drive's outer electronics or connectors are corroded, since the storage medium itself is usually more isolated than the housing around it."
+    },
+    {
+      "q": "Should I unplug electronics immediately after a fire, even if the power is still on?",
+      "a": "Yes, if it's safe to do so. Leaving a smoke-exposed device powered or plugged in gives any developing short or corrosion a chance to cause further damage or a hazard. Unplugging is a low-risk step while you figure out next steps."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what's worth trying to save?",
+    "body": "If a fire has left you sorting through what survived and what didn't, we're glad to talk through what you're seeing. Reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, or visit our contact page to reach the team."
+  },
+  "evidence": "This page explains general principles of how smoke particulate and residue affect electronics, which is standard restoration and electronics-repair knowledge and is not a specific claim about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/electronics-after-smoke-exposure-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What smoke exposure does to electronics, and what can be recovered"
+  }
+}

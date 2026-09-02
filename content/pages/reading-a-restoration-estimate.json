@@ -1,0 +1,93 @@
+{
+  "slug": "reading-a-restoration-estimate",
+  "path": "/guides/reading-a-restoration-estimate.html",
+  "title": "How to Read a Restoration Estimate | Gold Water Fire in Phoenix, AZ",
+  "description": "A plain-language guide to reading a water or fire damage restoration estimate, and spotting what might be missing before work begins.",
+  "h1": "Reading a Restoration Estimate and Knowing What Is Missing",
+  "breadcrumbLabel": "Reading a Restoration Estimate",
+  "intro": "You're holding a document full of line items you didn't ask to learn about, trying to figure out if the number at the bottom makes sense. Maybe it feels too low and you're wondering what got left out. Maybe it feels too high and you don't know how to push back without sounding like you don't trust the person who wrote it. Either way, you're doing math in a language you didn't sign up to speak, at a moment when your house is already not okay. That confusion is normal. Restoration estimates are written for adjusters and contractors first, homeowners second, and it shows.",
+  "sections": [
+    {
+      "heading": "What a restoration estimate is actually built from",
+      "body": "Most restoration estimates in Arizona are built using a line-item pricing structure (often called Xactimate pricing, an industry standard database of unit costs) that breaks a job into small, priced pieces: square footage of drywall removed, linear footage of baseboard, hours of equipment run time, unit cost of antimicrobial treatment. This structure exists so insurance carriers can compare estimates across contractors on roughly equal footing. The tradeoff is that it can feel dense and impersonal when you're reading it as the person whose kitchen is torn apart. Knowing that the format is standard, not personal to your situation, can make it easier to read without feeling like something is being hidden from you on purpose."
+    },
+    {
+      "heading": "The sections that should be there",
+      "body": "A reasonably complete estimate for a water or fire loss usually separates into a few distinct phases. Emergency mitigation covers extraction, drying equipment, and containment, the work done in the first days to stop damage from spreading. Demolition covers removal of materials that can't be dried or cleaned, like saturated drywall or charred framing. Then there's a separate reconstruction or rebuild section covering what it takes to put the space back together: framing, drywall, paint, flooring, trim, fixtures. If your document only has one or two of these sections, it may only represent one phase of the work, not the whole picture.",
+      "cards": [
+        {
+          "heading": "Mitigation line items",
+          "body": "Look for extraction, drying equipment (air movers, dehumidifiers) with run-time or day counts, containment barriers, and antimicrobial or deodorizing treatments."
+        },
+        {
+          "heading": "Demolition line items",
+          "body": "Look for removal of flooring, drywall, baseboard, and cabinetry, plus disposal and haul-away costs. Demo without a matching rebuild section is a common gap."
+        },
+        {
+          "heading": "Reconstruction line items",
+          "body": "Look for framing repair, drywall hang and finish, texture matching, paint, flooring replacement, and trim. This section restores livability, not just removes damage."
+        },
+        {
+          "heading": "Contents and personal property",
+          "body": "Look for pack-out, cleaning, storage, or replacement of belongings if items were affected. This is easy to leave off an estimate focused only on the structure."
+        }
+      ]
+    },
+    {
+      "heading": "Common gaps worth asking about",
+      "body": "A few things tend to fall through the cracks in restoration estimates, not because anyone is trying to shortchange you but because scope can be hard to see fully at the first walkthrough. Hidden moisture behind walls or under flooring may not show up until demo begins, which can mean the original estimate understates how much material needs to come out. Matching materials, like flooring or cabinetry that's no longer sold in the same style, can add cost that a first estimate doesn't anticipate. Code upgrades, such as bringing an older electrical or plumbing section up to current code during a rebuild, are sometimes required by inspectors but not priced in ahead of time. And permit fees for reconstruction work are sometimes listed as a placeholder or left out entirely until the scope of the rebuild is finalized."
+    },
+    {
+      "heading": "Questions worth asking before you sign anything",
+      "body": "It's reasonable to ask whoever wrote the estimate to walk you through it line by line, in person or on the phone, before you agree to anything. Ask what happens if moisture testing during demo reveals more damage than expected, and how that would change the price. Ask whether the estimate covers only mitigation or also the rebuild, since those are sometimes written and priced separately. Ask how contents and personal belongings are being handled, if at all. None of these questions are confrontational. They're the same questions a careful reader would ask of any technical document that affects their home and their budget."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my estimate look so different from a friend's for a similar-looking loss?",
+      "a": "Two losses that look alike from the outside can involve very different amounts of hidden moisture, different materials, and different code requirements depending on the age of the home. Estimates are built around the specific scope found at your property, not a general template."
+    },
+    {
+      "q": "Is it normal for the estimate to change after work starts?",
+      "a": "Yes, this is common with water and fire damage specifically because some damage is only visible once demolition begins. A revised estimate after that discovery isn't automatically a red flag, but it should be explained clearly and documented before additional work proceeds."
+    },
+    {
+      "q": "What's the difference between a mitigation estimate and a reconstruction estimate?",
+      "a": "Mitigation covers the emergency work to stop and remove damage, like extraction and drying. Reconstruction covers rebuilding the space afterward, like drywall, paint, and flooring. Some contractors write these as one combined document and others separate them, so it's worth asking which you're looking at."
+    },
+    {
+      "q": "Should contents and belongings be on the same estimate as the structure?",
+      "a": "Not always. Some contractors handle structural repair only and refer out contents cleaning or pack-out. If your estimate doesn't mention your belongings at all, that's worth asking about directly rather than assuming it was included."
+    }
+  ],
+  "cta": {
+    "heading": "Want a second set of eyes on an estimate?",
+    "body": "If you're in the Phoenix metro area and want to talk through a water or fire damage estimate before you sign anything, Gold Water Fire is happy to walk through it with you. Call (480) 999-3339 or reach out through the contact page."
+  },
+  "evidence": "This page presents general, publicly known information about how restoration estimates and industry-standard pricing structures work, and makes no specific claims about Gold Water Fire's own past jobs, pricing, or job counts.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/reading-a-restoration-estimate-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Reading a restoration estimate and knowing what is missing"
+  }
+}

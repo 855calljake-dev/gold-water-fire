@@ -1,0 +1,57 @@
+{
+  "slug": "rental-property-fire-damage-responsibility",
+  "path": "/guides/rental-property-fire-damage-responsibility.html",
+  "title": "Fire Damage in a Rental: Who Is Responsible? | Gold Water Fire, Phoenix, AZ",
+  "description": "A fire in a rental home raises hard questions about who pays for what. Here's how responsibility for repairs, belongings, and liability usually breaks down.",
+  "h1": "Fire Damage in a Rental Property: Who Is Responsible for What",
+  "breadcrumbLabel": "Rental Fire Damage Responsibility",
+  "intro": "A fire in a place you rent brings a specific kind of confusion on top of everything else. You're dealing with smoke in your clothes, maybe a landlord who isn't returning calls fast enough, and a nagging question you can't quite put down: whose job is it to fix this, and whose job is it to pay for what you lost? If you've spent hours trying to figure out where your responsibility ends and the property owner's begins, that confusion is completely normal. Rental fire damage sits at the intersection of two different insurance policies, two different sets of belongings, and often two different understandings of the lease, and almost nobody explains how those pieces fit together until you're already living through it.",
+  "sections": [
+    {
+      "heading": "The basic split: structure versus contents",
+      "body": "In most rental situations, responsibility for fire damage divides along a fairly consistent line. The landlord or property owner is generally responsible for the building itself: the walls, flooring, roof, wiring, HVAC system, and any built-in fixtures like cabinets or plumbing. Their landlord insurance policy (sometimes called a dwelling or fire policy) is built to cover exactly that kind of structural loss. The tenant, on the other hand, is typically responsible for their own personal property: furniture, electronics, clothing, artwork, anything that isn't attached to the building. A landlord's policy almost never covers a tenant's belongings, which is one of the most common and painful surprises after a rental fire. This is also why renters insurance exists as a separate product. If a tenant has a renters policy, it usually covers personal belongings, temporary housing costs, and sometimes liability if the tenant caused the fire."
+    },
+    {
+      "heading": "How the cause of the fire changes the picture",
+      "body": "Responsibility doesn't stop at structure versus contents. It also depends heavily on what caused the fire. If the fire started because of a building problem, faulty wiring, an aging appliance the landlord provided, or deferred maintenance, the landlord's insurance and the landlord's liability are usually front and center. If the fire started because of tenant negligence, an unattended stove, an overloaded extension cord, improper use of a space heater, the tenant may bear more responsibility, and a landlord's insurer may even seek reimbursement from the tenant afterward (a process called subrogation). Fires that start in shared areas of a multi-unit building, or that spread from a neighboring unit, add another layer, since responsibility may trace back to a different tenant entirely or to common-area maintenance the landlord controls."
+    },
+    {
+      "heading": "What the lease says (and why you should read it now)",
+      "body": "Most leases include language that outlines habitability obligations, insurance requirements, and sometimes an explicit statement about who must carry renters insurance. Some leases require tenants to carry a policy as a condition of renting. Others are silent on it, which doesn't remove the practical need, it just means the tenant is exposed if a fire happens. It's worth pulling out the actual lease document during this process rather than relying on memory, because clauses about repair timelines, temporary relocation, and rent abatement during repairs are often spelled out there in ways that directly affect what happens next."
+    },
+    {
+      "heading": "Temporary housing and the question everyone asks first",
+      "body": "One of the first practical questions after a rental fire is where you're supposed to sleep that night. If the tenant has renters insurance with loss-of-use coverage, that policy typically pays for temporary housing while the unit is unlivable. If there is no renters policy, the tenant may need to look at the lease for any landlord obligation around habitability, and in many jurisdictions a landlord cannot charge rent for a unit that isn't livable, though the rules vary by state and lease terms. This is an area where documenting the damage clearly, photos, dates, a written notice to the landlord, matters a great deal, because it becomes the record both insurers and any dispute will rely on."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does a landlord's insurance cover my personal belongings after a fire?",
+      "a": "Usually not. A landlord's policy is built to cover the structure and the owner's own fixtures, not a tenant's furniture, electronics, or clothing. Personal belongings are typically covered only under a tenant's own renters insurance policy, if one exists."
+    },
+    {
+      "q": "What if I don't have renters insurance and my things were destroyed?",
+      "a": "Without a renters policy, a tenant generally has to pursue reimbursement directly from whoever is found responsible for the fire, whether that's the landlord (in cases of a building defect) or another party. This is often a slower, harder path than an insurance claim, which is exactly why renters insurance is worth having before anything happens."
+    },
+    {
+      "q": "Who is responsible if a neighbor's unit catches fire and it spreads to mine?",
+      "a": "Responsibility in multi-unit fires can involve several parties: the unit where the fire started, the property owner if common-area maintenance played a role, and each tenant's own renters policy for their own belongings. These situations are frequently resolved through insurance claims and investigation rather than a single clear answer at the outset."
+    },
+    {
+      "q": "Can a landlord make me pay for fire damage I didn't cause?",
+      "a": "Generally, a tenant is only financially responsible for damage tied to their own negligence or lease violations. Damage from building defects, wiring issues, or other tenants typically falls outside a tenant's responsibility, though lease language and local law both play a role in how this gets determined."
+    }
+  ],
+  "cta": {
+    "heading": "If a rental fire has left you sorting out damage and next steps, we can help make sense of the property side.",
+    "body": "Gold Water Fire works on fire damage restoration and reconstruction across the Phoenix metro area, including Mesa, Chandler, Scottsdale, Glendale, Gilbert, Tempe, and surrounding cities. Call (480) 999-3339 or reach out through our contact page to talk through what you're facing."
+  },
+  "evidence": "This page states general knowledge about how landlord, tenant, and insurance responsibilities typically divide after a rental fire, and does not attribute any specific claim, credential, or job history to Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/rental-property-fire-damage-responsibility-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Fire damage in a rental, and who is responsible for what"
+  }
+}

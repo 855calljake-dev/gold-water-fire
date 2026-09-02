@@ -1,0 +1,79 @@
+{
+  "slug": "desert-landscaping-drainage-and-your-home",
+  "path": "/guides/desert-landscaping-drainage-and-your-home.html",
+  "title": "Desert Landscaping, Grading & Drainage Near Your Home | Gold Water Fire Phoenix, AZ",
+  "description": "How desert soil, grading, and landscaping choices affect water flow around a Phoenix-area home, and what to check before the next monsoon.",
+  "h1": "Desert Landscaping, Grading, and Keeping Water Away From the House",
+  "breadcrumbLabel": "Desert Landscaping & Drainage",
+  "intro": "If you have noticed water pooling somewhere it never used to, or a damp patch along the foundation after a storm, it is easy to assume it is a one-time fluke. Then it happens again the next monsoon, or the next time a sprinkler valve sticks, and you are left wondering what actually changed. Desert yards can look dry and settled for years while quietly losing the grade that used to send water away from the house. It is not always obvious, and it is not something most homeowners are taught to watch for until a problem shows up inside.",
+  "sections": [
+    {
+      "heading": "Why desert soil makes drainage harder, not easier",
+      "body": "It seems counterintuitive that a dry climate would have drainage problems, but caliche and hardpan soils common across the Phoenix metro area are part of the issue. These dense, calcium-carbonate-cemented layers form a few inches to a few feet below the surface and barely let water through. When monsoon rain hits ground that has been baked hard all summer, it does not soak in the way it would in looser soil. It runs. If the yard is not graded to guide that runoff away from the structure, it finds the lowest point, and the lowest point is often right along a foundation wall or a patio slab poured tight against the house."
+    },
+    {
+      "heading": "What proper grading actually looks like",
+      "body": "The general rule contractors and landscapers use is a slope of about six inches of drop for the first ten feet moving away from the foundation. Over years, added gravel, decorative rock, mulch beds, or even repeated raking can flatten that slope without anyone noticing. A quick check: after a rain, walk the perimeter of the house and look at which direction water actually moved, not which direction you assume it should move. Puddles that sit for more than a few hours next to a wall, a garage slab, or a stem wall are a sign the grade has changed or was never right to begin with."
+    },
+    {
+      "heading": "Landscaping features that quietly redirect water toward the house",
+      "body": "Desert landscaping often includes raised planters, decorative rock borders, retaining walls, and artificial turf, and any of these can change how water moves without an obvious warning sign. Raised beds built against a wall can trap moisture against stucco or block weep screeds. Rock borders installed slightly uphill of their original position can dam water instead of channeling it. Artificial turf with poor base prep can seal the ground and push all rainfall to the edges at once instead of letting it distribute. Even a downspout extension that has slipped or been kicked out of place during a landscaping project can dump water directly against the foundation instead of several feet away."
+    },
+    {
+      "heading": "Signs the drainage around your home has already failed",
+      "body": "Some signs are easy to see: standing water, eroded soil channels, or mud lines on a wall after a storm. Others are subtler, including stucco discoloration near the base of the house, a musty smell in a garage or crawlspace after rain, baseboards that feel soft near an exterior wall, or hairline cracks in a slab that seem to appear after wet weather rather than during dry months. None of these guarantee a serious problem, but they are worth investigating before the next storm rather than after."
+    },
+    {
+      "heading": "When drainage problems turn into water damage",
+      "body": "Poor grading and clogged or misdirected drainage are among the most common reasons water ends up where it should not, inside walls, under flooring, or in a garage. If water has already made it into the structure, drying it out correctly matters as much as fixing the source. You can read more about how that process works on our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much slope should a desert yard have away from the house?",
+      "a": "A commonly used guideline is roughly six inches of fall over the first ten feet away from the foundation. Less than that, and water is more likely to sit near the structure instead of draining off."
+    },
+    {
+      "q": "Can decorative rock or gravel cause drainage problems?",
+      "a": "Yes. Rock and gravel beds can shift or be added to over time in a way that raises the ground level near a wall or blocks a natural runoff path, even though the material itself does not hold water the way soil does."
+    },
+    {
+      "q": "Why does my yard flood in the same spot every monsoon season?",
+      "a": "Repeated pooling in one location usually means that spot is the low point of the current grade, or that something, like a retaining wall, planter, or compacted soil layer, is blocking the water's natural path elsewhere."
+    },
+    {
+      "q": "What should I do if I find water damage after checking my drainage?",
+      "a": "Address the moisture as soon as possible rather than waiting to see if it dries on its own, since standing water and trapped moisture in walls or flooring can lead to further damage. Our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what that assessment and drying process typically involves."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if drainage has already caused damage inside your home?",
+    "body": "If you are seeing signs of moisture near a foundation, garage, or exterior wall, it helps to have someone look at both the water and its source. Reach Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to reach the team serving the Phoenix metro area."
+  },
+  "evidence": "This page describes general desert soil behavior, grading standards, and landscaping drainage practices as commonly understood in the construction and landscaping industries; it makes no specific claims about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/desert-landscaping-drainage-and-your-home-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Desert landscaping, grading, and keeping water away from the house"
+  }
+}
