@@ -1,0 +1,75 @@
+{
+  "slug": "historic-home-restoration-considerations",
+  "path": "/guides/historic-home-restoration-considerations.html",
+  "title": "Restoring an Older Home After Water or Fire Damage | Gold Water Fire Phoenix, AZ",
+  "description": "What makes water or fire damage restoration different in an older Phoenix-area home, from plaster walls to outdated wiring and materials that need extra care.",
+  "h1": "Restoring an Older Home, and What Needs Extra Care",
+  "breadcrumbLabel": "Historic Home Restoration Considerations",
+  "intro": "Finding water or fire damage in a home with real age on it brings a different kind of worry than the same problem in a newer build. You're not just wondering how to fix what happened. You're wondering what else is hiding behind that wall, whether the materials even exist anymore to match what's there, and whether the people who show up to help will actually understand what they're looking at or just treat it like any other job. That uncertainty is reasonable. Older homes were built differently, and they don't always respond to damage, or to repair, the way modern construction does.",
+  "sections": [
+    {
+      "heading": "Why older construction behaves differently under damage",
+      "body": "Homes built before the 1970s and 80s were often framed and finished with materials that simply aren't used anymore, or aren't used the same way. Plaster walls over wood lath, for example, absorb and hold moisture differently than modern drywall. They can look fine on the surface while trapping water behind them for days. Older subfloors, solid wood doors, original trim, and early HVAC or electrical systems all react to water and heat exposure on their own timeline, not the timeline a general contractor might expect from newer materials. Understanding what you're actually dealing with, before any repair work starts, matters more in an older home than almost anywhere else."
+    },
+    {
+      "heading": "Materials that need extra attention",
+      "body": "A few categories tend to come up again and again in older Phoenix-area homes. Plaster and lath walls crack and delaminate differently than drywall, and matching a repair to the original texture takes a different skill set. Original hardwood or tile flooring may no longer be manufactured, which changes the calculus between full replacement and careful partial repair. Older wiring and panels, if exposed to fire or heavy water intrusion, often need a licensed electrician's evaluation rather than a simple swap, since some older wiring types carry their own safety considerations independent of the damage event. And older window and door casings, especially anything original to the home, are often one of the few things a homeowner really doesn't want lost in a fast demolition."
+    },
+    {
+      "heading": "Hidden risks specific to older properties",
+      "body": "Homes built before the 1980s, and especially before 1978, may contain lead-based paint, and homes built before the 1980s may also contain asbestos in older flooring, insulation, or joint compound. Neither of these is something to guess about. If a restoration project involves disturbing these materials, testing and proper handling matter for health reasons that go well beyond the current water or fire event. This is one of the clearest places where rushing a repair can create a second problem on top of the first one."
+    },
+    {
+      "heading": "Balancing repair versus replacement",
+      "body": "In a newer home, the instinct is often to rip out anything touched by water or smoke and start fresh. In an older home, that instinct can cost you character, value, and materials that can't be replaced in kind. A more deliberate approach, drying and assessing thoroughly before deciding what has to go, tends to preserve more of what makes the home what it is. This is also where reconstruction work benefits from someone who has actually rebuilt in older structures before, not just newer tract housing. You can read more about how that kind of rebuild work is approached on our <a href=\"/reconstruction.html\">Reconstruction & Rebuild</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does an older home take longer to dry out after water damage?",
+      "a": "Often yes, because materials like plaster, solid wood, and older subflooring hold moisture differently than modern materials. Drying time depends on the specific materials involved, the extent of the intrusion, and the home's structure, so an in-person assessment is the only reliable way to know what a given home needs."
+    },
+    {
+      "q": "Should I worry about lead paint or asbestos before starting repairs?",
+      "a": "If the home was built before the 1980s, it's worth finding out before any demolition or heavy disturbance of walls, flooring, or ceilings begins. Testing is the only way to know for certain, and it protects everyone working in the space."
+    },
+    {
+      "q": "Can original materials like plaster or old trim be saved instead of replaced?",
+      "a": "Sometimes, depending on how much moisture or fire exposure they've absorbed and how structurally sound they still are. A careful assessment before demolition gives you the clearest picture of what can realistically be repaired versus what needs to be replaced."
+    },
+    {
+      "q": "Does Gold Water Fire work on older homes in the Phoenix area?",
+      "a": "Yes. We work across the greater Phoenix metro area, including older neighborhoods in Phoenix, Mesa, Tempe, Chandler, Scottsdale, and surrounding communities, and we take the extra care that older materials and construction methods call for."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your older home needs right now?",
+    "body": "If you're dealing with water or fire damage in a home with real age on it, talk it through with someone who won't rush the assessment. Call (480) 999-3339 or email Help@goldwaterfire.com, or visit our Contact page to reach the Gold Water Fire team."
+  },
+  "evidence": "This page states general restoration industry knowledge about older building materials and common hazards, and does not attribute any specific claim, credential, or job history to Gold Water Fire beyond the confirmed company facts.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "photo": {
+    "src": "/assets/img/historic-home-restoration-considerations-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Restoring an older home, and what needs extra care"
+  }
+}
