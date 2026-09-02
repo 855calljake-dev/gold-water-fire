@@ -1014,7 +1014,7 @@
       "slug": "why-drying-takes-days-not-hours",
       "topic": "Why structural drying takes days rather than hours",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1070,7 +1070,7 @@
       "slug": "carpet-pad-replacement-after-water",
       "topic": "Why carpet pad is replaced even when the carpet is saved",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1091,7 +1091,7 @@
       "slug": "flood-cuts-explained",
       "topic": "What a flood cut is, why it is made at that height, and what happens next",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1112,7 +1112,7 @@
       "slug": "hidden-mold-behind-drywall",
       "topic": "How mold grows behind drywall after a water loss",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1133,7 +1133,7 @@
       "slug": "mold-remediation-containment-steps",
       "topic": "The containment steps in a mold remediation, in order",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1196,7 +1196,7 @@
       "slug": "electronics-after-smoke-exposure",
       "topic": "What smoke exposure does to electronics, and what can be recovered",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1266,7 +1266,7 @@
       "slug": "outdoor-grill-and-patio-fire-safety",
       "topic": "Outdoor grill and patio fire safety around a home",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1315,7 +1315,7 @@
       "slug": "popcorn-ceiling-removal-during-repairs",
       "topic": "Popcorn ceiling removal as part of a repair, and what it involves",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1371,7 +1371,7 @@
       "slug": "window-replacement-after-damage",
       "topic": "Window replacement after fire or water damage",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1539,7 +1539,7 @@
       "slug": "rental-property-fire-damage-responsibility",
       "topic": "Fire damage in a rental, and who is responsible for what",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1567,7 +1567,7 @@
       "slug": "restaurant-fire-damage-recovery",
       "topic": "Fire damage recovery in a restaurant kitchen",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1595,7 +1595,7 @@
       "slug": "historic-home-restoration-considerations",
       "topic": "Restoring an older home, and what needs extra care",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1609,7 +1609,7 @@
       "slug": "dust-storm-damage-to-a-home",
       "topic": "What a dust storm does to a home, inside and out",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1637,7 +1637,7 @@
       "slug": "desert-landscaping-drainage-and-your-home",
       "topic": "Desert landscaping, grading, and keeping water away from the house",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -1707,35 +1707,35 @@
       "slug": "reading-a-restoration-estimate",
       "topic": "Reading a restoration estimate and knowing what is missing",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "red-flags-storm-chaser-contractors",
       "topic": "Red flags of storm chaser contractors after a weather event",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "one-contractor-for-mitigation-and-rebuild",
       "topic": "Why one contractor for mitigation and rebuild simplifies a claim",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "what-to-ask-before-signing-anything",
       "topic": "What to ask before signing anything after a property loss",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "why-the-source-is-fixed-before-drying-starts",
       "topic": "Why the water source is stopped and repaired before any drying equipment goes in",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     }
   ],
   "location_backlog_note": "Location pages (service x city) wait on Jake reviewing an educational batch clean, per SOP §5. City list source: CLAIMS-TO-VERIFY.md 'Service area' entry."
