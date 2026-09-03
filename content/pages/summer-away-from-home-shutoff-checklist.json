@@ -1,0 +1,61 @@
+{
+  "slug": "summer-away-from-home-shutoff-checklist",
+  "path": "/guides/summer-away-from-home-shutoff-checklist.html",
+  "title": "Summer Away From Home Shutoff Checklist | Gold Water Fire Phoenix, AZ",
+  "description": "A room-by-room shutoff checklist for leaving a Phoenix home empty over summer, covering water, gas, and electrical steps that prevent damage while away.",
+  "h1": "A Shutoff Checklist Before Leaving a Home Empty for the Summer",
+  "breadcrumbLabel": "Summer Shutoff Checklist",
+  "intro": "There's a particular kind of unease that comes with locking the door on a house you won't see for weeks or months. You run through the list in your head on the drive to the airport: did I turn that off, did I check that valve, what happens if something goes wrong while no one is there to notice. That worry doesn't come from nowhere. Homes left empty in the Phoenix heat are dealing with conditions most houses never face while occupied, and small problems that would get caught in a day can run unchecked for a season.",
+  "sections": [
+    {
+      "eyebrow": "Water",
+      "heading": "Water shutoff and appliance checks",
+      "body": "The main water shutoff valve is the single most useful thing to know before you leave. It's usually near the street-facing side of the house, sometimes in a box in the yard or near the water heater. Shutting it off stops a slow leak from becoming a flooded house while you're gone for weeks. If you'd rather leave water on for a fridge line or irrigation timer, at minimum shut off the supply lines to the washing machine, dishwasher, and any ice maker, since these are common points of hose failure. Check under sinks for any weep or corrosion on supply lines before you go, since a valve that looks fine but has been slowly failing for months is exactly the kind of thing that turns into a real loss over a long absence."
+    },
+    {
+      "eyebrow": "Water heater",
+      "heading": "Water heater and drain considerations",
+      "body": "A water heater left running with no one home for months is a risk that's easy to overlook. Many homeowners switch it to vacation or pilot mode rather than leaving it at a normal temperature setting, which reduces both the energy use and the chance of a tank failure going unnoticed. Pour a cup of water down rarely used drains, like a guest bathroom or laundry sink, before leaving. Dried-out P-traps let sewer gas back into the house, and in Arizona's dry heat that evaporation happens faster than people expect."
+    },
+    {
+      "eyebrow": "Gas and electrical",
+      "heading": "Gas and electrical shutoff points",
+      "body": "If you're leaving for an extended stretch, know where the gas shutoff valve is even if you don't plan to close it, since that knowledge matters more in an emergency than as a routine step. Unplug small appliances that don't need to stay on: coffee makers, toaster ovens, hair tools, chargers. These draw a small amount of power but also carry a small fire risk if there's ever a power surge while no one's there to notice a smell or a spark. Leave the air conditioning running at a higher-than-normal setting rather than off entirely. In Phoenix summer heat, a home with no cooling at all can reach interior temperatures that stress the roof, warp doors and cabinetry, and create conditions where any small moisture source turns into mold within days."
+    },
+    {
+      "eyebrow": "Before you lock up",
+      "heading": "A final walkthrough before you go",
+      "body": "Walk the perimeter and check that exterior hose bibs are off and hoses disconnected, since a dripping bib can waste water for months unnoticed and, worse, points to a fitting that could fail outright. Check the roof and gutters for anything that could funnel water into the house during a summer monsoon storm while you're away. Ask a neighbor or a trusted contact to physically check the house periodically, not just watch it from the street, since some of the most damaging problems (a slow roof leak, a failed toilet supply line, a dead HVAC system in 110-degree heat) only show themselves inside."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I turn off the main water valve if I'm leaving for the whole summer?",
+      "a": "Shutting off the main valve is the most reliable way to prevent a leak from becoming a flood while no one is home. If you need water running for something like a smart irrigation system, at least shut off individual supply lines to washing machines, dishwashers, and ice makers."
+    },
+    {
+      "q": "Is it safe to turn off the air conditioning completely while away?",
+      "a": "Turning the AC off entirely in Phoenix summer heat isn't recommended. Sustained high indoor temperatures can stress the roof, doors, and cabinetry, and create the kind of heat and humidity swings that lead to mold if there's any moisture source in the house."
+    },
+    {
+      "q": "What's the most commonly missed item on a shutoff checklist?",
+      "a": "Dried-out drain traps are easy to forget. Pouring water down rarely used sinks and floor drains before leaving keeps the trap sealed and stops sewer gas from entering the house over a long absence."
+    },
+    {
+      "q": "Who should I ask to check on the house while I'm gone?",
+      "a": "A neighbor, family member, or trusted contact who can physically walk through the house periodically is more useful than someone who only checks the exterior. Many of the most damaging problems, like a slow leak or a failed HVAC system, are only visible from inside."
+    }
+  ],
+  "cta": {
+    "heading": "If you come home to damage, don't wait to get it looked at",
+    "body": "If a shutoff step got missed and you're coming home to water damage, fire damage, or something that needs rebuilding, Gold Water Fire serves homeowners across the Phoenix metro area. Call (480) 999-3339 or reach out through our contact page to talk through what you're seeing."
+  },
+  "evidence": "This page is general preventive-maintenance guidance based on common restoration and homeownership practice, not a claim about a specific Gold Water Fire job.",
+  "type": "educational",
+  "datePublished": "2026-09-03",
+  "dateModified": "2026-09-03",
+  "photo": {
+    "src": "/assets/img/summer-away-from-home-shutoff-checklist-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: A shutoff checklist before leaving a home empty for the summer"
+  }
+}
