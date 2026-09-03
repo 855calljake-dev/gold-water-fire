@@ -1,0 +1,75 @@
+{
+  "slug": "reading-your-policy-declarations-page",
+  "path": "/guides/reading-your-policy-declarations-page.html",
+  "title": "How to Read Your Homeowners Declarations Page | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language walkthrough of your homeowners declarations page, so you know what's covered before you need to find out the hard way.",
+  "h1": "Reading the Declarations Page of Your Homeowners Policy",
+  "breadcrumbLabel": "Reading Your Declarations Page",
+  "intro": "There's a specific kind of unease that shows up when you go looking for your homeowners policy after something has already gone wrong. Maybe a pipe burst overnight, or a storm took a piece of the roof, and now you're standing in a kitchen or a garage holding a stack of paper you were handed years ago and never really read. The declarations page is only two or three pages long, but it's written in a shorthand that assumes you already know what the words mean. You don't, and that's not a failure on your part. Insurance documents are built for adjusters and agents, not for the person standing in the middle of the damage trying to figure out what happens next.",
+  "sections": [
+    {
+      "heading": "What the declarations page actually is",
+      "body": "The declarations page, often shortened to \"dec page\" by agents and adjusters, is the summary sheet at the front of your policy. It's usually one to three pages and it lists the specific numbers and names that apply to your house: your policy number, the effective dates, the address covered, who is named as the insured, your coverage limits, and your deductibles. Everything after the dec page, the dozens of pages of definitions and exclusions, is the fine print that explains and limits what those numbers mean. But the dec page is where you find the numbers themselves, and it's the fastest place to look when you need answers right now."
+    },
+    {
+      "heading": "The coverage letters (A through F) and what they cover",
+      "body": "Most homeowners policies break coverage into lettered categories, and they tend to follow a similar pattern across insurers. Coverage A is the dwelling itself, the physical structure of your home. Coverage B is other structures on the property, like a detached garage, shed, or fence. Coverage C is personal property, meaning your belongings, furniture, and appliances. Coverage D is loss of use, sometimes called additional living expenses, which pays for a hotel or rental if your home becomes unlivable during repairs. Coverage E is personal liability, and Coverage F is medical payments to others. Each letter has its own dollar limit listed on the dec page, and those limits don't transfer between categories. A large Coverage A limit doesn't help if your actual loss falls under Coverage C."
+    },
+    {
+      "heading": "Deductibles are not always a flat dollar amount",
+      "body": "Look closely at how your deductible is written. Many Arizona homeowners policies use a flat dollar deductible, like $1,000 or $2,500, that applies to most claims. But some policies carry a separate percentage-based deductible for specific perils, most commonly wind or hail, calculated as a percentage of your Coverage A limit rather than a flat number. On a home insured for $350,000, a 2% wind deductible works out to $7,000, which is a very different number than $1,000 and easy to miss if you're skimming. The dec page should list any special deductibles separately from the standard one, so check for more than one deductible line before you assume you know your number."
+    },
+    {
+      "heading": "Named perils versus open perils, and where to check",
+      "body": "The dec page won't spell out every peril your policy covers or excludes, that detail lives in the policy body. But it will usually tell you which form your policy is (commonly labeled HO-3 or HO-5 for owner-occupied homes), and that form type tells you a lot. An HO-3 policy generally covers the dwelling on an open-perils basis, meaning it covers everything except what's specifically excluded, while personal property is often covered on a named-perils basis, meaning only the causes of loss actually listed apply. Water damage is one of the most heavily carved-up categories in any policy: sudden and accidental discharge from a burst pipe is typically treated differently than gradual leaks, groundwater seepage, or flooding, and those distinctions can determine whether a claim is paid at all."
+    },
+    {
+      "heading": "Replacement cost versus actual cash value",
+      "body": "Somewhere on the dec page or in an attached endorsement, your policy will state whether your dwelling and personal property are insured for replacement cost or actual cash value. Replacement cost pays what it costs to rebuild or replace an item today, without a deduction for age or wear. Actual cash value pays replacement cost minus depreciation, which can mean a ten-year-old roof or water heater is reimbursed at a fraction of what a new one costs. This single distinction, easy to overlook in a few lines of policy language, often has the biggest financial impact of anything on the page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where do I find my declarations page if I can't find the paper copy?",
+      "a": "Check your insurer's online account portal or app, most carriers post a digital copy there. You can also call your agent or the insurer's customer service line directly and ask them to email or mail a current copy."
+    },
+    {
+      "q": "Why does my dec page list more than one deductible?",
+      "a": "Some policies carry a standard deductible for most claims plus a separate, often percentage-based, deductible for specific perils like wind or hail. Both should be listed on the dec page, so check for more than one line before assuming a single number applies."
+    },
+    {
+      "q": "Does the declarations page tell me if water damage is covered?",
+      "a": "It tells you the policy form (like HO-3) and your coverage limits, but the detailed rules on water damage, including exclusions for gradual leaks or flooding, are found in the full policy body rather than the summary page."
+    },
+    {
+      "q": "What's the difference between replacement cost and actual cash value on my dec page?",
+      "a": "Replacement cost pays to rebuild or replace at today's prices with no deduction for age. Actual cash value subtracts depreciation, so older items or materials are reimbursed at a reduced amount."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your policy actually covers for damage you're facing right now?",
+    "body": "Gold Water Fire works with Phoenix-area homeowners through water and fire damage every day, and can help you understand the scope of the damage while you sort through what your policy says. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page presents general homeowners insurance education based on common industry policy structures; it makes no specific claims about Gold Water Fire's own work or history.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-03",
+  "dateModified": "2026-09-03",
+  "photo": {
+    "src": "/assets/img/reading-your-policy-declarations-page-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Reading the declarations page of your homeowners policy"
+  }
+}

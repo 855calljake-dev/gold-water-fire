@@ -1,0 +1,75 @@
+{
+  "slug": "how-restoration-companies-bill-insurance",
+  "path": "/guides/how-restoration-companies-bill-insurance.html",
+  "title": "How Restoration Companies Bill an Insurance Claim | Gold Water Fire Phoenix, AZ",
+  "description": "A plain-language look at how water and fire damage restoration billing works with insurance, from scope to Xactimate pricing to payment.",
+  "h1": "How Restoration Companies Bill an Insurance Claim",
+  "breadcrumbLabel": "How Restoration Companies Bill Insurance",
+  "intro": "If you're staring at a stack of paperwork trying to figure out why the restoration invoice doesn't match what your adjuster approved, or why the whole billing process feels like a language you're not fluent in, you're not imagining it. Insurance billing for water or fire damage work is genuinely confusing, and it stays confusing even after you've asked someone to explain it once. Most homeowners go through this exactly one time in their lives, with no chance to learn the shorthand before they need it.",
+  "sections": [
+    {
+      "heading": "The basic shape of a restoration claim",
+      "body": "Most residential water and fire claims follow a similar arc. A restoration company documents the damage, writes an estimate, performs the work, and submits an invoice, usually to both the homeowner and the insurance carrier. The insurance company reviews that estimate against the policy and against its own sense of what the work should cost, then approves, adjusts, or questions line items before paying out. The homeowner typically owes the deductible, and sometimes owes the difference between what the carrier approves and what the contractor actually charged, depending on the policy and how the estimate was negotiated."
+    },
+    {
+      "heading": "Why the estimate is built the way it is",
+      "body": "Almost every restoration company in the country uses the same underlying pricing structure, a database of standardized line-item costs for tasks like water extraction, antimicrobial treatment, drywall removal, or content manipulation. This is often built in software called Xactimate, which most insurance carriers also use to check estimates. That shared system is why an itemized restoration bill looks so dense: each line represents a specific task, material, or piece of equipment, priced against a regional rate rather than a flat number the contractor picked. It's not padding, it's the industry's common language for describing labor and materials in a way both the contractor and the carrier can read the same way."
+    },
+    {
+      "heading": "Emergency mitigation versus the rebuild",
+      "body": "Billing usually splits into two phases, and this is often where confusion starts. The first phase is mitigation: extracting water, drying structures, removing damaged materials, controlling odor or contamination after a fire. This work often starts before a claim number even exists, because delaying it makes the damage worse. The second phase is reconstruction, rebuilding walls, flooring, cabinetry, and finishes. Some companies handle both phases, others hand the rebuild to a separate contractor. Each phase generates its own estimate and its own invoice, which means a single loss can produce two separate billing conversations with the insurance company, on two different timelines."
+    },
+    {
+      "heading": "Where disagreements usually happen",
+      "body": "Adjusters and restoration companies don't always agree on the scope or the price, and that disagreement is normal, not a sign that someone is acting in bad faith. Common friction points include how many days of drying equipment were necessary, whether certain materials needed to be removed and replaced versus cleaned, and whether specific line items match the regional pricing the carrier expects. When there's a gap, the contractor and adjuster typically negotiate directly, sometimes over several rounds of revised estimates, before a final number is agreed on. Homeowners often get pulled into the middle of this even though the technical back-and-forth is happening between two other parties."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why did the restoration invoice come in higher than what the adjuster approved?",
+      "a": "This usually means the contractor's estimate included line items, quantities, or drying time the carrier didn't initially agree to. It's common for these gaps to get resolved through further documentation or negotiation between the contractor and the adjuster rather than falling entirely on the homeowner, but the outcome depends on the specific policy and estimate."
+    },
+    {
+      "q": "Do I have to pay the restoration company directly, or does insurance pay them?",
+      "a": "It varies by claim. Some carriers pay the contractor directly, some pay the homeowner who then pays the contractor, and some split payment between initial and final disbursements. The deductible is generally the homeowner's responsibility regardless of how the rest of the payment flows."
+    },
+    {
+      "q": "What is Xactimate and why does it matter for my bill?",
+      "a": "Xactimate is estimating software that prices restoration tasks using standardized, regionally adjusted line items. Most insurance carriers also use it to review contractor estimates, which is why itemized restoration invoices tend to look highly detailed rather than a simple flat quote."
+    },
+    {
+      "q": "Why are mitigation and reconstruction billed separately?",
+      "a": "They're typically treated as two distinct scopes of work because mitigation (drying, water extraction, debris removal) often has to start immediately, before the full extent of rebuild work is even known. Reconstruction is scoped and priced once the structure is dry and the damage is fully assessed."
+    }
+  ],
+  "cta": {
+    "heading": "Trying to make sense of a current claim?",
+    "body": "If you're in the Phoenix area and want someone to walk through your specific situation, Gold Water Fire can talk through what's ahead before you commit to anything. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page describes general restoration industry billing practices and standard estimating software conventions, not specific claims about Gold Water Fire's own pricing or past jobs.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-03",
+  "dateModified": "2026-09-03",
+  "photo": {
+    "src": "/assets/img/how-restoration-companies-bill-insurance-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: How restoration companies bill an insurance claim"
+  }
+}
