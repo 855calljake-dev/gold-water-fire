@@ -48,7 +48,7 @@ const PAGE_SCHEMA = {
       // &amp; Rebuild" and shipped that way to the live <h1> and <title>
       // (fixed 2026-08-10). Only `body` and `a` accept markup, and they say so.
       title: { type: "string", description: "<title> tag, include 'Gold Water Fire' and 'Phoenix, AZ'. Plain text -- write '&' as a literal ampersand, never '&amp;' or any other HTML entity or tag." },
-      description: { type: "string", description: "meta description, under 160 characters. Plain text, no HTML entities or tags." },
+      description: { type: "string", description: "meta description. Aim for 140-155 characters; 165 is a hard cap checked in code, and one character over rejects the whole page. Plain text, no HTML entities or tags." },
       h1: { type: "string", description: "Plain text, no HTML entities or tags -- write '&' as a literal ampersand. Also rendered verbatim as the page image's caption (SOP-AGENTIC-SEO-WEBSITES.md 8.3)." },
       breadcrumbLabel: { type: "string", description: "Plain text, no HTML entities or tags." },
       intro: { type: "string", description: "Opening paragraph. Rule Zero: validates the reader's situation, does not sell. No solution pitched here." },
@@ -125,7 +125,8 @@ HARD RULES (violating any of these means the page cannot ship, and a code check 
 4. Body text may contain plain text and simple <a href="...">link text</a> tags. The ONLY valid internal link targets are these exact paths. Do not invent a "/services/" prefix or any other URL, these are the real ones: /water-damage-restoration.html, /fire-damage-restoration.html, /reconstruction.html, /about.html, /contact.html. Link to these verbatim.
 5. Write for a homeowner in a stressful situation: clear, direct, no jargon, no hype adjectives ("amazing," "incredible"), no AI-sounding filler phrases.
 6. Never use an em dash (the "—" character). Not in a title, heading, body paragraph, card, FAQ, CTA or meta description. Use a comma instead, or a period, colon, or parentheses where a comma will not carry the sentence. Do not substitute an en dash ("–") or a doubled hyphen ("--") for it either; write the sentence so it does not need one. A code check rejects the whole page if a single em dash reaches any reader-facing field.
-7. Never write the words "Faith Loop," "Reflection," "Invitation," "Sacrifice," or any label for the emotional register above. It is a direction for how you write, never content to name — the page must read as plain, unstructured human writing.
+7. Meta description length: the "description" field has a hard cap of 165 characters, checked in code after you respond, and a single character over rejects the entire page. Do not aim at the cap. Write 140-155 characters, and when unsure, cut a clause rather than risk the length.
+8. Never write the words "Faith Loop," "Reflection," "Invitation," "Sacrifice," or any label for the emotional register above. It is a direction for how you write, never content to name — the page must read as plain, unstructured human writing.
 
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
 }
