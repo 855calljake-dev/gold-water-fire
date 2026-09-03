@@ -1,6 +1,7 @@
 import { shell } from "./shell.mjs";
 import { esc } from "./lib.mjs";
 import { withSideMenu, groupGuidesByTopic } from "./side-menu.mjs";
+import { craftStrip } from "./craftsmanship.mjs";
 
 // The reusable template for service, educational, and location pages —
 // the page type this whole pipeline exists to generate at volume.
@@ -8,7 +9,7 @@ import { withSideMenu, groupGuidesByTopic } from "./side-menu.mjs";
 // h1, breadcrumbLabel, intro, sections[], faqs[], photo, cta, evidence,
 // datePublished (set once, at first draft), dateModified (updated on every
 // content edit) — Tier-1 checklist item 13, BYTOMORROW-TECH-STACK.md.
-export function renderContentPage(data, allPages = []) {
+export function renderContentPage(data, allPages = [], craft = null) {
   const {
     path, title, description, h1, breadcrumbLabel, intro,
     sections = [], faqs = [], photo, cta, serviceType, internalLinks = [],
@@ -112,6 +113,7 @@ export function renderContentPage(data, allPages = []) {
 ${photoHtml}
 ${sectionsHtml}
 ${faqHtml}
+${craftStrip(path, craft)}
 ${relatedHtml}
     <section class="cta-band">
       <div class="wrap">
