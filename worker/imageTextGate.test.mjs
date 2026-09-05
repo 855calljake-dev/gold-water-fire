@@ -121,8 +121,12 @@ const PINNED = {
     "ad53893175f425029bb3b3c23c6dbbf991512cde8fc14a7855941d8225100413",
   "tolleson-reconstruction-tolleson-az":
     "dc71a3ba65e5b1e8c509ca9a8a8c204e8500321d693327193fdb2c8082c3d984",
+  // Re-pinned 2026-09-04: the image was replaced by e808536 (2026-08-27,
+  // "Replace the last pillarboxed image") and the pin was never updated, so
+  // this case failed as CORPUS DRIFT for a week. Re-measured on the new file:
+  // gate passes it clean, same as the old one.
   "apache-junction-water-damage-restoration-apache-junction-az":
-    "9d80f0725475df65f9d15ba45b2675680e5b62cbb22aa1603ac6937d0cff16eb",
+    "8ffdb55f766848692f8e8b5cdedb292d3bb709b34b762f57dd702b943a8d33c0",
   "cave-creek-fire-damage-restoration-cave-creek-az":
     "44f9638dbaddfdd08f130daa4b17c3947384aac852074edaead55a8ed04e05e7",
   "el-mirage-reconstruction-el-mirage-az":
