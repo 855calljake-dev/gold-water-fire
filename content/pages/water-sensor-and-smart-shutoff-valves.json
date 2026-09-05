@@ -1,0 +1,85 @@
+{
+  "breadcrumbLabel": "Leak Sensors & Smart Shutoff Valves",
+  "cta": {
+    "heading": "Not sure if you already have water damage hiding somewhere?",
+    "body": "If you're dealing with a leak right now, or you just want a second set of eyes on a spot that worries you, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com. A quick conversation might be all you need."
+  },
+  "description": "How leak sensors and smart shutoff valves detect water damage early, plus where to place them in your home for the best protection.",
+  "evidence": "This page explains general water leak detection technology and placement practices, not specific claims about work performed by Gold Water Fire.",
+  "faqs": [
+    {
+      "q": "Do leak sensors need Wi-Fi to work?",
+      "a": "Most leak sensors need a Wi-Fi connection or a hub to send alerts to your phone. Some models store a log locally and sound a local alarm even without internet, but you lose the remote notification if the network is down. Check the specific product's requirements before you buy, since this varies by brand."
+    },
+    {
+      "q": "Will a smart shutoff valve work during a power outage?",
+      "a": "Many smart valves run on standard household power with a battery backup for the electronics, but the valve itself may need power to physically turn. Look at the manufacturer's spec sheet for backup duration and behavior during an outage, since this differs between models."
+    },
+    {
+      "q": "Can I install a smart shutoff valve myself?",
+      "a": "Some models are designed for DIY installation on standard supply lines, while others involve cutting into copper or PEX piping and are better suited to a licensed plumber. If you're not comfortable working with your home's main water line, it's worth having a professional handle the install."
+    },
+    {
+      "q": "Where should I put a leak sensor if I can only buy one or two?",
+      "a": "Start with the spot most likely to cause the worst damage if it fails, which for most homes is the water heater. A second sensor near the kitchen sink or a washing machine supply line covers the next most common failure points."
+    }
+  ],
+  "h1": "How Leak Sensors and Smart Shutoff Valves Work, and Where to Put Them",
+  "intro": "Water damage rarely announces itself. A slow drip behind a washing machine, a slab leak under a hallway, a supply line that finally gives out while you're at work, none of it looks dramatic until you find warped flooring or a soft spot in the ceiling weeks later. If you're trying to figure out whether some kind of early-warning device could have caught it, or whether it's worth installing something before the next leak happens, you're asking the right question.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "sections": [
+    {
+      "eyebrow": "The basics",
+      "heading": "How a leak sensor actually detects water",
+      "body": "A leak sensor is a small battery-powered device with two exposed metal contacts on its underside. When water bridges those contacts, it completes a circuit and triggers an alert, either a local siren, a push notification to your phone, or both if the sensor is connected to a Wi-Fi hub. Some models add a probe on a cable so you can place the sensor body somewhere convenient while the probe tip sits in a tighter space, like inside a drip pan under a water heater. The technology is simple on purpose: it's not trying to measure how much water is present, just to catch the first moment water shows up somewhere it shouldn't."
+    },
+    {
+      "eyebrow": "The bigger step",
+      "heading": "What a smart shutoff valve adds",
+      "body": "A leak sensor tells you something is wrong. A smart shutoff valve can act on that information. It installs on your main water line (or sometimes on a specific branch line) and includes a motorized valve that closes automatically when it gets a signal, either from a paired leak sensor, from a flow-rate anomaly it detects on its own, or from a manual command on your phone. Some whole-home systems monitor flow constantly and can distinguish normal usage patterns from a burst pipe or a toilet that won't stop running, shutting off the water before you even know there's a problem. The tradeoff is complexity: these systems usually need professional installation and ongoing power and connectivity to function as designed."
+    },
+    {
+      "eyebrow": "Placement strategy",
+      "heading": "Where leaks most often start",
+      "body": "Placement matters more than sensor count. The appliances and fixtures most prone to failure share a few traits: they hold standing water, they have supply or drain connections that degrade over time, or they sit in a spot where a small leak won't be noticed quickly. Water heaters, washing machines, dishwashers, refrigerator ice makers, under-sink cabinets, and any exposed supply line feeding a toilet are the classic failure points. Basements, crawl spaces, and slab foundations deserve attention too, since leaks there often go undetected the longest simply because no one is looking.",
+      "cards": [
+        {
+          "heading": "High-priority spots",
+          "body": "Water heater base, washing machine hose connections, under every sink, dishwasher supply line, refrigerator water line, and near sump pumps."
+        },
+        {
+          "heading": "Often overlooked spots",
+          "body": "Behind toilets, in crawl spaces, near HVAC condensate lines, in basements below grade, and along exterior hose bibs where freeze cracks can form."
+        }
+      ]
+    },
+    {
+      "eyebrow": "Making the pieces work together",
+      "heading": "Pairing sensors with a shutoff valve",
+      "body": "The most complete setup pairs point-of-use leak sensors at the highest-risk spots with a whole-home smart shutoff valve on the main line. The sensors act as an early warning system tuned to specific appliances, while the shutoff valve is the response mechanism that limits how much water actually escapes before anyone intervenes. If budget only allows for one piece, most homeowners start with sensors at the water heater and any washing machine, since those two spots account for a large share of in-home water losses, then add a shutoff valve later. If you're weighing whether this is worth the investment for your home, it can help to think through what a slow, undetected leak would actually cost to repair versus the cost of catching it in its first hour. Our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what that repair process looks like if a leak does get ahead of you."
+    }
+  ],
+  "slug": "water-sensor-and-smart-shutoff-valves",
+  "path": "/guides/water-sensor-and-smart-shutoff-valves.html",
+  "title": "Leak Sensors & Smart Shutoff Valves: How They Work | Gold Water Fire Phoenix, AZ",
+  "type": "educational",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "photo": {
+    "src": "/assets/img/water-sensor-and-smart-shutoff-valves-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: How leak sensors and smart water shutoff valves work and where to place them"
+  }
+}
