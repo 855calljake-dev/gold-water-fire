@@ -1,0 +1,76 @@
+{
+  "slug": "water-heater-maintenance-that-prevents-leaks",
+  "path": "/guides/water-heater-maintenance-that-prevents-leaks.html",
+  "title": "Water Heater Maintenance That Prevents Leaks | Gold Water Fire Phoenix, AZ",
+  "description": "How flushing, checking the anode rod, and knowing what parts wear out can help stop a water heater leak before it starts. A Phoenix homeowner's guide.",
+  "h1": "Water Heater Maintenance That Actually Prevents Leaks",
+  "breadcrumbLabel": "Water Heater Maintenance",
+  "intro": "A water heater failure rarely announces itself in advance. One day it's working fine, and the next you're standing in an inch of water wondering how long it was leaking before you noticed. If you're reading this because you just found a puddle, or because you want to keep that from ever happening, either way you're asking the right question: what actually wears out on these things, and can it be caught early.",
+  "sections": [
+    {
+      "eyebrow": "Why tanks fail",
+      "heading": "It's usually sediment, not a sudden defect",
+      "body": "Most tank water heaters don't fail because of a manufacturing flaw. They fail because of what builds up inside them over time. Phoenix water carries a fair amount of dissolved mineral content, and every time the tank heats water, some of those minerals settle out as sediment on the bottom. Over months and years, that layer thickens. It insulates the bottom of the tank from the burner or heating element, forcing the unit to work harder and run hotter than it should. That extra heat stresses the steel and the glass lining inside the tank, and it's a major reason tanks develop small leaks or fail outright well before they should."
+    },
+    {
+      "eyebrow": "The fix",
+      "heading": "Flushing the tank: what it does and how often",
+      "body": "Flushing means draining the tank fully to clear out that sediment layer. Turn off power to the unit (or set a gas unit to pilot), connect a hose to the drain valve near the bottom, run the hose somewhere safe to drain, and open the valve to let the tank empty completely. Some homeowners flush once a year, others do it every few months depending on how hard their water is. If you've never flushed the tank and it's more than a couple years old, expect the water to come out cloudy or gritty at first. That's the sediment leaving. A tank that's gone years without flushing may have a sediment layer that's hardened, in which case flushing helps but won't undo all the wear that's already happened."
+    },
+    {
+      "eyebrow": "The part nobody checks",
+      "heading": "The anode rod: your tank's sacrificial part",
+      "body": "Every tank water heater has a metal rod, usually magnesium or aluminum, that runs down through the top of the tank. Its entire job is to corrode instead of letting the steel tank itself corrode. That's why it's called a sacrificial anode: it's designed to wear away over time so the tank doesn't have to. Once the rod is mostly consumed, the tank has no more protection, and corrosion starts eating at the tank walls instead. Checking the rod means unscrewing it from the top of the tank (a socket wrench and some space above the unit are usually needed) and looking at how much bare wire core is showing through the metal coating. A rod that's down to a thin wire core, or coated in a thick calcium crust, has stopped doing its job and needs to be replaced."
+    },
+    {
+      "eyebrow": "What else wears out",
+      "heading": "Other parts worth knowing about",
+      "body": "The temperature and pressure relief (T&P) valve is a safety part that releases water if pressure or temperature inside the tank gets too high. It can also fail in place, either weeping small amounts of water or seizing shut, so it's worth testing occasionally by lifting its lever briefly. The drain valve itself, often plastic, can crack or start seeping after years of mineral exposure. And the tank's inlet and outlet fittings, along with the flexible or rigid supply lines, can corrode at the connection points, which is often where a slow leak first shows up as a damp spot or mineral crust rather than an obvious drip."
+    },
+    {
+      "eyebrow": "When to stop DIY-ing it",
+      "heading": "Signs the tank itself is past maintenance",
+      "body": "Maintenance helps with wear that's still in progress, but it can't reverse a tank that's already rusted through or cracked internally. Rust-colored water, a tank that's rumbling or popping loudly during heating (a sign of a thick, hardened sediment layer), or any visible moisture at the base of the tank that isn't from a fitting are signs the tank's structure may already be compromised. At that point flushing or replacing the anode rod won't stop a leak that's already started. If you're seeing active water at the base of the unit, it's worth shutting off the water supply to the heater and getting a look at it before it gets worse. Our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what to do if a leak has already reached your floors or walls."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should I flush my water heater?",
+      "a": "Many manufacturers recommend once a year, though homes with harder water may benefit from flushing every few months. If a tank has gone several years without a flush, expect a heavier sediment discharge the first time."
+    },
+    {
+      "q": "How do I know if my anode rod needs replacing?",
+      "a": "Remove it and look at the exposed core wire. If more than a few inches of core wire are visible, or the rod is coated in a thick chalky buildup, it's time to replace it. Anode rods are inexpensive compared to a tank replacement."
+    },
+    {
+      "q": "Can flushing fix a water heater that's already leaking?",
+      "a": "No. Flushing and anode rod replacement are preventive steps that slow future wear. If the tank has already developed a crack or rust-through, maintenance won't stop that leak, and the unit likely needs replacement."
+    },
+    {
+      "q": "Is it normal for a water heater to make popping or rumbling sounds?",
+      "a": "Popping or rumbling during heating usually means a hardened sediment layer is trapping water underneath it, which boils and pushes through. It's a sign the tank is overdue for a flush and is running under more stress than it should."
+    }
+  ],
+  "cta": {
+    "heading": "Already dealing with water on the floor?",
+    "body": "If a water heater leak has reached your flooring, walls, or belongings, we're here to help. Reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, no pressure, just a place to start."
+  },
+  "evidence": "This page states general water heater maintenance practices as industry knowledge; no specific claims about Gold Water Fire's own work are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "photo": {
+    "src": "/assets/img/water-heater-maintenance-that-prevents-leaks-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Water heater maintenance that actually prevents leaks: flushing, the anode rod, and what wears out"
+  }
+}
