@@ -1,0 +1,83 @@
+{
+  "slug": "reverse-osmosis-system-leaks",
+  "path": "/guides/reverse-osmosis-system-leaks.html",
+  "title": "RO System Cabinet Leaks: What's Really Happening Under the Sink | Gold Water Fire Phoenix, AZ",
+  "description": "Why reverse osmosis systems quietly damage cabinets in Phoenix homes, and how to spot the signs before the wood swells and mold sets in.",
+  "h1": "Reverse Osmosis Systems Under the Sink: Small Tubing, Big Cabinet Damage",
+  "breadcrumbLabel": "RO System Leaks",
+  "intro": "You open the cabinet under the kitchen sink to grab something and the smell hits you first, something musty and a little sour. Then you see it: the particleboard is swollen along one edge, maybe soft enough that your finger sinks in when you press it. You didn't spill anything. Nothing's been leaking that you noticed, not in any way that seemed worth worrying about. It's confusing, because the damage looks like it's been building for a while, and you have no idea when it started or how much worse it already is underneath what you can see.",
+  "sections": [
+    {
+      "heading": "Why RO systems leak so quietly",
+      "body": "A reverse osmosis system is a small network of plastic tubing, push-fit connectors, a membrane housing, and often a separate faucet and storage tank, all packed into the same cramped space as your garbage disposal, shutoff valves, and stored cleaning supplies. Every one of those push-fit fittings is a potential drip point, and RO systems run under constant water pressure between the shutoff and the storage tank, not just when you use the faucet. A connector that loosens slightly from vibration, temperature change, or age doesn't necessarily spray water. It weeps. A few drops a day, landing in the same spot on the cabinet floor or back wall, for weeks or months before anyone notices.",
+      "soft": true
+    },
+    {
+      "heading": "Where to actually look",
+      "body": "Cabinet damage from an RO system rarely starts where you'd expect. Check the back corner behind the unit first, since that's where drips tend to collect against the cabinet wall rather than the visible front edge. Pull the RO unit and any stored items out and look at the actual cabinet floor, not just what's visible around them. Run a hand along the bottom of the cabinet toward the wall. Soft, spongy, or darkened wood means moisture has been sitting there long enough to break down the wood fibers. Check the membrane housing and storage tank connections specifically, since those are pressurized fittings that see more stress than the drain line or faucet tubing.",
+      "cards": [
+        {
+          "heading": "Signs worth taking seriously",
+          "body": "A musty smell when you open the cabinet, swollen or delaminating particleboard, discoloration on the cabinet floor or back panel, a slow drop in water pressure at the RO faucet, or visible mineral crust around any fitting."
+        },
+        {
+          "heading": "Why the damage outpaces the leak",
+          "body": "Cabinet interiors are usually unfinished particleboard or MDF, materials that absorb water fast and don't dry on their own in an enclosed space. A leak that would evaporate on a tile floor instead soaks into the wood and stays there."
+        }
+      ]
+    },
+    {
+      "heading": "What happens if it keeps going",
+      "body": "Left alone, a slow RO leak follows a fairly predictable path. First the cabinet floor swells and softens. Then, if the leak is near the back wall, moisture can migrate to the wall itself, especially if the sink cabinet backs onto drywall rather than tile. Trapped moisture in an enclosed, dark cabinet is close to ideal conditions for mold growth, which can start within a couple of days of sustained dampness. By the time the smell is noticeable or the wood is visibly warped, the damage is usually deeper than what's showing on the surface, including the subfloor beneath the cabinet in some cases.",
+      "soft": true
+    },
+    {
+      "heading": "What to do once you've found it",
+      "body": "Shut off the cold water supply valve feeding the RO system before anything else. Wipe down all visible moisture and, if you can safely do so, remove items from the cabinet so air can reach the affected area. Do not simply close the cabinet door and hope it dries on its own, since enclosed spaces trap humidity rather than releasing it. If the wood is soft, discolored, or smells musty, that material has likely absorbed more water than a surface wipe-down will resolve, and it's worth having someone assess whether the cabinet base, back panel, or subfloor needs to be opened up and dried properly. You can read more about how <a href=\"/water-damage-restoration.html\">water damage restoration</a> works, or what's involved if cabinetry needs to be rebuilt through <a href=\"/reconstruction.html\">reconstruction and rebuild</a> work."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my RO system is leaking if I never see standing water?",
+      "a": "Look for indirect signs instead: a musty smell in the cabinet, swollen or soft particleboard, dark staining on the cabinet floor or back wall, or a change in water pressure at the RO faucet. Slow leaks often show up as damage before they show up as visible water."
+    },
+    {
+      "q": "Is it safe to keep using the RO system if I find a small leak?",
+      "a": "Shut off the cold water supply valve to the unit until the source of the leak is found and fixed. Continuing to use a system with a loose fitting or cracked housing just adds more water to cabinet materials that may already be saturated."
+    },
+    {
+      "q": "Can a cabinet be saved once the wood has swelled?",
+      "a": "It depends on how deep the moisture has gone and how long it sat there. Mild swelling on a cabinet floor can sometimes be dried and sealed, but delaminated or soft wood usually needs to be cut out and replaced to stop mold and further breakdown."
+    },
+    {
+      "q": "Does homeowners insurance cover RO system leak damage?",
+      "a": "Coverage depends on your specific policy and how the leak is classified, so it's worth checking your policy details or talking with your insurance provider directly about your situation."
+    }
+  ],
+  "cta": {
+    "heading": "Found damage under your sink?",
+    "body": "If a slow leak has already reached the cabinet or subfloor, Gold Water Fire can take a look and walk you through what it will take to dry it out or rebuild it right. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general, publicly known information about how RO systems and cabinet moisture behave, and makes no specific claims about Gold Water Fire's own job history.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "photo": {
+    "src": "/assets/img/reverse-osmosis-system-leaks-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Reverse osmosis systems under the sink: small tubing, big cabinet damage"
+  }
+}
