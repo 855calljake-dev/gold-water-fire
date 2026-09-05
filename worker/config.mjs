@@ -57,6 +57,9 @@ export function loadConfig() {
     // enforce: §2.2's rollout rule — a new judgment gate does not hard-block
     // until two shadow batches have been human-spot-checked. Flip via env, no
     // code change.
-    verifyMode: (process.env.RUNTIME_VERIFY_MODE || "shadow").toLowerCase(),
+    // Flipped shadow -> enforce 2026-09-04 per Jake's standing order once the
+    // shadow batches checked clean: 3 batches (PRs #28/#29/#31), ~110 verdicts,
+    // 0 false positives, 2 genuine catches. RUNTIME_VERIFY_MODE still overrides.
+    verifyMode: (process.env.RUNTIME_VERIFY_MODE || "enforce").toLowerCase(),
   };
 }
