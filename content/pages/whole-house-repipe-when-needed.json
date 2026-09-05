@@ -1,0 +1,90 @@
+{
+  "slug": "whole-house-repipe-when-needed",
+  "path": "/guides/whole-house-repipe-when-needed.html",
+  "title": "Whole House Repipe vs Spot Repair: How to Tell | Gold Water Fire Phoenix, AZ",
+  "description": "Not sure if another leak means it's time to repipe? Here's how to tell the difference between a one-off repair and a failing plumbing system.",
+  "h1": "When a House Needs a Full Repipe Instead of Another Spot Repair",
+  "breadcrumbLabel": "Whole House Repipe Guide",
+  "intro": "If this is the second or third leak you've dealt with in the same house, you're probably starting to wonder if the last repair even fixed anything, or if you're just patching a problem that's bigger than one pipe. That question is exhausting to sit with, especially when each repair costs money and each new leak means another round of drying out walls or floors. You're not overreacting. A pattern of leaks in a house is worth taking seriously, and it's fair to want a straight answer about what's actually going on before you spend money on another patch.",
+  "sections": [
+    {
+      "heading": "Why one leak is different from a pattern of leaks",
+      "body": "A single leak, especially one caused by a nail through a wall, a bad fitting, or a one-time freeze event, is usually an isolated problem. Fixing that section of pipe solves it. But when leaks show up in different rooms, at different times, with no obvious outside cause, that's a different story. It usually means the pipe material itself is breaking down from the inside, and the leak you can see is just the first place it happened to give way. The rest of the system is aging on the same clock, even if it hasn't failed yet."
+    },
+    {
+      "heading": "Signs that point to the whole system, not one section",
+      "body": "A few patterns tend to show up when a house needs more than a spot repair. Discolored water (rusty, brown, or yellow) coming from multiple fixtures, not just one. Noticeably low water pressure throughout the house rather than at a single tap. Pinhole leaks appearing in more than one location over a period of months or years. Visible corrosion, flaking, or blue-green staining on exposed pipe at the water heater or under sinks. And the age and material of the pipe itself matters a lot here: galvanized steel pipe installed decades ago and older polybutylene pipe are both known to fail from the inside out, and once one section starts going, the rest is usually not far behind.",
+      "cards": [
+        {
+          "heading": "Galvanized steel",
+          "body": "Corrodes from the inside, narrowing the pipe over time. Low pressure and rusty water are the classic warning signs, and once it starts leaking in one spot, more leaks tend to follow within the same system."
+        },
+        {
+          "heading": "Polybutylene",
+          "body": "A plastic pipe used in some homes in past decades that's prone to becoming brittle and failing at fittings, often without much warning."
+        },
+        {
+          "heading": "Copper pipe with pinhole leaks",
+          "body": "Can develop small leaks from water chemistry or installation issues. A single pinhole may be isolated, but several appearing over time in different spots suggests a broader issue with that copper run."
+        }
+      ]
+    },
+    {
+      "heading": "What a spot repair can and can't fix",
+      "body": "A spot repair replaces the failed section and stops the leak you know about. It doesn't tell you anything about the condition of the pipe you can't see, and it doesn't reset the clock on a material that's failing due to age or corrosion rather than a one-time accident. If the underlying pipe is the problem, a spot repair buys time, but it doesn't change the trajectory. That's a reasonable choice for some households, especially if a repipe isn't in the budget right now, but it helps to go into that decision knowing what it is and isn't solving."
+    },
+    {
+      "heading": "How a repipe actually works",
+      "body": "A whole house repipe replaces the water supply lines throughout the home, typically with modern copper or PEX piping, run in a way that avoids the failure points of the old material. It's disruptive: it usually involves opening some walls or ceilings to access old pipe runs, and living around that work for a stretch of time. But it also means one project instead of a string of repairs, and no longer wondering where the next leak is going to be. If a leak has already caused water damage, that mitigation and drying work is a separate process from the repipe itself, though the two often get planned together since walls may already be open.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my pipes are galvanized steel or copper?",
+      "a": "Galvanized pipe is typically gray or dark, threaded at joints, and magnetic (a magnet will stick to it). Copper is reddish brown and not magnetic. If you're not sure, a plumber can identify it quickly by looking at an exposed section near the water heater or in a basement or crawlspace."
+    },
+    {
+      "q": "Does a repipe mean tearing out all my walls?",
+      "a": "Not necessarily all of them. Repipe work usually requires access points to reach existing pipe runs, but a lot of it can be done through targeted openings rather than removing entire walls. The exact scope depends on how the original plumbing was routed."
+    },
+    {
+      "q": "Can I just keep doing spot repairs instead?",
+      "a": "You can, and for some homes with an isolated issue, that's the right call. The tradeoff is that if the underlying pipe material is failing from age or corrosion, spot repairs address each leak as it happens without resolving the reason they're happening in the first place."
+    },
+    {
+      "q": "Is a repipe only necessary after a big leak?",
+      "a": "No. Some homeowners choose to repipe proactively once they recognize the warning signs (low pressure, discolored water, aging galvanized or polybutylene pipe) rather than waiting for the next failure."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure which situation you're in?",
+    "body": "If you're dealing with a leak or water damage right now and trying to figure out what caused it, Gold Water Fire can take a look and talk through what's actually going on with your plumbing. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page describes general plumbing and restoration industry knowledge about pipe materials and failure patterns, not a specific claim about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "photo": {
+    "src": "/assets/img/whole-house-repipe-when-needed-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: When a house needs a full repipe instead of another spot repair"
+  }
+}
