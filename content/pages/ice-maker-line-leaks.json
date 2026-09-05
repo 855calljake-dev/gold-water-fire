@@ -1,0 +1,75 @@
+{
+  "breadcrumbLabel": "Ice Maker Line Leaks",
+  "cta": {
+    "heading": "Noticed warped flooring or a musty smell near the kitchen?",
+    "body": "If you suspect a slow leak behind the refrigerator, our team can help you understand what you're dealing with and what it takes to dry it out properly. Reach out through our contact page or call to talk through what you're seeing."
+  },
+  "description": "Why refrigerator ice maker line leaks can run for weeks without being noticed, and what actually happens to the floor and cabinets underneath.",
+  "evidence": "This page states general appliance and water damage knowledge only; no claims are made about a specific Gold Water Fire job or outcome.",
+  "faqs": [
+    {
+      "q": "How do I know if my ice maker line is leaking?",
+      "a": "Common signs include a musty smell near the kitchen, warped or soft flooring in front of or beside the refrigerator, a slow-draining sense that the floor feels different underfoot, or visible staining on cabinets adjacent to the fridge. Sometimes the first sign is a spike in the water bill with no obvious cause."
+    },
+    {
+      "q": "Can a slow leak cause mold even if I never see standing water?",
+      "a": "Yes. Mold only needs moisture, a food source (subfloor, drywall, cabinet backing), and time. A line that drips slowly into a dark, enclosed space behind a refrigerator can create ideal mold conditions for weeks before it becomes visible or produces a smell strong enough to notice."
+    },
+    {
+      "q": "Is it safe to just tighten or replace the line myself?",
+      "a": "Shutting off the water supply and replacing a damaged line is often within reach for a handy homeowner, but that only stops new water from entering. It does not address moisture already trapped in flooring, subfloor, or cabinetry, which needs to be assessed and dried separately."
+    },
+    {
+      "q": "Why does the leak stay hidden for so long?",
+      "a": "The refrigerator sits flush against the wall and is rarely moved, the connection point is low to the ground and out of sightline, and floors like tile and vinyl plank can absorb a surprising amount of water before it surfaces anywhere visible."
+    }
+  ],
+  "h1": "Ice Maker Line Leaks Behind the Refrigerator: Why They Run for Weeks Unseen",
+  "intro": "You've probably walked past your refrigerator a hundred times without a second thought. It hums along, makes ice, keeps food cold, and asks for nothing except a filter change every so often. So when something feels slightly off, a faint smell you can't place, a patch of flooring that seems softer than it used to be, it's easy to second-guess yourself. Nothing looks wrong. There's no puddle, no obvious sign. That gap between something feels off and I can't find proof is one of the most disorienting parts of a hidden leak. You're not imagining it, and you're not wrong to keep noticing.",
+  "sections": [
+    {
+      "heading": "The connection point nobody looks at",
+      "body": "Most refrigerators with an ice maker or water dispenser are fed by a thin plastic or copper line that runs from a shutoff valve, usually behind the fridge or under a nearby sink, to a fitting on the back of the appliance. That fitting is low, tucked against the wall, and sits in a gap most people never look into after the day the refrigerator was installed. Plastic supply lines can become brittle and crack over time from being kinked against the wall. Compression fittings can loosen slightly from years of the refrigerator vibrating as its compressor cycles on and off. None of this makes noise. None of it announces itself. It just drips, a little at a time, into a space that's dark, enclosed, and almost never disturbed.",
+      "eyebrow": "How it starts"
+    },
+    {
+      "heading": "Why weeks can pass before anyone notices",
+      "body": "A few things work together to keep this kind of leak invisible for far longer than most people would expect. First, refrigerators are heavy and awkward to move, so they tend to stay in place for years at a stretch, which means the area behind and under them is rarely inspected. Second, many kitchen floors, tile, vinyl plank, laminate, are able to absorb or channel water sideways before it ever surfaces where you'd see it, so the leak can travel toward a wall or under a cabinet run before it shows up anywhere near the fridge itself. Third, a slow drip doesn't behave like a burst pipe. It doesn't create a puddle that demands attention. It just adds a small amount of moisture day after day, and that steady low-level dampness is exactly the condition mold and wood rot need to take hold.",
+      "eyebrow": "The hidden timeline"
+    },
+    {
+      "heading": "What that slow moisture actually does",
+      "body": "Water doesn't need to be dramatic to cause damage. Subfloor material, especially particleboard or OSB commonly used under kitchen flooring, swells and weakens when it stays damp, even if the surface flooring above it looks intact. Cabinet bases and toe kicks near the refrigerator can absorb moisture from the side, causing the wood to swell, delaminate, or darken. Baseboards and drywall at the base of a nearby wall can wick water upward, which sometimes shows up as bubbling paint or a soft spot well after the leak itself has been found and stopped. And because the space behind a refrigerator has little airflow, any moisture that collects there has no way to dry out on its own, which is exactly the kind of environment where mold growth becomes a real concern rather than a hypothetical one.",
+      "eyebrow": "Under the surface"
+    },
+    {
+      "heading": "What an assessment actually involves",
+      "body": "Understanding the scope of a hidden leak usually means more than looking at the visible stain or soft spot. It typically involves checking moisture levels in the subfloor and surrounding materials with a meter, not just a visual inspection, since water travels sideways and can affect a wider area than what's obviously damaged. It also means tracing the actual source, confirming whether the ice maker line is the culprit or whether there's a secondary issue like a drain pan or dishwasher line contributing to it. If you're trying to understand what's involved in properly resolving water damage once it's found, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through that process in more detail, and if the damage has reached the point of needing flooring, subfloor, or cabinetry replaced, our <a href=\"/reconstruction.html\">reconstruction and rebuild</a> page covers what that typically involves.",
+      "eyebrow": "Getting a clear picture"
+    }
+  ],
+  "slug": "ice-maker-line-leaks",
+  "title": "Ice Maker Line Leaks Behind the Refrigerator | Gold Water Fire, Phoenix, AZ",
+  "path": "/guides/ice-maker-line-leaks.html",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "photo": {
+    "src": "/assets/img/ice-maker-line-leaks-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Ice maker line leaks behind the refrigerator: why they run for weeks unseen"
+  }
+}
