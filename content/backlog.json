@@ -1736,6 +1736,1203 @@
       "topic": "Why the water source is stopped and repaired before any drying equipment goes in",
       "faithLoopPhase": "reflection",
       "status": "drafted"
+    },
+    {
+      "type": "educational",
+      "slug": "water-sensor-and-smart-shutoff-valves",
+      "topic": "How leak sensors and smart water shutoff valves work and where to place them",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "braided-vs-rubber-supply-lines",
+      "topic": "Braided stainless vs rubber appliance supply lines, and why they fail",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "angle-stop-valve-failures",
+      "topic": "Angle stop valves under sinks and toilets: why the little shutoff fails when you finally need it",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-pressure-regulator-failure",
+      "topic": "How a failed pressure regulator quietly stresses every pipe and fixture in the house",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-heater-maintenance-that-prevents-leaks",
+      "topic": "Water heater maintenance that actually prevents leaks: flushing, the anode rod, and what wears out",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ice-maker-line-leaks",
+      "topic": "Ice maker line leaks behind the refrigerator: why they run for weeks unseen",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "reverse-osmosis-system-leaks",
+      "topic": "Reverse osmosis systems under the sink: small tubing, big cabinet damage",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "whole-house-repipe-when-needed",
+      "topic": "When a house needs a full repipe instead of another spot repair",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "older-pipe-materials-arizona-homes",
+      "topic": "Older pipe materials in Arizona homes and what they mean for leak risk",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "copper-pinhole-leaks",
+      "topic": "Pinhole leaks in copper pipe: what causes them and how they show up",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "pex-vs-copper-after-a-leak",
+      "topic": "PEX vs copper when repairs are needed after a leak",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "bathtub-overflow-drain-failure",
+      "topic": "The bathtub overflow drain: the backup protection that sometimes is not connected to anything",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "drain-leaks-under-sinks",
+      "topic": "Drain-side leaks under sinks: P-traps, slip joints, and why they loosen",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "washer-drain-pans-and-floor-drains",
+      "topic": "Washer drain pans and floor drains: what they can and cannot protect",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "upstairs-laundry-room-leak-risk",
+      "topic": "What an upstairs laundry room means for leak risk and what to check",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "bidet-and-toilet-supply-leaks",
+      "topic": "Bidet attachments and toilet supply connections: a newly common leak point",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-hammer-and-pipe-stress",
+      "topic": "Water hammer: the banging pipes that are also a warning",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "recirculating-pump-leaks",
+      "topic": "Hot water recirculating pumps and the leaks they can develop",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "misting-system-water-intrusion",
+      "topic": "Patio misting systems and water intrusion at the roofline",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "skylight-leak-signs",
+      "topic": "Skylight leaks: how to tell the flashing failed before the ceiling stains spread",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "flat-roof-ponding-arizona",
+      "topic": "Ponding on flat and low-slope roofs in Arizona and where the water goes",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "parapet-wall-leaks",
+      "topic": "Parapet walls on Southwest homes: a leak path most homeowners never think about",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "scupper-and-canale-drainage",
+      "topic": "Scuppers and canales: keeping flat-roof drainage clear before monsoon season",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "stem-wall-moisture-wicking",
+      "topic": "Moisture wicking at the stem wall: why paint bubbles at the base of exterior walls",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "french-drains-on-desert-lots",
+      "topic": "French drains on desert lots: when grading alone is not enough",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "sliding-door-track-water-intrusion",
+      "topic": "Water coming in at sliding door tracks during storms",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "balcony-and-deck-waterproofing-failure",
+      "topic": "Balcony and deck waterproofing failures above living space",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "shower-glass-enclosure-leaks",
+      "topic": "Shower enclosure leaks at the glass and curb: small gaps, rotted framing",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "grout-and-caulk-failure-showers",
+      "topic": "Failed grout and caulk in showers: how water gets behind tile",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "steam-shower-moisture-management",
+      "topic": "Steam showers and moisture management in the walls around them",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "tracing-attic-water-stains",
+      "topic": "Tracing attic water stains back to the real entry point",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "evaporative-cooler-winterization",
+      "topic": "Evaporative cooler winterization: the shutdown steps that prevent spring surprises",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "casita-and-guest-house-water-damage",
+      "topic": "Casitas and guest houses: why detached spaces flood quietly",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "rv-garage-and-workshop-water-damage",
+      "topic": "RV garages and workshops: water damage in spaces nobody monitors daily",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "aquarium-and-large-tank-failures",
+      "topic": "Aquarium failures: hundreds of gallons in the living room",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "space-heater-fire-safety",
+      "topic": "Space heaters: the clearances and habits that prevent most of their fires",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "candle-fire-risk",
+      "topic": "Candle fires: how they start and what changes the risk",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "extension-cord-and-power-strip-fires",
+      "topic": "Extension cords and power strips: how overloading turns into a fire",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ev-charging-safety-at-home",
+      "topic": "Charging an electric vehicle at home: circuit requirements and fire safety basics",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "golf-cart-battery-charging-fires",
+      "topic": "Golf cart and scooter battery charging: a growing garage fire source",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "rooftop-solar-electrical-fire-basics",
+      "topic": "Rooftop solar and electrical fire basics: what homeowners should know",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "lightning-strike-house-fires",
+      "topic": "Lightning strikes: what they do to wiring, and the fires that start hours later",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "fireworks-and-ember-ignition",
+      "topic": "Fireworks and ember ignition around homes: roofs, yards, and gutters",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "attic-fan-and-appliance-motor-fires",
+      "topic": "Attic fans and appliance motors: the small motors that overheat",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "oven-and-self-cleaning-cycle-fires",
+      "topic": "Oven fires and self-cleaning cycles: what goes wrong",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "grease-fire-response",
+      "topic": "Grease fires: why water makes them worse and what to do instead",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "home-fire-extinguisher-types",
+      "topic": "Home fire extinguishers: the types, where to keep them, when to use one and when to leave",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "smoke-only-damage-claims",
+      "topic": "Smoke-only damage claims: when nothing burned but everything smells",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "partial-loss-vs-total-loss-fire",
+      "topic": "Partial loss vs total loss after a fire: what the difference means for rebuilding",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "how-a-structure-fire-spreads",
+      "topic": "How a structure fire spreads: flashover, ventilation, and why damage patterns look the way they do",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ember-intrusion-attic-vents",
+      "topic": "Ember intrusion through attic vents during wildfire season",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "defensible-space-desert-homes",
+      "topic": "Defensible space for desert homes: what actually burns around a house here",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "smoke-inside-wall-cavities",
+      "topic": "Smoke inside wall cavities: why odor comes back after surface cleaning",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "smoke-contaminated-insulation",
+      "topic": "Why smoke-contaminated insulation gets replaced, not cleaned",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "electrical-panel-after-a-fire",
+      "topic": "The electrical panel after a fire: what inspectors look for before power comes back",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "aluminum-wiring-fire-risk",
+      "topic": "Aluminum branch wiring in older homes: the fire risk and the fixes",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "heat-damage-without-flames",
+      "topic": "Heat damage without flames: melted windows, warped siding, radiant exposure",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "pool-pump-and-equipment-fires",
+      "topic": "Pool pump and equipment fires: motors, timers, and dry running",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "smoking-material-fires",
+      "topic": "Smoking material fires: how they smolder for hours before igniting",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "fire-hazards-children-find",
+      "topic": "Fire hazards children create and find: lighters, outlets, stoves",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hydroxyl-generators-vs-ozone",
+      "topic": "Hydroxyl generators vs ozone: how each removes odor and when each is used",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "air-scrubbers-vs-air-purifiers",
+      "topic": "Air scrubbers vs household air purifiers: what a restoration machine does differently",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hepa-vacuuming-fire-cleanup",
+      "topic": "HEPA vacuuming in fire cleanup: why regular vacuums make it worse",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "chemical-dry-sponge-soot-cleaning",
+      "topic": "Chemical dry sponges: why soot smears when you wipe it wet",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "cigarette-residue-in-a-purchased-home",
+      "topic": "Cigarette residue in a home you just bought: what removal actually involves",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "pet-odor-vs-smoke-odor-treatment",
+      "topic": "Pet odor vs smoke odor: different sources, different treatments",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "sealing-vs-cleaning-odor-sources",
+      "topic": "When surfaces get sealed instead of cleaned: primers and encapsulants after a fire",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "laundering-smoke-damaged-fabrics",
+      "topic": "What can be laundered after smoke exposure and what needs specialty cleaning",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "the-science-of-drying-a-house",
+      "topic": "The science of drying a house, explained simply: temperature, humidity, and airflow",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "desiccant-vs-refrigerant-dehumidifiers",
+      "topic": "Desiccant vs refrigerant dehumidifiers: why the equipment changes with conditions",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "how-dry-is-dry-drying-goals",
+      "topic": "Drying goals: how the industry decides a material is dry, not just dry-looking",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "moisture-mapping-explained",
+      "topic": "Moisture mapping: how the wet area gets drawn before drying starts",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "floor-mat-drying-systems",
+      "topic": "Floor mat drying systems: rescuing hardwood without tearing it out",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "injection-drying-wall-cavities",
+      "topic": "Injection drying wall cavities: drying inside walls without full demolition",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "drying-chambers-and-zone-drying",
+      "topic": "Drying chambers: why plastic sheeting goes up to dry one area faster",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "why-drying-equipment-moves-daily",
+      "topic": "What happens during daily monitoring visits, and why the equipment moves",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "when-drying-takes-longer-than-expected",
+      "topic": "When drying takes longer than expected: dense materials, hidden pockets, weather",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "drying-a-concrete-slab",
+      "topic": "Drying a concrete slab: why it holds water longer than anything else in the house",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "cabinets-dried-in-place",
+      "topic": "When cabinets can be dried in place and when they come out",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "which-insulation-survives-getting-wet",
+      "topic": "Which insulation survives getting wet and which is finished the moment it soaks",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "monsoon-humidity-and-indoor-mold",
+      "topic": "Monsoon humidity and indoor mold: why Arizona's dry reputation misleads in August",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "bathroom-exhaust-fans-and-moisture",
+      "topic": "Bathroom exhaust fans: the moisture control most homes underuse",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "attic-mold-in-a-dry-climate",
+      "topic": "Attic mold in Arizona: how it happens in a dry climate",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "mold-on-window-sills",
+      "topic": "Mold on window sills and frames: condensation in an air-conditioned home",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "musty-smell-no-visible-mold",
+      "topic": "A musty smell with no visible mold: where to look and what it means",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "indoor-humidity-targets",
+      "topic": "Indoor humidity targets that keep mold from getting started",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "antimicrobials-in-water-cleanup",
+      "topic": "Antimicrobial treatments in water cleanup: what they do and do not do",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "mold-behind-furniture-and-in-closets",
+      "topic": "Mold behind furniture and in closets: airflow dead zones",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "recorded-statement-property-claim",
+      "topic": "The recorded statement in a property claim: what it is and how to prepare",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "appraisal-clause-explained",
+      "topic": "The appraisal clause: the dispute path built into most property policies",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ordinance-or-law-coverage",
+      "topic": "Ordinance or law coverage: who pays when code requires more than you had",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "the-matching-problem-in-repairs",
+      "topic": "The matching problem: when new materials cannot match old, and what policies say",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "mortgage-company-on-your-claim-check",
+      "topic": "Why the mortgage company is on your claim check and how the endorsement process works",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "recovering-depreciation-holdback",
+      "topic": "The replacement-cost holdback: how recoverable depreciation actually gets paid out",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "building-a-contents-inventory",
+      "topic": "Building a contents inventory after a loss: the method that keeps it manageable",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "duties-after-loss-in-your-policy",
+      "topic": "The duties-after-loss section of your policy: what it obligates you to do",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "why-policies-require-mitigation",
+      "topic": "Why policies require you to prevent further damage, starting immediately",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "reopening-a-claim-hidden-damage",
+      "topic": "Reopening a claim when damage shows up after repairs began",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "vacancy-clauses-in-insurance",
+      "topic": "Vacancy clauses: how an empty home changes what a policy covers",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "sewer-backup-endorsement",
+      "topic": "The sewer backup endorsement: why base policies often exclude it",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "roof-age-and-claim-settlements",
+      "topic": "Roof age and claim settlements: actual-cash-value roof schedules and what they change",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hail-damage-inspection-basics",
+      "topic": "Hail damage in Arizona: what inspectors look for on roofs and soft metals",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "wind-damage-vs-wear-and-tear",
+      "topic": "Wind damage vs wear and tear: the line adjusters draw on roofs",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "multiple-claims-in-one-year",
+      "topic": "Multiple claims in one year: how frequency affects a homeowner",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "insurer-preferred-vendor-programs",
+      "topic": "Insurer preferred vendor programs: what they are and what your choice rights are",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "choosing-your-own-restoration-contractor",
+      "topic": "Your right to choose your own restoration contractor, and how to exercise it",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "what-adjusters-scope-first-visit",
+      "topic": "What the adjuster scopes on the first visit and what to have ready",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "depreciation-on-contents",
+      "topic": "How depreciation is applied to contents, category by category",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "flood-insurance-in-arizona",
+      "topic": "Flood insurance in Arizona: who needs it and what the base policy will not do",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "monsoon-claims-wind-vs-water",
+      "topic": "Monsoon claims: how wind, rain, and flooding get untangled in one storm",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "framing-repairs-after-damage",
+      "topic": "Framing repairs: sistering, replacement, and when an engineer gets involved",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "subfloor-replacement-basics",
+      "topic": "Subfloor replacement: what is under your flooring and when it must go",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "drywall-finishing-levels",
+      "topic": "Drywall finishing levels: why the same wall can be priced five ways",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "roof-truss-repairs",
+      "topic": "Roof truss repairs vs stick framing: why trusses cannot just be cut and patched",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "luxury-vinyl-plank-after-water",
+      "topic": "Luxury vinyl plank after water: waterproof flooring over a floor that is not",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "laminate-flooring-and-water",
+      "topic": "Laminate flooring and water: why it swells and rarely recovers",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "carpet-restretch-vs-replace",
+      "topic": "Carpet after drying: restretching, cleaning, and when replacement wins",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "what-belongs-behind-shower-tile",
+      "topic": "Rebuilding a shower: what belongs behind the tile in a modern build",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "matching-paint-on-sun-faded-walls",
+      "topic": "Matching paint on sun-faded walls: why the old color chip lies",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "stucco-patch-matching",
+      "topic": "Stucco patch matching: texture, color coat, and why patches show",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "matching-discontinued-roof-tile",
+      "topic": "Matching discontinued roof tile: the options when yours is no longer made",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "garage-doors-after-damage",
+      "topic": "Garage doors after impact or fire: repair, replacement, and spring safety",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "smart-home-wiring-during-reconstruction",
+      "topic": "Low-voltage and smart home wiring during reconstruction",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "duct-replacement-vs-cleaning",
+      "topic": "Duct replacement vs cleaning after damage: how the call gets made",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "change-orders-explained",
+      "topic": "Change orders: why they exist and how to keep them from derailing a rebuild",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "allowances-in-rebuild-contracts",
+      "topic": "Allowances in a rebuild contract: the placeholder numbers to watch",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "lien-waivers-explained",
+      "topic": "Lien waivers: the paperwork that protects you as a rebuild gets paid for",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "living-in-the-house-during-reconstruction",
+      "topic": "Living in the house during reconstruction: what works and what does not",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "dust-control-during-interior-construction",
+      "topic": "Dust control during interior construction: what a clean job looks like",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "material-lead-times-in-rebuilds",
+      "topic": "Material lead times: why a finished-looking job waits on a window",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "verifying-an-arizona-roc-license",
+      "topic": "How to verify an Arizona contractor's ROC license and what the classifications mean",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "contractor-insurance-what-to-verify",
+      "topic": "What insurance a contractor should carry and how to confirm it",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "deposits-and-payment-schedules-arizona",
+      "topic": "Deposits and payment schedules on Arizona home projects: what is customary",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "final-inspection-and-occupancy",
+      "topic": "Final inspections and when a certificate of occupancy matters in a rebuild",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "business-interruption-insurance-basics",
+      "topic": "Business interruption coverage: how it works while a property is being restored",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "office-water-damage-recovery",
+      "topic": "Office water damage: electronics, records, and getting a team back in",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "retail-store-damage-recovery",
+      "topic": "Retail after damage: inventory, fixtures, and staying open through repairs",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "warehouse-water-damage",
+      "topic": "Warehouse water events: racking, product, and concrete drying at scale",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "medical-and-dental-office-water-damage",
+      "topic": "Medical and dental offices after water damage: equipment and compliance stakes",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "schools-and-daycares-after-damage",
+      "topic": "Schools and daycares after damage: air quality and reopening standards",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "church-and-worship-space-restoration",
+      "topic": "Churches and worship spaces: pews, organs, and finishes that need specialty care",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "gym-and-locker-room-moisture",
+      "topic": "Gyms and locker rooms: the constant-moisture spaces that fail quietly",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "salon-and-restaurant-water-lines",
+      "topic": "Salons and restaurants: the water-line density that raises leak risk",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "server-room-water-event",
+      "topic": "Server rooms and water: what survives, what to power down, what to call first",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "commercial-lease-damage-responsibility",
+      "topic": "Commercial leases and damage: how triple-net and gross leases split responsibility",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "tenant-improvements-after-damage",
+      "topic": "Tenant improvements after damage: whose policy covers the buildout",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "stacked-apartment-unit-leaks",
+      "topic": "Stacked apartment leaks: how one unit's failure becomes four claims",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hotel-guest-room-water-damage",
+      "topic": "Hotels: taking rooms offline and the pace of restoration around guests",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "the-pack-out-process-explained",
+      "topic": "The pack-out: how belongings are inventoried, moved, and stored during restoration",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "ultrasonic-contents-cleaning",
+      "topic": "Ultrasonic cleaning: how blinds, fixtures, and hard contents get restored",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "artwork-and-heirlooms-after-damage",
+      "topic": "Artwork and heirlooms: when conservation specialists enter a claim",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "pianos-after-water-or-smoke",
+      "topic": "Pianos after water or smoke: what is savable and who decides",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "area-rugs-after-water",
+      "topic": "Area rugs after water: why they leave the house when carpet does not",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "mattresses-and-upholstery-after-damage",
+      "topic": "Mattresses and upholstery: the honest line between cleanable and gone",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "freeze-drying-wet-documents",
+      "topic": "Freeze-drying wet documents and books: how the process works",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "hoarding-cleanup-what-to-expect",
+      "topic": "Hoarding cleanup: how professionals approach it, and what family should expect",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "damage-in-an-estate-property",
+      "topic": "Damage in an estate property: acting when the owner has passed",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "monitoring-a-home-through-summer-away",
+      "topic": "Winter-visitor homes: monitoring an Arizona house through the summer away",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-damage-and-selling-disclosure",
+      "topic": "Water damage and selling: what Arizona disclosure expects of sellers",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "flipped-house-repair-red-flags",
+      "topic": "Flipped houses: spotting cover-up repairs before you buy",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "new-build-water-issues-warranty",
+      "topic": "Water issues in a new build: builder warranty vs insurance",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "calling-a-restoration-company-at-2am",
+      "topic": "What happens when you call a restoration company in the middle of the night",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "neighbors-tree-hits-your-house",
+      "topic": "When a neighbor's tree hits your house: how responsibility actually falls",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "vehicle-into-house-damage",
+      "topic": "When a vehicle hits a house: securing the structure, engineering, and whose insurance",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "townhome-shared-wall-damage",
+      "topic": "Townhome shared walls: party walls, fire breaks, and coordinated repairs",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "septic-vs-sewer-backup",
+      "topic": "Septic vs municipal sewer backups: different causes, different cleanups",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "one-week-monsoon-prep-checklist",
+      "topic": "A one-week monsoon prep checklist for Phoenix-area homes",
+      "faithLoopPhase": "invitation",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "holiday-hosting-plumbing-strain",
+      "topic": "Holiday hosting: why plumbing failures spike when the house is full",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "water-damage-myths",
+      "topic": "Common water damage myths that cost homeowners money",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "fire-damage-myths",
+      "topic": "Common fire damage myths, from it-will-air-out to paint-over-it",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
+    },
+    {
+      "type": "educational",
+      "slug": "renters-and-water-damage",
+      "topic": "Renters and water damage: what the landlord's policy does not cover for you",
+      "faithLoopPhase": "reflection",
+      "status": "pending"
     }
   ],
   "location_backlog_note": "Location pages (service x city) wait on Jake reviewing an educational batch clean, per SOP §5. City list source: CLAIMS-TO-VERIFY.md 'Service area' entry."
