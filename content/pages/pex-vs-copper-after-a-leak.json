@@ -1,0 +1,71 @@
+{
+  "slug": "pex-vs-copper-after-a-leak",
+  "path": "/guides/pex-vs-copper-after-a-leak.html",
+  "title": "PEX vs Copper Pipe Repair After a Leak | Phoenix, AZ Guide",
+  "description": "Weighing PEX vs copper for repiping after a leak? Here's how each holds up in Phoenix homes, what repairs involve, and what to ask before you decide.",
+  "h1": "PEX vs Copper: What to Know When a Leak Forces a Repair Decision",
+  "breadcrumbLabel": "PEX vs Copper After a Leak",
+  "intro": "Finding out a pipe has failed is unsettling enough on its own, but then comes the second problem: figuring out what to replace it with. If a plumber or restoration crew has mentioned PEX or copper and you are not sure which makes sense for your house, you are not alone in feeling stuck between two options that both sound reasonable and both come with tradeoffs nobody explained clearly. It is fair to want to understand this before agreeing to anything.",
+  "sections": [
+    {
+      "heading": "Why this decision comes up after a leak",
+      "body": "A single pipe failure rarely stays isolated. When copper pipe pinholes or corrodes in one spot, it is often a sign of water chemistry or age issues affecting the rest of the line, which means a repair in one place can turn into a conversation about repiping a section or the whole system. PEX, by contrast, does not corrode the way copper does, so if the failure was a fitting or a freeze crack, a targeted PEX repair might be all that is needed without raising bigger questions about the rest of your plumbing."
+    },
+    {
+      "heading": "How copper holds up over time",
+      "body": "Copper has been a standard for decades because it is rigid, resists bacterial growth, and can handle high heat without any special adaptation. Its main vulnerability in Arizona homes is pinhole leaks, which develop when water chemistry (soft water, high acidity, or certain mineral profiles) slowly eats through pipe walls from the inside. These leaks are notoriously hard to predict because the exterior of the pipe looks fine until it doesn't. Copper repairs require soldering or press fittings, both of which need a controlled, dry work area, which is part of why a leak has to be fully addressed before copper repair work can proceed."
+    },
+    {
+      "heading": "How PEX behaves differently",
+      "body": "PEX (cross-linked polyethylene) is flexible tubing that snakes through walls and joists rather than requiring rigid runs and multiple joints. It is not vulnerable to the same corrosion that causes copper pinhole leaks, and its flexibility means fewer fittings overall, which is often where leaks start in any plumbing system. PEX does have its own weak points: it can degrade with prolonged UV exposure if left uncovered, and it is not rated for the same open-flame heat tolerance as copper, so it is typically not used right at a water heater connection without a transition fitting."
+    },
+    {
+      "heading": "What actually gets decided during a repair",
+      "body": "When a leak is being repaired, the choice usually is not PEX versus copper for your whole house, it is about the section that failed. A plumber or restoration contractor will look at the existing pipe material, the accessibility of the run, and whether the leak point is isolated or a symptom of broader wear. Matching materials (copper to copper) is common for a quick, contained repair. Switching to PEX for that section is common when the run is hard to access, when corrosion is suspected nearby, or when the homeowner wants to reduce future joint failures. Neither choice is universally right, it depends on what is actually happening in your walls."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is PEX cheaper than copper for a repair?",
+      "a": "Material and labor costs vary by region, by the scope of the repair, and by accessibility, so there is no single answer that applies to every situation. It is worth asking whoever is doing the repair to walk through the cost difference for your specific case rather than relying on a general rule of thumb."
+    },
+    {
+      "q": "Can PEX and copper be connected in the same repair?",
+      "a": "Yes, transition fittings exist specifically for joining PEX to copper, and this is a common approach when only part of a run needs replacement. The fitting type matters for long-term reliability, so it is worth understanding what your contractor plans to use."
+    },
+    {
+      "q": "Does a pinhole leak in copper mean the whole system will fail?",
+      "a": "Not necessarily, but one pinhole leak can indicate a water chemistry issue that affects other copper pipe in the same system, especially if the pipes are the same age and exposed to the same water supply. A plumber can help assess whether it is isolated or systemic."
+    },
+    {
+      "q": "Does switching to PEX prevent future leaks entirely?",
+      "a": "No material is leak-proof. PEX avoids the corrosion mechanism that causes copper pinhole leaks, but it has its own failure points, including fitting issues and susceptibility to damage from rodents or sharp tools during other work in the walls."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your repair actually needs?",
+    "body": "If a leak has already caused water damage, the material decision is only part of the picture. Gold Water Fire can assess the damage and coordinate the repair work needed to get your home dried out and put back together. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general plumbing and restoration industry knowledge about PEX and copper pipe behavior, not a specific claim about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "photo": {
+    "src": "/assets/img/pex-vs-copper-after-a-leak-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: PEX vs copper when repairs are needed after a leak"
+  }
+}
