@@ -1,0 +1,75 @@
+{
+  "slug": "drain-leaks-under-sinks",
+  "path": "/guides/drain-leaks-under-sinks.html",
+  "title": "Drain-Side Leaks Under Sinks: P-Traps and Slip Joints | Gold Water Fire Phoenix, AZ",
+  "description": "Why P-traps and slip joints loosen under sinks, how to spot a drain-side leak early, and what happens if it keeps getting ignored.",
+  "h1": "Drain-Side Leaks Under Sinks: P-Traps, Slip Joints, and Why They Loosen",
+  "breadcrumbLabel": "Drain Leaks Under Sinks",
+  "intro": "You wipe out the cabinet under the sink, dry everything, and tell yourself it was a one-time splash. Then a few weeks later the cardboard box of cleaning supplies is soft on the bottom again, or there's a faint mildew smell when you open the doors in the morning. It's confusing because nothing looks broken. There's no burst pipe, no dramatic flood, just a slow, recurring dampness that keeps showing up in the same spot no matter how many times you mop it away. That pattern, quiet and repetitive, is almost always coming from the drain side of the sink, not the water supply lines, and it deserves a closer look before it becomes something bigger.",
+  "sections": [
+    {
+      "heading": "What's actually under there",
+      "body": "Under most kitchen and bathroom sinks, the drain assembly is a chain of parts held together with plastic or metal slip nuts rather than glued or soldered joints. Water flows from the sink basin down through a tailpiece, into a curved section called the P-trap, and out through more pipe to the wall or floor drain. The P-trap's curve is intentional: it holds a small amount of standing water that blocks sewer gas from coming back up into your home. Every place these pipe sections meet, there's a slip joint, a plastic or rubber washer compressed by a threaded nut, creating a seal without permanent bonding. That design makes the whole assembly easy to take apart for cleaning or repair, but it also means every one of those joints is a potential leak point.",
+      "eyebrow": "The basics"
+    },
+    {
+      "heading": "Why slip joints loosen over time",
+      "body": "Slip joints aren't meant to be permanent, and that's exactly why they eventually seep. Repeated use flexes the plastic and rubber slightly with every wash, and the nuts can back off a fraction of a turn at a time, especially if they were hand-tightened without a wrench during installation. Temperature swings from hot dishwater to cold tap water make plastic pipe expand and contract, which stresses the washer seal. Under-sink cabinets also get bumped, things get stored against the pipes, and over months that pressure nudges the joints out of alignment. None of this happens all at once. It's a slow drift, which is why the leak often starts as a faint drip that only shows up when the sink is in heavy use, not a constant stream.",
+      "eyebrow": "The cause"
+    },
+    {
+      "heading": "Spotting it before it spreads",
+      "body": "A drain-side leak usually announces itself in small ways first: a ring of water on the cabinet floor directly under the trap, swelling or discoloration on the particleboard shelf, a musty smell when the cabinet doors have been closed for a while, or a slow buildup of mineral residue (a white or greenish crust) at a joint. Running the sink for a minute or two while watching each connection, tailpiece, trap, and the wall fitting, is a simple way to find the exact spot. Feel each joint with a dry paper towel; a damp streak tells you which nut needs attention. Because the leak only happens when water is draining, it can go unnoticed for a long time if no one checks during use.",
+      "eyebrow": "What to look for"
+    },
+    {
+      "heading": "Why a small leak doesn't stay small",
+      "body": "Cabinet floors are usually particleboard or plywood, both of which absorb water readily and don't dry out on their own once trapped in an enclosed space. A slow drip that seems minor on day one can, over weeks, soften the cabinet base, warp adjacent flooring, and create the damp, dark conditions mold needs to take hold. Because the space is closed and often unused daily, the moisture has nowhere to go and no airflow to help it evaporate. This is part of why a problem that started as a loose slip joint can end up affecting flooring, subfloor, or even the wall behind the cabinet if it's gone unnoticed for long enough.",
+      "eyebrow": "Why it matters"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just tighten the slip nut myself?",
+      "a": "Often, yes, a quarter turn by hand or with gentle use of channel-lock pliers is enough if the washer inside is still in good shape. Overtightening can crack the plastic nut or distort the washer, which sometimes makes the leak worse instead of better. If tightening doesn't stop the drip within a day of normal use, the washer itself has likely worn out and needs replacing."
+    },
+    {
+      "q": "Why does the leak only happen sometimes?",
+      "a": "Drain-side leaks typically only show up under water flow and pressure, so a slow trickle from hand washing might not trigger it while a full sink draining after dishes might. This is why checking during active, heavier use is more reliable than a quick glance."
+    },
+    {
+      "q": "Is a drain leak the same as a supply line leak?",
+      "a": "No. Supply lines carry pressurized water constantly, even when the faucet is off, so a supply leak tends to be steady and worse. Drain-side leaks only occur when water is actually flowing down through the trap, which is why they're easier to miss and often mistaken for condensation."
+    },
+    {
+      "q": "How long can a cabinet floor handle this before it's a real problem?",
+      "a": "It depends heavily on how much water, how often, and how enclosed the space is, so there's no fixed timeline. What's consistent is that particleboard and plywood don't recover well once saturated, and an enclosed cabinet holds moisture rather than letting it dry, so earlier attention matters more than the size of the drip suggests."
+    }
+  ],
+  "cta": {
+    "heading": "Found more than a loose nut?",
+    "body": "If the cabinet floor is soft, the smell won't go away, or you're not sure how far the water has traveled, Gold Water Fire can take a look. Reach out through <a href=\"/contact.html\">our contact page</a> or learn more about how we handle <a href=\"/water-damage-restoration.html\">water damage restoration</a>."
+  },
+  "evidence": "This page describes general plumbing mechanics and common signs of drain-side leaks, not any specific job or outcome performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "photo": {
+    "src": "/assets/img/drain-leaks-under-sinks-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Drain-side leaks under sinks: P-traps, slip joints, and why they loosen"
+  }
+}

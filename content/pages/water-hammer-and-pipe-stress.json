@@ -1,0 +1,71 @@
+{
+  "slug": "water-hammer-and-pipe-stress",
+  "path": "/guides/water-hammer-and-pipe-stress.html",
+  "title": "Water Hammer Explained: Banging Pipes in Phoenix, AZ Homes",
+  "description": "Banging pipes are more than a noise problem. Learn what water hammer means for your plumbing and when it signals a bigger issue.",
+  "h1": "Water Hammer: The Banging Pipes That Are Also a Warning",
+  "breadcrumbLabel": "Water Hammer and Pipe Stress",
+  "intro": "You hear it after the washing machine shuts off, or right when the dishwasher valve closes. A knock, a thud, sometimes a series of rattles that travel through the wall like something is loose back there. You've probably already searched for it, wondered if it's serious, maybe hoped it would just stop on its own. It's unsettling in a specific way: the sound is clearly coming from inside the structure of your home, somewhere you can't see, and no one around you seems to know exactly what it means either.",
+  "sections": [
+    {
+      "heading": "What's actually happening in the pipe",
+      "body": "Water hammer happens when water moving through a pipe is stopped suddenly, usually by a valve closing fast (a washing machine solenoid, a dishwasher, an ice maker line, or a faucet with a quick-close cartridge). Moving water has momentum. When that momentum has nowhere to go, it slams into the closed valve and sends a shockwave back through the pipe. That's the bang you hear. It's not imaginary and it's not just noise, it's a small but real pressure spike happening somewhere in your walls or under your slab, every time it occurs."
+    },
+    {
+      "heading": "Why it's worse in some homes than others",
+      "body": "Homes with high static water pressure, long straight pipe runs, or pipes that aren't properly strapped and cushioned tend to have louder, more frequent water hammer. Air chambers or arrestors that were installed near appliances can also fail over time. When they fill with water instead of holding a cushion of air, the shock has nowhere to absorb and the bang gets sharper. Older galvanized pipe systems and homes that have had partial repiping (mixing old and new materials) are also more prone to it, because the differences in material flexibility change how the shockwave travels."
+    },
+    {
+      "heading": "The part that's easy to miss: repeated stress on joints and fittings",
+      "body": "A single bang isn't going to cause a leak. But water hammer that happens daily, sometimes multiple times a day with appliance cycles, is repeated mechanical stress on soldered joints, slip fittings, and pipe supports. Over months or years, that stress can loosen connections, especially at elbows and behind walls where a fitting isn't fully supported. This is why water hammer is worth paying attention to even when nothing looks wrong yet: it's cumulative, not immediate, and the damage it eventually causes often shows up somewhere other than where the noise is coming from."
+    },
+    {
+      "heading": "When the sound is telling you something has already changed",
+      "body": "If banging pipes are new, or have gotten noticeably louder or more frequent, something in the system has changed: a water pressure regulator failing, an arrestor that's waterlogged, a fitting that's come loose enough to shift slightly under pressure. If you notice the noise alongside any dampness, a musty smell, discoloration on a ceiling or wall, or a water bill that's crept up without explanation, that combination is worth taking seriously. Those are signs the stress may have already turned into an active leak somewhere in the line."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is water hammer dangerous or just annoying?",
+      "a": "On its own, an occasional bang is usually just a pressure and momentum issue, not immediate danger. The concern is cumulative: repeated shockwaves over time stress joints, fittings, and supports, which can eventually lead to a leak, especially in older piping or homes with high water pressure."
+    },
+    {
+      "q": "Can water hammer cause a pipe to burst?",
+      "a": "It's uncommon for water hammer alone to burst a pipe outright, but repeated stress can weaken a joint or fitting until it fails under normal pressure. The failure often shows up gradually, as a slow leak, rather than a sudden burst."
+    },
+    {
+      "q": "Why did my pipes suddenly start banging when they never did before?",
+      "a": "A new onset usually means something in the system changed: a water arrestor that's become waterlogged, a pressure regulator that's failing, a fitting that's loosened, or a new appliance with a faster-closing valve. It's worth having the change looked at rather than assuming it will resolve itself."
+    },
+    {
+      "q": "Does water hammer mean I already have hidden water damage?",
+      "a": "Not necessarily. Water hammer by itself is a mechanical and pressure issue. But if it's paired with dampness, discoloration, a musty smell, or an unexplained rise in your water bill, that combination suggests the stress may have already led to a leak somewhere in the line."
+    }
+  ],
+  "cta": {
+    "heading": "Noticed more than just the noise?",
+    "body": "If banging pipes have come with dampness, staining, or a smell you can't place, it's worth having the situation looked at directly. Gold Water Fire serves the Phoenix metro area and can help you understand what's happening behind the wall. Reach us at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to reach the team."
+  },
+  "evidence": "This page states general plumbing and restoration knowledge about how water hammer occurs and its effects; no specific claims about Gold Water Fire's work are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "photo": {
+    "src": "/assets/img/water-hammer-and-pipe-stress-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Water hammer: the banging pipes that are also a warning"
+  }
+}
