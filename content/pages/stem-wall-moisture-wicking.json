@@ -1,0 +1,58 @@
+{
+  "slug": "stem-wall-moisture-wicking",
+  "path": "/guides/stem-wall-moisture-wicking.html",
+  "title": "Why Paint Bubbles at the Base of Exterior Walls | Gold Water Fire Phoenix, AZ",
+  "description": "Bubbling paint near the floor often means moisture is wicking up through the stem wall. Learn why it happens and what it signals about your home.",
+  "h1": "Moisture Wicking at the Stem Wall: Why Paint Bubbles at the Base of Exterior Walls",
+  "breadcrumbLabel": "Stem Wall Moisture Wicking",
+  "intro": "You noticed it while vacuuming, or maybe moving furniture: a band of bubbled or peeling paint running along the bottom foot or two of an exterior wall, sometimes with a faint chalky residue or a musty smell that wasn't there before. It's easy to assume it's just old paint or a one-time spill, but if it keeps coming back in the same spot no matter how many times you repaint, something underneath is telling you a different story. That nagging feeling that this isn't a cosmetic problem, that there's a reason it keeps returning, is worth paying attention to.",
+  "sections": [
+    {
+      "heading": "What the stem wall actually does",
+      "body": "The stem wall is the short concrete or masonry wall that sits on top of your home's footing and supports the exterior walls above it, usually running just below and slightly above the finished floor level. It's designed to hold the structural load and separate wood framing or drywall from direct contact with the ground. Concrete and masonry are porous by nature, and in much of the Phoenix area, homes are built on slab foundations where the stem wall sits close to grade, sometimes with irrigation, landscaping, or drainage patterns nearby that keep the surrounding soil damp longer than the rest of the yard.",
+      "eyebrow": "The basics"
+    },
+    {
+      "heading": "How moisture moves upward through concrete",
+      "body": "Concrete pulls water through itself the same way a paper towel pulls water up from a puddle, a process called capillary action or wicking. Moisture in the soil around the foundation gets drawn upward through tiny pores in the concrete, rising until it reaches the interior wall finish. Once it hits paint or drywall, it has nowhere to go, so it collects just beneath the surface. That trapped moisture is what causes paint to bubble, blister, or peel in a horizontal band, usually starting a few inches above the floor and rarely climbing much higher, because the wicking effect weakens with height and typically stalls where the moisture evaporates as fast as it arrives."
+    },
+    {
+      "heading": "Common sources feeding the moisture",
+      "body": "A few conditions tend to show up together with this pattern: sprinkler heads or drip lines spraying too close to the foundation, grading that slopes toward the house instead of away from it, gutters or downspouts dumping water right at the base of a wall, or a slab that sits low relative to the surrounding landscaping. In older homes, a missing or failed vapor barrier under the slab can also let ground moisture migrate up through the stem wall from below. None of these are dramatic events like a burst pipe, which is part of why the cause is so easy to overlook for months or years."
+    },
+    {
+      "heading": "Why repainting alone doesn't fix it",
+      "body": "Repainting covers the visible symptom but does nothing to stop water from continuing to travel through the concrete. If the moisture source outside isn't addressed, and any wet material behind the wall isn't allowed to properly dry, new paint will usually blister again within a season or two, sometimes in the exact same spot. Persistent moisture at the base of a wall can also lead to efflorescence (a white, powdery mineral deposit), softened drywall, or a musty odor if it continues long enough for mold growth to take hold behind the surface."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is bubbling paint at the base of a wall always a moisture problem?",
+      "a": "Not always, but a recurring horizontal band of bubbling or peeling near the floor, especially on an exterior wall, is a strong sign of moisture moving through the stem wall rather than a paint quality issue. Comparing the pattern to interior walls that don't touch the foundation can help confirm whether moisture is the cause."
+    },
+    {
+      "q": "How can I tell if the moisture is coming from outside or from a plumbing leak?",
+      "a": "Moisture wicking from the stem wall tends to follow exterior walls and correlate with sprinklers, grading, or rainfall, while a plumbing leak often shows up near a specific fixture, appears on an interior wall, or comes with a spike in water usage. A moisture meter reading at different points along the wall can help narrow down the source."
+    },
+    {
+      "q": "Does this mean I need to worry about mold?",
+      "a": "Ongoing moisture behind a wall creates conditions where mold can develop, especially if the area stays damp for an extended period. A musty smell, discoloration, or softened material behind the paint are signs the moisture has been present long enough to warrant a closer look."
+    },
+    {
+      "q": "What should I do first if I see this pattern in my home?",
+      "a": "Start by checking the exterior grading, irrigation, and downspouts near that section of wall to see if water is pooling or draining toward the foundation instead of away from it. If the bubbling keeps returning after those fixes, or you notice softness, odor, or staining, it's worth having the wall and surrounding area assessed before repainting again."
+    }
+  ],
+  "cta": {
+    "heading": "Seeing this pattern on your own walls?",
+    "body": "If bubbling paint keeps returning at the base of an exterior wall, Gold Water Fire can take a closer look at what's happening behind it. Reach out through <a href=\"/contact.html\">our contact page</a> or explore <a href=\"/water-damage-restoration.html\">water damage restoration</a> to understand what the next step could look like."
+  },
+  "evidence": "This page explains general building science about capillary moisture movement in concrete stem walls and does not make any specific claim about work performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-07",
+  "dateModified": "2026-09-07",
+  "photo": {
+    "src": "/assets/img/stem-wall-moisture-wicking-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Moisture wicking at the stem wall: why paint bubbles at the base of exterior walls"
+  }
+}
