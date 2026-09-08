@@ -1,0 +1,75 @@
+{
+  "slug": "parapet-wall-leaks",
+  "path": "/guides/parapet-wall-leaks.html",
+  "title": "Parapet Wall Leaks on Southwest Homes | Gold Water Fire Phoenix, AZ",
+  "description": "Parapet walls hide a common leak path on Southwest flat-roof homes. Learn where the water gets in and why it's easy to miss until damage shows up inside.",
+  "h1": "Parapet walls on Southwest homes: a leak path most homeowners never think about",
+  "breadcrumbLabel": "Parapet Wall Leaks",
+  "intro": "You noticed a stain on the ceiling near an exterior wall, or a bit of bubbling paint in a corner of a room that has nothing to do with a bathroom or kitchen. There's no obvious pipe nearby, no dishwasher on the other side, nothing that explains it. You checked the roof from the ground and it looked fine. Maybe you even had someone up there once and they said the roof was in decent shape. And yet the stain is back after the last rain, a little bigger than before. If you've been circling this problem without an answer, you're not missing something obvious. You're looking in the wrong direction, because the place letting water in usually isn't the roof field at all.",
+  "sections": [
+    {
+      "heading": "What a parapet wall actually is, and why it's common here",
+      "body": "A parapet is the low wall that runs along the edge of a flat or low-slope roof, extending above the roofline. It's a signature look on Southwest homes, especially territorial and pueblo-style architecture across Phoenix, Mesa, Scottsdale, and the surrounding valley. It gives a building that clean, flat-topped silhouette. Structurally, it also creates a junction where two different systems meet: the roof membrane below and the vertical wall face above, tied together by a cap or coping on top. Every one of those junctions is a place water can find its way through if it's not sealed and maintained correctly.",
+      "eyebrow": "The basics"
+    },
+    {
+      "heading": "Where the water actually gets in",
+      "body": "Parapet leaks rarely start where you'd expect. The coping cap on top of the wall, the metal or masonry piece that shields the top edge, is a common entry point once its seams open up or its slope starts directing water toward the building instead of away from it. Scuppers and roof drains built into the parapet can clog with debris and back up during a monsoon downpour, pushing water sideways into the wall assembly instead of off the roof. The counterflashing where the roof membrane turns up and ties into the parapet is another weak point, especially once sealants dry out and crack in the desert sun. Stucco over parapet walls can develop hairline cracks that look cosmetic but let water track down inside the wall cavity for months before anything shows up indoors.",
+      "eyebrow": "Common failure points"
+    },
+    {
+      "heading": "Why it stays hidden so long",
+      "body": "Water entering at the parapet doesn't fall straight down into the room below it. It travels. It can run inside a wall cavity, follow a stud or a piece of blocking, and show up on a ceiling or wall many feet from where it actually entered. That's why homeowners see a stain in a hallway or a bedroom and never connect it to the roofline above. It's also why a quick look from the ground, or even a walk across the roof, can miss it entirely. The damage is often inside the wall, not on any visible surface, until enough moisture builds up to stain drywall, delaminate paint, or soften wood trim.",
+      "eyebrow": "Why it's easy to miss"
+    },
+    {
+      "heading": "Signs worth paying attention to",
+      "body": "A few patterns tend to show up before things get serious. Staining or discoloration on an interior wall or ceiling that runs along an exterior wall line, especially after monsoon storms rather than steady winter rain. A musty smell in a room with no obvious moisture source. Efflorescence, that white chalky residue, appearing on interior or exterior masonry near the roofline. Peeling paint or bubbling texture on a wall that backs up to a parapet. None of these prove a parapet leak on their own, but together, and especially if they track with storm timing, they point away from plumbing and toward the roof edge.",
+      "eyebrow": "What to look for"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a parapet wall leak even if the roof itself has no visible damage?",
+      "a": "Yes. The roof membrane in the field of the roof can be perfectly intact while the leak originates at the coping, counterflashing, or a scupper drain built into the parapet. These are separate systems from the main roof surface, and each has its own points of failure."
+    },
+    {
+      "q": "Why does this seem to happen more after monsoon storms?",
+      "a": "Heavy, wind-driven rain during monsoon season can push water sideways into cracks and seams that would never be tested by a light, steady rain. Scuppers and drains can also back up quickly during a downpour, sending water where it's not supposed to go."
+    },
+    {
+      "q": "Is this something I can inspect myself?",
+      "a": "You can look for surface signs like cracked stucco, gaps in coping seams, or ponding water near a scupper, but the real assessment usually requires getting on the roof and checking the wall cavity from the inside where possible. Water damage inside a wall isn't visible from the ground or from indoors until it has already spread."
+    },
+    {
+      "q": "Does a parapet leak always mean the whole wall needs to be rebuilt?",
+      "a": "Not necessarily. The extent of repair depends on how long water has been getting in and how far it has traveled inside the wall assembly. That's something that needs to be evaluated case by case rather than assumed either way."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if this is what's happening in your home?",
+    "body": "If you're seeing staining, a musty smell, or cracked stucco near a flat roofline, it's worth having it looked at before the next storm makes it worse. Gold Water Fire serves the Phoenix metro area and can help you understand what's going on. Reach out through our <a href=\"/contact.html\">contact page</a> or learn more about our <a href=\"/water-damage-restoration.html\">water damage restoration</a> services."
+  },
+  "evidence": "This page states general architectural and building-science information about parapet wall systems and does not claim any specific job, response time, or credential on behalf of Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08",
+  "photo": {
+    "src": "/assets/img/parapet-wall-leaks-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Parapet walls on Southwest homes: a leak path most homeowners never think about"
+  }
+}
