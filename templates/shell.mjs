@@ -163,6 +163,10 @@ function footer() {
           </ul>
         </div>
       </div>
+      <div class="preferred-source">
+        <p>Add ${esc(BRAND.name)} as a preferred source on Google.</p>
+        <div google-add-preferred-source-btn data-theme="dark"></div>
+      </div>
       <div class="footer-bottom">
         <span>&copy; <span id="year"></span> ${esc(BRAND.name)}. ${esc(BRAND.license)}.</span>
         <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai, automated operations for real businesses</a>
@@ -218,6 +222,11 @@ export function shell({
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Preferred Source button (Jake's ruling 2026-09-07: every
+       ByTomorrow site carries it, visible on every page). This loader pairs
+       with the <div google-add-preferred-source-btn> in footer(). Reference:
+       developers.google.com/search/docs/appearance/preferred-sources -->
+  <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
   ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified })}
   ${extraHead}
 </head>

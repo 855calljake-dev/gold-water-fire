@@ -607,6 +607,16 @@ footer.site-footer {
   padding: 48px 0 28px;
   font-size: 0.92rem;
 }
+/* Google Preferred Source button (shell.mjs footer). Sits between the
+   footer grid and the copyright line, on the dark footer, so the div uses
+   data-theme="dark". The script renders the button; this only spaces it. */
+.preferred-source {
+  margin-bottom: 28px;
+}
+.preferred-source p {
+  margin: 0 0 10px;
+  color: #c7d0dc;
+}
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
