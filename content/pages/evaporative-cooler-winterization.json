@@ -1,0 +1,79 @@
+{
+  "slug": "evaporative-cooler-winterization",
+  "path": "/guides/evaporative-cooler-winterization.html",
+  "title": "Evaporative Cooler Winterization Guide | Gold Water Fire | Phoenix, AZ",
+  "description": "How to shut down a swamp cooler for winter the right way, and why skipping it can lead to water damage when the weather warms up again.",
+  "h1": "Evaporative Cooler Winterization: The Shutdown Steps That Prevent Spring Surprises",
+  "breadcrumbLabel": "Evaporative Cooler Winterization",
+  "intro": "If you have ever walked into a spare room in March and found a water stain spreading across the ceiling, you already know that evaporative coolers do not politely announce when something has gone wrong over the winter. They just sit up there, quiet, until a hard freeze cracks a line or a forgotten pad soaks a rafter, and by the time you notice, the damage has already been happening for weeks.",
+  "sections": [
+    {
+      "heading": "Why winterization matters more than it seems",
+      "body": "An evaporative cooler, sometimes called a swamp cooler, works by pulling water through pads and letting outside air evaporate it to cool the airstream. That means there is standing water, a float valve, a water line, and a drain sitting on your roof or side yard for months at a time. In Phoenix-area winters, nights can dip below freezing even when the days feel mild. A float valve stuck open, a line with water still in it, or pads left wet all winter can lead to a cracked fitting, a slow leak into the attic, or mold growth that nobody sees until the unit is turned back on and water starts moving again."
+    },
+    {
+      "heading": "The core shutdown steps",
+      "body": "The order matters less than making sure each step actually gets done, but this is a reasonable sequence to follow.",
+      "cards": [
+        {
+          "heading": "1. Shut off the water supply",
+          "body": "Find the shutoff valve on the water line feeding the cooler and close it fully. This is the single most important step. If water cannot reach the unit, most winter damage risk disappears."
+        },
+        {
+          "heading": "2. Drain the water lines and pan",
+          "body": "Open the drain plug or line and let standing water empty out completely. Any water left sitting in a pan or line can freeze, expand, and crack the fitting or the pan itself."
+        },
+        {
+          "heading": "3. Remove or inspect the pads",
+          "body": "Wet pads left in place all winter can mold, rot, or become a nesting spot for pests. Many homeowners pull the pads entirely for winter storage; others leave them but check that they are dry before closing things up."
+        },
+        {
+          "heading": "4. Cover the unit",
+          "body": "A proper cooler cover keeps rain and debris out of the housing and off the motor and pump. It also blocks a surprising amount of the cold air infiltration that makes a house harder to heat in winter."
+        },
+        {
+          "heading": "5. Close the roof or wall vents",
+          "body": "Whatever damper or vent controls airflow into the house from the cooler should be closed for winter. This stops cold air from pouring in and stops condensation from forming inside ductwork that is no longer moving warm, dry air."
+        }
+      ]
+    },
+    {
+      "heading": "What to check before you close it up",
+      "body": "Before you walk away for the season, look over the pump, the float valve, and the pads for any buildup of mineral scale, which is common with Phoenix's hard water. Scale buildup can keep a float valve from seating properly, which means it may not fully shut off water flow even after you think you have closed the supply valve. It is worth confirming the shutoff valve itself is not degraded or stuck, since a valve that will not close completely defeats the whole point of winterizing."
+    },
+    {
+      "heading": "Signs winterization was missed or didn't hold",
+      "body": "Even a careful shutdown can be undone by a valve that fails months later or a line that was never fully drained. Watch for ceiling stains below the cooler location, a musty smell in rooms near the unit, sagging drywall, or peeling paint around the roof penetration. Because the cooler often sits above a closet, hallway, or spare bedroom, damage can spread through insulation and framing before it becomes visible from inside the house. If you catch any of these signs, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what typically needs to happen next, and if the leak has been going on long enough to damage drywall or framing, <a href=\"/reconstruction.html\">reconstruction</a> may come into play as well."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need to winterize my evaporative cooler even if I don't use it much in winter?",
+      "a": "Yes. Whether or not the unit runs, the water supply line and pan stay connected and exposed to freezing temperatures unless you shut off the water and drain the lines. The risk comes from standing water, not from use."
+    },
+    {
+      "q": "Can I just turn off the cooler switch instead of shutting off the water?",
+      "a": "No. The switch controls the fan and pump, not the water supply line. Water can still be present in the line and pan even with the unit switched off, which is exactly what freezes and cracks fittings."
+    },
+    {
+      "q": "How do I know if my float valve is failing?",
+      "a": "A float valve that lets water keep trickling in after the pan should be full, or one that does not stop water flow when you close the main shutoff, is a sign it needs cleaning or replacing. Mineral buildup from hard water is a common cause in the Phoenix area."
+    },
+    {
+      "q": "What should I do if I find water staining after winter?",
+      "a": "Try to identify and stop the source first, whether that is a stuck valve or a cracked line, then assess whether the ceiling, insulation, or framing has absorbed moisture. Our <a href=\"/contact.html\">contact page</a> has our details if you want a second set of eyes on it."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if the damage is more than a ceiling stain?",
+    "body": "If a missed winterization step turned into a real leak, it helps to have someone take a look before you decide what to do next. Reach out any time at (480) 999-3339 or Help@goldwaterfire.com, no pressure, just a straight answer."
+  },
+  "evidence": "This page describes general evaporative cooler maintenance practices and does not make any specific claim about Gold Water Fire's own work history or credentials.",
+  "type": "educational",
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08",
+  "photo": {
+    "src": "/assets/img/evaporative-cooler-winterization-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Evaporative cooler winterization: the shutdown steps that prevent spring surprises"
+  }
+}
