@@ -1,0 +1,79 @@
+{
+  "slug": "extension-cord-and-power-strip-fires",
+  "path": "/guides/extension-cord-and-power-strip-fires.html",
+  "title": "Extension Cord & Power Strip Fire Risks | Gold Water Fire Phoenix, AZ",
+  "description": "Why overloaded extension cords and power strips overheat and ignite, and the warning signs worth checking today. Serving Phoenix, AZ.",
+  "h1": "Extension cords and power strips: how overloading turns into a fire",
+  "breadcrumbLabel": "Extension Cord & Power Strip Fires",
+  "intro": "Maybe you noticed a cord feels warm to the touch, or a power strip under the desk has been buzzing faintly for weeks and you keep meaning to look at it. Maybe nothing has happened yet and that's exactly what's unsettling: everything still works, so it's hard to know how worried to actually be. That uncertainty is common, and it's worth sitting with for a minute before you decide what to do about it.",
+  "sections": [
+    {
+      "heading": "Why a simple cord can become a fire hazard",
+      "body": "An extension cord or power strip is rated to carry a certain amount of current, measured in amps or watts, and printed in small text somewhere on the cord itself or its packaging. When the combined draw of everything plugged into it exceeds that rating, the internal wire has to carry more electricity than it was built for. That extra load creates heat inside the insulation. A little heat dissipates safely. Sustained heat, especially in a cord that's coiled, covered by a rug, or pinned under furniture, has nowhere to go. Over hours or days, that heat can degrade the insulation until the wires inside arc against each other or against something flammable nearby.",
+      "soft": false
+    },
+    {
+      "heading": "The habits that quietly add up to overload",
+      "body": "Few people sit down and calculate wattage before plugging something in. Overload usually happens gradually: a power strip meant for a lamp and a phone charger ends up running a space heater too, or two extension cords get daisy-chained end to end to reach an outdoor outlet, which strips away a layer of the safety margin each cord was designed with. High-draw appliances are the usual culprits: space heaters, window AC units, hair dryers, toaster ovens, and power tools. Any of these run through a standard extension cord or power strip, especially for extended periods, puts real strain on a system built for lighter loads.",
+      "soft": false
+    },
+    {
+      "heading": "Warning signs worth checking right now",
+      "body": "A cord or strip that's warm or hot to the touch, a faint burning or plastic smell near an outlet, discoloration or melting on the plug or the strip's casing, a breaker that trips repeatedly, or flickering lights when an appliance kicks on are all signs the circuit is working harder than it should. A power strip with a worn or frayed cord, a missing ground pin, or a cracked casing has already lost some of its protection and should be replaced rather than repaired.",
+      "soft": false
+    },
+    {
+      "heading": "What safer use actually looks like",
+      "body": "Extension cords and power strips are meant for temporary use, not as a permanent stand-in for an outlet that isn't where you need it. Match the cord's gauge and rating to what you're plugging in, never run a cord under a rug or through a doorway where it gets pinched, avoid daisy-chaining multiple strips together, and give high-draw appliances a dedicated outlet whenever possible. If a space regularly needs more outlets than it has, that's usually a sign the wiring needs an electrician's attention rather than another power strip.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it dangerous to leave a power strip plugged in overnight?",
+      "a": "A power strip in good condition, used within its rated load, is designed to be left plugged in. The risk comes from what's connected to it and its condition, not simply the act of leaving it plugged in. A strip that's warm, old, or overloaded is a different situation and shouldn't be left running unattended."
+    },
+    {
+      "q": "Can a power strip catch fire even if nothing seems overloaded?",
+      "a": "Yes. Age and wear matter as much as load. A strip with worn internal contacts, a damaged cord, or exposure to dust and moisture can overheat even under a light load, which is why physical condition is worth checking, not just what's plugged in."
+    },
+    {
+      "q": "What should I do if I find a scorched outlet or cord?",
+      "a": "Stop using it immediately, unplug what's connected if it's safe to touch, and don't plug anything else into that outlet until it's been checked. Scorching means heat has already built up beyond a safe level, and the damage may extend into the wall wiring itself."
+    },
+    {
+      "q": "If a fire already happened, who handles the damage afterward?",
+      "a": "Fire damage, including smoke and soot that travels beyond the immediate area, generally needs a professional assessment before repairs start. You can read more about how that process works on our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page."
+    }
+  ],
+  "cta": {
+    "heading": "Already dealing with fire or smoke damage?",
+    "body": "If an overloaded cord or strip has already caused damage in your home, Gold Water Fire serves the Phoenix, AZ metro area and can walk you through what happens next. Call (480) 999-3339 or reach out through our <a href=\"/contact.html\">contact page</a>."
+  },
+  "evidence": "This page states general electrical safety information and does not make any specific claim about Gold Water Fire's own history or work.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-09",
+  "dateModified": "2026-09-09",
+  "photo": {
+    "src": "/assets/img/extension-cord-and-power-strip-fires-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Extension cords and power strips: how overloading turns into a fire"
+  }
+}

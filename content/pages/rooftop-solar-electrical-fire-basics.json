@@ -1,0 +1,75 @@
+{
+  "slug": "rooftop-solar-electrical-fire-basics",
+  "path": "/guides/rooftop-solar-electrical-fire-basics.html",
+  "title": "Rooftop Solar and Electrical Fire Basics | Gold Water Fire, Phoenix, AZ",
+  "description": "What Phoenix homeowners should know about rooftop solar electrical fire risks, warning signs, and what happens to a roof and home after one.",
+  "h1": "Rooftop Solar and Electrical Fire Basics: What Homeowners Should Know",
+  "breadcrumbLabel": "Rooftop Solar and Electrical Fire Basics",
+  "intro": "If you have solar panels on your roof and you've started noticing odd things, a breaker that trips more than it used to, a faint burning smell near the attic access, a panel on your monitoring app that reads lower than the rest for no clear reason, it's normal to not know whether that's nothing or something. Solar systems are marketed as low-maintenance and mostly are, which makes it hard to know when a small signal deserves real attention. You're not being paranoid for wondering. Electrical systems on a roof, exposed to heat and weather for years, are exactly the kind of thing that fails quietly before it fails loudly.",
+  "sections": [
+    {
+      "heading": "Why rooftop solar carries a different fire profile than household wiring",
+      "body": "A typical home electrical fire risk lives inside walls, in outlets, and in appliances you can see and unplug. A rooftop solar array is different: it sits in direct sun, on a roof surface that can reach very high temperatures in the Phoenix summer, with wiring and connectors exposed to years of thermal expansion and contraction. Connectors loosen slightly with each heat cycle. DC wiring on the roof side of the system carries current even when the main breaker is off, which is part of why solar fires can be harder to diagnose and address quickly than a standard household short. None of this means solar is unusually dangerous. It means the failure points are different, and they're in a place most homeowners never look."
+    },
+    {
+      "heading": "Common causes worth knowing about",
+      "body": "Most rooftop solar fire risks trace back to a small number of causes. Loose or corroded connectors at junction boxes, which create resistance and heat over time. Rodent damage to cabling in the attic space where conduit runs from roof to inverter. Improper original installation, such as wire runs that rub against a mounting rail or roof penetrations that were not properly flashed and later let in moisture. Inverter failure, since inverters run hot and have their own internal components that degrade with age and heat exposure. And, less commonly, a manufacturing defect in a panel or connector that shows up years after installation. Knowing the category doesn't fix the problem, but it does help you describe what you're seeing to whoever inspects it."
+    },
+    {
+      "heading": "Warning signs that deserve a closer look",
+      "body": "Some signs are obvious: visible scorch marks on roof mounting hardware, a breaker box that's warm to the touch, a burning smell without an obvious source. Others are easy to dismiss: a persistent buzzing sound from an inverter, a monitoring app showing one string of panels consistently underperforming, discoloration on a junction box, or breakers for the solar circuit that trip and reset more often than they used to. None of these guarantee a fire is imminent. But they're the kind of thing an electrician or your solar installer should look at directly rather than something to wait out."
+    },
+    {
+      "heading": "What a solar-related fire does to a roof and home",
+      "body": "When a rooftop electrical fire does happen, the damage isn't limited to the panels themselves. Heat and flame can compromise roof decking and trusses beneath the array, and the water used to extinguish the fire, along with the fire's own combustion byproducts, can push soot and moisture down into attic insulation, ceiling drywall, and living space below. This is why an event that starts as an electrical issue on the roof often ends up needing both fire damage restoration and, if smoke or water reached lower floors, water damage restoration work as well. Roofing and structural repair around the array is its own separate scope, since damaged decking, trusses, or mounting points need to be addressed before any reconstruction can move forward."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a rooftop solar system cause a fire even when it's turned off at the main breaker?",
+      "a": "The main breaker controls the connection between your home and the grid, but the DC wiring between the panels and the inverter can still carry current from sunlight even when that breaker is off. This is one reason solar fires need to be handled by someone trained on the system, not treated like a standard household electrical shutoff."
+    },
+    {
+      "q": "Is a burning smell near an inverter or attic always an emergency?",
+      "a": "Treat it as one until it's ruled out. A burning smell without an obvious source, especially near where solar conduit runs through the attic or near the inverter itself, should be checked promptly by an electrician or your solar company rather than monitored over time."
+    },
+    {
+      "q": "Does homeowners insurance typically cover solar-related fire damage?",
+      "a": "Coverage depends on your specific policy and the cause of the fire, so this is a question for your insurance provider or agent. If a fire does occur, a restoration contractor can document the damage to support whatever claim process your insurer requires."
+    },
+    {
+      "q": "If a solar fire damages my roof, does the restoration company also fix the roof?",
+      "a": "Roof structure and decking repair is typically a separate scope from fire damage restoration and reconstruction, often requiring coordination between a roofing contractor and a restoration or reconstruction team so the roof is sound before interior rebuild work begins."
+    }
+  ],
+  "cta": {
+    "heading": "If a solar or electrical fire has already damaged your home",
+    "body": "If you're past the warning signs and dealing with actual fire or smoke damage to your roof, attic, or living space, Gold Water Fire serves the Phoenix metro area and can walk through what restoration and reconstruction involves. Call (480) 999-3339 or reach out through the <a href=\"/contact.html\">contact page</a> to talk through what you're seeing."
+  },
+  "evidence": "This page states general, industry-level information about rooftop solar systems and electrical fire risk, not a specific claim about Gold Water Fire's own work.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-09",
+  "dateModified": "2026-09-09",
+  "photo": {
+    "src": "/assets/img/rooftop-solar-electrical-fire-basics-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Rooftop solar and electrical fire basics: what homeowners should know"
+  }
+}

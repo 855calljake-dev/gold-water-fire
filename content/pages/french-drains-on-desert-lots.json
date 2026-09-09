@@ -1,0 +1,69 @@
+{
+  "slug": "french-drains-on-desert-lots",
+  "path": "/guides/french-drains-on-desert-lots.html",
+  "title": "French Drains on Desert Lots: When Grading Alone Fails | Gold Water Fire Phoenix, AZ",
+  "description": "Why regraded desert yards still pool water after monsoon storms, and how a French drain solves what slope alone cannot fix.",
+  "h1": "French Drains on Desert Lots: When Grading Alone Is Not Enough",
+  "breadcrumbLabel": "French Drains on Desert Lots",
+  "intro": "You regraded the yard. Maybe you even paid someone to do it right, with a laser level and a plan. And the water still finds its way to the same low spot along the fence line, the same patch by the garage, the same puddle that takes three days to disappear after a summer storm. It is a strange kind of frustrating, because you did the thing you were told would fix it, and the ground still does not cooperate. If you are standing in your yard right now wondering why the problem keeps coming back, you are not missing something obvious. Desert soil and monsoon rainfall behave in ways that plain slope was never built to handle.",
+  "sections": [
+    {
+      "heading": "Why Phoenix-area soil defeats good grading",
+      "body": "Grading works on a simple idea: water runs downhill, so give it a downhill to run to. That logic holds up fine in soil that absorbs water at a steady rate. Much of the Phoenix metro does not have that soil. Caliche, the hardpan layer common across the Valley, can sit just a foot or two below the surface and barely lets water through at all. On top of that, our monsoon storms do not deliver rain gently. An inch can fall in under an hour. When that much water hits ground that will not absorb it, the surface becomes the only path available, and grading alone can only move water across that surface, not into it. If the slope is even slightly interrupted, by a patio, a property line dip, a compacted path where trucks once drove, the water stalls right there regardless of how well the rest of the yard was graded.",
+      "eyebrow": "The desert problem"
+    },
+    {
+      "heading": "What a French drain actually does differently",
+      "body": "A French drain is a buried trench with a perforated pipe wrapped in gravel and fabric, sitting below the point where water is collecting. Instead of asking water to keep moving across the surface toward a distant low point, it gives water a way to drop below grade and travel through the pipe to somewhere it can actually disperse, whether that is a dry well, a street drain, or a daylight outlet away from the foundation. The difference matters most exactly where caliche is present: a French drain trench cuts through or sits above that hardpan layer and creates a path water can use even when the native soil beneath it cannot absorb anything. It is not a replacement for grading. It is what grading needs once the ground itself becomes the obstacle rather than the slope."
+    },
+    {
+      "heading": "Signs your yard needs more than a regrade",
+      "body": "A few patterns show up again and again on desert lots that need a French drain rather than another round of dirt work. Standing water that lingers for more than a day after a storm, even in a yard that looks properly sloped. Water that reappears in the exact same spot no matter how the surface is reshaped. Damp or discolored soil near a foundation wall on the low side of the house, which suggests water is pooling against the slab rather than moving past it. And erosion channels that keep cutting the same path each monsoon season, because the water is following a route it has already carved into ground that will not soften and spread it out.",
+      "eyebrow": "What to look for"
+    },
+    {
+      "heading": "Where drainage problems turn into structural ones",
+      "body": "Standing water near a home is not just a yard nuisance. Foundations in the Valley are typically slab-on-grade, and repeated saturation at the perimeter can lead to soil movement beneath the slab, which shows up later as cracked stucco, sticking doors, or hairline cracks in interior walls. Water that seeps toward a garage or a lower-level entry can also work its way indoors during a heavy storm, especially if there is any grade break or gap at a threshold. None of this happens overnight. It is usually the result of the same low spot collecting water storm after storm until something finally gives. Understanding that timeline is part of why catching a drainage problem early, before it becomes a water intrusion problem, is worth the attention. If water has already made it inside, the causes and fixes are covered in more detail on our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I install a French drain myself on a desert lot?",
+      "a": "The trenching and pipe work is straightforward in concept, but sizing the drain correctly for caliche depth, monsoon volume, and a safe outlet point takes some judgment. A drain that is too shallow, too small, or that empties in the wrong place can leave you with the same standing water problem in a new location."
+    },
+    {
+      "q": "Do French drains work if my yard has almost no slope at all?",
+      "a": "Yes, and in fact that is often when they matter most. A French drain relies on the pipe's own slight fall inside the trench, not on the surface grade, so it can move water effectively even across a yard that reads as nearly flat."
+    },
+    {
+      "q": "How do I know if my drainage issue is a grading fix or a French drain fix?",
+      "a": "If water moves across the surface and drains away within a reasonable time after a storm, grading adjustments may be enough. If water pools in the same spot repeatedly regardless of surface changes, or if there is a hardpan layer close to the surface, that is usually a sign the fix needs to happen below grade."
+    },
+    {
+      "q": "Is this only a concern during monsoon season?",
+      "a": "Monsoon storms create the most dramatic examples because of how much rain falls at once, but any heavy rain event, including slower winter storms, can reveal the same caliche and grading limitations. The pattern just shows up less often outside monsoon months."
+    }
+  ],
+  "cta": {
+    "heading": "Already seeing water damage from yard drainage?",
+    "body": "If standing water has made it past the yard and into your home, the water damage restoration team at Gold Water Fire can assess what happened and what it will take to dry it out and repair it. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page states general soil, drainage, and construction information as industry knowledge and makes no specific claims about Gold Water Fire's own project history or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-09",
+  "dateModified": "2026-09-09",
+  "photo": {
+    "src": "/assets/img/french-drains-on-desert-lots-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: French drains on desert lots: when grading alone is not enough"
+  }
+}
