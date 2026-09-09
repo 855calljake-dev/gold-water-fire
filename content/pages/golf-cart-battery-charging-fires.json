@@ -1,0 +1,57 @@
+{
+  "slug": "golf-cart-battery-charging-fires",
+  "path": "/guides/golf-cart-battery-charging-fires.html",
+  "title": "Golf Cart & Scooter Battery Charging Fires: Garage Safety Guide | Gold Water Fire Phoenix, AZ",
+  "description": "Golf cart and scooter batteries can overheat while charging in a garage. Learn the warning signs and safer charging habits for Phoenix area homes.",
+  "h1": "Golf Cart and Scooter Battery Charging: A Growing Garage Fire Source",
+  "breadcrumbLabel": "Golf Cart Battery Charging Fires",
+  "intro": "If you park a golf cart, e-bike, or mobility scooter in your garage and plug it in overnight without a second thought, you're not alone, and you're not being careless. Charging equipment in the garage has been standard practice for years. But if you've started to notice a warm outlet, a battery pack that feels hotter than it used to, or you've just read a news story about a charging fire in someone else's neighborhood, that uneasy feeling is worth paying attention to. Something that felt routine can start to feel like a question mark, and that shift in perception is not overreacting. It's your instincts catching up to a real and growing pattern.",
+  "sections": [
+    {
+      "heading": "Why this problem is showing up more often",
+      "body": "Golf carts, electric scooters, e-bikes, and mobility devices increasingly run on lithium-ion batteries instead of older lead-acid batteries. Lithium-ion packs charge faster and hold more energy in a smaller space, but they also fail differently. When a lithium-ion cell overheats, it can enter a chain reaction called thermal runaway, where the cell generates its own heat faster than it can dissipate it, sometimes leading to fire or venting toxic gas. Lead-acid batteries, the older standard in golf carts, don't behave this way, but they carry their own risks: they can off-gas hydrogen while charging, and a spark near a charging lead-acid battery in a poorly ventilated space is a real hazard. Garages are often the worst possible place for either failure mode. They're enclosed, they store fuel sources like gasoline cans, cardboard, and paper goods, and many people aren't in the room to catch a problem early."
+    },
+    {
+      "heading": "Warning signs people miss until it's too late",
+      "body": "A battery that's failing rarely gives one dramatic signal. More often it gives several small ones that are easy to explain away. A charger or battery casing that feels hot to the touch, not warm but genuinely hot, is one. A swollen or misshapen battery pack is another; batteries are not supposed to change shape. A hissing sound, a chemical or metallic smell, or a charger that clicks on and off repeatedly instead of holding a steady charge all point to a battery or charging system under stress. Scorch marks or discoloration around the charging port, and a cart or scooter that takes noticeably longer to charge than it used to, are also signs the battery is degrading. None of these signs on their own guarantees a fire is coming, but together, or repeated, they're the kind of thing worth stopping and addressing rather than hoping it resolves itself."
+    },
+    {
+      "heading": "Safer charging habits for a garage setup",
+      "body": "Use the charger that came with the device, or a manufacturer-approved replacement, rather than a generic or mismatched charger, since charge rate and voltage matter more than they seem to. Avoid charging a cart or scooter all the way against a wall or wedged between stored items; batteries that overheat need airflow, not insulation. Don't leave a device charging unattended overnight if you can help it, especially older equipment or a battery pack that's shown any of the warning signs above. Keep charging equipment away from gas cans, paint, solvents, and paper clutter, since a garage fire's size and spread often comes down to what fuel is sitting nearby, not just the initial spark. If a battery is more than a few years old, ask the manufacturer or a qualified dealer whether it's due for inspection or replacement rather than assuming it will simply keep working."
+    },
+    {
+      "heading": "If a charging fire happens in your garage",
+      "body": "A lithium-ion battery fire is not like a typical structure fire. It can reignite hours after it appears to be out, and water alone doesn't always fully cool the internal chemical reaction. If you've had any kind of fire event in a garage, even one that seemed small or was quickly extinguished, the smoke, soot, and heat exposure can travel further into the structure than it looks. Materials that absorbed smoke odor or chemical residue from a battery fire, such as drywall, insulation, or stored belongings, often need to be evaluated by someone who understands fire damage patterns, not just cleaned on the surface. If you're dealing with the aftermath of a fire, our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page walks through what that process typically involves, and if the structure itself needs rebuilding, <a href=\"/reconstruction.html\">reconstruction and rebuild</a> covers that side of recovery."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are lithium-ion batteries more dangerous than lead-acid batteries in golf carts?",
+      "a": "They fail differently rather than being simply more or less dangerous. Lithium-ion batteries can enter thermal runaway and burn intensely once triggered, while lead-acid batteries can off-gas hydrogen during charging, which is flammable in an enclosed space. Both require ventilation and attention, just to different specific risks."
+    },
+    {
+      "q": "Is it safe to charge a golf cart or scooter in an attached garage overnight?",
+      "a": "Many people do this without issue, but if the battery is older, has shown any warning signs like heat, swelling, or unusual smells, or uses a non-original charger, overnight unattended charging in an enclosed space carries more risk. Charging during hours you're home and able to notice a problem early is generally safer."
+    },
+    {
+      "q": "What should I do if my golf cart battery feels hot while charging?",
+      "a": "Unplug it if you can safely do so, move it away from combustible materials, and do not attempt to charge it again until the battery and charger have been checked by the manufacturer or a qualified dealer. A battery that runs hot during normal charging is signaling a problem."
+    },
+    {
+      "q": "Can a battery fire restart after it looks like it's out?",
+      "a": "Yes, this is a known characteristic of lithium-ion battery fires. The internal chemical reaction can continue at a low level and flare back up hours later, which is why any structure that had a battery fire should be assessed thoroughly rather than assumed safe once visible flames are gone."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with fire or smoke damage from a garage battery fire?",
+    "body": "If a charging fire has left smoke, soot, or structural damage behind, our team can assess what's affected and walk you through next steps. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page shares general fire-safety and battery-chemistry knowledge and does not make any specific claim about work performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-09",
+  "dateModified": "2026-09-09",
+  "photo": {
+    "src": "/assets/img/golf-cart-battery-charging-fires-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Golf cart and scooter battery charging: a growing garage fire source"
+  }
+}
