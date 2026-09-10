@@ -1987,7 +1987,7 @@
       "slug": "space-heater-fire-safety",
       "topic": "Space heaters: the clearances and habits that prevent most of their fires",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -2008,7 +2008,7 @@
       "slug": "ev-charging-safety-at-home",
       "topic": "Charging an electric vehicle at home: circuit requirements and fire safety basics",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -2029,14 +2029,14 @@
       "slug": "lightning-strike-house-fires",
       "topic": "Lightning strikes: what they do to wiring, and the fires that start hours later",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "fireworks-and-ember-ignition",
       "topic": "Fireworks and ember ignition around homes: roofs, yards, and gutters",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -2050,21 +2050,21 @@
       "slug": "oven-and-self-cleaning-cycle-fires",
       "topic": "Oven fires and self-cleaning cycles: what goes wrong",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "grease-fire-response",
       "topic": "Grease fires: why water makes them worse and what to do instead",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "home-fire-extinguisher-types",
       "topic": "Home fire extinguishers: the types, where to keep them, when to use one and when to leave",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
