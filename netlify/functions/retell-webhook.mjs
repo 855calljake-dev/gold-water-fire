@@ -42,7 +42,7 @@ import {
   upsertContact,
   upsertOpportunity,
 } from '../lib/ghl.mjs'
-import { isLead, noteFor, shapeCall, stageFor, verifyRetellSignature } from '../lib/retell-call.mjs'
+import { customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
 
 async function writeCallToGhl(c) {
   const env = ghlEnv()
@@ -51,25 +51,7 @@ async function writeCallToGhl(c) {
     return 'not_configured'
   }
   try {
-    const yesNo = (v) => (v ? 'Yes' : 'No')
-    const { fields, missing } = await buildCustomFields(env, {
-      'Call Type': c.callType,
-      'Damage Type': c.damageType,
-      'Property Address': c.propertyAddress,
-      'Wants Human': yesNo(c.wantsHuman),
-      'Transfer Attempted': yesNo(c.transferAttempted),
-      'Transfer Connected': yesNo(c.transferConnected),
-      'Follow Up Needed': yesNo(c.followUpNeeded),
-      'Last Call ID': c.callId,
-      'Last Call Line': c.line,
-      'Last Call Summary': c.summary,
-      'Last Call Recording': c.recordingUrl,
-      'Last Call Duration Sec': c.durationSec,
-      'Last Call Disconnect Reason': c.disconnectReason,
-      'Last Call Sentiment': c.sentiment,
-      'Consent Basis': 'Inbound call',
-      'Consent Captured Date': new Date().toISOString().slice(0, 10),
-    })
+    const { fields, missing } = await buildCustomFields(env, customFieldValues(c))
     if (missing.length) {
       console.error(`retell-webhook: GHL custom fields not provisioned in this location, values dropped: ${missing.join(', ')}`)
     }
@@ -87,12 +69,7 @@ async function writeCallToGhl(c) {
       ...(c.phone ? { phone: c.phone } : {}),
       ...(c.propertyAddress ? { address1: c.propertyAddress } : {}),
       source: `phone ${c.line}`,
-      tags: [
-        'phone-lead',
-        `line:${c.line}`,
-        ...(c.callType ? [`call:${c.callType}`] : []),
-        ...(c.wantsHuman ? ['wants-human'] : []),
-      ],
+      tags: tagsFor(c),
       customFields: fields,
       // A phone call is verbal contact, never express written SMS consent.
       ...(already ? {} : { consent: { sms: false, email: false } }),

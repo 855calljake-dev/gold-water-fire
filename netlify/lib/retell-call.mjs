@@ -99,7 +99,48 @@ export function shapeCall(call) {
     disconnectReason: text(call.disconnection_reason, 80),
     durationSec: call.duration_ms ? Math.round(call.duration_ms / 1000) : undefined,
     recordingUrl: text(call.recording_url, 500),
+    transcript: text(call.transcript, 20000),
+    insuranceCarrier: text(extracted.insurance_carrier, 80),
+    claimNumber: text(extracted.claim_number, 60),
   }
+}
+
+/**
+ * Values for the custom fields the GWF sub-account ALREADY has (created
+ * 2026-08-27 in its "Phone Agent" folder, read back 2026-09-10). Picklist
+ * fields get exactly their option strings, including the em dashes in
+ * Transfer Status, which are stored values, not prose (Hard Rule 7). Anything
+ * the picklists cannot express goes to the note and to tags instead.
+ */
+export function customFieldValues(c) {
+  const callType = c.callType === 'dispatch' ? 'Dispatch'
+    : c.callType === 'general_inquiry' ? 'General Inquiry' : undefined
+  const damage = c.damageType
+    ? c.damageType.charAt(0).toUpperCase() + c.damageType.slice(1).toLowerCase() : undefined
+  const damageType = ['Water', 'Fire', 'Smoke', 'Mold', 'Storm', 'Sewage', 'Other'].includes(damage) ? damage : undefined
+  const transferStatus = c.transferConnected ? 'Transferred \u2014 Connected'
+    : c.transferAttempted ? 'Transferred \u2014 No Answer' : 'N/A'
+  return {
+    'Call Type': callType,
+    'Damage Type': damageType,
+    'Property Address (Loss Location)': c.propertyAddress,
+    'Transfer Status': transferStatus,
+    'Reason / Notes': c.reason,
+    'Call Recording URL': c.recordingUrl,
+    'Call Transcript': c.transcript,
+    'Insurance Carrier': c.insuranceCarrier,
+    'Claim Number': c.claimNumber,
+  }
+}
+
+export function tagsFor(c) {
+  return [
+    'phone-lead',
+    `line:${c.line}`,
+    ...(c.callType ? [`call:${c.callType}`] : []),
+    ...(c.wantsHuman ? ['wants-human'] : []),
+    ...(c.followUpNeeded ? ['follow-up-needed'] : []),
+  ]
 }
 
 export function toolInvocations(call) {

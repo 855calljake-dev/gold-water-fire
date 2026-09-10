@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { createHmac } from 'node:crypto'
-import { isLead, shapeCall, stageFor, toE164, verifyRetellSignature } from './retell-call.mjs'
+import { customFieldValues, isLead, shapeCall, stageFor, tagsFor, toE164, verifyRetellSignature } from './retell-call.mjs'
 
 const KEY = 'key_test_0000'
 const sign = (body, ts) => `v=${ts},d=${createHmac('sha256', KEY).update(body + ts).digest('hex')}`
@@ -77,4 +77,19 @@ test('stageFor: dispatch or a transfer attempt goes hot, the rest is new', () =>
   assert.equal(stageFor(shapeCall({ ...base, call_analysis: { custom_analysis_data: { call_type: 'dispatch' } } }), env), 'Hot Lead')
   assert.equal(stageFor(shapeCall({ ...base, call_analysis: { custom_analysis_data: { call_type: 'general_inquiry' } } }), env), 'New Lead')
   assert.equal(stageFor(shapeCall({ ...base, call_analysis: {} }), { GHL_STAGE_NEW: 'Initial Inquiry' }), 'Initial Inquiry')
+})
+
+test('customFieldValues: writes the picklist option strings the sub-account already has', () => {
+  const c = shapeCall({ ...base, call_analysis: { custom_analysis_data: { call_type: 'dispatch', damage_type: 'water', transfer_connected: true, reason: 'ceiling leak' } },
+    transcript: 'Agent: hello', transcript_with_tool_calls: [{ role: 'tool_call_invocation', name: 'transfer_to_dispatch', arguments: '{}' }] })
+  const v = customFieldValues(c)
+  assert.equal(v['Call Type'], 'Dispatch')
+  assert.equal(v['Damage Type'], 'Water')
+  assert.equal(v['Transfer Status'], 'Transferred \u2014 Connected')
+  assert.equal(v['Reason / Notes'], 'ceiling leak')
+  assert.equal(v['Call Transcript'], 'Agent: hello')
+  const none = customFieldValues(shapeCall({ ...base, call_analysis: {} }))
+  assert.equal(none['Call Type'], undefined)
+  assert.equal(none['Transfer Status'], 'N/A')
+  assert.deepEqual(tagsFor(c), ['phone-lead', 'line:480-999-3339', 'call:dispatch'])
 })
