@@ -92,3 +92,12 @@
   to = "/"
   status = 404
   force = true
+
+# Function and library source. Netlify bundles netlify/functions itself; the
+# raw files under /netlify/ must not be served as static pages. Not secrets
+# (the repo is public), just no reason to serve them.
+[[redirects]]
+  from = "/netlify/*"
+  to = "/"
+  status = 404
+  force = true

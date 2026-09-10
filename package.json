@@ -14,6 +14,7 @@
     "test:evidencegate": "node worker/evidenceGate.test.mjs",
     "test:verify": "node worker/verify.test.mjs",
     "test:batchdrop": "node --test worker/batchDrop.test.mjs",
-    "test": "npm run test:evidencegate && npm run test:imagegate && npm run test:verify && npm run test:batchdrop"
+    "test": "npm run test:evidencegate && npm run test:imagegate && npm run test:verify && npm run test:batchdrop && npm run test:webhook",
+    "test:webhook": "node --test netlify/lib/retell-call.test.mjs"
   }
 }
