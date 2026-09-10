@@ -1,0 +1,91 @@
+{
+  "slug": "space-heater-fire-safety",
+  "path": "/guides/space-heater-fire-safety.html",
+  "title": "Space Heater Fire Safety: Clearances and Habits That Help | Gold Water Fire Phoenix, AZ",
+  "description": "The clearance distances, placement habits, and shut-off routines that reduce space heater fire risk at home. A practical safety guide for Phoenix area households.",
+  "h1": "Space Heaters: The Clearances and Habits That Prevent Most of Their Fires",
+  "breadcrumbLabel": "Space Heater Fire Safety",
+  "intro": "Desert winters catch a lot of Phoenix area homes without central heat in every room, so a space heater ends up running in a bedroom, garage, or home office overnight or while nobody is paying close attention. If you have ever plugged one in near a bed, a pile of laundry, or a curtain and then wondered afterward if that was actually safe, you are not alone in asking. Most space heater fires trace back to a small handful of habits, and almost all of them are avoidable once you know what to look for.",
+  "sections": [
+    {
+      "heading": "Why space heaters start fires",
+      "body": "A space heater's coil, ceramic plate, or infrared element can reach surface temperatures high enough to ignite ordinary household materials on contact or from radiant heat alone, even without a flame touching anything. Fabric, paper, pet bedding, and dust buildup are the most common fuels. Fires also start from electrical causes: an overloaded extension cord, a frayed cord pinched under furniture, or a heater plugged into a power strip that was never rated for that kind of draw. Because heaters are portable and often set up quickly for a cold night, they get placed in spots that would never be chosen for a permanent heat source, like next to a couch arm or under a desk with paper stacked nearby."
+    },
+    {
+      "heading": "The clearance that actually matters",
+      "body": "The standard safety guidance is to keep anything that can burn at least three feet away from a space heater on all sides, including the top if the unit vents upward. That means the heater needs its own clear floor space, not just clearance in the direction it happens to be facing. Check what is behind and beside it too: a heater pushed back against a curtain or a stack of boxes to save floor space is a common setup that looks tidy but removes the clearance that keeps a fire from starting. Rugs and bedding should be far enough away that a stray flap of fabric could not reach the unit.",
+      "cards": [
+        {
+          "heading": "Floor placement, not furniture",
+          "body": "Set heaters directly on a hard, level floor. Never place one on a bed, couch cushion, carpet with long fibers, or any surface that could tip it or trap heat against fabric."
+        },
+        {
+          "heading": "Check all four sides",
+          "body": "Walk around the heater after it's placed and look at what's within three feet in every direction, not just where it's pointed. Curtains, bedding, and paper are the usual culprits."
+        }
+      ]
+    },
+    {
+      "heading": "Habits that cut the risk further",
+      "body": "Plug space heaters directly into a wall outlet whenever possible. Extension cords and power strips are a frequent point of failure because they are often rated for far less current than a heater draws, and a cord that gets warm to the touch is already a warning sign. Never run a heater's cord under a rug or carpet where damage or overheating would go unseen. Turn the heater off, rather than just leaving the room, any time no one is actively there to watch it, and always turn it off before sleep unless the model is specifically built and rated for unattended overnight use. Unplug heaters that are not in use rather than leaving them on standby.",
+      "cards": [
+        {
+          "heading": "Look for a tip-over shutoff",
+          "body": "Many newer heaters shut off automatically if knocked over. Older units without this feature need extra care about where they're placed, especially around kids or pets."
+        },
+        {
+          "heading": "Keep kids and pets in mind",
+          "body": "A curious pet or a toddler's blanket can turn a heater over in seconds. Place units where foot traffic and pets are unlikely to bump them, not just where the outlet happens to be."
+        }
+      ]
+    },
+    {
+      "heading": "If a fire has already happened",
+      "body": "If a space heater fire has damaged your home, even a small one that was put out quickly, the smoke, soot, and scorch damage can spread further than what's visible on the surface. Our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page walks through what that assessment and cleanup process typically involves. If water was used to put the fire out or a sprinkler activated, water damage can follow right behind it, and our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page covers that side of it."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it safe to leave a space heater on overnight?",
+      "a": "Unless the specific model is designed and rated for unattended overnight use, the general safety guidance is to turn space heaters off before sleeping. Most house fires linked to space heaters happen when the unit is left running unattended, whether that's overnight or while everyone leaves a room."
+    },
+    {
+      "q": "How far away from a space heater should furniture be?",
+      "a": "Keep at least three feet of clear space on every side of the heater, including behind and above it, away from furniture, curtains, bedding, and anything else that can burn. This clearance matters even if the heater looks like it's pointed away from those items."
+    },
+    {
+      "q": "Can I plug a space heater into a power strip?",
+      "a": "It's better to plug a space heater directly into a wall outlet. Many power strips and extension cords are not rated for the current a space heater draws, and that mismatch is a common source of electrical fires."
+    },
+    {
+      "q": "What should I do if a space heater already caused damage in my home?",
+      "a": "Once everyone is safe and the fire department has cleared the scene, avoid disturbing soot or debris more than necessary. You can reach out through our <a href=\"/contact.html\">contact page</a> to talk through next steps for assessing and cleaning up fire or water damage."
+    }
+  ],
+  "cta": {
+    "heading": "Have questions about damage from a space heater incident?",
+    "body": "If a space heater has already caused smoke, soot, or water damage in your home, you don't have to figure out the next step alone. Reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com and we'll talk through what you're seeing."
+  },
+  "evidence": "This page states general fire-safety guidance drawn from widely recognized clearance and placement practices for space heaters, not a specific Gold Water Fire job or statistic.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "photo": {
+    "src": "/assets/img/space-heater-fire-safety-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Space heaters: the clearances and habits that prevent most of their fires"
+  }
+}
