@@ -1,0 +1,79 @@
+{
+  "slug": "oven-and-self-cleaning-cycle-fires",
+  "path": "/guides/oven-and-self-cleaning-cycle-fires.html",
+  "title": "Oven and Self-Cleaning Cycle Fires: What Goes Wrong | Gold Water Fire Phoenix, AZ",
+  "description": "Why self-cleaning oven cycles start fires, what to check before running one, and what to do if smoke or heat damage shows up in your kitchen.",
+  "h1": "Oven Fires and Self-Cleaning Cycles: What Goes Wrong",
+  "breadcrumbLabel": "Oven and Self-Cleaning Cycle Fires",
+  "intro": "You ran the self-cleaning cycle like you always do, and this time something felt off. Maybe smoke curled out from behind the door, or the kitchen smelled scorched for hours after, or the oven shut itself off with a burning smell that would not clear. It is a strange kind of unsettling: an appliance you trust, doing the one job it advertises as automatic, turning into something you now have to watch. If you are standing in your kitchen trying to figure out whether what just happened was normal or something worse, that instinct to stop and look closer is the right one.",
+  "sections": [
+    {
+      "heading": "Why the self-cleaning cycle is riskier than regular use",
+      "body": "A self-cleaning cycle heats the oven interior to somewhere around 800 to 900 degrees Fahrenheit, well above normal cooking temperatures, to turn baked-on grease and food residue into ash. That heat is the entire point, and it is also the entire risk. Any grease buildup thick enough to have been ignored for a while does not just flake off quietly. It can smoke heavily, and in some cases ignite, especially in spots the cycle cannot reach evenly, like around the door seal, the hidden bake element, or wiring insulation behind the control panel. The same heat that strips residue away can also degrade seals and insulation that were never rated to be pushed that hard, cycle after cycle, over years of use.",
+      "eyebrow": "Understanding the risk"
+    },
+    {
+      "heading": "Common failure points people do not expect",
+      "body": "Most self-cleaning fires trace back to a handful of repeat issues. Grease pooled at the bottom of the oven or on a warped bottom panel can smolder rather than burn clean. A door that does not latch and seal properly lets heat escape unevenly and can let smoke build up faster than it vents. Plastic oven racks or aftermarket parts not rated for cleaning-cycle temperatures can warp, melt, or off-gas. Older units with worn thermostats or a failing high-limit switch can overshoot their target temperature without shutting down when they should. None of these are visible from the outside until the cycle is already running and the smell of smoke tells you something is wrong.",
+      "eyebrow": "Common failure points"
+    },
+    {
+      "heading": "What to check before you run the next cycle",
+      "body": "Before starting a self-cleaning cycle, wipe out loose food debris and major grease pools by hand. A self-cleaning cycle is meant to finish the job on residue baked onto surfaces, not remove a thick layer of buildup that has been accumulating for months. Check that the door seal sits flush and the door latches fully. Remove anything not built into the oven, including racks not labeled as self-clean safe, foil liners, and any stored bakeware. Make sure the kitchen has ventilation, since even a normal cycle produces smoke and fumes as residue burns off, and that smoke detectors nearby are working. If the oven is older or has a history of running hotter than the dial suggests, it is worth having it checked before relying on the highest-heat cycle it offers.",
+      "eyebrow": "Before you run it"
+    },
+    {
+      "heading": "Signs the damage goes beyond the oven itself",
+      "body": "A contained flare-up inside the oven cavity that self-extinguishes when the door stays shut is different from smoke that has pushed into the kitchen air, coated cabinets, or triggered a lingering odor that will not air out. Soot from an oven fire is often greasy and acidic, and it clings to nearby cabinet faces, range hood filters, and countertops in a way that regular cleaning does not fully lift. Heat can also warp countertop material near the oven or discolor cabinet finish above and to the sides, even without visible flame ever reaching those surfaces. If the smell persists after the kitchen has been aired out for a day or more, that is usually a sign residue has settled into porous surfaces like wood cabinetry, drywall, or grout.",
+      "eyebrow": "After the fact"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it normal for a self-cleaning oven to smoke?",
+      "a": "Some smoke and odor during a self-cleaning cycle is common, since the cycle burns off baked-on residue at very high heat. Heavy, dark smoke, a burning plastic smell, or smoke that keeps building rather than tapering off is not normal and is a reason to stop the cycle and let the oven cool with the door closed."
+    },
+    {
+      "q": "Should I stop a self-cleaning cycle if I see flames or heavy smoke?",
+      "a": "Yes. Turn the oven off or cut power at the breaker if it is safe to do so, keep the door closed to limit oxygen and smoke inside the house, and get everyone clear of the kitchen. Opening the door on a smoking oven can pull smoke and heat directly into the room."
+    },
+    {
+      "q": "Can an old oven fire happen even if I do not use the self-cleaning cycle?",
+      "a": "Yes. Grease buildup on heating elements, worn wiring, or a failing thermostat can cause overheating during normal use too. Self-cleaning cycles simply raise the temperature high enough to expose problems that were already present."
+    },
+    {
+      "q": "How do I know if smoke damage from an oven fire needs professional cleanup?",
+      "a": "If the smell lingers after airing out the kitchen, if soot has visibly coated cabinets or the range hood, or if heat has discolored nearby surfaces, those are signs the residue has settled into materials that need more than surface cleaning. Learn more about what that process involves on our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page."
+    }
+  ],
+  "cta": {
+    "heading": "If an oven fire has left smoke or heat damage behind",
+    "body": "Gold Water Fire serves the Phoenix metro area, from NW Peoria and SE Avondale to SW San Tan Valley and NW Apache Junction. Call (480) 999-3339 or reach out through our contact page to talk through what you are seeing in your kitchen."
+  },
+  "evidence": "This page presents general appliance safety and fire science information, not a claim specific to a Gold Water Fire job.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "photo": {
+    "src": "/assets/img/oven-and-self-cleaning-cycle-fires-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Oven fires and self-cleaning cycles: what goes wrong"
+  }
+}

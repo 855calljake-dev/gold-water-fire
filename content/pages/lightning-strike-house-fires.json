@@ -1,0 +1,88 @@
+{
+  "slug": "lightning-strike-house-fires",
+  "path": "/guides/lightning-strike-house-fires.html",
+  "title": "Lightning Strike House Fires: Wiring Damage & Delayed Fire Risk | Gold Water Fire Phoenix, AZ",
+  "description": "Lightning can damage wiring without visible signs, and fires can start hours later. Learn what to watch for after a strike near your home.",
+  "h1": "Lightning Strikes: What They Do to Wiring, and the Fires That Start Hours Later",
+  "breadcrumbLabel": "Lightning Strike House Fires",
+  "intro": "You heard the crack, maybe felt the house shake a little, and then everything seemed fine. The lights came back on. Nothing looked burned. But now it's been hours, or maybe it's the next morning, and something is nagging at you: an outlet that feels warm, a breaker that trips for no clear reason, a faint smell you can't place. You don't have a fire in front of you, so it's hard to know if you're overreacting or if you're missing something real. That uncertainty, sitting with a problem that hasn't announced itself yet, is exactly where a lot of lightning damage lives.",
+  "sections": [
+    {
+      "heading": "Why lightning damage doesn't always show up right away",
+      "body": "A direct or nearby lightning strike sends an enormous, extremely fast electrical surge through whatever path offers the least resistance, often a home's wiring, plumbing, or grounding system, even if the bolt itself never touches the structure. That surge can travel through electrical lines, cable or satellite wiring, phone lines, and even metal gas or water pipes. Unlike a fire that starts and spreads in front of you, electrical damage from a surge is often invisible at first. Wire insulation can be weakened or partially melted internally without any outward sign. A connection point inside a wall or attic can be scorched at a microscopic level, not enough to ignite immediately, but enough to fail later as the damaged material continues to heat and cool with normal use."
+    },
+    {
+      "heading": "How a surge turns into a fire hours or days later",
+      "body": "The delay is the part that confuses people. Lightning-related fires often don't start at the moment of the strike. Instead, damaged insulation or a weakened connection creates a hot spot that worsens gradually. Every time current flows through that compromised wire, whether it's a lamp turning on or an HVAC system cycling, the damaged area heats slightly. Over hours or even a couple of days, that repeated stress can be enough to ignite surrounding insulation, wood framing, or dust and debris inside a wall cavity. This is why a home can seem completely normal right after a storm and still develop a hidden fire well after the storm has passed and everyone has gone to bed."
+    },
+    {
+      "heading": "Warning signs after a strike or a very close hit",
+      "cards": [
+        {
+          "heading": "Electrical symptoms",
+          "body": "Breakers that trip repeatedly, outlets or switch plates that feel warm to the touch, flickering lights, or devices that behave erratically after being reset."
+        },
+        {
+          "heading": "Smell and sound",
+          "body": "A faint burning or plastic smell with no visible source, a buzzing or crackling sound from an outlet, panel, or fixture."
+        },
+        {
+          "heading": "Damaged entry points",
+          "body": "Scorch marks near where a service line, antenna, or metal vent enters the home, even if they seem minor or cosmetic."
+        },
+        {
+          "heading": "Appliance and system failures",
+          "body": "Electronics, garage door openers, thermostats, or HVAC components that stop working or reset themselves shortly after the storm."
+        }
+      ]
+    },
+    {
+      "heading": "What to do while you're sorting out whether it's serious",
+      "body": "If you notice any of the warning signs above, it's reasonable to shut off power to the affected circuit or the main panel if you're unsure which circuit is involved, and avoid using outlets or fixtures that feel warm or smell unusual. A licensed electrician can test circuits and panels for damage that isn't visible to the eye, which is the only reliable way to rule out a hidden problem. If a fire does start, even a small one that's quickly contained, the surrounding wiring and structure should still be evaluated, since heat and smoke can travel further into a wall or attic space than what burned is obvious from the outside. You can read more about how <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> addresses hidden smoke and structural effects, and how <a href=\"/water-damage-restoration.html\">water damage restoration</a> comes into play if a strike also causes flooding or if firefighting efforts leave water behind."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can lightning cause a fire without directly striking my house?",
+      "a": "Yes. A strike to a nearby tree, power line, or the ground can send a surge into a home's wiring or grounding system through underground lines or nearby conductive paths, without the bolt ever touching the structure itself."
+    },
+    {
+      "q": "How long after a lightning strike can a fire start?",
+      "a": "There's no fixed timeline. Damaged wiring or connections can smolder or build heat gradually, and a fire can develop anywhere from a few hours to a couple of days after the original storm, especially inside walls or attics where it isn't immediately visible."
+    },
+    {
+      "q": "Is it normal for breakers to trip after a nearby strike?",
+      "a": "A breaker tripping once after a power surge isn't unusual, but repeated tripping, warm outlets, or unusual smells suggest the wiring itself may have been damaged and should be checked rather than just reset."
+    },
+    {
+      "q": "Should I call an electrician even if nothing looks damaged?",
+      "a": "If lightning struck very close to your home or you noticed a surge, it's reasonable to have an electrician check the panel and key circuits, since insulation and connection damage often isn't visible without testing."
+    }
+  ],
+  "cta": {
+    "heading": "If a storm has left you uneasy about what's behind the walls",
+    "body": "Gold Water Fire helps homeowners across the Phoenix metro area sort out fire and water damage, including the kind that isn't obvious at first glance. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to talk through what you're seeing."
+  },
+  "evidence": "This page states general electrical and fire-science knowledge about lightning surges and delayed ignition; it makes no specific claims about Gold Water Fire's job history or certifications.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "photo": {
+    "src": "/assets/img/lightning-strike-house-fires-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Lightning strikes: what they do to wiring, and the fires that start hours later"
+  }
+}
