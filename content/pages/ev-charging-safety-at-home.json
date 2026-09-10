@@ -1,0 +1,57 @@
+{
+  "slug": "ev-charging-safety-at-home",
+  "path": "/guides/ev-charging-safety-at-home.html",
+  "title": "EV Home Charging Circuit & Fire Safety Basics | Gold Water Fire | Phoenix, AZ",
+  "description": "What to know about circuit requirements and fire risks when charging an EV at home, plus warning signs of an overloaded circuit or wiring problem.",
+  "h1": "Charging an Electric Vehicle at Home: Circuit Requirements and Fire Safety Basics",
+  "breadcrumbLabel": "EV Charging Safety",
+  "intro": "You bought the car, maybe you bought the charger, and now you're standing in your garage wondering if the outlet you're about to plug into was ever meant to handle this much power for this many hours a night. That question is worth sitting with instead of brushing off. Home electrical systems weren't designed with EV charging in mind until fairly recently, and the gap between what a circuit was built for and what it's now being asked to do is exactly where problems start.",
+  "sections": [
+    {
+      "heading": "Why EV charging is different from plugging in an appliance",
+      "body": "Most household circuits are built for short bursts of load: a toaster runs for a couple of minutes, a hair dryer for less than that. EV charging is a sustained draw, often for six to ten hours straight, at a current level that can sit near the top of what a circuit is rated for the entire time. That sustained heat is the core difference. A connection that's slightly loose or a breaker that's slightly undersized might never show a problem running a microwave, but under hours of continuous load it can heat up, degrade insulation, and in the worst cases ignite nearby material."
+    },
+    {
+      "heading": "Level 1 vs Level 2: what the circuit actually needs to handle",
+      "body": "Level 1 charging uses a standard 120-volt household outlet and is the slowest option, often adding only a few miles of range per hour. It puts the least strain on a circuit but can still overheat an outlet that's worn, back-stabbed, or already shared with other loads. Level 2 charging uses a 240-volt circuit, similar to what an electric dryer or oven uses, and delivers power much faster. It also draws considerably more current for much longer stretches, which is why Level 2 installations generally call for a dedicated circuit, sized and wired specifically for that purpose, not a shared or repurposed one."
+    },
+    {
+      "heading": "Warning signs something is wrong with a charging circuit",
+      "body": "A charging setup that's under stress usually gives some notice before it fails outright. A warm or discolored outlet cover, a burning or plastic smell near the charger or panel, a breaker that trips during charging, buzzing or crackling sounds, or a charging cable that feels hot to the touch are all signs the circuit is carrying more than it should. None of these are things to wait out. An outlet or breaker that's already showing heat damage has typically been under stress for a while before anyone noticed."
+    },
+    {
+      "heading": "Where the risk actually lives: panels, outlets, and connections",
+      "body": "The car and the charger itself are usually not where the risk originates. It's the infrastructure feeding them: an aging electrical panel that wasn't sized for an added high-draw circuit, an outlet with worn or loosened contacts, aluminum wiring from an older home that wasn't rated for it, or a breaker that's the wrong size for the circuit it protects. A licensed electrician evaluating the panel, the wire gauge, and the breaker rating before installation is the step that catches these mismatches early, while they're still a wiring job and not a damage claim."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I charge an EV using a regular extension cord?",
+      "a": "This is one of the more common causes of overheating in home EV charging. Extension cords are generally not rated for the sustained current and duration of EV charging, and using one can cause heat buildup at the cord and outlet over hours of continuous draw. Charging equipment is meant to be connected directly to a properly rated outlet or hardwired connection."
+    },
+    {
+      "q": "Does a Level 2 charger always need a dedicated circuit?",
+      "a": "Level 2 charging equipment draws significant, sustained current, and running it on a shared circuit increases the risk of overloading whatever else is on that circuit. A dedicated circuit sized specifically for the charger is the standard approach for this reason."
+    },
+    {
+      "q": "How do I know if my home's electrical panel can handle an EV charger?",
+      "a": "An older panel may already be near its capacity once you account for existing appliances, HVAC, and lighting. A licensed electrician can calculate the home's total load and determine whether the panel has room for an added circuit or needs an upgrade first."
+    },
+    {
+      "q": "What should I do if I smell something burning near my charger or outlet?",
+      "a": "Stop charging immediately, unplug if it's safe to do so, and don't use that outlet or circuit again until it's been inspected. A burning smell near an electrical connection is not something to monitor and wait on."
+    }
+  ],
+  "cta": {
+    "heading": "Already dealing with damage from an electrical or charging issue?",
+    "body": "If overheating, a fire, or water used to extinguish one has damaged your home, Gold Water Fire helps homeowners across the Phoenix metro area understand what happened and get the damage assessed and restored. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general electrical safety and EV charging information as industry knowledge and makes no specific claims about work performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-09-10",
+  "photo": {
+    "src": "/assets/img/ev-charging-safety-at-home-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Charging an electric vehicle at home: circuit requirements and fire safety basics"
+  }
+}
