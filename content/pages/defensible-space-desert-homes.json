@@ -1,0 +1,95 @@
+{
+  "slug": "defensible-space-desert-homes",
+  "path": "/guides/defensible-space-desert-homes.html",
+  "title": "Defensible Space for Desert Homes: What Burns Near Phoenix Houses | Gold Water Fire",
+  "description": "A look at what actually fuels fires around Phoenix-area homes, from dry landscaping to wood fencing, and how defensible space reduces that risk.",
+  "h1": "Defensible Space for Desert Homes: What Actually Burns Around a House Here",
+  "breadcrumbLabel": "Defensible Space Guide",
+  "intro": "If you've ever looked at the dry landscaping around your house during a hot, windy stretch and felt a flicker of worry, you're paying attention to something real. Desert living doesn't feel like forest fire country, but the plants, mulch, and structures right up against a house can carry flame faster than most people expect. It's a reasonable thing to think about, especially if a neighbor has had a close call or you've just moved into a property with mature landscaping you didn't choose.",
+  "sections": [
+    {
+      "heading": "It's not just wildland fire that this protects against",
+      "body": "People in the Phoenix area sometimes assume defensible space is only for homes backing up to desert preserves or mountain foothills. In practice, the same principles apply to a fire that starts from a grill, a discarded cigarette, an electrical fault in a shed, or even a neighbor's yard. The question is always the same: once something ignites, what near the house is going to let that flame keep going and reach the structure itself? Dry desert air and low humidity mean vegetation that looks green can still be surprisingly flammable once it dries out at the root."
+    },
+    {
+      "heading": "What actually burns: the usual fuel sources around a desert property",
+      "body": "Some materials common in Southwest landscaping and home design carry fire more readily than homeowners assume.",
+      "cards": [
+        {
+          "heading": "Ornamental grasses and dry palm fronds",
+          "heading2": "",
+          "body": "Fountain grass, pampas grass, and similar ornamental grasses dry out into dense, fine fuel that ignites quickly and burns hot. Unpruned palm trees with skirts of dead fronds are one of the most common fire sources on desert properties, since dried fronds can catch from embers and send flaming material upward and outward."
+        },
+        {
+          "heading": "Bark mulch against the foundation",
+          "body": "Wood or bark mulch is popular in desert yards for moisture retention, but a bed of mulch pushed right against siding or a wood door gives an ember a place to smolder and then flame up directly against the house. Rock or gravel breaks that path."
+        },
+        {
+          "heading": "Wood fencing and attached structures",
+          "body": "A wood fence that runs directly into a house acts like a fuse. If the fence line ignites anywhere along its length, flame can travel the entire run and reach the structure at the point of attachment, regardless of how far away the fire started."
+        },
+        {
+          "heading": "Stored fuel and clutter near walls",
+          "body": "Firewood stacks, propane tanks, trash bins, and stored lumber next to exterior walls or under eaves are common ignition points. So are dry leaves and pine needles that collect in gutters, roof valleys, and against the base of walls."
+        }
+      ]
+    },
+    {
+      "heading": "Thinking in zones around the house",
+      "body": "Fire science generally breaks defensible space into rings moving outward from the structure. The zone closest to the house, typically the first several feet, is where the strictest rules apply: no combustible mulch against siding, no wood piles, dead plant material cleared regularly, and any shrubs kept well-spaced and pruned so they can't act as a ladder up toward eaves or windows. Moving further out, spacing between trees and shrubs matters more than eliminating landscaping entirely. The goal isn't a barren yard, it's breaking up continuous fuel so fire can't travel unimpeded from the property line to the walls."
+    },
+    {
+      "heading": "Roof and gutter debris matters more than people think",
+      "body": "In the Phoenix area, palm fronds, mesquite leaves, and windblown debris collect in gutters and roof valleys during the dry months. That debris sits close to the roofline and eaves, which are among the most vulnerable parts of a house during an ember-driven fire. Clearing gutters and roof surfaces on a regular schedule, especially before the hottest, driest part of the year, closes off one of the more overlooked entry points for fire onto a structure."
+    },
+    {
+      "heading": "If fire has already reached your home",
+      "body": "This guide is about prevention, but if a fire has already damaged your property, the priorities shift to stopping secondary damage: smoke residue that continues to etch surfaces, soot in HVAC systems, and water damage from firefighting efforts. You can read more about what that process typically involves on our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How far from my house should landscaping be cleared?",
+      "a": "General wildfire agency guidance often recommends the most aggressive clearing in the first 5 feet around a structure, with reduced density continuing out to 30 feet or more depending on lot size and terrain. Local fire departments in the Phoenix metro can usually give property-specific guidance."
+    },
+    {
+      "q": "Are all desert plants low-risk because they're drought-tolerant?",
+      "a": "No. Drought-tolerant doesn't mean fire-resistant. Many desert ornamentals, including ornamental grasses and unmaintained palms, dry into fine, flammable fuel. Fire risk depends more on moisture content, density, and maintenance than on whether a plant is considered native or drought-tolerant."
+    },
+    {
+      "q": "Does defensible space matter if I don't live near open desert or mountains?",
+      "a": "Yes. Fires that reach homes in dense neighborhoods often start from a grill, an electrical issue, or a neighboring yard rather than wildland. The same fuel-reduction principles, keeping dry vegetation, mulch, and stored combustibles away from walls, still reduce how far a fire can travel once it starts."
+    },
+    {
+      "q": "What's the single easiest fix most homeowners overlook?",
+      "a": "Gutters and roof valleys. Dried palm fronds, leaves, and windblown debris collecting near the roofline sit close to one of the most vulnerable parts of the house, and clearing them regularly is a low-cost step many people simply forget."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what shape your risk is in right now?",
+    "body": "If you want a second set of eyes on your property, or you're dealing with fire damage that's already happened, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com. No pressure, just a conversation about where things stand."
+  },
+  "evidence": "This page states general wildfire and landscaping safety principles as industry knowledge; no specific claims about Gold Water Fire's own work history are made.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "photo": {
+    "src": "/assets/img/defensible-space-desert-homes-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Defensible space for desert homes: what actually burns around a house here"
+  }
+}
