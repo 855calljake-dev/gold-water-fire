@@ -1,0 +1,71 @@
+{
+  "slug": "ember-intrusion-attic-vents",
+  "path": "/guides/ember-intrusion-attic-vents.html",
+  "title": "Ember Intrusion Through Attic Vents: What Phoenix, AZ Homeowners Should Know | Gold Water Fire",
+  "description": "Why embers get into attics through vents during wildfire season, what it does to a home, and what Phoenix area homeowners can look for before and after.",
+  "h1": "Ember Intrusion Through Attic Vents During Wildfire Season",
+  "breadcrumbLabel": "Ember Intrusion Attic Vents",
+  "intro": "If you've caught yourself standing under the eaves of your house, looking up at the vents, trying to picture what a wall of wildfire smoke and drifting embers would actually mean for your attic, you're not being paranoid. It's a strange thing to worry about until you realize how it happens, and then it's hard to stop noticing every vent, every gap, every place air moves in and out of a house that was built to breathe, not to seal itself off from fire.",
+  "sections": [
+    {
+      "heading": "Why vents are the weak point, not the walls",
+      "body": "Most people picture wildfire damage as flames touching a structure directly. In reality, a large share of home losses in wildfire-exposed areas start with embers, not flame contact. Embers can travel well ahead of a fire front, carried by wind, and they don't need much of an opening to get inside. A house's exterior walls and roofing are usually the most fire-resistant parts of the structure. Attic vents, soffit vents, ridge vents, and gable vents exist specifically to let air move, which means they are also the places most willing to let a burning ember drift in. Once an ember is inside an attic full of dry insulation, framing lumber, stored boxes, and dust, it has exactly the fuel and oxygen it needs to smolder and then ignite, often without anyone noticing until smoke is already visible from outside."
+    },
+    {
+      "heading": "How embers actually get through a vent",
+      "body": "It rarely takes a big opening. A standard vent screen sized to keep out leaves and rodents (often quarter-inch or half-inch mesh) does very little against a wind-driven ember, which can be smaller than a fingertip and still hot enough to smolder for a long time. Embers get pulled toward vents partly because of the same pressure differences that make a house's ventilation system work in the first place: warm air rising and escaping through ridge and gable vents draws replacement air in through soffit and foundation vents. During an active wildfire event, that natural draft can actively pull embers toward and into the attic rather than embers simply landing there by chance."
+    },
+    {
+      "heading": "What it looks like once embers get in",
+      "body": "Attic ember intrusion doesn't always announce itself with visible flame right away. Early signs can include a faint smoky smell that seems to come from the ceiling or upper floor, unexplained warmth in an attic access hatch, or fine soot or ash residue near vent openings and around attic insulation. Because attics are rarely inspected day to day, a smolder can progress for a meaningful stretch of time before it's caught, which is part of why post-wildfire inspections of homes that were in the fire's path, even ones that look untouched from the street, are worth taking seriously."
+    },
+    {
+      "heading": "What homeowners can look at now",
+      "body": "Ember-resistant vent covers with finer mesh (down to 1/8 inch, which is a widely referenced standard in wildfire-prone building codes) reduce the size of debris that can pass through, though they don't eliminate the risk entirely. Keeping attic insulation away from direct vent openings, clearing debris and dry leaf litter from soffit vent areas, and making sure gable vents aren't cracked or gapped at the frame are all reasonable things to check during dry, high-wind season. None of this is a guarantee against ember intrusion, but a homeowner who knows what a compromised vent looks like is in a much better position to catch a problem early than one who has never looked."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can embers cause damage even if my house never catches fire visibly?",
+      "a": "Yes. An ember that smolders in attic insulation can cause smoke damage, charring, and heat damage to framing and stored items without ever producing a visible flame that someone outside the house would notice. Smoke odor can also work its way into living spaces through the same air pathways that let the ember in."
+    },
+    {
+      "q": "Are all attic vents equally at risk?",
+      "a": "No. Vents that are lower on the structure, like soffit and foundation vents, tend to sit closer to ground-level embers and debris, while gable and ridge vents are more exposed to wind-driven embers riding higher currents. The mesh size, frame condition, and any gaps around the vent all affect how vulnerable a specific vent is."
+    },
+    {
+      "q": "How would I know if my attic had ember intrusion after a nearby wildfire?",
+      "a": "Signs include soot or fine ash near vent openings, a lingering smoky smell inside the attic or upper floor, scorching or charring on insulation or framing near a vent, and any warmth or discoloration around attic access points. If a wildfire came close to your property, an interior attic check is worth doing even if the exterior looks fine."
+    },
+    {
+      "q": "Does ember intrusion only happen during an active fire nearby?",
+      "a": "The most acute risk is during an active wildfire event with wind-driven embers, but dry, high-wind conditions can carry embers from a fire that is not immediately adjacent to a property. Homes miles from the actual fire line have experienced ember-related ignition during severe wind events."
+    }
+  ],
+  "cta": {
+    "heading": "If you suspect ember or smoke damage in your attic",
+    "body": "Gold Water Fire serves the Phoenix, AZ metro area, from Peoria and Avondale to San Tan Valley and Apache Junction and the communities around them. If a wildfire event has left you wondering what's happening above your ceiling, reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're seeing."
+  },
+  "evidence": "This page states general wildfire science and building-ventilation knowledge and makes no specific claims about Gold Water Fire's own job history or certifications.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "photo": {
+    "src": "/assets/img/ember-intrusion-attic-vents-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Ember intrusion through attic vents during wildfire season"
+  }
+}
