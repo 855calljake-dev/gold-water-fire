@@ -1,0 +1,71 @@
+{
+  "slug": "smoke-only-damage-claims",
+  "path": "/guides/smoke-only-damage-claims.html",
+  "title": "Smoke-Only Damage Claims Explained | Gold Water Fire, Phoenix, AZ",
+  "description": "No flames touched your home but the smell won't leave? Here's how smoke-only damage works, why it lingers, and what an insurance claim actually covers.",
+  "h1": "Smoke-Only Damage: When Nothing Burned But Everything Smells",
+  "breadcrumbLabel": "Smoke-Only Damage Claims",
+  "intro": "You keep walking through the house trying to find where the smell is coming from, and it isn't coming from anywhere in particular. That's the strange part. Nothing is charred, nothing is warped, there's no soot streak on the wall to point to. Maybe it was a neighbor's fire, a grease flare-up in your own kitchen that never spread, or a wildfire haze that rolled through the valley. Whatever it was, the flames didn't reach you, but the smell has settled into your home like it lives there now. It's easy to feel like you're overreacting, or like an insurance adjuster is going to look at your unmarked walls and wonder why you're calling at all. That doubt is part of what makes this kind of damage so disorienting: there's real harm happening, but it doesn't look like harm.",
+  "sections": [
+    {
+      "heading": "Why smoke damage doesn't need fire to be real",
+      "body": "Smoke is made up of microscopic particles, gases, and moisture, and those particles don't stay put. They travel on air currents through HVAC ducts, settle into carpet fibers, get absorbed into drywall, and work their way into the wood grain of cabinets and furniture. None of that requires the fire to have touched your structure. A fire two doors down, a chimney backdraft, a wildfire smoke event, or even a contained kitchen fire that never spread past the pan can all leave a full house smelling like it burned. The porous materials in your home, upholstery, grout, unsealed wood, HVAC insulation, act like a sponge. They absorb odor particles and then slowly release them back into the air, especially when humidity or heat rises. That's why the smell can seem to come and go, or get worse on a hot afternoon."
+    },
+    {
+      "heading": "The odor is a symptom, not the whole problem",
+      "body": "By the time you can smell smoke throughout a house, the particles have usually already worked into places you can't see: inside wall cavities if the HVAC pulled smoke through the return air, behind baseboards, in insulation, in the felt padding under carpet. Surface cleaning, wiping walls, running an air purifier, spraying odor neutralizer, can mask the smell temporarily without addressing where the particles actually are. This is why smoke-only situations sometimes get worse a few weeks after the event even though nobody did anything wrong. The materials are still off-gassing what they absorbed."
+    },
+    {
+      "heading": "What documentation actually helps a claim",
+      "body": "Insurance claims for smoke-only damage tend to move slower than fire claims because there's no visible destruction to photograph. Before you clean anything, take photos and video of every room, including closets, cabinets interiors, and HVAC vents. Note the date and suspected source of the smoke event. Keep a written log of when the smell is strongest and in which rooms, since that pattern often maps to where HVAC airflow concentrated the particles. If you or anyone in the home has started coughing, getting headaches, or noticing eye or throat irritation, write that down too. Adjusters weigh both the physical evidence and the pattern of impact when they evaluate a smoke-only claim."
+    },
+    {
+      "heading": "What actual remediation involves",
+      "body": "Real smoke odor removal isn't the same as air freshening. It typically involves identifying which materials have absorbed odor versus which are just carrying surface residue, HVAC system cleaning since ducts recirculate the problem every time the system runs, thermal fogging or ozone treatment in some cases to neutralize particles at the molecular level, and sealing or replacing materials that have absorbed odor too deeply to treat, like unsealed wood or certain insulation. A walkthrough with someone trained to trace how smoke traveled through your specific home, rather than just where you can smell it standing in the living room, is usually the difference between odor that returns and odor that's actually gone.",
+      "cards": [
+        {
+          "heading": "HVAC first",
+          "body": "If the system ran during or after the smoke event, it likely spread particles into every room it serves, not just the one closest to the source."
+        },
+        {
+          "heading": "Porous materials",
+          "body": "Carpet padding, unsealed wood, and grout hold odor longest and often need targeted treatment, not just cleaning."
+        },
+        {
+          "heading": "Hidden pathways",
+          "body": "Wall cavities, behind outlets, and above drop ceilings can carry smoke into rooms that look and even smell untouched at first."
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can smoke damage a house if there was no fire inside it?",
+      "a": "Yes. Smoke particles travel through air currents and HVAC systems regardless of where the fire actually burned. A nearby fire, wildfire smoke, or a contained kitchen incident can all leave odor and residue throughout a home even though no flame touched the structure."
+    },
+    {
+      "q": "Why does the smoke smell come back after I've cleaned?",
+      "a": "Surface cleaning removes what's on top of materials but doesn't reach odor that has absorbed into porous surfaces like carpet padding, unsealed wood, or HVAC insulation. Those materials slowly release the odor back into the air, especially with heat or humidity."
+    },
+    {
+      "q": "Will insurance cover smoke-only damage if nothing burned?",
+      "a": "Many homeowner policies do cover smoke damage as its own category, separate from fire damage, but coverage depends on your specific policy and the cause of the smoke. Documenting the smell, the suspected source, and any physical symptoms helps support a claim."
+    },
+    {
+      "q": "How do I know if my HVAC system spread the smoke?",
+      "a": "If the system was running during or shortly after the smoke event, or if odor is present in rooms far from where the smoke originated, the ductwork likely carried particles throughout the home. A duct inspection can usually confirm this."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if what you're smelling counts as damage?",
+    "body": "Gold Water Fire can walk your home, trace where the smoke actually traveled, and help you understand what documentation and treatment your situation calls for. Reach out at (480) 999-3339 or through the <a href=\"/contact.html\">contact page</a>."
+  },
+  "evidence": "This page states general fire and smoke restoration knowledge and does not claim any specific outcome, certification, or project performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "photo": {
+    "src": "/assets/img/smoke-only-damage-claims-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Smoke-only damage claims: when nothing burned but everything smells"
+  }
+}

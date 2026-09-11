@@ -1,0 +1,88 @@
+{
+  "slug": "smoke-inside-wall-cavities",
+  "path": "/guides/smoke-inside-wall-cavities.html",
+  "title": "Smoke Odor Inside Wall Cavities After a Fire | Gold Water Fire Phoenix, AZ",
+  "description": "Why smoke odor returns after surface cleaning and what's happening inside your walls. A clear explanation for Phoenix homeowners dealing with lingering smoke smell.",
+  "h1": "Smoke Inside Wall Cavities: Why Odor Comes Back After Surface Cleaning",
+  "breadcrumbLabel": "Smoke Inside Wall Cavities",
+  "intro": "You cleaned. You scrubbed the walls, wiped down every surface, maybe even ran an ozone machine or set out bowls of vinegar. For a few days it seemed to work. Then the smell came back, sometimes worse when the AC kicks on or the weather turns humid. If you're standing in a room that looks clean but doesn't smell clean, you're not imagining it, and you're not doing something wrong. There's usually a reason the smell won't fully leave, and it has nothing to do with how hard you scrubbed.",
+  "sections": [
+    {
+      "heading": "Why surface cleaning doesn't reach the real problem",
+      "body": "Smoke isn't a coating that sits on top of a wall. It's made up of tiny particles and gases produced by combustion, and both behave differently than most people expect. During a fire, pressure differences and heat push smoke through every gap a house has: electrical outlets, baseboards, window and door casings, plumbing penetrations, attic access points, and the seams around cabinetry. Once inside a wall cavity, smoke particles settle on the studs, the back side of drywall, insulation, and any wiring or ductwork running through that space. Wiping down the visible drywall face only addresses the outer layer. The odor source can be sitting inches away, sealed behind paint and material that was never touched."
+    },
+    {
+      "heading": "Why the smell seems to disappear, then return",
+      "body": "Odor compounds from smoke are volatile, meaning they release into the air more readily when conditions change. Heat, humidity, and airflow all affect how much odor a material gives off at a given moment. After cleaning, a room can smell noticeably better simply because the air has been refreshed and surface residue is gone. But if the source material inside the wall, insulation, framing, or subfloor still holds smoke residue, it keeps releasing odor slowly over time. Turning on the heat, running the AC after months of it being off, or a humid monsoon week can all cause a wall cavity to \"off-gas\" again, which is why homeowners often describe the smell as coming and going rather than staying constant."
+    },
+    {
+      "heading": "What actually holds onto smoke odor",
+      "cards": [
+        {
+          "heading": "Insulation",
+          "body": "Fiberglass and cellulose insulation are porous and trap smoke particles deep in their fibers. Surface cleaning cannot reach insulation buried inside a closed wall."
+        },
+        {
+          "heading": "Wood framing",
+          "body": "Studs and framing members can absorb smoke odor into the wood grain itself, particularly with prolonged or smoldering exposure rather than a fast-burning fire."
+        },
+        {
+          "heading": "HVAC and ductwork",
+          "body": "Ducts running through affected walls or ceilings can carry residue throughout the house every time the system runs, spreading odor to rooms that were never near the fire."
+        },
+        {
+          "heading": "Wall cavities and voids",
+          "body": "Any enclosed, unventilated space acts like a reservoir. Without airflow or treatment, odor compounds simply sit there indefinitely until the material is cleaned or removed."
+        }
+      ]
+    },
+    {
+      "heading": "How odor at the source is actually addressed",
+      "body": "Dealing with smoke odor at its source generally means getting to the material that's holding it, not just the room around it. Depending on the type of fire (fast-flame versus smoldering), the type of material involved, and how deep the smoke traveled, that can mean thermal fogging, sealing and encapsulating affected framing, cleaning or replacing insulation, or in more severe cases opening the wall to remove and replace material outright. Air alone, even with strong deodorizers, does not resolve odor that's embedded in porous material. This is also why odor can seem resistant to consumer-grade fixes: those methods treat the air in the room, not the studs and insulation behind the drywall."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does smoke smell come back after I already cleaned everything?",
+      "a": "Because the visible cleaning likely addressed surfaces only. If smoke penetrated into wall cavities, insulation, or framing during the fire, those materials continue to release odor over time, especially when heat, humidity, or airflow changes."
+    },
+    {
+      "q": "Does running an air purifier or ozone machine fix this?",
+      "a": "Air treatments can reduce odor in the room's air temporarily, but they don't remove residue embedded in insulation, wood framing, or ductwork. If the source material still holds smoke residue, odor typically returns once the treatment stops."
+    },
+    {
+      "q": "How do I know if the smell is coming from inside my walls versus just lingering in the air?",
+      "a": "A general clue is whether the smell fluctuates with temperature or humidity, gets stronger near outlets or vents, or returns days after a thorough surface cleaning. That pattern usually points to a source behind the surface rather than in the open air."
+    },
+    {
+      "q": "Can smoke odor spread to parts of the house that weren't near the fire?",
+      "a": "Yes. Ductwork and HVAC systems that run through or near affected areas can carry smoke residue to other rooms every time the system cycles, which is why odor sometimes shows up far from where the fire actually occurred."
+    }
+  ],
+  "cta": {
+    "heading": "Still smelling smoke after cleaning?",
+    "body": "If odor keeps returning no matter how much you clean, it may be coming from inside your walls. Gold Water Fire serves the Phoenix metro area and can help you understand what's happening and what it takes to address it. Call (480) 999-3339 or reach out through our <a href=\"/contact.html\">contact page</a>."
+  },
+  "evidence": "This page states general fire and smoke behavior knowledge and does not make any specific claim about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "photo": {
+    "src": "/assets/img/smoke-inside-wall-cavities-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Smoke inside wall cavities: why odor comes back after surface cleaning"
+  }
+}
