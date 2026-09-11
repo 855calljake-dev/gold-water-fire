@@ -1,0 +1,71 @@
+{
+  "slug": "electrical-panel-after-a-fire",
+  "path": "/guides/electrical-panel-after-a-fire.html",
+  "title": "Electrical Panel After a Fire: What Inspectors Check | Gold Water Fire Phoenix, AZ",
+  "description": "What happens to an electrical panel after a house fire, and why utilities and inspectors won't restore power until it's checked. A Phoenix-area guide.",
+  "h1": "The electrical panel after a fire: what inspectors look for before power comes back",
+  "breadcrumbLabel": "Electrical Panel After a Fire",
+  "intro": "You've made it past the fire itself, and now you're stuck waiting on something that feels almost bureaucratic: the power staying off. It's a strange kind of frustration. The flames are out, the smoke has cleared enough to breathe, and yet nobody will just flip the switch back on. If you're standing in front of your panel wondering why this step is taking so long, or why an inspector keeps mentioning things you can't see, that confusion is completely reasonable. Electrical systems don't show their damage the way walls and furniture do, and that's exactly what makes this part of recovery so hard to sit with.",
+  "sections": [
+    {
+      "heading": "Why the power doesn't just come back on",
+      "body": "After a fire, the utility company or a local inspector typically needs to sign off before power is reconnected, even if the fire never touched the panel directly. This isn't caution for its own sake. Heat, smoke, and the water used to fight the fire all travel further than people expect, and electrical components can be compromised without any visible scorching. A panel that looks untouched from the outside can have heat-damaged breakers, melted insulation inside the walls, or soot conductive enough to create a short once current flows again. The delay is the system working the way it's supposed to."
+    },
+    {
+      "heading": "What an inspector is actually looking for",
+      "body": "Inspectors are trained to look past the obvious. On the panel itself, they check for discoloration or bubbling on the breaker faces, which signals internal heat even if the panel door was closed during the fire. They'll look at the bus bar and lugs for pitting or arcing marks, check whether breakers still trip and reset properly, and examine the panel enclosure for warping that could mean the metal itself got hot enough to shift. Beyond the panel, they're tracing circuits: wiring insulation exposed to high heat can become brittle and crack, and that damage often isn't visible until a wire is flexed or pulled from a junction box. Smoke residue is also a concern, because soot is acidic and can slowly corrode contacts and connections for months after a fire if it isn't cleaned out.",
+      "cards": [
+        {
+          "heading": "On the panel",
+          "body": "Discoloration or melting on breakers, warping of the panel box, arcing marks on the bus bar, and whether the main breaker still functions correctly."
+        },
+        {
+          "heading": "In the walls",
+          "body": "Heat-brittled wire insulation, scorching inside junction boxes, and any wiring that ran through the area where the fire was hottest."
+        },
+        {
+          "heading": "Everywhere smoke reached",
+          "body": "Soot residue on electrical contacts and connections, since it's acidic and can cause corrosion long after the fire is out."
+        }
+      ]
+    },
+    {
+      "heading": "Why water adds another layer",
+      "body": "Most house fires are put out with water, and water and electrical systems are a bad combination even after the fire is over. If water reached the panel, outlets, or wiring, it can leave behind corrosion that isn't obvious right away but shows up weeks later as flickering lights, tripped breakers, or connections that fail intermittently. This is part of why a fire-damaged property often needs both fire and water damage assessment, not just one or the other. For more on how standing water and moisture affect a structure over time, see our guide on <a href=\"/water-damage-restoration.html\">water damage restoration</a>."
+    },
+    {
+      "heading": "What typically has to happen before reconnection",
+      "body": "The exact sequence depends on the jurisdiction and the utility, but the general pattern is consistent: the panel and affected circuits get inspected, any compromised components are identified, repairs or replacement happen where needed, and then the utility or a licensed electrician clears the system for power. Homeowners sometimes assume a quick visual check is enough, but if wiring inside the walls was exposed to heat, that wiring may need to be tested or replaced even if the panel itself checks out fine. Rebuilding or repairing what the fire damaged, including electrical runs behind the walls, usually falls under a broader <a href=\"/reconstruction.html\">reconstruction and rebuild</a> scope rather than a simple swap of parts."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just reset the breakers myself and turn the power back on?",
+      "a": "This isn't something to do on your own after a fire. Even if breakers appear to reset normally, internal heat damage or hidden wiring issues can create a fire or shock hazard the moment current flows again. Power restoration after a fire generally needs to go through an inspection and sign-off process first."
+    },
+    {
+      "q": "How do I know if my panel needs to be replaced instead of repaired?",
+      "a": "That depends on what an inspection finds. Surface soot with no heat damage may only need cleaning, while warping, melted components, or arcing damage usually mean full replacement. It's not something to guess at from the outside of the panel."
+    },
+    {
+      "q": "Why does the panel look fine but the power is still off?",
+      "a": "A panel can look untouched on the outside while wiring behind the walls, connections inside junction boxes, or components inside the enclosure were exposed to enough heat or smoke to be compromised. Visual inspection alone often isn't enough to clear a system for power."
+    },
+    {
+      "q": "Does smoke damage alone affect electrical safety, even without direct fire contact?",
+      "a": "Yes. Smoke residue is acidic and can settle into outlets, panels, and connections in rooms the fire never reached. Over time that residue can corrode contacts and cause failures, which is why smoke-affected electrical components are often checked even in areas that look untouched."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your panel or wiring needs after a fire?",
+    "body": "If you're waiting on an inspection or trying to understand what comes next, Gold Water Fire can walk through fire and water damage across your property and help you understand the path back to a safe, repaired home. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page states general electrical and fire-restoration industry knowledge about panel inspection and smoke/water effects; no specific claims about Gold Water Fire's own job history are made.",
+  "type": "educational",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "photo": {
+    "src": "/assets/img/electrical-panel-after-a-fire-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The electrical panel after a fire: what inspectors look for before power comes back"
+  }
+}
