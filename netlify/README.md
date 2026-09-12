@@ -18,6 +18,7 @@ logic and is what `npm run test:webhook` exercises.
 | `GHL_LOCATION_ID` | `bvd3wX0RlnicNDrv6Jmt` | anyone |
 | `GHL_PIPELINE_NAME` | optional, default `Marketing Pipeline` | anyone |
 | `GHL_STAGE_DISPATCH` / `GHL_STAGE_NEW` | optional, default `Hot Lead` / `New Lead` | anyone |
+| `GHL_CONVERSATION_PROVIDER_ID` | the Call-type Conversation Provider registered by the ByTomorrow marketplace app and installed on this sub-account. **Does not exist yet.** Without it GHL refuses a timeline Call (`400 CONVERSATIONS_MSG_PROVIDER_ID_REQUIRED`, reproduced 2026-09-12), so the contact gets no native Play button; the recording URL and transcript still land in the note and the custom fields | Jake, once the app exists |
 
 Until `RETELL_API_KEY` is set the function answers 503 and Retell records a failed delivery;
 until `GHL_PIT` is set it answers 200 with `ghl: "not_configured"` and logs the dropped call id.

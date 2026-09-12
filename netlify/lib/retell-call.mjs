@@ -81,6 +81,8 @@ export function shapeCall(call) {
     direction,
     line: lineFor(agentNumber),
     callerId,
+    agentNumber,
+    startedAt: call.start_timestamp ? new Date(call.start_timestamp).toISOString() : undefined,
     fullName,
     phone: phone ?? callerId,
     phoneCaptured: Boolean(phone),

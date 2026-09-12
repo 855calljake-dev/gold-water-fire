@@ -93,3 +93,15 @@ test('customFieldValues: writes the picklist option strings the sub-account alre
   assert.equal(none['Transfer Status'], 'N/A')
   assert.deepEqual(tagsFor(c), ['phone-lead', 'line:480-999-3339', 'call:dispatch'])
 })
+
+test('addCallMessage skips, and says so, when no conversation provider id is configured', async () => {
+  const { addCallMessage } = await import('./ghl.mjs')
+  const r = await addCallMessage({ token: 't', locationId: 'l' }, { contactId: 'c', direction: 'inbound' })
+  assert.deepEqual(r, { messageId: undefined, skipped: 'no_conversation_provider' })
+})
+
+test('shapeCall carries the agent number and the start time for the timeline Call', () => {
+  const c = shapeCall({ ...base, start_timestamp: 1789000000000, call_analysis: {} })
+  assert.equal(c.agentNumber, '+14809993339')
+  assert.equal(c.startedAt, '2026-09-10T02:26:40.000Z')
+})

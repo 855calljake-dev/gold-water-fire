@@ -18,6 +18,9 @@
  *   RETELL_API_KEY        verifies x-retell-signature; also the key Retell uses to sign
  *   GHL_PIT               location Private Integration Token for the GWF sub-account
  *   GHL_LOCATION_ID       bvd3wX0RlnicNDrv6Jmt
+ *   GHL_CONVERSATION_PROVIDER_ID  the Call provider registered by the ByTomorrow marketplace app,
+ *                         once it exists; without it the timeline Call (and its Play button) is
+ *                         skipped and logged on every call, never silently
  *   GHL_PIPELINE_NAME     default "Marketing Pipeline" (the stock pipeline in the sub-account)
  *   GHL_STAGE_DISPATCH    default "Hot Lead"
  *   GHL_STAGE_NEW         default "New Lead"
@@ -77,17 +80,27 @@ async function writeCallToGhl(c) {
 
     await createNote(env, contactId, noteFor(c))
 
+    // The timeline Call is what gives the contact a native Play button. It is
+    // gated on GHL_CONVERSATION_PROVIDER_ID (see ghl.mjs); until the marketplace
+    // app exists the recording lives in the note and the Call Recording URL field.
     try {
-      const { messageId } = await addCallMessage(env, {
+      const { messageId, skipped } = await addCallMessage(env, {
         contactId,
         direction: c.direction,
-        ...(c.durationSec ? { durationSec: c.durationSec } : {}),
+        to: c.direction === 'inbound' ? c.agentNumber : c.callerId,
+        from: c.direction === 'inbound' ? c.callerId : c.agentNumber,
+        date: c.startedAt,
+        status: c.disconnectReason === 'no_valid_payment' ? 'failed' : 'completed',
       })
-      if (messageId && c.recordingUrl) await attachRecording(env, messageId, c.recordingUrl)
+      if (skipped) {
+        console.error(`retell-webhook: timeline Call SKIPPED for ${c.callId}: GHL_CONVERSATION_PROVIDER_ID not set; no marketplace-app Conversation Provider exists for this location yet (GHL 400 CONVERSATIONS_MSG_PROVIDER_ID_REQUIRED otherwise). Note and custom fields still written.`)
+      } else if (messageId && c.recordingUrl) {
+        await attachRecording(env, messageId, c.recordingUrl)
+      }
     } catch (err) {
-      // The note already carries the recording link; a timeline failure costs
-      // presentation, not data. Reported, not fatal.
-      console.error(`retell-webhook: GHL call-message/attachment failed for ${c.callId} (note written) -`, err)
+      // The note and the Call Recording URL field already carry the recording,
+      // so a timeline failure costs the Play button, not the data. Reported.
+      console.error(`retell-webhook: GHL timeline Call/attachment FAILED for ${c.callId} (note and fields written) -`, err)
     }
 
     if (!isLead(c)) {

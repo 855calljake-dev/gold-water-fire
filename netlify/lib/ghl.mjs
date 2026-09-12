@@ -112,7 +112,21 @@ export async function createNote(env, contactId, body) {
 // Conversations: the call lands in the contact's timeline as a real call.
 // ---------------------------------------------------------------------------
 
+/**
+ * A timeline Call needs a `conversationProviderId`. GHL answers
+ * 400 CONVERSATIONS_MSG_PROVIDER_ID_REQUIRED without one (reproduced against
+ * the GWF sub-account 2026-09-12), and a Conversation Provider only exists
+ * once a marketplace app registers one and is installed on the location. So
+ * the id comes from env, and without it the caller skips this write and says
+ * so, instead of paying a 400 on every call. Returns null when skipped.
+ */
+export function conversationProviderId(env = process.env) {
+  return env.GHL_CONVERSATION_PROVIDER_ID || null
+}
+
 export async function addCallMessage(env, input) {
+  const providerId = input.conversationProviderId ?? conversationProviderId()
+  if (!providerId) return { messageId: undefined, skipped: 'no_conversation_provider' }
   const path = input.direction === 'inbound'
     ? '/conversations/messages/inbound'
     : '/conversations/messages/outbound'
@@ -121,7 +135,14 @@ export async function addCallMessage(env, input) {
     body: {
       type: 'Call',
       contactId: input.contactId,
-      ...(input.durationSec ? { call: { duration: input.durationSec, status: 'completed' } } : {}),
+      conversationProviderId: providerId,
+      direction: input.direction,
+      ...(input.date ? { date: input.date } : {}),
+      call: {
+        ...(input.to ? { to: input.to } : {}),
+        ...(input.from ? { from: input.from } : {}),
+        status: input.status ?? 'completed',
+      },
     },
   })
   return { messageId: data?.messageId ?? data?.id }
