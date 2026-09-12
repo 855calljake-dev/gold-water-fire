@@ -1,0 +1,67 @@
+{
+  "slug": "candle-fire-risk",
+  "path": "/guides/candle-fire-risk.html",
+  "title": "Candle Fires: How They Start and What Changes the Risk | Gold Water Fire Phoenix, AZ",
+  "description": "Why candle fires start, what raises the risk in a home, and what to do if one gets away from you. A clear guide for Phoenix area homeowners.",
+  "h1": "Candle Fires: How They Start and What Changes the Risk",
+  "breadcrumbLabel": "Candle Fire Risk",
+  "intro": "Maybe it happened fast, a curtain too close, a flame that caught wrong, and now you're looking at scorched drywall or a smell that won't leave the house. Or maybe nothing has happened yet, but you've started noticing how many candles are burning in rooms you're not standing in, and a quiet unease has set in about it. Either way, it's worth understanding what actually makes a candle dangerous, because the answer is rarely just \"carelessness.\" It's usually a handful of small conditions stacking on top of each other until the moment they don't.",
+  "sections": [
+    {
+      "heading": "How a candle fire actually starts",
+      "body": "A candle fire almost never starts because the flame itself is unusual. It starts because something around the flame changes. The wick burns down unevenly and the flame grows taller than expected. A draft from an HVAC vent or an open window pushes the flame sideways toward a curtain, a stack of mail, or a paper decoration. The candle is left burning after the room is empty, and the wax pool eventually reaches a point where the container can't hold it. In each case, the fire didn't start because someone forgot the basics. It started because the flame's environment shifted in a small way that went unnoticed until it mattered."
+    },
+    {
+      "heading": "What changes the risk from low to high",
+      "body": "A few conditions do most of the work in turning an ordinary candle into a hazard. Placement is the biggest one: anything burning within roughly a foot of curtains, bedding, shelving, or paper is at risk the moment a draft or a knock shifts the flame. Container type matters too. A candle in a wide, shallow dish, or one that has burned down close to the container's rim, radiates more heat outward than one in a tall, narrow holder. Unattended time is the other major factor, not because a watched candle behaves differently, but because an unwatched one has no one to notice the wick listing, the wax pooling, or a pet or child getting close. Airflow, from ceiling fans, HVAC returns, or even a door closing, can move a flame in ways that are easy to miss if you're not in the room."
+    },
+    {
+      "heading": "Where damage tends to spread once it starts",
+      "body": "Candle fires often start small and stay contained to a small area, like a nightstand or a windowsill, then spread through whatever is nearby: fabric, paper, or a plastic surface that melts and ignites further. Smoke from a contained fire can still travel through a home's HVAC system, leaving soot and odor in rooms far from where the fire actually burned. Heat can also warp nearby surfaces or crack glass without ever producing visible flame damage there, which is why a fire that looks small at first glance can still leave residue and odor issues throughout a house."
+    },
+    {
+      "heading": "What to do differently going forward",
+      "body": "Most of what changes the risk is observation, not equipment. Keeping candles on a stable, heat safe surface away from anything that can drift into the flame's radius, trimming the wick before each burn so it doesn't grow tall and unstable, and not leaving a candle burning in a room with no one in it are the practical habits that matter most. If you already have soot staining, a persistent smoke smell, or heat damage to a wall or surface near where a candle was burning, those are signs worth having looked at, since smoke residue and structural heat exposure don't always resolve on their own even after the visible mess is cleaned up."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a candle fire cause damage even if the flame never spreads beyond the candle itself?",
+      "a": "Yes. Heat and smoke can affect nearby surfaces, walls, and HVAC systems even when the visible fire stays contained to the candle and its immediate surroundings."
+    },
+    {
+      "q": "Why do some candles seem to burn safely for years and then suddenly cause a problem?",
+      "a": "The conditions around a candle change over time: furniture gets rearranged, curtains get replaced with longer ones, a draft pattern shifts. The candle itself hasn't changed, but its environment has."
+    },
+    {
+      "q": "Is a glass or metal candle container enough to prevent fire risk?",
+      "a": "The container reduces some risk but doesn't remove it. As wax burns down near the rim, or if the container cracks from heat, the flame can still reach nearby materials."
+    },
+    {
+      "q": "What should I do if I find soot or smoke odor after a small candle related fire?",
+      "a": "It's worth having the affected area assessed, since smoke residue and heat exposure can affect materials in ways that aren't obvious from a visual check alone."
+    }
+  ],
+  "cta": {
+    "heading": "If a candle fire has already left damage behind",
+    "body": "If soot, smoke odor, or heat damage from a candle fire is showing up in your home, Gold Water Fire can take a look and explain what you're dealing with. Reach us at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general fire safety and fire behavior knowledge and does not make specific claims about Gold Water Fire's history, certifications, or past jobs.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/candle-fire-risk-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Candle fires: how they start and what changes the risk"
+  }
+}
