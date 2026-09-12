@@ -1,0 +1,61 @@
+{
+  "slug": "aluminum-wiring-fire-risk",
+  "path": "/guides/aluminum-wiring-fire-risk.html",
+  "title": "Aluminum Branch Wiring Fire Risk: What Phoenix, AZ Homeowners Should Know",
+  "description": "Aluminum branch wiring in homes built roughly 1965-1975 carries known fire risks. Here's how to recognize it and what fixes actually address the danger.",
+  "h1": "Aluminum Branch Wiring in Older Homes: The Fire Risk and the Fixes",
+  "breadcrumbLabel": "Aluminum Wiring Fire Risk",
+  "intro": "Finding out your house might have aluminum wiring behind the walls is unsettling in a way that's hard to explain to someone who hasn't gone through it. Maybe a home inspector mentioned it in passing, or an insurance agent asked a question you couldn't answer, or a warm outlet cover got you searching late at night. There's no visible sign of a problem, which makes it worse somehow. You can't see the connections inside the walls, you don't know how urgent this really is, and every article you read seems to either panic you or brush past the details you actually need. Sitting with that uncertainty, not knowing whether the wiring in your own walls is something to worry about, is a reasonable place to be.",
+  "sections": [
+    {
+      "eyebrow": "Background",
+      "heading": "Why aluminum wiring was used, and why it became a problem",
+      "body": "Between roughly the mid-1960s and mid-1970s, copper prices rose sharply, and many homebuilders switched to aluminum for branch circuit wiring (the wiring that runs from the panel to outlets, switches, and light fixtures) as a cost-saving measure. It wasn't a fringe practice; it was common enough that entire subdivisions built in that window used it throughout. The wire itself isn't inherently dangerous. The risk shows up at the connections: aluminum expands and contracts with heat cycling more than copper does, it oxidizes in a way that increases electrical resistance, and it's softer, so it can loosen at screw terminals over time. A connection that starts out tight can work itself loose year after year without anyone touching it. Loose or oxidized connections create resistance, resistance creates heat, and heat at a connection point inside a wall or a switch box is how these fires start, often without tripping a breaker first."
+    },
+    {
+      "eyderow": "",
+      "heading": "Signs that suggest aluminum wiring may be present",
+      "body": "If your home was built or had electrical work done between about 1965 and 1975, that's the first flag worth checking. Beyond the build date, look at the wire jacket itself if you can safely view it at the panel or an accessible junction box: aluminum wiring is typically marked \"AL\" or \"ALUMINUM\" printed along the insulation, while copper is unmarked or marked \"CU.\" Warning signs in daily use include warm or discolored outlet and switch covers, a faint burning or plastic smell near outlets with no obvious source, flickering lights that aren't tied to a single fixture, or outlets and switches that stop working intermittently for no clear reason. None of these signs guarantee a problem, and their absence doesn't rule one out either, since overheating connections can sit hidden inside a wall for a long time before anything at the surface changes."
+    },
+    {
+      "eyebrow": "What actually fixes it",
+      "heading": "The fixes that address the real risk",
+      "body": "Simply having aluminum wire in a home isn't automatically a fire; the danger is concentrated at the connection points, which is why the accepted fixes focus there rather than on ripping out every foot of wire. A common approach is the \"pigtail\" method, where a licensed electrician splices a short length of copper wire onto the end of each aluminum conductor at outlets, switches, and fixtures, using a connector rated and listed for aluminum-to-copper connections (not just any wire nut). Another approach uses connectors specifically designed and tested for aluminum wiring terminations, sometimes paired with an antioxidant compound to slow future oxidation at the joint. Full rewiring, replacing the aluminum branch circuits with copper throughout, addresses the issue completely but is more invasive and costly, and is typically reserved for homes with extensive damage, repeated past failures, or a full remodel already underway. Whichever approach is used, the work should be done by a licensed electrician, and every accessible connection point matters, not just the ones behind the outlets you use most."
+    },
+    {
+      "eyebrow": "After an incident",
+      "heading": "If overheating has already caused damage",
+      "body": "If a connection has overheated enough to scorch a box, melt insulation, or produce smoke, the damage isn't always confined to what you can see. Heat and soot can travel into wall cavities, and smoke odor can settle into insulation, framing, and nearby materials well beyond the outlet itself. That's a separate problem from the wiring fix: the electrical issue needs to be corrected by an electrician, and any resulting fire, smoke, or soot damage needs to be properly assessed and addressed so it doesn't linger in the structure. Gold Water Fire handles that second part, the <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> work that follows an electrical incident, across the Phoenix metro area."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does having aluminum wiring mean my house will definitely catch fire?",
+      "a": "No. Many homes with aluminum branch wiring have never had an incident. The risk is elevated compared to copper, concentrated at loose or oxidized connections, and it rises over time if those connections are never addressed. It's a risk to take seriously, not a certainty."
+    },
+    {
+      "q": "Can I just replace outlets myself to fix aluminum wiring?",
+      "a": "Swapping an outlet without addressing the connection itself doesn't fix the underlying issue, and using standard connectors not rated for aluminum can make things worse. This is electrical work that calls for a licensed electrician familiar with aluminum wiring repair methods."
+    },
+    {
+      "q": "How do I find out if my home has aluminum wiring without an inspection?",
+      "a": "Check the build date, look at exposed wire at the panel or an accessible junction box for \"AL\" markings, and check any prior inspection or disclosure paperwork from when the home was purchased. A licensed electrician can confirm it definitively."
+    },
+    {
+      "q": "What should I do if I already see scorching or smell burning near an outlet?",
+      "a": "Treat it as urgent: shut off power to that circuit at the panel if you can do so safely, avoid using the outlet, and have a licensed electrician assess it. If there's visible charring, smoke residue, or odor beyond the outlet itself, that damage may need separate assessment."
+    }
+  ],
+  "cta": {
+    "heading": "If aluminum wiring has already caused fire or smoke damage in your home",
+    "body": "Once the electrical issue is in an electrician's hands, Gold Water Fire can assess and address any fire, smoke, or soot damage left behind, from the affected room outward. Reach us at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general, widely documented information about aluminum branch wiring and its fire risk; no specific claims are made about Gold Water Fire's own job history or certifications.",
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/aluminum-wiring-fire-risk-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Aluminum branch wiring in older homes: the fire risk and the fixes"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "air-scrubbers-vs-air-purifiers",
+  "path": "/guides/air-scrubbers-vs-air-purifiers.html",
+  "title": "Air Scrubbers vs Air Purifiers Explained | Gold Water Fire Phoenix, AZ",
+  "description": "What's the real difference between a restoration air scrubber and a home air purifier? A clear breakdown for anyone dealing with smoke, mold, or dust after damage.",
+  "h1": "Air Scrubbers vs Household Air Purifiers: What's Actually Different",
+  "breadcrumbLabel": "Air Scrubbers vs Air Purifiers",
+  "intro": "If you've just been through a fire, a flood, or a mold problem, the air in your house probably doesn't feel right anymore. Maybe there's a smell that won't leave, or a haze you can't quite place, or you just feel like you're breathing something you shouldn't be. Someone may have mentioned \"air scrubbers\" to you, and you're left wondering if that's just a fancier name for the air purifier sitting in your bedroom. It's a fair question, and the answer matters more than it might seem, because the two machines aren't built for the same job at all.",
+  "sections": [
+    {
+      "heading": "The short version: scale and purpose",
+      "body": "A household air purifier is designed to quietly improve everyday indoor air, things like pollen, pet dander, dust, and normal cooking odors, in a single room over time. A restoration-grade air scrubber is built for a different problem entirely: removing high concentrations of airborne contaminants left behind by fire, water, or mold damage, quickly enough to make a space safe to work in and live in again. One is a maintenance appliance. The other is emergency equipment."
+    },
+    {
+      "heading": "What each machine is actually built to handle",
+      "body": "Household purifiers typically move a modest volume of air through a filter, often a HEPA or HEPA-type filter combined with a light carbon layer, and they're rated for the square footage of a bedroom or living room. Restoration air scrubbers are commercial-grade units that pull far larger volumes of air through multi-stage filtration, usually a pre-filter, a true HEPA filter, and a heavier bed of activated carbon designed specifically for smoke odor, soot particulates, and mold spores. They're also built to run continuously for extended stretches without the filter clogging or the motor overheating, which matters when a space needs constant air changes over days, not hours."
+    },
+    {
+      "heading": "Why particle size and odor chemistry matter here",
+      "body": "Smoke and soot after a fire aren't like ordinary dust. Fine smoke particles can be smaller than what a standard consumer filter is optimized to catch, and the odor compounds released by burned materials are chemically different from everyday household smells, which is why a basic purifier or a scented spray often just masks the problem instead of removing it. Mold spores present their own challenge: they're light, they spread easily when air is disturbed, and a filtration system handling an active mold situation needs enough carbon and airflow to actually pull spores out of circulation rather than just recirculating a diluted version of the same air."
+    },
+    {
+      "heading": "How restoration crews actually use these machines",
+      "body": "In a real restoration setting, air scrubbers usually aren't just switched on and left in a corner. They're often paired with containment, plastic sheeting or negative air setups that keep contaminated air from spreading to unaffected rooms, so the scrubber is cleaning a controlled volume of air instead of chasing particles through an entire house. Placement, the number of units running, and how long they operate are typically based on the size of the affected area and how severe the contamination is, which is a different calculation than deciding where to plug in a bedroom purifier."
+    },
+    {
+      "heading": "When a household purifier is genuinely enough",
+      "body": "Not every situation calls for industrial equipment. If you're dealing with normal seasonal allergens, everyday dust, or general indoor air quality, a good consumer air purifier is a reasonable and reliable tool, and there's no need to overcomplicate it. The distinction really shows up after an event, a fire, a significant water intrusion, or a mold outbreak, where the air itself has been measurably changed and needs to be treated as part of the damage, not just as background air quality."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just run several air purifiers instead of renting an air scrubber?",
+      "a": "For mild, everyday air quality issues, multiple purifiers can help. But after fire or mold damage, the particle load and odor chemistry are usually beyond what consumer filters are designed to capture, so stacking purifiers tends to slow the problem down rather than resolve it."
+    },
+    {
+      "q": "How long do air scrubbers typically need to run after damage?",
+      "a": "It depends on the size of the affected area, the severity of the contamination, and what caused it, so there isn't one fixed number. A restoration professional evaluating the specific space is the best way to get a real answer for your situation."
+    },
+    {
+      "q": "Do air scrubbers remove smoke smell completely?",
+      "a": "Odor removal after a fire usually involves more than just air filtration, it often includes cleaning affected surfaces and materials too, since smoke odor can settle into porous items, not just linger in the air."
+    },
+    {
+      "q": "Is a HEPA filter in a home purifier the same as HEPA filtration in a scrubber?",
+      "a": "The filter media rating can be similar, but the airflow volume, filter surface area, and how long the unit can run continuously are usually very different, which changes how much contaminated air actually gets processed."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your air actually needs?",
+    "body": "If you're dealing with smoke, water damage, or a musty smell that won't go away, talk it through with Gold Water Fire. Call (480) 999-3339 or reach out through our contact page and we'll help you understand what's actually going on."
+  },
+  "evidence": "This page explains general restoration industry practices and equipment differences; it does not make any specific claim about work performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/air-scrubbers-vs-air-purifiers-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Air scrubbers vs household air purifiers: what a restoration machine does differently"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "hepa-vacuuming-fire-cleanup",
+  "path": "/guides/hepa-vacuuming-fire-cleanup.html",
+  "title": "HEPA Vacuuming After Fire Damage: What to Know | Gold Water Fire Phoenix, AZ",
+  "description": "Why a regular vacuum can spread soot deeper into a home after a fire, and what HEPA filtration does differently during cleanup.",
+  "h1": "HEPA Vacuuming in Fire Cleanup: Why Regular Vacuums Make It Worse",
+  "breadcrumbLabel": "HEPA Vacuuming in Fire Cleanup",
+  "intro": "Standing in a room after a fire, looking at the soot on every surface, it's natural to want to just start cleaning. Grab the vacuum, get the ash up, move forward. But if you've already tried that and watched the smell get worse, or noticed soot showing up on surfaces you'd already cleaned, you're not imagining it. Something about that process isn't working the way it should, and it's worth understanding why before you touch another surface.",
+  "sections": [
+    {
+      "heading": "What a regular vacuum actually does to soot",
+      "body": "Household vacuums, even good ones, are built to trap larger debris like dirt, hair, and crumbs. Their filters are not designed to hold onto the microscopic particles that make up fire soot. Soot particles are often small enough to pass straight through a standard vacuum bag or filter and get shot back out through the exhaust, along with whatever fine ash the vacuum's suction pulled up off the surface. The result is a vacuum that looks like it's cleaning while it's actually redistributing soot into the air, where it settles onto walls, furniture, and fabrics that may not have even been touched by the original fire. This is a big part of why a room can look cleaner right after vacuuming and then seem dirty again a day later."
+    },
+    {
+      "heading": "Why soot behaves differently than ordinary dust",
+      "body": "Fire soot is not just dark dust. It's made up of unburned carbon and partially combusted material from whatever burned, which can include synthetic fabrics, plastics, wood, insulation, and household chemicals. Depending on what burned, that soot can carry an acidic residue that etches into surfaces the longer it sits, and it often carries a strong odor that clings to porous materials like drywall, carpet, and upholstery. Because the particles are so fine, they don't just sit on top of a surface, they work their way into pores, fabric fibers, and HVAC systems. That's why fire cleanup is treated differently than a normal deep clean: the goal isn't just to move the soot, it's to capture and remove it without giving it new places to land."
+    },
+    {
+      "heading": "What HEPA filtration is built to catch",
+      "body": "HEPA stands for High Efficiency Particulate Air, and a true HEPA filter is designed to capture very fine particles rather than let them pass through and recirculate. In fire cleanup, HEPA vacuums are used specifically because they can pull soot out of carpet, upholstery, and hard surfaces without pushing the fine particulate back into the room's air. This matters most in the early stages of cleanup, when loose surface soot is still sitting on top of materials and hasn't had time to grind further into fibers or finishes. Using the right equipment at this stage can make the difference between soot being removed from the home and soot simply being moved around inside it."
+    },
+    {
+      "heading": "Signs the cleanup approach isn't working",
+      "body": "A few things tend to show up when non-HEPA equipment is used on fire soot: a persistent smoky smell that doesn't fade even after visible soot is gone, dark residue reappearing on recently cleaned surfaces, or a fine haze settling on furniture in rooms that weren't near the fire. Respiratory irritation, especially for people with asthma or sensitivities, can also point to particulate that's still circulating in the air rather than being removed from the home. None of these are signs that someone did something wrong on purpose. They're signs that the tools used weren't matched to what fire soot actually requires."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I rent a HEPA vacuum instead of using my home vacuum?",
+      "a": "Rental HEPA units exist and can help with light surface soot, but fire cleanup often also involves soot embedded in HVAC systems, wall cavities, and fabrics, which usually calls for a broader assessment of what's affected before cleaning begins."
+    },
+    {
+      "q": "Is it safe to vacuum soot at all before professionals look at it?",
+      "a": "Light, dry soot on hard surfaces is generally lower risk to disturb briefly, but heavy soot, wet soot, or soot from a fire involving plastics and synthetics can release particulate that's better handled with proper containment and filtration from the start."
+    },
+    {
+      "q": "Why does the smell come back after I think I've cleaned everything?",
+      "a": "Odor from fire is carried by the same fine particles as visible soot. If those particles were pushed into carpet padding, fabric, or air ducts instead of removed, the smell can resurface as they're disturbed again later."
+    },
+    {
+      "q": "Does HEPA vacuuming replace the need for other cleaning steps?",
+      "a": "No. HEPA vacuuming is typically one step among several, often paired with surface cleaning, odor treatment, and sometimes HVAC cleaning, depending on how far the soot traveled and what materials it touched."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure how far the soot has spread in your home?",
+    "body": "Gold Water Fire helps Phoenix-area homeowners understand what fire cleanup actually needs before more damage sets in. Reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're seeing."
+  },
+  "evidence": "This page states general fire restoration industry knowledge about soot behavior and HEPA filtration; no specific claims about Gold Water Fire's own jobs, certifications, or response times are made.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/hepa-vacuuming-fire-cleanup-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: HEPA vacuuming in fire cleanup: why regular vacuums make it worse"
+  }
+}

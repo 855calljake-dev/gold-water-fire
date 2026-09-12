@@ -1,0 +1,61 @@
+{
+  "slug": "hydroxyl-generators-vs-ozone",
+  "path": "/guides/hydroxyl-generators-vs-ozone.html",
+  "title": "Hydroxyl Generators vs Ozone for Odor Removal | Gold Water Fire Phoenix, AZ",
+  "description": "How hydroxyl generators and ozone machines each break down odor, and which one fits a smoke, water, or mold situation. A plain-language guide.",
+  "h1": "Hydroxyl Generators vs Ozone: How Each Removes Odor and When Each Is Used",
+  "breadcrumbLabel": "Hydroxyl vs Ozone",
+  "intro": "There's a particular kind of tired that comes from a smell you can't get rid of. You've wiped the counters, run the fans, maybe bought a candle or two, and the smoke or musty odor is still there the moment you walk back in the room. It sits in the fabric, the drywall, the air itself, and it makes a space that used to feel like yours feel like something you're just visiting until it's fixed. If you've started researching machines and equipment names you've never had to think about before, that's a normal part of trying to understand what's actually happening in your home.",
+  "sections": [
+    {
+      "heading": "What odor actually is, and why wiping surfaces doesn't fix it",
+      "body": "Smoke, mildew, and water damage odors are caused by microscopic particles and gas molecules that have worked their way into porous materials: drywall, insulation, upholstery, carpet padding, even the paper layer on wallboard. Surface cleaning removes what you can see and touch, but it doesn't reach what's absorbed into those materials or suspended in the air itself. That's why a room can look clean and still smell exactly the way it did before you started. Real odor removal has to either destroy the odor-causing molecules or neutralize them chemically, not just cover them up."
+    },
+    {
+      "heading": "How ozone generators work",
+      "body": "Ozone (O3) is an unstable molecule with an extra oxygen atom. When it contacts an odor-causing compound, it gives up that extra atom in a reaction that breaks the compound apart at a molecular level, which is why ozone is effective on stubborn smoke and mildew odors that have penetrated deep into materials. Ozone is aggressive: it also breaks down rubber, foam, and certain plastics over time, and it's harmful to breathe. Because of that, ozone treatments are run in a sealed, unoccupied space, and people, pets, and plants have to be out of the area until the ozone has fully dissipated and the space has been aired out."
+    },
+    {
+      "heading": "How hydroxyl generators work",
+      "body": "Hydroxyl generators use UV light and a reactive process to produce hydroxyl radicals, which are the same molecules the atmosphere naturally uses to break down pollutants outdoors, just concentrated and sped up indoors. Hydroxyl radicals react with odor molecules in a similar destroy-don't-mask way as ozone, but the reaction is gentler and the radicals themselves are not harmful to people, pets, plants, or most materials in the amounts produced by these machines. That means a hydroxyl generator can typically keep running in an occupied space, which matters a lot when a family or business can't just leave the building for a day or two."
+    },
+    {
+      "heading": "When each one gets used",
+      "body": "Ozone tends to get used for severe, deeply embedded odors, heavy smoke damage after a fire, or situations where the space can be fully vacated and sealed for a set treatment period, since it works faster on very tough odor loads but requires that clear-out. Hydroxyl generators tend to get used when people, pets, or sensitive materials need to stay in or near the space during treatment, for lighter to moderate odor situations, or as a longer, slower-running treatment that continues over days rather than hours. Neither one is simply better; the right choice depends on how bad the odor is, what caused it, and whether the space can be vacated."
+    },
+    {
+      "heading": "What this means if you're dealing with it right now",
+      "body": "If you're standing in a room trying to figure out why the smell won't go away no matter what you clean, the honest answer is usually that the source material, whether it's smoke-saturated drywall, water-damaged padding, or mold-affected framing, needs to be addressed directly, and the air and remaining materials need an actual molecular treatment, not an air freshener. Understanding the difference between these two approaches is a reasonable first step before deciding what your specific situation needs. For water-related odor sources specifically, our page on <a href=\"/water-damage-restoration.html\">water damage restoration</a> covers how moisture gets trapped in materials in the first place, and our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> page covers how smoke odor spreads through a structure after a fire."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just buy an ozone or hydroxyl machine and run it myself?",
+      "a": "Consumer-grade versions exist, but ozone in particular needs to be run at a controlled level, for a set time, in a fully vacated and sealed space, because it's unsafe to breathe and can damage certain materials with prolonged exposure. Getting the dose, timing, and ventilation wrong can mean the odor comes back or the space isn't safe to re-enter as soon as expected."
+    },
+    {
+      "q": "Will a hydroxyl generator remove odor as completely as ozone?",
+      "a": "For lighter to moderate odor, hydroxyl treatment can be just as effective over a longer run time. For very heavy, deeply embedded smoke or mildew odor, ozone often works faster because the reaction is stronger, but that strength is also why it requires the space to be empty."
+    },
+    {
+      "q": "Does odor treatment replace the need to remove damaged materials?",
+      "a": "Not usually. If a material has absorbed enough smoke, moisture, or mold to hold a persistent odor, treating the air alone often won't solve it long term. Odor treatment works best alongside removing or properly cleaning the source material, not as a substitute for it."
+    },
+    {
+      "q": "How do I know if my odor problem is a surface issue or something deeper?",
+      "a": "If the smell fades after cleaning and airing out but returns within a day or two, especially in humid weather or after the AC runs, that's usually a sign it's coming from inside a material rather than sitting on the surface, and it's worth having the space assessed directly."
+    }
+  ],
+  "cta": {
+    "heading": "Trying to figure out what's actually causing the smell?",
+    "body": "If you want a straight answer about what's going on in your space, call (480) 999-3339 or email Help@goldwaterfire.com. You can also read more on our <a href=\"/about.html\">about page</a> or reach us through <a href=\"/contact.html\">contact</a>."
+  },
+  "evidence": "This page states general, widely known facts about how ozone and hydroxyl odor treatment technology work; it makes no claims specific to Gold Water Fire's own equipment or results.",
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/hydroxyl-generators-vs-ozone-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Hydroxyl generators vs ozone: how each removes odor and when each is used"
+  }
+}
