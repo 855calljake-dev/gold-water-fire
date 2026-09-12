@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { createHmac } from 'node:crypto'
-import { customFieldValues, isLead, shapeCall, stageFor, tagsFor, toE164, verifyRetellSignature } from './retell-call.mjs'
+import { callStatus, customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, toE164, transferOutcome, verifyRetellSignature } from './retell-call.mjs'
 
 const KEY = 'key_test_0000'
 const sign = (body, ts) => `v=${ts},d=${createHmac('sha256', KEY).update(body + ts).digest('hex')}`
@@ -104,4 +104,50 @@ test('shapeCall carries the agent number and the start time for the timeline Cal
   const c = shapeCall({ ...base, start_timestamp: 1789000000000, call_analysis: {} })
   assert.equal(c.agentNumber, '+14809993339')
   assert.equal(c.startedAt, '2026-09-10T00:26:40.000Z')
+})
+
+const ladder = (reason, tools) => ({
+  ...base,
+  disconnection_reason: reason,
+  call_analysis: { call_summary: 'Leak.', custom_analysis_data: { call_type: 'dispatch' } },
+  transcript_with_tool_calls: tools.flatMap(([name, id, result]) => [
+    { role: 'tool_call_invocation', name, tool_call_id: id, arguments: '{}' },
+    { role: 'tool_call_result', tool_call_id: id, content: result },
+  ]),
+})
+
+test('ladder T-A: transfer connected on the first rung', () => {
+  const c = shapeCall(ladder('call_transfer', [['transfer_to_jake', 'a', 'transferred successfully']]))
+  assert.deepEqual([c.transferAttempted, c.transferConnected, c.transferRung], [true, true, 'transfer_to_jake'])
+  assert.equal(callStatus(c), 'completed')
+  assert.equal(customFieldValues(c)['Transfer Status'], 'Transferred \u2014 Connected')
+})
+
+test('ladder T-B: first rung failed, second connected; the rung is the tool that succeeded', () => {
+  const c = shapeCall(ladder('call_transfer', [['transfer_to_jake', 'a', 'transfer failed'], ['transfer_to_jim', 'b', 'transferred successfully']]))
+  assert.equal(c.transferRung, 'transfer_to_jim')
+  assert.equal(callStatus(c), 'completed')
+})
+
+test('ladder T-C: every rung failed and the agent hung up', () => {
+  const c = shapeCall(ladder('agent_hangup', [['transfer_to_jake', 'a', 'transfer failed'], ['transfer_to_jim', 'b', 'transfer failed']]))
+  assert.deepEqual([c.transferAttempted, c.transferConnected], [true, false])
+  assert.equal(callStatus(c), 'no-answer')
+  assert.equal(customFieldValues(c)['Transfer Status'], 'Transferred \u2014 No Answer')
+})
+
+test('callStatus maps the non-transfer disconnection reasons', () => {
+  const mk = (reason) => shapeCall({ ...base, disconnection_reason: reason, call_analysis: {} })
+  assert.equal(callStatus(mk('user_hangup')), 'completed')
+  assert.equal(callStatus(mk('voicemail_reached')), 'voicemail')
+  assert.equal(callStatus(mk('dial_busy')), 'busy')
+  assert.equal(callStatus(mk('no_valid_payment')), 'failed')
+  assert.equal(callStatus(mk('error_llm_websocket_open')), 'failed')
+})
+
+test('Called In From is the carrier number; the note carries the transcript', () => {
+  const c = shapeCall({ ...base, transcript: 'Agent: hi\nUser: leak', call_analysis: { call_summary: 'Leak.' } })
+  assert.equal(customFieldValues(c)['Called In From'], '+16025550100')
+  assert.match(noteFor(c), /Transcript:\nAgent: hi/)
+  assert.equal(transferOutcome({ ...base }).attempted, false)
 })

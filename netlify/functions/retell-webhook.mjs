@@ -40,12 +40,14 @@ import {
   attachRecording,
   buildCustomFields,
   createNote,
+  ensureCustomFields,
   ghlEnv,
+  recordingStatus,
   resolveStage,
   upsertContact,
   upsertOpportunity,
 } from '../lib/ghl.mjs'
-import { customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
+import { CANONICAL_FIELDS, callStatus, customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
 
 async function writeCallToGhl(c) {
   const env = ghlEnv()
@@ -54,6 +56,11 @@ async function writeCallToGhl(c) {
     return 'not_configured'
   }
   try {
+    // Missing fields are created from the canonical definition, never invented
+    // (Jake, 2026-09-12). A failure here must not drop the call: log and go on.
+    try { await ensureCustomFields(env, CANONICAL_FIELDS) } catch (err) {
+      console.error(`retell-webhook: ensureCustomFields failed for ${c.callId} (continuing) -`, err)
+    }
     const { fields, missing } = await buildCustomFields(env, customFieldValues(c))
     if (missing.length) {
       console.error(`retell-webhook: GHL custom fields not provisioned in this location, values dropped: ${missing.join(', ')}`)
@@ -80,9 +87,11 @@ async function writeCallToGhl(c) {
 
     await createNote(env, contactId, noteFor(c))
 
-    // The timeline Call is what gives the contact a native Play button. It is
-    // gated on GHL_CONVERSATION_PROVIDER_ID (see ghl.mjs); until the marketplace
-    // app exists the recording lives in the note and the Call Recording URL field.
+    // The timeline Call is the per-call record Jake asked for in Conversations:
+    // summary as the body, recording as the attachment (the player), the
+    // caller's real number in call.from, the ladder outcome in call.status.
+    // Gated on GHL_CONVERSATION_PROVIDER_ID (see ghl.mjs).
+    let timeline = 'skipped'
     try {
       const { messageId, skipped } = await addCallMessage(env, {
         contactId,
@@ -90,18 +99,32 @@ async function writeCallToGhl(c) {
         to: c.direction === 'inbound' ? c.agentNumber : c.callerId,
         from: c.direction === 'inbound' ? c.callerId : c.agentNumber,
         date: c.startedAt,
-        status: c.disconnectReason === 'no_valid_payment' ? 'failed' : 'completed',
+        status: callStatus(c),
+        message: c.summary,
+        recordingUrl: c.recordingUrl,
       })
       if (skipped) {
-        console.error(`retell-webhook: timeline Call SKIPPED for ${c.callId}: GHL_CONVERSATION_PROVIDER_ID not set; no marketplace-app Conversation Provider exists for this location yet (GHL 400 CONVERSATIONS_MSG_PROVIDER_ID_REQUIRED otherwise). Note and custom fields still written.`)
-      } else if (messageId && c.recordingUrl) {
-        await attachRecording(env, messageId, c.recordingUrl)
+        console.error(`retell-webhook: timeline Call SKIPPED for ${c.callId}: GHL_CONVERSATION_PROVIDER_ID not set. Note and custom fields still written.`)
+      } else if (messageId) {
+        timeline = `written:${messageId}`
+        if (c.recordingUrl) {
+          // Belt and braces: the inline attachments array plus the explicit PUT,
+          // then read the recording back so the player is verified, not assumed.
+          try { await attachRecording(env, messageId, c.recordingUrl) } catch (err) {
+            console.error(`retell-webhook: attachRecording failed for ${c.callId} (inline attachment may still render) -`, err)
+          }
+          const status = await recordingStatus(env, messageId)
+          timeline += status === 200 ? ':recording-ok' : `:recording-${status}`
+          if (status !== 200) console.error(`retell-webhook: recording read-back for ${c.callId} returned ${status}; no player on the Call yet`)
+        }
       }
     } catch (err) {
       // The note and the Call Recording URL field already carry the recording,
-      // so a timeline failure costs the Play button, not the data. Reported.
-      console.error(`retell-webhook: GHL timeline Call/attachment FAILED for ${c.callId} (note and fields written) -`, err)
+      // so a timeline failure costs the player, not the data. Reported.
+      timeline = 'failed'
+      console.error(`retell-webhook: GHL timeline Call FAILED for ${c.callId} (note and fields written) -`, err)
     }
+    console.log(`retell-webhook: ${c.callId} timeline=${timeline} status=${callStatus(c)} rung=${c.transferRung ?? '-'}`)
 
     if (!isLead(c)) {
       console.log(`retell-webhook: contact written, no opportunity (no intent) for ${c.callId}`)

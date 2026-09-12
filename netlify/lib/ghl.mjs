@@ -138,6 +138,10 @@ export async function addCallMessage(env, input) {
       conversationProviderId: providerId,
       direction: input.direction,
       ...(input.date ? { date: input.date } : {}),
+      // The summary is the Call's body; the recording is its attachment, which
+      // is what GHL renders as a player (HANDOFF-GWF-GHL-CALL-RECORD.md).
+      ...(input.message ? { message: input.message } : {}),
+      ...(input.recordingUrl ? { attachments: [input.recordingUrl] } : {}),
       call: {
         ...(input.to ? { to: input.to } : {}),
         ...(input.from ? { from: input.from } : {}),
@@ -145,7 +149,21 @@ export async function addCallMessage(env, input) {
       },
     },
   })
-  return { messageId: data?.messageId ?? data?.id }
+  return { messageId: data?.messageId ?? data?.id, conversationId: data?.conversationId }
+}
+
+/**
+ * Read the recording back off the Call message. Returns the HTTP status only;
+ * a 200 means GHL holds a playable attachment, which is the verification the
+ * handoff asks for instead of assuming the PUT rendered.
+ */
+export async function recordingStatus(env, messageId) {
+  const res = await fetch(`${GHL_API}/conversations/messages/${messageId}/locations/${env.locationId}/recording`, {
+    method: 'GET',
+    headers: ghlHeaders(env.token),
+  })
+  try { await res.arrayBuffer() } catch {}
+  return res.status
 }
 
 /** Recording lives as an attachment on the call message. Max 5 URLs per GHL. */
@@ -202,6 +220,38 @@ export async function customFieldIds(env) {
   }
   fieldCache = map
   return map
+}
+
+/**
+ * Create missing custom fields at runtime, from the canonical definition only.
+ * Jake's ruling 2026-09-12 (bytomorrow-bos 242919d): a tenant's call must not
+ * be dropped because a field was not provisioned first. Conditions honoured
+ * here: create only from `defs` (never an improvised name), log every creation,
+ * create only (never rename, move or delete), and write by id afterwards.
+ */
+export async function ensureCustomFields(env, defs) {
+  const ids = await customFieldIds(env)
+  const created = []
+  for (const d of defs) {
+    if (ids.has(d.name.trim().toLowerCase())) continue
+    const data = await ghl(env, `/locations/${env.locationId}/customFields`, {
+      method: 'POST',
+      body: {
+        name: d.name,
+        dataType: d.dataType,
+        model: 'contact',
+        ...(d.placeholder ? { placeholder: d.placeholder } : {}),
+        ...(d.options ? { options: d.options } : {}),
+      },
+    })
+    const id = data?.customField?.id ?? data?.id
+    if (id) {
+      ids.set(d.name.trim().toLowerCase(), id)
+      created.push(`${d.name} (${id})`)
+    }
+  }
+  if (created.length) console.error(`ghl: custom fields CREATED at runtime in ${env.locationId}: ${created.join(', ')}`)
+  return created
 }
 
 /** Skips anything the tenant has not provisioned; the caller reports `missing`. */
