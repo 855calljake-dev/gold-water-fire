@@ -1,0 +1,71 @@
+{
+  "slug": "pool-pump-and-equipment-fires",
+  "path": "/guides/pool-pump-and-equipment-fires.html",
+  "title": "Pool Pump and Equipment Fires: Motors, Timers, Dry Running | Gold Water Fire Phoenix, AZ",
+  "description": "Why pool pumps, timers, and motors catch fire, what dry running does to equipment, and what to check on your pad before it becomes a bigger problem.",
+  "h1": "Pool Pump and Equipment Fires: Motors, Timers, and Dry Running",
+  "breadcrumbLabel": "Pool Pump and Equipment Fires",
+  "intro": "You walked out to the pool pad and smelled something burnt, or a breaker keeps tripping and you don't know why, or the pump just stopped one day with no warning. It's the kind of thing that's easy to put off, because the pool still looks fine and the water is still there. But something in the back of your mind knows the pad itself is trying to tell you something, and you're not sure how worried to actually be.",
+  "sections": [
+    {
+      "heading": "Why pool equipment pads are a real fire risk",
+      "body": "A pool equipment pad packs a lot into a small footprint: a motor spinning at high speed, a timer or automation panel switching electrical loads, wiring often run in conduit that's been baking in Arizona sun for years, and sometimes a gas heater with its own pilot or ignition system sitting right next to it all. Add heat, moisture, and dust, and you have several ways for something to go wrong at once. Most pool equipment fires trace back to one of three things: a motor that overheated, a timer or electrical component that failed, or a pump that ran dry."
+    },
+    {
+      "heading": "How a dry-running pump starts a fire",
+      "body": "Pool pump motors are designed to be cooled by the water moving through the system. When a pump loses prime, or the water level in the pool drops below the skimmer line, or a valve gets closed by mistake, the pump keeps spinning without that cooling flow. The motor housing and bearings heat up fast. Given enough time, the heat can degrade the motor's windings, melt internal plastic components, or ignite built-up debris and oil residue inside the housing. This is one of the more common ignition points on a residential pad, and it's also one of the more preventable ones, since it usually gives some warning first: a burning smell, a pump that sounds different, or a breaker that trips repeatedly."
+    },
+    {
+      "heading": "What timers and controllers contribute to the risk",
+      "body": "Mechanical timers and electronic automation panels control when pumps, heaters, and lights turn on and off. Over time, the contacts inside a mechanical timer can pit, corrode, or arc, especially in outdoor installations exposed to monsoon humidity and dust. A failing timer can stick in the on position, keep cycling a motor that should be resting, or create a short at the connection point. Automation panels have their own failure points too: sun-baked wiring insulation, rodent damage, and loose connections at the panel are all common culprits behind heat buildup that has nothing to do with the pump itself."
+    },
+    {
+      "heading": "Warning signs worth acting on now",
+      "body": "A few signals are worth paying attention to before they turn into a bigger problem: a breaker for the pool circuit that trips more than once, a motor that hums but doesn't spin, a burning or plastic smell near the pad, visible scorch marks or melted housing on the timer or motor, or a pump that's noticeably louder or hotter to the touch than usual. None of these guarantee a fire is imminent, but they all point to a component under stress, and stressed electrical components are how equipment pad fires start."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a pool pump actually catch fire, or just overheat?",
+      "a": "A pump motor that runs dry or seizes can generate enough heat to ignite nearby debris, oil residue, or its own internal insulation. It's not the most common type of house fire, but it does happen, and equipment pads are often left unattended for long stretches, which gives a small ignition point time to grow before anyone notices."
+    },
+    {
+      "q": "Why does my pool breaker keep tripping?",
+      "a": "A breaker that trips repeatedly is protecting the circuit from a fault, whether that's a failing motor drawing too much current, a timer with damaged contacts, or moisture intruding into a connection. Repeated tripping isn't something to just reset and ignore, since it usually means a component is degrading."
+    },
+    {
+      "q": "Is a dry-running pump dangerous even if it doesn't catch fire?",
+      "a": "Yes. Even without fire, dry running can permanently damage the motor's seals and bearings, shortening its life significantly and sometimes cracking the pump housing itself, which leads to leaks and further electrical exposure."
+    },
+    {
+      "q": "What should I do if I smell burning near the equipment pad?",
+      "a": "Turn off power to the equipment at the breaker if it's safe to reach, and don't restart the system until the source of the smell has been identified. A burning smell from electrical components can precede a fire, and it's not something to wait out."
+    }
+  ],
+  "cta": {
+    "heading": "If a pool equipment fire has already caused damage",
+    "body": "Gold Water Fire serves the Phoenix metro area, from NW Peoria to SE Avondale, SW San Tan Valley, and NW Apache Junction. If a pad fire has damaged your equipment room, patio structure, or nearby siding, reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what recovery looks like. Learn more about our <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> and <a href=\"/reconstruction.html\">reconstruction</a> services, or visit our <a href=\"/about.html\">about page</a> to see who you'd be working with."
+  },
+  "evidence": "This page states general pool equipment and electrical fire causes as industry knowledge; no specific claims about Gold Water Fire's job history are made.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-09-12",
+  "photo": {
+    "src": "/assets/img/pool-pump-and-equipment-fires-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Pool pump and equipment fires: motors, timers, and dry running"
+  }
+}
