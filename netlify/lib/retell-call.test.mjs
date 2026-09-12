@@ -91,7 +91,7 @@ test('customFieldValues: writes the picklist option strings the sub-account alre
   const none = customFieldValues(shapeCall({ ...base, call_analysis: {} }))
   assert.equal(none['Call Type'], undefined)
   assert.equal(none['Transfer Status'], 'N/A')
-  assert.deepEqual(tagsFor(c), ['phone-lead', 'line:480-999-3339', 'call:dispatch'])
+  assert.deepEqual(tagsFor(c), ['phone-lead', 'line:480-999-3339', 'call:dispatch', 'consent:verbal-call'])
 })
 
 test('addCallMessage skips, and says so, when no conversation provider id is configured', async () => {

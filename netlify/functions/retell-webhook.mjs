@@ -18,6 +18,7 @@
  *   RETELL_API_KEY        verifies x-retell-signature; also the key Retell uses to sign
  *   GHL_PIT               location Private Integration Token for the GWF sub-account
  *   GHL_LOCATION_ID       bvd3wX0RlnicNDrv6Jmt
+ *   (no DND is written at creation: Jake's ruling 2026-09-12, see writeCallToGhl)
  *   GHL_CONVERSATION_PROVIDER_ID  the Call provider registered by the ByTomorrow marketplace app,
  *                         once it exists; without it the timeline Call (and its Play button) is
  *                         skipped and logged on every call, never silently
@@ -39,7 +40,6 @@ import {
   attachRecording,
   buildCustomFields,
   createNote,
-  findContactId,
   ghlEnv,
   resolveStage,
   upsertContact,
@@ -60,11 +60,6 @@ async function writeCallToGhl(c) {
     }
 
     const [firstName, ...rest] = (c.fullName ?? '').split(' ').filter(Boolean)
-    const already = await findContactId(env, {
-      ...(c.email ? { email: c.email } : {}),
-      ...(c.phone ? { phone: c.phone } : {}),
-    })
-
     const { contactId } = await upsertContact(env, {
       ...(firstName ? { firstName } : {}),
       ...(rest.length ? { lastName: rest.join(' ') } : {}),
@@ -74,8 +69,13 @@ async function writeCallToGhl(c) {
       source: `phone ${c.line}`,
       tags: tagsFor(c),
       customFields: fields,
-      // A phone call is verbal contact, never express written SMS consent.
-      ...(already ? {} : { consent: { sms: false, email: false } }),
+      // Jake's ruling 2026-09-12 ("keep DND off for new calls coming in"):
+      // contacts the phone agent creates carry NO DND block, so the caller CC
+      // that Hard Rule 11 permits can be delivered by text and email. This is
+      // not marketing consent: a phone call is verbal contact, never express
+      // written SMS consent, and that fact travels as the tag and the note
+      // line below rather than as a DND flag. Existing contacts are never
+      // touched either way. HANDOFF-GWF-GHL-CALL-RECORD.md, bytomorrow-bos 6bc1914.
     })
 
     await createNote(env, contactId, noteFor(c))

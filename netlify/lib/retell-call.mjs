@@ -142,6 +142,8 @@ export function tagsFor(c) {
     ...(c.callType ? [`call:${c.callType}`] : []),
     ...(c.wantsHuman ? ['wants-human'] : []),
     ...(c.followUpNeeded ? ['follow-up-needed'] : []),
+    // Verbal contact on a recorded line; not express written SMS consent.
+    'consent:verbal-call',
   ]
 }
 
@@ -192,6 +194,7 @@ export function noteFor(c) {
     `Asked for a person: ${c.wantsHuman ? 'yes' : 'no'}. Transfer attempted: ${c.transferAttempted ? 'yes' : 'no'}. Connected: ${c.transferConnected ? 'yes' : 'unknown/no'}.`,
     c.followUpNeeded ? 'FOLLOW-UP NEEDED' : '',
     c.disconnectReason ? `Ended: ${c.disconnectReason}` : '',
+    'Consent: verbal, on a recorded call. Not express written SMS consent. DND left off per Jake 2026-09-12 so the caller can receive their own call details.',
     c.recordingUrl ? `Recording: ${c.recordingUrl}` : '',
   ].filter(Boolean).join('\n')
 }
