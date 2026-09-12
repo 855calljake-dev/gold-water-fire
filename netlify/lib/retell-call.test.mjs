@@ -103,5 +103,5 @@ test('addCallMessage skips, and says so, when no conversation provider id is con
 test('shapeCall carries the agent number and the start time for the timeline Call', () => {
   const c = shapeCall({ ...base, start_timestamp: 1789000000000, call_analysis: {} })
   assert.equal(c.agentNumber, '+14809993339')
-  assert.equal(c.startedAt, '2026-09-10T02:26:40.000Z')
+  assert.equal(c.startedAt, '2026-09-10T00:26:40.000Z')
 })
