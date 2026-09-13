@@ -1,0 +1,75 @@
+{
+  "slug": "the-science-of-drying-a-house",
+  "path": "/guides/the-science-of-drying-a-house.html",
+  "title": "The Science of Drying a House Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Why houses stay wet longer than expected after a leak or flood. A plain-English look at temperature, humidity, and airflow in drying.",
+  "h1": "The Science of Drying a House, Explained Simply",
+  "breadcrumbLabel": "The Science of Drying a House",
+  "intro": "You mopped up the water days ago. You ran fans, maybe opened some windows, told yourself it looked dry. But there's still a smell in that room, or the baseboards feel soft, or the humidity gauge won't budge no matter what you do. It's a strange kind of frustrating, because it looks handled and it isn't, and nobody explained why standing water is actually the easy part to deal with compared to what soaked into everything around it.",
+  "sections": [
+    {
+      "heading": "Why water damage isn't just about the water you can see",
+      "body": "When a pipe bursts or a roof leaks, the puddle on the floor is only the visible fraction of the problem. Water wicks into drywall, insulation, subfloor, and framing through capillary action, moving upward and sideways well past the original wet spot. A carpet can look dry to the touch within hours while the pad underneath and the concrete or subfloor beneath that stay saturated for days. This is why drying a house is a science with three specific variables, not a matter of running a box fan until things feel okay."
+    },
+    {
+      "heading": "Temperature: why warmer air matters more than it seems",
+      "body": "Warm air holds more moisture than cold air, and that difference is what makes evaporation possible in the first place. Water molecules trapped in a wet wall or wet wood need energy to turn into vapor and leave the material, and heat provides that energy. This is part of why a flooded room in winter, with cold air and cold building materials, dries so much slower than the same flood in summer. Raising the temperature in a affected space, within reason, speeds up the rate at which moisture releases from porous materials into the air, where it can then be removed."
+    },
+    {
+      "heading": "Humidity: the invisible ceiling on how fast anything dries",
+      "body": "Relative humidity is a measure of how much moisture the air is already holding compared to how much it could hold at that temperature. Once the air in a room reaches close to 100 percent relative humidity, it has no more capacity to absorb additional moisture, so evaporation from wet materials slows to a crawl or stops entirely, no matter how much airflow is present. This is the trap a lot of DIY drying attempts fall into: fans moving already-saturated air around a room, going nowhere. Getting humidity down, usually with a dehumidifier pulling moisture out of the air and condensing it into a collection tank or drain line, is what keeps the air able to keep absorbing more water from the walls, floors, and furniture."
+    },
+    {
+      "heading": "Airflow: moving the moisture out, not just around",
+      "body": "Airflow's job is to disrupt the thin layer of saturated air that sits directly against a wet surface. Without moving air, that boundary layer becomes humid almost instantly and evaporation stalls right at the surface of the material, even if the room's overall humidity is moderate. Air movers work by constantly replacing that boundary layer with drier air, which keeps the evaporation rate up. But airflow alone, without dehumidification pulling that moisture out of the room, just circulates humid air from one wet surface to another and can even push moisture into materials that were not originally wet."
+    },
+    {
+      "heading": "Why all three have to work together",
+      "body": "Temperature, humidity, and airflow are not three separate fixes, they are one system. Heat without dehumidification raises humidity to the point where evaporation stops. Airflow without dehumidification just spreads moisture around a sealed room. Dehumidification without adequate airflow leaves wet pockets in walls and under flooring that never get exposed to drier air. Structural drying works by balancing all three at once, and monitoring moisture levels in materials (not just the air) over several days to confirm the structure itself, not just the surface, has actually released its trapped water."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it actually take to dry out a house after water damage?",
+      "a": "It depends heavily on how much material got wet, what it's made of, and how quickly temperature, humidity, and airflow were brought under control. Dense materials like hardwood or concrete hold and release moisture much more slowly than drywall or carpet padding, and drying that isn't monitored with moisture meters can look finished on the surface while the material underneath is still wet."
+    },
+    {
+      "q": "Can I just use fans and open windows instead of a dehumidifier?",
+      "a": "In low-humidity outdoor conditions, opening windows can sometimes help exchange humid indoor air for drier outdoor air. But in humid weather, or in a sealed room with no ventilation, fans alone tend to just circulate moisture-saturated air without removing it, which can stall drying or spread dampness to unaffected materials."
+    },
+    {
+      "q": "Why does a room still smell musty after it looks dry?",
+      "a": "A musty smell usually means moisture is still trapped somewhere out of sight, inside a wall cavity, under flooring, or in insulation, even if visible surfaces feel dry. Surface dryness and structural dryness are not the same thing, and mold can begin developing in hidden damp materials within a couple of days."
+    },
+    {
+      "q": "What's the difference between air movers and dehumidifiers?",
+      "a": "Air movers (high-velocity fans) push air across wet surfaces to speed up evaporation by disrupting the humid boundary layer at the material's surface. Dehumidifiers pull moisture out of the air itself, lowering humidity so the air has room to absorb more moisture. Effective drying generally uses both together rather than relying on just one."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if a space is actually dry yet?",
+    "body": "If you're dealing with lingering dampness, odor, or soft spots after a leak or flood anywhere in the Phoenix metro area, Gold Water Fire can take a look and explain what's really going on. Call (480) 999-3339 or reach out through our contact page."
+  },
+  "evidence": "This page states general drying science (evaporation, relative humidity, boundary layer airflow) as industry knowledge, and makes no specific claims about Gold Water Fire's own jobs, timelines, or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-13",
+  "dateModified": "2026-09-13",
+  "photo": {
+    "src": "/assets/img/the-science-of-drying-a-house-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The science of drying a house, explained simply: temperature, humidity, and airflow"
+  }
+}
