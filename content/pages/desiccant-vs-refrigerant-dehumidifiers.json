@@ -1,0 +1,67 @@
+{
+  "slug": "desiccant-vs-refrigerant-dehumidifiers",
+  "path": "/guides/desiccant-vs-refrigerant-dehumidifiers.html",
+  "title": "Desiccant vs Refrigerant Dehumidifiers | Gold Water Fire, Phoenix AZ",
+  "description": "Why restoration crews switch between desiccant and refrigerant dehumidifiers depending on temperature and humidity. A plain-language guide for Phoenix homeowners.",
+  "h1": "Desiccant vs Refrigerant Dehumidifiers: Why the Equipment Changes With Conditions",
+  "breadcrumbLabel": "Desiccant vs Refrigerant Dehumidifiers",
+  "intro": "If you've had a water loss and noticed the drying equipment in your home doesn't look like what showed up at your neighbor's house, or if you're just trying to understand why one type of dehumidifier gets mentioned for one room and a completely different machine for another, that confusion is fair. Drying a structure isn't a one-size-fits-all process, and nobody explains upfront why the equipment choice changes from job to job. You're left staring at loud machines in your living room without knowing what they're actually doing or why.",
+  "sections": [
+    {
+      "heading": "What each type of dehumidifier actually does",
+      "body": "A refrigerant dehumidifier works the way a home air conditioner does. It pulls room air across a cold coil, condenses the moisture out as liquid water, and sends drier air back into the room. It's mechanically simple and energy efficient in normal indoor conditions.\n\nA desiccant dehumidifier doesn't cool anything. It pulls air through a rotating wheel coated with a moisture-absorbing material (often silica gel), and that material grabs water vapor directly out of the air chemically, not by condensation. The wheel is then dried out in a separate heated air stream and the cycle repeats. It's a different mechanism entirely, not just a different brand of the same tool."
+    },
+    {
+      "heading": "Why temperature changes the answer",
+      "body": "Refrigerant dehumidifiers lose efficiency as air temperature drops. Below roughly 65 degrees Fahrenheit, the coil can frost over and the unit's moisture removal capacity falls off sharply. In a cold garage, an unconditioned crawlspace, or a home where the water damage killed the HVAC system in winter, a refrigerant unit may barely keep up.\n\nDesiccant dehumidifiers don't rely on cooling, so their performance holds up in cold conditions and even improves in some low-humidity, low-temperature environments where refrigerant units struggle most. This is the main reason a drying plan built for a cool space looks different from one built for a warm one."
+    },
+    {
+      "heading": "Why humidity level and material type matter too",
+      "body": "Refrigerant units are generally the workhorse for standard indoor drying: carpet, drywall, framing, and furniture in a home held at typical room temperature. They move a lot of air and remove a lot of water efficiently when conditions are in their comfort zone.\n\nDesiccant units are often brought in for dense or hard-to-reach materials, like drying inside wall cavities, hardwood subfloor, or concrete, because they can push drier air deeper into a material and continue working even as ambient humidity drops to low levels where a refrigerant unit's returns diminish. In a hot, dry climate like the Phoenix metro, outdoor air is often already low in moisture, which changes the math on how much a refrigerant unit needs to do versus a desiccant unit."
+    },
+    {
+      "heading": "How this plays out in a real drying plan",
+      "body": "On many jobs, both types of equipment run at the same time in different zones, or even the same zone at different stages of drying. A technician tracking moisture readings and psychrometric conditions (temperature, relative humidity, and grain depression) day by day is the one deciding when to add, swap, or remove equipment, not applying a fixed setup and walking away. That's why the equipment in your home might change over the course of a few days even though the visible damage hasn't changed at all.\n\nIf you're in the middle of a water loss and want to understand what's running in your home and why, the team at <a href=\"/water-damage-restoration.html\">water damage restoration</a> can walk through the drying plan with you room by room."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is one type of dehumidifier just better than the other?",
+      "a": "No. They're suited to different conditions. Refrigerant units are efficient in normal room temperatures and humidity. Desiccant units hold their performance in cold or already-dry air and can dry dense materials more thoroughly. A drying plan often uses both."
+    },
+    {
+      "q": "Why did the equipment in my house change after a few days?",
+      "a": "Drying is monitored, not set-and-forget. As moisture readings and humidity levels change in a space, the equipment mix often needs to change with them to keep drying efficient and on schedule."
+    },
+    {
+      "q": "Does Arizona's dry climate mean I need less drying equipment?",
+      "a": "Not necessarily. Low ambient humidity can help pull moisture out of the air, but trapped water inside walls, subfloors, or under flooring still needs targeted equipment and monitoring regardless of how dry it feels outside."
+    },
+    {
+      "q": "Can I just rent a dehumidifier from a hardware store instead?",
+      "a": "Consumer dehumidifiers are built for comfort, not structural drying. They typically don't move enough air or remove enough moisture to dry building materials before mold has a chance to start."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your drying setup needs?",
+    "body": "If you're dealing with active water damage in the Phoenix area, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com and we'll walk through what your space actually needs."
+  },
+  "evidence": "This page states general, industry-standard information about how refrigerant and desiccant dehumidifiers function and are selected, not a specific claim about a Gold Water Fire job.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-13",
+  "dateModified": "2026-09-13",
+  "photo": {
+    "src": "/assets/img/desiccant-vs-refrigerant-dehumidifiers-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Desiccant vs refrigerant dehumidifiers: why the equipment changes with conditions"
+  }
+}
