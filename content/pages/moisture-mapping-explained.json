@@ -1,0 +1,71 @@
+{
+  "slug": "moisture-mapping-explained",
+  "path": "/guides/moisture-mapping-explained.html",
+  "title": "Moisture Mapping Explained | Gold Water Fire | Phoenix, AZ",
+  "description": "What moisture mapping is, why it happens before drying starts, and how it shapes the plan for water damage in a Phoenix area home.",
+  "h1": "Moisture Mapping: How the Wet Area Gets Drawn Before Drying Starts",
+  "breadcrumbLabel": "Moisture Mapping Explained",
+  "intro": "You can see the stain on the ceiling or feel the give in the baseboard, but you have no idea how far the water actually traveled behind the wall, under the floor, or up into the insulation. That gap between what's visible and what's actually wet is one of the most unsettling parts of a water event. It's hard to make decisions, hard to know what to save and what to worry about, when you can't see the actual shape of the problem.",
+  "sections": [
+    {
+      "heading": "What moisture mapping actually is",
+      "body": "Moisture mapping is the process of documenting exactly where water has traveled in a structure before any drying equipment gets turned on. Water rarely stays where it lands. It follows gravity down through floor cavities, wicks sideways along drywall through capillary action, and moves into porous materials like wood framing, insulation, and subfloor. A visual inspection alone can't catch most of that movement because so much of it happens inside walls, under flooring, and above ceilings where nothing looks wrong yet."
+    },
+    {
+      "heading": "The tools behind the map",
+      "body": "Technicians typically use a combination of a moisture meter (which measures moisture content inside a material by contact or pins), a hygrometer (which reads humidity and temperature in the air), and sometimes a thermal imaging camera, which shows temperature differences that often correspond to wet versus dry areas behind a surface. None of these tools alone tells the whole story. A thermal camera shows where to check, a moisture meter confirms what's actually wet, and readings get logged at multiple points to build a full picture rather than a single spot check."
+    },
+    {
+      "heading": "Why the map comes before the equipment",
+      "body": "Setting up air movers and dehumidifiers without first knowing the boundaries of the wet area risks two mistakes: drying a smaller area than what's actually affected, which lets moisture linger and cause secondary damage like mold growth or warped framing, or drying a much larger area than necessary, which costs more time and money for no benefit. The map defines the drying chamber, meaning which rooms need to be contained, which materials need to be removed versus dried in place, and where equipment actually needs to go to be effective."
+    },
+    {
+      "heading": "What the readings get compared against",
+      "body": "A single moisture reading doesn't mean much on its own. Materials naturally hold some ambient moisture depending on climate, so readings from the affected area get compared against a dry standard: a reading taken from an unaffected area of the same material in the same structure. If the baseboard in the hallway reads within a normal range and the baseboard in the affected bedroom reads well above it, that gap is what confirms actual water intrusion rather than normal humidity. This comparison gets revisited throughout the drying process to confirm when materials have actually returned to normal."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does moisture mapping take?",
+      "a": "It depends on the size of the affected area and how many materials and rooms are involved, since each reading point takes time to check and log properly. A thorough map covers every room water may have reached, not just the room where damage is visible."
+    },
+    {
+      "q": "Can I check for hidden moisture myself before help arrives?",
+      "a": "You can look for soft spots, discoloration, or a musty smell, and you can feel baseboards and flooring for give or dampness. But without a moisture meter, you're only catching the more obvious signs, and water often travels further than what you can detect by touch or smell alone."
+    },
+    {
+      "q": "Does moisture mapping get redone during the drying process?",
+      "a": "Yes. Readings are typically taken again over the course of drying to track whether materials are moving back toward the dry standard, and to catch any areas that are drying slower than expected."
+    },
+    {
+      "q": "What happens if moisture is found somewhere unexpected, like inside a wall?",
+      "a": "If a wall cavity or subfloor shows elevated readings, that area gets factored into the drying plan, which may mean opening the wall, removing flooring, or placing equipment specifically to reach that space rather than just drying the surface that's visible."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure how far the water in your home actually traveled?",
+    "body": "Gold Water Fire serves the Phoenix metro area, from NW Peoria and SE Avondale to SW San Tan Valley and NW Apache Junction. Call (480) 999-3339 or reach out through our <a href=\"/contact.html\">contact page</a> to talk through what you're seeing."
+  },
+  "evidence": "This page describes general moisture mapping practices used across the water damage restoration industry and makes no specific claim about a Gold Water Fire job.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-14",
+  "dateModified": "2026-09-14",
+  "photo": {
+    "src": "/assets/img/moisture-mapping-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Moisture mapping: how the wet area gets drawn before drying starts"
+  }
+}
