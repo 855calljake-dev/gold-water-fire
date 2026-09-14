@@ -1,0 +1,86 @@
+{
+  "slug": "laundering-smoke-damaged-fabrics",
+  "path": "/guides/laundering-smoke-damaged-fabrics.html",
+  "title": "What Can Be Laundered After Smoke Exposure? | Gold Water Fire, Phoenix, AZ",
+  "description": "A guide to what fabrics can go through the wash after smoke exposure, and which items need specialty cleaning to fully remove odor and soot.",
+  "h1": "What Can Be Laundered After Smoke Exposure, and What Needs Specialty Cleaning",
+  "breadcrumbLabel": "Laundering Smoke Damaged Fabrics",
+  "intro": "You've pulled everything out of the closets and off the beds, and now you're standing there trying to figure out what's actually salvageable. The smell won't leave your nose even when you step outside for air. Some things you've already washed twice and the smoke smell is still sitting in the fibers like it moved in permanently, and you're starting to wonder if you're doing something wrong, or if the item is just done. That uncertainty, not knowing which pile something belongs in, is its own kind of exhausting on top of everything else you're dealing with.",
+  "sections": [
+    {
+      "eyebrow": "Understanding the problem",
+      "heading": "Why smoke odor is so hard to wash out",
+      "body": "Smoke isn't just a smell, it's a residue. When materials burn, they release microscopic soot particles and volatile compounds that settle into anything porous nearby. Fabric fibers, especially natural ones like cotton and wool, have a lot of surface area and tiny gaps where those particles and odor compounds can lodge. A regular wash cycle with regular detergent is built to lift dirt and oils off the surface of fibers. It is not built to pull odor molecules out from inside them. That mismatch is usually why a load of laundry comes out of the dryer looking clean but still smelling like the fire."
+    },
+    {
+      "heading": "What can usually go through a normal wash",
+      "body": "Everyday washable items, cotton clothing, bed linens, kitchen towels, and similar machine washable fabrics, often respond well to a proper wash if the smoke exposure was light to moderate and the items are treated fairly soon after. The key is not just tossing them in with regular detergent. A cycle using an enzyme based detergent, sometimes combined with a cup of white vinegar or a specialty odor neutralizer in the wash, tends to break down odor causing residue more effectively than detergent alone. Washing in the hottest water the fabric care label allows also helps loosen embedded particles. It's common to need two or three wash cycles before the smell is fully gone, and running items through a hot dryer cycle before the odor is completely out can actually set the smell back in, so a sniff test at the damp stage before drying is worth the extra step."
+    },
+    {
+      "heading": "What tends to need specialty cleaning instead",
+      "body": "Some materials hold onto smoke odor in ways a washing machine cannot reach, or they can be damaged by standard washing altogether. This is where professional smoke and odor remediation, using methods like thermal fogging, ozone treatment, or specialized cleaning agents, tends to outperform anything done at home.",
+      "cards": [
+        {
+          "heading": "Delicate and structured fabrics",
+          "body": "Silk, wool suits, tailored garments, and anything with structure (padded shoulders, interfacing, linings) can shrink, warp, or lose shape in a washing machine. These usually need dry cleaning or a textile restoration specialist rather than a home wash."
+        },
+        {
+          "heading": "Down and heavily filled items",
+          "body": "Comforters, pillows, and jackets filled with down or heavy synthetic fill trap smoke deep in the fill material. Odor can linger there long after the outer shell smells fine, and home washing often doesn't fully saturate or rinse the fill."
+        },
+        {
+          "heading": "Upholstered and soft furnishings",
+          "body": "Curtains, upholstered furniture covers, and large area rugs are usually too large for a home machine and often have backing or padding that holds odor independent of the visible fabric surface."
+        },
+        {
+          "heading": "Anything with heavy soot staining",
+          "body": "Visible soot is oily and acidic. Rubbing it into fabric during a home wash, or using the wrong detergent, can set the stain permanently and push soot deeper into the fibers instead of lifting it out."
+        }
+      ]
+    },
+    {
+      "heading": "A few things worth knowing before you start",
+      "body": "Sorting fast helps, but so does sorting carefully. Items sitting in a smoke filled space for days will generally need more aggressive treatment than something moved out within a day or two. It also matters what actually burned: synthetic materials, plastics, and treated wood release different residues than a simple grease fire or a wood burning fireplace backdraft, and those residues can affect how safe or effective a home wash actually is. If you're unsure whether an item is salvageable at all, it's reasonable to set it aside rather than risk ruining it with the wrong process. For a broader look at how professionals evaluate and treat smoke damage throughout a home, the <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> process covers more than just fabrics."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just use extra detergent to get smoke smell out?",
+      "a": "Extra detergent alone usually isn't enough. Odor compounds from smoke are different from typical dirt and oil, so an enzyme based detergent, added vinegar, or a specialty odor neutralizer tends to work better than simply increasing the amount of regular detergent."
+    },
+    {
+      "q": "Why does my laundry still smell like smoke after drying?",
+      "a": "Heat from the dryer can set odor that wasn't fully removed during washing, essentially baking it back into the fibers. It helps to check for smell while items are still damp, before drying, and rewash if any odor remains."
+    },
+    {
+      "q": "Is it safe to wash clothes that were in a house fire, not just a smoke smell situation?",
+      "a": "It depends on what burned and how heavily an item was exposed. Soot from an active structure fire can carry different residues than light smoke odor, and heavily soiled or soot stained items are generally better handled by a specialist than a home washing machine."
+    },
+    {
+      "q": "How do I know if something needs professional cleaning instead of home washing?",
+      "a": "As a general guide, delicate fabrics, down filled items, large upholstered pieces, and anything with visible soot staining tend to need specialty treatment. Everyday washable cotton and linen items with light odor often respond to a careful home wash first."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what's salvageable in your home?",
+    "body": "If smoke has moved through more than just a load of laundry, it helps to have someone look at the fuller picture. Contact Gold Water Fire to talk through what you're dealing with."
+  },
+  "evidence": "This page states general fabric care and restoration industry knowledge and makes no specific claims about jobs performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-14",
+  "dateModified": "2026-09-14",
+  "photo": {
+    "src": "/assets/img/laundering-smoke-damaged-fabrics-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: What can be laundered after smoke exposure and what needs specialty cleaning"
+  }
+}

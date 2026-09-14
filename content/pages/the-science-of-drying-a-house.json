@@ -1,0 +1,90 @@
+{
+  "slug": "the-science-of-drying-a-house",
+  "path": "/guides/the-science-of-drying-a-house.html",
+  "title": "The Science of Drying a House Explained | Gold Water Fire | Phoenix, AZ",
+  "description": "Why wet houses stay wet and what actually dries them. A simple breakdown of temperature, humidity, and airflow for anyone dealing with water damage.",
+  "h1": "The Science of Drying a House, Explained Simply",
+  "breadcrumbLabel": "The Science of Drying a House",
+  "intro": "If you've had water get into your home, you've probably noticed the confusing part isn't the flood itself, it's everything after. The carpet feels dry to the touch but the smell doesn't go away. A fan has been running for two days and the drywall still feels cool and damp. You start to wonder if something is actually working, or if you're just waiting and hoping. That confusion is normal, because drying a house isn't as simple as \"let it air out.\" It's a physical process with rules, and once you understand the rules, the situation usually makes a lot more sense.",
+  "sections": [
+    {
+      "heading": "Why 'looks dry' and 'is dry' are two different things",
+      "body": "Water damage rarely stays where you can see it. Once moisture hits drywall, baseboards, subfloor, or framing, it wicks upward and sideways through the material, sometimes traveling far from the original spot. The surface can feel dry within hours while the material underneath stays saturated for days. That's why a house can look fine and still be actively growing mold behind a wall. Understanding drying means understanding that you're not drying a surface, you're drying the structure underneath it."
+    },
+    {
+      "heading": "The three forces that move moisture: temperature, humidity, and airflow",
+      "body": "Drying a house comes down to a basic exchange: moisture has to leave the wet material and become airborne, then that damp air has to be removed and replaced with drier air. Three factors control how fast that happens.",
+      "cards": [
+        {
+          "heading": "Temperature",
+          "body": "Warmer air holds more moisture and speeds up evaporation, which is why controlled heat is often part of a drying setup. But temperature alone doesn't remove moisture, it just pulls it out of the material and puts it into the air, where it has to be dealt with next."
+        },
+        {
+          "heading": "Humidity",
+          "body": "This is the ceiling on how much more moisture the air can absorb. If the air in a room is already saturated, evaporation slows down or stops entirely, no matter how warm the room gets. This is why dehumidifiers matter as much as fans, sometimes more."
+        },
+        {
+          "heading": "Airflow",
+          "body": "Moving air constantly replaces the humid layer sitting right against a wet surface with drier air, which keeps evaporation going. Without airflow, a pocket of saturated air just sits on the material and evaporation stalls, even in a warm room."
+        }
+      ]
+    },
+    {
+      "heading": "Why these three have to work together",
+      "body": "A single fan blowing on wet carpet in a closed, humid room mostly just moves damp air around the room instead of removing it. A dehumidifier running in a cold room works slowly, because cold air doesn't give up its moisture as easily. The reason professional drying setups use heat, air movers, and dehumidifiers together is that each one solves a different part of the same equation. Skip one and the other two are working at a fraction of their potential."
+    },
+    {
+      "heading": "What actually happens during a proper drying process",
+      "body": "A structured drying process usually starts with identifying how far the moisture traveled, not just where it's visible. That often means checking behind baseboards, under flooring, and inside wall cavities with a moisture meter rather than guessing from what looks damp. From there, equipment is placed to create a specific airflow pattern through the affected area, humidity is pulled down mechanically, and moisture levels are checked over multiple days to confirm the material has actually returned to a normal, stable reading, not just a drier one."
+    },
+    {
+      "heading": "Signs the drying process isn't working",
+      "body": "A few signs suggest that moisture is still trapped even if things seem to be improving: a musty smell that lingers or gets stronger, baseboards or drywall that still feel cool or soft to the touch, visible warping or bubbling that hasn't stopped, or humidity in the room that feels heavy no matter how long a fan has run. Any of these usually mean the airflow, humidity, or heat balance isn't set up correctly for that specific space, not that the situation is hopeless.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it actually take to dry out a house after water damage?",
+      "a": "It depends heavily on what materials got wet, how much airflow and humidity control is in place, and how far the moisture traveled before anyone noticed. Dense materials like solid wood or layered flooring hold moisture much longer than drywall or carpet padding, which is why drying timelines vary so much from one situation to another."
+    },
+    {
+      "q": "Can I just open windows and run box fans instead of using special equipment?",
+      "a": "In low humidity, open windows can help, but in Phoenix summer conditions or a closed-up house, natural airflow often isn't enough to move real volumes of moisture out of building materials. Fans alone can also spread moisture-laden air into dry areas of the house instead of removing it, which is why humidity control matters as much as air movement."
+    },
+    {
+      "q": "Why does my house still smell musty after the water is gone?",
+      "a": "A lingering musty smell usually means moisture is still trapped somewhere the eye can't see, often inside a wall cavity, under flooring, or in insulation. The smell is a strong signal that the structure isn't fully dry yet, even if the surfaces look fine."
+    },
+    {
+      "q": "Does temperature or humidity matter more for drying?",
+      "a": "Neither works well without the other. Higher temperature speeds up evaporation, but humidity determines how much more moisture the air can actually absorb before that evaporation stalls. Effective drying manages both at the same time, along with airflow to keep exchanging the air."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if your home is actually dry?",
+    "body": "If you're dealing with water damage and the drying process feels uncertain, Gold Water Fire can walk through what's going on in your home. Reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're seeing."
+  },
+  "evidence": "This page explains general moisture science and drying principles used across the restoration industry, with no specific claims made about Gold Water Fire's own jobs or history.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-14",
+  "dateModified": "2026-09-14",
+  "photo": {
+    "src": "/assets/img/the-science-of-drying-a-house-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The science of drying a house, explained simply: temperature, humidity, and airflow"
+  }
+}
