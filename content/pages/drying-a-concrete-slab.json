@@ -1,0 +1,71 @@
+{
+  "slug": "drying-a-concrete-slab",
+  "path": "/guides/drying-a-concrete-slab.html",
+  "title": "Drying a Concrete Slab After Water Damage | Gold Water Fire Phoenix, AZ",
+  "description": "Why concrete slabs hold water longer than drywall or wood, and what actually needs to happen for one to dry out fully. A guide for Phoenix homeowners.",
+  "h1": "Drying a Concrete Slab: Why It Holds Water Longer Than Anything Else in the House",
+  "breadcrumbLabel": "Drying a Concrete Slab",
+  "intro": "You pulled up the baseboards, ran a fan for a few days, and the meter still reads high. Or the carpet is gone, the pad is gone, everything looks dry to the eye, and yet something still feels off underfoot, or there's a smell that won't quite leave the room. If you're staring at a slab that seems to be taking forever to dry, you're not doing anything wrong. Concrete behaves differently than every other material in a house, and most of the frustration people feel at this stage comes from expecting it to act like drywall or wood when it simply doesn't.",
+  "sections": [
+    {
+      "heading": "Why concrete is the slowest thing in the house to dry",
+      "body": "Concrete looks solid, but it's actually a porous material full of tiny interconnected capillaries, similar in structure to a sponge that's been compressed hard. Water doesn't just sit on the surface of a slab, it wicks upward and sideways through those capillaries, sometimes traveling several feet from the original point of intrusion. A slab that got wet near an exterior wall can carry moisture toward the center of a room over time, which is why moisture readings sometimes show up in places that never looked wet.\n\nDrywall and wood absorb water quickly and release it fairly quickly too, because their fiber structure lets moisture move in and out with relative ease. Concrete does the opposite. It absorbs slowly and releases even more slowly, because the same capillary network that let water in now has to let it evaporate back out molecule by molecule. Add a sealed floor finish, a slab-on-grade with no vapor barrier, or a slab that's been down for decades, and that release process slows down even further."
+    },
+    {
+      "heading": "What actually needs to happen for a slab to dry",
+      "body": "Surface-dry and dried-through are two different things. A slab can feel completely dry to a bare hand within a day of airflow, while the moisture sitting an inch or two below the surface hasn't moved anywhere. That's the gap that causes so much confusion: the visible sign of a problem disappears long before the actual problem does.\n\nGetting a slab to dry through means moving a large volume of air across the surface for a sustained period, keeping the surrounding humidity low enough that evaporation can keep happening, and in many cases pulling up any flooring, sealant, or adhesive residue that's trapping moisture underneath. A vapor barrier or a dense sealed finish over a wet slab can hold moisture in almost indefinitely, because there's nowhere for it to evaporate to. This is also why moisture meters matter more than the calendar. Time alone doesn't dry a slab, airflow and humidity control do, and a slab under a sealed floor may need that flooring removed before drying can even begin."
+    },
+    {
+      "heading": "Why this matters even after the floor looks fine",
+      "body": "Moisture trapped in a slab doesn't stay put quietly. It can wick up into the bottom plate of framed walls, feed mold growth under new flooring that gets installed too soon, or cause an adhesive bond to fail months later because the slab was never dry when the new material went down. A musty smell that shows up weeks after a water event, with no visible stain or wet spot anywhere, is one of the more common signs that a slab dried on the surface but not underneath.\n\nThis is part of why <a href=\"/water-damage-restoration.html\">water damage restoration</a> work often takes longer in rooms with concrete floors than in carpeted or framed spaces elsewhere in the same house. The visible damage might look identical, but the drying timeline underneath it is not."
+    },
+    {
+      "heading": "When this is bigger than a fan and a dehumidifier",
+      "body": "A small, contained spill that's addressed quickly can sometimes dry out with basic airflow and patience. But a slab that's been wet for more than a day or two, that sits under a sealed or glued-down floor covering, or that's part of a larger water event involving walls and framing as well, usually needs moisture mapping to find out how far the water actually traveled before anyone can say it's handled. Guessing based on how a floor looks or feels is how slabs get called dry when they aren't."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take for a wet concrete slab to dry out completely?",
+      "a": "It depends on how much water got in, how far it traveled through the slab, whether there's a sealed floor covering trapping moisture, and how much airflow and humidity control are applied. A slab can look dry on the surface within a day or two while still holding significant moisture well below that, which is why time alone isn't a reliable measure."
+    },
+    {
+      "q": "Can I just put new flooring down once the slab looks dry?",
+      "a": "Visual dryness is not the same as moisture-meter dryness. Installing flooring, especially anything glued or sealed, over a slab that still holds moisture underneath can trap that moisture permanently and lead to adhesive failure or mold growth under the new material later."
+    },
+    {
+      "q": "Why does a musty smell show up weeks after the water is gone?",
+      "a": "That's often a sign the slab dried on the surface but retained moisture deeper in the concrete, or that moisture wicked into a wall's bottom plate or nearby framing. The smell is usually the first noticeable evidence of drying that never fully finished."
+    },
+    {
+      "q": "Does a sealed or painted concrete floor dry differently than bare concrete?",
+      "a": "Yes. Sealants, epoxy coatings, and dense adhesives block the surface evaporation that concrete relies on to release trapped moisture. A slab under a sealed finish can hold water far longer than an exposed slab exposed to open air."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if a slab in your home has actually finished drying?",
+    "body": "If you're dealing with a wet slab, a lingering smell, or flooring that was installed before you were sure the concrete underneath was dry, Gold Water Fire can help you understand what's actually happening beneath the surface. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to get started."
+  },
+  "evidence": "This page makes no specific claims about Gold Water Fire's work; it explains general concrete drying behavior as industry knowledge and points readers to the company's water damage restoration service and contact information.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-15",
+  "dateModified": "2026-09-15",
+  "photo": {
+    "src": "/assets/img/drying-a-concrete-slab-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Drying a concrete slab: why it holds water longer than anything else in the house"
+  }
+}
