@@ -1,0 +1,71 @@
+{
+  "slug": "cabinets-dried-in-place",
+  "path": "/guides/cabinets-dried-in-place.html",
+  "title": "Can Cabinets Be Dried in Place? Phoenix, AZ Guide | Gold Water Fire",
+  "description": "A leak under the sink or a dishwasher overflow raises the question fast: can cabinets be saved, or do they have to come out? Here's how that's decided.",
+  "h1": "When Cabinets Can Be Dried in Place, and When They Have to Come Out",
+  "breadcrumbLabel": "Cabinets Dried in Place",
+  "intro": "You're standing in front of a cabinet that got wet, maybe from a slow leak you didn't catch for weeks, maybe from a dishwasher line that let go overnight, and you're trying to figure out if this is fixable or if you're about to lose the whole kitchen. It's a hard thing to judge on your own. Cabinets don't always show what's happening underneath, and the uncertainty of not knowing whether you're looking at a wipe-down or a demo job is its own kind of stress, especially when you're already dealing with everything else a leak or flood brings with it.",
+  "sections": [
+    {
+      "heading": "Why this question doesn't have a simple answer",
+      "body": "Cabinets are built from different materials layered together, and each one reacts to water differently. Solid wood face frames can often take on moisture and release it again without much damage. Particleboard and MDF, which make up the boxes and shelves of most cabinets, swell and lose structural integrity once they've absorbed water, and that damage doesn't reverse. So the same flood can leave one cabinet fine and the one next to it ruined, depending on what it's made of, how long it sat wet, and where the water came from."
+    },
+    {
+      "heading": "The factors that actually decide it",
+      "body": "A few things matter more than anything else when someone is deciding whether to dry cabinets in place or remove them: how long the material was wet, what kind of water it was, and what's happening at the toe kick and cabinet floor. Water sitting for a few hours is a very different situation than water sitting overnight or longer. Clean water from a supply line behaves differently than water that came from a drain backup or sat long enough to start supporting mold growth. And even if the cabinet faces look fine, the particleboard flooring inside the base cabinets, right where it meets the sub-floor, is often the first thing to fail and the last thing anyone checks.",
+      "cards": [
+        {
+          "heading": "Signs drying in place may work",
+          "body": "Solid wood or plywood construction, water contact under a few hours, no visible swelling or delamination, no odor, and the cabinet toe kick and interior floor still feel firm and flat."
+        },
+        {
+          "heading": "Signs cabinets need to come out",
+          "body": "Particleboard or MDF boxes that have swollen or gone soft, a musty smell developing, visible separation at the seams, sagging shelves, or water that sat long enough to reach flooring underneath the cabinet base."
+        }
+      ]
+    },
+    {
+      "heading": "What drying in place actually involves",
+      "body": "When cabinets are left in place to dry, it isn't just leaving a fan running and hoping. It typically means removing the toe kick panels so air can move through the cavity underneath the cabinets, sometimes drilling small access holes in the interior floor of the base cabinets to get airflow into wall and floor cavities that would otherwise stay damp, and running air movers and dehumidification equipment for as long as it takes to bring moisture content back down to a stable range. Moisture meters get used throughout the process to track whether the material is actually drying, not just guessed at by feel or smell."
+    },
+    {
+      "heading": "What removal looks like when it's needed",
+      "body": "When cabinets have to come out, it's usually because the structural material itself has already failed, not because someone is being cautious. Once particleboard has absorbed enough water to swell, it won't return to its original shape or strength even after it dries out completely. Leaving it in place at that point risks trapped moisture behind the cabinet, ongoing odor, and a surface that won't properly support countertops or hardware going forward. Removal also opens up the wall and floor cavities behind and under the cabinets, which is often the only way to fully dry those spaces and check for hidden mold growth."
+    },
+    {
+      "heading": "Why this connects to the rest of the house",
+      "body": "Cabinets rarely get wet in isolation. A dishwasher or sink leak that reaches the cabinet base has usually also reached the flooring, and sometimes the wall cavity behind it. That's part of why a proper <a href=\"/water-damage-restoration.html\">water damage restoration</a> assessment looks past the cabinets themselves to everything around them. If cabinets do need to be removed and rebuilt, that work shifts into <a href=\"/reconstruction.html\">reconstruction and rebuild</a> territory rather than mitigation, since it involves replacing built structure, not just drying what's already there."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How can I tell if my cabinets are particleboard or solid wood without tearing them apart?",
+      "a": "Check the edges of shelves or the interior floor of a base cabinet where a small chip or scratch might already exist. Particleboard shows a compressed, chip-like texture. Solid wood shows a continuous wood grain. Plywood shows visible layers when you look at a cut edge."
+    },
+    {
+      "q": "Is it safe to just let wet cabinets air dry on their own?",
+      "a": "Passive air drying without moving air through the cavities and without monitoring moisture levels often isn't enough, especially for cabinet floors and toe kicks where water pools and airflow is naturally poor. That's often where hidden mold growth starts even when the visible surfaces look dry."
+    },
+    {
+      "q": "Does it matter what kind of water caused the damage?",
+      "a": "Yes. Clean water from a supply line is treated differently than water from a drain, appliance backup, or water that's been sitting long enough to become contaminated. Contaminated water raises the bar for what can reasonably be dried in place versus removed."
+    },
+    {
+      "q": "Can only part of a cabinet run be replaced, or does it all have to match?",
+      "a": "Often only the affected sections need to come out. Whether the rest can stay depends on how the cabinets are joined and whether matching finishes or materials are still available, which is a judgment call made case by case."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure which situation you're in?",
+    "body": "If you're looking at wet cabinets right now and can't tell whether they're salvageable, Gold Water Fire can take a look and walk you through what's actually happening underneath. Call (480) 999-3339 or reach out through the <a href=\"/contact.html\">contact page</a>."
+  },
+  "evidence": "This page states general restoration industry knowledge about cabinet materials and drying processes, and makes no specific claims about Gold Water Fire's job history or methods.",
+  "type": "educational",
+  "datePublished": "2026-09-15",
+  "dateModified": "2026-09-15",
+  "photo": {
+    "src": "/assets/img/cabinets-dried-in-place-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: When cabinets can be dried in place and when they come out"
+  }
+}

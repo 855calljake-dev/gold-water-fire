@@ -1,0 +1,65 @@
+{
+  "slug": "which-insulation-survives-getting-wet",
+  "path": "/guides/which-insulation-survives-getting-wet.html",
+  "title": "Which Insulation Survives Getting Wet? | Gold Water Fire Phoenix, AZ",
+  "description": "Find out which insulation types can dry out and keep working after a leak or flood, and which ones need to be torn out right away.",
+  "h1": "Which Insulation Survives Getting Wet, and Which One Isn't Coming Back",
+  "breadcrumbLabel": "Which Insulation Survives Getting Wet",
+  "intro": "You just found wet insulation behind a wall or hanging out of a soaked ceiling, and now you're standing there trying to figure out if this is something that dries out on its own or something that has to come out entirely. It's a fair question, and it's not always obvious just by looking at it. Some insulation shrugs off water. Some is ruined the second it gets damp, even if it looks fine from a few feet away. Not knowing which kind you have makes it hard to know how worried to be, or what happens next.",
+  "sections": [
+    {
+      "heading": "Fiberglass batts: it depends on how long it's been wet",
+      "body": "Fiberglass itself is glass fibers, so the material doesn't rot or grow mold on its own. But the paper facing on most batts does, and the fibers lose their loft when they get compressed by water, which means the insulation value drops even after it dries. If fiberglass batts get wet and are dried out within a day or two, with airflow moving through the wall or attic cavity, they can sometimes be saved. If they've been sitting wet for several days, or the paper facing is discolored or sagging, they've usually lost enough structure and picked up enough contamination that replacing them is the safer call."
+    },
+    {
+      "heading": "Cellulose: absorbs water and holds onto it",
+      "body": "Cellulose insulation is treated paper, and paper is exactly the kind of material that soaks up water and doesn't let go easily. Wet cellulose gets heavy, compacts down at the bottom of the wall or attic space it's in, and stays damp for a long time even after the leak is fixed. That extended damp period is what invites mold, and it's also what causes the insulation to lose its shape permanently, leaving gaps where it used to fill the cavity evenly. Once cellulose is thoroughly wet, it is generally considered done and needs to be removed."
+    },
+    {
+      "heading": "Closed-cell spray foam: mostly unaffected",
+      "body": "Closed-cell spray foam is dense and the cell structure doesn't allow much water in, which is why it's often used in flood-prone areas and below grade. If it gets wet on the surface, wiping it down and letting it air dry is usually enough. It won't absorb water into its structure the way fibrous insulation does. The exception is if water gets behind or underneath it, in gaps where it didn't fully adhere to the framing, where trapped moisture can sit against the wood and cause rot even though the foam itself is fine."
+    },
+    {
+      "heading": "Open-cell spray foam: more absorbent than people expect",
+      "body": "Open-cell foam is softer and has a more porous structure than closed-cell, so it can actually take on water rather than resist it, similar to a sponge. It doesn't fall apart the way cellulose does, but it can hold moisture inside it for a while, which slows drying time and can allow mold to develop at the surface or in the framing behind it. Whether it needs to be removed usually comes down to how much water it absorbed and how long it stayed wet."
+    },
+    {
+      "heading": "Rigid foam board: generally water-resistant",
+      "body": "Rigid foam boards, whether XPS, EPS, or polyiso, are closed-cell by nature and hold up reasonably well against incidental water exposure. They don't wick moisture the way batts or cellulose do. The bigger concern with foam board is usually what's happening at the seams and behind the panel, since water can travel along the surface and get trapped against framing or subfloor even if the board itself stays intact."
+    },
+    {
+      "heading": "Why it's not just about the insulation",
+      "body": "Even insulation that survives water exposure doesn't tell the whole story. Wet insulation sits against studs, joists, subfloor, and drywall, and those materials can develop hidden problems even after the insulation itself dries. A wall can look and feel dry on the surface while moisture is still trapped inside the cavity. That's part of why the decision to remove or keep insulation is usually made alongside a broader look at the surrounding structure, not the insulation in isolation."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can wet fiberglass insulation be dried out and reused?",
+      "a": "Sometimes, if it's caught early and dried quickly with good airflow. If it's been wet for more than a couple of days, or the paper facing shows staining or sagging, it's usually better to replace it rather than risk trapped moisture or mold behind the wall."
+    },
+    {
+      "q": "Does wet insulation always mean mold is coming?",
+      "a": "Not always, but the risk goes up the longer the material stays damp. Insulation that absorbs and holds water, like cellulose or open-cell foam, creates the kind of prolonged moisture that mold needs. Insulation that resists water, like closed-cell foam, carries much less of that risk on its own."
+    },
+    {
+      "q": "How do I know if insulation is still wet if I can't see it?",
+      "a": "Weight and smell are often the first clues, wet insulation feels heavier when you press on it and may have a musty odor. Beyond that, moisture meters are commonly used to check inside a wall or attic cavity without opening it up completely."
+    },
+    {
+      "q": "Is it ever okay to just leave wet insulation in place?",
+      "a": "It depends on the type, how wet it got, and how quickly it dries. Insulation that resisted the water and dried fast can sometimes stay. Anything that absorbed water and stayed damp for an extended period is generally a removal situation, since it won't perform the way it used to and can hide ongoing moisture problems."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if your insulation needs to come out?",
+    "body": "If you're dealing with wet insulation after a leak or flood in the Phoenix area, Gold Water Fire can take a look and help you understand what's salvageable and what isn't. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page to see how the process works."
+  },
+  "evidence": "This page states general building science and material behavior about insulation types and water exposure; it does not make any specific claim about work performed by Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-15",
+  "dateModified": "2026-09-15",
+  "photo": {
+    "src": "/assets/img/which-insulation-survives-getting-wet-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Which insulation survives getting wet and which is finished the moment it soaks"
+  }
+}
