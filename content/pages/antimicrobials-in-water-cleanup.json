@@ -1,0 +1,57 @@
+{
+  "slug": "antimicrobials-in-water-cleanup",
+  "path": "/guides/antimicrobials-in-water-cleanup.html",
+  "title": "Antimicrobial Treatments in Water Cleanup: What They Do | Gold Water Fire, Phoenix, AZ",
+  "description": "What antimicrobial treatments actually do (and don't do) after water damage, and why they're not a substitute for drying and removal of wet materials.",
+  "h1": "Antimicrobial Treatments in Water Cleanup: What They Do and Do Not Do",
+  "breadcrumbLabel": "Antimicrobials in Water Cleanup",
+  "intro": "If a crew sprayed something on your walls after a leak or flood and you're still not sure your home is actually safe, that uncertainty makes sense. Water damage cleanup involves steps that aren't visible once they're done, and antimicrobial treatment is one of the most misunderstood ones. You want to know whether that spray solved the problem or just covered it, and that's a fair question to sit with before anyone hands you an invoice.",
+  "sections": [
+    {
+      "heading": "What an antimicrobial treatment actually is",
+      "body": "An antimicrobial (sometimes called an antifungal or biocide in restoration paperwork) is a liquid applied to surfaces after water damage to inhibit the growth of mold, bacteria, and other microorganisms. It's typically sprayed, wiped, or fogged onto studs, subfloor, drywall, and other materials after the standing water is gone but before those materials are fully dried or rebuilt. The goal is to slow or stop microbial growth on the surface it touches, during the window of time before drying equipment finishes its job."
+    },
+    {
+      "heading": "What it does not do",
+      "body": "An antimicrobial does not dry a wet wall cavity. It does not replace insulation that has wicked water and lost its function. It does not kill mold that has already colonized deep into porous material like drywall paper or particleboard, it can treat a surface but it cannot reverse structural saturation. And it is not a stand-in for removing materials that are too damaged to save. If a company's plan is 'spray and leave,' that is treating a symptom, not the underlying moisture problem. The spray is one step inside a drying and inspection plan, not a replacement for one."
+    },
+    {
+      "heading": "Why timing and drying matter more than the spray itself",
+      "body": "Mold and bacteria need moisture to establish and spread. Industry guidance for water damage response generally treats the first couple of days as the window where mold growth risk sharply increases in wet, unaddressed materials. An antimicrobial applied to a surface that stays wet underneath is fighting a losing battle, the moisture will keep feeding growth faster than a single surface treatment can suppress it. That's why antimicrobial application is almost always paired with dehumidification, air movement, and moisture monitoring, not used on its own."
+    },
+    {
+      "heading": "Reading it on your paperwork",
+      "body": "If your invoice or scope of work lists an antimicrobial application, it's worth asking what surfaces it was applied to, whether moisture readings were taken before and after, and whether any materials were flagged for removal rather than treatment. Those questions tell you whether the treatment was one part of a real drying process or a quick step taken to make a job look finished. You can read more about how a full response typically fits together on our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does an antimicrobial spray mean my mold problem is solved?",
+      "a": "Not by itself. It can slow growth on treated surfaces, but if the material underneath is still wet or already colonized deep inside, drying and possibly removal are still needed."
+    },
+    {
+      "q": "Is antimicrobial treatment always necessary after a water leak?",
+      "a": "It depends on how long materials were wet, what got wet, and the water source. A fast, clean water cleanup with quick drying may not need it, while water sitting for days often does."
+    },
+    {
+      "q": "Can I apply an antimicrobial myself with a store-bought product?",
+      "a": "You can treat visible surface mold on hard, non-porous materials, but store-bought sprays won't address moisture trapped in wall cavities, insulation, or subfloor, which is where regrowth usually starts."
+    },
+    {
+      "q": "How do I know if a material should be treated or removed?",
+      "a": "Porous materials that stayed wet for an extended period, or that already show mold growth, are generally harder to fully treat and are often removed instead. Moisture readings and a visual inspection help make that call."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your water damage actually needs?",
+    "body": "If you're looking at a spray bottle, a moisture meter, or a contractor's estimate and none of it is adding up, talk it through with Gold Water Fire. Reach us at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to ask questions before you decide anything."
+  },
+  "evidence": "This page states general industry practice regarding antimicrobial use, moisture, and mold growth timing, and makes no specific claims about Gold Water Fire's own job history or certifications.",
+  "type": "educational",
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "photo": {
+    "src": "/assets/img/antimicrobials-in-water-cleanup-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Antimicrobial treatments in water cleanup: what they do and do not do"
+  }
+}
