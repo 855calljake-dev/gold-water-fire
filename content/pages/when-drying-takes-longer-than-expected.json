@@ -1,0 +1,75 @@
+{
+  "slug": "when-drying-takes-longer-than-expected",
+  "path": "/guides/when-drying-takes-longer-than-expected.html",
+  "title": "When Drying Takes Longer Than Expected | Gold Water Fire | Phoenix, AZ",
+  "description": "Fans running for days and moisture readings still not moving? Here's why drying stalls in dense materials, hidden pockets, and shifting weather.",
+  "h1": "When Drying Takes Longer Than Expected",
+  "breadcrumbLabel": "When Drying Takes Longer Than Expected",
+  "intro": "You were told it would take a few days. It's been longer than that, and the fans are still running, the air still feels heavy in that one room, and nobody has given you a straight answer about when it ends. That gap between what you were told and what you're living with is exhausting, especially when the space looks dry to your eye but someone keeps insisting it isn't. You're not imagining it, and you're not doing anything wrong. Drying timelines slip more often than people expect, and there are real, physical reasons why.",
+  "sections": [
+    {
+      "heading": "Why some materials just hold water longer",
+      "body": "Not everything dries at the same speed, even under the same fans in the same room. Dense materials like solid hardwood, brick, concrete, and plaster absorb moisture slowly, but they also release it slowly. Water can travel deep into these materials through capillary action, moving further than the visible stain suggests. A hardwood floor might look dry on the surface within a day while the subfloor beneath it stays saturated for a week or more, because the finish that protects the wood also slows evaporation. Concrete slabs are similar: they can hold moisture for a long time after a leak because the material itself is porous at a microscopic level, and that moisture has nowhere to go until air movement and dehumidification pull it out molecule by molecule.",
+      "soft": false
+    },
+    {
+      "heading": "The pockets nobody sees at first",
+      "body": "Water moves along the path of least resistance, which usually is not a straight line. It can travel behind baseboards, under cabinet toe kicks, inside wall cavities, beneath tile through the mortar bed, and into the gap between a subfloor and the finished floor above it. These hidden pockets often don't show up until a moisture meter or thermal camera is used to check areas that look completely normal. This is why a drying plan sometimes changes mid-project: a wall that tested dry on day one can still be holding water in the insulation behind it, and that won't show up until the surrounding materials have had a chance to release their own moisture first.",
+      "soft": false
+    },
+    {
+      "heading": "How weather changes the math",
+      "body": "Drying depends on the difference between the moisture in the material and the moisture in the surrounding air. In Phoenix, that usually works in your favor, but monsoon season is a real exception. High outdoor humidity during July and August can slow evaporation significantly, especially if doors are opened often or a home isn't sealed up tightly during the process. Temperature swings matter too: a house that gets very hot during the day and cools at night can see moisture move around as materials expand and contract, which sometimes makes a reading look like it went backward when it actually just shifted location.",
+      "soft": false
+    },
+    {
+      "heading": "What actually tells you drying is finished",
+      "body": "A room can feel dry to the touch and still have wet material behind the surface, which is why the finish line isn't based on how a space feels or smells. It's based on repeated moisture readings, taken with a meter, compared against a dry standard from an unaffected part of the same structure or building type. Consistent, stable readings across multiple visits, not a single good number on one day, are what actually confirm a material has released the water it was holding. That's also why a technician might come back to check a spot more than once instead of just calling it done the first time it reads low.",
+      "soft": false
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it normal for drying to take longer than the first estimate?",
+      "a": "Yes. Initial timelines are based on what's visible and accessible on day one. Once walls are opened, floors are checked underneath, or hidden pockets are found, the plan often has to adjust to match what the material is actually doing."
+    },
+    {
+      "q": "Why does a spot that felt dry still test wet on a meter?",
+      "a": "Surface dryness and material dryness are not the same thing. Dense materials like wood, tile, and plaster can feel dry to the touch while still holding moisture several layers deep, which only a meter reading can confirm."
+    },
+    {
+      "q": "Does humid weather really slow drying down that much?",
+      "a": "It can. Evaporation depends on the gap between the moisture already in a material and the moisture in the air around it. When outdoor humidity is high, especially during monsoon season, that gap shrinks and drying slows as a result."
+    },
+    {
+      "q": "Should I be worried if drying equipment has been running for over a week?",
+      "a": "Not necessarily. Dense materials and hidden pockets can extend a drying timeline well past what feels reasonable. What matters most is whether moisture readings are trending down consistently over time, not how many days the equipment has been running."
+    }
+  ],
+  "cta": {
+    "heading": "Wondering why your drying timeline keeps moving?",
+    "body": "If you're watching equipment run longer than expected and want a straight explanation of what's happening in your home, Gold Water Fire can walk through it with you. Call (480) 999-3339 or reach out through our <a href=\"/contact.html\">contact page</a> to talk it through."
+  },
+  "evidence": "This page states general drying science and industry practice; no specific claims about Gold Water Fire's own job history or timelines are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "photo": {
+    "src": "/assets/img/when-drying-takes-longer-than-expected-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: When drying takes longer than expected: dense materials, hidden pockets, weather"
+  }
+}
