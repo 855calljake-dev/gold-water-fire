@@ -1,0 +1,73 @@
+{
+  "slug": "mold-on-window-sills",
+  "path": "/guides/mold-on-window-sills.html",
+  "title": "Mold on Window Sills & Frames: Condensation Causes | Gold Water Fire Phoenix, AZ",
+  "description": "Why mold keeps returning to window sills in air-conditioned Phoenix homes, and what the condensation pattern actually means for your house.",
+  "h1": "Mold on Window Sills and Frames: Condensation in an Air-Conditioned Home",
+  "breadcrumbLabel": "Mold on Window Sills",
+  "intro": "You wipe it down, it comes back. Maybe it started as a faint discoloration in the corner of the frame, and now it's a fuzzy dark line along the sill every time you check. You've probably already asked yourself if it's something in the house, something about how you're running the AC, or just one of those things that happens in Arizona. It's frustrating to keep cleaning the same spot and not know if you're actually fixing anything or just resetting the clock until it shows up again.",
+  "sections": [
+    {
+      "heading": "Why this happens more in air-conditioned homes than you'd expect",
+      "body": "It seems backwards. Mold needs moisture, and an air-conditioned home is supposed to be dry. But the mechanism isn't about humidity in the room, it's about temperature difference at a surface. When cool, conditioned indoor air meets a window pane or metal frame that's being warmed from the outside by Phoenix heat, the glass and frame can sit at a different temperature than the air around them. Warm air holds more moisture than cool air, and when that warm, humid air contacts a cooler surface, the moisture condenses out as liquid water, the same way a cold glass of water sweats on a summer day. That thin film of condensation sits in the corners and along the sill, often unnoticed, and it's enough moisture over time to let mold colonize the dust, wood, caulk, or drywall in that spot."
+    },
+    {
+      "heading": "The pattern usually tells you something",
+      "body": "Where the mold shows up on the window matters. Mold concentrated at the bottom corners of a frame usually points to condensation pooling and not draining or drying between cycles. Mold along the top of a frame or in the surrounding drywall can point to a different source entirely, like a roof or stucco intrusion, rather than condensation. Mold on the interior face of the glass itself, especially in the morning, is often straightforward condensation from the indoor-outdoor temperature swing. Mold that shows up on only one or two windows in the house, rather than all of them, often means those specific windows have a seal failure, a caulking gap, or sit in a room with less airflow than the rest of the house, such as a closed guest room or a corner bedroom with the AC vent blocked by furniture."
+    },
+    {
+      "heading": "What actually reduces it, and what just treats the symptom",
+      "body": "Wiping the sill with a cleaner kills the visible mold but does nothing about the condensation that's going to reform tomorrow morning. The more durable fixes address the temperature gap or the moisture itself: improving air circulation near the window (a ceiling fan or simply not blocking vents with curtains or blinds), checking that window seals and weatherstripping aren't degraded enough to let humid outside air infiltrate, and in some cases running a dehumidifier in a room that stays noticeably more humid than the rest of the house. If the wood frame or sill has started to soften, discolor deeply, or the mold keeps reappearing within days of cleaning no matter what you try, that's usually a sign the moisture has gotten into the material itself and surface cleaning won't resolve it.",
+      "eyebrow": "Practical steps"
+    },
+    {
+      "heading": "When it's worth having someone look closer",
+      "body": "Small, recurring surface mold on a sill that wipes away and comes back slowly is common and often manageable on your own. It's a different situation if the mold is spreading beyond the window frame into surrounding drywall, if you can smell mustiness in the room even after cleaning, if the wood is soft or warped, or if the same problem is happening at multiple windows across the house at once, which suggests a broader humidity or ventilation issue rather than one bad window seal. In those cases, understanding what's happening behind the wall or under the sill matters more than what's visible on the surface. You can read more about how professionals evaluate and address water intrusion at our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page, or learn about our <a href=\"/reconstruction.html\">reconstruction</a> process if a frame or sill needs to be rebuilt rather than repaired.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is mold on a window sill dangerous?",
+      "a": "Small amounts of surface mold on a sill are common and are generally treated as a cleaning and moisture-control issue. Larger or recurring growth, or mold that has spread into drywall or wood framing, is worth having assessed rather than just cleaned."
+    },
+    {
+      "q": "Why does mold keep coming back even after I clean it?",
+      "a": "If the underlying condensation source (temperature difference at the glass or frame, poor airflow, or a degraded seal) isn't addressed, the surface will keep collecting moisture and mold will recolonize the same spot even after a thorough cleaning."
+    },
+    {
+      "q": "Does running the AC less reduce window condensation?",
+      "a": "Not necessarily. Condensation is driven by the temperature difference between the indoor air and the window surface, plus humidity in the air. Adjusting airflow near the window and addressing seal gaps often matters more than the thermostat setting alone."
+    },
+    {
+      "q": "How do I know if it's just the window or a bigger moisture problem?",
+      "a": "One window with corner or bottom-sill mold is often a localized condensation or seal issue. Mold at multiple windows, mold spreading into surrounding wall material, or a persistent musty smell point to a larger humidity or intrusion issue worth a closer look."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure if it's just condensation?",
+    "body": "If the mold keeps spreading past the window frame or you're noticing it at more than one window, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com and we'll help you figure out what's actually going on."
+  },
+  "evidence": "This page explains general condensation and mold science and does not make any specific claim about Gold Water Fire's past work.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "photo": {
+    "src": "/assets/img/mold-on-window-sills-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Mold on window sills and frames: condensation in an air-conditioned home"
+  }
+}
