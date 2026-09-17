@@ -2337,7 +2337,7 @@
       "slug": "indoor-humidity-targets",
       "topic": "Indoor humidity targets that keep mold from getting started",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -2358,7 +2358,7 @@
       "slug": "recorded-statement-property-claim",
       "topic": "The recorded statement in a property claim: what it is and how to prepare",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
@@ -2379,42 +2379,42 @@
       "slug": "the-matching-problem-in-repairs",
       "topic": "The matching problem: when new materials cannot match old, and what policies say",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "mortgage-company-on-your-claim-check",
       "topic": "Why the mortgage company is on your claim check and how the endorsement process works",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "recovering-depreciation-holdback",
       "topic": "The replacement-cost holdback: how recoverable depreciation actually gets paid out",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "building-a-contents-inventory",
       "topic": "Building a contents inventory after a loss: the method that keeps it manageable",
       "faithLoopPhase": "invitation",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "duties-after-loss-in-your-policy",
       "topic": "The duties-after-loss section of your policy: what it obligates you to do",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
       "slug": "why-policies-require-mitigation",
       "topic": "Why policies require you to prevent further damage, starting immediately",
       "faithLoopPhase": "reflection",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "type": "educational",
