@@ -1,0 +1,71 @@
+{
+  "slug": "recorded-statement-property-claim",
+  "path": "/guides/recorded-statement-property-claim.html",
+  "title": "The Recorded Statement in a Property Claim: What to Know | Gold Water Fire",
+  "description": "What a recorded statement is, why insurers ask for one, and how to prepare before you speak with your adjuster about water or fire damage.",
+  "h1": "The Recorded Statement in a Property Claim: What It Is and How to Prepare",
+  "breadcrumbLabel": "Recorded Statement Guide",
+  "intro": "Somewhere between the moment you found the damage and the moment you filed the claim, someone from the insurance company asked if they could \"record a quick statement.\" Maybe you said yes without thinking much of it. Maybe you're staring at that request right now, unsure what it actually commits you to, wondering why a phone call feels like it needs this much formality. That uncertainty is reasonable. You're being asked to describe, on the record, something stressful and often confusing, before you've had time to fully understand what happened yourself.",
+  "sections": [
+    {
+      "heading": "What a recorded statement actually is",
+      "body": "A recorded statement is an audio (sometimes video) interview conducted by your insurance company, usually by an adjuster or a claims representative, where you answer questions about the damage, the timeline, and the condition of your property. It becomes part of the official claim file. Insurers use it to build a record of what you said happened, in your own words, at a specific point in time. It is separate from any written estimate, photo documentation, or contractor report you submit. Most homeowner and property policies require reasonable cooperation with the claims investigation, and a recorded statement is often framed as part of that cooperation, though the exact obligation depends on your specific policy language."
+    },
+    {
+      "heading": "Why insurers ask for one",
+      "body": "From the insurer's side, a recorded statement creates a clear, timestamped account that can be compared against your written claim, your policy terms, and any inspection findings. It helps them establish the cause of loss, the sequence of events, and whether the damage falls within covered perils. It also gives them something concrete if the claim is later disputed, reviewed, or escalated. None of that makes the request adversarial by default, most claims are routine, but it does mean the statement is treated as evidence, not a casual conversation."
+    },
+    {
+      "heading": "What tends to trip people up",
+      "body": "The most common issue isn't dishonesty, it's imprecision under stress. Someone asked to describe when a pipe started leaking might say 'a few days' when they mean 'I noticed it a few days ago but I'm not sure how long it was actually running.' Small gaps like that, between what you observed and what you're inferring, can create confusion later if the timeline matters to how the claim is evaluated. Guessing at dates, square footage, or prior repairs, and having that guess treated as a firm statement, is another common friction point."
+    },
+    {
+      "heading": "How to prepare before you speak",
+      "body": "Before the call, write out a simple timeline: when you last saw the property in normal condition, when you noticed the damage, what you did immediately after (shut off water, called for help, took photos), and who you've contacted since. Gather any documentation you already have: photos, receipts for emergency mitigation, prior repair records if relevant. It's reasonable to ask in advance what topics will be covered, to have the timeline in front of you during the call, and to say 'I don't know' or 'I'd need to check on that' rather than estimate something you're not sure of. You are also generally allowed to ask for a copy or transcript of the statement for your own records."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to give a recorded statement?",
+      "a": "Most policies include a cooperation clause that can require reasonable participation in the claims investigation, which sometimes includes a recorded statement. Whether it's mandatory in your case depends on your specific policy wording, so it's worth reading that section or asking your agent directly rather than assuming either way."
+    },
+    {
+      "q": "Can I have someone else on the call with me?",
+      "a": "In many cases, yes. Policies and state rules vary, but it's reasonable to ask the adjuster directly whether you can have a spouse, contractor, or representative present, and to get that answer before the scheduled call rather than during it."
+    },
+    {
+      "q": "What if I'm not sure about a detail, like the exact date something happened?",
+      "a": "Say so plainly. It's better to state that you're estimating or unsure than to give a specific answer you're not confident in. A recorded statement becomes part of the claim file, so precision matters more than speed."
+    },
+    {
+      "q": "Does the recorded statement replace my written claim or damage documentation?",
+      "a": "No. It's a separate piece of the claim file alongside your written claim form, photos, estimates, and any inspection reports. Each piece is reviewed together, not in isolation."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water or fire damage and not sure what comes next?",
+    "body": "Gold Water Fire handles water damage restoration, fire damage restoration, and reconstruction across the Phoenix metro area. Reach out at (480) 999-3339 or Help@goldwaterfire.com to talk through what you're facing."
+  },
+  "evidence": "This page explains general insurance claim practices and does not make any specific claim about Gold Water Fire's own work or process.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/recorded-statement-property-claim-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The recorded statement in a property claim: what it is and how to prepare"
+  }
+}
