@@ -1,0 +1,57 @@
+{
+  "slug": "indoor-humidity-targets",
+  "path": "/guides/indoor-humidity-targets.html",
+  "title": "Indoor Humidity Targets to Prevent Mold | Gold Water Fire Phoenix, AZ",
+  "description": "What indoor humidity level actually stops mold growth, and how to measure and hold it in Phoenix area homes. A practical guide from Gold Water Fire.",
+  "h1": "Indoor Humidity Targets That Keep Mold From Getting Started",
+  "breadcrumbLabel": "Indoor Humidity Targets",
+  "intro": "If you've noticed a musty smell, foggy windows, or that clammy feeling in a bathroom or basement long after the shower's done, you're probably wondering whether your home's humidity is a real problem or just an annoyance. It's a fair question, and one that's easy to answer once you know what to look for and what number you're aiming for.",
+  "sections": [
+    {
+      "heading": "The target range: 30% to 50% relative humidity",
+      "body": "Mold spores are everywhere, indoors and out. They only become a growth problem when they land on a damp surface and stay damp long enough to colonize, which generally takes 24 to 48 hours of sustained moisture. Keeping indoor relative humidity between 30% and 50% starves that process before it starts. Above 60%, most building materials, drywall paper, wood framing, carpet backing, insulation, hold enough moisture to support growth, especially in corners with poor air movement. Below 30%, you risk dry skin, static, and cracked wood trim, so the goal isn't as low as possible, it's steady in that middle band."
+    },
+    {
+      "heading": "How to actually measure it",
+      "body": "A hygrometer is a small humidity gauge, often combined with a thermometer, and inexpensive ones are accurate enough for home use. Place one in the rooms that worry you most: a bathroom without a vent fan, a laundry room, a basement, a closet on an exterior wall. Check it at different times of day, since humidity swings with cooking, showering, and outdoor weather. A reading that spikes after a shower and drops back within an hour is normal. A reading that stays elevated for most of the day points to a ventilation or moisture-source problem worth addressing."
+    },
+    {
+      "heading": "Why Phoenix-area homes have their own pattern",
+      "body": "Outdoor air across the Phoenix metro, from Chandler and Gilbert out to Peoria and Buckeye, is usually dry, which keeps whole-house humidity low most of the year. That can create a false sense of security. The risk in this climate tends to concentrate in specific spots: bathrooms with poor ventilation, evaporative cooler components, areas around a leaking water heater or slow plumbing drip, and monsoon-season humidity spikes in July through September when moist air moves in fast. A home can read comfortably dry overall and still have a damp pocket behind a washing machine or under a sink that never sees that dry outdoor air."
+    },
+    {
+      "heading": "Practical ways to hold the range",
+      "body": "Run bathroom and kitchen exhaust fans during and for a while after use, not just while you're in the room. Fix small plumbing leaks and dripping fixtures promptly, since a slow drip under a sink can keep the humidity in that cabinet elevated for weeks without ever being visible. Use a portable dehumidifier in rooms that consistently read above 50%, especially basements or interior rooms with little airflow. During monsoon season, keep an eye on readings more often since outdoor humidity can climb quickly. If you already see a musty smell, discoloration on drywall, or a spot that stays damp no matter what you try, that's usually a sign of a moisture source that needs to be found and fixed rather than just ventilated around."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What humidity level actually causes mold to grow?",
+      "a": "Sustained relative humidity above roughly 60%, combined with a surface that stays damp for a day or two, is generally enough to let mold spores colonize. Keeping indoor humidity between 30% and 50% removes that condition in most rooms."
+    },
+    {
+      "q": "Do I need a special tool to check my home's humidity?",
+      "a": "A basic hygrometer, sold at most hardware stores, is enough. Place it in the rooms you're concerned about and check readings at different times of day rather than relying on a single measurement."
+    },
+    {
+      "q": "Why does my bathroom feel humid even though the rest of the house is dry?",
+      "a": "Bathrooms generate a lot of moisture quickly from showers, and without a working exhaust fan or enough air exchange, that moisture can linger well after the room feels used, even in an otherwise dry climate."
+    },
+    {
+      "q": "Is a dehumidifier necessary in a Phoenix-area home?",
+      "a": "Not usually for the whole house, since outdoor air here tends to be dry. A portable unit can still help in specific low-airflow rooms, like a basement or an interior bathroom, that read consistently above 50% humidity."
+    }
+  ],
+  "cta": {
+    "heading": "Found a damp spot that won't dry out?",
+    "body": "If you've checked the humidity and something still isn't adding up, a spot that stays wet, a smell that won't go away, it might be worth a second look. Gold Water Fire serves the Phoenix metro area and can help you figure out what's going on. Reach out at (480) 999-3339 or through the <a href=\"/contact.html\">contact page</a> whenever you're ready, no pressure."
+  },
+  "evidence": "This page states general building science and IAQ practices around humidity and mold growth, not a specific claim about work Gold Water Fire has performed.",
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/indoor-humidity-targets-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Indoor humidity targets that keep mold from getting started"
+  }
+}
