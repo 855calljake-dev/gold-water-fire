@@ -1,0 +1,75 @@
+{
+  "slug": "mortgage-company-on-your-claim-check",
+  "path": "/guides/mortgage-company-on-your-claim-check.html",
+  "title": "Why Your Mortgage Company Is on the Claim Check | Gold Water Fire Phoenix, AZ",
+  "description": "Confused why your mortgage lender's name is on your insurance claim check? Here's why it happens and how the endorsement process actually works.",
+  "h1": "Why the Mortgage Company Is on Your Claim Check",
+  "breadcrumbLabel": "Mortgage Company on Claim Check",
+  "intro": "You opened an envelope expecting a check made out to you, and instead your mortgage lender's name is sitting right next to yours. It feels like a mistake, or worse, like one more hurdle between you and getting your home fixed. Nothing about it was explained in advance, and now you're stuck wondering if you can even cash it, how long it will take, or whether the bank is somehow going to keep the money. That confusion is completely understandable. Most homeowners never learn how this works until the day they're holding a check they can't deposit.",
+  "sections": [
+    {
+      "heading": "Why the lender's name shows up at all",
+      "body": "If you have a mortgage, your homeowner's insurance policy almost certainly lists your lender as a loss payee. That's a condition of the loan, written into the mortgage agreement, not something your insurance company decided on its own. The lender has a financial stake in the property until the loan is paid off, so when a covered loss happens, insurers are contractually required to include that lender on any claim payment above a certain size. It isn't a sign of a problem with your claim, and it isn't specific to your situation. It's standard practice built into how mortgages and property insurance work together."
+    },
+    {
+      "heading": "What 'endorsement' actually means",
+      "body": "Endorsement just means the lender has to sign off on the check before it can be deposited, the same way any check with two names on it needs both parties' signatures. In practice, this usually means mailing or delivering the check to the mortgage company's loss draft department (sometimes called the insurance claims department), along with documents they request, such as a copy of the insurance declaration page, the adjuster's report, a signed repair contract or estimate, and sometimes a W-9. The lender endorses the check and returns it to you, or in many cases deposits it directly into an escrow-style account and releases funds in stages as repairs are completed."
+    },
+    {
+      "heading": "Why lenders release money in stages",
+      "body": "Lenders often disburse claim funds in portions rather than all at once, releasing an initial amount to start work and holding the remainder until an inspection confirms the repairs are progressing or complete. This protects the lender's collateral, since the home itself is what secures the loan, and it protects you from paying a contractor in full before work is finished. It can feel slow when you're trying to get repairs moving quickly, but understanding that this is a routine safeguard, not a sign anything is wrong with your claim, can make the process easier to plan around."
+    },
+    {
+      "heading": "What tends to slow the process down",
+      "body": "The most common delays come from missing paperwork: an outdated declarations page, a repair estimate that doesn't match the adjuster's scope, or a loss draft department that requires documents to arrive in a specific order. Some lenders also require an inspection before releasing the final portion of funds, which means scheduling that inspection early can save time later. Calling the loss draft department directly and asking exactly what they need, in writing, is usually faster than guessing based on what worked for a friend or neighbor with a different lender."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I just deposit the check myself without the lender?",
+      "a": "Usually not, if the lender is named on the check. Banks generally won't accept a check for deposit unless all payees listed have endorsed it, so you'll need to go through the lender's process even if it feels unnecessary for a smaller claim."
+    },
+    {
+      "q": "Does every claim check include the mortgage company?",
+      "a": "Not necessarily. Some insurers only add the lender for claims above a certain dollar threshold, and the exact threshold varies by insurer and by lender. Smaller claims are sometimes paid directly to the homeowner without a loss payee listed."
+    },
+    {
+      "q": "How long does the lender's endorsement process take?",
+      "a": "It varies by lender and depends on how quickly you can supply the paperwork they request. Contacting the loss draft department early and confirming exactly what documents they need can help avoid back-and-forth delays."
+    },
+    {
+      "q": "What if my mortgage company is holding funds and my contractor needs to be paid?",
+      "a": "This is a common point of friction. Many lenders will release an initial disbursement to get repairs started, then release the remainder after an inspection. Ask the loss draft department directly about their disbursement schedule so you can plan payments to your contractor around it."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a claim and not sure what's next?",
+    "body": "Gold Water Fire helps homeowners across the Phoenix metro area understand what documentation their insurer and lender need for water damage, fire damage, and reconstruction claims. Call (480) 999-3339 or reach out through our contact page to talk through where you are in the process."
+  },
+  "evidence": "This page explains general mortgage and insurance industry practices around loss payee endorsements; it does not make any specific claim about Gold Water Fire's own work or history.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/mortgage-company-on-your-claim-check-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Why the mortgage company is on your claim check and how the endorsement process works"
+  }
+}

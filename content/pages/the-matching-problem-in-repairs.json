@@ -1,0 +1,79 @@
+{
+  "slug": "the-matching-problem-in-repairs",
+  "path": "/guides/the-matching-problem-in-repairs.html",
+  "title": "The Matching Problem in Repairs: When Materials Can't Match | Gold Water Fire Phoenix, AZ",
+  "description": "Why new flooring, paint, or siding often can't match what's already in your home, and how insurance policies typically handle the difference.",
+  "h1": "The Matching Problem: When New Materials Can't Match Old",
+  "breadcrumbLabel": "The Matching Problem in Repairs",
+  "intro": "You finally get the repair estimate back and something feels off. The new section of flooring, the patch of drywall, the replacement roof tiles, they're not going to look like the rest of the house. Nobody warned you about this part. You're left wondering if you did something wrong, or missed some step, or if this is just what happens and no one tells you until it's already a problem staring back at you from your own living room floor.",
+  "sections": [
+    {
+      "eyebrow": "Why it happens",
+      "heading": "Discontinued dye lots, sun fade, and product runs",
+      "body": "Most building materials are manufactured in batches, called dye lots or production runs. Carpet, tile, hardwood stain, roof shingles, and even paint can shift slightly from one run to the next, sometimes by design, sometimes just because raw materials vary. A floor installed five years ago may simply no longer be sold. Even if it is, the box you buy today came from a different run than the one on your floor, and sunlight, foot traffic, and cleaning products have already changed the color of what's currently down. Add in fading from Arizona sun exposure on siding, roofing, and outdoor paint, and an exact match becomes a physical impossibility, not a sourcing failure."
+    },
+    {
+      "eyebrow": "What insurance policies say",
+      "heading": "How matching is typically addressed in a policy",
+      "body": "Homeowners policies vary by carrier and by the specific language in your declarations, so there is no single universal answer here. Some policies include an explicit matching provision that addresses replacing undamaged material in adjoining areas so the repair looks uniform. Others are silent on matching and leave it to be argued case by case, often referencing local building codes or the concept of 'like kind and quality.' The only way to know what your policy actually promises is to read the matching or replacement cost section of your own declarations page, or ask your adjuster directly to point to the language before repairs begin."
+    },
+    {
+      "eyebrow": "What homeowners can do",
+      "heading": "Questions worth asking before work starts",
+      "body": "Ask your adjuster in writing whether the estimate includes replacing an entire wall, room, or roof slope versus patching just the damaged section. Ask whether the scope accounts for a reasonable transition point, like a doorway, corner, or roof plane, where a slight variation is less noticeable. Keep any receipts or product information from the original installation. If a supplement request is denied, ask specifically what language in the policy supports that denial, rather than accepting a verbal explanation alone."
+    },
+    {
+      "eyebrow": "Where this shows up most",
+      "heading": "Common trouble spots in matching",
+      "body": "Flooring is the most common flashpoint, since a single water-damaged room often borders open-concept spaces where a partial replacement is visually jarring. Roofing is close behind, especially with shingles that have faded unevenly across sun-exposed slopes. Interior paint is usually the easiest to resolve, since most paint can be color-matched or a full wall or room repainted at relatively low cost. Cabinetry, countertop stone, and exterior stucco texture are harder, since these are often custom or no longer manufactured at all."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does insurance always have to pay for matching materials in the whole room?",
+      "a": "It depends on your specific policy language and, in some cases, on state regulations or building codes that address reasonable uniformity. There is no blanket rule that applies to every policy, so this has to be checked against your own declarations."
+    },
+    {
+      "q": "What if the exact product is discontinued?",
+      "a": "When an exact match isn't available, the usual path is finding the closest reasonably available product and discussing with the adjuster whether adjoining areas should be replaced to maintain a consistent look. This is where matching provisions, if your policy has one, become relevant."
+    },
+    {
+      "q": "Is a slight color difference something I have to just accept?",
+      "a": "Not necessarily, but it's worth understanding that some degree of variation is a physical reality of manufacturing and aging materials, not a sign of a poor repair. The real question is whether the scope and policy language support extending the replacement to reduce the contrast."
+    },
+    {
+      "q": "Who decides what counts as an acceptable match?",
+      "a": "This is typically negotiated between the homeowner, the adjuster, and the contractor doing the repair, often referencing policy language, code requirements, or manufacturer availability. Getting the reasoning in writing helps if there's a disagreement later."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a repair scope that doesn't look right?",
+    "body": "If you're dealing with water or fire damage in the Phoenix area and want a second look at how a repair is scoped, Gold Water Fire can walk the space with you. Call (480) 999-3339 or reach out through the contact page."
+  },
+  "evidence": "This page states general industry and insurance-policy knowledge only; no specific claims about Gold Water Fire's own jobs, certifications, or response times are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/the-matching-problem-in-repairs-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The matching problem: when new materials cannot match old, and what policies say"
+  }
+}

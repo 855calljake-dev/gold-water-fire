@@ -1,0 +1,91 @@
+{
+  "slug": "building-a-contents-inventory",
+  "path": "/guides/building-a-contents-inventory.html",
+  "title": "Building a Contents Inventory After a Loss | Gold Water Fire, Phoenix, AZ",
+  "description": "A room-by-room method for building a contents inventory after fire or water damage, without it turning into an overwhelming project.",
+  "h1": "Building a Contents Inventory After a Loss",
+  "breadcrumbLabel": "Building a Contents Inventory",
+  "intro": "Standing in a room full of damaged or destroyed belongings and trying to remember what was there, what it cost, and when you bought it feels impossible. Insurance paperwork asks for detail you don't have handy, and the longer you look at the pile, the harder it is to know where to even start. That stuck feeling is normal. Most people have never had to document their own home's contents before, and there's no reason you'd already know how.",
+  "sections": [
+    {
+      "heading": "Why the inventory matters, and why it stalls people out",
+      "body": "Insurance claims for contents (as opposed to the structure itself) are typically paid based on documented, itemized loss. Adjusters generally can't reimburse for what they can't see or verify, which is why an inventory carries real weight. But most people try to do it all at once, from memory, in one sitting, and that's exactly what makes it feel unmanageable. Breaking it into small, repeatable steps is what actually gets it done."
+    },
+    {
+      "heading": "Start with rooms, not categories",
+      "body": "Trying to list 'all your clothing' or 'all your electronics' across the whole house at once invites overwhelm because there's no natural stopping point. Instead, treat each room as its own small project. Walk into one room, close the door on the rest of the house mentally, and only document what's in front of you. Finishing a whole room, even a small one like a bathroom or hallway closet, gives a sense of progress that keeps momentum going.",
+      "cards": [
+        {
+          "heading": "Photograph before you touch anything",
+          "body": "Wide shots of the whole room first, then closer shots of damaged items and any visible model numbers or tags. This order preserves the original context in case anything shifts during cleanup."
+        },
+        {
+          "heading": "Work in short sessions",
+          "body": "Thirty to forty-five minutes per session is enough for most rooms. Trying to push through an entire house in one day is where people burn out and abandon the list halfway through."
+        }
+      ]
+    },
+    {
+      "heading": "What to capture for each item",
+      "body": "You don't need a perfect record for every single item, especially small or low-value ones. Focus your detail on anything with real value: furniture, electronics, appliances, jewelry, tools, and anything you have receipts or manuals for. For each of those, note a description, approximate purchase date if known, approximate original cost, and the condition after the loss. A phone photo of the item next to a piece of paper with a written note is a fast way to keep the description attached to the image.",
+      "cards": [
+        {
+          "heading": "Use what already exists",
+          "body": "Old receipts, credit card or bank statements, warranty cards, manuals, and even photos from around the house (holiday photos, background shots) can confirm an item existed and roughly when it was bought."
+        },
+        {
+          "heading": "Group small items by category",
+          "body": "Instead of listing every book or every kitchen utensil individually, a photo of the shelf or drawer with a general count and estimated value as a group is usually acceptable and far faster."
+        }
+      ]
+    },
+    {
+      "heading": "Keep a running list instead of a final one",
+      "body": "A contents inventory doesn't need to be complete before it's useful. Keep it as a simple spreadsheet or even a notes app list that you add to after each room, and share an updated version with your adjuster as you go rather than waiting until it's finished. This also means if something is damaged further during cleanup or repair, you already have a baseline to compare against.",
+      "cards": [
+        {
+          "heading": "Separate 'salvageable' from 'not salvageable'",
+          "body": "As you go room by room, sort items into rough piles or list columns: keep as-is, might be cleanable, and total loss. This sorting alone often clarifies a lot of the decision-making that follows."
+        },
+        {
+          "heading": "Note where items are now",
+          "body": "If contents get moved to a storage pod, another room, or a restoration facility for cleaning, keep a note of where each group ended up so nothing gets lost in the shuffle."
+        }
+      ]
+    },
+    {
+      "heading": "When the scope goes beyond a spreadsheet",
+      "body": "For smaller losses, a homeowner-built list is often enough. For larger losses, especially after significant <a href=\"/fire-damage-restoration.html\">fire damage</a> or widespread <a href=\"/water-damage-restoration.html\">water damage</a>, the sheer volume of affected contents can make a DIY inventory take weeks. In those cases, a restoration company's contents team can document, pack out, and track items as part of the mitigation process, which takes the task off your plate entirely. If your loss is also going to involve structural repair, the <a href=\"/reconstruction.html\">reconstruction</a> side of the process will want its own separate documentation of the building itself, apart from your contents list."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need receipts for every item on my inventory?",
+      "a": "No. Receipts help but aren't required for every line. Photos, bank or credit card statements, warranty registrations, and even a reasonable written estimate of age and cost are commonly accepted for items you can't find a receipt for."
+    },
+    {
+      "q": "Should I throw away damaged items once I've photographed them?",
+      "a": "Hold onto damaged items until your adjuster has had a chance to review them or tells you it's fine to dispose of them, especially for higher-value items. Once documented and approved, most people no longer need to keep items that are a hazard or taking up needed space."
+    },
+    {
+      "q": "How detailed does the inventory need to be for a small loss?",
+      "a": "For a small, contained loss, a shorter list focused on the affected area is usually enough. You don't need to inventory your whole house if only one room was affected."
+    },
+    {
+      "q": "What if I can't remember everything that was in a room?",
+      "a": "This is common, especially for storage areas like closets or garages. Walking through similar rooms in family or friends' homes, looking at old photos, or thinking through daily routines (what did you reach for each morning) can help jog specific memories."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure where your loss fits on this scale?",
+    "body": "If the inventory feels bigger than a spreadsheet can hold, it's fine to ask for a second set of eyes. Reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com, or visit our <a href=\"/contact.html\">contact page</a> to talk through what you're facing."
+  },
+  "evidence": "This page states general contents-documentation and insurance-claim practices as industry knowledge; no specific claims about Gold Water Fire's own history or metrics are made.",
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/building-a-contents-inventory-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Building a contents inventory after a loss: the method that keeps it manageable"
+  }
+}

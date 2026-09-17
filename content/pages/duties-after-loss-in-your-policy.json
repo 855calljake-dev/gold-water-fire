@@ -1,0 +1,79 @@
+{
+  "slug": "duties-after-loss-in-your-policy",
+  "path": "/guides/duties-after-loss-in-your-policy.html",
+  "title": "Duties After Loss: What Your Insurance Policy Requires | Gold Water Fire",
+  "description": "A plain-language look at the duties-after-loss clause in homeowners policies and what it actually requires you to do after fire or water damage.",
+  "h1": "The Duties-After-Loss Section of Your Policy: What It Obligates You to Do",
+  "breadcrumbLabel": "Duties After Loss",
+  "intro": "You just found water pooling under the kitchen cabinets, or you're standing in a room that still smells like smoke, and somewhere in the back of your mind you know there's a stack of paperwork tied to your insurance policy that you're supposed to be dealing with right now. Maybe you've never actually read that section. Most people haven't. It sits there for years, unread, until the one day it matters, and then you're trying to find it and understand it while also mopping up water or figuring out where your family is going to sleep tonight. That gap between what the policy expects of you and what you actually know it expects is its own kind of stress, separate from the damage itself.",
+  "sections": [
+    {
+      "heading": "What 'duties after loss' actually means",
+      "body": "Nearly every homeowners and commercial property policy contains a clause, often literally titled 'Duties After Loss' or 'Your Duties After Loss,' that spells out what you as the policyholder must do once damage happens. It is not a suggestion. It is a set of conditions attached to your right to collect payment. Insurance is a contract, and this clause is the part that says: here is what we require from you in exchange for coverage. If those duties are not met, an insurer can point to that as a reason to delay, reduce, or deny a claim, even if the damage itself is clearly covered."
+    },
+    {
+      "heading": "The duties that show up in almost every policy",
+      "body": "Wording varies by carrier, but the core obligations are strikingly consistent across policies. Give prompt notice of the loss to the insurer. Protect the property from further damage, which usually means reasonable steps like shutting off water or covering a damaged roof, not a full repair. Keep damaged property available for inspection and do not throw everything away before the adjuster has had a chance to see it. Take reasonable steps to prevent additional loss, and keep records of any expenses you incur doing so. Provide a detailed inventory of damaged or destroyed property, often with values and dates of purchase where possible. Cooperate with the investigation, which can include an examination under oath, answering the insurer's written questions, and letting them inspect the property. Submit a signed, sworn proof of loss within a specified time frame if the insurer requests one."
+    },
+    {
+      "heading": "Why the 'mitigate further damage' duty trips people up",
+      "body": "This is the duty that causes the most confusion. Policies generally require you to take reasonable steps to prevent damage from getting worse, things like shutting off the water supply, tarping a hole in the roof, or running fans to slow the spread of moisture. That does not mean you are expected to perform the actual repair or restoration yourself, and it does not mean you should start ripping out drywall before it has been documented. The distinction matters: reasonable, temporary steps to stop the bleeding are expected of you, but permanent repairs before the claim is documented and approved can create a separate problem, because the insurer may say they never got to see the original damage."
+    },
+    {
+      "heading": "Documentation: the duty that protects you as much as the insurer",
+      "body": "Photographs and video of the damage before anything is moved, cleaned, or discarded. A written inventory of damaged items, ideally with approximate age and purchase price. Receipts for any temporary repairs or emergency expenses, like a plumber's after-hours call or a tarp company. Notes on when the damage was discovered and what happened leading up to it. None of this is busywork. If a dispute arises later over the cause of loss or the extent of damage, this record is often the only thing that supports your version of events."
+    },
+    {
+      "heading": "Deadlines matter more than most people expect",
+      "body": "Many policies specify a number of days for notice of loss, for returning a proof of loss, or for submitting inventories, and those deadlines are enforceable conditions, not friendly suggestions. If you are not sure what your specific deadlines are, the fastest way to find out is to call your agent or insurer directly and ask them to point you to the duties-after-loss section of your actual policy, since the exact days and requirements differ by carrier and by state."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What happens if I miss one of the duties after loss?",
+      "a": "It depends on the specific duty, the policy language, and your state's insurance law, but insurers can use a missed duty as grounds to delay, reduce, or deny a claim. Some states require the insurer to show the failure actually harmed their ability to investigate, others are stricter. Reading your policy or asking your agent directly is the only way to know where you stand."
+    },
+    {
+      "q": "Do I have to let the insurance company inspect my property before I clean up?",
+      "a": "Generally yes. Policies typically require you to keep damaged property available for inspection, so it's wise to document everything with photos and video and hold off on major cleanup or disposal until the adjuster has seen it or told you it's fine to proceed."
+    },
+    {
+      "q": "Can I start emergency repairs, like tarping a roof or shutting off water, before the adjuster arrives?",
+      "a": "Yes, and most policies actually expect you to take reasonable steps to prevent further damage. The key is documenting the damage first with photos, keeping receipts for any emergency work, and avoiding permanent repairs until the claim is further along."
+    },
+    {
+      "q": "What is a proof of loss and do I really need to submit one?",
+      "a": "A proof of loss is a signed, often notarized, sworn statement detailing the damage and amount claimed. Many policies require it within a set number of days after the insurer requests it, and skipping it can jeopardize the claim, so check your specific deadline."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what your policy requires right now?",
+    "body": "If you're dealing with fire or water damage in the Phoenix area and want a second set of eyes on the documentation before you move forward, Gold Water Fire is reachable at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance policy concepts and terminology common across homeowners policies; it makes no specific claims about Gold Water Fire's own work history or certifications.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/duties-after-loss-in-your-policy-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The duties-after-loss section of your policy: what it obligates you to do"
+  }
+}
