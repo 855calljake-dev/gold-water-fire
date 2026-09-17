@@ -1,0 +1,50 @@
+{
+  "_readme": "Gold Water Fire brand kit as loaded into the GoHighLevel Brand Board (sub-account bvd3wX0RlnicNDrv6Jmt) on 2026-09-16. Two payloads: create-design-kit and create-brand-voice under /brand-boards/locations/{locationId}/. Both need a location token carrying brand-boards/design-kit.write and brand-boards/voices.write; the ghl-gwf and ghl-bytomorrow tokens minted before 2026-09-16 return 401 on these scopes. Logo URLs are the live-site masters, which the API accepts as-is.",
+  "locationId": "bvd3wX0RlnicNDrv6Jmt",
+  "designKit": {
+    "name": "Gold Water Fire",
+    "type": "blank",
+    "logos": [
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/lockup-horizontal-full-color.svg", "label": "Horizontal lockup, full color" },
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/badge-round-on-light.svg", "label": "Round badge for light backgrounds" },
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/lockup-horizontal-white.svg", "label": "Horizontal lockup, white (dark backgrounds)" },
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/lockup-stacked-full-color.svg", "label": "Stacked lockup, full color" },
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/badge-round-full-color.svg", "label": "Round badge on navy disc (photos, dark fields)" },
+      { "url": "https://www.goldwaterfire.com/assets/brand/final-logos/sans-montserrat/phoenix-mark-full-color.svg", "label": "Phoenix mark only" }
+    ],
+    "colors": [
+      { "value": "#c9962b", "label": "Desert Gold" },
+      { "value": "#ffffff", "label": "White" },
+      { "value": "#0b2545", "label": "Midnight Blue" },
+      { "value": "#d94f1e", "label": "Fire" },
+      { "value": "#0f6fb0", "label": "Water Blue" },
+      { "value": "#16202b", "label": "Ink" }
+    ],
+    "fonts": [
+      { "font": "Montserrat", "fallback": "sans-serif", "label": "Brand typeface (headings and body)" }
+    ]
+  },
+  "brandVoice": {
+    "name": "Gold Water Fire",
+    "type": "manual",
+    "answers": {
+      "brandName": "Gold Water Fire",
+      "toneOfVoice": "Calm, plain, and direct. Speaks like a steady neighbor who has seen this before. Short sentences. Names what the reader is feeling before explaining anything. No hype, no scare tactics, no countdown pressure. Explains the next step, one step at a time. Never uses em dashes.",
+      "targetAudience": "Homeowners and small commercial property owners across the Phoenix metro who have just had a pipe burst, a flood, a fire, or smoke damage. Most have never filed a property claim. Many are reading on a phone while standing in the damage.",
+      "customerPainPoints": "They do not know what to do first. Water is spreading or the house smells of smoke. They are worried about mold, about what insurance will cover, and about being taken advantage of by a contractor who shows up fast and talks faster. They want one person who will tell them the truth and handle it.",
+      "businessType": "Fire and water damage restoration and reconstruction contractor: emergency mitigation, structural drying, smoke and soot cleanup, and the rebuild.",
+      "companyWebsite": "https://www.goldwaterfire.com",
+      "companyEmail": "Help@goldwaterfire.com",
+      "companyAddress": "221 E Willis Rd Ste 8, Chandler, AZ 85286",
+      "phone": { "countryCode": "+1", "number": "4809993339" },
+      "businessHours": "24/7 emergency response. Office in Chandler, Arizona.",
+      "brandPromise": "We answer, we come, and we stay with you from the first hour through the last coat of paint.",
+      "brandValues": "Tell the truth about the damage. Do the work right. Treat the home as if it were our own.",
+      "brandPurpose": "A home hit by water or fire should come back whole, and the people in it should never feel alone while that happens.",
+      "competitiveAdvantage": "One Arizona-licensed contractor for both the emergency cleanup and the rebuild, so the homeowner is never handed off between companies. AZ ROC #264344 (KB-2). Free inspection. Based in Chandler and serving the whole Phoenix metro.",
+      "risksOfInaction": "Water that sits moves into drywall, cabinets, and subfloor, and mold can follow. Soot and smoke residue set into surfaces the longer they wait. Damage that is not documented early is harder to get covered.",
+      "uniqueSellingProposition": "Emergency mitigation and full reconstruction under one Arizona-licensed contractor, with a free inspection and a 24/7 phone line that explains the next step in plain words.",
+      "callToAction": "Call (480) 999-3339, day or night, or request a free inspection at goldwaterfire.com."
+    }
+  }
+}
