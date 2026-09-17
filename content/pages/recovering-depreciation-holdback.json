@@ -1,0 +1,75 @@
+{
+  "slug": "recovering-depreciation-holdback",
+  "path": "/guides/recovering-depreciation-holdback.html",
+  "title": "Recoverable Depreciation Holdback Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Confused why your insurance check is less than the estimate? Here's how the depreciation holdback works and what it actually takes to get it released.",
+  "h1": "The Replacement Cost Holdback: How Recoverable Depreciation Actually Gets Paid Out",
+  "breadcrumbLabel": "Recovering Depreciation Holdback",
+  "intro": "You opened the insurance check expecting one number and found a smaller one, with a line somewhere in the paperwork mentioning \"recoverable depreciation\" or a \"holdback\" that sounds like it should come to you eventually but doesn't explain how, when, or if it actually will. It's a strange kind of frustration, because the money isn't gone, it's just stuck somewhere behind a process nobody walked you through, and you're left doing math in your head about whether you can even afford to start repairs with what's in hand right now.",
+  "sections": [
+    {
+      "heading": "Why the first check is never the full amount",
+      "body": "Most homeowner policies pay claims on a Replacement Cost Value (RCV) basis, but they don't hand you the full RCV up front. Instead, they calculate Actual Cash Value (ACV), which is the replacement cost minus depreciation for the age and wear of the damaged item, and pay that first. The difference between RCV and ACV is the recoverable depreciation, and it's held back on purpose. Insurers do this because releasing full replacement cost before repairs happen would mean paying you to replace something you haven't actually replaced yet. The holdback is the insurer's way of confirming the work gets done before they pay for it as new."
+    },
+    {
+      "heading": "What actually triggers the second payment",
+      "body": "Recoverable depreciation is not released automatically once time passes. It's released when you complete the repair or replacement and provide proof: a paid invoice, a signed contractor statement, or in many cases a final inspection confirming the work matches the scope in the original estimate. Some carriers require the full job to be complete before releasing any depreciation; others will release it in stages as specific line items are finished. This is one of the most common points of confusion, because two people can hold the exact same type of policy and have very different experiences depending on their carrier's internal claims procedure."
+    },
+    {
+      "heading": "Where claims stall or get denied",
+      "body": "Depreciation holdbacks most often go unclaimed for three reasons. First, homeowners never submit the documentation because no one told them it was required, and the money simply expires under the policy's time limit for recovering it, often a year or two from the date of loss. Second, the completed repair doesn't match the original estimate's scope or materials, so the adjuster reduces or questions the release. Third, the request is submitted with the wrong paperwork, missing an itemized paid invoice or using a receipt that doesn't match the line items the depreciation was calculated against. Keeping every invoice, before-and-after photo, and material receipt tied to the specific estimate line makes the difference between a smooth release and a drawn-out dispute."
+    },
+    {
+      "heading": "What to keep track of as the work happens",
+      "body": "Ask your adjuster in writing, not just verbally, what specific documents they require to release depreciation, and whether it can be requested in phases as portions of the work finish. Keep a folder, physical or digital, with the original estimate, every invoice broken down by line item, and dated photos of completed work. If a contractor's invoice groups costs differently than your estimate does, ask them to itemize it so it can be matched line by line. This paperwork trail is what turns recoverable depreciation from a number on a page into a check in your account."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is recoverable depreciation the same thing as my deductible?",
+      "a": "No. The deductible is a separate amount you agreed to absorb when you bought the policy. Recoverable depreciation is money the insurer already calculated into your claim but held back until repairs are proven complete."
+    },
+    {
+      "q": "What happens if I never file for the depreciation release?",
+      "a": "Depending on your policy, the right to collect it typically expires after a set period from the date of loss, often stated in the claim paperwork. After that window, the money is generally no longer recoverable, so it's worth tracking the deadline closely."
+    },
+    {
+      "q": "Can I get the depreciation released before the whole project is finished?",
+      "a": "Some carriers allow partial release as sections of the work are completed and invoiced, while others require the entire scope finished first. This depends on the carrier and the specific adjuster, so it's worth asking directly and getting the answer in writing."
+    },
+    {
+      "q": "Does the repair have to match the original estimate exactly?",
+      "a": "It needs to align closely enough that the adjuster can verify the paid work corresponds to the line items depreciation was calculated on. Significant changes in scope or materials can lead to questions or a reduced payout, so documenting any changes as they happen helps avoid disputes later."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a claim and not sure what documentation you need?",
+    "body": "Gold Water Fire handles water, fire, and reconstruction work throughout the Phoenix metro area and can walk through your estimate and scope of work with you so nothing gets left on the table. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page explains general insurance claim concepts around actual cash value and recoverable depreciation; no specific claim about Gold Water Fire's own process or outcomes is made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-09-17",
+  "photo": {
+    "src": "/assets/img/recovering-depreciation-holdback-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The replacement-cost holdback: how recoverable depreciation actually gets paid out"
+  }
+}
