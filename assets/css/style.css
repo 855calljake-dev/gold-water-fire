@@ -449,6 +449,29 @@ section.soft {
   font-weight: 800;
   margin-bottom: 14px;
 }
+.team-card .photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  margin-bottom: 14px;
+}
+.team-photo {
+  margin: 0 0 32px;
+}
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+.team-photo figcaption {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 10px;
+}
 .team-card h3 {
   margin: 0 0 2px;
   font-size: 1.05rem;

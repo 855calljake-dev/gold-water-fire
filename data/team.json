@@ -3,17 +3,23 @@
     {
       "name": "Jim Bennett",
       "role": "Co-Founder",
-      "bio": "Co-founded Gold Water Fire alongside Jake Taylor."
+      "bio": "Co-founded Gold Water Fire alongside Jake Taylor.",
+      "photo": "/assets/img/team/jim-bennett.jpg",
+      "alt": "Jim Bennett standing at a countertop in a kitchen showroom."
     },
     {
       "name": "Jake Taylor",
       "role": "Co-Founder",
-      "bio": "Co-founded Gold Water Fire alongside Jim Bennett."
+      "bio": "Co-founded Gold Water Fire alongside Jim Bennett.",
+      "photo": "/assets/img/team/jake-taylor-van.jpg",
+      "alt": "Jake Taylor at the open back of a work van."
     },
     {
       "name": "Brandon Gurr",
       "role": "Construction Manager",
-      "bio": "Formerly of Gurr Brothers Construction. Leads reconstruction and rebuild work."
+      "bio": "Formerly of Gurr Brothers Construction. Leads reconstruction and rebuild work.",
+      "photo": "/assets/img/team/brandon-gurr-van.jpg",
+      "alt": "Brandon Gurr smiling at the open back of a work van."
     },
     {
       "name": "Kristine",

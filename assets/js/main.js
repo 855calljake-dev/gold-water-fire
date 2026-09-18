@@ -16,7 +16,9 @@ function renderTeam(data) {
   list.innerHTML = team.map(function (m) {
     return (
       '<div class="team-card">' +
-        '<div class="avatar">' + esc(initials(m.name)) + "</div>" +
+        (m.photo
+          ? '<img class="photo" src="' + esc(m.photo) + '" alt="' + esc(m.alt || m.name) + '" width="800" height="1000" loading="lazy">'
+          : '<div class="avatar">' + esc(initials(m.name)) + "</div>") +
         "<h3>" + esc(m.name) + "</h3>" +
         '<div class="role">' + esc(m.role) + "</div>" +
         '<p class="bio">' + esc(m.bio || "") + "</p>" +
