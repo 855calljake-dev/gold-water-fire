@@ -1,5 +1,15 @@
 import { shell } from "./shell.mjs";
 
+// Real photograph, supplied by Jake Taylor 2026-09-18 for this page. Team
+// photos were gated in CLAIMS-TO-VERIFY.md until real ones were supplied and
+// rights-cleared; that row records the clearance. Source and provenance live
+// in the private repo 855calljake-dev/gwf-media. Individual team photos are
+// carried by data/team.json and rendered by assets/js/main.js.
+const TEAM_PHOTO = {
+  src: "/assets/img/team/team-jim-bennett-brandon-gurr.jpg",
+  alt: "Jim Bennett and Brandon Gurr standing at a kitchen island in a cabinet and countertop showroom.",
+};
+
 export function renderAbout() {
   const bodyHtml = `
     <section class="page-hero">
@@ -25,7 +35,12 @@ export function renderAbout() {
         <div class="section-head">
           <span class="eyebrow">Our Team</span>
           <h2>The people behind the work</h2>
+          <p>Real names and real faces. Nothing on this page is a stock photo.</p>
         </div>
+        <figure class="team-photo">
+          <img src="${TEAM_PHOTO.src}" alt="${TEAM_PHOTO.alt}" width="1600" height="900">
+          <figcaption>Co-founder Jim Bennett and Construction Manager Brandon Gurr comparing countertop and cabinet options.</figcaption>
+        </figure>
         <div class="team-grid" id="team-list"></div>
       </div>
     </section>
@@ -45,7 +60,8 @@ export function renderAbout() {
     h1AsTitle: "About | Gold Water Fire",
     breadcrumbLabel: "About",
     datePublished: "2026-08-06T11:55:09-07:00",
-    dateModified: "2026-08-07T10:36:36-07:00",
+    dateModified: "2026-09-18T10:30:00-07:00",
+    photo: TEAM_PHOTO,
     bodyHtml,
   });
 }
