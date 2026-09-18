@@ -1,0 +1,75 @@
+{
+  "slug": "wind-damage-vs-wear-and-tear",
+  "path": "/guides/wind-damage-vs-wear-and-tear.html",
+  "title": "Wind Damage vs Wear and Tear on Roofs | Gold Water Fire, Phoenix, AZ",
+  "description": "Why insurance adjusters separate wind damage from normal roof aging, and what that distinction means for a homeowner in the Phoenix area.",
+  "h1": "Wind Damage vs Wear and Tear: The Line Adjusters Draw on Roofs",
+  "breadcrumbLabel": "Wind Damage vs Wear and Tear",
+  "intro": "You looked up at your roof after a storm and saw missing shingles, or maybe a ceiling stain that showed up a week later with no storm at all. Either way, you're now stuck trying to figure out if this is something your insurance will cover or something you're expected to pay for out of pocket, and nobody has given you a straight answer yet. That uncertainty is its own kind of exhausting, especially when you don't even know what an adjuster is actually looking for when they walk your roof.",
+  "sections": [
+    {
+      "heading": "Why this distinction exists at all",
+      "body": "Homeowners insurance is built to cover sudden, accidental damage from a specific event, like a windstorm, not the slow decline every roof goes through simply from being exposed to sun, heat, and weather year after year. That decline is called wear and tear, and it's treated as a maintenance issue the homeowner is responsible for, not a covered loss. An adjuster's job on a roof inspection is essentially to sort what they see into one of those two buckets. Everything about how they inspect, photograph, and write up a roof comes back to that sorting."
+    },
+    {
+      "heading": "What actually reads as wind damage",
+      "body": "Wind damage tends to have a directional, sudden quality to it. Adjusters look for shingles that are creased, lifted, or torn in a pattern consistent with wind direction, often concentrated on one slope or around edges, ridges, and corners where uplift forces are strongest. They look for shingles that are missing entirely with exposed nail holes still visible in the surrounding shingles, or shingles found in the yard or gutters that match the roof. Granule loss that's uneven and tied to a specific storm date, along with matching damage to fences, screens, or trees on the property, all support a wind-event conclusion rather than a gradual one."
+    },
+    {
+      "heading": "What reads as wear and tear instead",
+      "body": "Wear and tear shows up differently, and it tends to be spread evenly across the whole roof rather than concentrated on one side. Adjusters look for granule loss that's uniform across all slopes, shingles that are curling, cracking, or brittle from UV and heat exposure over time, and nail pops or seal failures that happen gradually rather than in one event. Algae streaking, faded color, and a roof that's simply past the point where its materials still perform are all treated as maintenance and aging, not damage from a specific date. In the Phoenix area, intense sun and heat cycling accelerate this kind of aging faster than in milder climates, which is part of why adjusters here pay close attention to whether damage looks new or long-standing."
+    },
+    {
+      "heading": "Where it gets genuinely hard to tell",
+      "body": "The frustrating cases are the ones in between: a roof that was already aging and then took wind damage on top of it, or damage that's real but happened gradually enough that there's no clean storm date to point to. Adjusters weigh things like the age and condition of the roofing material, whether nearby properties reported similar storm damage on the same date, and whether the pattern of damage is consistent with a single event or looks like it accumulated over multiple seasons. This is also where documentation matters most, because a homeowner who has photos from before a storm has something concrete to compare against, while one who doesn't is relying entirely on the adjuster's read of the material's current condition."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a roof have both wind damage and wear and tear at the same time?",
+      "a": "Yes, and it's actually common. An older roof with existing wear can still sustain new wind damage in a storm. The adjuster's job is to separate what portion of the damage is attributable to the wind event versus what was already present from aging, which is part of why a written and photographed inspection matters."
+    },
+    {
+      "q": "Does the age of my roof automatically disqualify a wind damage claim?",
+      "a": "No. Age alone doesn't rule out wind damage, but it does factor into how an adjuster interprets what they see. An older roof is more susceptible to wind uplift, and an adjuster will look closely at whether the pattern of damage matches a storm event or simply reflects a roof nearing the end of its service life."
+    },
+    {
+      "q": "What should I do before an adjuster inspects my roof?",
+      "a": "Take dated photos of any visible damage as soon as you notice it, and try to note the date of the storm if there was one. Avoid getting on the roof yourself if it's not safe. Having a record of the roof's condition, especially anything from before the suspected damage, gives everyone a clearer basis for comparison."
+    },
+    {
+      "q": "If my claim gets classified as wear and tear, is there anything I can do?",
+      "a": "You can ask for the specific reasoning behind the classification and provide any documentation you have that might show a different timeline, such as photos, receipts for prior roof work, or records of a specific storm date. Beyond that, decisions on coverage rest with the insurance company and adjuster, not with a restoration contractor."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure what you're looking at on your own roof?",
+    "body": "If a storm has left you with damage you can't quite explain, Gold Water Fire can take a look and help you understand what you're dealing with before you're stuck guessing. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general industry knowledge about how insurance adjusters evaluate roof damage; no specific claims about Gold Water Fire's own work are made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-09-18",
+  "photo": {
+    "src": "/assets/img/wind-damage-vs-wear-and-tear-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Wind damage vs wear and tear: the line adjusters draw on roofs"
+  }
+}

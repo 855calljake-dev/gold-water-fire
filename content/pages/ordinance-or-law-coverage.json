@@ -1,0 +1,57 @@
+{
+  "slug": "ordinance-or-law-coverage",
+  "path": "/guides/ordinance-or-law-coverage.html",
+  "title": "Ordinance or Law Coverage Explained | Gold Water Fire, Phoenix, AZ",
+  "description": "Learn what ordinance or law coverage pays for when building codes require more than your policy covers, and why it matters after fire or water damage.",
+  "h1": "Ordinance or Law Coverage: Who Pays When Code Requires More Than You Had",
+  "breadcrumbLabel": "Ordinance or Law Coverage",
+  "intro": "You got the estimate back and the number didn't match what you expected. Not because the damage got worse, but because the contractor or the inspector said the repair has to meet current code, and current code is not what was in your house when it was built. Now there's a gap between what your policy assumed it would cover and what the law actually requires, and nobody explained that gap to you before this happened. If you're staring at a claim that suddenly includes electrical upgrades, new egress windows, or a different roofing assembly than what burned or flooded, and you're wondering why insurance isn't just paying to put things back the way they were, you're not missing something obvious. This is a genuinely confusing corner of a homeowner's policy, and most people never learn about it until they're standing in the middle of it.",
+  "sections": [
+    {
+      "heading": "Why code can force more work than the damage itself",
+      "body": "Standard homeowners insurance is built around a simple idea: repair or replace what was damaged, back to its condition before the loss. Building codes don't work on that same logic. Codes get updated over time for safety reasons, wiring standards, fire-rated materials, structural bracing, energy efficiency, and once a certain percentage of a structure is being repaired or a permit is pulled, local code officials can require the whole affected system or area to be brought up to current standards, not just the damaged portion. A kitchen fire might destroy one wall of cabinets and require replacement outlets, but if the electrical panel serving that circuit no longer meets code, the inspector can require the panel be upgraded too, even though the panel itself never caught fire. That's the disconnect: the damage is contained, but the code requirement is not."
+    },
+    {
+      "heading": "What ordinance or law coverage actually pays for",
+      "body": "Ordinance or law coverage is a specific add-on or built-in provision (depending on the carrier and policy) that pays for the cost of complying with current building codes when that cost goes beyond simply restoring the damaged property. It typically breaks into a few categories: the cost to demolish and clear away undamaged portions of the structure that code requires be removed, the increased cost of construction to meet current code on the portions being rebuilt, and in some policies, the loss in value of the undamaged part of the structure that has to be torn out. Without this coverage, a standard policy may only pay to repair what was actually damaged, which leaves the homeowner covering the code-mandated extra work out of pocket."
+    },
+    {
+      "heading": "How to find out what your policy actually includes",
+      "body": "The only way to know what you're working with is to read the declarations page and the ordinance or law section of your specific policy, or ask your agent directly what percentage of coverage A (dwelling) it's tied to. Some policies include a modest built-in allowance automatically, others require it be added separately, and the difference between having 10 percent of dwelling coverage versus none at all can be the difference between a manageable gap and a five or six figure shortfall on a larger loss. This isn't something a contractor can tell you, because it lives entirely in your policy language, not in the damage itself."
+    },
+    {
+      "heading": "Where this shows up most often in restoration work",
+      "body": "Ordinance or law issues tend to surface in a few predictable places: older homes with aluminum or knob-and-tube wiring where any electrical repair triggers a full rewire requirement, homes with undersized egress windows in bedrooms that get flagged during a fire rebuild, plumbing systems that no longer meet current drain and vent sizing when a bathroom is opened up for water damage repair, and roofing where a partial replacement can trigger a requirement for updated decking or ventilation across the whole roof. None of these are unusual or a sign that something was done wrong originally. Codes simply move forward, and older construction doesn't move with them until something forces the issue."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is ordinance or law coverage automatically part of my homeowners policy?",
+      "a": "It depends on the carrier. Some policies include a small built-in allowance automatically, often a percentage of your dwelling coverage, while others require it be added as a separate endorsement. The only way to know for certain is to check your declarations page or ask your agent directly."
+    },
+    {
+      "q": "Does ordinance or law coverage apply to water damage, or only fire?",
+      "a": "It can apply to either. Any repair that requires a permit and triggers a current code requirement, whether the underlying damage was from fire, water, or another covered peril, can potentially fall under this coverage if your policy includes it."
+    },
+    {
+      "q": "What happens if I don't have this coverage and code requires extra work?",
+      "a": "Without it, your policy generally pays to restore what was damaged, and the additional cost of code-required upgrades beyond that becomes your responsibility unless another part of the policy addresses it. This is why reviewing your coverage before a loss happens matters."
+    },
+    {
+      "q": "Who decides whether code upgrades are required during a repair?",
+      "a": "Local building and permitting officials make that determination based on the scope of work, the age of the system involved, and current code adopted by that jurisdiction. It's not something the insurance company or the contractor decides independently."
+    }
+  ],
+  "cta": {
+    "heading": "Working through a code-driven repair question in the Phoenix area?",
+    "body": "If you're trying to sort out what a fire, water, or reconstruction claim will actually require once code gets involved, Gold Water Fire can walk the property with you and talk through what the scope of work looks like. Call (480) 999-3339 or reach out through our contact page to talk it through."
+  },
+  "evidence": "This page states only general insurance and building code concepts that apply industry-wide; it makes no specific claims about Gold Water Fire's own past jobs, certifications, or response times.",
+  "type": "educational",
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-09-18",
+  "photo": {
+    "src": "/assets/img/ordinance-or-law-coverage-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Ordinance or law coverage: who pays when code requires more than you had"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "roof-age-and-claim-settlements",
+  "path": "/guides/roof-age-and-claim-settlements.html",
+  "title": "Roof Age and Claim Settlements: ACV Roof Schedules Explained | Gold Water Fire Phoenix, AZ",
+  "description": "How actual-cash-value roof schedules affect a Phoenix-area roof claim payout, and what roof age changes about what you actually collect.",
+  "h1": "Roof Age and Claim Settlements: What an ACV Roof Schedule Really Changes",
+  "breadcrumbLabel": "Roof Age and Claim Settlements",
+  "intro": "You filed a roof claim expecting the payout to cover a new roof, and then the number came back lower than you thought it should be, with a line about \"actual cash value\" and a depreciation schedule tied to your roof's age. It's confusing, and it feels like the insurance company is penalizing you for owning a house that isn't brand new. If you're staring at a settlement letter trying to figure out why the check doesn't match the estimate, or trying to understand what your policy even means by \"roof schedule,\" you're not missing something obvious. This is genuinely one of the more misunderstood parts of a homeowners policy, and the confusion is by design in how these policies are written, not a sign you did anything wrong.",
+  "sections": [
+    {
+      "heading": "Why roof age shows up in the math at all",
+      "body": "Most homeowners policies pay for a covered roof loss one of two ways: replacement cost value (RCV) or actual cash value (ACV). RCV pays what it costs to replace the roof today, no deduction for age. ACV pays replacement cost minus depreciation, meaning the insurer subtracts value for the wear the roof already had before the damage happened. A 4-year-old roof and a 19-year-old roof filing the same size claim, for the same type of damage, can settle at very different amounts because ACV treats an older roof as having already used up part of its useful life. In Arizona, where roofs take steady UV exposure and heat cycling year after year, insurers increasingly write roofs on a separate ACV schedule inside the policy even when the rest of the dwelling is covered on an RCV basis. That schedule is usually a percentage table: at a certain roof age, the insurer will pay a set percentage of replacement cost, not the full amount, regardless of the roof's actual condition."
+    },
+    {
+      "heading": "How the depreciation percentage actually gets set",
+      "body": "The insurer's adjuster typically uses the roofing material's expected lifespan (asphalt shingle, tile, foam, metal, each rated differently) and the roof's age to calculate a depreciation percentage, then applies that percentage against the replacement cost estimate. The remaining amount is your initial ACV payment. If your policy is a 'recoverable depreciation' or RCV policy, you can often collect the depreciated amount later, after the roof work is done and documented, by submitting proof of completed repair or replacement. If your policy has a non-recoverable ACV roof schedule (common on roofs past a certain age), that depreciated amount is gone for good, no matter what the repair actually costs. The distinction between recoverable and non-recoverable depreciation is one of the most consequential lines in the policy, and it's often buried in an endorsement rather than the main coverage summary."
+    },
+    {
+      "heading": "What to check on your own policy before you assume the worst",
+      "body": "Pull your declarations page and look specifically for an endorsement titled something like 'Roof Surfaces Payment Schedule' or 'ACV Roof Endorsement.' It should show a table matching roof age ranges to payout percentages, and it should state plainly whether depreciation is recoverable. Also check whether the schedule applies to all causes of loss or only certain ones, some policies apply ACV roof schedules to wind and hail but keep fire or other perils on full RCV. The type of damage that triggered your claim can matter as much as the roof's age in determining which formula applies.",
+      "cards": [
+        {
+          "heading": "Questions worth asking your adjuster directly",
+          "body": "Ask which endorsement number governs the roof payout, whether depreciation is recoverable, and what specific roof age and material inputs were used to calculate the percentage applied to your estimate."
+        },
+        {
+          "heading": "Documentation that helps your position",
+          "body": "Roof installation date, prior repair records, and any maintenance history support an accurate age determination and can matter if the age on file with the insurer is wrong or estimated."
+        }
+      ]
+    },
+    {
+      "heading": "Where roof damage and structural damage start to overlap",
+      "body": "A roof claim rarely stays contained to the roof. Wind-driven rain, hail penetration, or fire damage to roofing materials often lead to water intrusion affecting the attic, insulation, ceiling drywall, and interior finishes below. Those downstream damages may be adjusted under different policy provisions than the roof itself, which is part of why a single claim can feel like it's being evaluated in pieces. Understanding how <a href=\"/water-damage-restoration.html\">water damage restoration</a> and <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> scopes are built separately from the roofing estimate can help make sense of why your settlement letter reads the way it does. When the damage requires structural rebuild work in addition to the roof itself, that scope typically falls under <a href=\"/reconstruction.html\">reconstruction and rebuild</a> rather than a straightforward roof repair line item."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between ACV and RCV on a roof claim?",
+      "a": "RCV pays the full cost to replace the roof today. ACV pays replacement cost minus depreciation for the roof's age and condition, so the initial check is usually smaller. Some policies let you recover the depreciated amount later once the work is done; others do not."
+    },
+    {
+      "q": "Can an insurer put my roof on an ACV schedule even if the rest of my house is RCV?",
+      "a": "Yes. Many insurers now attach a separate roof-specific ACV endorsement to policies, especially once a roof passes a certain age, even when the dwelling coverage overall is written on a replacement cost basis."
+    },
+    {
+      "q": "Does the type of damage change which payout formula applies?",
+      "a": "It can. Some policies apply the ACV roof schedule only to wind or hail losses while keeping other covered perils, like fire, on full replacement cost. Always check the endorsement language for your specific cause of loss."
+    },
+    {
+      "q": "What should I do if I think my roof's listed age is wrong?",
+      "a": "Gather documentation such as the original installation date, permits, or prior repair invoices and provide them to your adjuster. An incorrect age on file can shift the depreciation percentage applied to your claim."
+    }
+  ],
+  "cta": {
+    "heading": "Not sure how your roof damage fits into the bigger repair picture?",
+    "body": "Gold Water Fire serves the Phoenix metro area and can walk through how roof, water, and structural damage often connect on one claim. Call (480) 999-3339 or reach out through our contact page to talk it through."
+  },
+  "evidence": "This page states general insurance-industry and roofing-industry knowledge about how ACV roof schedules and depreciation work, and makes no specific claims about Gold Water Fire's own history, certifications, or job outcomes.",
+  "type": "educational",
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-09-18",
+  "photo": {
+    "src": "/assets/img/roof-age-and-claim-settlements-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Roof age and claim settlements: actual-cash-value roof schedules and what they change"
+  }
+}
