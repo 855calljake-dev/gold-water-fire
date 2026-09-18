@@ -1,0 +1,75 @@
+{
+  "breadcrumbLabel": "Appraisal Clause Explained",
+  "cta": {
+    "heading": "Not sure what your policy allows right now?",
+    "body": "If you are dealing with fire or water damage and the claim process feels stuck, Gold Water Fire can walk the property with you and talk through what we are seeing. Reach us at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "description": "What the appraisal clause in a property insurance policy actually does, when it applies, and how the process works if you and your insurer disagree on cost.",
+  "evidence": "This page explains general insurance policy mechanics and does not make any claim specific to Gold Water Fire's own work or history.",
+  "faqs": [
+    {
+      "q": "Do I need a lawyer to invoke the appraisal clause?",
+      "a": "No. Appraisal is designed to be used without an attorney, since it relies on appraisers and an umpire rather than a courtroom. Some homeowners still consult an attorney before starting, especially if the disagreement is large or the claim has other complications, but it is not a requirement written into most policies."
+    },
+    {
+      "q": "Can the insurance company deny my claim and then use appraisal?",
+      "a": "Generally no. Appraisal is meant for disagreements over the amount of a loss that has already been accepted, not over whether the loss is covered at all. If the carrier is denying coverage outright, that is usually a different dispute path than appraisal."
+    },
+    {
+      "q": "What happens if I do not agree with the appraisal result?",
+      "a": "Once two of the three parties (your appraiser, the insurer's appraiser, and the umpire) sign off on a figure, it typically becomes binding under the policy language. This is why it helps to read your specific policy's appraisal clause closely before starting, since binding terms vary."
+    },
+    {
+      "q": "How long does the appraisal process usually take?",
+      "a": "It varies widely depending on how quickly each side names an appraiser, how complex the damage is, and how far apart the two estimates are. There is no fixed timeline built into most policies, so it is worth asking your appraiser directly what pace to expect for a case like yours."
+    }
+  ],
+  "h1": "The Appraisal Clause: What It Is and When It Applies",
+  "intro": "You got an estimate back from the insurance company and it does not match what the damage actually looks like in your home. Maybe the number feels too low for the water that soaked through your subfloor, or the fire damage repair scope leaves out things you can see with your own eyes. You are not imagining the gap, and you are not being difficult by questioning it. What you might not know yet is that most property insurance policies already contain a built-in process for exactly this kind of disagreement, and it does not require a lawsuit to use.",
+  "sections": [
+    {
+      "heading": "What the appraisal clause actually is",
+      "body": "Buried in the conditions section of most homeowners and commercial property policies is a clause called \"appraisal.\" It exists for one specific situation: you and your insurer agree that a covered loss happened, but you disagree on how much it should cost to fix or replace. It is not a tool for disputing whether something is covered at all. If the carrier has denied the claim outright, appraisal usually is not the right mechanism, since it assumes coverage is already accepted and only the dollar amount is in question."
+    },
+    {
+      "heading": "How the process works, step by step",
+      "body": "Either side, homeowner or insurer, can invoke appraisal once there is a genuine disagreement on value. Each party selects their own independent appraiser. Those two appraisers then try to agree on the loss amount. If they cannot, they jointly select a neutral third party called an umpire. Once any two of the three (your appraiser, the insurer's appraiser, and the umpire) agree on a figure, that number generally becomes binding under the policy. The exact wording of \"binding\" and how costs are split between the parties varies by policy, so reading your own document matters more than any general description of the process."
+    },
+    {
+      "heading": "Why this gap happens in the first place",
+      "body": "Estimating fire or water damage is not an exact science, and two qualified people can look at the same soaked drywall or smoke-stained ceiling and reach different numbers. Insurance adjusters often work from standardized software and per-item pricing that does not always account for the specific conditions of a property, like how far water traveled behind walls, or how deeply smoke odor has settled into porous materials. A contractor's estimate, by contrast, is usually built from what it will actually take to open the wall, dry the structure properly, and rebuild it to code. Neither side is necessarily acting in bad faith. The gap often comes from genuinely different methods of arriving at a number."
+    },
+    {
+      "heading": "Before you invoke appraisal",
+      "body": "A few things are worth doing first. Re-read your policy's appraisal clause directly, since the language, deadlines, and cost-sharing rules are not identical across carriers. Get a detailed second estimate from a contractor who documents the scope clearly, ideally with photos and a line-item breakdown, so you have something concrete to compare against the insurer's figure. And keep a written record of your communications with the adjuster, since a paper trail helps clarify where and why the numbers diverge. None of this requires urgency or a rushed decision. Appraisal is available when you are ready to use it, not on a countdown clock set by the carrier."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "path": "/guides/appraisal-clause-explained.html",
+  "slug": "appraisal-clause-explained",
+  "title": "The Appraisal Clause Explained | Gold Water Fire | Phoenix, AZ",
+  "type": "educational",
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-09-18",
+  "photo": {
+    "src": "/assets/img/appraisal-clause-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: The appraisal clause: the dispute path built into most property policies"
+  }
+}
