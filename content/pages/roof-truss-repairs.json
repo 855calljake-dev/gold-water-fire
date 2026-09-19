@@ -1,0 +1,57 @@
+{
+  "slug": "roof-truss-repairs",
+  "path": "/guides/roof-truss-repairs.html",
+  "title": "Roof Truss Repairs vs Stick Framing Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Why a damaged roof truss cannot be cut and patched like stick framing, and what actually goes into a safe, code-compliant truss repair.",
+  "h1": "Roof Truss Repairs vs Stick Framing: Why Trusses Cannot Just Be Cut and Patched",
+  "breadcrumbLabel": "Roof Truss Repairs",
+  "intro": "If a contractor looked at your damaged roof and started talking about trusses instead of just sawing out the bad wood, you might be wondering why this has to be so complicated. You just want the hole patched and the roof solid again. It's a fair question, and the confusion is understandable, because a roof truss doesn't look all that different from the rafters and joists most people picture when they think \"roof framing.\" But the way a truss actually holds a roof up is nothing like that, and that difference is exactly why the simple fix you're picturing usually isn't safe to do.",
+  "sections": [
+    {
+      "heading": "Stick framing and trusses are not the same structural system",
+      "body": "Traditional stick framing uses individual rafters, ceiling joists, and ridge boards, each one sized to carry the load in the section where it sits. If a section of stick framing is damaged, a carpenter can often sister in a new piece of lumber alongside the old one, or cut out a damaged span and replace it, because each rafter is doing its own independent job of carrying weight down to the walls below it.\n\nA roof truss works differently. It's a pre-engineered triangular assembly of smaller wood members (chords and webs) connected at specific points by metal gusset plates or engineered joints. The whole truss is designed as one system. Every board in it is sized based on the assumption that every other board in it is intact and doing its share of the work. Cut into one member, and you haven't just removed a piece of wood, you've changed the math the entire truss was built on."
+    },
+    {
+      "heading": "Why 'just cut and patch it' can fail",
+      "body": "This is the mistake that causes real problems down the road. Cutting out a damaged section of a truss chord and nailing a patch board across the gap might look fine and even hold weight for a while, but it doesn't restore the load path the truss was engineered around. Trusses transfer force through their joints and along the full length of each member. A patch that isn't sized, positioned, and fastened the way the original truss design calls for can leave the truss carrying less than its rated load, even though nothing looks wrong from the attic.\n\nThe risk doesn't always show up right away. It can show up as sagging that develops slowly, as nail pops and cracks in ceiling drywall months later, or in the worst case, as a truss that fails under snow, wind, or ordinary roof load when it's least expected."
+    },
+    {
+      "heading": "What a proper truss repair actually involves",
+      "body": "Because a truss is an engineered system, a legitimate repair usually starts with figuring out what that system was designed to carry and how the damaged member fits into it. That often means involving a structural engineer or the truss manufacturer to specify a repair detail, such as a properly sized sister member, a plated splice, or in some cases a full truss replacement rather than a repair at all.\n\nThe repair itself typically has to restore both the strength of the damaged chord or web member and the connections at each end, since trusses rely on those joints as much as the wood itself. This is also why fire, water, or termite damage to a truss deserves closer inspection than the same damage in stick-built framing. A scorched or water-softened section that looks minor on the surface can mean the load capacity at that point has already been compromised."
+    },
+    {
+      "heading": "How to tell if your roof uses trusses",
+      "body": "Trusses are common in homes built from the 1970s onward because they're faster and cheaper to install than stick framing. If you go into your attic and see a web of triangulated boards with visible metal connector plates at the joints, rather than long solid rafters running from the ridge to the eaves, you have a trussed roof. That matters the moment any repair is on the table, because it changes what kind of fix is actually appropriate. If you're dealing with fire or water damage to roof framing and aren't sure which system you have, our guides on <a href=\"/fire-damage-restoration.html\">fire damage restoration</a> and <a href=\"/water-damage-restoration.html\">water damage restoration</a> cover how that damage is typically assessed before repair work begins."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a damaged roof truss ever be repaired instead of replaced?",
+      "a": "Often yes, but the repair has to be engineered around the specific truss design, typically with sistered members or plated splices sized to restore the original load path, not a simple cut-and-patch."
+    },
+    {
+      "q": "Why can't a truss be repaired the same way as a rafter?",
+      "a": "A rafter carries its own load independently. A truss is one connected system where every member and joint is sized assuming the rest of the truss is intact, so cutting into one member changes the load capacity of the whole assembly."
+    },
+    {
+      "q": "Is truss damage always obvious from the attic?",
+      "a": "No. Fire scorching, water softening, or termite damage can weaken a chord or joint without visible sagging, which is why closer inspection matters even when a truss looks structurally fine at a glance."
+    },
+    {
+      "q": "How do I know if my roof has trusses or stick framing?",
+      "a": "Look in the attic. Trusses show a triangulated pattern of shorter boards connected with metal gusset plates, while stick framing uses long, solid rafters running from ridge to eave with no plated connections."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with fire or water damage near your roof framing?",
+    "body": "If you're not sure whether your roof's trusses or framing have been compromised, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com. We serve the Phoenix metro area and can walk through what an assessment involves."
+  },
+  "evidence": "This page explains general truss engineering and framing principles as industry knowledge; it does not attribute any specific project, claim, or certification to Gold Water Fire.",
+  "type": "educational",
+  "datePublished": "2026-09-19",
+  "dateModified": "2026-09-19",
+  "photo": {
+    "src": "/assets/img/roof-truss-repairs-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Roof truss repairs vs stick framing: why trusses cannot just be cut and patched"
+  }
+}
