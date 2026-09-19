@@ -1,0 +1,75 @@
+{
+  "slug": "depreciation-on-contents",
+  "path": "/guides/depreciation-on-contents.html",
+  "title": "How Depreciation Is Applied to Contents After a Claim | Gold Water Fire Phoenix, AZ",
+  "description": "Confused why your contents claim paid less than expected? Here's how insurers apply depreciation category by category, and what to check on your estimate.",
+  "h1": "How Depreciation Is Applied to Contents, Category by Category",
+  "breadcrumbLabel": "Depreciation on Contents",
+  "intro": "You open the contents estimate expecting it to reflect what it would actually cost to replace your things, and instead you're staring at a number that seems to have shrunk for reasons nobody explained clearly. A five-year-old sofa isn't worth what it was new, you understand that much, but the way the deduction actually gets calculated feels like a black box, and different items on the same page seem to lose value at wildly different rates with no obvious logic tying them together. That confusion is normal. Depreciation math is one of the least explained parts of an insurance claim, even though it directly affects the check you receive.",
+  "sections": [
+    {
+      "heading": "What depreciation actually means on a contents claim",
+      "body": "Depreciation is the reduction in an item's value due to age, wear, and useful life already consumed. When an adjuster or estimating software calculates your contents loss, most policies start from Replacement Cost Value (RCV), what it would cost to buy the item new today, then subtract depreciation to arrive at Actual Cash Value (ACV), which is what the item was worth right before the damage happened. If your policy includes replacement cost coverage, you're often eligible to recover the depreciated amount later, after you actually replace the item and submit proof of purchase. If your policy is ACV-only, that depreciated number is the final payment. Knowing which type of policy you have changes everything about how these numbers should read."
+    },
+    {
+      "heading": "Why depreciation isn't the same rate across every item",
+      "body": "Estimating software and adjusters typically assign each item a category (electronics, furniture, clothing, appliances, etc.), an average useful life for that category, and an annual depreciation percentage. A leather sofa might depreciate slower than a laminate bookshelf because leather furniture is assumed to hold up longer. A laptop might depreciate faster than a cast iron skillet because technology has a shorter useful life before it's considered obsolete. This is why two items purchased the same year, sitting in the same room, damaged in the same event, can show very different depreciation deductions on your estimate. It isn't arbitrary, but it also isn't obvious unless you know the category logic behind it."
+    },
+    {
+      "heading": "How the math typically breaks down by category",
+      "body": "Electronics and appliances usually carry some of the steepest depreciation curves, often reflecting a relatively short assumed useful life, since technology ages quickly and parts availability declines. Furniture depreciation varies a lot by material and construction quality, solid wood and leather generally hold value longer than particleboard or synthetic upholstery. Clothing and linens often depreciate quickly since these are considered consumable, wear-and-tear items with short realistic lifespans. Kitchenware, especially durable goods like cast iron, stainless steel, or ceramics, sometimes depreciates slowly or is treated as near-permanent. Rugs and window treatments depreciate based on material and fiber type, wool typically holds up differently than synthetic blends. None of these percentages are universal, they vary by estimating software, by insurer, and sometimes by state, but the category-based logic behind the deduction is consistent across the industry."
+    },
+    {
+      "heading": "Where these numbers commonly get disputed",
+      "body": "The most common friction point is condition versus age. Depreciation tables assume average wear for an item's age, but they don't automatically account for an item that was well maintained, rarely used, or recently reconditioned. If a ten-year-old dining set was refinished two years ago, that matters, but only if you document it and raise it. Another common issue is misclassification, an antique or handmade item filed under a generic furniture category will depreciate on a curve that has nothing to do with its actual value retention. Reviewing each line item against its assigned category and useful-life assumption is one of the few places a homeowner can meaningfully push back on a contents estimate before it's finalized."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is depreciation on contents the same as depreciation on the structure of my home?",
+      "a": "No. Structural depreciation follows separate categories tied to building materials and systems, like roofing or flooring, and is calculated differently than personal property depreciation. They're often shown as separate line items on the same claim."
+    },
+    {
+      "q": "Can I recover the depreciated amount later?",
+      "a": "If your policy includes replacement cost coverage on contents, you're generally able to recover the withheld depreciation after you replace the item and submit proof of purchase, subject to your policy's terms and time limits. If your policy is ACV-only, the depreciated amount is typically the final payment."
+    },
+    {
+      "q": "Why did two similar items on my estimate depreciate at different rates?",
+      "a": "Estimating software assigns depreciation based on category and assumed useful life, not just age. Material, typical durability, and how quickly a category becomes obsolete all factor in, which is why a couch and a laptop bought the same year can show very different deductions."
+    },
+    {
+      "q": "What can I do if I think an item was categorized or depreciated incorrectly?",
+      "a": "Review the line item's assigned category and useful-life assumption, then provide documentation, receipts, photos, maintenance records, or appraisal information, that supports a different classification or condition before the estimate is finalized."
+    }
+  ],
+  "cta": {
+    "heading": "Sorting through a contents estimate after fire or water damage?",
+    "body": "Gold Water Fire handles water damage restoration, fire damage restoration, and reconstruction across the Phoenix metro area. Reach out at (480) 999-3339 or Help@goldwaterfire.com, or visit our contact page to talk through what you're seeing on your claim."
+  },
+  "evidence": "This page explains general insurance and restoration industry depreciation practices; no claim about Gold Water Fire's own performance, certifications, or history is made.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-19",
+  "dateModified": "2026-09-19",
+  "photo": {
+    "src": "/assets/img/depreciation-on-contents-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: How depreciation is applied to contents, category by category"
+  }
+}
