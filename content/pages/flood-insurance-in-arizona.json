@@ -1,0 +1,62 @@
+{
+  "slug": "flood-insurance-in-arizona",
+  "path": "/guides/flood-insurance-in-arizona.html",
+  "title": "Flood Insurance in Arizona: What It Covers, Explained | Gold Water Fire Phoenix, AZ",
+  "description": "Does homeowners insurance cover flooding in Arizona? Learn what a standard policy excludes and when separate flood coverage actually matters.",
+  "h1": "Flood Insurance in Arizona: Who Needs It and What the Base Policy Will Not Do",
+  "breadcrumbLabel": "Flood Insurance in Arizona",
+  "intro": "If water has ever come into your home from outside, monsoon runoff pooling against a wall, a wash overflowing nearby, a street that turned into a river during a summer storm, you may have already learned the hard way that your homeowners policy did not respond the way you expected. That confusion is common. Arizona does not feel like flood country until the one week a year it very much is, and by then most people are trying to read their insurance declarations page for the first time while standing in wet carpet.",
+  "sections": [
+    {
+      "heading": "Why homeowners insurance and flood insurance are not the same thing",
+      "body": "A standard Arizona homeowners policy generally treats water damage differently depending on where the water came from. Water that originates inside the home, a burst pipe, a failed water heater, an overflowing washing machine, is typically what homeowners insurance is built to address. Water that comes from outside the home due to rising groundwater, storm surge, or surface flooding is usually excluded by name in the policy language, no matter how the flooding started or how much damage it caused. This is a standard structure in the insurance industry, not something unique to one carrier. It means two homes on the same street, damaged by the same storm, can have completely different outcomes depending on whether the water rose from the ground or came through a broken pipe."
+    },
+    {
+      "heading": "Why this catches Arizona homeowners off guard",
+      "body": "Most flood insurance in the United States is tied to federally mapped flood zones, and a large share of Arizona properties sit outside the zones considered high risk. That leads a lot of homeowners to assume flooding is not something they need to plan for. But monsoon storms do not check flood maps. Fast, heavy rain on hard desert soil and undersized drainage can send water into a home that has never flooded before and is not in a mapped flood zone at all. Being outside a high-risk zone lowers statistical risk, it does not remove it, and it does not change what your homeowners policy will or will not pay for if water does get in."
+    },
+    {
+      "heading": "What a base homeowners policy typically will not do",
+      "body": "Read your own declarations and exclusions pages rather than relying on general assumptions, since wording varies by carrier and policy. That said, homeowners policies commonly draw a hard line around damage from external flooding, groundwater seepage through a foundation, sewer or drain backups (which often require a separate endorsement even when the backup is flood-related), and gradual water intrusion that occurred over time rather than suddenly. Separate flood insurance, when purchased, is written to specifically cover the scenario your homeowners policy excludes: water entering from the outside as a result of general flooding conditions."
+    },
+    {
+      "heading": "Who should actually look into it",
+      "body": "Flood risk is not only about elevation maps. Homes near washes, retention basins, or areas where street drainage backs up during storms carry real exposure even if a map labels the zone as moderate or low risk. So do homes downhill from newer development, where added pavement changes how water moves through a neighborhood that used to absorb it. If you have noticed water pooling against your foundation during past storms, or a neighbor has described flooding on your street, that lived experience is worth taking seriously regardless of what a flood zone designation says on paper."
+    },
+    {
+      "heading": "What to do regardless of coverage",
+      "body": "Whether or not flooding is covered, the physical damage still has to be addressed quickly. Standing water and saturated materials create conditions for mold growth within days, and drywall, flooring, and framing that stay wet too long often need to be removed rather than dried in place. Documenting the damage with photos and timestamps before cleanup begins matters for any insurance conversation, flood policy or not. If you are dealing with active water intrusion right now, our <a href=\"/water-damage-restoration.html\">water damage restoration</a> page walks through what the drying and mitigation process actually involves.",
+      "soft": true
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does my Arizona homeowners policy cover flood damage from monsoon storms?",
+      "a": "Usually not. Most standard homeowners policies exclude water that enters from outside the home due to surface flooding or rising groundwater, even during a monsoon event. Coverage details vary by carrier, so the only way to know for certain is to read your specific policy's exclusions section or ask your agent directly."
+    },
+    {
+      "q": "If I am not in a mapped flood zone, do I still need flood insurance?",
+      "a": "Being outside a high-risk flood zone reduces statistical risk but does not eliminate it. Homes near washes, retention areas, or streets with poor drainage can still take on water during heavy rain regardless of their official flood zone designation."
+    },
+    {
+      "q": "Is sewer backup the same as flood coverage?",
+      "a": "No. Sewer and drain backup is typically its own separate coverage or endorsement, distinct from both standard homeowners coverage and flood insurance. It is worth asking your insurer specifically about this gap, since many homeowners assume one policy covers the other."
+    },
+    {
+      "q": "What should I do first if flood water gets into my home?",
+      "a": "Document the damage with photos before you move or remove anything, contact your insurance carrier to start the claims conversation, and begin drying out the space as soon as it is safe. Wet materials left untreated can develop mold within a couple of days."
+    }
+  ],
+  "cta": {
+    "heading": "Dealing with water damage right now?",
+    "body": "Whatever your policy does or does not cover, the drying and cleanup still has to happen. Call Gold Water Fire at (480) 999-3339 or reach out through our contact page to talk through what you're facing."
+  },
+  "evidence": "This page states general, industry-standard information about how homeowners and flood insurance policies typically distinguish coverage; it does not make any specific claim about Gold Water Fire's own work, certifications, or history.",
+  "type": "educational",
+  "datePublished": "2026-09-19",
+  "dateModified": "2026-09-19",
+  "photo": {
+    "src": "/assets/img/flood-insurance-in-arizona-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Flood insurance in Arizona: who needs it and what the base policy will not do"
+  }
+}
