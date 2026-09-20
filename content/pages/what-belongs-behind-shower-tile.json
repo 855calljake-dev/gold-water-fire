@@ -1,0 +1,75 @@
+{
+  "slug": "what-belongs-behind-shower-tile",
+  "path": "/guides/what-belongs-behind-shower-tile.html",
+  "title": "What Belongs Behind Shower Tile: A Rebuild Guide | Gold Water Fire Phoenix, AZ",
+  "description": "What actually goes behind shower tile in a modern rebuild, from waterproofing membranes to backer board, and why the layers you can't see matter most.",
+  "h1": "What Belongs Behind Shower Tile in a Modern Build",
+  "breadcrumbLabel": "What Belongs Behind Shower Tile",
+  "intro": "If you're staring at a shower wall wondering what's actually going on behind that tile, you're probably dealing with something that shouldn't be happening yet. A stain that keeps coming back. Grout that crumbles no matter how many times it's redone. A soft spot in the floor tile near the drain. None of that is normal for a shower that's doing its job, and it's fair to feel confused about why a wall that looks fine on the surface keeps causing problems underneath.",
+  "sections": [
+    {
+      "heading": "The layers a shower actually needs",
+      "body": "Tile is the part everyone sees, but tile itself is not waterproof. Grout lines and even the tile surface allow some moisture through over time, which means everything behind the tile has to be built to handle water, not just resist it. A modern shower assembly, working from the stud wall outward, typically includes a few distinct layers: the framing, a backer material that can tolerate moisture, a waterproofing layer, and then the tile and grout or thin-set on top. Each layer has a specific job, and skipping or misordering one is usually where problems start."
+    },
+    {
+      "heading": "Backer board: the substrate tile is set on",
+      "body": "Behind the waterproofing, tile needs something solid and dimensionally stable to be set on. In wet areas, that's typically cement board, fiber cement board, or a foam-based tile backer panel, not standard drywall and not green board, both of which can break down with sustained moisture exposure even though green board is moisture-resistant on the surface. The backer board gets fastened to studs, taped and treated at the seams, and it becomes the surface the waterproofing layer bonds to."
+    },
+    {
+      "heading": "Waterproofing: the layer doing the real work",
+      "body": "This is the part that determines whether a shower lasts or fails early. There are two common approaches: a sheet or liquid membrane applied directly over the backer board (sometimes called a topical or foam-panel system), or a traditional CPE or PVC pan liner built into the shower floor with a mud bed on top. Either way, the waterproofing has to be continuous, meaning no gaps at corners, seams, curb edges, or around the drain and niche. A pinhole or an untreated seam is enough for water to start migrating into the wall cavity, and once it's back there, it can travel far from where the tile shows a stain."
+    },
+    {
+      "heading": "The drain, the curb, and the niche: where failures concentrate",
+      "body": "Most shower leaks don't start on the flat wall sections. They start at transitions: where the pan liner meets the drain flange, where the curb meets the walls, or where a built-in shampoo niche interrupts the waterproof layer. A niche is essentially a hole cut into a wet wall, so it needs its own fully waterproofed box, not just tile applied over cut backer board. Correct flashing and sealing at these transition points matters more than almost anything else in the assembly, because these are the spots doing the most work with the least margin for error."
+    },
+    {
+      "heading": "Why this matters for what you're seeing now",
+      "body": "If you've got discoloration on a ceiling below a bathroom, tile that sounds hollow when tapped, or grout that won't stay sealed, the tile itself usually isn't the cause, it's a symptom. Something behind it, most often the waterproofing layer or a transition point around the drain or niche, has already failed. Understanding these layers doesn't fix the problem, but it does explain why patching just the visible tile rarely solves anything for long: the water is still getting past the same point it got past before."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a shower leak be fixed by just re-grouting?",
+      "a": "Re-grouting can slow surface absorption, but if the waterproofing membrane behind the tile has already failed, water is still getting into the wall or floor assembly regardless of how the grout looks. Re-grouting addresses the surface, not the layer that actually keeps water out."
+    },
+    {
+      "q": "Is green board an acceptable backer for a shower?",
+      "a": "Standard green board is moisture-resistant, not waterproof, and it isn't considered a reliable long-term substrate for direct wet exposure inside a shower enclosure. Cement board, fiber cement board, or a foam tile backer panel paired with proper waterproofing is the more durable approach."
+    },
+    {
+      "q": "Why do leaks so often show up near the shower niche or curb?",
+      "a": "Niches and curbs interrupt the flat plane of the waterproofing layer, creating seams and corners that have to be sealed individually. Those transition points carry more risk of a gap or thin spot than a continuous flat wall section does."
+    },
+    {
+      "q": "If I can see a stain, does that mean the whole wall is damaged?",
+      "a": "Not necessarily, but it does mean water has gotten past the tile and likely the waterproofing at some point. The extent behind the wall isn't visible without opening it up, since water can travel along framing before it shows up as a visible stain."
+    }
+  ],
+  "cta": {
+    "heading": "Wondering what's really behind your shower wall?",
+    "body": "If you're seeing signs that point to a failure behind the tile, it helps to have someone look at the whole assembly, not just patch what's visible. Contact Gold Water Fire to talk through what you're seeing, or explore our Water Damage Restoration and Reconstruction & Rebuild services."
+  },
+  "evidence": "This page states general shower construction and waterproofing knowledge; it makes no specific claim about work performed by Gold Water Fire.",
+  "internalLinks": [
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-20",
+  "dateModified": "2026-09-20",
+  "photo": {
+    "src": "/assets/img/what-belongs-behind-shower-tile-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Rebuilding a shower: what belongs behind the tile in a modern build"
+  }
+}
