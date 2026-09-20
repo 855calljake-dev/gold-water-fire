@@ -8,7 +8,7 @@
   "repository": "855calljake-dev/gold-water-fire",
   "base": "7d575362168a1c4d98ce5f2ccc5259ddf84f1326",
   "playbook": "feature",
-  "status": "active",
+  "status": "complete",
   "outcome": "Prepare dormant GWF-only shared-shell page and telephone-click measurement; no false lead events.",
   "owned_paths": [
     "content/measurement.json",
@@ -79,15 +79,18 @@
     },
     {
       "id": "review",
-      "status": "pending"
+      "status": "done",
+      "evidence": "Independent codex-seo-reviewer APPROVE for ca5450b8485cda6b148dcdd618db93fb617a78e5; review.md records independent rerun of focused and complete tests."
     },
     {
       "id": "record",
-      "status": "pending"
+      "status": "done",
+      "evidence": "Implementation committed at ca5450b8485cda6b148dcdd618db93fb617a78e5; completed task and review artifacts retained in follow-up evidence commit. No live adoption claimed."
     },
     {
       "id": "close",
-      "status": "pending"
+      "status": "done",
+      "evidence": "Local dormant implementation acceptance and exact-head independent approval inspected; activation, live delivery and CRM conversion gaps remain as recorded in scripts/MEASUREMENT.md."
     }
   ],
   "governance": {
@@ -103,5 +106,56 @@
       "status": "not-applicable",
       "reason": "No new schedules or live predicates authorized."
     }
+  },
+  "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+  "results": [
+    {
+      "id": "disabled",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+      "artifact": "scripts/evidence/seo-measurement-2026-09-20/tests.txt"
+    },
+    {
+      "id": "coverage",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+      "artifact": "scripts/evidence/seo-measurement-2026-09-20/tests.txt"
+    },
+    {
+      "id": "privacy",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+      "artifact": "scripts/evidence/seo-measurement-2026-09-20/tests.txt"
+    },
+    {
+      "id": "events",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+      "artifact": "scripts/evidence/seo-measurement-2026-09-20/tests.txt"
+    }
+  ],
+  "review": {
+    "reviewer": "codex-seo-reviewer",
+    "provider": "codex",
+    "model": "Exact configured model identifier not exposed to reviewer",
+    "verdict": "approve",
+    "head": "ca5450b8485cda6b148dcdd618db93fb617a78e5",
+    "artifact": "scripts/evidence/seo-measurement-2026-09-20/review.md"
   }
 }
