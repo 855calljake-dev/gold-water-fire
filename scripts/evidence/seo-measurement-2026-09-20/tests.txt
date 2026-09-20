@@ -1,0 +1,300 @@
+
+> test
+> npm run test:evidencegate && npm run test:imagegate && npm run test:verify && npm run test:batchdrop && npm run test:webhook && npm run test:measurement
+
+
+> test:evidencegate
+> node worker/evidenceGate.test.mjs
+
+PASS  PR #25 corrupted page is REJECTED: how-arizona-humidity-affects-drying
+PASS  PR #25 corrupted page is REJECTED: thermal-imaging-for-water-detection
+PASS  the rejection names the type found and the type expected
+PASS  PR #25 clean page still PASSES: containment-barriers-during-restoration
+PASS  PR #25 clean page still PASSES: daily-monitoring-logs-during-drying
+PASS  PR #25 clean page still PASSES: negative-air-machines-explained
+PASS  PR #25 clean page still PASSES: what-moisture-meters-measure
+PASS  PR #25 clean page still PASSES: when-drywall-can-be-dried-vs-replaced
+PASS  PR #25 clean page still PASSES: why-drying-takes-days-not-hours
+PASS  rejects: sections as a string
+PASS  rejects: sections empty
+PASS  rejects: a section that is a string
+PASS  rejects: a section with no heading
+PASS  rejects: a section with no body and no cards
+PASS  rejects: cards as a string
+PASS  rejects: a card missing body
+PASS  rejects: faqs as a string
+PASS  rejects: an faq missing its answer
+PASS  rejects: cta as a string
+PASS  rejects: cta missing body
+PASS  rejects: internalLinks as a string
+PASS  rejects: a link missing href
+PASS  rejects: photo as a string
+PASS  rejects: photo missing alt
+PASS  rejects: h1 missing
+PASS  rejects: intro as a number
+PASS  rejects: a stray top-level field
+PASS  photo: null is accepted as no photo
+PASS  internalLinks: null is still rejected (a default does not fire on null)
+PASS  the known-good synthetic page passes
+PASS  tool-call markup is found at any depth
+PASS  the closing form and the antml: prefix are both caught
+PASS  ordinary prose about parameters is NOT flagged
+PASS  a page that is both corrupted and otherwise fine reports the leak, not silence
+PASS  shape failure short-circuits the scans that assume the shape
+
+All evidence gate shape tests passed.
+
+> test:imagegate
+> node worker/imageTextGate.test.mjs
+
+§8.3.2 image text gate, threshold 65
+
+MUST REJECT (rendered text present):
+  ok    water-heater-failure-water-damage-phoenix-az: 1 hit(s), peak 95
+
+MUST PASS, this tenant's own wordmark (brand allowlist):
+  ok    fire-smoke-damage-restoration-cleanup-phoenix-az: allowlisted WATER(96), FIRE(97)
+  ok    reconstruction-rebuild-restoration-phoenix-az: allowlisted GOLD(96), WATER(96), FIRE(96)
+  ok    restoration-contractor-phoenix-az-metro-home-exterior: allowlisted GOLD(96), WATER(96), FIRE(96)
+  ok    water-damage-restoration-drying-equipment-phoenix-az: allowlisted GOLD(96), WATER(96), FIRE(96)
+
+MUST PASS, punctuation only (the byte-length bug):
+  ok    arizona-monsoon-season-home-prep-checklist-phoenix-az: 0 letter token(s), peak 0
+  ok    tolleson-reconstruction-tolleson-az: 0 letter token(s), peak 0
+
+MUST PASS, clean sample:
+  ok    apache-junction-water-damage-restoration-apache-junction-az: peak 0
+  ok    cave-creek-fire-damage-restoration-cave-creek-az: peak 0
+  ok    el-mirage-reconstruction-el-mirage-az: peak 0
+  ok    gilbert-fire-damage-restoration-gilbert-az: peak 0
+  ok    hero-emergency-response-night-phoenix-az: peak 18
+  ok    litchfield-park-water-damage-restoration-litchfield-park-az: peak 0
+  ok    peoria-fire-damage-restoration-peoria-az: peak 0
+  ok    roof-leak-vs-plumbing-leak-phoenix-az: peak 0
+  ok    slab-leaks-signs-and-what-happens-next-phoenix-az: peak 0
+  ok    tolleson-water-damage-restoration-tolleson-az: peak 0
+
+KNOWN LIMIT, a real defect this gate does NOT catch:
+  ok    washing-machine-supply-line-failure-phoenix-az: passes, as documented. peak 0, 0 letter token(s). OCR does not see this image's gibberish at any confidence, so no threshold would catch it. Pixel checking is not visual review.
+
+18/18 cases as expected.
+Gate behaves as measured.
+
+> test:verify
+> node worker/verify.test.mjs
+
+PASS  pageText covers all rendered fields
+PASS  pass verdict comes through
+PASS  fail verdict carries the quoted claims
+PASS  pass-with-claims is read as fail
+PASS  refusal (HTTP 200) is an error, never a pass
+PASS  HTTP 500 is an error with the status in the reason
+PASS  fetch throw is an error, not an exception
+PASS  unparseable JSON is an error
+PASS  missing emit_verdict is an error
+
+All verify.mjs plumbing tests passed.
+
+> test:batchdrop
+> node --test worker/batchDrop.test.mjs
+
+TAP version 13
+# Subtest: one page fails the gate, the rest of the batch still publishes and the failed slug stays pending
+ok 1 - one page fails the gate, the rest of the batch still publishes and the failed slug stays pending
+  ---
+  duration_ms: 2306.255542
+  type: 'test'
+  ...
+# Subtest: the dropped page and its reason are on the PR body
+ok 2 - the dropped page and its reason are on the PR body
+  ---
+  duration_ms: 3112.15725
+  type: 'test'
+  ...
+# Subtest: failures under the rate do not de-graduate, even when there is more than one
+ok 3 - failures under the rate do not de-graduate, even when there is more than one
+  ---
+  duration_ms: 2907.468084
+  type: 'test'
+  ...
+# Subtest: enough failures to cross the rate does de-graduate, and the batch is withheld
+ok 4 - enough failures to cross the rate does de-graduate, and the batch is withheld
+  ---
+  duration_ms: 1370.15225
+  type: 'test'
+  ...
+# Subtest: a batch where every page fails publishes nothing and de-graduates
+ok 5 - a batch where every page fails publishes nothing and de-graduates
+  ---
+  duration_ms: 258.613833
+  type: 'test'
+  ...
+# Subtest: a batch emptied by the image provider does NOT de-graduate
+ok 6 - a batch emptied by the image provider does NOT de-graduate
+  ---
+  duration_ms: 208.543583
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10287.960375
+
+> test:webhook
+> node --test netlify/lib/retell-call.test.mjs
+
+TAP version 13
+# Subtest: signature: accepts a fresh, correctly signed body
+ok 1 - signature: accepts a fresh, correctly signed body
+  ---
+  duration_ms: 1.631708
+  type: 'test'
+  ...
+# Subtest: signature: rejects a stale timestamp, a wrong key, and a tampered body
+ok 2 - signature: rejects a stale timestamp, a wrong key, and a tampered body
+  ---
+  duration_ms: 0.752291
+  type: 'test'
+  ...
+# Subtest: toE164 normalises ten and eleven digit numbers
+ok 3 - toE164 normalises ten and eleven digit numbers
+  ---
+  duration_ms: 0.4695
+  type: 'test'
+  ...
+# Subtest: shapeCall: tool arguments win over extraction, caller id is the phone fallback
+ok 4 - shapeCall: tool arguments win over extraction, caller id is the phone fallback
+  ---
+  duration_ms: 1.568458
+  type: 'test'
+  ...
+# Subtest: isLead: hangups, spam and wrong numbers stay out of the pipeline
+ok 5 - isLead: hangups, spam and wrong numbers stay out of the pipeline
+  ---
+  duration_ms: 0.688625
+  type: 'test'
+  ...
+# Subtest: stageFor: dispatch or a transfer attempt goes hot, the rest is new
+ok 6 - stageFor: dispatch or a transfer attempt goes hot, the rest is new
+  ---
+  duration_ms: 0.604208
+  type: 'test'
+  ...
+# Subtest: customFieldValues: writes the picklist option strings the sub-account already has
+ok 7 - customFieldValues: writes the picklist option strings the sub-account already has
+  ---
+  duration_ms: 1.45775
+  type: 'test'
+  ...
+# Subtest: addCallMessage skips, and says so, when no conversation provider id is configured
+ok 8 - addCallMessage skips, and says so, when no conversation provider id is configured
+  ---
+  duration_ms: 1.749208
+  type: 'test'
+  ...
+# Subtest: shapeCall carries the agent number and the start time for the timeline Call
+ok 9 - shapeCall carries the agent number and the start time for the timeline Call
+  ---
+  duration_ms: 2.924375
+  type: 'test'
+  ...
+# Subtest: ladder T-A: transfer connected on the first rung
+ok 10 - ladder T-A: transfer connected on the first rung
+  ---
+  duration_ms: 3.405166
+  type: 'test'
+  ...
+# Subtest: ladder T-B: first rung failed, second connected; the rung is the tool that succeeded
+ok 11 - ladder T-B: first rung failed, second connected; the rung is the tool that succeeded
+  ---
+  duration_ms: 1.125541
+  type: 'test'
+  ...
+# Subtest: ladder T-C: every rung failed and the agent hung up
+ok 12 - ladder T-C: every rung failed and the agent hung up
+  ---
+  duration_ms: 0.286833
+  type: 'test'
+  ...
+# Subtest: callStatus maps the non-transfer disconnection reasons
+ok 13 - callStatus maps the non-transfer disconnection reasons
+  ---
+  duration_ms: 0.408542
+  type: 'test'
+  ...
+# Subtest: Called In From is the carrier number; the note carries the transcript
+ok 14 - Called In From is the carrier number; the note carries the transcript
+  ---
+  duration_ms: 0.759416
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 117.703917
+
+> test:measurement
+> node --test scripts/measurement.test.mjs
+
+TAP version 13
+# Subtest: unconfigured build stays dark; enabled configuration refuses tenant mistakes
+ok 1 - unconfigured build stays dark; enabled configuration refuses tenant mistakes
+  ---
+  duration_ms: 1.523541
+  type: 'test'
+  ...
+# Subtest: one page view and safe metadata; duplicate bootstrap is ignored
+ok 2 - one page view and safe metadata; duplicate bootstrap is ignored
+  ---
+  duration_ms: 2.917708
+  type: 'test'
+  ...
+# Subtest: opt-outs, preview hosts, mismatched URLs and sensitive paths load nothing
+ok 3 - opt-outs, preview hosts, mismatched URLs and sensitive paths load nothing
+  ---
+  duration_ms: 5.0445
+  type: 'test'
+  ...
+# Subtest: aliases use the build canonical and untrusted referrers are empty
+ok 4 - aliases use the build canonical and untrusted referrers are empty
+  ---
+  duration_ms: 1.245417
+  type: 'test'
+  ...
+# Subtest: private and unknown referrer origins are omitted
+ok 5 - private and unknown referrer origins are omitted
+  ---
+  duration_ms: 1.898417
+  type: 'test'
+  ...
+# Subtest: only a trusted business telephone click is an interaction, never a lead
+ok 6 - only a trusted business telephone click is an interaction, never a lead
+  ---
+  duration_ms: 0.99225
+  type: 'test'
+  ...
+# Subtest: actual build covers every page class and future content, excluding form/thanks/404
+ok 7 - actual build covers every page class and future content, excluding form/thanks/404
+  ---
+  duration_ms: 879.693458
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 962.495291

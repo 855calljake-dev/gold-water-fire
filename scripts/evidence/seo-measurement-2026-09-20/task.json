@@ -1,0 +1,107 @@
+{
+  "schema": "bt-pstack-task/1",
+  "package": "bt-pstack@1.0.0",
+  "policy": "BT-TP-1.1",
+  "id": "gwf-seo-measurement-2026-09-20",
+  "owner": "codex-gwf-measurement",
+  "provider": "codex",
+  "repository": "855calljake-dev/gold-water-fire",
+  "base": "7d575362168a1c4d98ce5f2ccc5259ddf84f1326",
+  "playbook": "feature",
+  "status": "active",
+  "outcome": "Prepare dormant GWF-only shared-shell page and telephone-click measurement; no false lead events.",
+  "owned_paths": [
+    "content/measurement.json",
+    "templates/measurement.mjs",
+    "templates/shell.mjs",
+    "assets/js/measurement.js",
+    "scripts/measurement.test.mjs",
+    "scripts/MEASUREMENT.md",
+    "package.json",
+    "scripts/evidence/seo-measurement-2026-09-20/task.json",
+    "scripts/evidence/seo-measurement-2026-09-20/tests.txt",
+    "scripts/evidence/seo-measurement-2026-09-20/review.md"
+  ],
+  "reviewer": "codex-seo-reviewer",
+  "limits": {
+    "deployment": false,
+    "spend": false,
+    "credentials": false,
+    "max_corrections": 3
+  },
+  "skills_used": [
+    "bt-pstack",
+    "unslop"
+  ],
+  "acceptance": [
+    {
+      "id": "disabled",
+      "expected": "Missing/unverified configuration, preview hosts and opt-out cause no Analytics load/events."
+    },
+    {
+      "id": "coverage",
+      "expected": "All rendered page classes inherit measurement except contact, thanks and 404."
+    },
+    {
+      "id": "privacy",
+      "expected": "Canonical path only, referrer origin only, no form data/query/hash or advertising capture."
+    },
+    {
+      "id": "events",
+      "expected": "One page view per initialization; only actual business telephone clicks emit phone_click, never lead."
+    }
+  ],
+  "steps": [
+    {
+      "id": "orient",
+      "status": "done",
+      "evidence": "Fetched site origin/main; own worktree at base; read owning site, GWF and ByTomorrow gateways and measurement SOP."
+    },
+    {
+      "id": "specify",
+      "status": "done",
+      "evidence": "Approved pilot packet and root assignment limit this to local measurement implementation and review."
+    },
+    {
+      "id": "design",
+      "status": "done",
+      "evidence": "Use existing universal shell, strict tenant/domain config and runtime refusal. Existing native Netlify form POST navigates to thanks without a trusted CRM acknowledgment; leave lead events absent. Prefer build configuration over ambient env IDs to prevent tenant mixups."
+    },
+    {
+      "id": "implement",
+      "status": "done",
+      "evidence": "Configuration, universal-shell loader and browser runtime implemented with analytics absent on query/hash URLs, forms, preview domains and opt-outs. See scripts/MEASUREMENT.md."
+    },
+    {
+      "id": "verify",
+      "status": "done",
+      "evidence": "npm test passes; scripts/evidence/seo-measurement-2026-09-20/tests.txt. Browser runtime capture and full-site build fixture are local tests, not provider delivery proof."
+    },
+    {
+      "id": "review",
+      "status": "pending"
+    },
+    {
+      "id": "record",
+      "status": "pending"
+    },
+    {
+      "id": "close",
+      "status": "pending"
+    }
+  ],
+  "governance": {
+    "oracle": {
+      "status": "verified",
+      "evidence": "ByTomorrow BOS 8f69455, SOP-SITE-MEASUREMENT and approved pilot packet; GWF BOS 3691cdb. No deployment authority."
+    },
+    "trace": {
+      "status": "not-applicable",
+      "reason": "Local dormant site implementation only; no live adoption claimed."
+    },
+    "watcher": {
+      "status": "not-applicable",
+      "reason": "No new schedules or live predicates authorized."
+    }
+  }
+}
