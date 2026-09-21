@@ -1,0 +1,83 @@
+{
+  "slug": "smart-home-wiring-during-reconstruction",
+  "path": "/guides/smart-home-wiring-during-reconstruction.html",
+  "title": "Low-Voltage & Smart Home Wiring During Reconstruction | Gold Water Fire Phoenix, AZ",
+  "description": "Rebuilding walls after damage? Here's what to know about planning low-voltage and smart home wiring before drywall goes back up.",
+  "h1": "Low-Voltage and Smart Home Wiring During Reconstruction",
+  "breadcrumbLabel": "Smart Home Wiring During Reconstruction",
+  "intro": "Somewhere between the demolition and the drywall, a question starts nagging at you: is this the moment to fix the things about your house that never quite worked right? The dead spot where the Wi-Fi never reached. The doorbell camera you wanted but never wired for. The thermostat that's still on a schedule from a decade ago. Once the walls are already open, it feels like it should be simple to just add that in. But it's not always clear what's actually possible, what needs to happen before the walls close, or whether you're overthinking something that used to just be an outlet and a lightswitch.",
+  "sections": [
+    {
+      "eyebrow": "Why this stage matters",
+      "heading": "Open walls are a narrow window",
+      "body": "Once studs and framing are exposed during reconstruction, running new wire is dramatically easier and cheaper than it will ever be again. Low-voltage cabling for networking, security cameras, speakers, or smart switches has to travel through the same wall cavities as everything else, and once drywall goes back up, adding a run means cutting into finished walls, fishing cable blind, or relying entirely on wireless workarounds. If a home is already open for repair, it is the one point where retrofitting a smart or wired system does not require additional demolition just to get the cable where it needs to go."
+    },
+    {
+      "eyebrow": "What counts as low-voltage",
+      "heading": "Low-voltage versus standard electrical",
+      "body": "Standard household wiring runs at 120 or 240 volts and is what powers outlets, lighting circuits, and appliances. Low-voltage wiring covers everything that carries data or a small control signal instead: structured network cable (often Cat6), coaxial for cable or satellite, speaker wire, doorbell and camera wiring, thermostat wire, and the wiring for smart switches or in-wall access points. These systems are usually installed and inspected separately from the main electrical rough-in, and they follow different code requirements, which is part of why they are easy to overlook if they are not planned early."
+    },
+    {
+      "eyebrow": "Planning before the walls close",
+      "heading": "Decisions that get harder to change later",
+      "body": "A few choices are far simpler to make while framing is open: where the main network panel or structured wiring hub will live, whether cable runs to each bedroom and living area or just to one central point with Wi-Fi extending from there, where exterior camera and doorbell wiring needs to exit the wall, and whether any smart switches need a neutral wire pulled to the switch box (some smart switches require this and older homes often were not wired with one). Deciding these questions after drywall is up usually means either living without the feature or paying for a second, more invasive round of work."
+    },
+    {
+      "eyebrow": "What to ask before work continues",
+      "heading": "Questions worth raising with whoever is doing the rebuild",
+      "body": "Before walls close, it is worth confirming a few things out loud: which rooms will have wired network drops versus relying on wireless, where any smart home hub or panel will be mounted, whether existing thermostat or doorbell wiring was damaged and needs replacing rather than reusing, and whether the low-voltage work will be inspected or documented separately from the main electrical work. None of these are urgent for structural safety, but they are the kind of thing that is nearly free to address now and disruptive to fix six months from now."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need an electrician for low-voltage wiring, or is that a different trade?",
+      "a": "Low-voltage work like network cabling, camera wiring, or speaker wire is often handled by a low-voltage or structured cabling specialist rather than a standard electrician, though some electrical contractors do both. It is worth asking directly who on a reconstruction crew handles low-voltage runs before assuming it is included."
+    },
+    {
+      "q": "Can smart switches be added without pulling new wire?",
+      "a": "Some smart switches work with existing wiring, but many require a neutral wire at the switch box, which older homes frequently do not have. If walls are already open during reconstruction, this is the easiest time to pull that wire and avoid limiting which switches will work later."
+    },
+    {
+      "q": "Is it worth wiring for a system I don't have yet?",
+      "a": "Running empty conduit or extra cable to likely locations (media walls, exterior camera points, a future office) while walls are open is a common and low-cost way to keep options open, since the labor to open the wall is already being spent regardless."
+    },
+    {
+      "q": "Will low-voltage wiring be inspected along with the rest of the rebuild?",
+      "a": "Requirements vary by jurisdiction and by what is being installed. It is reasonable to ask whoever is managing the reconstruction whether low-voltage work falls under the same permit and inspection process as the rest of the project."
+    }
+  ],
+  "cta": {
+    "heading": "Rebuilding after water or fire damage in the Phoenix area?",
+    "body": "If reconstruction is already underway or about to start, Gold Water Fire's team can talk through what the rebuild involves, including where low-voltage and electrical planning fits into the schedule. Reach out at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page states general low-voltage wiring and construction planning knowledge; no specific claims about Gold Water Fire's past work are made.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild services"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "photo": {
+    "src": "/assets/img/smart-home-wiring-during-reconstruction-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Low-voltage and smart home wiring during reconstruction"
+  }
+}
