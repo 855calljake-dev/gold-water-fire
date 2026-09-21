@@ -1,0 +1,90 @@
+{
+  "slug": "change-orders-explained",
+  "path": "/guides/change-orders-explained.html",
+  "title": "Change Orders Explained: What They Are and Why They Happen | Gold Water Fire Phoenix, AZ",
+  "description": "Confused by a change order on your rebuild? Here's why they happen, what should be in one, and how to keep them from taking over your project.",
+  "h1": "Change Orders: Why They Exist and How to Keep Them From Derailing a Rebuild",
+  "breadcrumbLabel": "Change Orders Explained",
+  "intro": "You had a number in your head. A timeline too. Then a piece of paper shows up mid-project asking you to approve more money and more time, and it feels like the ground just shifted under a plan you already agreed to. Maybe this is the first change order you've seen, or maybe it's the third one this month and you're starting to wonder if anyone actually knows what this rebuild is going to cost. That confusion, and the low hum of \"is this normal or am I being taken advantage of,\" is a completely reasonable place to be sitting right now.",
+  "sections": [
+    {
+      "eyebrow": "What's actually going on",
+      "heading": "A change order is a paper trail, not a red flag by itself",
+      "body": "A change order is simply a written amendment to the original contract: it documents a change in scope, cost, or timeline and gets signed by both the homeowner and the contractor before the work moves forward. On its own, a change order isn't a sign that something went wrong. It's the mechanism that's supposed to protect you from unapproved cost creep, not the thing causing it. The problem isn't that change orders exist. The problem is when they show up vague, unexplained, or after the work is already done."
+    },
+    {
+      "heading": "Why they happen on rebuilds more than almost any other project",
+      "body": "Restoration rebuilds are different from a planned renovation because nobody chose the starting point. The original scope was written based on what could be seen and measured at the time, often while walls were still closed up. A few things commonly surface once demolition opens everything up: subfloor rot that wasn't visible until the flooring came out, electrical wiring that doesn't meet current code once a wall is opened for repair, plumbing that was already failing before the water event happened, or mold growth behind a wall that the original moisture readings didn't catch. None of that is anyone hiding something from you. It's the nature of rebuilding something you can't fully inspect until you're inside it."
+    },
+    {
+      "heading": "What a legitimate change order should actually contain",
+      "body": "A change order that's doing its job in writing should answer four questions clearly: what changed, why it changed, what it costs (broken down, not just a lump number), and how it affects the schedule. If a document just says 'additional work, $4,200' with no explanation of what was found or why it's needed, that's worth asking about before you sign anything. You're allowed to ask for the breakdown. You're allowed to ask to see photos of what was found. A contractor doing honest work should be able to walk you through it without getting defensive."
+    },
+    {
+      "heading": "How to keep change orders from taking over the project",
+      "body": "The rebuilds that go sideways aren't usually the ones with change orders. They're the ones where change orders pile up without anyone tracking the running total against the original budget. A few habits keep this from happening: ask upfront how change orders will be documented and approved before work starts, keep a running log of every approved change and its dollar amount so surprises don't compound silently, and never let verbal 'go ahead and do it' approvals substitute for a signed document, even for small items. Small unsigned changes are exactly how a project drifts thousands of dollars from where you thought you were.",
+      "cards": [
+        {
+          "heading": "Before work starts",
+          "body": "Ask how change orders get documented, who has to sign off, and how quickly you'll be notified once something is found."
+        },
+        {
+          "heading": "When one arrives",
+          "body": "Read for the what, why, cost breakdown, and schedule impact. If any of those four are missing, ask for them in writing."
+        },
+        {
+          "heading": "Through the project",
+          "body": "Keep your own running total of approved change orders next to the original contract number so you always know where you stand."
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a contractor do extra work without my written approval?",
+      "a": "You should not pay for, or feel obligated to pay for, work that wasn't documented and approved in writing before it happened. Verbal agreements are hard to enforce and easy to misremember later."
+    },
+    {
+      "q": "Are change orders a sign my contractor underbid the job?",
+      "a": "Not necessarily. On restoration rebuilds, a lot of scope simply can't be known until walls, flooring, or ceilings are opened up. A fair original estimate can still lead to legitimate changes once hidden damage is found."
+    },
+    {
+      "q": "What should I do if I don't understand why a change order is needed?",
+      "a": "Ask for the explanation in plain language and ask to see what was found, whether that's a photo, a moisture reading, or a code citation. A reasonable contractor will walk you through it before asking you to sign."
+    },
+    {
+      "q": "Does a change order always mean the project will take longer?",
+      "a": "Not always, but many do affect the schedule since the additional work has to be scoped, approved, and completed. A complete change order should state whether the timeline changes and by how much."
+    }
+  ],
+  "cta": {
+    "heading": "Facing a change order you don't understand?",
+    "body": "If you're in the middle of a rebuild in the Phoenix area and want a second set of eyes on your scope, reach out to Gold Water Fire at (480) 999-3339 or Help@goldwaterfire.com."
+  },
+  "evidence": "This page provides general educational information about how change orders work in construction and restoration projects; no specific claims are made about Gold Water Fire's own projects or job history.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild services"
+    },
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact us"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "photo": {
+    "src": "/assets/img/change-orders-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Change orders: why they exist and how to keep them from derailing a rebuild"
+  }
+}

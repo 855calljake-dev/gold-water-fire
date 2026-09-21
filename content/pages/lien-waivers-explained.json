@@ -1,0 +1,75 @@
+{
+  "slug": "lien-waivers-explained",
+  "path": "/guides/lien-waivers-explained.html",
+  "title": "Lien Waivers Explained: Rebuild Payment Paperwork | Gold Water Fire Phoenix, AZ",
+  "description": "What a lien waiver is, why it matters during a rebuild, and how to make sure the paperwork actually protects your home. A plain-language guide.",
+  "h1": "Lien Waivers: The Paperwork That Protects You As a Rebuild Gets Paid For",
+  "breadcrumbLabel": "Lien Waivers Explained",
+  "intro": "If you're in the middle of a rebuild after fire or water damage, you've probably already signed a stack of paperwork without fully knowing what it means. Then somewhere along the way, someone mentions a \"lien waiver,\" and it's one more term you're expected to understand on top of everything else you're already carrying. It's fair to feel uneasy about signing something tied to money and your house when you're not sure what it actually protects you from, or what happens if you get it wrong.",
+  "sections": [
+    {
+      "heading": "What a lien waiver actually is",
+      "body": "A lien waiver is a document where a contractor or supplier confirms they've been paid for work or materials, and in exchange gives up their right to file a mechanics lien against your property for that amount. A mechanics lien is a legal claim a contractor or subcontractor can place on your home if they did work and didn't get paid for it. Even if you already paid your general contractor in full, a subcontractor or material supplier who never got their share can still, in many states, file a lien against your property. Lien waivers exist to close that gap and put it in writing."
+    },
+    {
+      "heading": "Why a paid invoice isn't always enough",
+      "body": "It feels logical to think that once you've paid your contractor, the matter is settled. But a lien is filed against the property, not against a person's word. If your general contractor pays subcontractors late, incorrectly, or not at all, the sub can still have lien rights depending on your state's laws and how the project was set up. A signed lien waiver from every party who touched the job, general contractor, subs, and material suppliers, is what actually closes that door for good."
+    },
+    {
+      "heading": "The four common types of lien waivers",
+      "body": "Waivers generally fall into four categories, and knowing which one you're being asked to sign (or which one to request) matters. A conditional waiver on progress payment applies to a partial payment and only takes effect once that payment clears. An unconditional waiver on progress payment takes effect immediately, whether or not the payment actually clears, so it carries more risk. A conditional waiver on final payment is used when the project is complete and covers the entire remaining balance, again pending clearance. An unconditional waiver on final payment is the strongest document, confirming full and final payment with no conditions attached, typically signed once the job is fully done and paid."
+    },
+    {
+      "heading": "When to collect them during a rebuild",
+      "body": "On a rebuild project, waivers usually get collected in step with payments, not just at the very end. Each time you or your insurer releases a progress payment, that's a natural point to request a conditional waiver tied to that specific payment amount. When the project wraps up and final payment is made, an unconditional final waiver from the general contractor and, ideally, from major subcontractors and suppliers, is what closes out the paper trail. Waiting until the end to ask for all of them at once makes it harder to sort out who was paid what, and when."
+    },
+    {
+      "heading": "What to check before you sign or accept one",
+      "body": "Read the dollar amount and the description of work on the waiver against your own records before signing anything. A waiver that doesn't match the actual payment, or that's vague about which portion of the work it covers, doesn't protect anyone clearly. If you're the one paying, ask for the waiver at the same time you issue payment rather than after the fact, so there's no gap where the obligation is unclear. Keep copies of every waiver alongside your contract and payment records for the life of the project and afterward."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a subcontractor put a lien on my house even if I paid the general contractor?",
+      "a": "In many states, yes, if that subcontractor was never paid by the general contractor. Lien laws vary by state, so it's worth understanding the specific rules where your property is located. This is exactly why collecting lien waivers from subs and suppliers, not just your general contractor, matters."
+    },
+    {
+      "q": "Is a receipt the same thing as a lien waiver?",
+      "a": "No. A receipt shows that money changed hands, but it doesn't legally waive a party's right to file a lien. A lien waiver is a specific legal document with language that releases those rights, and it needs to be signed by the party who could file the lien."
+    },
+    {
+      "q": "What's the difference between a conditional and unconditional waiver?",
+      "a": "A conditional waiver only takes effect once the referenced payment actually clears, which protects you if a check bounces. An unconditional waiver takes effect immediately upon signing, regardless of whether payment clears, so it carries more risk for whoever is paying."
+    },
+    {
+      "q": "Who should be collecting lien waivers on an insurance-funded rebuild?",
+      "a": "Typically the general contractor manages this process and should be able to show you waivers from subcontractors and suppliers as the project moves forward. As the homeowner, you can and should ask to see them, especially before releasing final payment."
+    }
+  ],
+  "cta": {
+    "heading": "Rebuilding after damage and want your paperwork in order?",
+    "body": "Gold Water Fire handles reconstruction and rebuild work across the Phoenix metro area, from Peoria to San Tan Valley and everywhere between. Call (480) 999-3339 or email Help@goldwaterfire.com to talk through where your project stands."
+  },
+  "evidence": "This page explains general lien waiver concepts and construction payment practices; it does not claim anything specific about Gold Water Fire's own project history.",
+  "internalLinks": [
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild services"
+    },
+    {
+      "href": "/about.html",
+      "label": "About Gold Water Fire"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Gold Water Fire"
+    }
+  ],
+  "type": "educational",
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "photo": {
+    "src": "/assets/img/lien-waivers-explained-phoenix-az.jpg",
+    "alt": "Restoration technician illustrating: Lien waivers: the paperwork that protects you as a rebuild gets paid for"
+  }
+}
