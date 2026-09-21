@@ -1,4 +1,5 @@
 import { BRAND, esc, absUrl } from "./lib.mjs";
+import { measurementTag } from "./measurement.mjs";
 
 const NAV = [
   { href: "/water-damage-restoration.html", label: "Water Damage" },
@@ -229,6 +230,7 @@ export function shell({
   <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
   ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified })}
   ${extraHead}
+  ${measurementTag(path)}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
