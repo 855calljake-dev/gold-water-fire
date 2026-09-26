@@ -216,7 +216,7 @@ test("an unknown commit ref builds", () => {
 // ever came from another branch's build (a deploy preview) or main was
 // force-pushed, the diff would run against the wrong history: here the PR's
 // visible change is invisible in P..M and only main's internal commit shows.
-test("a cached ref that is not an ancestor of the commit builds", () => {
+test("a cached ref from another line of history builds (squash merge)", () => {
   const d = repo(); const a = base(d);
   git(d, "checkout", "-q", "-b", "pr");
   const page = { "content/pages/two.json": '{"path":"/guides/two.html"}\n' };
@@ -227,9 +227,29 @@ test("a cached ref that is not an ancestor of the commit builds", () => {
   assert.equal(git(d, "diff", "--name-only", "--no-renames", p, m), "worker/run.mjs", "precondition: P..M looks internal-only");
   const r = run(d, { CACHED_COMMIT_REF: p, COMMIT_REF: m });
   assert.equal(r.code, 1, r.out);
-  assert.match(r.out, /building, cached ref is not an ancestor of this commit/);
+  assert.match(r.out, /building, cached ref is not on this commit's first-parent history/);
   assert.equal(run(d, { CACHED_COMMIT_REF: k, COMMIT_REF: m }).code, 1, "control: from main's own history the merge is a visible change");
   assert.equal(run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: k }).code, 0, "control: the internal-only commit itself still skips");
+});
+
+// Same trap through a real merge commit: the PR head becomes an ancestor of
+// main (its second parent), so an ancestry check would pass, but it was never
+// a production build of main and P..M still hides the PR's own change.
+test("a cached ref that a merge commit pulled in (ancestor, not first-parent) builds", () => {
+  const d = repo(); const a = base(d);
+  git(d, "checkout", "-q", "-b", "pr");
+  const p = commit(d, { "content/pages/two.json": '{"path":"/guides/two.html"}\n' }, "pr: visible change");
+  git(d, "checkout", "-q", "main");
+  const k = commit(d, { "worker/run.mjs": "export const x = 9;\n" }, "main: internal only");
+  git(d, "merge", "-q", "--no-ff", "-m", "merge pr", "pr");
+  const m = git(d, "rev-parse", "HEAD");
+  git(d, "merge-base", "--is-ancestor", p, m); // precondition: P is an ancestor of M (throws otherwise)
+  assert.equal(git(d, "diff", "--name-only", "--no-renames", p, m), "worker/run.mjs", "precondition: P..M looks internal-only");
+  const r = run(d, { CACHED_COMMIT_REF: p, COMMIT_REF: m });
+  assert.equal(r.code, 1, r.out);
+  assert.match(r.out, /building, cached ref is not on this commit's first-parent history/);
+  assert.equal(run(d, { CACHED_COMMIT_REF: k, COMMIT_REF: m }).code, 1, "control: from main's own history the merge is a visible change");
+  assert.equal(run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: m }).code, 1, "control: from the last production build the merge is a visible change");
 });
 
 test("an empty diff between two different commits builds", () => {

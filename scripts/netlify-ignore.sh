@@ -35,10 +35,16 @@ build() {
 [ "$old" = "$new" ] && build "refs are equal (no cache: first build or clear-cache rebuild)"
 git cat-file -e "$old^{commit}" 2>/dev/null || build "cached ref is not in this clone (shallow clone or rewritten history)"
 git cat-file -e "$new^{commit}" 2>/dev/null || build "commit ref is not in this clone"
-# The cached ref must be an ancestor of this commit, or the diff would run
-# against some other line of history (a force-push, or a cache restored from
-# another branch's build) and could hide visitor-facing changes.
-git merge-base --is-ancestor "$old" "$new" 2>/dev/null || build "cached ref is not an ancestor of this commit"
+# The cached ref must sit on this commit's own first-parent history, the line
+# of main that production builds. A ref that is merely an ancestor (a PR head
+# pulled in by a merge commit, a cache restored from a preview build, a
+# force-push) would make the diff run against the wrong history and hide
+# visitor-facing changes.
+old_sha=$(git rev-parse --verify -q "$old^{commit}") || build "cached ref does not resolve"
+case $'\n'"$(git rev-list --first-parent "$new")"$'\n' in
+  *$'\n'"$old_sha"$'\n'*) ;;
+  *) build "cached ref is not on this commit's first-parent history" ;;
+esac
 # --no-renames: a moved file must appear as a deletion plus an addition, or a
 # visitor-facing file moved under an internal path would look internal-only.
 changed=$(git diff --name-only --no-renames "$old" "$new" --) || build "git diff failed"
