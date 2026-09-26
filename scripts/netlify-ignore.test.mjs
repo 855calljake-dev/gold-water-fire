@@ -8,7 +8,7 @@
 // Run: node --test scripts/netlify-ignore.test.mjs
 // To see which cases an older copy of the script fails:
 //   NETLIFY_IGNORE_SCRIPT=/path/to/old.sh node --test scripts/netlify-ignore.test.mjs
-import { test } from "node:test";
+import { test, after } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync, chmodSync, readFileSync } from "node:fs";
@@ -39,9 +39,13 @@ function git(cwd, ...args) {
 
 // A throwaway repository. diff.renames=true is git's default since 2.9 and is
 // the trap the rename cases exist for, so it is set explicitly.
+const scratch = [];
+after(() => { for (const d of scratch) rmSync(d, { recursive: true, force: true }); });
+
 function repo() {
   const dir = mkdtempSync(path.join(tmpdir(), "netlify-ignore-"));
-  git(dir, "init", "-q");
+  scratch.push(dir);
+  git(dir, "init", "-q", "-b", "main");
   git(dir, "config", "diff.renames", "true");
   return dir;
 }
@@ -199,6 +203,35 @@ test("an unknown cached ref builds", () => {
   assert.match(r.out, /building, cached ref is not in this clone/);
 });
 
+test("an unknown commit ref builds", () => {
+  const d = repo(); const a = base(d); internalOnly(d);
+  for (const bad of ["0000000000000000000000000000000000000000", "worker", "--cached"]) {
+    const r = run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: bad });
+    assert.equal(r.code, 1, `COMMIT_REF=${bad}: ${r.out}`);
+    assert.match(r.out, /building, commit ref is not in this clone/);
+  }
+});
+
+// Netlify sets CACHED_COMMIT_REF from the restored build cache. If that cache
+// ever came from another branch's build (a deploy preview) or main was
+// force-pushed, the diff would run against the wrong history: here the PR's
+// visible change is invisible in P..M and only main's internal commit shows.
+test("a cached ref that is not an ancestor of the commit builds", () => {
+  const d = repo(); const a = base(d);
+  git(d, "checkout", "-q", "-b", "pr");
+  const page = { "content/pages/two.json": '{"path":"/guides/two.html"}\n' };
+  const p = commit(d, page, "pr: visible change");
+  git(d, "checkout", "-q", "main");
+  const k = commit(d, { "worker/run.mjs": "export const x = 9;\n" }, "main: internal only");
+  const m = commit(d, page, "squash merge of pr");
+  assert.equal(git(d, "diff", "--name-only", "--no-renames", p, m), "worker/run.mjs", "precondition: P..M looks internal-only");
+  const r = run(d, { CACHED_COMMIT_REF: p, COMMIT_REF: m });
+  assert.equal(r.code, 1, r.out);
+  assert.match(r.out, /building, cached ref is not an ancestor of this commit/);
+  assert.equal(run(d, { CACHED_COMMIT_REF: k, COMMIT_REF: m }).code, 1, "control: from main's own history the merge is a visible change");
+  assert.equal(run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: k }).code, 0, "control: the internal-only commit itself still skips");
+});
+
 test("an empty diff between two different commits builds", () => {
   const d = repo(); const a = base(d); const b = commit(d, {}, "empty");
   const r = run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: b });
@@ -210,6 +243,7 @@ test("a grep failure builds instead of skipping", () => {
   const d = repo(); const a = base(d);
   const b = commit(d, { "index.html": "<h1>changed</h1>\n" });
   const shim = mkdtempSync(path.join(tmpdir(), "grep-shim-"));
+  scratch.push(shim);
   writeFileSync(path.join(shim, "grep"), "#!/bin/sh\necho 'grep: simulated failure' >&2\nexit 2\n");
   chmodSync(path.join(shim, "grep"), 0o755);
   const r = run(d, { CACHED_COMMIT_REF: a, COMMIT_REF: b }, shim);

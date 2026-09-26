@@ -34,9 +34,14 @@ build() {
 [ -n "$old" ] && [ -n "$new" ] || build "a commit ref is missing"
 [ "$old" = "$new" ] && build "refs are equal (no cache: first build or clear-cache rebuild)"
 git cat-file -e "$old^{commit}" 2>/dev/null || build "cached ref is not in this clone (shallow clone or rewritten history)"
+git cat-file -e "$new^{commit}" 2>/dev/null || build "commit ref is not in this clone"
+# The cached ref must be an ancestor of this commit, or the diff would run
+# against some other line of history (a force-push, or a cache restored from
+# another branch's build) and could hide visitor-facing changes.
+git merge-base --is-ancestor "$old" "$new" 2>/dev/null || build "cached ref is not an ancestor of this commit"
 # --no-renames: a moved file must appear as a deletion plus an addition, or a
 # visitor-facing file moved under an internal path would look internal-only.
-changed=$(git diff --name-only --no-renames "$old" "$new") || build "git diff failed"
+changed=$(git diff --name-only --no-renames "$old" "$new" --) || build "git diff failed"
 [ -n "$changed" ] || build "no files changed between the refs"
 
 visible=$(printf '%s\n' "$changed" | grep -Ev "$INTERNAL"); grep_rc=$?
