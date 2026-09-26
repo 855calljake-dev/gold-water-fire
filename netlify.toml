@@ -5,6 +5,10 @@
 [build]
   command = "npm run build"
   publish = "."
+  # Skip the paid production deploy when a commit touches only internal files
+  # (worker code, run records, backlog, docs, CI). Fail-safe: anything else builds.
+  # See scripts/netlify-ignore.sh and bytomorrow-bos doctrine/HANDOFF-NETLIFY-DEPLOY-REDUCTION.md.
+  ignore = "bash ./scripts/netlify-ignore.sh"
 
 # Images are overwritten in place under a stable, slug-based filename, so new
 # bytes arrive at an unchanged URL. Under the previous rule (max-age=604800,
