@@ -60,6 +60,28 @@ superseded: it was real crawlable page text that said nothing about the page it 
 the template (`templates/content-page.mjs`, `templates/home.mjs`), never burned into the image file
 — the layout layer stays accurate and editable, a burned-in caption doesn't.
 
+## Deploys, and which commits skip the paid build
+
+Every push to `main` starts a Netlify production build, and each successful production deploy
+costs 15 credits. `netlify.toml` sets `ignore = "bash ./scripts/netlify-ignore.sh"`: the build
+is cancelled only when every changed file is on that script's explicit internal list (worker
+code, CI, `.railway/`, `content/backlog.json`, `content/graduation.json`, the root docs, tests,
+`nixpacks.toml`). Anything else builds, and the deploy log says which way it went
+(`netlify-ignore: skipping, only internal files changed: ...` or
+`netlify-ignore: building, <reason>`).
+
+- Content batches always build: they touch `content/pages/` and `assets/img/`.
+- After a skipped commit, the dashboard's plain **Deploy site** is skipped again by the same
+  diff. To redeploy without a visitor-facing commit (a changed Netlify env var, the forms
+  setting below), use **Clear cache and deploy site** or a build hook.
+- `npm run test:netlifyignore` (part of `npm test`) exercises the script in throwaway repos and
+  checks that every path on the internal list is 404-blocked in `netlify.toml` or a dot-path,
+  and that none is a build input. Keep that true when adding to the list.
+- Removing the `ignore` line restores build-on-every-commit.
+
+Origin, proof and the cross-tenant pattern: `bytomorrow-bos`
+`doctrine/HANDOFF-NETLIFY-DEPLOY-REDUCTION.md`; this repo's PR #51.
+
 ## Before this goes live (Tier-1 launch checklist)
 
 Full checklist: `bytomorrow-bos/doctrine/BYTOMORROW-TECH-STACK.md` → "Tier-1 launch checklist."
