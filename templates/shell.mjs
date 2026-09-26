@@ -169,7 +169,7 @@ function footer() {
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="year"></span> ${esc(BRAND.name)}. ${esc(BRAND.license)}.</span>
-        <a href="https://bytomorrow.ai" target="_blank" rel="noopener">Built by ByTomorrow.ai, automated operations for real businesses</a>
+        <a href="https://bytomorrow.ai" target="_blank" rel="nofollow noopener">Built by ByTomorrow.ai, automated operations for real businesses</a>
       </div>
     </div>
   </footer>
