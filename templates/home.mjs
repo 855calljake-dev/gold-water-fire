@@ -2,188 +2,261 @@ import { shell } from "./shell.mjs";
 import { esc } from "./lib.mjs";
 import { CREDIT_LINE } from "./craftsmanship.mjs";
 
-// Six hand-picked finished-work shots for the homepage. Data and wording
-// rules live with the gallery (templates/craftsmanship.mjs); this renders
-// nothing when the craftsmanship data is absent, so the home build never
-// breaks on missing data.
-function craftGalleryStrip(craft) {
-  const featured = (craft?.images || []).filter((img) => img.featured).slice(0, 6);
-  if (!featured.length) return "";
+// The landing page. Implements the canvas Jake approved on 2026-09-27
+// ("Gold Water Fire Landing Page", desktop 1440 and mobile 390 artboards):
+// dark navy ground, Montserrat, gold accent, and these sections in this
+// order: hero, facts band, the first hour, three services, one-crew gallery,
+// team, service area, free-inspection form. Header, nav, footer, schema, and
+// the Preferred Source button still come from shell(), so the page keeps the
+// same chrome as every other page and every sitewide ruling reaches it.
+//
+// Every photograph here already ships elsewhere on the site: the hero is the
+// site's own night photo, the nine work photos are from the screened
+// craftsmanship set (content/craftsmanship.json, CLAIMS-TO-VERIFY.md
+// "Team craftsmanship photos" row: credited to members of our team, never
+// presented as a completed Gold Water Fire job), and the three portraits are
+// the About page's team photos (rights recorded in 855calljake-dev/gwf-media).
+//
+// Copy is the canvas's copy. Two lines were changed to keep the claims gate:
+// the "Call us" card no longer says a person answers (the line is answered by
+// the dispatch agent first), and the team heading no longer says these are
+// the people who pick up the phone, for the same reason.
+
+const ACCENT = "#c9962b";
+
+const ICON = {
+  phone: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>`,
+  arrow: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>`,
+  warn: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20z"></path><path d="M12 10v4"></path><path d="M12 17h.01"></path></svg>`,
+  valve: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="4"></circle><path d="M2 13h6"></path><path d="M16 13h6"></path><path d="M12 3v6"></path><path d="M9 3h6"></path></svg>`,
+  camera: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13" r="4"></circle></svg>`,
+  call: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>`,
+  drop: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7s-6 6.6-6 11.3a6 6 0 0 0 12 0c0-4.7-6-11.3-6-11.3z"></path></svg>`,
+  flame: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1.1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3.3.3 1.3 1.2 2.4 2.5 2.8z"></path></svg>`,
+  house: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${ACCENT}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>`,
+};
+
+// Craftsmanship photos the canvas uses, by file. Alt text comes from
+// content/craftsmanship.json when the entry exists (the screened wording), with
+// the canvas's own alt as the fallback so the page still builds without it.
+const WORK = {
+  water: { file: "/assets/img/craftsmanship/multiple-air-movers-dehumidifier-drying-living-room.jpg", alt: "Air movers and a dehumidifier drying a living room with the lower drywall removed", w: 1600, h: 1200 },
+  fire: { file: "/assets/img/craftsmanship/bedroom-interior-heavy-fire-smoke-damage-walls.jpg", alt: "Bedroom with heavy fire and smoke damage to walls and ceiling", w: 1200, h: 1600 },
+  rebuild: { file: "/assets/img/craftsmanship/remodeled-kitchen-gray-quartz-counters-shaker-cabinets.jpg", alt: "Remodeled kitchen with gray quartz counters and shaker cabinets", w: 1600, h: 1200 },
+  g1: { file: "/assets/img/craftsmanship/kitchen-prepared-plastic-containment-sheeting-taped-over.jpg", alt: "Kitchen sealed with plastic containment sheeting before work begins", w: 1600, h: 1200 },
+  g2: { file: "/assets/img/craftsmanship/new-drywall-hung-taped-along-hallway-reconstruction.jpg", alt: "New drywall hung and taped along a hallway", w: 1200, h: 1600 },
+  g3: { file: "/assets/img/craftsmanship/tiled-groin-vault-shower-ceiling-stone-mosaic.jpg", alt: "Tiled groin vault shower ceiling with stone mosaic", w: 1200, h: 1600 },
+  g4: { file: "/assets/img/craftsmanship/white-shaker-cabinets-installed-kitchen-wood-look.jpg", alt: "Kitchen with new white shaker cabinets and wood-look flooring", w: 1600, h: 1200 },
+  g5: { file: "/assets/img/craftsmanship/soaking-tub-glassenclosed-shower-white-surround-finished.jpg", alt: "Finished bathroom with soaking tub and glass shower enclosure", w: 1600, h: 1200 },
+};
+
+// The confirmed service-area list (CLAIMS-TO-VERIFY.md, 2026-08-06), in the
+// canvas's order. Each links to its card on /service-areas/, the same anchors
+// the guides side menu uses.
+const CITIES = [
+  "Phoenix", "Mesa", "Chandler", "Scottsdale", "Glendale", "Gilbert", "Tempe", "Peoria", "Surprise",
+  "Avondale", "Goodyear", "Buckeye", "Apache Junction", "Queen Creek", "San Tan Valley",
+  "Fountain Hills", "Paradise Valley", "Cave Creek", "El Mirage", "Tolleson", "Litchfield Park",
+];
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+function workImg(craft, key, extra = "") {
+  const w = WORK[key];
+  const entry = (craft?.images || []).find((i) => i.file === w.file);
+  const alt = entry?.alt || w.alt;
+  return `<img src="${w.file}" alt="${esc(alt)}" width="${entry?.width || w.w}" height="${entry?.height || w.h}" loading="lazy"${extra}>`;
+}
+
+function initials(name) {
+  return String(name).split(/\s+/).map((p) => p[0]).join("").slice(0, 2).toUpperCase();
+}
+
+// Team from data/team.json (the About page reads the same file at runtime).
+// Members with a photo get a figure; the rest a name and role, as on About.
+function teamSection(team) {
+  const members = team?.team || [];
+  const withPhoto = members.filter((m) => m.photo);
+  const without = members.filter((m) => !m.photo);
+  if (!members.length) return "";
   return `
-    <section>
+    <section class="lp-band lp-pad" id="team">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Craftsmanship</span>
-          <h2>The standard our team works to</h2>
-          <p>${esc(CREDIT_LINE)}</p>
-        </div>
-        <div class="card-grid">
-          ${featured.map((img) => `<div class="card has-media"><div class="card-media"><img src="${img.file}" alt="${esc(img.alt)}" loading="lazy" width="${img.width}" height="${img.height}"></div></div>`).join("\n          ")}
-        </div>
-        <p class="img-note"><a href="/craftsmanship.html">See the full craftsmanship gallery &rarr;</a></p>
+        <h2>The people who show up.</h2>
+        <p class="lp-sub">A small crew out of Chandler. You will know our names, and we will know your house.</p>
+        ${withPhoto.length ? `<div class="lp-team">
+          ${withPhoto.map((m) => `<figure>
+            <img src="${esc(m.photo)}" alt="${esc(m.alt || m.name)}" width="800" height="1000" loading="lazy">
+            <figcaption><span class="name">${esc(m.name)}</span><span class="role">${esc(m.role)}</span></figcaption>
+          </figure>`).join("\n          ")}
+        </div>` : ""}
+        ${without.length ? `<div class="lp-team-more">
+          ${without.map((m) => `<div class="person"><span class="initial" aria-hidden="true">${esc(initials(m.name))}</span><span><span class="name">${esc(m.name)}</span><span class="role">${esc(m.role)}</span></span></div>`).join("\n          ")}
+        </div>` : ""}
       </div>
     </section>`;
 }
 
-export function renderHome(craft = null) {
+export function renderHome(craft = null, team = null) {
   // SOP-AGENTIC-SEO-WEBSITES.md §8.3, Jake's ruling 2026-08-09, cross-tenant:
-  // an image caption is the page's own H1, bare. Home isn't a per-page template
-  // — renderHome() takes no data, so there's no page.h1 to read — and the hero
-  // renders the H1 with a gold accent word. So it lives here once, plain for the
-  // caption and marked up for the hero, rather than being typed in two places
-  // that can drift apart.
-  const h1 = "Fire and water damage restoration for the Phoenix metro area.";
-  const heroH1 = h1.replace("Phoenix", '<span class="gold-word">Phoenix</span>');
+  // an illustrative image's caption is the page's own H1, bare. The hero photo
+  // is the one generated image on this page, so its caption sits under the
+  // hero. Marked up once here for the hero and reused plain for the caption.
+  const h1 = "Water or fire in your home? Call us first.";
+  const hero = {
+    src: "/assets/img/hero-emergency-response-night-phoenix-az.jpg",
+    alt: h1,
+  };
 
   const bodyHtml = `
-    <section class="hero hero-photo">
+  <div class="lp">
+    <section class="lp-hero" id="top">
+      <img src="${hero.src}" alt="${esc(hero.alt)}" width="1920" height="914" loading="eager" fetchpriority="high">
+      <div class="wrap">
+        <div class="lp-hero-inner">
+          <div class="lp-eyebrow"><span class="dot"></span><span>24/7 emergency response</span></div>
+          <h1>${esc(h1)}</h1>
+          <p class="lp-lede">One local crew handles the drying, the cleanup and the rebuild, anywhere in the Phoenix metro.</p>
+          <div class="lp-ctas">
+            <a class="lp-btn lp-btn-gold" href="tel:+14809993339">${ICON.phone}<span>Call (480) 999-3339</span></a>
+            <a class="lp-btn lp-btn-ghost" href="#inspection">Book a free inspection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wrap"><p class="lp-img-note">${esc(h1)}</p></div>
+
+    <section class="lp-band lp-facts" aria-label="At a glance">
+      <div class="wrap">
+        <div class="item"><strong>Answered 24/7</strong><span>Nights, weekends and holidays.</span></div>
+        <div class="item"><strong>Free inspection</strong><span>No cost to have us come look.</span></div>
+        <div class="item"><strong>AZ ROC #264344</strong><span>Licensed Arizona contractor, KB-2.</span></div>
+        <div class="item"><strong>Based in Chandler</strong><span>221 E Willis Rd, Ste 8.</span></div>
+      </div>
+    </section>
+
+    <section class="lp-pad">
+      <div class="wrap">
+        <h2>The first hour, before we get there.</h2>
+        <p class="lp-sub">Most people have never dealt with this before. Here is what matters right now, in order.</p>
+        <div class="lp-steps">
+          <div class="step">${ICON.warn}<h3>Get safe</h3><p>Smoke, sparking outlets or a sagging ceiling means everyone goes outside. For active fire, call 911 first.</p></div>
+          <div class="step">${ICON.valve}<h3>Stop the water</h3><p>Close the main shut-off. If you can reach the breaker without standing in water, cut power to wet rooms.</p></div>
+          <div class="step">${ICON.camera}<h3>Take photos</h3><p>Photograph every affected room before anything moves or gets thrown out. Your insurer will ask for them.</p></div>
+          <div class="step">${ICON.call}<h3>Call us</h3><p>Answered at any hour. We come out, look at the damage with you and lay out the plan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-band lp-pad" id="services">
+      <div class="wrap">
+        <h2>Three kinds of work. One crew does all of it.</h2>
+        <div class="lp-bento">
+          <a class="tall" href="/water-damage-restoration.html">
+            ${workImg(craft, "water")}
+            <div class="body">
+              <div class="head">${ICON.drop}<h3>Water damage restoration</h3></div>
+              <p>Burst pipes, AC condensate leaks, failed water heaters and monsoon flooding. We extract the water, dry the structure and confirm it is dry before anything gets closed up.</p>
+              <span class="more">Water damage details ${ICON.arrow}</span>
+            </div>
+          </a>
+          <a class="wide" href="/fire-damage-restoration.html">
+            ${workImg(craft, "fire")}
+            <div class="body">
+              <div class="head">${ICON.flame}<h3>Fire and smoke</h3></div>
+              <p>Board-up, soot and odor removal, and the water left behind by the hoses.</p>
+              <span class="more">Fire damage details ${ICON.arrow}</span>
+            </div>
+          </a>
+          <a class="wide" href="/reconstruction.html">
+            ${workImg(craft, "rebuild")}
+            <div class="body">
+              <div class="head">${ICON.house}<h3>Reconstruction</h3></div>
+              <p>Drywall, cabinets, flooring, tile and paint, finished by the team that dried it.</p>
+              <span class="more">Rebuild details ${ICON.arrow}</span>
+            </div>
+          </a>
+        </div>
+        <p class="lp-credit">${esc(CREDIT_LINE)}</p>
+      </div>
+    </section>
+
+    <section class="lp-pad">
+      <div class="wrap">
+        <h2>The people who dry it out are the people who put it back.</h2>
+        <p class="lp-sub">No handoff to a stranger halfway through. You keep one plan and one phone number from the first hour to the last coat of paint.</p>
+        <div class="lp-gallery">
+          ${workImg(craft, "g1")}
+          ${workImg(craft, "g2")}
+          ${workImg(craft, "g3")}
+          ${workImg(craft, "g4")}
+          ${workImg(craft, "g5")}
+        </div>
+        <p class="lp-credit">${esc(CREDIT_LINE)} <a href="/craftsmanship.html">See the full gallery</a></p>
+      </div>
+    </section>
+
+    ${teamSection(team)}
+
+    <section class="lp-pad lp-area">
       <div class="wrap">
         <div>
-          <span class="badge-247"><span class="dot"></span>24/7 Emergency Response</span>
-          <h1>${heroH1}</h1>
-          <p class="lede">Gold Water Fire handles the cleanup, drying, and rebuild after fire, smoke, or water damage hits your home or business, with one crew, start to finish, day or night.</p>
-          <div class="hero-ctas">
-            <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
-            <a class="btn-secondary" href="/contact.html">Get a Free Inspection</a>
-          </div>
-          <div class="hero-facts">
-            <div class="fact"><strong>Free</strong>Inspection</div>
-            <div class="fact"><strong>24/7</strong>Emergency response</div>
-            <div class="fact"><strong>AZ ROC #264344 · KB-2</strong>Licensed contractor</div>
-            <div class="fact"><strong>Chandler, AZ</strong>Serving the Phoenix metro area</div>
-          </div>
+          <h2>Anywhere in the Phoenix metro.</h2>
+          <p class="lp-sub">From Peoria to San Tan Valley and Avondale to Apache Junction, plus the outlying towns past them. Not on the list? Call anyway.</p>
         </div>
+        <ul class="lp-cities">
+          ${CITIES.map((c) => `<li><a href="/service-areas/#${slug(c)}">${esc(c)}</a></li>`).join("\n          ")}
+        </ul>
       </div>
     </section>
 
-    <section>
+    <section class="lp-band lp-pad lp-inspect" id="inspection">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">What We Do</span>
-          <h2>Three services, one crew, no handoffs</h2>
-          <p>From the first call to the final walkthrough, Gold Water Fire manages restoration and reconstruction under one roof, with no juggling separate contractors for cleanup and rebuild.</p>
-        </div>
-        <div class="card-grid">
-          <div class="card has-media">
-            <div class="card-media"><img src="/assets/img/water-damage-restoration-drying-equipment-phoenix-az.jpg" alt="Water damage restoration technician running air movers and a dehumidifier in a flooded room" loading="lazy" width="1600" height="893"></div>
-            <h3>Water Damage Restoration</h3>
-            <p>Extraction, structural drying, and cleanup after leaks, pipe breaks, and flooding.</p>
-            <a class="card-link" href="/water-damage-restoration.html">See how it works &rarr;</a>
-          </div>
-          <div class="card has-media">
-            <div class="card-media"><img src="/assets/img/fire-smoke-damage-restoration-cleanup-phoenix-az.jpg" alt="Fire damage restoration crew removing smoke-damaged drywall near a soot-covered brick fireplace" loading="lazy" width="1600" height="893"></div>
-            <h3>Fire Damage Restoration</h3>
-            <p>Smoke and soot remediation, odor control, and structural cleanup after a fire.</p>
-            <a class="card-link" href="/fire-damage-restoration.html">See how it works &rarr;</a>
-          </div>
-          <div class="card has-media">
-            <div class="card-media"><img src="/assets/img/reconstruction-rebuild-restoration-phoenix-az.jpg" alt="Reconstruction crew framing new interior walls during a residential rebuild" loading="lazy" width="1600" height="893"></div>
-            <h3>Reconstruction &amp; Rebuild</h3>
-            <p>Repair and rebuild damaged structures back to move-in condition, led by our in-house construction team.</p>
-            <a class="card-link" href="/reconstruction.html">See how it works &rarr;</a>
+        <div>
+          <h2>Book a free inspection.</h2>
+          <p class="lp-sub">Tell us what happened. We call you back, come out, and walk you through what we find. It costs nothing to have us look.</p>
+          <div class="lp-phone-block">
+            <span>Water on the floor right now? Skip the form.</span>
+            <a href="tel:+14809993339">(480) 999-3339</a>
+            <span>Answered 24/7</span>
           </div>
         </div>
-        <p class="img-note">${h1}</p>
+        <form class="lp-form" name="service-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company">
+          <input type="hidden" name="form-name" value="service-request">
+          <p class="hp"><label>Leave this field blank<input name="company"></label></p>
+          <div class="row">
+            <div class="field"><label for="lp-name">Your name</label><input id="lp-name" type="text" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="lp-phone">Phone</label><input id="lp-phone" type="tel" name="phone" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="lp-address">Property address or city</label><input id="lp-address" type="text" name="address" autocomplete="street-address"></div>
+          <div class="field">
+            <label for="lp-service">What happened?</label>
+            <select id="lp-service" name="service">
+              <option value="Water damage">Water damage</option>
+              <option value="Fire damage">Fire or smoke damage</option>
+              <option value="Reconstruction / rebuild">Repair or rebuild</option>
+              <option value="Not sure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="lp-message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="lp-message" name="message" rows="4"></textarea></div>
+          <button type="submit">Book a free inspection</button>
+          <p class="note">We only use your number to call you back about this.</p>
+        </form>
       </div>
     </section>
-
-    <section class="trust-band">
-      <div class="wrap">
-        <div class="section-head" style="max-width:100%">
-          <span class="eyebrow" style="color:var(--gold-light)">Why Gold Water Fire</span>
-          <h2 style="color:#fff">Local ownership, licensed work, one crew for the whole job</h2>
-        </div>
-      </div>
-      <div class="trust-grid">
-        <div class="item">
-          <strong>AZ ROC #264344 · KB-2</strong>
-          <span>Licensed Arizona contractor.</span>
-        </div>
-        <div class="item">
-          <strong>Restoration + Reconstruction</strong>
-          <span>Cleanup and rebuild from the same company, with no second contractor to hire.</span>
-        </div>
-        <div class="item">
-          <strong>Chandler-based</strong>
-          <span>221 E Willis Rd, serving the greater Phoenix metro area.</span>
-        </div>
-        <div class="item">
-          <strong>Owner-operated</strong>
-          <span>Co-founded and run by Jim Bennett and Jake Taylor.</span>
-        </div>
-      </div>
-    </section>
-
-    ${craftGalleryStrip(craft)}
-
-    <section class="photo-band">
-      <img src="/assets/img/restoration-contractor-phoenix-az-metro-home-exterior.jpg" alt="Single-story home in the Phoenix, Arizona metro area at dusk" loading="lazy" width="1600" height="893">
-      <div class="caption">
-        <div class="wrap">
-          <h3>Serving homes and businesses across the Phoenix metro</h3>
-          <p>Based in Chandler, Gold Water Fire responds to fire and water damage across the greater Phoenix area.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="soft">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">How It Works</span>
-          <h2>What happens after you call</h2>
-        </div>
-        <ol class="process-list">
-          <li>
-            <span class="num">1</span>
-            <div>
-              <h4>Call or request service</h4>
-              <p>Tell us what happened and where. We'll ask a few quick questions to get the right crew moving.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num">2</span>
-            <div>
-              <h4>Assessment and mitigation</h4>
-              <p>We assess the damage, stop it from spreading, and begin extraction, drying, or cleanup.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num">3</span>
-            <div>
-              <h4>Restoration and rebuild</h4>
-              <p>If reconstruction is needed, our own team handles repairs (walls, flooring, and finishes) through to completion.</p>
-            </div>
-          </li>
-          <li>
-            <span class="num">4</span>
-            <div>
-              <h4>Final walkthrough</h4>
-              <p>We walk the property with you before we call the job done.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="wrap">
-        <h2>Fire or water damage doesn't wait. Neither do we.</h2>
-        <p>Call now to talk to Gold Water Fire about your property.</p>
-        <a class="btn-primary" href="tel:+14809993339">Call (480) 999-3339</a>
-      </div>
-    </section>`;
+  </div>`;
 
   return shell({
     path: "/",
     title: "24/7 Fire & Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
     description: "24/7 emergency fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339, day or night.",
     h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
-    photo: {
-      src: "/assets/img/restoration-contractor-phoenix-az-metro-home-exterior.jpg",
-      alt: "Single-story home in the Phoenix, Arizona metro area at dusk",
-    },
+    photo: hero,
     datePublished: "2026-08-06T08:54:02-07:00",
-    dateModified: "2026-09-02T12:00:00-07:00",
+    dateModified: "2026-09-27T16:00:00-07:00",
+    extraHead: `<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/home.css">`,
     bodyHtml,
   });
 }
