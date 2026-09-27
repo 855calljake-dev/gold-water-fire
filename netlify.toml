@@ -5,6 +5,12 @@
 [build]
   command = "npm run build"
   publish = "."
+  # Skip the paid production deploy when a commit touches only internal files
+  # (worker code, backlog, docs, CI, tests). Fail-safe: anything else builds.
+  # After a skipped commit the plain "Deploy site" button is skipped too; use
+  # "Clear cache and deploy site" or a build hook to force a deploy.
+  # See scripts/netlify-ignore.sh and bytomorrow-bos doctrine/HANDOFF-NETLIFY-DEPLOY-REDUCTION.md.
+  ignore = "bash ./scripts/netlify-ignore.sh"
 
 # Images are overwritten in place under a stable, slug-based filename, so new
 # bytes arrive at an unchanged URL. Under the previous rule (max-age=604800,
@@ -71,6 +77,14 @@
 
 [[redirects]]
   from = "/package.json"
+  to = "/"
+  status = 404
+  force = true
+
+# Railway build config for the content worker. Nothing on the site reads it,
+# and scripts/netlify-ignore.sh treats it as internal, so it must not be served.
+[[redirects]]
+  from = "/nixpacks.toml"
   to = "/"
   status = 404
   force = true
