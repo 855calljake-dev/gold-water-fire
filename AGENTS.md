@@ -40,11 +40,13 @@ git fetch --all --prune && git status -sb && git branch --show-current
 
 - **`main`** is where doctrine, config, templates, worker code, and this file itself land. This repo
   has no PR gate for that kind of work; a commit to `main` is what makes the change visible to the
-  next session, same reasoning as `bytomorrow-bos` Hard Rule 7.
+  next session, same reasoning as `bytomorrow-bos` Hard Rule 9 (no long-lived branches; a commit to
+  `main` is the record).
 - **`content-batch-YYYY-MM-DD-<timestamp>`** is the worker's own dated branch for one batch of
   drafted pages, per `SOP-AGENTIC-SEO-WEBSITES.md` §2.4/§5. GWF graduated 2026-08-12: the worker
   opens the PR and merges it itself, but the PR stays the audit record for that batch (one squashed
-  commit per batch, so `git revert -m 1 <sha>` pulls the whole batch off the live site). If you're
+  commit per batch, so `git revert <sha>` pulls the whole batch off the live site; a squash merge has
+  one parent, so no `-m 1`, per the `bytomorrow-bos` correction of 2026-08-27). If you're
   doing content-batch work, you opened this branch yourself, for this batch, and you know why
   you're on it.
 - **A Claude Code worktree branch (`claude/...`)** is the deliberate per-task workspace this
