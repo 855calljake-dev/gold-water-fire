@@ -140,7 +140,15 @@ async function main() {
   // appears here automatically.
   written.push(await writeHtml("/service-areas/index.html", renderAreasIndex(pages)));
 
-  written.push(await writeHtml("/", renderHome(craft)));
+  // Team roster for the landing page's team section (the About page reads the
+  // same file in the browser). Missing file: the section is simply omitted.
+  let team = null;
+  try {
+    team = JSON.parse(await readFile(path.join(ROOT, "data", "team.json"), "utf8"));
+  } catch {
+    console.warn("data/team.json not found; building home without the team section");
+  }
+  written.push(await writeHtml("/", renderHome(craft, team)));
   written.push(await writeHtml("/about.html", renderAbout()));
   written.push(await writeHtml("/contact.html", renderContact()));
   written.push(await writeHtml("/thanks.html", renderThanks()));
