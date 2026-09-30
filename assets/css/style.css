@@ -679,6 +679,16 @@ footer.site-footer {
   margin: 0 0 10px;
   color: #c7d0dc;
 }
+.preferred-source .team-login {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+}
+.preferred-source .team-login a {
+  color: #93a1b3;
+}
+.preferred-source .team-login a:hover {
+  color: var(--gold-light);
+}
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;

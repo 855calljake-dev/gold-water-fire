@@ -140,7 +140,13 @@ function header(activePath) {
   </header>`;
 }
 
-function footer() {
+// Staff sign-in for the CRM, on the homepage only (Jake, 2026-09-30: "a 'Team
+// Login' on the bottom of the home page, near the google button"). It points
+// at GoHighLevel's own sign-in because the ByTomorrow-branded login
+// (portal.bytomorrow.ai) is not built yet; change it here when it is.
+const TEAM_LOGIN_URL = "https://app.gohighlevel.com/";
+
+function footer(path) {
   return `
   <footer class="site-footer">
     <div class="wrap">
@@ -170,6 +176,7 @@ function footer() {
       <div class="preferred-source">
         <p>Add ${esc(BRAND.name)} as a preferred source on Google.</p>
         <div google-add-preferred-source-btn data-theme="dark"></div>
+        ${path === "/" ? `<p class="team-login"><a href="${TEAM_LOGIN_URL}" rel="nofollow noopener">Team Login</a></p>` : ""}
       </div>
       <div class="footer-bottom">
         <span>&copy; <span id="year"></span> ${esc(BRAND.name)}. ${esc(BRAND.license)}.</span>
@@ -240,7 +247,7 @@ ${header(path)}
   <main id="main">
 ${bodyHtml}
   </main>
-${footer()}
+${footer(path)}
 </body>
 </html>
 `;
