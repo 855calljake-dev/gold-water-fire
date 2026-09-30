@@ -214,8 +214,16 @@ nav.main-nav a.active {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--white);
   border-radius: var(--radius);
-  padding: 8px 12px;
+  padding: 8px 14px;
+  font: inherit;
   font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-toggle:hover,
+.nav-toggle[aria-expanded="true"] {
+  border-color: var(--gold-light);
+  color: var(--gold-light);
 }
 
 /* Hero */
@@ -727,6 +735,28 @@ footer.site-footer {
   }
   .nav-toggle {
     display: inline-block;
+    order: 2;
+  }
+  .btn-call {
+    order: 3;
+  }
+  /* Open menu: a full-width list under the brand, Menu button and call
+     button, one link per row with a tap target of about 48px. */
+  nav.main-nav.nav-open {
+    display: flex;
+    order: 4;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 4px;
+  }
+  nav.main-nav.nav-open a {
+    padding: 12px 4px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  nav.main-nav.nav-open a:last-child {
+    border-bottom: 0;
   }
   header.site-header .wrap {
     flex-wrap: wrap;

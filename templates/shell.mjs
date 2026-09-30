@@ -129,7 +129,10 @@ function header(activePath) {
           <span class="tagline">Restoration Services</span>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Primary">
+      <!-- Shown only under 760px, where the nav is hidden. assets/js/main.js
+           toggles .nav-open on the nav and keeps aria-expanded in step. -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
         ${NAV.map((n) => `<a href="${n.href}"${n.href === activePath ? ' class="active"' : ""}>${esc(n.label)}</a>`).join("\n        ")}
       </nav>
       <a class="btn-call" href="${BRAND.phoneHref}">Call ${BRAND.phone}</a>

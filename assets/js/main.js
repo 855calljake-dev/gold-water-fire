@@ -40,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
       var open = nav.classList.toggle("nav-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
+    // Escape closes an open menu and hands focus back to the button.
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.classList.contains("nav-open")) {
+        nav.classList.remove("nav-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.focus();
+      }
+    });
   }
 
   if (document.getElementById("team-list")) {
