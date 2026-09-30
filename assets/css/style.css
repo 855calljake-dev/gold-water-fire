@@ -99,22 +99,38 @@ header.site-header {
   z-index: 50;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
+/* The header row is wider than the page's 1180px column on purpose: brand,
+   nine nav links and the call button need about 1330px on one line. Below
+   1400px the nav moves to its own row (see the media query after .btn-call).
+   Before 2026-09-29 the nav was allowed to squeeze the row, and flexbox shrank
+   the logo mark to 0px wide on every desktop width. */
 header.site-header .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  max-width: 1440px;
   padding: 16px 24px;
-  gap: 20px;
+  gap: 10px 20px;
 }
 .brand-block {
   display: flex;
+  flex: none;
   align-items: center;
   gap: 12px;
   text-decoration: none;
 }
-.brand-mark img {
+/* Explicit box, never auto: the mark's viewBox is 1462 x 1858, so 40px tall
+   is 31.5px wide. flex: none keeps it from being shrunk to nothing. */
+.brand-mark {
+  display: block;
+  flex: none;
+  width: 32px;
   height: 40px;
-  width: auto;
+}
+.brand-mark img {
+  width: 32px;
+  height: 40px;
   display: block;
 }
 .brand-text {
@@ -149,10 +165,13 @@ header.site-header .wrap {
 
 nav.main-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 26px;
+  justify-content: center;
+  gap: 6px 20px;
 }
 nav.main-nav a {
+  white-space: nowrap;
   color: #e7ecf2;
   text-decoration: none;
   font-size: 0.95rem;
@@ -172,9 +191,21 @@ nav.main-nav a.active {
   text-decoration: none;
   font-size: 0.95rem;
   white-space: nowrap;
+  flex: none;
 }
 .btn-call:hover {
   background: var(--ember-dark);
+}
+
+/* Not enough width for one row: brand and call button stay on the first row,
+   the nav takes the full second row and wraps its own links if it must. */
+@media (max-width: 1399px) {
+  nav.main-nav {
+    order: 3;
+    flex-basis: 100%;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
 }
 
 .nav-toggle {
@@ -183,8 +214,16 @@ nav.main-nav a.active {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--white);
   border-radius: var(--radius);
-  padding: 8px 12px;
+  padding: 8px 14px;
+  font: inherit;
   font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-toggle:hover,
+.nav-toggle[aria-expanded="true"] {
+  border-color: var(--gold-light);
+  color: var(--gold-light);
 }
 
 /* Hero */
@@ -640,6 +679,16 @@ footer.site-footer {
   margin: 0 0 10px;
   color: #c7d0dc;
 }
+.preferred-source .team-login {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+}
+.preferred-source .team-login a {
+  color: #93a1b3;
+}
+.preferred-source .team-login a:hover {
+  color: var(--gold-light);
+}
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
@@ -696,9 +745,48 @@ footer.site-footer {
   }
   .nav-toggle {
     display: inline-block;
+    order: 2;
+    margin-left: auto;
+  }
+  .btn-call {
+    order: 3;
+  }
+  /* Open menu: a full-width list under the brand, Menu button and call
+     button, one link per row with a tap target of about 48px. */
+  nav.main-nav.nav-open {
+    display: flex;
+    order: 4;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 4px;
+  }
+  nav.main-nav.nav-open a {
+    padding: 12px 4px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  nav.main-nav.nav-open a:last-child {
+    border-bottom: 0;
   }
   header.site-header .wrap {
     flex-wrap: wrap;
+  }
+}
+
+/* Smallest phones (320px): tighten the first row so the Menu button stays
+   beside the brand instead of dropping to a row of its own. */
+@media (max-width: 360px) {
+  header.site-header .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+    column-gap: 12px;
+  }
+  .brand {
+    font-size: 1.25rem;
+  }
+  .nav-toggle {
+    padding: 8px 12px;
   }
 }
 
