@@ -99,22 +99,38 @@ header.site-header {
   z-index: 50;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
+/* The header row is wider than the page's 1180px column on purpose: brand,
+   nine nav links and the call button need about 1330px on one line. Below
+   1400px the nav moves to its own row (see the media query after .btn-call).
+   Before 2026-09-29 the nav was allowed to squeeze the row, and flexbox shrank
+   the logo mark to 0px wide on every desktop width. */
 header.site-header .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  max-width: 1440px;
   padding: 16px 24px;
-  gap: 20px;
+  gap: 10px 20px;
 }
 .brand-block {
   display: flex;
+  flex: none;
   align-items: center;
   gap: 12px;
   text-decoration: none;
 }
-.brand-mark img {
+/* Explicit box, never auto: the mark's viewBox is 1462 x 1858, so 40px tall
+   is 31.5px wide. flex: none keeps it from being shrunk to nothing. */
+.brand-mark {
+  display: block;
+  flex: none;
+  width: 32px;
   height: 40px;
-  width: auto;
+}
+.brand-mark img {
+  width: 32px;
+  height: 40px;
   display: block;
 }
 .brand-text {
@@ -149,10 +165,13 @@ header.site-header .wrap {
 
 nav.main-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 26px;
+  justify-content: center;
+  gap: 6px 20px;
 }
 nav.main-nav a {
+  white-space: nowrap;
   color: #e7ecf2;
   text-decoration: none;
   font-size: 0.95rem;
@@ -172,9 +191,21 @@ nav.main-nav a.active {
   text-decoration: none;
   font-size: 0.95rem;
   white-space: nowrap;
+  flex: none;
 }
 .btn-call:hover {
   background: var(--ember-dark);
+}
+
+/* Not enough width for one row: brand and call button stay on the first row,
+   the nav takes the full second row and wraps its own links if it must. */
+@media (max-width: 1399px) {
+  nav.main-nav {
+    order: 3;
+    flex-basis: 100%;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
 }
 
 .nav-toggle {
