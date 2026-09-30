@@ -13,6 +13,7 @@ import { renderAbout } from "../templates/about.mjs";
 import { renderContact } from "../templates/contact.mjs";
 import { renderThanks, render404 } from "../templates/simple.mjs";
 import { renderCraftsmanship } from "../templates/craftsmanship.mjs";
+import { renderRoof } from "../templates/roof.mjs";
 import { BRAND, absUrl } from "../templates/lib.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -91,6 +92,7 @@ async function buildLlmsTxt(pages) {
     `- [Home](${absUrl("/")}): overview, service area, and contact`,
     `- [About](${absUrl("/about.html")}): company and team`,
     `- [Craftsmanship](${absUrl("/craftsmanship.html")}): photo gallery of reconstruction work by members of the team`,
+    `- [Roofing](${absUrl("/roof/")}): 24/7 roof leak and storm response, emergency tarping, repair and replacement for tile, shingle, foam and flat roofs`,
     `- [Contact](${absUrl("/contact.html")})`,
   ];
   const byType = { service: [], educational: [], location: [] };
@@ -149,6 +151,10 @@ async function main() {
     console.warn("data/team.json not found; building home without the team section");
   }
   written.push(await writeHtml("/", renderHome(craft, team)));
+  // Roofing landing page. www.goldwaterroof.com 301s here (netlify.toml).
+  // Written as /roof/index.html, listed in the sitemap by its canonical /roof/.
+  await writeHtml("/roof/index.html", renderRoof(pages));
+  written.push("/roof/");
   written.push(await writeHtml("/about.html", renderAbout()));
   written.push(await writeHtml("/contact.html", renderContact()));
   written.push(await writeHtml("/thanks.html", renderThanks()));

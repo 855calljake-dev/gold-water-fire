@@ -152,6 +152,7 @@ function footer() {
             <li><a href="/water-damage-restoration.html">Water Damage Restoration</a></li>
             <li><a href="/fire-damage-restoration.html">Fire Damage Restoration</a></li>
             <li><a href="/reconstruction.html">Reconstruction &amp; Rebuild</a></li>
+            <li><a href="/roof/">Roofing</a></li>
           </ul>
         </div>
         <div>
