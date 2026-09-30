@@ -736,6 +736,7 @@ footer.site-footer {
   .nav-toggle {
     display: inline-block;
     order: 2;
+    margin-left: auto;
   }
   .btn-call {
     order: 3;
@@ -760,6 +761,22 @@ footer.site-footer {
   }
   header.site-header .wrap {
     flex-wrap: wrap;
+  }
+}
+
+/* Smallest phones (320px): tighten the first row so the Menu button stays
+   beside the brand instead of dropping to a row of its own. */
+@media (max-width: 360px) {
+  header.site-header .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+    column-gap: 12px;
+  }
+  .brand {
+    font-size: 1.25rem;
+  }
+  .nav-toggle {
+    padding: 8px 12px;
   }
 }
 
