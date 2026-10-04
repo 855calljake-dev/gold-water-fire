@@ -13,11 +13,16 @@
   ignore = "bash ./scripts/netlify-ignore.sh"
 
 # One URL form, .html (Jake, 2026-10-03, SEO audit fix 1). Netlify's Pretty
-# URLs post-processing rewrote every href="/x.html" to href='/x' after the
-# build, so internal links said extensionless while the canonical tag, og:url,
-# sitemap, llms.txt and IndexNow all say .html. Set here rather than in the UI
-# so the choice is versioned; this key overrides the UI toggle. Both /x.html
-# and /x still resolve; no redirect between them is added.
+# URLs post-processing rewrote href="/x.html" to href='/x' after the build, so
+# internal links said extensionless while the canonical tag, og:url, sitemap,
+# llms.txt and IndexNow all say .html. Shown on PR #58's Deploy Preview: with
+# this key off, links keep .html; production, with it on, had them rewritten.
+# Set here rather than in the UI so the choice is versioned; this key overrides
+# the UI toggle. /x.html and /x both still return 200; no redirect between them
+# is added. Side effect, also seen on the preview: Pretty URLs was what 301'd
+# /x/ to /x and /guides to /guides/. With it off those forms return 200 and
+# rely on the canonical tag, and a redirect rule cannot add or remove a
+# trailing slash (Netlify docs), so that cannot be put back here.
 [build.processing.html]
   pretty_urls = false
 
