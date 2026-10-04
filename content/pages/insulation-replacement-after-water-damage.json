@@ -22,6 +22,32 @@
     {
       "heading": "When replacement is the standard call",
       "body": "As a general rule, insulation that has been saturated with water, especially from a slow leak, a sewage backup, or a flood, is treated as a total loss rather than something to dry and reuse. This is standard practice across the restoration industry, not just a preference. Insulation is inexpensive relative to the risk of leaving compromised material inside a wall or attic where nobody will see it again until there's a problem. The general exception is minor surface dampness caught within hours, on materials that haven't lost their shape or structure, where a contractor may judge that drying is reasonable. That determination depends on the specific material, how long it was wet, and what it was exposed to."
+    },
+    {
+      "heading": "How each type of insulation handles water",
+      "body": "The rule above fits the fibrous insulation most homes have. Foam products behave differently, so the answer depends on what is actually in the wall or attic. Even insulation that survives sits against studs, subfloor, and drywall that can stay wet after it dries, so the keep-or-remove call is made with the surrounding structure, not the insulation alone.",
+      "cards": [
+        {
+          "heading": "Fiberglass batts",
+          "body": "The glass fibers don't rot, but the paper facing on most batts can grow mold, and water flattens the batt so it insulates less even after it dries. Batts that got damp and were dried quickly, with air moving through the cavity, are sometimes kept. Saturated batts, or batts with a stained or sagging facing, are usually replaced."
+        },
+        {
+          "heading": "Cellulose",
+          "body": "Cellulose is treated paper, so it soaks up water and holds it. Wet cellulose gets heavy, settles to the bottom of the cavity, and stays damp long enough to invite mold. Once it is thoroughly wet it is generally removed."
+        },
+        {
+          "heading": "Closed-cell spray foam",
+          "body": "Dense enough that little water gets in, which is why it is used in flood-prone and below-grade spaces. Water on the surface can usually be wiped off and left to air dry. The thing to check is water trapped behind it, where the foam did not bond to the framing and moisture can sit against the wood."
+        },
+        {
+          "heading": "Open-cell spray foam",
+          "body": "Softer and more porous than closed-cell, so it can take on water like a sponge and hold it for a while. Whether it comes out depends on how much it absorbed and how long it stayed wet."
+        },
+        {
+          "heading": "Rigid foam board",
+          "body": "XPS, EPS, and polyiso boards resist water well on their own. The concern is the seams and the space behind the panel, where water can travel and get trapped against framing or subfloor."
+        }
+      ]
     }
   ],
   "faqs": [
@@ -35,11 +61,15 @@
     },
     {
       "q": "How do I know if insulation in my attic or walls got wet?",
-      "a": "Signs include sagging or discolored drywall, a musty smell, visible water stains on ceilings, or insulation that looks matted, darkened, or compressed where you can see it in an attic. Because insulation is often hidden, water can be trapped without any visible sign from inside the living space."
+      "a": "Signs include sagging or discolored drywall, a musty smell, visible water stains on ceilings, or insulation that looks matted, darkened, or compressed where you can see it in an attic. Because insulation is often hidden, water can be trapped without any visible sign from inside the living space. A moisture meter can check inside a wall or attic cavity without opening it all the way up."
     },
     {
       "q": "Is wet insulation a health risk if it's left in place?",
       "a": "Wet insulation left inside a closed cavity creates conditions where mold can grow, and mold spores and musty odors can circulate through a home's air over time. The specific health impact depends on the situation, but leaving known wet insulation unaddressed is generally not recommended."
+    },
+    {
+      "q": "Does wet insulation always mean mold is coming?",
+      "a": "Not always, but the risk goes up the longer the material stays damp. Insulation that absorbs and holds water, like cellulose or open-cell foam, creates the kind of prolonged moisture mold needs. Insulation that resists water, like closed-cell foam, carries much less of that risk on its own."
     }
   ],
   "cta": {
@@ -63,7 +93,7 @@
   ],
   "type": "educational",
   "datePublished": "2026-09-01",
-  "dateModified": "2026-09-01",
+  "dateModified": "2026-10-03",
   "photo": {
     "src": "/assets/img/insulation-replacement-after-water-damage-phoenix-az.jpg",
     "alt": "Restoration technician illustrating: Why wet insulation is replaced rather than dried"

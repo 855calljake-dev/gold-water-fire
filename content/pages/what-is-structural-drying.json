@@ -10,7 +10,7 @@
     {
       "eyebrow": "The part nobody explains",
       "heading": "Water does not sit on your house, it goes into it",
-      "body": "When water spreads across a floor, only a small part of the problem is the water you can see. The rest has already been absorbed. Drywall pulls water upward through its paper facing and gypsum core. Wood subfloor and framing take it into the cell walls of the fiber itself. Carpet pad acts like a sponge that holds many times its own weight. Insulation in a wall cavity can stay saturated for weeks with no outward sign at all. Concrete slab, which people assume is waterproof, is actually porous and will hold moisture and release it slowly back into the room for days.\n\nSo when the standing water is extracted, the visible phase of the problem ends and the invisible phase begins. The surface dries first because air moves across it. Everything behind and beneath that surface, the parts with no airflow, dries last. Structural drying is the work of pulling that trapped moisture back out of the building materials themselves and out of the air, in a controlled way, until the materials return to the moisture level they had before the loss."
+      "body": "When water spreads across a floor, only a small part of the problem is the water you can see. The rest has already been absorbed. Drywall pulls water upward through its paper facing and gypsum core. Wood subfloor and framing take it into the cell walls of the fiber itself. Carpet pad acts like a sponge that holds many times its own weight. Insulation in a wall cavity can stay saturated for weeks with no outward sign at all. Concrete slab, which people assume is waterproof, is actually porous and will hold moisture and release it slowly back into the room for days. Water also keeps moving after it lands. Drywall and wood wick it upward and sideways, which is why the damp area at the end of a job is often larger than the wet spot at the start.\n\nSo when the standing water is extracted, the visible phase of the problem ends and the invisible phase begins. The surface dries first because air moves across it. Everything behind and beneath that surface, the parts with no airflow, dries last. Structural drying is the work of pulling that trapped moisture back out of the building materials themselves and out of the air, in a controlled way, until the materials return to the moisture level they had before the loss."
     },
     {
       "eyebrow": "How it actually works",
@@ -58,6 +58,14 @@
     {
       "q": "Does the drying stop the moment the equipment is picked up?",
       "a": "Picking up equipment means the drying targets were met. What is left is the physical repair of anything cut, pulled, or removed to get there, which is a separate stage of work with its own timeline. It helps to ask early what the rebuild scope will be so the two phases do not come as a surprise one after the other."
+    },
+    {
+      "q": "Does running the fans harder speed up drying?",
+      "a": "Not past a point. Evaporation needs air that can still take on moisture. If the air in the room is already saturated, more airflow only moves wet air around, which is why air movers are paired with dehumidifiers instead of being used alone."
+    },
+    {
+      "q": "What happens if drying is stopped too early?",
+      "a": "Moisture left inside walls, subfloor, or framing can lead to warping, delamination of engineered wood, or mold growth, and it may not show or smell until well after the equipment is gone."
     }
   ],
   "cta": {
@@ -89,7 +97,7 @@
   "evidence": "This page states only general, widely accepted restoration industry knowledge about evaporation, dehumidification, moisture measurement and material behavior; the only company-specific details used are the confirmed name, phone, email, services and Phoenix metro service area.",
   "type": "educational",
   "datePublished": "2026-08-22",
-  "dateModified": "2026-08-22",
+  "dateModified": "2026-10-03",
   "photo": {
     "src": "/assets/img/what-is-structural-drying-phoenix-az.jpg",
     "alt": "Restoration technician illustrating: What structural drying actually is and why it takes longer than it looks like it should"

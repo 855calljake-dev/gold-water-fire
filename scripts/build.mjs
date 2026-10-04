@@ -136,11 +136,16 @@ async function main() {
 
   // Checklist item 15: the guides hub. Generated from the same page data, so
   // every future educational page appears here with zero extra effort.
-  written.push(await writeHtml("/guides/index.html", renderGuidesIndex(pages)));
+  // Both hubs are written as index.html but listed in the sitemap (and pinged
+  // to IndexNow) by their slash URL, which is what their canonical says
+  // (SEO audit fix 2, 2026-10-03). Same pattern as /roof/ below.
+  await writeHtml("/guides/index.html", renderGuidesIndex(pages));
+  written.push("/guides/");
   // Companion hub for the location pages, split out of /guides/ so each list
   // stays about one thing. Same generation model: every future city page
   // appears here automatically.
-  written.push(await writeHtml("/service-areas/index.html", renderAreasIndex(pages)));
+  await writeHtml("/service-areas/index.html", renderAreasIndex(pages));
+  written.push("/service-areas/");
 
   // Team roster for the landing page's team section (the About page reads the
   // same file in the browser). Missing file: the section is simply omitted.

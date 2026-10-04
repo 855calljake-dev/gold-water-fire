@@ -174,14 +174,15 @@ export function renderGuidesIndex(pages) {
     )
     .join("\n");
 
+  // The hub's one <h1>, in the same hero every content page uses. It had none
+  // until 2026-10-03 (SEO audit fix 2); the line that used to be an <h2> here
+  // is now the hero's intro.
   const introHtml = `
-    <section>
+    <section class="page-hero">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Guides</span>
-          <h2>Straight answers about water and fire damage</h2>
-          <p>Written plainly, one question per page: what to do, what to expect, and what actually matters when it happens to your home.</p>
-        </div>
+        <div class="breadcrumb"><a href="/">Home</a> / Guides</div>
+        <h1>Water and Fire Damage Guides</h1>
+        <p>Straight answers, written plainly, one question per page: what to do, what to expect, and what actually matters when it happens to your home.</p>
       </div>
     </section>`;
 
@@ -208,7 +209,7 @@ export function renderGuidesIndex(pages) {
     title: "Water & Fire Damage Guides | Gold Water Fire",
     description:
       "Plain-language guides on water damage, fire damage, insurance, and what to expect from a restoration crew, from Gold Water Fire in Phoenix.",
-    h1AsTitle: "Guides",
+    h1AsTitle: "Water and Fire Damage Guides",
     breadcrumbLabel: "Guides",
     datePublished: "2026-08-10",
     dateModified: newest || "2026-08-10",
@@ -243,7 +244,9 @@ export function renderAreasIndex(pages) {
   }
   const cities = [...byCity.keys()].sort();
 
-  // The id is the anchor target the guides side menu links to, /service-areas/#<city>.
+  // The id is the anchor target for /service-areas/#<city>, which the homepage
+  // and /roof/ city lists link to. The guides side menu linked here too until
+  // 2026-10-03; it now links to a page for each city (templates/side-menu.mjs).
   const cityBlock = (c) => `
           <div class="card" id="${esc(c)}">
             <h3>${esc(pretty(c))}, AZ</h3>
@@ -258,13 +261,21 @@ export function renderAreasIndex(pages) {
   const serviceCard = (p) =>
     `<div class="card"><h3><a href="${p.path}">${esc(p.h1)}</a></h3><p>${esc(p.description)}</p></div>`;
 
+  // One <h1> in the shared hero (SEO audit fix 2, 2026-10-03; the hub had
+  // none). The intro line moved up into the hero with it.
   const bodyHtml = `
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="/">Home</a> / Service Areas</div>
+        <h1>Service Areas Across the Phoenix Metro</h1>
+        <p>Based in Chandler and working across the greater Phoenix metro area. Pick your city for what restoration and rebuild look like where you live.</p>
+      </div>
+    </section>
     <section>
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">Service Areas</span>
           <h2>Where Gold Water Fire works</h2>
-          <p>Based in Chandler and working across the greater Phoenix metro area. Pick your city for what restoration and rebuild look like where you live.</p>
         </div>
         <div class="card-grid">${cities.map(cityBlock).join("")}
         </div>
@@ -287,10 +298,13 @@ export function renderAreasIndex(pages) {
 
   return shell({
     path: "/service-areas/",
-    title: "Service Areas | Fire & Water Damage Restoration Across Phoenix Metro | Gold Water Fire",
+    // "Fire & Water Damage Restoration" left the title on 2026-10-03 (SEO audit
+    // fix 2): it overlapped the homepage's title, and the hub was one of the
+    // competing pages in 15 of the 38 queries the audit found split across pages.
+    title: "Service Areas Across the Phoenix Metro | Gold Water Fire",
     description:
       "Cities Gold Water Fire serves across the Phoenix, AZ metro: fire and water damage restoration and reconstruction in Mesa, Chandler, Phoenix and the surrounding valley.",
-    h1AsTitle: "Service Areas",
+    h1AsTitle: "Service Areas Across the Phoenix Metro",
     breadcrumbLabel: "Service Areas",
     datePublished: "2026-08-12",
     dateModified: newest || "2026-08-12",

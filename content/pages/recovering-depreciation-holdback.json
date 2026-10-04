@@ -1,15 +1,15 @@
 {
   "slug": "recovering-depreciation-holdback",
   "path": "/guides/recovering-depreciation-holdback.html",
-  "title": "Recoverable Depreciation Holdback Explained | Gold Water Fire Phoenix, AZ",
-  "description": "Confused why your insurance check is less than the estimate? Here's how the depreciation holdback works and what it actually takes to get it released.",
-  "h1": "The Replacement Cost Holdback: How Recoverable Depreciation Actually Gets Paid Out",
-  "breadcrumbLabel": "Recovering Depreciation Holdback",
+  "title": "How to Get a Depreciation Holdback Released | Gold Water Fire Phoenix, AZ",
+  "description": "Insurance check smaller than the estimate? Here is what it takes to get the held-back depreciation released, and where those requests usually stall.",
+  "h1": "How to Get Your Depreciation Holdback Released After Repairs",
+  "breadcrumbLabel": "Releasing the Depreciation Holdback",
   "intro": "You opened the insurance check expecting one number and found a smaller one, with a line somewhere in the paperwork mentioning \"recoverable depreciation\" or a \"holdback\" that sounds like it should come to you eventually but doesn't explain how, when, or if it actually will. It's a strange kind of frustration, because the money isn't gone, it's just stuck somewhere behind a process nobody walked you through, and you're left doing math in your head about whether you can even afford to start repairs with what's in hand right now.",
   "sections": [
     {
       "heading": "Why the first check is never the full amount",
-      "body": "Most homeowner policies pay claims on a Replacement Cost Value (RCV) basis, but they don't hand you the full RCV up front. Instead, they calculate Actual Cash Value (ACV), which is the replacement cost minus depreciation for the age and wear of the damaged item, and pay that first. The difference between RCV and ACV is the recoverable depreciation, and it's held back on purpose. Insurers do this because releasing full replacement cost before repairs happen would mean paying you to replace something you haven't actually replaced yet. The holdback is the insurer's way of confirming the work gets done before they pay for it as new."
+      "body": "Most homeowner policies pay a claim in two parts. The first check is Actual Cash Value: the replacement cost minus depreciation for age and wear. The difference, the recoverable depreciation, is held back until the repair is done, because paying full replacement cost first would mean paying to replace something that has not been replaced yet. What depreciation and recoverable depreciation mean, and which part can never be recovered, is covered in <a href=\"/guides/depreciation-and-recoverable-depreciation.html\">depreciation and recoverable depreciation on a property claim</a>. The rest of this page is about getting that second check released."
     },
     {
       "heading": "What actually triggers the second payment",
@@ -67,9 +67,9 @@
   ],
   "type": "educational",
   "datePublished": "2026-09-17",
-  "dateModified": "2026-09-17",
+  "dateModified": "2026-10-03",
   "photo": {
     "src": "/assets/img/recovering-depreciation-holdback-phoenix-az.jpg",
-    "alt": "Restoration technician illustrating: The replacement-cost holdback: how recoverable depreciation actually gets paid out"
+    "alt": "Restoration technician illustrating: How to get your depreciation holdback released after repairs"
   }
 }

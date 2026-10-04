@@ -12,6 +12,15 @@
   # See scripts/netlify-ignore.sh and bytomorrow-bos doctrine/HANDOFF-NETLIFY-DEPLOY-REDUCTION.md.
   ignore = "bash ./scripts/netlify-ignore.sh"
 
+# One URL form, .html (Jake, 2026-10-03, SEO audit fix 1). Netlify's Pretty
+# URLs post-processing rewrote every href="/x.html" to href='/x' after the
+# build, so internal links said extensionless while the canonical tag, og:url,
+# sitemap, llms.txt and IndexNow all say .html. Set here rather than in the UI
+# so the choice is versioned; this key overrides the UI toggle. Both /x.html
+# and /x still resolve; no redirect between them is added.
+[build.processing.html]
+  pretty_urls = false
+
 # Images are overwritten in place under a stable, slug-based filename, so new
 # bytes arrive at an unchanged URL. Under the previous rule (max-age=604800,
 # no revalidation) a replaced image stayed invisible to anyone who had loaded
@@ -58,6 +67,47 @@
 [[redirects]]
   from = "http://www.goldwaterroof.com/*"
   to = "https://www.goldwaterfire.com/roof/"
+  status = 301
+  force = true
+
+# Guides merged into an owner page (SEO audit fixes 5, 6, 7, approved by Jake
+# 2026-10-03). The impact and redirect plan is in gwf-bos
+# doctrine/evidence/2026-10-03-seo-audit-fixes/. One rule per URL form so both
+# /x.html and /x reach the owner in one hop. force = true makes the rule win
+# even if a stale file is ever left at the old path.
+[[redirects]]
+  from = "/guides/which-insulation-survives-getting-wet.html"
+  to = "/guides/insulation-replacement-after-water-damage.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/which-insulation-survives-getting-wet"
+  to = "/guides/insulation-replacement-after-water-damage.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/why-drying-takes-days-not-hours.html"
+  to = "/guides/what-is-structural-drying.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/why-drying-takes-days-not-hours"
+  to = "/guides/what-is-structural-drying.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/hvac-system-after-a-fire.html"
+  to = "/guides/hvac-replacement-after-fire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/guides/hvac-system-after-a-fire"
+  to = "/guides/hvac-replacement-after-fire.html"
   status = 301
   force = true
 
