@@ -27,6 +27,8 @@ import { fileURLToPath } from "node:url";
 import { loadConfig } from "./config.mjs";
 import { draftPage } from "./draft.mjs";
 import { checkPage } from "./evidenceGate.mjs";
+import { checkClarityMoves } from "./clarity.mjs";
+import { landingTest, LANDING_MODEL } from "./landing.mjs";
 import { generateImage, IMAGE_COST_USD_ESTIMATE } from "./image.mjs";
 import { deGraduate, findBatchPrForDate, mergeBatchPr, openContentBatchPr, readGraduationState } from "./recorder.mjs";
 import { verifyClaims, VERIFIER_MODEL } from "./verify.mjs";
@@ -213,6 +215,9 @@ async function main() {
   // straight off the batch PR, and deliberately NOT a de-graduation input —
   // see the comment at the call site.
   const verifierResults = [];
+  // Landing Test verdicts (clarity move 2), same shape and same purpose as
+  // verifierResults: the shadow-phase audit trail, read off the batch PR.
+  const landingResults = [];
   // Tracked per provider, not as one number, because they are separately
   // funded accounts that run dry independently -- Anthropic bills a card,
   // Higgsfield's API draws a prepaid balance that is NOT the same wallet as
@@ -289,7 +294,14 @@ async function main() {
         // metadata. Set once here so it can never be forgotten per-page again.
         page.datePublished = dateStr;
         page.dateModified = dateStr;
-        const check = checkPage(page);
+        // The Seven Clarity Moves are a structural contract like the rest of
+        // the gate (worker/clarity.mjs), so a miss is a refusal: retried with
+        // the problem as feedback, and counted toward the de-graduation rate.
+        // Kept out of checkPage itself so that file's regression fixtures,
+        // real pages from before 2026-10-03, stay valid.
+        const gate = checkPage(page);
+        const clarity = gate.ok ? checkClarityMoves(page) : { ok: true, problems: [] };
+        const check = { ok: gate.ok && clarity.ok, problems: [...gate.problems, ...clarity.problems] };
         spend.anthropicUsd += ((usage.input_tokens || 0) * anthropicRate.input + (usage.output_tokens || 0) * anthropicRate.output) / 1_000_000;
 
         if (!check.ok) {
@@ -361,6 +373,42 @@ async function main() {
             // logged non-event by design — shadow exists to measure, and a
             // broken verifier must not stop a healthy batch.
             console.log(`[work] claim verifier (shadow) ${v.verdict.toUpperCase()} ${item.slug}${v.verdict === "fail" ? ` -- ${claimNote}` : ""}${v.verdict === "error" ? ` -- ${v.reason}` : ""}`);
+          }
+        }
+
+        // Landing Test, clarity move 2 (worker/landing.mjs). After the claim
+        // verifier and before any image spend. A judgment gate under the
+        // §2.2 rollout rule: shadow by default, and like the verifier it
+        // never feeds gateRejections, so it can never demote the tenant.
+        if (cfg.landingMode !== "off") {
+          const lt = await landingTest({ page, apiKey: cfg.anthropicApiKey });
+          const lRate = ANTHROPIC_USD_PER_MTOK[LANDING_MODEL] || { input: 10, output: 50 };
+          spend.anthropicUsd += ((lt.usage.input_tokens || 0) * lRate.input + (lt.usage.output_tokens || 0) * lRate.output) / 1_000_000;
+          const ltNote = lt.reason || `intended "${page.takeaway}"; reader took "${lt.took}"${lt.why ? ` (${lt.why})` : ""}`;
+          landingResults.push({ slug: item.slug, mode: cfg.landingMode, verdict: lt.verdict, detail: ltNote });
+
+          if (cfg.landingMode === "enforce") {
+            if (lt.verdict === "error") {
+              console.log(`[work] REJECTED ${item.slug}: landing test unavailable (${lt.reason}) -- fail closed, page not shipped this run`);
+              lastProblems = [`landing test unavailable: ${lt.reason}`];
+              lastKind = "landing-test-unavailable";
+              artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
+                status: "failed", reason: `landing test unavailable: ${lt.reason}` });
+              break;
+            }
+            if (lt.verdict === "fail") {
+              console.log(`[work] REJECTED ${item.slug} (attempt ${attempt}): landing test -- ${ltNote}`);
+              lastProblems = [`a cold reader took "${lt.took}" from the page, but the takeaway is "${page.takeaway}". Rebuild the page so it delivers the takeaway: lead with it in bottomLine, keep sections on it, cut side points.`];
+              lastKind = "landing-test";
+              if (attempt === 2) {
+                artifactRows.push({ date: dateStr, surface: "agentic-seo", type: "page", name: page.title || item.slug,
+                  status: "rejected", menuUrl: buildMenuUrl(page), reason: `landing test: ${ltNote}` });
+              }
+              continue;
+            }
+            console.log(`[work] landing test PASS ${item.slug}`);
+          } else {
+            console.log(`[work] landing test (shadow) ${lt.verdict.toUpperCase()} ${item.slug} -- ${ltNote}`);
           }
         }
 
@@ -536,6 +584,12 @@ async function main() {
     for (const r of verifierResults) {
       summaryLines.push(`- ${r.verdict.toUpperCase()} \`${r.slug}\`${r.detail && r.detail !== "clean" ? `: ${r.detail}` : ""}`);
     }
+  }
+  if (landingResults.length) {
+    // Two spot-checked shadow batches here are the bar for flipping
+    // RUNTIME_LANDING_MODE to enforce, same as the verifier above.
+    summaryLines.push(`\n**Landing Test (${cfg.landingMode})**, clarity move 2, model ${LANDING_MODEL}:`);
+    for (const r of landingResults) summaryLines.push(`- ${r.verdict.toUpperCase()} \`${r.slug}\`: ${r.detail}`);
   }
 
   const result = await openContentBatchPr({

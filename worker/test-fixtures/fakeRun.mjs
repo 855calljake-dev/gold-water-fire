@@ -21,7 +21,7 @@
 // reach, applied in the order slugs first appear rather than by slug name, so
 // a change to content/backlog.json does not silently re-target the test.
 //
-//   { "page": "good" | "nofaqs" | "emdash", "image": "clean" | "garbled"
+//   { "page": "good" | "nofaqs" | "emdash" | "noclarity", "image": "clean" | "garbled"
 //     | "providerfail" | "accountfail", "outputTokens": 10000 }
 //
 // "nofaqs" returns a page carrying a single FAQ, which is the exact refusal
@@ -116,6 +116,16 @@ function fakePage(slug, index, flavor) {
     // The 2026-08-31 refusal, reproduced: one FAQ where the gate requires two.
     faqs: flavor === "nofaqs" ? faqs.slice(0, 1) : faqs,
     cta: { heading: "Talk it through", body: paragraph(words, index + 9, 2) },
+    // The Seven Clarity Moves (worker/clarity.mjs). "noclarity" drops them, the
+    // way a drafter that ignored the new contract would.
+    ...(flavor === "noclarity" ? {} : {
+      bottomLine: `The ${words[0]} decides the ${words[1]}. Check it before anything gets closed up.`,
+      plainEnglishHeading: `What is a ${words[4]}?`,
+      plainEnglishBody: `${paragraph(words, index + 3, 4)} ${words[5]} ${words[6]}.`,
+      whyItMattersHeading: `Why the ${words[0]} matters for your house`,
+      whyItMattersBody: paragraph(words, index + 6, 4),
+      takeaway: `Check the ${words[0]} before the ${words[2]} gets closed up.`,
+    }),
     internalLinks: [{ href: "/water-damage-restoration.html", label: "Water damage restoration" }],
     evidence: "General mechanics only. No company specific claim appears on this page.",
   };
@@ -188,6 +198,21 @@ globalThis.fetch = async (input, opts = {}) => {
   // one starts calling twice.
   if (url.includes("api.anthropic.com")) {
     const body = JSON.parse(opts.body);
+    // The Landing Test (worker/landing.mjs): a cold read, then a comparison.
+    // FAKE_LANDING=miss makes every comparison a non-match.
+    if (body.tool_choice?.name === "emit_reading") {
+      return jsonResponse({
+        content: [{ type: "tool_use", name: "emit_reading", input: { took: "Check the moisture before anything gets closed up." } }],
+        usage: { input_tokens: 1500, output_tokens: 100 },
+      });
+    }
+    if (body.tool_choice?.name === "emit_match") {
+      const match = process.env.FAKE_LANDING !== "miss";
+      return jsonResponse({
+        content: [{ type: "tool_use", name: "emit_match", input: { match, why: match ? "Same point." : "The reader took a side point." } }],
+        usage: { input_tokens: 300, output_tokens: 60 },
+      });
+    }
     if (body.tool_choice?.name === "emit_verdict") {
       return jsonResponse({
         content: [{ type: "tool_use", name: "emit_verdict", input: { verdict: "pass", ungrounded_claims: [] } }],

@@ -66,6 +66,30 @@ IaC SDK (`railway` on npm, IaC support) after that pattern was written;
 `doctrine/BYTOMORROW-TECH-STACK.md`'s account-status notes should get a
 follow-up correction for this.
 
+## The Seven Clarity Moves (2026-10-03)
+
+Every drafted page carries the four elements the 2nd Brain wiki
+(`06-Storyteller-Tactics/05-luntz-seven-moves.md`) requires of articles and
+landing pages: `bottomLine` (move 6, in the hero under the intro),
+`plainEnglishHeading`/`plainEnglishBody` (move 1, "What is X?"),
+`whyItMattersHeading`/`whyItMattersBody` (move 4) and `takeaway` (move 7, a
+Key takeaway box). Prompt and checks live in `clarity.mjs`; a missing or
+malformed element is a structural refusal, same as a missing FAQ. The wording
+rules are checked too: each canonical phrase at most once, no "what would you
+do?" style close for this overwhelmed reader, no public credit to Luntz.
+
+Move 2, the **Landing Test** (`landing.mjs`), has a cold reader say what it took
+from the page (without the takeaway box) and compares that to `takeaway`. It is
+a judgment gate, so `RUNTIME_LANDING_MODE` defaults to `shadow`: verdicts go in
+the run log and the batch PR body, nothing is blocked, and it can never
+de-graduate the tenant. Flip to `enforce` after two shadow batches have been
+spot-checked, the same rollout the claim verifier had.
+
+The two clarity elements that are a heading plus a body are FLAT string fields
+on purpose. As nested `{heading, body}` objects they made the drafting model
+emit tool-call markup and drop `sections`, `faqs` and `cta` on two of two live
+drafts (2026-10-03).
+
 ## Run it
 
 ```bash

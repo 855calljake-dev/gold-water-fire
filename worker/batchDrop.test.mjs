@@ -222,3 +222,48 @@ test("a batch emptied by the image provider does NOT de-graduate", async () => {
   assert.ok(stdout.includes("ABORTING RUN"), "the run stopped rather than paying to draft pages it would discard");
   assert.ok(stdout.includes("not-attempted"), "the pages it never reached are recorded as never reached");
 });
+
+// ---------------------------------------------------------------------------
+// THE SEVEN CLARITY MOVES (worker/clarity.mjs, worker/landing.mjs), 2026-10-03
+// ---------------------------------------------------------------------------
+
+test("a page without the clarity moves is refused like any structural miss, and the rest publishes", async () => {
+  const { stdout } = await runWorker({
+    FAKE_PLAN: JSON.stringify([good, { page: "noclarity", image: "clean", outputTokens: 10000 }, good, good]),
+    RUNTIME_MAX_PAGES: "4",
+  });
+  const writes = writesFrom(stdout);
+  const pages = writes.filter((w) => w.kind === "file" && w.path.startsWith("content/pages/"));
+  assert.equal(pages.length, 3, `the three pages with the moves publish. stdout:\n${stdout.slice(-4000)}`);
+  const pr = writes.find((w) => w.kind === "pr");
+  assert.ok(pr.body.includes("Missing `bottomLine`"), "the drop table quotes the clarity reason");
+  assert.ok(!writes.some((w) => w.kind === "graduation"), "one page under the rate does not de-graduate");
+});
+
+test("the Landing Test runs in shadow by default: verdicts on the PR, nothing blocked", async () => {
+  const { stdout } = await runWorker({
+    FAKE_PLAN: JSON.stringify([good, good]),
+    RUNTIME_MAX_PAGES: "2",
+    FAKE_LANDING: "miss",
+  });
+  const writes = writesFrom(stdout);
+  const pages = writes.filter((w) => w.kind === "file" && w.path.startsWith("content/pages/"));
+  assert.equal(pages.length, 2, "a shadow miss blocks nothing");
+  const pr = writes.find((w) => w.kind === "pr");
+  assert.ok(pr.body.includes("**Landing Test (shadow)**"), `the PR carries the shadow audit trail. body:\n${pr.body}`);
+  assert.ok(pr.body.includes("reader took"), "with what the cold reader actually took");
+  assert.ok(!pr.body.includes("\u2014"), "no em dash in the PR body");
+});
+
+test("in enforce mode a Landing Test miss drops the page but never de-graduates the tenant", async () => {
+  const { stdout } = await runWorker({
+    FAKE_PLAN: JSON.stringify([good, good]),
+    RUNTIME_MAX_PAGES: "2",
+    RUNTIME_LANDING_MODE: "enforce",
+    FAKE_LANDING: "miss",
+  });
+  const writes = writesFrom(stdout);
+  const pages = writes.filter((w) => w.kind === "file" && w.path.startsWith("content/pages/"));
+  assert.equal(pages.length, 0, "every page missed, so none ships");
+  assert.ok(!writes.some((w) => w.kind === "graduation"), "a judgment gate has no demotion authority");
+});

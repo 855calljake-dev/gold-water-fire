@@ -93,12 +93,14 @@ const VERDICT_SCHEMA = {
 // The same fields evidenceGate sees. A field the verifier never reads is a
 // field a lie can hide in — keep this in step with checkPage's coverage.
 export function pageText(page) {
-  const parts = [page.title, page.description, page.h1, page.intro];
+  const parts = [page.title, page.description, page.h1, page.intro, page.bottomLine,
+    page.plainEnglishHeading, page.plainEnglishBody, page.whyItMattersHeading, page.whyItMattersBody];
   for (const s of page.sections || []) parts.push(s.heading, s.body);
   for (const f of page.faqs || []) parts.push(f.q, f.a);
   const c = page.cta;
   if (c && typeof c === "object") parts.push(c.heading, c.body);
   else if (c) parts.push(String(c));
+  parts.push(page.takeaway);
   return parts.filter(Boolean).join("\n\n");
 }
 

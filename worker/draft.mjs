@@ -1,4 +1,5 @@
 import { CONFIRMED_FACTS } from "./facts.mjs";
+import { CLARITY_PROMPT } from "./clarity.mjs";
 
 /**
  * Required alongside the evidence gate, not optional — Jake's ruling 2026-08-08
@@ -37,7 +38,7 @@ const PAGE_SCHEMA = {
   description: "Emit one page's content, matching Gold Water Fire's static site content contract.",
   input_schema: {
     type: "object",
-    required: ["slug", "path", "title", "description", "h1", "breadcrumbLabel", "intro", "sections", "faqs", "cta", "evidence"],
+    required: ["slug", "path", "title", "description", "h1", "breadcrumbLabel", "intro", "bottomLine", "plainEnglishHeading", "plainEnglishBody", "whyItMattersHeading", "whyItMattersBody", "sections", "faqs", "takeaway", "cta", "evidence"],
     properties: {
       slug: { type: "string", description: "kebab-case, matches the backlog item's slug" },
       path: { type: "string", description: "URL path, e.g. /guides/some-slug.html" },
@@ -52,6 +53,19 @@ const PAGE_SCHEMA = {
       h1: { type: "string", description: "Plain text, no HTML entities or tags -- write '&' as a literal ampersand. Also rendered verbatim as the page image's caption (SOP-AGENTIC-SEO-WEBSITES.md 8.3)." },
       breadcrumbLabel: { type: "string", description: "Plain text, no HTML entities or tags." },
       intro: { type: "string", description: "Opening paragraph. Rule Zero: validates the reader's situation, does not sell. No solution pitched here." },
+      // The Seven Clarity Moves (worker/clarity.mjs, 2026-10-03). Plain text,
+      // escaped by the template, checked by checkClarityMoves.
+      bottomLine: { type: "string", description: "Clarity move 6. Two or three short sentences, answer first. Renders directly under the intro. Plain text." },
+      // Flat strings, not nested objects, on purpose. A live test on
+      // 2026-10-03 with plainEnglish/whyItMatters as {heading, body} objects
+      // made the model emit its tool-call markup inside the object and tear
+      // sections, faqs and cta off the page: the PR #25 failure, on two of two
+      // drafts. Flat strings drafted clean.
+      plainEnglishHeading: { type: "string", description: "Clarity move 1. A question: \"What is [term]?\" (or \"What are\" / \"What does\"), for the one term this reader is least likely to know. Plain text." },
+      plainEnglishBody: { type: "string", description: "Clarity move 1. 40 to 60 words of plain English answering plainEnglishHeading. Plain text, no links." },
+      whyItMattersHeading: { type: "string", description: "Clarity move 4. \"Why [topic] matters for [this reader]\". Plain text." },
+      whyItMattersBody: { type: "string", description: "Clarity move 4. One short paragraph, about 40 to 120 words, tying the topic to the reader's own house, money or health. Plain text, no links." },
+      takeaway: { type: "string", description: "Clarity move 7. The one sentence, under 25 words, the reader should remember. Decide it first. Renders in a Key takeaway box. Plain text." },
       sections: {
         type: "array",
         minItems: 2,
@@ -128,6 +142,8 @@ HARD RULES (violating any of these means the page cannot ship, and a code check 
 7. Meta description length: the "description" field has a hard cap of 165 characters, checked in code after you respond, and a single character over rejects the entire page. Do not aim at the cap. Write 140-155 characters, and when unsure, cut a clause rather than risk the length.
 8. Never write the words "Faith Loop," "Reflection," "Invitation," "Sacrifice," or any label for the emotional register above. It is a direction for how you write, never content to name — the page must read as plain, unstructured human writing.
 
+${CLARITY_PROMPT}
+
 Call the emit_page tool with the complete page. Do not respond with anything else.`;
 }
 
@@ -168,7 +184,8 @@ function decodeField(obj, key) {
  * If the template's escaping ever changes, this list has to change with it.
  */
 export function decodeEscapedFields(page) {
-  for (const k of ["title", "h1", "description", "breadcrumbLabel", "evidence"]) decodeField(page, k);
+  for (const k of ["title", "h1", "description", "breadcrumbLabel", "evidence", "bottomLine", "takeaway",
+    "plainEnglishHeading", "plainEnglishBody", "whyItMattersHeading", "whyItMattersBody"]) decodeField(page, k);
   for (const s of page.sections || []) {
     for (const k of ["eyebrow", "heading"]) decodeField(s, k);
     for (const c of s.cards || []) decodeField(c, "heading");
