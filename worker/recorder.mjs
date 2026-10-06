@@ -149,6 +149,8 @@ export async function openContentBatchPr({ token, repo, baseBranch, dateStr, pag
     "evidence-gate": "dropped, structural evidence gate",
     "claim-verifier": "dropped, claim verifier",
     "claim-verifier-unavailable": "dropped, claim verifier unavailable (fail closed)",
+    "landing-test": "dropped, landing test (cold reader missed the takeaway)",
+    "landing-test-unavailable": "dropped, landing test unavailable (fail closed)",
     "image-failed": "dropped, image generation failed",
     "image-account-failure": "dropped, image account failure",
     "draft-error": "dropped, drafting error",

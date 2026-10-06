@@ -31,6 +31,7 @@ function flattenText(page) {
   }
   for (const f of page.faqs || []) parts.push(f.q, f.a);
   if (page.cta) parts.push(page.cta.heading, page.cta.body);
+  parts.push(...clarityText(page));
   return parts.filter(Boolean).join("\n");
 }
 
@@ -55,6 +56,7 @@ function proseFields(page) {
   for (const f of page.faqs || []) fields.push(f.q, f.a);
   if (page.cta) fields.push(page.cta.heading, page.cta.body);
   for (const l of page.internalLinks || []) fields.push(l.label);
+  fields.push(...clarityText(page));
   return fields.filter((f) => typeof f === "string" && f).map((f) => f.replace(HREF_ATTR_RE, ""));
 }
 
@@ -95,7 +97,17 @@ const TOP_LEVEL_FIELDS = new Set([
   "slug", "path", "title", "description", "h1", "breadcrumbLabel", "intro",
   "sections", "faqs", "cta", "evidence", "internalLinks", "photo",
   "type", "serviceType", "datePublished", "dateModified",
+  // The Seven Clarity Moves, 2026-10-03 (worker/clarity.mjs). Their presence
+  // and form are checked there; here they are accepted and scanned.
+  "bottomLine", "plainEnglishHeading", "plainEnglishBody", "whyItMattersHeading", "whyItMattersBody", "takeaway",
 ]);
+
+// The clarity fields' prose, when present. Both scans below include it, so a
+// forbidden claim or an em dash cannot hide in a field this gate never read.
+function clarityText(page) {
+  return [page.bottomLine, page.plainEnglishHeading, page.plainEnglishBody,
+    page.whyItMattersHeading, page.whyItMattersBody, page.takeaway];
+}
 
 // The model's own tool-call wrapper, leaked into a content field verbatim.
 // Deliberately narrow: it matches the XML-ish tag form only, never the bare

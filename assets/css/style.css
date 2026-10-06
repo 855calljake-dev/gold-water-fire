@@ -872,3 +872,45 @@ footer.site-footer {
     margin: 0 0 48px;
   }
 }
+
+/* Clarity moves (worker/clarity.mjs, 2026-10-03). The bottom line sits in the
+   navy page hero under the intro; the key takeaway closes the article. */
+.page-hero .bottom-line {
+  margin-top: 22px;
+  max-width: 680px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--gold);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.page-hero .bottom-line p {
+  color: #ffffff;
+  max-width: none;
+}
+.bottom-line .label,
+.key-takeaway .label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.key-takeaway {
+  max-width: 820px;
+  padding: 22px 26px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+.key-takeaway .label {
+  color: var(--ember-dark);
+}
+.key-takeaway p {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+}

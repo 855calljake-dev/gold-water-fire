@@ -14,6 +14,8 @@ export function renderContentPage(data, allPages = [], craft = null) {
     path, title, description, h1, breadcrumbLabel, intro,
     sections = [], faqs = [], photo, cta, serviceType, internalLinks = [],
     datePublished, dateModified,
+    bottomLine, takeaway,
+    plainEnglishHeading, plainEnglishBody, whyItMattersHeading, whyItMattersBody,
   } = data;
 
   // Checklist item 15 + SOP §3.2: cross-links are the topical-cluster signal
@@ -38,7 +40,17 @@ export function renderContentPage(data, allPages = [], craft = null) {
     </section>`
     : "";
 
-  const sectionsHtml = sections.map((s) => {
+  // The Seven Clarity Moves (worker/clarity.mjs, 2026-10-03). Pages drafted
+  // before that date carry none of these fields, so every block renders only
+  // when its field is present. plainEnglish* (move 1) and whyItMatters* (move 4)
+  // lead the sections; bottomLine (move 6) sits in the hero under the intro;
+  // takeaway (move 7) closes the article in a Key takeaway box.
+  const claritySections = [
+    [plainEnglishHeading, plainEnglishBody],
+    [whyItMattersHeading, whyItMattersBody],
+  ].filter(([h, b]) => h && b).map(([h, b]) => ({ heading: h, body: esc(b) }));
+
+  const sectionsHtml = [...claritySections, ...sections].map((s) => {
     if (s.cards) {
       return `
     <section${s.soft ? ' class="soft"' : ""}>
@@ -106,12 +118,21 @@ export function renderContentPage(data, allPages = [], craft = null) {
         <div class="breadcrumb"><a href="/">Home</a> / ${esc(breadcrumbLabel)}</div>
         <h1>${esc(h1)}</h1>
         <p>${intro}</p>
+        ${bottomLine ? `<div class="bottom-line"><span class="label">The short version</span><p>${esc(bottomLine)}</p></div>` : ""}
       </div>
     </section>`;
+
+  const takeawayHtml = takeaway ? `
+    <section>
+      <div class="wrap">
+        <div class="key-takeaway"><span class="label">Key takeaway</span><p>${esc(takeaway)}</p></div>
+      </div>
+    </section>` : "";
 
   const articleHtml = `
 ${photoHtml}
 ${sectionsHtml}
+${takeawayHtml}
 ${faqHtml}
 ${craftStrip(path, craft)}
 ${relatedHtml}

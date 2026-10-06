@@ -61,5 +61,12 @@ export function loadConfig() {
     // shadow batches checked clean: 3 batches (PRs #28/#29/#31), ~110 verdicts,
     // 0 false positives, 2 genuine catches. RUNTIME_VERIFY_MODE still overrides.
     verifyMode: (process.env.RUNTIME_VERIFY_MODE || "enforce").toLowerCase(),
+    // Landing Test (clarity move 2, worker/landing.mjs), added 2026-10-03. A
+    // judgment gate, so it starts in "shadow" under the same §2.2 rollout rule
+    // as the claim verifier: log every verdict, block nothing, until two
+    // shadow batches have been spot-checked by a person. "enforce" retries a
+    // miss with the reader's sentence as feedback, then drops the page; "off"
+    // skips it. It never feeds self-de-graduation.
+    landingMode: (process.env.RUNTIME_LANDING_MODE || "shadow").toLowerCase(),
   };
 }
