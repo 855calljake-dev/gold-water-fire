@@ -27,7 +27,7 @@
         },
         {
           "heading": "Protein residue",
-          "body": "Left behind by kitchen fires involving meat, fish, or other food. This residue is often nearly invisible, a light, greasy film rather than visible soot, but it carries an intense, penetrating odor. Because you often can't see it, it's easy to underestimate how far it has spread through a kitchen and adjoining rooms."
+          "body": "Left behind by kitchen fires involving meat, fish, or other food. It is often a nearly invisible, greasy film with a strong odor, and it spreads further than it looks. Our guide to <a href=\"/guides/protein-smoke-damage-kitchen-fires.html\">protein smoke from kitchen fires</a> covers how to recognize it and why it is so hard to clean."
         },
         {
           "heading": "Fuel oil and petroleum residue",
@@ -38,7 +38,7 @@
     {
       "eyebrow": "Matching method to material",
       "heading": "Why one cleaning method doesn't work on all of them",
-      "body": "Wet residue generally needs a cleaning agent that can emulsify the sticky film without pushing it deeper into the surface, often paired with mechanical agitation rather than plain wiping. Dry residue is frequently easier to remove with dry sponges or vacuum-based methods first, since introducing liquid too early can smear a powder into a stain. Protein residue usually calls for a degreasing approach and often requires sealing before repainting, since the odor molecules can bond to porous surfaces at a level that a surface wipe never reaches. Petroleum-based residue typically needs solvent-based cleaners matched to the specific surface, because using the wrong solvent can spread the oil film rather than lift it. This is also why the surface matters as much as the residue type. Drywall, wood trim, tile, and fabric all absorb and hold residue differently, so the same soot on two different materials in the same room may call for two different cleaning products entirely."
+      "body": "Wet residue generally needs a cleaning agent that can emulsify the sticky film without pushing it deeper into the surface, often paired with mechanical agitation rather than plain wiping. Dry residue is frequently easier to remove with dry sponges or vacuum-based methods first, since introducing liquid too early can smear a powder into a stain. Protein residue needs its own approach, covered in the protein smoke guide above. Petroleum-based residue typically needs solvent-based cleaners matched to the specific surface, because using the wrong solvent can spread the oil film rather than lift it. This is also why the surface matters as much as the residue type. Drywall, wood trim, tile, and fabric all absorb and hold residue differently, so the same soot on two different materials in the same room may call for two different cleaning products entirely."
     },
     {
       "eyebrow": "What this means for your home",
@@ -59,10 +59,6 @@
     {
       "q": "Does the type of fire matter for how far the residue spreads?",
       "a": "Yes. Smoldering, low-heat fires tend to produce sticky wet residue that stays more localized but bonds strongly to nearby surfaces. Fast, hot fires produce dry, powdery residue that travels more easily through the air and into HVAC systems, carpet, and small gaps throughout a home."
-    },
-    {
-      "q": "Is protein residue dangerous if I can't see it?",
-      "a": "Protein residue is mostly a cleaning and odor challenge rather than a visible mess, but it can still coat cabinetry, appliances, and nearby surfaces even in rooms that look untouched by fire. Its near-invisibility is exactly why kitchen fires often require more thorough cleaning than they initially appear to need."
     }
   ],
   "cta": {
@@ -90,7 +86,7 @@
   ],
   "type": "educational",
   "datePublished": "2026-09-01",
-  "dateModified": "2026-09-01",
+  "dateModified": "2026-10-03",
   "photo": {
     "src": "/assets/img/types-of-smoke-residue-phoenix-az.jpg",
     "alt": "Restoration technician illustrating: The types of smoke residue and why each one is cleaned differently"

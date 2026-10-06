@@ -85,6 +85,27 @@ export function cityListOf(pages) {
   return [...cities].sort();
 }
 
+// Where a city name in the side menu links (SEO audit fix 3, approved by Jake
+// 2026-10-03). It used to be /service-areas/#<city> on every guide, the audit's
+// likely cause (an inference, not measured) of city searches splitting between
+// the hub and the city pages. Now it is an existing page for that city: its
+// fire damage page, because fire and smoke
+// carried most of the non-Phoenix city-query impressions (39 of 50). No page is
+// created here; a city with no fire page falls back to its first page.
+//
+// Phoenix is the exception and goes to the fire damage SERVICE page: the audit's
+// fix 4 keeps "[service] phoenix" with the service pages, whose titles already
+// say Phoenix, and leaves /phoenix/* alone. Linking "Phoenix" on every guide to
+// /phoenix/fire-damage-restoration.html would push the other way.
+export function cityTarget(city, pages) {
+  if (city === "phoenix") return "/fire-damage-restoration.html";
+  const own = pages
+    .filter((p) => p.type === "location" && p.path.startsWith(`/${city}/`))
+    .map((p) => p.path)
+    .sort();
+  return own.find((p) => p === `/${city}/fire-damage-restoration.html`) || own[0];
+}
+
 export function renderSideMenu(pages, currentPath) {
   const groups = groupGuidesByTopic(pages);
   const cities = cityListOf(pages);
@@ -116,7 +137,7 @@ export function renderSideMenu(pages, currentPath) {
     .join("\n");
 
   const cityLinks = cities
-    .map((c) => `<li><a href="/service-areas/#${esc(c)}">${esc(prettyCity(c))}</a></li>`)
+    .map((c) => `<li><a href="${esc(cityTarget(c, pages))}">${esc(prettyCity(c))}</a></li>`)
     .join("\n            ");
 
   return `
