@@ -14,9 +14,13 @@
     "src": "/assets/img/fire-smoke-damage-restoration-cleanup-phoenix-az.jpg",
     "alt": "Fire damage restoration crew removing smoke-damaged drywall near a soot-covered brick fireplace"
   },
-  "work": ["fire", "g2", "g4"],
+  "work": [
+    "fire",
+    "g2",
+    "g4"
+  ],
   "datePublished": "2026-08-06T11:55:09-07:00",
-  "dateModified": "2026-10-07T20:00:00-07:00",
+  "dateModified": "2026-10-07T23:00:00-07:00",
   "sections": [],
   "bottomLine": "Stay out until the fire department says the house is safe, then call your insurer and get the property secured. Smoke reaches far past the burned room, so the cleanup plan comes from a walk-through of the whole house, not just what is black.",
   "plainEnglishHeading": "What is smoke damage cleanup?",
@@ -25,63 +29,163 @@
   "whyItMattersBody": "Smoke follows air. It moves through the HVAC system and into closets, attic insulation and rooms the fire never reached, which is why a house can smell of smoke weeks later. Residue left on surfaces stains and sets in the longer it sits, so the sooner it is cleaned, the more can be cleaned instead of replaced.",
   "causesHeading": "What usually starts it",
   "causes": [
-    { "heading": "Kitchen fires", "body": "Grease and cooking fires leave a thin, sticky residue with a strong odor that coats cabinets and walls well beyond the stove." },
-    { "heading": "Electrical and appliance fires", "body": "Wiring, dryers, attic fans and charging batteries can start a fire inside a wall or attic, out of sight." },
-    { "heading": "Garage fires", "body": "Fuel, chemicals and stored contents burn hot, and smoke often reaches the house through the shared wall and doorway." },
-    { "heading": "Wildfire and neighboring fires", "body": "Smoke from outside gets in through vents and gaps, leaving residue and odor with no flames inside at all." }
+    {
+      "heading": "Kitchen fires",
+      "body": "Grease and cooking fires leave a thin, sticky residue with a strong odor that coats cabinets and walls well beyond the stove."
+    },
+    {
+      "heading": "Electrical and appliance fires",
+      "body": "Wiring, dryers, attic fans and charging batteries can start a fire inside a wall or attic, out of sight."
+    },
+    {
+      "heading": "Garage fires",
+      "body": "Fuel, chemicals and stored contents burn hot, and smoke often reaches the house through the shared wall and doorway."
+    },
+    {
+      "heading": "Wildfire and neighboring fires",
+      "body": "Smoke from outside gets in through vents and gaps, leaving residue and odor with no flames inside at all."
+    }
   ],
   "stepsHeading": "How the work goes, start to finish",
   "steps": [
-    { "name": "Wait for the all clear", "text": "The US Fire Administration says not to enter until the fire department says it is safe, and not to turn utilities back on yourself." },
-    { "name": "Call your insurer and secure the property", "text": "Call your insurance company right away and ask what to do first. Openings get boarded up and damaged roofs tarped so weather and people stay out." },
-    { "name": "Inspect and document", "text": "We walk the whole house with you, photograph everything and lay out what can be cleaned, what has to come out and in what order." },
-    { "name": "Remove the water from firefighting", "text": "Hoses leave a lot of water behind. It is extracted and the structure dried, the same way as any water loss." },
-    { "name": "Clean soot and treat odor", "text": "Surfaces and contents are cleaned with methods matched to the residue, ductwork included, then the odor is treated once its source is gone." },
-    { "name": "Rebuild", "text": "Framing, drywall, insulation, cabinets and paint go back in, handled by the same company, so you keep one plan and one phone number." }
+    {
+      "name": "Wait for the all clear",
+      "text": "The US Fire Administration says not to enter until the fire department says it is safe, and not to turn utilities back on yourself."
+    },
+    {
+      "name": "Call your insurer and secure the property",
+      "text": "Call your insurance company right away and ask what to do first. Openings get boarded up and damaged roofs tarped so weather and people stay out."
+    },
+    {
+      "name": "Inspect and document",
+      "text": "We walk the whole house with you, photograph everything and lay out what can be cleaned, what has to come out and in what order."
+    },
+    {
+      "name": "Remove the water from firefighting",
+      "text": "Hoses leave a lot of water behind. It is extracted and the structure dried, the same way as any water loss."
+    },
+    {
+      "name": "Clean soot and treat odor",
+      "text": "Surfaces and contents are cleaned with methods matched to the residue, ductwork included, then the odor is treated once its source is gone."
+    },
+    {
+      "name": "Rebuild",
+      "text": "Framing, drywall, insulation, cabinets and paint go back in, handled by the same company, so you keep one plan and one phone number."
+    }
   ],
   "costHeading": "What drives the cost",
   "costIntro": "A fire job is priced from the walk-through, which costs you nothing. These are the things that move the number most.",
   "costDrivers": [
-    { "heading": "How far the smoke traveled", "body": "Smoke that went through the ductwork means cleaning rooms, closets and contents the fire never touched." },
-    { "heading": "What burned", "body": "Kitchen grease, wood and synthetic materials leave different residue, and some take more passes to clean." },
-    { "heading": "Water from the hoses", "body": "Many fire jobs are also water jobs. Wet drywall, insulation and floors add drying and removal." },
-    { "heading": "Clean or replace", "body": "Contents and materials that clean up well cost less than ones that have to be replaced, and that call is made item by item." }
+    {
+      "heading": "How far the smoke traveled",
+      "body": "Smoke that went through the ductwork means cleaning rooms, closets and contents the fire never touched."
+    },
+    {
+      "heading": "What burned",
+      "body": "Kitchen grease, wood and synthetic materials leave different residue, and some take more passes to clean."
+    },
+    {
+      "heading": "Water from the hoses",
+      "body": "Many fire jobs are also water jobs. Wet drywall, insulation and floors add drying and removal."
+    },
+    {
+      "heading": "Clean or replace",
+      "body": "Contents and materials that clean up well cost less than ones that have to be replaced, and that call is made item by item."
+    }
   ],
   "timelineHeading": "How long it takes",
   "timeline": [
-    { "label": "The first visit", "body": "Board-up or tarping, the walk-through, photos and, where there is water, extraction and drying equipment." },
-    { "label": "Cleaning and odor", "body": "Depends on how far the smoke traveled. A single room is a much shorter job than a whole house with ductwork." },
-    { "label": "Rebuild", "body": "Depends on what came out, plus permits where structural work is involved and material lead times." }
+    {
+      "label": "The first visit",
+      "body": "Board-up or tarping, the walk-through, photos and, where there is water, extraction and drying equipment."
+    },
+    {
+      "label": "Cleaning and odor",
+      "body": "Depends on how far the smoke traveled. A single room is a much shorter job than a whole house with ductwork."
+    },
+    {
+      "label": "Rebuild",
+      "body": "Depends on what came out, plus permits where structural work is involved and material lead times."
+    }
   ],
   "insuranceHeading": "Working with your insurance",
   "insuranceBody": "Call your insurer early and ask who you should talk to about cleaning and restoring your home and belongings. Photograph the damage before anything is thrown out, and let your mortgage lender or landlord know about the fire.",
   "insuranceQuote": "Save all of your receipts for any money you spend.",
-  "insuranceQuoteSource": { "label": "US Fire Administration, After the Fire", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/fa_46.pdf" },
+  "insuranceQuoteSource": {
+    "label": "US Fire Administration, After the Fire",
+    "url": "https://www.usfa.fema.gov/downloads/pdf/publications/fa_46.pdf"
+  },
   "roofLink": true,
   "takeaway": "Smoke damage reaches far past the burned room, and the sooner it is cleaned, the more of your home is saved rather than replaced.",
   "sources": [
-    { "label": "US Fire Administration, After the Fire (FA-46)", "url": "https://www.usfa.fema.gov/downloads/pdf/publications/fa_46.pdf" },
-    { "label": "US EPA, A Brief Guide to Mold, Moisture and Your Home", "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home" },
-    { "label": "Arizona DIFI, Homeowners Insurance consumer information", "url": "https://difi.az.gov/consumers/homeowners-insurance" }
+    {
+      "label": "US Fire Administration, After the Fire (FA-46)",
+      "url": "https://www.usfa.fema.gov/downloads/pdf/publications/fa_46.pdf"
+    },
+    {
+      "label": "US EPA, A Brief Guide to Mold, Moisture and Your Home",
+      "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+    },
+    {
+      "label": "Arizona DIFI, Homeowners Insurance consumer information",
+      "url": "https://difi.az.gov/consumers/homeowners-insurance"
+    }
   ],
   "faqs": [
-    { "q": "When can I go back into my house after a fire?", "a": "Only after the fire department says it is safe. The US Fire Administration also says not to turn gas, power or water back on yourself; let the utility or a qualified tradesperson do it." },
-    { "q": "The fire was only in the kitchen. Why does the whole house smell?", "a": "Smoke travels on air, through the HVAC system and into closets, attic insulation and other rooms. The odor comes from residue left everywhere the smoke went, so the cleanup covers more than the burned room." },
-    { "q": "Can you board up my house tonight?", "a": "Call (480) 999-3339. The line is answered 24/7, and securing the property with board-up or a roof tarp is part of fire restoration." },
-    { "q": "Do you deal with the water the firefighters left?", "a": "Yes. Water from firefighting is extracted and the structure dried as part of the job, so mold does not become a second problem." },
-    { "q": "Will my insurance cover fire damage restoration?", "a": "Fire is commonly covered by homeowners policies, but your policy wording decides. Call your insurer early, photograph everything and save every receipt." },
-    { "q": "Is the inspection free?", "a": "Yes. It costs nothing to have us walk the house with you and lay out what we find." },
-    { "q": "Do you rebuild after the cleanup?", "a": "Yes. Our reconstruction team, led by Construction Manager Brandon Gurr, handles framing, drywall and finish work, so the whole job stays with one company." },
-    { "q": "What areas do you serve?", "a": "The whole Phoenix metro, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast. Our office is in Chandler." }
+    {
+      "q": "When can I go back into my house after a fire?",
+      "a": "Only after the fire department says it is safe. The US Fire Administration also says not to turn gas, power or water back on yourself; let the utility or a qualified tradesperson do it."
+    },
+    {
+      "q": "The fire was only in the kitchen. Why does the whole house smell?",
+      "a": "Smoke travels on air, through the HVAC system and into closets, attic insulation and other rooms. The odor comes from residue left everywhere the smoke went, so the cleanup covers more than the burned room."
+    },
+    {
+      "q": "Can you board up my house tonight?",
+      "a": "Call (480) 999-3339. The line is answered 24/7, and securing the property with board-up or a roof tarp is part of fire restoration."
+    },
+    {
+      "q": "Do you deal with the water the firefighters left?",
+      "a": "Yes. Water from firefighting is extracted and the structure dried as part of the job, so mold does not become a second problem."
+    },
+    {
+      "q": "Are you licensed, bonded and insured?",
+      "a": "Yes. Gold Water Fire works under Arizona ROC license #264344 (KB-2), carries the license bond and is insured. IICRC certification is held on our team."
+    },
+    {
+      "q": "Will my insurance cover fire damage restoration?",
+      "a": "Fire is commonly covered by homeowners policies, but your policy wording decides. Call your insurer early, photograph everything and save every receipt."
+    },
+    {
+      "q": "Is the inspection free?",
+      "a": "Yes. It costs nothing to have us walk the house with you and lay out what we find."
+    },
+    {
+      "q": "Do you rebuild after the cleanup?",
+      "a": "Yes. Our reconstruction team, led by Construction Manager Brandon Gurr, handles framing, drywall and finish work, so the whole job stays with one company."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "The whole Phoenix metro, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast. Our office is in Chandler."
+    }
   ],
   "cta": {
     "heading": "Need the house secured tonight?",
     "body": "Call and we will walk you through the next step. The line is answered day and night."
   },
   "internalLinks": [
-    { "href": "/water-damage-restoration.html", "label": "Water Damage Restoration" },
-    { "href": "/reconstruction.html", "label": "Reconstruction & Rebuild" },
-    { "href": "/roof/", "label": "Roofing" }
+    {
+      "href": "/water-damage-restoration.html",
+      "label": "Water Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/roof/",
+      "label": "Roofing"
+    }
   ],
-  "evidence": "Rewritten 2026-10-07 from the market research (gwf-bos records/seo/20261007-gwf-market-research). Company facts used: 24/7 line, free inspection, board-up (approved homepage copy), roof tarping (confirmed roofing service), Brandon Gurr as Construction Manager, Phoenix-metro area, Chandler office. Cited facts read at source 2026-10-07: USFA After the Fire (do not enter until the fire department says it is safe, do not turn utilities on yourself, contact the insurer right away, save receipts). Process, causes, cost drivers and timeline are general restoration practice with no numbers about Gold Water Fire. No certification, bonding, insurance, testimonial, years or response-time claim."
+  "evidence": "Rewritten 2026-10-07 from the market research (gwf-bos records/seo/20261007-gwf-market-research). Company facts used: 24/7 line, free inspection, board-up (approved homepage copy), roof tarping (confirmed roofing service), Brandon Gurr as Construction Manager, Phoenix-metro area, Chandler office. Cited facts read at source 2026-10-07: USFA After the Fire (do not enter until the fire department says it is safe, do not turn utilities on yourself, contact the insurer right away, save receipts). Process, causes, cost drivers and timeline are general restoration practice with no numbers about Gold Water Fire. Licensed, bonded and insured and IICRC certification held on the team confirmed by Jake 2026-10-07 (CLAIMS-TO-VERIFY.md). No firm-level certification, testimonial, years or response-time claim."
 }

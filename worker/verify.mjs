@@ -32,6 +32,8 @@ export const VERIFIER_MODEL = "claude-opus-5";
 const ADDITIONAL_CONFIRMED = `
 - 24/7 emergency availability: CONFIRMED 2026-08-07 (CLAIMS-TO-VERIFY.md) — safe to display
 - Free inspection offer: CONFIRMED 2026-08-07 (CLAIMS-TO-VERIFY.md) — no detail beyond "free inspection" itself
+- Licensed, bonded and insured: CONFIRMED 2026-10-07 (CLAIMS-TO-VERIFY.md); no bond amount, carrier or limits
+- IICRC certification held on the team: CONFIRMED 2026-10-07; a FIRM-level IICRC certification is NOT confirmed
 `.trim();
 
 // The calibrated prompt, ported verbatim from HANDOFF-CLAIM-VERIFIER.md except
