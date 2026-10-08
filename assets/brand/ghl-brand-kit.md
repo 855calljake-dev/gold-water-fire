@@ -72,7 +72,7 @@ number, no years or project counts.
 | Tone of voice | Empathetic (dashboard preset) |
 | Website | www.goldwaterfire.com |
 | Email | Help@goldwaterfire.com |
-| Address | 221 E Willis Rd Ste 8, Chandler, AZ 85286 |
+| Address | 221 E Willis Rd Ste 6, Chandler, AZ 85286 |
 | Phone | +1 480 999 3339 |
 | Business hours | 24/7 emergency response. Office in Chandler, Arizona. |
 | Target audience | Homeowners and small commercial property owners across the Phoenix metro who have just had a pipe burst, a flood, a fire, or smoke damage. Most have never filed a property claim. Many are reading on a phone while standing in the damage. |

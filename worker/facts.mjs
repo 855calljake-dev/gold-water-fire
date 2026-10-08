@@ -6,7 +6,7 @@ export const CONFIRMED_FACTS = `
 - Company name: Gold Water Fire (three separate words, never run together)
 - Phone: (480) 999-3339
 - Email: Help@goldwaterfire.com
-- Address: 221 E Willis Rd Ste 8, Chandler, AZ 85286
+- Address: 221 E Willis Rd Ste 6, Chandler, AZ 85286
 - AZ ROC license: #264344 · KB-2
 - Co-founders: Jim Bennett and Jake Taylor
 - Brandon Gurr: Construction Manager, leads reconstruction/rebuild work (formerly Gurr Brothers Construction, which is HIS résumé, never state it as Gold Water Fire's own job count or years in business)

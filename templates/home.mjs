@@ -130,7 +130,7 @@ export function renderHome(craft = null, team = null) {
         <div class="item"><strong>Answered 24/7</strong><span>Nights, weekends and holidays.</span></div>
         <div class="item"><strong>Free inspection</strong><span>No cost to have us come look.</span></div>
         <div class="item"><strong>AZ ROC #264344</strong><span>Licensed Arizona contractor, KB-2.</span></div>
-        <div class="item"><strong>Based in Chandler</strong><span>221 E Willis Rd, Ste 8.</span></div>
+        <div class="item"><strong>Based in Chandler</strong><span>221 E Willis Rd, Ste 6.</span></div>
       </div>
     </section>
 

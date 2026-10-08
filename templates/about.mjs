@@ -25,7 +25,7 @@ export function renderAbout() {
         <div class="section-head">
           <span class="eyebrow">Who We Are</span>
           <h2>Locally owned, licensed, and built to handle the whole job</h2>
-          <p>Gold Water Fire was co-founded by Jim Bennett and Jake Taylor as a fire and water damage restoration and reconstruction contractor for the Phoenix, Arizona metro area. The company is licensed under AZ ROC #264344 (KB-2) and is based at 221 E Willis Rd Ste 8, Chandler, AZ 85286.</p>
+          <p>Gold Water Fire was co-founded by Jim Bennett and Jake Taylor as a fire and water damage restoration and reconstruction contractor for the Phoenix, Arizona metro area. The company is licensed under AZ ROC #264344 (KB-2) and is based at 221 E Willis Rd Ste 6, Chandler, AZ 85286.</p>
         </div>
       </div>
     </section>
