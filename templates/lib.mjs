@@ -24,3 +24,11 @@ export function esc(s) {
 export function absUrl(path) {
   return BRAND.siteUrl + (path.startsWith("/") ? path : "/" + path);
 }
+
+// The confirmed service-area list (CLAIMS-TO-VERIFY.md, 2026-08-06). Shared by
+// the homepage, the service pages and the LocalBusiness schema in shell.mjs.
+export const CITIES = [
+  "Phoenix", "Mesa", "Chandler", "Scottsdale", "Glendale", "Gilbert", "Tempe", "Peoria", "Surprise",
+  "Avondale", "Goodyear", "Buckeye", "Apache Junction", "Queen Creek", "San Tan Valley",
+  "Fountain Hills", "Paradise Valley", "Cave Creek", "El Mirage", "Tolleson", "Litchfield Park",
+];

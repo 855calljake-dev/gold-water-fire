@@ -1,47 +1,187 @@
 {
   "path": "/water-damage-restoration.html",
   "type": "service",
-  "title": "Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
-  "description": "Water extraction, structural drying, and cleanup after leaks, pipe breaks, and flooding. Gold Water Fire serves the Phoenix, AZ metro area. Call (480) 999-3339.",
-  "h1": "Water Damage Restoration",
+  "template": "service",
+  "title": "Water Damage Restoration in Phoenix, AZ | 24/7 | Gold Water Fire",
+  "description": "24/7 water damage restoration in the Phoenix metro: extraction, structural drying and the rebuild, from one local company. Free inspection. (480) 999-3339.",
+  "h1": "Water damage restoration in the Phoenix metro",
   "breadcrumbLabel": "Water Damage Restoration",
-  "intro": "Extraction, drying, and cleanup after leaks, pipe breaks, water heater failures, and flooding, across the Phoenix, AZ metro area.",
+  "eyebrow": "Answered 24/7 · Free inspection",
+  "intro": "Water where it should not be is a hard thing to walk into. Most people have never dealt with it before, and nobody tells you what to do first. That is what this page is for.",
   "serviceType": "Water Damage Restoration",
+  "heroArt": "water",
   "photo": {
     "src": "/assets/img/water-damage-restoration-drying-equipment-phoenix-az.jpg",
     "alt": "Water damage restoration technician running air movers and a dehumidifier in a flooded living room"
   },
+  "work": [
+    "water",
+    "g1",
+    "g2"
+  ],
   "datePublished": "2026-08-06T11:55:09-07:00",
-  "dateModified": "2026-08-06T11:55:09-07:00",
-  "sections": [
+  "dateModified": "2026-10-07T20:00:00-07:00",
+  "sections": [],
+  "bottomLine": "Stop the water, then get it out and dried within a day or two, because that is the window the EPA gives to keep mold from starting. The meter readings, not how the room looks, decide when it is dry enough to rebuild.",
+  "plainEnglishHeading": "What is water extraction?",
+  "plainEnglishBody": "Extraction is pulling the standing and soaked-in water out of the house before drying starts. Crews use truck-mounted or portable pumps and wands on floors, carpet and pad. It removes far more water, far faster, than fans can. Drying equipment then handles what is left inside walls, cabinets and the slab.",
+  "whyItMattersHeading": "Why speed matters for a Phoenix homeowner",
+  "whyItMattersBody": "The desert air outside is dry, but the inside of a wet wall is not. Water wicks up drywall, sits under cabinets and soaks into baseboard, where your hand never feels it. Left there, it becomes the swollen trim, peeling paint and musty smell that show up weeks later, and a bigger bill than drying it now.",
+  "causesHeading": "What usually causes it here",
+  "causes": [
     {
-      "eyebrow": "The Process",
-      "heading": "What water damage restoration covers",
-      "cards": [
-        { "heading": "Water extraction", "body": "Standing water removed from floors, carpet, and structural cavities as soon as our crew arrives." },
-        { "heading": "Structural drying", "body": "Equipment placed and monitored to dry the structure and reduce the risk of secondary damage." },
-        { "heading": "Cleanup and prep", "body": "Affected materials cleaned or removed, and the space prepared for repair or reconstruction if needed." }
-      ]
+      "heading": "Burst or leaking supply lines",
+      "body": "Braided lines under sinks and toilets, washing machine hoses, ice maker lines and water heaters fail without warning, often when nobody is home."
     },
     {
-      "soft": true,
-      "eyebrow": "Common Causes",
-      "heading": "What we respond to",
-      "body": "Burst or leaking pipes, water heater failures, washing machine and dishwasher supply-line failures, roof and plumbing leaks, and flooding. If a job also needs rebuild work (flooring, drywall, cabinetry), our own <a href=\"/reconstruction.html\">reconstruction team</a> picks it up without bringing in a second contractor."
+      "heading": "Slab and pinhole leaks",
+      "body": "Copper lines under or inside the slab can leak for days before a warm spot on the floor or a jump in the water bill gives them away."
+    },
+    {
+      "heading": "AC condensate and the attic",
+      "body": "A clogged condensate line or a failed drain pan in the attic sends water down through the ceiling, usually in the middle of summer."
+    },
+    {
+      "heading": "Monsoon storms and roof leaks",
+      "body": "The National Weather Service dates monsoon season June 15 to September 30. Wind-driven rain finds lifted tiles, flashing and roof penetrations, then the ceiling below."
+    }
+  ],
+  "stepsHeading": "How the work goes, start to finish",
+  "steps": [
+    {
+      "name": "Stop the source and make it safe",
+      "text": "Shut the water off at the fixture or the main. If you can reach the breaker without standing in water, cut power to the wet rooms. Then call us; the line is answered 24/7."
+    },
+    {
+      "name": "Inspect and map the moisture",
+      "text": "We come out, find where the water went with moisture meters and thermal readings, and photograph everything before anything is moved. You see the plan before work starts."
+    },
+    {
+      "name": "Extract the water",
+      "text": "Standing water comes out of floors, carpet and pad with pumps and extraction wands. Wet materials that cannot be dried in place are removed."
+    },
+    {
+      "name": "Dry the structure",
+      "text": "Air movers and dehumidifiers are set for the rooms and checked with daily readings, so drying is measured instead of guessed."
+    },
+    {
+      "name": "Confirm it is dry",
+      "text": "Nothing gets closed up until the readings in the wet area match the dry part of the house."
+    },
+    {
+      "name": "Rebuild",
+      "text": "Drywall, baseboard, flooring, cabinets and paint go back in, handled by the same company, with no second contractor to find."
+    }
+  ],
+  "costHeading": "What drives the cost",
+  "costIntro": "Every job is priced from what is actually wet, which is why the inspection comes first and costs you nothing. These are the things that move the number.",
+  "costDrivers": [
+    {
+      "heading": "How far the water spread",
+      "body": "One bathroom floor is a different job from water that ran under walls into three rooms and the hallway."
+    },
+    {
+      "heading": "What kind of water it is",
+      "body": "Clean water from a supply line is handled differently from dirty water or sewage, which means removing more materials and more cleaning."
+    },
+    {
+      "heading": "What got wet",
+      "body": "Tile and slab often dry in place. Carpet pad, laminate, swollen particleboard cabinets and insulation usually come out."
+    },
+    {
+      "heading": "How long it sat",
+      "body": "Water caught in the first day or two is mostly a drying job. Water that sat longer means more removal and rebuild."
+    }
+  ],
+  "timelineHeading": "How long it takes",
+  "timeline": [
+    {
+      "label": "The first visit",
+      "body": "Inspection, moisture mapping, photos and, if you want to go ahead, extraction and equipment set the same visit."
+    },
+    {
+      "label": "Drying",
+      "body": "Usually several days. The daily readings decide when it is done, not the calendar."
+    },
+    {
+      "label": "Rebuild",
+      "body": "Depends on what came out. A strip of drywall and baseboard is quick; floors and cabinets take longer, partly on material lead times."
+    }
+  ],
+  "insuranceHeading": "Working with your insurance",
+  "insuranceBody": "Most homeowners policies are written to cover sudden, accidental water damage, like a burst supply line, more than slow leaks or flood water from outside. Your policy wording decides. Take photos before anything is thrown out, keep every receipt, and call your insurer early.",
+  "insuranceQuote": "If you call your insurer simply to ask questions about your coverage, explicitly state that you are making an \"inquiry\" and not filing a claim.",
+  "insuranceQuoteSource": {
+    "label": "Arizona Department of Insurance and Financial Institutions",
+    "url": "https://difi.az.gov/consumers/homeowners-insurance"
+  },
+  "roofLink": true,
+  "takeaway": "A wet house is a drying job if you act in the first day or two; wait, and it becomes a rebuild.",
+  "sources": [
+    {
+      "label": "US EPA, A Brief Guide to Mold, Moisture and Your Home",
+      "url": "https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home"
+    },
+    {
+      "label": "National Weather Service Phoenix, 2025 Monsoon Season Review (season dates)",
+      "url": "https://www.weather.gov/psr/2025MonsoonSeasonReview"
+    },
+    {
+      "label": "Arizona DIFI, Homeowners Insurance consumer information",
+      "url": "https://difi.az.gov/consumers/homeowners-insurance"
     }
   ],
   "faqs": [
-    { "q": "How fast does water damage need to be addressed?", "a": "Standing water and wet building materials support mold growth within 24–48 hours, so extraction and drying should start as soon as possible after the source of water is stopped." },
-    { "q": "Do you handle both the water damage and any repairs afterward?", "a": "Yes. Gold Water Fire's own reconstruction team handles framing, drywall, and flooring repair after mitigation, so you're not coordinating a second contractor." },
-    { "q": "What areas do you serve for water damage restoration?", "a": "The greater Phoenix, Arizona metro area, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast, and the cities in between." }
+    {
+      "q": "Water is on my floor right now. What do I do first?",
+      "a": "Shut off the water at the fixture or the main, keep people and pets out of wet rooms with outlets or cords, cut power to those rooms if you can reach the breaker from a dry spot, take photos, then call (480) 999-3339. The line is answered 24/7."
+    },
+    {
+      "q": "How fast does it need to be dried?",
+      "a": "The EPA says to dry water-damaged areas and items within 24 to 48 hours to prevent mold growth. That is why extraction and drying start as soon as the source is stopped."
+    },
+    {
+      "q": "Can I just run fans and let the dry Arizona air do it?",
+      "a": "Fans dry surfaces. They do not pull water out of a wall cavity, a cabinet base or a slab, and that hidden moisture is what turns into mold and swollen materials later. Meter readings are the only way to know."
+    },
+    {
+      "q": "Is the inspection really free?",
+      "a": "Yes. It costs nothing to have us come out, find where the water went and walk you through what we find."
+    },
+    {
+      "q": "Will my homeowners insurance pay for this?",
+      "a": "Often for sudden, accidental water damage, like a burst line, but your policy wording decides. Photograph everything, keep receipts, and call your insurer early. If you only want to ask questions, Arizona's insurance department suggests saying it is an inquiry, not a claim."
+    },
+    {
+      "q": "Do you also do the repairs after it is dry?",
+      "a": "Yes. Drywall, baseboard, flooring, cabinets and paint are handled by our own reconstruction team, led by Construction Manager Brandon Gurr, so you keep one company and one phone number."
+    },
+    {
+      "q": "What if the water came through the ceiling from the roof?",
+      "a": "We handle that too. Gold Water Fire tarps and repairs roofs, dries the house underneath and puts the ceiling back, so a monsoon leak is one call."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "The whole Phoenix metro, from Peoria and Surprise in the northwest to San Tan Valley and Apache Junction in the southeast, and the cities in between. Our office is in Chandler."
+    }
   ],
   "cta": {
-    "heading": "Water damage gets worse the longer it sits.",
-    "body": "Call Gold Water Fire to get a crew assessing the damage."
+    "heading": "Water on the floor right now?",
+    "body": "Call and we will walk you through the next step. The line is answered day and night."
   },
   "internalLinks": [
-    { "href": "/fire-damage-restoration.html", "label": "Fire Damage Restoration" },
-    { "href": "/reconstruction.html", "label": "Reconstruction & Rebuild" }
+    {
+      "href": "/fire-damage-restoration.html",
+      "label": "Fire Damage Restoration"
+    },
+    {
+      "href": "/reconstruction.html",
+      "label": "Reconstruction & Rebuild"
+    },
+    {
+      "href": "/roof/",
+      "label": "Roofing"
+    }
   ],
-  "evidence": "Process steps and causes are general restoration-industry practice, not GWF-specific claims. Service-area line matches Jake's confirmed 2026-08-06 boundary description in CLAIMS-TO-VERIFY.md. No certification, bonding, testimonial, or response-time number stated. None are confirmed."
+  "evidence": "Rewritten 2026-10-07 from the market research (gwf-bos records/seo/20261007-gwf-market-research). Company facts used: 24/7 line, free inspection, roofing services, Brandon Gurr as Construction Manager, Phoenix-metro area, Chandler office, all confirmed in CLAIMS-TO-VERIFY.md. Cited facts read at source 2026-10-07: EPA 24-48 hour drying guidance; NWS monsoon season June 15 to September 30; DIFI inquiry-not-claim guidance. Process, causes, cost drivers and timeline are general restoration practice with no numbers about Gold Water Fire. No certification, bonding, insurance, testimonial, years or response-time claim."
 }

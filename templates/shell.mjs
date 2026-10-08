@@ -1,4 +1,4 @@
-import { BRAND, esc, absUrl } from "./lib.mjs";
+import { BRAND, esc, absUrl, CITIES } from "./lib.mjs";
 
 const NAV = [
   { href: "/water-damage-restoration.html", label: "Water Damage" },
@@ -37,7 +37,22 @@ function localBusinessSchema() {
       postalCode: BRAND.postalCode,
       addressCountry: "US",
     },
-    areaServed: { "@type": "AdministrativeArea", name: "Phoenix Metropolitan Area, Arizona" },
+    // Coordinates from the US Census Bureau geocoder for 221 E Willis Rd,
+    // Chandler (matched 2026-10-07). Hours: 24/7 is confirmed in
+    // CLAIMS-TO-VERIFY.md (2026-08-07). The city list is the confirmed service
+    // area. All three were missing; every local competitor that ranks carries
+    // them (gwf-bos records/seo/20261007-gwf-market-research).
+    geo: { "@type": "GeoCoordinates", latitude: 33.28395, longitude: -111.83865 },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
+    },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Phoenix Metropolitan Area, Arizona" },
+      ...CITIES.map((c) => ({ "@type": "City", name: `${c}, AZ` })),
+    ],
     // Google reads these for the knowledge panel and both were simply absent,
     // so nothing on the site ever told it which image is the logo. Raster on
     // purpose: the structured-data guidance wants a crawlable image, and PNG
@@ -99,13 +114,14 @@ function webPageSchema({ path, datePublished, dateModified }) {
 // Stacked schema per SOP-AGENTIC-SEO-WEBSITES.md §3 — LocalBusiness + Service + FAQ +
 // BreadcrumbList + ImageObject + WebPage (dates) together outperforms a single schema
 // type for AI citation. BYTOMORROW-TECH-STACK.md Tier-1 checklist item 14.
-function schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified }) {
+function schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified, extraGraph = [] }) {
   const graph = [localBusinessSchema()];
   if (serviceType) graph.push(serviceSchema(serviceType));
   if (faqs && faqs.length) graph.push(faqSchema(faqs));
   if (breadcrumbLabel && path && path !== "/") graph.push(breadcrumbSchema(breadcrumbLabel, path));
   if (photo) graph.push(imageObjectSchema(photo));
   if (datePublished) graph.push(webPageSchema({ path, datePublished, dateModified }));
+  graph.push(...extraGraph);
   const payload = graph.length === 1 ? { "@context": "https://schema.org", ...graph[0] }
     : { "@context": "https://schema.org", "@graph": graph };
   return `<script type="application/ld+json">\n${JSON.stringify(payload, null, 2)}\n</script>`;
@@ -184,6 +200,10 @@ function footer(path) {
       </div>
     </div>
   </footer>
+  <!-- Tap-to-call bar, phones only (style.css). The research found every
+       winner keeps the number one tap away; a homeowner standing in water
+       should never have to scroll back up to find it. -->
+  <a class="call-bar" href="${BRAND.phoneHref}" aria-label="Call Gold Water Fire, answered 24/7"><span class="pulse" aria-hidden="true"></span>Call ${BRAND.phone} · Answered 24/7</a>
   <script src="/assets/js/main.js"></script>`;
 }
 
@@ -204,6 +224,9 @@ export function shell({
   dateModified,
   bodyHtml,
   extraHead = "",
+  // Extra schema.org nodes for this page (HowTo on the service pages,
+  // VideoObject on the homepage), added to the same @graph.
+  extraGraph = [],
 }) {
   const canonical = absUrl(path);
   // Tier-1 checklist item 12 (BYTOMORROW-TECH-STACK.md): resolve to the page's own
@@ -238,7 +261,7 @@ export function shell({
        with the <div google-add-preferred-source-btn> in footer(). Reference:
        developers.google.com/search/docs/appearance/preferred-sources -->
   <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
-  ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified })}
+  ${schemaBlock({ serviceType, faqs, breadcrumbLabel, path, photo, datePublished, dateModified, extraGraph })}
   ${extraHead}
 </head>
 <body>
