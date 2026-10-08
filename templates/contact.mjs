@@ -64,7 +64,7 @@ export function renderContact() {
               </li>
               <li>
                 <strong>Address</strong>
-                <span>221 E Willis Rd Ste 6<br>Chandler, AZ 85286</span>
+                <span>221 E Willis Rd Ste 8<br>Chandler, AZ 85286</span>
               </li>
               <li>
                 <strong>License</strong>

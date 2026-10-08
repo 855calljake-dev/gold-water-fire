@@ -22,7 +22,7 @@ do not bolt this on later, and do not let a claim slide onto a page "temporarily
 ## Verified facts (safe to use as-is)
 
 - Phone: (480) 999-3339
-- Address: 221 E Willis Rd Ste 6, Chandler, AZ 85286
+- Address: 221 E Willis Rd Ste 8, Chandler, AZ 85286 (Jake 2026-10-08: "we are Suite 8, Not Suite 6"; reverses the 2026-10-07 Suite 6 change in fd56ac4)
 - AZ ROC license: #264344 · KB-2
 - Co-founders: Jim Bennett and Jake Taylor
 - Brandon Gurr: Construction Manager (formerly Gurr Brothers Construction — his own résumé, not a Gold Water Fire track record)

@@ -6,7 +6,7 @@ export const BRAND = {
   phone: "(480) 999-3339",
   phoneHref: "tel:+14809993339",
   email: "Help@goldwaterfire.com",
-  addressLine1: "221 E Willis Rd Ste 6",
+  addressLine1: "221 E Willis Rd Ste 8",
   addressLine2: "Chandler, AZ 85286",
   city: "Chandler",
   region: "AZ",
