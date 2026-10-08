@@ -10,7 +10,8 @@ import { ICON, CITIES, slug } from "./home.mjs";
 // repair, replacement, leak and storm response, emergency tarping; tile,
 // shingle, foam and flat roofs; ROC #264344 KB-2 covers roofing. Not stated
 // anywhere on this page, on purpose:
-// - who does the roofing work (own crew or subcontractor): not yet answered;
+// - crew versus subcontractor: Jake, 2026-09-29, "Dont mention crew and
+//   subcontractor, just refer to seasoned team of professionals";
 // - the name "Gold Water Roof": the DBA is not registered yet, so the page
 //   says Gold Water Fire;
 // - any photograph: there are no real roofing photos, and a generated roof
@@ -49,6 +50,7 @@ const GUIDE_PATHS = [
 const FAQS = [
   { q: "Do you tarp roofs after storm damage?", a: "Yes. Emergency tarping covers the damaged section to keep more water out until the roof is repaired. Call (480) 999-3339 at any hour." },
   { q: "What kinds of roofs do you work on?", a: "Tile, shingle, foam and flat roofs across the Phoenix metro." },
+  { q: "Who does the roofing work?", a: "A seasoned team of professionals from Gold Water Fire." },
   { q: "Is the roof inspection free?", a: "Yes. It costs nothing to have us come out and look." },
   { q: "Can you also fix the water damage inside the house?", a: "Yes. Gold Water Fire also does water damage restoration and reconstruction, so the ceiling, insulation and walls under a leak are handled by the same company as the roof." },
   { q: "Are you licensed?", a: "Yes. Arizona ROC license #264344, KB-2." },
@@ -126,6 +128,7 @@ export function renderRoof(pages = []) {
     <section class="lp-band lp-pad" id="services">
       <div class="wrap">
         <h2>What we do on the roof.</h2>
+        <p class="lp-sub">A seasoned team of professionals, from the first tarp to the finished roof.</p>
         <div class="roof-services">
           ${SERVICES.map(([ic, h, p]) => `<div class="card">${RICON[ic]}<h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join("\n          ")}
         </div>
