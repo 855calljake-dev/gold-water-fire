@@ -12,6 +12,8 @@ export const CONFIRMED_FACTS = `
 - Brandon Gurr: Construction Manager, leads reconstruction/rebuild work (formerly Gurr Brothers Construction, which is HIS résumé, never state it as Gold Water Fire's own job count or years in business)
 - Team: Kristine (Office Admin), Brooke (Water and Mitigation Scheduling Assistant), Johnny (Reconstruction Team Lead)
 - Three services: Water Damage Restoration, Fire Damage Restoration, Reconstruction & Rebuild
+- Licensed, bonded and insured (AZ ROC #264344, KB-2), confirmed 2026-10-07
+- IICRC certification is held on the team, confirmed 2026-10-07. NEVER say "IICRC Certified Firm" or imply a company-level certification
 - Service area: the full Phoenix, Arizona metro area, with this named boundary description from the owner: "NW Peoria, SE Avondale, SW San Tan Valley, NW Apache Junction, and outlying areas further than that." Safe to name specific cities within that area (Phoenix, Mesa, Chandler, Scottsdale, Glendale, Gilbert, Tempe, Peoria, Surprise, Avondale, Goodyear, Buckeye, Apache Junction, Queen Creek, San Tan Valley, Fountain Hills, Paradise Valley, Cave Creek, El Mirage, Tolleson, Litchfield Park).
 `.trim();
 
@@ -19,14 +21,18 @@ export const CONFIRMED_FACTS = `
 // after generation, not left to prompt compliance alone. Case-insensitive
 // substring/regex match against the full rendered text of a draft.
 export const FORBIDDEN_PATTERNS = [
-  { label: "IICRC certification claim", re: /IICRC/i },
+  // Narrowed 2026-10-07: Jake confirmed IICRC certification is held on the
+  // team ("Is anyone IICRC certified?" "Yes."), so the word is allowed. A
+  // FIRM-level certification claim is still unverified and still blocked.
+  { label: "IICRC firm-certification claim", re: /\bIICRC[- ]certified (?:firm|company|business)\b|\bcertified firm\b/i },
   // Scoped to credential claims 2026-08-26, settling issue #22. The bare-word
   // version rejected "a shower pan bonded to the substrate" (construction
   // sense) on 2026-08-23 and de-graduated the tenant over it. The claim this
   // guards is still UNVERIFIED in CLAIMS-TO-VERIFY.md: Gold Water Fire must
   // not be described as bonded or insured. Technical senses and
   // insurance-speak ("the insured" as policyholder) pass.
-  { label: "bonded/insured credential claim", re: /\b(bonded and insured|insured and bonded|licensed,? bonded|fully (?:bonded|insured)|we (?:are|'re) (?:bonded|insured)|(?:bonded|insured) (?:company|contractor|business|team|crew|technicians?|staff|professionals?))\b/i },
+  // "bonded/insured credential claim" REMOVED 2026-10-07: Jake confirmed the
+  // license bond and a liability policy (CLAIMS-TO-VERIFY.md).
   { label: "specific years-in-business or founding-year claim", re: /\b(19|20)\d{2}\b.{0,20}\b(founded|since|established)\b|\bfounded in\b|\bsince \d{4}\b/i },
   { label: "job/project count claim", re: /\b\d[\d,]*\+?\s*(jobs|projects|homes|properties|customers)\b/i },
   { label: "specific response-time number", re: /\b(one|two|three|1|2|3)[\s-]?(hour|hr)\b.{0,20}\bresponse\b/i },

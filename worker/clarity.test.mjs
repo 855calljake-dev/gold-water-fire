@@ -93,7 +93,7 @@ assert.match(problemsFor((p) => { p.sections[1].body = "As Frank Luntz says, kee
   p.takeaway = "Dry is a reading — not a look.";
   assert.match(checkPage(p).problems.join(" | "), /Em dash/);
   const q = base();
-  q.bottomLine = "We are IICRC certified. The readings decide.";
+  q.bottomLine = "We are an IICRC certified firm. The readings decide.";
   assert.match(checkPage(q).problems.join(" | "), /IICRC/);
 }
 

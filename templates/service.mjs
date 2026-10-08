@@ -15,8 +15,10 @@ import { CREDIT_LINE } from "./craftsmanship.mjs";
 //     almost no Phoenix competitor answers
 //   - the process as numbered steps, also emitted as HowTo schema
 //   - cited official sources (EPA, USFA, NWS, Arizona DIFI) instead of claims
-//     we cannot back; nothing here states a certification, bond, insurance,
-//     review or response time (CLAIMS-TO-VERIFY.md)
+//     we cannot back. Trust facts shown are only those confirmed in
+//     CLAIMS-TO-VERIFY.md: licensed, bonded and insured, and IICRC
+//     certification held on the team (2026-10-07). No firm-level
+//     certification, review or response-time claim.
 // Visual system: the homepage's (home.css), plus service.css for the animated
 // line-art heroes and the step rail. Everything moving stops under
 // prefers-reduced-motion.
@@ -81,8 +83,8 @@ export function renderService(d, craft = null) {
       <div class="wrap">
         <div class="item"><strong>Answered 24/7</strong><span>Nights, weekends and holidays.</span></div>
         <div class="item"><strong>Free inspection</strong><span>No cost to have us come look.</span></div>
-        <div class="item"><strong>AZ ROC #264344</strong><span>Licensed Arizona contractor, KB-2.</span></div>
-        <div class="item"><strong>One company</strong><span>Roof, cleanup and rebuild.</span></div>
+        <div class="item"><strong>Licensed, bonded &amp; insured</strong><span>AZ ROC #264344, KB-2.</span></div>
+        <div class="item"><strong>IICRC certified</strong><span>Certification held on our team.</span></div>
       </div>
     </section>
 
