@@ -14,6 +14,7 @@ import { renderContact } from "../templates/contact.mjs";
 import { renderThanks, render404 } from "../templates/simple.mjs";
 import { renderCraftsmanship } from "../templates/craftsmanship.mjs";
 import { renderRoof } from "../templates/roof.mjs";
+import { renderService } from "../templates/service.mjs";
 import { BRAND, absUrl } from "../templates/lib.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -128,7 +129,8 @@ async function main() {
   const written = [];
 
   for (const data of pages) {
-    const html = renderContentPage(data, pages, craft);
+    // Service pages opt in to the 2026-10-07 template with "template": "service".
+    const html = data.template === "service" ? renderService(data, craft) : renderContentPage(data, pages, craft);
     written.push(await writeHtml(data.path, html));
   }
 

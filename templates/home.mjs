@@ -39,7 +39,7 @@ export const ICON = {
 // Craftsmanship photos the canvas uses, by file. Alt text comes from
 // content/craftsmanship.json when the entry exists (the screened wording), with
 // the canvas's own alt as the fallback so the page still builds without it.
-const WORK = {
+export const WORK = {
   water: { file: "/assets/img/craftsmanship/multiple-air-movers-dehumidifier-drying-living-room.jpg", alt: "Air movers and a dehumidifier drying a living room with the lower drywall removed", w: 1600, h: 1200 },
   fire: { file: "/assets/img/craftsmanship/bedroom-interior-heavy-fire-smoke-damage-walls.jpg", alt: "Bedroom with heavy fire and smoke damage to walls and ceiling", w: 1200, h: 1600 },
   rebuild: { file: "/assets/img/craftsmanship/remodeled-kitchen-gray-quartz-counters-shaker-cabinets.jpg", alt: "Remodeled kitchen with gray quartz counters and shaker cabinets", w: 1600, h: 1200 },
@@ -53,14 +53,11 @@ const WORK = {
 // The confirmed service-area list (CLAIMS-TO-VERIFY.md, 2026-08-06), in the
 // canvas's order. Each links to its card on /service-areas/, the same anchors
 // the guides side menu uses.
-export const CITIES = [
-  "Phoenix", "Mesa", "Chandler", "Scottsdale", "Glendale", "Gilbert", "Tempe", "Peoria", "Surprise",
-  "Avondale", "Goodyear", "Buckeye", "Apache Junction", "Queen Creek", "San Tan Valley",
-  "Fountain Hills", "Paradise Valley", "Cave Creek", "El Mirage", "Tolleson", "Litchfield Park",
-];
+import { CITIES } from "./lib.mjs";
+export { CITIES };
 export const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
-function workImg(craft, key, extra = "") {
+export function workImg(craft, key, extra = "") {
   const w = WORK[key];
   const entry = (craft?.images || []).find((i) => i.file === w.file);
   const alt = entry?.alt || w.alt;
@@ -113,7 +110,7 @@ export function renderHome(craft = null, team = null) {
       <img src="${hero.src}" alt="${esc(hero.alt)}" width="1920" height="914" loading="eager" fetchpriority="high">
       <div class="wrap">
         <div class="lp-hero-inner">
-          <div class="lp-eyebrow"><span class="dot"></span><span>24/7 emergency response</span></div>
+          <div class="lp-eyebrow"><span class="dot"></span><span>24/7 fire &amp; water damage restoration · Phoenix metro</span></div>
           <h1>${esc(h1)}</h1>
           <p class="lp-lede">One local crew handles the drying, the cleanup and the rebuild, anywhere in the Phoenix metro.</p>
           <div class="lp-ctas">
@@ -124,6 +121,20 @@ export function renderHome(craft = null, team = null) {
       </div>
     </section>
     <div class="wrap"><p class="lp-img-note">${esc(h1)}</p></div>
+
+    <section class="lp-pad lp-reel" aria-label="Gold Water Fire in 15 seconds">
+      <div class="wrap">
+        <div class="lp-reel-inner">
+          <div>
+            <h2>Fire, flood or roof. One call.</h2>
+            <p class="lp-sub">Fifteen seconds on what we do, day or night, anywhere in the Phoenix metro.</p>
+          </div>
+          <video controls playsinline preload="none" poster="/assets/video/gold-water-fire-15s-poster.jpg" width="1280" height="720">
+            <source src="/assets/video/gold-water-fire-15s.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
 
     <section class="lp-band lp-facts" aria-label="At a glance">
       <div class="wrap">
@@ -251,6 +262,18 @@ export function renderHome(craft = null, team = null) {
     description: "24/7 emergency fire and water damage restoration and reconstruction for homes and businesses across the Phoenix, AZ metro area. Call (480) 999-3339, day or night.",
     h1AsTitle: "24/7 Fire & Water Damage Restoration | Gold Water Fire, Phoenix, AZ Metro",
     photo: hero,
+    // The 15 s reel (2nd Brain GWF/Deliverables/2026-09-29-gwf-15s-motion-reel,
+    // clean version, re-encoded 1280x720 for the web). preload="none" keeps the
+    // page weight: nothing downloads until play is pressed.
+    extraGraph: [{
+      "@type": "VideoObject",
+      name: "Gold Water Fire: fire, flood or roof, one call",
+      description: "A 15 second look at Gold Water Fire: 24/7 fire, water and roof damage response and the rebuild, across the Phoenix metro.",
+      thumbnailUrl: "https://www.goldwaterfire.com/assets/video/gold-water-fire-15s-poster.jpg",
+      contentUrl: "https://www.goldwaterfire.com/assets/video/gold-water-fire-15s.mp4",
+      uploadDate: "2026-10-07",
+      duration: "PT15S",
+    }],
     datePublished: "2026-08-06T08:54:02-07:00",
     dateModified: "2026-09-27T16:00:00-07:00",
     extraHead: `<link rel="preconnect" href="https://fonts.googleapis.com">

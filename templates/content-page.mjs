@@ -1,6 +1,6 @@
 import { shell } from "./shell.mjs";
 import { esc } from "./lib.mjs";
-import { withSideMenu, groupGuidesByTopic } from "./side-menu.mjs";
+import { withSideMenu, groupGuidesByTopic, topicOf } from "./side-menu.mjs";
 import { craftStrip } from "./craftsmanship.mjs";
 
 // The reusable template for service, educational, and location pages —
@@ -112,6 +112,18 @@ export function renderContentPage(data, allPages = [], craft = null) {
 
   const linksHtml = internalLinks.length ? ` ${internalLinks.map((l) => `<a href="${l.href}">${esc(l.label)}</a>`).join(" &middot; ")}` : "";
 
+  // Every guide points at the service page it belongs to (market research
+  // 2026-10-07: 514 impressions for "water extraction" landed only on a DIY
+  // guide, with no route from it to the service page). Chosen by topic; roof
+  // guides go to /roof/.
+  const roofGuide = /\broof/i.test(`${h1} ${data.slug || path}`);
+  const topicKey = data.type === "educational" ? topicOf(data).key : null;
+  const serviceLink = !topicKey ? null
+    : roofGuide ? { href: "/roof/", text: "Roof leaking now? See roofing and emergency tarping" }
+    : topicKey === "fire" ? { href: "/fire-damage-restoration.html", text: "Dealing with fire or smoke damage now? See fire damage restoration" }
+    : topicKey === "reconstruction" ? { href: "/reconstruction.html", text: "Planning the rebuild? See reconstruction" }
+    : { href: "/water-damage-restoration.html", text: "Water in the house right now? See water damage restoration" };
+
   const heroHtml = `
     <section class="page-hero">
       <div class="wrap">
@@ -119,6 +131,7 @@ export function renderContentPage(data, allPages = [], craft = null) {
         <h1>${esc(h1)}</h1>
         <p>${intro}</p>
         ${bottomLine ? `<div class="bottom-line"><span class="label">The short version</span><p>${esc(bottomLine)}</p></div>` : ""}
+        ${serviceLink ? `<a class="guide-service" href="${serviceLink.href}">${esc(serviceLink.text)} <span aria-hidden="true">&rarr;</span></a>` : ""}
       </div>
     </section>`;
 

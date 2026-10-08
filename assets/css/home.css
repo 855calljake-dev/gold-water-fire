@@ -680,3 +680,26 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Reel (2026-10-07). preload="none" in the markup; the poster is the only
+   download until play is pressed. */
+.lp-reel-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  gap: 48px;
+  align-items: center;
+}
+.lp-reel video {
+  width: 100%;
+  height: auto;
+  border-radius: var(--lp-radius);
+  border: 1px solid var(--lp-line);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+@media (max-width: 1020px) {
+  .lp-reel-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
