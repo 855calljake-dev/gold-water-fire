@@ -3,6 +3,15 @@ import { esc } from "./lib.mjs";
 import { ICON, CITIES, slug, workImg } from "./home.mjs";
 import { CREDIT_LINE } from "./craftsmanship.mjs";
 
+// Body copy is escaped like everything else; one plain `<a href="https://...">label</a>` is let back
+// through, the single tag the evidence gate permits in a body field. Added 2026-11-03 for the family
+// link on the water-damage page (bytomorrow-bos, "The ADL family link map"); without it the link
+// rendered as literal text.
+const LINK_RE = /&lt;a href=&quot;(https?:\/\/[^&]+?)&quot;&gt;([^&<]+?)&lt;\/a&gt;/g;
+function linksOnly(s) {
+  return esc(s).replace(LINK_RE, (m, href, label) => `<a href="${href}">${label}</a>`);
+}
+
 // The service-page template (water and fire), built 2026-10-07 from the market
 // research in gwf-bos records/seo/20261007-gwf-market-research. A page opts in
 // with "template": "service" in its JSON; any other service page keeps
@@ -105,7 +114,7 @@ export function renderService(d, craft = null) {
       <div class="wrap">
         <h2>${esc(d.causesHeading || "What usually causes it")}</h2>
         <div class="svc-grid">
-          ${d.causes.map((c) => `<div class="svc-card"><h3>${esc(c.heading)}</h3><p>${esc(c.body)}</p></div>`).join("\n          ")}
+          ${d.causes.map((c) => `<div class="svc-card"><h3>${esc(c.heading)}</h3><p>${linksOnly(c.body)}</p></div>`).join("\n          ")}
         </div>
       </div>
     </section>
