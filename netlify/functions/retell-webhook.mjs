@@ -48,7 +48,7 @@ import {
   upsertContact,
   upsertOpportunity,
 } from '../lib/ghl.mjs'
-import { CANONICAL_FIELDS, SMS_VERBAL_TAG, callStatus, customFieldValues, isLead, keepEarlierSmsConsent, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
+import { CANONICAL_FIELDS, SMS_VERBAL_TAG, callStatus, customFieldValues, isLead, keepEarlierSmsConsent, noteFor, saysNothingNewAboutTexts, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
 
 async function writeCallToGhl(c) {
   const env = ghlEnv()
@@ -68,13 +68,16 @@ async function writeCallToGhl(c) {
     }
 
     // Upsert overwrites every tag, so a spoken yes from an earlier call is read
-    // first and carried. A failed read leaves this call exactly as it always was,
-    // and says so; the earlier note still holds the yes.
+    // first and carried, on calls that say nothing new about texts. A failed or
+    // slow read leaves this call exactly as it always was, and says so; the
+    // earlier note still holds the yes.
     let tags = tagsFor(c)
-    try {
-      tags = keepEarlierSmsConsent(tags, await existingContactTags(env, { email: c.email, phone: c.phone }), c)
-    } catch (err) {
-      console.error(`retell-webhook: could not read existing tags for ${c.callId}, so an earlier ${SMS_VERBAL_TAG} tag on this contact would be overwritten -`, err)
+    if (saysNothingNewAboutTexts(c)) {
+      try {
+        tags = keepEarlierSmsConsent(tags, await existingContactTags(env, { email: c.email, phone: c.phone }), c)
+      } catch (err) {
+        console.error(`retell-webhook: could not read existing tags for ${c.callId}, so an earlier ${SMS_VERBAL_TAG} tag on this contact would be overwritten -`, err)
+      }
     }
 
     const [firstName, ...rest] = (c.fullName ?? '').split(' ').filter(Boolean)

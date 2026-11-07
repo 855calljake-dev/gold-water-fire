@@ -38,11 +38,16 @@ job. It comes with a note line holding the call time, call id, number and record
 | `not_asked`, or the field is missing | not added; an earlier one is carried | none |
 | anything else | treated like `no` | none |
 
-GHL's upsert overwrites every tag on a contact, so the function reads the existing tags first (by
-email and by phone) and carries an earlier `consent:sms-verbal`. If that read fails, the call is
-written as usual, the failure is logged, and an earlier tag would be lost while its note stays.
-Nothing here sets GHL's SMS or DND settings: the upsert sends no `dndSettings`, per Jake's 2026-09-12
-ruling. The field exists only on agent versions that ask the question.
+GHL's upsert overwrites every tag on a contact, so on calls that say nothing new about texts the
+function first reads the existing tags (by email and by phone, three seconds at most) and carries an
+earlier `consent:sms-verbal`. If that read fails, runs out of time, or finds email and phone on two
+different contacts, the call is written as usual, the problem is logged, and an earlier tag would be
+lost while its note stays. Nothing here sets GHL's SMS or DND settings: the upsert sends no
+`dndSettings`, per Jake's 2026-09-12 ruling. The field exists only on agent versions that ask the
+question.
+
+**The tag means "said yes on a call", not "may be texted now".** It stays after a later STOP reply,
+because this function does not read GHL's DND state. Whatever sends a text has to honour STOP as well.
 
 ## How to know it works
 

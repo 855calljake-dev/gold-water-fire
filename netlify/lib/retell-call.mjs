@@ -180,10 +180,13 @@ export function tagsFor(c) {
  * not carried, so the overwrite takes the tag off.
  */
 export function keepEarlierSmsConsent(tags, earlierTags, c) {
-  const nothingNew = c.smsTextConsent === undefined || c.smsTextConsent === null || c.smsTextConsent === 'not_asked'
-  if (!nothingNew || tags.includes(SMS_VERBAL_TAG) || !earlierTags?.includes(SMS_VERBAL_TAG)) return tags
+  if (!saysNothingNewAboutTexts(c) || tags.includes(SMS_VERBAL_TAG) || !earlierTags?.includes(SMS_VERBAL_TAG)) return tags
   return [...tags, SMS_VERBAL_TAG]
 }
+
+/** Only these calls need the earlier tags read at all. */
+export const saysNothingNewAboutTexts = (c) =>
+  c.smsTextConsent === undefined || c.smsTextConsent === null || c.smsTextConsent === 'not_asked'
 
 export function toolInvocations(call) {
   const turns = call.transcript_with_tool_calls ?? []

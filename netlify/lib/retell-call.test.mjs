@@ -247,6 +247,11 @@ async function deliver(call, { duplicate = () => ({ contact: null }) } = {}) {
     if (u.pathname === '/contacts/search/duplicate') {
       sent.lookups.push(Object.fromEntries(u.searchParams))
       const answer = duplicate(u.searchParams)
+      if (answer === 'hang') {
+        // AbortSignal.timeout's timer does not hold the process open; a real socket would, so this does.
+        const open = setTimeout(() => {}, 6000)
+        return new Promise((_, reject) => init.signal?.addEventListener('abort', () => { clearTimeout(open); reject(init.signal.reason) }))
+      }
       return answer === 'fail' ? new Response('nope', { status: 500 }) : json(answer)
     }
     if (u.pathname === '/contacts/upsert') { sent.upsert = JSON.parse(init.body); return json({ contact: { id: 'c1' } }) }
@@ -335,8 +340,37 @@ test('webhook, a failed tag read still writes the call as it always was, and say
   assert.ok(s.errors.some((e) => e.includes('could not read existing tags for call_x')), 'the failure must be logged')
 })
 
-test('webhook, a failed tag read never loses a yes given on this call', async () => {
-  const s = await deliver(callWith('yes'), { duplicate: () => 'fail' })
+test('webhook, a yes or a no needs no tag read at all, so a broken read cannot touch it', async () => {
+  const yes = await deliver(callWith('yes'), { duplicate: () => 'fail' })
+  assert.deepEqual(yes.lookups, [])
+  assert.deepEqual(yes.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
+  assert.match(yes.notes[0], /SMS consent: the caller said yes/)
+  const no = await deliver(callWith('no'), { duplicate: () => 'fail' })
+  assert.deepEqual(no.lookups, [])
+  assert.deepEqual(no.upsert.tags, TODAY_TAGS)
+  assert.ok(!no.errors.some((e) => e.includes('existing tags')))
+})
+
+test('webhook, a hung tag read gives up, still writes the call, and says so', async () => {
+  const s = await deliver(callWith(MISSING), { duplicate: () => 'hang' })
+  assert.equal(s.result.ghl, 'written')
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+  assert.ok(s.errors.some((e) => e.includes('could not read existing tags for call_x')), 'the timeout must be logged')
+})
+
+test('webhook, email and phone on two different people: one person\'s yes never lands on the other', async () => {
+  const twoPeople = (q) => (q.get('email')
+    ? { contact: { id: 'someone-else', tags: ['phone-lead'] } }
+    : { contact: { id: 'said-yes', tags: ['phone-lead', SMS_VERBAL_TAG] } })
+  const s = await deliver(callWith(MISSING), { duplicate: twoPeople })
+  assert.equal(s.result.ghl, 'written')
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+  assert.ok(s.errors.some((e) => e.includes('could not read existing tags for call_x')), 'the mismatch must be logged')
+})
+
+test('webhook, email and phone on the same contact is one contact, and the yes is carried', async () => {
+  const s = await deliver(callWith(MISSING), { duplicate: haveYesOnFile })
+  assert.equal(s.lookups.length, 2)
   assert.deepEqual(s.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
-  assert.match(s.notes[0], /SMS consent: the caller said yes/)
+  assert.ok(!s.errors.some((e) => e.includes('existing tags')))
 })
