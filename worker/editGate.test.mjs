@@ -95,6 +95,7 @@ for (const form of [RIGHT_PHONE, `${AREA}-${EXCH}-${LINE}`, `${AREA}.${EXCH}.${L
   accepted(`the right phone written as ${form}`, { description: `Call ${form} today.` });
 }
 accepted("the right phone in a tel link", { intro: `Call <a href="tel:+1${PHONE_DIGITS}">us</a> today.` });
+accepted("the right phone in a tel link with an extension", { intro: `Call <a href="tel:+1${PHONE_DIGITS};ext=1">us</a> today.` });
 accepted("a date and a dollar range are not phone numbers", { intro: "Updated 2026-09-01. Most jobs run $1,200-$4,500 and take 3-5 days." });
 accepted("digits inside a link are not a phone number", { intro: 'See <a href="https://example.com/6025550199">this</a> and https://example.com/602-555-0199 too.' });
 
@@ -111,6 +112,7 @@ refused("wrong number after the agency's full name", { description: "Registrar o
 accepted("the right ROC number", { description: `Licensed in Arizona, AZ ROC #${ROC}.` });
 accepted("the right ROC number with no #", { description: `ROC ${ROC}, KB-2.` });
 accepted("a year after the word license is not a license number", { intro: "We renewed this license in 2019." });
+accepted("a price after the word license is not a license number", { intro: "A license bond can cost $150000 on a large job." });
 accepted("the ROC named with no number", { intro: "You can look up any contractor on the ROC website." });
 
 // --- HTML in the title and description --------------------------------------
@@ -168,6 +170,61 @@ refused("a javascript link in an internalLinks entry", { internalLinks: [{ href:
 check("one dead link is reported once, not by both gates", () => {
   const result = verdict(page({ intro: `See <a href="${DEAD}">this</a>.` }));
   assert.equal(result.problems.filter((p) => p.includes("no-such-page")).length, 1, result.problems.join(" | "));
+});
+
+// --- service-template pages --------------------------------------------------
+
+// The shape templates/service.mjs reads: no slug, an empty sections array, and
+// fields the content-page contract calls unknown. Without its own path, every
+// PR touching one of these pages would go red whatever it changed.
+const servicePage = (over = {}) => ({
+  template: "service",
+  type: "service",
+  path: "/a-service.html",
+  title: "A Service | Gold Water Fire Phoenix, AZ",
+  description: "A short, honest description of the service.",
+  h1: "A service",
+  eyebrow: "Service",
+  sections: [],
+  faqs: [{ q: "A question?", a: "An answer." }],
+  causes: [{ heading: "A cause", body: "How it happens." }],
+  steps: [{ heading: "A step", body: "What we do." }],
+  insuranceBody: "How the claim works.",
+  ...over,
+});
+function serviceRefused(name, over, pattern) {
+  check(`service page refuses: ${name}`, () => {
+    const result = verdict(servicePage(over));
+    assert.equal(result.ok, false, "gate accepted it");
+    assert.match(result.problems.join(" | "), pattern);
+    assert.ok(!result.problems.some((p) => p.includes("Unknown top-level field")), "held to the content-page contract");
+  });
+}
+
+check("service page: a clean edit passes", () => {
+  const result = verdict(servicePage());
+  assert.equal(result.ok, true, result.problems.join(" | "));
+});
+serviceRefused("forbidden claim in a service-only field", { causes: [{ heading: "A cause", body: "Over 5,000 homes restored." }] }, /job\/project count/);
+serviceRefused("em dash in a service-only field", { steps: [{ heading: "A step", body: "We dry it — fast." }] }, /Em dash/);
+serviceRefused("tool-call markup in a service-only field", { insuranceBody: `<${"parameter"} name="x">` }, /Tool-call markup/);
+serviceRefused("meta over 165 characters", { description: "x ".repeat(90) }, /Meta description too long/);
+serviceRefused("wrong phone in a service-only field", { insuranceBody: "Call 602-555-0199." }, /Wrong phone number/);
+serviceRefused("wrong ROC in a service-only field", { insuranceBody: "AZ ROC #999999." }, /Wrong ROC or license number/);
+serviceRefused("script tag in the title", { title: "<script>alert(1)</script> A Service" }, /`title` must be plain text/);
+serviceRefused("over-long title", { title: "x".repeat(TITLE_MAX + 1) }, /Title too long/);
+serviceRefused("dead internal link", { insuranceBody: `See <a href="${DEAD}">this</a>.` }, /Broken internal link.*no-such-page/);
+
+check("a normal page is still held to the shape contract", () => {
+  const result = verdict(page({ sections: [] }));
+  assert.equal(result.ok, false);
+  assert.match(result.problems.join(" | "), /Shape violation at `sections`/);
+});
+
+check("a page with some other template value is still held to the shape contract", () => {
+  const result = verdict(page({ template: "Service", sections: [] }));
+  assert.equal(result.ok, false);
+  assert.match(result.problems.join(" | "), /Shape violation at `sections`/);
 });
 
 // --- the numbers come from facts.mjs ---------------------------------------
@@ -295,6 +352,14 @@ cli("a clean edit passes and names the file it read", () => {
   assert.equal(r.status, 0, r.stdout);
   assert.match(r.stdout, /PASS {4}content\/pages\/one\.json/);
   assert.match(r.stdout, /1 passed, 0 refused/);
+});
+
+cli("an edit to a service-template page passes", () => {
+  const dir = repo({ ...BASE, "content/pages/a-service.json": JSON.stringify(servicePage(), null, 2) });
+  commit(dir, { "content/pages/a-service.json": JSON.stringify(servicePage({ title: "A Better Service | Gold Water Fire" }), null, 2) });
+  const r = run(dir, "HEAD^1");
+  assert.equal(r.status, 0, r.stdout);
+  assert.match(r.stdout, /PASS {4}content\/pages\/a-service\.json/);
 });
 
 cli("a bad edit fails the job, names the file and the reason", () => {

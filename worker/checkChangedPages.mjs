@@ -9,7 +9,8 @@
 // CI passes HEAD^1 on a pull request, whose checkout is a merge commit, so
 // HEAD^1 is the base branch and the diff is exactly what the PR changes. The
 // diff is against the working tree, so the same command checks an uncommitted
-// edit locally: node worker/checkChangedPages.mjs HEAD
+// edit locally: node worker/checkChangedPages.mjs HEAD. A new page git does not
+// track yet is not seen until it is added.
 //
 // Exit 0: nothing changed, or every changed page passed. Exit 1: a page was
 // refused. Exit 2: the check could not run (bad base, git failure, unreadable
