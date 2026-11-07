@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { createHmac } from 'node:crypto'
-import { callStatus, customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, toE164, transferOutcome, verifyRetellSignature } from './retell-call.mjs'
+import { SMS_VERBAL_TAG, callStatus, customFieldValues, isLead, keepEarlierSmsConsent, noteFor, saidYesToTexts, shapeCall, stageFor, tagsFor, toE164, transferOutcome, verifyRetellSignature } from './retell-call.mjs'
 
 const KEY = 'key_test_0000'
 const sign = (body, ts) => `v=${ts},d=${createHmac('sha256', KEY).update(body + ts).digest('hex')}`
@@ -150,4 +150,193 @@ test('Called In From is the carrier number; the note carries the transcript', ()
   assert.equal(customFieldValues(c)['Called In From'], '+16025550100')
   assert.match(noteFor(c), /Transcript:\nAgent: hi/)
   assert.equal(transferOutcome({ ...base }).attempted, false)
+})
+
+// ---------------------------------------------------------------------------
+// The spoken yes to the phone agent's text question (post-call field
+// sms_text_consent). Jake's ruling 2026-11-07.
+// ---------------------------------------------------------------------------
+
+const answered = (value, extra = {}) => {
+  const data = { call_type: 'dispatch', caller_name: 'Mary Hines', callback_phone: '4805550101' }
+  if (value !== MISSING) data.sms_text_consent = value
+  return shapeCall({ ...base, start_timestamp: 1789000000000, call_analysis: { call_summary: 'Leak.', custom_analysis_data: data }, ...extra })
+}
+const MISSING = Symbol('field absent')
+const TODAY_TAGS = ['phone-lead', 'line:480-999-3339', 'call:dispatch', 'consent:verbal-call']
+
+// Everything that is not exactly the string 'yes'. A refusal adds no tag and no note line.
+const REFUSED = [
+  ['no', 'no'], ['not_asked', 'not_asked'], ['a missing field', MISSING], ['null', null], ['an empty string', ''],
+  ['capital Yes', 'Yes'], ['all caps', 'YES'], ['spaces around it', ' yes '], ['the string true', 'true'],
+  ['boolean true', true], ['the number 1', 1], ['a list', ['yes']], ['an object', { answer: 'yes' }], ['y', 'y'], ['yes please', 'yes please'],
+]
+
+test('a yes adds the tag, and the note records the time, the call id, the number and the recording', () => {
+  const c = answered('yes')
+  assert.equal(saidYesToTexts(c), true)
+  assert.deepEqual(tagsFor(c), [...TODAY_TAGS, 'consent:sms-verbal'])
+  const line = noteFor(c).split('\n').find((l) => l.startsWith('SMS consent:'))
+  assert.ok(line, 'no SMS consent line in the note')
+  assert.match(line, /Call time: 2026-09-10T00:26:40\.000Z\./)
+  assert.match(line, /Call id: call_x\./)
+  assert.match(line, /Number on this contact: \+14805550101\./)
+  assert.match(line, /Recording: https:\/\/rec\/x\.wav\./)
+  assert.doesNotMatch(line, /—/, 'no em dash in a line a person reads')
+})
+
+test('a yes still carries the tag and note every call carries, unchanged', () => {
+  const c = answered('yes')
+  assert.ok(tagsFor(c).includes('consent:verbal-call'))
+  assert.match(noteFor(c), /Consent: verbal, on a recorded call\. Not express written SMS consent\./)
+})
+
+test('a yes with no recording or start time says so rather than dropping the line', () => {
+  const c = answered('yes', { recording_url: undefined, start_timestamp: undefined })
+  const line = noteFor(c).split('\n').find((l) => l.startsWith('SMS consent:'))
+  assert.match(line, /Call time: not recorded\./)
+  assert.match(line, /Recording: none on this call\./)
+  assert.deepEqual(tagsFor(c), [...TODAY_TAGS, SMS_VERBAL_TAG])
+})
+
+for (const [label, value] of REFUSED) {
+  test(`refused, ${label}: no tag and no note line, the same record as a call with no field`, () => {
+    const c = answered(value)
+    assert.equal(saidYesToTexts(c), false)
+    assert.deepEqual(tagsFor(c), TODAY_TAGS)
+    assert.ok(!noteFor(c).includes('SMS consent:'))
+    assert.equal(noteFor(c), noteFor(answered(MISSING)))
+  })
+}
+
+test('a yes on its own does not make a call a lead or change its stage', () => {
+  const quiet = (v) => shapeCall({ ...base, call_analysis: { custom_analysis_data: { sms_text_consent: v } } })
+  assert.equal(isLead(quiet('yes')), false)
+  assert.equal(isLead(quiet('yes')), isLead(shapeCall({ ...base, call_analysis: {} })))
+  assert.equal(stageFor(quiet('yes'), {}), 'New Lead')
+})
+
+test('an earlier yes is carried only when this call says nothing new about texts', () => {
+  const earlier = ['phone-lead', SMS_VERBAL_TAG]
+  assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, earlier, answered(MISSING)), [...TODAY_TAGS, SMS_VERBAL_TAG])
+  assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, earlier, answered(null)), [...TODAY_TAGS, SMS_VERBAL_TAG])
+  assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, earlier, answered('not_asked')), [...TODAY_TAGS, SMS_VERBAL_TAG])
+  for (const value of ['no', 'Yes', 'unsure', '', true]) {
+    assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, earlier, answered(value)), TODAY_TAGS, `carried on ${value}`)
+  }
+  assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, ['phone-lead'], answered(MISSING)), TODAY_TAGS, 'nothing earlier, nothing added')
+  assert.deepEqual(keepEarlierSmsConsent(TODAY_TAGS, [], answered(MISSING)), TODAY_TAGS)
+  const once = tagsFor(answered('yes'))
+  assert.deepEqual(keepEarlierSmsConsent(once, earlier, answered('yes')), once, 'never twice')
+})
+
+// The whole webhook, with fetch stubbed: what actually goes to GHL. No network.
+async function deliver(call, { duplicate = () => ({ contact: null }) } = {}) {
+  const { default: handler } = await import('../functions/retell-webhook.mjs')
+  const { CANONICAL_FIELDS } = await import('./retell-call.mjs')
+  const testEnv = { RETELL_API_KEY: KEY, GHL_PIT: 'pit_test', GHL_LOCATION_ID: 'loc_test', GHL_CONVERSATION_PROVIDER_ID: undefined }
+  const saved = { fetch: globalThis.fetch, error: console.error, log: console.log, env: Object.fromEntries(Object.keys(testEnv).map((k) => [k, process.env[k]])) }
+  const setEnv = (vars) => { for (const [k, v] of Object.entries(vars)) { if (v === undefined) delete process.env[k]; else process.env[k] = v } }
+  const sent = { upsert: null, notes: [], lookups: [], errors: [] }
+  setEnv(testEnv)
+  console.log = () => {}
+  console.error = (...a) => sent.errors.push(a.map(String).join(' '))
+  globalThis.fetch = async (url, init = {}) => {
+    const u = new URL(url)
+    const json = (body) => new Response(JSON.stringify(body), { status: 200 })
+    if (u.pathname === '/contacts/search/duplicate') {
+      sent.lookups.push(Object.fromEntries(u.searchParams))
+      const answer = duplicate(u.searchParams)
+      return answer === 'fail' ? new Response('nope', { status: 500 }) : json(answer)
+    }
+    if (u.pathname === '/contacts/upsert') { sent.upsert = JSON.parse(init.body); return json({ contact: { id: 'c1' } }) }
+    if (u.pathname === '/contacts/c1/notes') { sent.notes.push(JSON.parse(init.body).body); return json({}) }
+    if (u.pathname.endsWith('/customFields')) return json({ customFields: CANONICAL_FIELDS.map((f, i) => ({ id: `f${i}`, name: f.name })) })
+    if (u.pathname === '/opportunities/pipelines') return json({ pipelines: [{ id: 'p', name: 'Marketing Pipeline', stages: [{ id: 's1', name: 'Hot Lead' }, { id: 's2', name: 'New Lead' }] }] })
+    if (u.pathname === '/opportunities/upsert') return json({})
+    throw new Error(`unexpected request: ${init.method ?? 'GET'} ${u.pathname}`)
+  }
+  try {
+    const raw = JSON.stringify({ event: 'call_analyzed', call })
+    const res = await handler(new Request('https://x.test/', {
+      method: 'POST', body: raw, headers: { 'x-retell-signature': sign(raw, Date.now()) },
+    }))
+    sent.status = res.status
+    sent.result = await res.json()
+    return sent
+  } finally {
+    globalThis.fetch = saved.fetch
+    console.error = saved.error
+    console.log = saved.log
+    setEnv(saved.env)
+  }
+}
+
+const callWith = (value) => {
+  const data = { call_type: 'dispatch', caller_name: 'Mary Hines', callback_phone: '4805550101', email: 'mary@example.com' }
+  if (value !== MISSING) data.sms_text_consent = value
+  return { ...base, start_timestamp: 1789000000000, call_analysis: { call_summary: 'Leak.', custom_analysis_data: data } }
+}
+const haveYesOnFile = () => ({ contact: { id: 'c1', tags: ['phone-lead', SMS_VERBAL_TAG] } })
+
+test('webhook, today with no field: same tags and note as before, no consent setting sent', async () => {
+  const s = await deliver(callWith(MISSING))
+  assert.equal(s.result.ghl, 'written')
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+  assert.ok(!s.notes[0].includes('SMS consent:'))
+  assert.ok(!('dndSettings' in s.upsert))
+  assert.ok(!s.errors.some((e) => e.includes('existing tags')), 'a working read logs no tag error')
+})
+
+test('webhook, yes: the tag and the note line reach GHL, and no SMS or DND setting is sent', async () => {
+  const s = await deliver(callWith('yes'))
+  assert.deepEqual(s.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
+  assert.match(s.notes[0], /SMS consent: the caller said yes/)
+  assert.ok(!('dndSettings' in s.upsert))
+  assert.ok(!('dnd' in s.upsert))
+})
+
+test('webhook, no with nothing on file: nothing added', async () => {
+  const s = await deliver(callWith('no'))
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+  assert.ok(!s.notes[0].includes('SMS consent:'))
+})
+
+test('webhook, a later call that never asked keeps an earlier yes through the overwrite', async () => {
+  for (const value of [MISSING, 'not_asked']) {
+    const s = await deliver(callWith(value), { duplicate: haveYesOnFile })
+    assert.deepEqual(s.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
+    assert.ok(!s.notes[0].includes('SMS consent:'), 'carrying the tag is not a new yes')
+  }
+})
+
+test('webhook, a later no is not overridden by an earlier yes', async () => {
+  const s = await deliver(callWith('no'), { duplicate: haveYesOnFile })
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+})
+
+test('webhook looks up both email and phone, because the location decides which one upsert matches', async () => {
+  const s = await deliver(callWith(MISSING))
+  assert.deepEqual(s.lookups, [
+    { locationId: 'loc_test', email: 'mary@example.com' },
+    { locationId: 'loc_test', number: '+14805550101' },
+  ])
+})
+
+test('webhook, a yes held on the phone match alone is still found when the email matches nobody', async () => {
+  const s = await deliver(callWith(MISSING), { duplicate: (q) => (q.get('number') ? haveYesOnFile() : { contact: null }) })
+  assert.deepEqual(s.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
+})
+
+test('webhook, a failed tag read still writes the call as it always was, and says so', async () => {
+  const s = await deliver(callWith(MISSING), { duplicate: () => 'fail' })
+  assert.equal(s.result.ghl, 'written')
+  assert.deepEqual(s.upsert.tags, TODAY_TAGS)
+  assert.ok(s.errors.some((e) => e.includes('could not read existing tags for call_x')), 'the failure must be logged')
+})
+
+test('webhook, a failed tag read never loses a yes given on this call', async () => {
+  const s = await deliver(callWith('yes'), { duplicate: () => 'fail' })
+  assert.deepEqual(s.upsert.tags, [...TODAY_TAGS, SMS_VERBAL_TAG])
+  assert.match(s.notes[0], /SMS consent: the caller said yes/)
 })

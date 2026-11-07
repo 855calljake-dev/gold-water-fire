@@ -104,6 +104,26 @@ export async function findContactId(env, input) {
   }
 }
 
+/**
+ * Tags on any contact an upsert with these details could land on, read first
+ * because upsert overwrites every tag. Both lookups run, because the location's
+ * duplicate setting decides whether upsert matches on email or on phone. Throws
+ * on a failed read so the caller can say so. Read only.
+ */
+export async function existingContactTags(env, input) {
+  const lookups = [
+    ...(input.email ? [{ email: input.email }] : []),
+    ...(input.phone ? [{ number: input.phone }] : []),
+  ]
+  const tags = []
+  for (const lookup of lookups) {
+    const qs = new URLSearchParams({ locationId: env.locationId, ...lookup })
+    const data = await ghl(env, `/contacts/search/duplicate?${qs.toString()}`)
+    tags.push(...(data?.contact?.tags ?? []))
+  }
+  return tags
+}
+
 export async function createNote(env, contactId, body) {
   return ghl(env, `/contacts/${contactId}/notes`, { method: 'POST', body: { body } })
 }

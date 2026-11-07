@@ -9,6 +9,14 @@ import { createHmac, timingSafeEqual } from 'node:crypto'
 const FIVE_MINUTES = 5 * 60 * 1000
 
 /**
+ * The tag a spoken yes leaves on a contact: the caller answered yes when the
+ * phone agent asked, on a recorded call, whether they want texts about the job.
+ * Different from consent:verbal-call, which every call carries and which only
+ * says the person called. Jake's ruling 2026-11-07 ("Yes, add it").
+ */
+export const SMS_VERBAL_TAG = 'consent:sms-verbal'
+
+/**
  * Retell signs `body + timestamp` with HMAC-SHA256 keyed by the API key and
  * sends `x-retell-signature: v=<ms>,d=<hex>`. Same algorithm as retell-sdk's
  * Retell.verify (lib/webhook_auth.js), inlined so this repo stays dependency
@@ -105,8 +113,19 @@ export function shapeCall(call) {
     transcript: text(call.transcript, 20000),
     insuranceCarrier: text(extracted.insurance_carrier, 80),
     claimNumber: text(extracted.claim_number, 60),
+    // The raw post-call field, untouched. Absent until the agent version that
+    // asks the question is published. See saidYesToTexts.
+    smsTextConsent: extracted.sms_text_consent,
   }
 }
+
+/**
+ * Only the exact string 'yes' is consent. Not truthy(), not trimmed, not
+ * lower-cased: the field is an enum of yes, no and not_asked, so anything else
+ * came from somewhere the agent does not define, and the safe reading of an
+ * odd value is no.
+ */
+export const saidYesToTexts = (c) => c.smsTextConsent === 'yes'
 
 /**
  * Values for the custom fields the GWF sub-account ALREADY has (created
@@ -149,7 +168,21 @@ export function tagsFor(c) {
     ...(c.followUpNeeded ? ['follow-up-needed'] : []),
     // Verbal contact on a recorded line; not express written SMS consent.
     'consent:verbal-call',
+    ...(saidYesToTexts(c) ? [SMS_VERBAL_TAG] : []),
   ]
+}
+
+/**
+ * GHL's upsert overwrites every tag on a contact (its Upsert Contact docs: "This
+ * field will overwrite all current tags"), so a yes from an earlier call would
+ * vanish the next time the same person called. Carry it only when this call says
+ * nothing new about texts. A no, or any value this code does not recognise, is
+ * not carried, so the overwrite takes the tag off.
+ */
+export function keepEarlierSmsConsent(tags, earlierTags, c) {
+  const nothingNew = c.smsTextConsent === undefined || c.smsTextConsent === null || c.smsTextConsent === 'not_asked'
+  if (!nothingNew || tags.includes(SMS_VERBAL_TAG) || !earlierTags?.includes(SMS_VERBAL_TAG)) return tags
+  return [...tags, SMS_VERBAL_TAG]
 }
 
 export function toolInvocations(call) {
@@ -227,6 +260,17 @@ export function stageFor(c, env = process.env) {
   return env.GHL_STAGE_NEW || 'New Lead'
 }
 
+/** The record of a spoken yes: when, which call, which number, which recording. */
+function smsConsentLine(c) {
+  return [
+    'SMS consent: the caller said yes when the phone assistant asked whether they want texts about this job. Spoken on a recorded call, not written consent, and for job texts only.',
+    `Call time: ${c.startedAt ?? 'not recorded'}.`,
+    `Call id: ${c.callId}.`,
+    `Number on this contact: ${c.phone ?? 'none captured'}.`,
+    `Recording: ${c.recordingUrl ?? 'none on this call'}.`,
+  ].join(' ')
+}
+
 export function noteFor(c) {
   return [
     `Inbound call ${c.callId} on ${c.line}${c.durationSec ? ` (${c.durationSec}s)` : ''}`,
@@ -239,6 +283,7 @@ export function noteFor(c) {
     c.followUpNeeded ? 'FOLLOW-UP NEEDED' : '',
     c.disconnectReason ? `Ended: ${c.disconnectReason}` : '',
     'Consent: verbal, on a recorded call. Not express written SMS consent. DND left off per Jake 2026-09-12 so the caller can receive their own call details.',
+    saidYesToTexts(c) ? smsConsentLine(c) : '',
     c.recordingUrl ? `Recording: ${c.recordingUrl}` : '',
     c.transcript ? `\nTranscript:\n${c.transcript}` : '',
   ].filter(Boolean).join('\n')

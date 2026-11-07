@@ -41,13 +41,14 @@ import {
   buildCustomFields,
   createNote,
   ensureCustomFields,
+  existingContactTags,
   ghlEnv,
   recordingStatus,
   resolveStage,
   upsertContact,
   upsertOpportunity,
 } from '../lib/ghl.mjs'
-import { CANONICAL_FIELDS, callStatus, customFieldValues, isLead, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
+import { CANONICAL_FIELDS, SMS_VERBAL_TAG, callStatus, customFieldValues, isLead, keepEarlierSmsConsent, noteFor, shapeCall, stageFor, tagsFor, verifyRetellSignature } from '../lib/retell-call.mjs'
 
 async function writeCallToGhl(c) {
   const env = ghlEnv()
@@ -66,6 +67,16 @@ async function writeCallToGhl(c) {
       console.error(`retell-webhook: GHL custom fields not provisioned in this location, values dropped: ${missing.join(', ')}`)
     }
 
+    // Upsert overwrites every tag, so a spoken yes from an earlier call is read
+    // first and carried. A failed read leaves this call exactly as it always was,
+    // and says so; the earlier note still holds the yes.
+    let tags = tagsFor(c)
+    try {
+      tags = keepEarlierSmsConsent(tags, await existingContactTags(env, { email: c.email, phone: c.phone }), c)
+    } catch (err) {
+      console.error(`retell-webhook: could not read existing tags for ${c.callId}, so an earlier ${SMS_VERBAL_TAG} tag on this contact would be overwritten -`, err)
+    }
+
     const [firstName, ...rest] = (c.fullName ?? '').split(' ').filter(Boolean)
     const { contactId } = await upsertContact(env, {
       ...(firstName ? { firstName } : {}),
@@ -74,7 +85,7 @@ async function writeCallToGhl(c) {
       ...(c.phone ? { phone: c.phone } : {}),
       ...(c.propertyAddress ? { address1: c.propertyAddress } : {}),
       source: `phone ${c.line}`,
-      tags: tagsFor(c),
+      tags,
       customFields: fields,
       // Jake's ruling 2026-09-12 ("keep DND off for new calls coming in"):
       // contacts the phone agent creates carry NO DND block, so the caller CC
