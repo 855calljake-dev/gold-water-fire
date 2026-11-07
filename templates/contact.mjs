@@ -1,4 +1,5 @@
 import { shell } from "./shell.mjs";
+import { smsConsentField } from "./lib.mjs";
 
 export function renderContact() {
   const bodyHtml = `
@@ -48,6 +49,7 @@ export function renderContact() {
                 <label for="message">Details</label>
                 <textarea id="message" name="message" placeholder="Tell us what's going on and when it happened."></textarea>
               </div>
+              ${smsConsentField("ct")}
               <button type="submit">Send Request</button>
               <p class="form-note">For active flooding or fire, call (480) 999-3339 instead of submitting this form.</p>
             </form>

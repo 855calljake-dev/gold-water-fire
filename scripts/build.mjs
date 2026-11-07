@@ -12,6 +12,7 @@ import { renderHome } from "../templates/home.mjs";
 import { renderAbout } from "../templates/about.mjs";
 import { renderContact } from "../templates/contact.mjs";
 import { renderThanks, render404 } from "../templates/simple.mjs";
+import { renderPrivacy, renderTerms } from "../templates/legal.mjs";
 import { renderCraftsmanship } from "../templates/craftsmanship.mjs";
 import { renderRoof } from "../templates/roof.mjs";
 import { renderService } from "../templates/service.mjs";
@@ -164,6 +165,12 @@ async function main() {
   written.push("/roof/");
   written.push(await writeHtml("/about.html", renderAbout()));
   written.push(await writeHtml("/contact.html", renderContact()));
+  // Privacy and Terms, for carrier review of the texting campaign. Same pattern
+  // as /roof/: written as index.html, listed in the sitemap by the slash URL.
+  await writeHtml("/privacy/index.html", renderPrivacy());
+  written.push("/privacy/");
+  await writeHtml("/terms/index.html", renderTerms());
+  written.push("/terms/");
   written.push(await writeHtml("/thanks.html", renderThanks()));
   written.push(await writeHtml("/404.html", render404()));
 

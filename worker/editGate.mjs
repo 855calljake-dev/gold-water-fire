@@ -45,7 +45,7 @@ export const TITLE_MAX = 120;
 // Pages scripts/build.mjs renders from templates rather than from content/pages.
 // A test parses build.mjs and fails if this list and the build's routes differ.
 // /thanks.html and /404.html exist but are not pages anyone should link to.
-export const TEMPLATE_PAGES = ["/", "/about.html", "/contact.html", "/craftsmanship.html", "/guides/", "/service-areas/", "/roof/"];
+export const TEMPLATE_PAGES = ["/", "/about.html", "/contact.html", "/craftsmanship.html", "/guides/", "/service-areas/", "/roof/", "/privacy/", "/terms/"];
 
 const SITE_HOST = new URL(BRAND.siteUrl).hostname.replace(/^www\./, "");
 

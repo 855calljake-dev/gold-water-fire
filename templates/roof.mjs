@@ -1,5 +1,5 @@
 import { shell } from "./shell.mjs";
-import { esc } from "./lib.mjs";
+import { esc, smsConsentField } from "./lib.mjs";
 import { ICON, CITIES, slug } from "./home.mjs";
 
 // The roofing landing page, /roof/. www.goldwaterroof.com 301s here (netlify.toml).
@@ -209,8 +209,9 @@ export function renderRoof(pages = []) {
             </select>
           </div>
           <div class="field"><label for="rf-message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="rf-message" name="message" rows="4" placeholder="Roof type, where the water is showing up, how long it has been leaking"></textarea></div>
+          ${smsConsentField("rf")}
           <button type="submit">Book a free roof inspection</button>
-          <p class="note">We only use your number to call you back about this.</p>
+          <p class="note">We use your number to call you back about this. This form signs you up for texts only if you tick the box above.</p>
         </form>
       </div>
     </section>
