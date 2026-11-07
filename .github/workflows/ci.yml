@@ -14,6 +14,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Two commits deep, so HEAD^1 exists for the edit gate below.
+          fetch-depth: 2
 
       - uses: actions/setup-node@v4
         with:
@@ -24,6 +27,14 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libimage-exiftool-perl imagemagick tesseract-ocr tesseract-ocr-eng
 
       - run: npm ci
+
+      # A pull request checks out as a merge commit, so HEAD^1 is the base branch
+      # and this reads only the page files the PR changes. A PR that changes no
+      # page passes. Not a required check today, so a red here does not block a
+      # merge, and the worker's own merge never waits for it.
+      - name: Edit gate (changed page files only)
+        if: github.event_name == 'pull_request'
+        run: node worker/checkChangedPages.mjs HEAD^1
 
       - run: npm run build
 

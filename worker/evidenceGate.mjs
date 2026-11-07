@@ -263,7 +263,11 @@ export function checkShape(page) {
 
 // Structural check, run in code after generation — not left to prompt
 // compliance alone. Mirrors agent-runtime's "dry-run is structural" principle.
-export function checkPage(page) {
+//
+// isValidInternalLink is for worker/editGate.mjs, which checks a changed page
+// against the pages that really exist. The worker calls checkPage(page), so a
+// new draft is still held to VALID_INTERNAL_LINKS exactly as before.
+export function checkPage(page, { isValidInternalLink = (href) => VALID_INTERNAL_LINKS.has(href) } = {}) {
   const problems = [];
 
   // Shape first, and alone. Every check below walks sections, faqs and cta as
@@ -307,7 +311,7 @@ export function checkPage(page) {
     ...(page.internalLinks || []).map((l) => l.href),
   ];
   for (const href of linkedHrefs) {
-    if (href.startsWith("/") && !VALID_INTERNAL_LINKS.has(href)) {
+    if (href.startsWith("/") && !isValidInternalLink(href)) {
       problems.push(`Broken internal link (not a real page): ${href}`);
     }
   }

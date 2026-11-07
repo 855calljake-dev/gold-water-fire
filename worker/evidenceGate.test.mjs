@@ -232,3 +232,8 @@ if (failures) {
   process.exit(1);
 }
 console.log("\nAll evidence gate shape tests passed.");
+
+// The edit-path gate's tests live in their own file and run here rather than as
+// a new script in package.json: package.json is a Netlify build input, so
+// touching it would make merging a CI change cost a production deploy.
+await import("./editGate.test.mjs");
