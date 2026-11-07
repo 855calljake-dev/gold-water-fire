@@ -609,6 +609,69 @@ form.quote-form button:hover {
   margin-top: 8px;
 }
 
+/* Text-message consent box, on every form that takes a phone number. These
+   selectors outrank the .lp-form and .quote-form input and label rules, which
+   would otherwise stretch the checkbox to the full width of the form. */
+.sms-consent {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.sms-consent input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin: 1px 0 0;
+  padding: 0;
+  accent-color: var(--gold);
+}
+.sms-consent .sms-consent-text {
+  display: block;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.sms-consent .sms-consent-links {
+  margin: 6px 0 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.sms-consent-links a {
+  text-decoration: underline;
+}
+
+/* Privacy Policy and Terms */
+.legal-copy {
+  max-width: 760px;
+}
+.legal-copy h2 {
+  margin: 36px 0 10px;
+  font-size: 1.35rem;
+  color: var(--navy-dark);
+}
+.legal-copy h2:first-child {
+  margin-top: 0;
+}
+.legal-copy h3 {
+  margin: 20px 0 6px;
+  font-size: 1.05rem;
+  color: var(--navy-dark);
+}
+.legal-copy p {
+  margin: 0 0 12px;
+}
+.legal-copy ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+.legal-copy li {
+  margin-bottom: 6px;
+}
+.legal-copy a {
+  text-decoration: underline;
+}
+
 .info-list {
   list-style: none;
   margin: 0;
@@ -737,6 +800,9 @@ footer.site-footer {
 }
 .footer-bottom a:hover {
   color: var(--gold-light);
+}
+.footer-legal a + a {
+  margin-left: 14px;
 }
 
 @media (max-width: 760px) {

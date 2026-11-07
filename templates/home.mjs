@@ -1,5 +1,5 @@
 import { shell } from "./shell.mjs";
-import { esc } from "./lib.mjs";
+import { esc, smsConsentField } from "./lib.mjs";
 import { CREDIT_LINE } from "./craftsmanship.mjs";
 
 // The landing page. Implements the canvas Jake approved on 2026-09-27
@@ -249,8 +249,9 @@ export function renderHome(craft = null, team = null) {
             </select>
           </div>
           <div class="field"><label for="lp-message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="lp-message" name="message" rows="4"></textarea></div>
+          ${smsConsentField("lp")}
           <button type="submit">Book a free inspection</button>
-          <p class="note">We only use your number to call you back about this.</p>
+          <p class="note">We use your number to call you back about this. We text you only if you tick the box above.</p>
         </form>
       </div>
     </section>
