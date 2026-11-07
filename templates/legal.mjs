@@ -20,7 +20,10 @@ import { BRAND, esc } from "./lib.mjs";
 //     the agent changes, the Calls section changes with it.
 //   Texting: the filed campaign says customers who do not tick the box are not
 //     texted. Nothing here may offer another way in, such as texting first or
-//     agreeing on a call, unless the filing changes too.
+//     agreeing on a call, unless the filing changes too. STOP and HELP are
+//     promises about the sending number: send both to it once texting is live.
+//   Email: goldwaterfire.com's MX is smtp.google.com (dig, 2026-11-07), and
+//     Help@ is a Google Group (bytomorrow-bos GWF-PHONE-AGENT-SPEC.md, v13).
 //
 // BRAND carries the phone, email, address and license. The worker's facts.mjs
 // is the source of truth, but worker/ is not a build input (see
@@ -80,7 +83,7 @@ export function renderPrivacy() {
           <p>Every page loads a small Google script for the "preferred source" button in the footer, and some pages load their fonts from Google. Your browser fetches those files from Google, so Google receives your IP address and browser details. <a href="https://policies.google.com/privacy" rel="nofollow noopener">Google's privacy policy</a> covers what it does with them.</p>
 
           <h3>When you call ${esc(BRAND.phone)}</h3>
-          <p>Calls are recorded, and the call says so as soon as it is answered. A call may be answered by an AI assistant for ${esc(BRAND.name)}, which takes your details and tries to connect you with a person on our team. If you ask whether you are talking to a real person, it tells you it is an AI assistant.</p>
+          <p>Calls are recorded, and the call says so at the start. A call may be answered by an AI assistant for ${esc(BRAND.name)}, which takes your details and tries to connect you with a person on our team. If you ask whether you are talking to a real person, it tells you it is an AI assistant.</p>
           <p>We keep the recording, a transcript and a summary of the call, the number you called from, and the details you give, such as your name, callback number, email address, property address, the reason for your call, and any insurance carrier or claim number you mention. The assistant also sends your contact details, property address and the reason for your call to our on-call staff by text and email so someone can respond. If you would rather not be recorded, send a form instead.</p>
 
           <h2>How we use it</h2>
@@ -153,7 +156,7 @@ export function renderTerms() {
           <ul>
             <li>Message frequency varies with your request.</li>
             <li>Msg &amp; data rates may apply.</li>
-            <li>Reply STOP at any time to opt out. You will get one message confirming it, and no more texts after that.</li>
+            <li>Reply STOP at any time to opt out, and we will stop texting you.</li>
             <li>Reply HELP for help, or call ${phoneLink} or email ${emailLink}.</li>
             <li>Carriers are not liable for delayed or undelivered messages.</li>
             <li>How we handle your number and your consent is in our <a href="/privacy/">Privacy Policy</a>.</li>

@@ -24,9 +24,11 @@ const NOT_TEXTED = "Customers who do not tick the box are not texted.";
 const NO_SHARING = "Mobile phone numbers and text-message consent are never shared with or sold to third parties or affiliates for marketing or promotional purposes.";
 const LEGAL_LINE = "ADL Solutions Inc, doing business as Gold Water Fire";
 
-// The hosts /privacy/ names. A page loading anything else makes the policy false.
-const NAMED_HOSTS = new Set(["news.google.com", "fonts.googleapis.com"]);
-const TRACKER = /gtag\(|googletagmanager|google-analytics|fbq\(|connect\.facebook\.net|clarity\.ms|hotjar/i;
+// The hosts /privacy/ names, plus the site itself. A page loading anything else
+// makes the policy false.
+const NAMED_HOSTS = new Set(["news.google.com", "fonts.googleapis.com", "fonts.gstatic.com", new URL(BRAND.siteUrl).hostname]);
+const TRACKER = /gtag\(|googletagmanager|google-analytics|doubleclick|fbq\(|connect\.facebook\.net|ttq\.|snap\.licdn|clarity\.ms|hotjar|leadconnector|msgsndr/i;
+const REMOTE_URL = /^(?:https?:)?\/\/([^/"'\s]+)/i;
 
 let out;
 const pages = new Map();
@@ -241,15 +243,27 @@ test("no em dash in the new copy, and no claim the content gate forbids", () => 
 });
 
 test("the privacy policy stays true: no page loads a tracker or a host it does not name", () => {
+  let remoteLoads = 0;
   for (const [p, html] of pages) {
     const noData = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
     assert.doesNotMatch(noData, TRACKER, `${p} loads a tracker, so /privacy/ must change first`);
-    const hosts = [
-      ...noData.matchAll(/<script\b[^>]*\bsrc="https?:\/\/([^/"]+)/g),
-      ...noData.matchAll(/<iframe\b[^>]*\bsrc="https?:\/\/([^/"]+)/g),
-      ...noData.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*href="https?:\/\/([^/"]+)/g),
-      ...noData.matchAll(/<img\b[^>]*\bsrc="https?:\/\/([^/"]+)/g),
-    ].map((m) => m[1]);
-    for (const h of hosts) assert.ok(NAMED_HOSTS.has(h), `${p} loads ${h}, which /privacy/ does not name`);
+    assert.doesNotMatch(noData, /document\.cookie/, `${p} sets a cookie, and /privacy/ says it sets none`);
+    assert.doesNotMatch(noData.replace(/<script\b[^>]*\bsrc="[^"]*"[^>]*><\/script>/g, ""), /<script\b/, `${p} has an inline script, which this check cannot read`);
+    for (const m of noData.matchAll(/<(script|iframe|img|source|video|audio|embed|object|link)\b[^>]*>/g)) {
+      const a = attrsOf(m[0]);
+      const host = (a.src ?? a.data ?? (m[1] === "link" ? a.href : ""))?.match(REMOTE_URL)?.[1];
+      if (!host) continue;
+      remoteLoads += 1;
+      assert.ok(NAMED_HOSTS.has(host), `${p} loads ${host}, which /privacy/ does not name`);
+    }
   }
+  assert.ok(remoteLoads > 0, "the scan found no remote loads at all, so it is not reading the pages");
+  for (const f of readdirSync(path.join(ROOT, "assets", "css"))) {
+    const css = readFileSync(path.join(ROOT, "assets", "css", f), "utf8");
+    for (const m of css.matchAll(/@import\s+(?:url\()?["']?([^"');\s]+)|url\(\s*["']?([^"')\s]+)/g)) {
+      const host = (m[1] ?? m[2]).match(REMOTE_URL)?.[1];
+      if (host) assert.ok(NAMED_HOSTS.has(host), `assets/css/${f} loads ${host}, which /privacy/ does not name`);
+    }
+  }
+  assert.doesNotMatch(readFileSync(path.join(ROOT, "assets", "js", "main.js"), "utf8"), /document\.cookie/, "main.js sets a cookie, and /privacy/ says it sets none");
 });
