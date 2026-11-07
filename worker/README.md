@@ -109,6 +109,8 @@ to open a PR, and even in live mode the only write is that PR.
 | `facts.mjs` | The only facts the model may state, and the forbidden-claim patterns checked in code after generation. |
 | `draft.mjs` | One Anthropic API call per backlog item, forced tool-call for structured output. Model: Opus 5, per `CONTENT-PIPELINE.md`'s drafting-model routing. |
 | `evidenceGate.mjs` | Structural check — not left to prompt compliance. Rejects unconfirmed claims and any HTML beyond a plain `<a>` link. |
+| `editGate.mjs` | The gate for a page changed in a pull request, not used by the worker: `checkPage` with links read against the pages that really exist, plus a title limit, no HTML in title or description, and a phone or ROC number that must match `facts.mjs`. |
+| `checkChangedPages.mjs` | CI's entry point for `editGate.mjs`. Reads only the page files changed since a base commit, never the whole site. `node worker/checkChangedPages.mjs HEAD` checks an uncommitted edit. |
 | `recorder.mjs` | The only code that writes to GitHub. Uses the Contents API directly (branch, file writes, PR) — no local clone needed for a few JSON files. |
 | `image.mjs` | One Higgsfield REST call per page, per `bytomorrow-bos SOP-AGENTIC-SEO-WEBSITES.md` §8. Plain `fetch()`, no SDK, same style as `draft.mjs`. Then compress (§8.3), text-gate (§8.3.2), embed IPTC/XMP/EXIF SEO metadata (§8.3.1) via the `exiftool` CLI, in that order. |
 | `imageTextGate.mjs` | §8.3.2. OCRs the compressed image and refuses it if the model drew words. The one step in the image path that does **not** fail soft. Allowlists this tenant's own `GOLD` / `WATER` / `FIRE` wordmark. |

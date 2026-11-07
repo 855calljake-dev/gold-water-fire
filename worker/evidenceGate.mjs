@@ -5,6 +5,7 @@ const ALLOWED_INLINE_TAG = /<(?!\/?a(\s|>))[a-z][^>]*>/i; // any tag that isn't 
 const HREF_RE = /href="([^"]*)"/gi;
 const HREF_ATTR_RE = /href="[^"]*"/gi;
 const EM_DASH = /—/;
+export const DESCRIPTION_MAX = 165;
 
 // The site's real internal paths — kept in sync with templates/shell.mjs's
 // NAV plus known non-nav pages. A drafted page linking anywhere else 404s.
@@ -263,7 +264,11 @@ export function checkShape(page) {
 
 // Structural check, run in code after generation — not left to prompt
 // compliance alone. Mirrors agent-runtime's "dry-run is structural" principle.
-export function checkPage(page) {
+//
+// isValidInternalLink is for worker/editGate.mjs, which checks a changed page
+// against the pages that really exist. The worker calls checkPage(page), so a
+// new draft is still held to VALID_INTERNAL_LINKS exactly as before.
+export function checkPage(page, { isValidInternalLink = (href) => VALID_INTERNAL_LINKS.has(href) } = {}) {
   const problems = [];
 
   // Shape first, and alone. Every check below walks sections, faqs and cta as
@@ -307,7 +312,7 @@ export function checkPage(page) {
     ...(page.internalLinks || []).map((l) => l.href),
   ];
   for (const href of linkedHrefs) {
-    if (href.startsWith("/") && !VALID_INTERNAL_LINKS.has(href)) {
+    if (href.startsWith("/") && !isValidInternalLink(href)) {
       problems.push(`Broken internal link (not a real page): ${href}`);
     }
   }
@@ -315,7 +320,7 @@ export function checkPage(page) {
   if (!page.slug || !/^[a-z0-9-]+$/.test(page.slug)) problems.push(`Invalid slug: ${page.slug}`);
   if (!page.path || !page.path.startsWith("/")) problems.push(`Invalid path: ${page.path}`);
   if (!page.faqs || page.faqs.length < 2) problems.push("Fewer than 2 FAQs: visible Q&A is required per SOP-AGENTIC-SEO-WEBSITES.md §3");
-  if (page.description && page.description.length > 165) problems.push(`Meta description too long (${page.description.length} chars)`);
+  if (page.description && page.description.length > DESCRIPTION_MAX) problems.push(`Meta description too long (${page.description.length} chars)`);
 
   return { ok: problems.length === 0, problems };
 }
