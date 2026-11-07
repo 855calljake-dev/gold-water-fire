@@ -13,6 +13,13 @@ export const BRAND = {
   postalCode: "85286",
   license: "AZ ROC #264344 · KB-2",
   siteUrl: "https://www.goldwaterfire.com",
+  // Google Business Profile link, in the footer of every page (ByTomorrow standard,
+  // Jake 2026-11-07). The profile exists in Business Profile Manager but is still
+  // "Verification required" (read 2026-11-07), so Maps has no public listing yet; this
+  // search resolves to the listing the day it verifies. Swap to the place link
+  // (https://www.google.com/maps/place/?q=place_id:...) once it is public.
+  googleBusinessProfileUrl:
+    "https://www.google.com/maps/search/?api=1&query=Gold+Water+Fire+221+E+Willis+Rd+Ste+8+Chandler+AZ+85286",
 };
 
 export function esc(s) {

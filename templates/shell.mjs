@@ -186,6 +186,7 @@ function footer(path) {
             <li><a href="${BRAND.phoneHref}">${BRAND.phone}</a></li>
             <li><a href="mailto:${BRAND.email}">${BRAND.email}</a></li>
             <li>${esc(BRAND.addressLine1)}<br>${esc(BRAND.addressLine2)}</li>
+            <li><a href="${BRAND.googleBusinessProfileUrl}" target="_blank" rel="noopener">Find us on Google</a></li>
           </ul>
         </div>
       </div>
