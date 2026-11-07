@@ -236,7 +236,7 @@ export function renderService(d, craft = null) {
           <div class="field"><label for="sv-message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="sv-message" name="message" rows="4"></textarea></div>
           ${smsConsentField("sv")}
           <button type="submit">Book a free inspection</button>
-          <p class="note">We use your number to call you back about this. We text you only if you tick the box above.</p>
+          <p class="note">We use your number to call you back about this. This form signs you up for texts only if you tick the box above.</p>
         </form>
       </div>
     </section>

@@ -17,13 +17,25 @@ import { BRAND, esc } from "./lib.mjs";
 //     2026-11-07: it opens with "This call is recorded", and "If asked whether
 //     you're a real person, say plainly that you're an AI assistant". Its
 //     send_sms tool is pinned to staff numbers, so it never texts a caller. If
-//     the agent changes, the Calls section changes with it.
-//   Texting: the filed campaign says customers who do not tick the box are not
-//     texted. Nothing here may offer another way in, such as texting first or
-//     agreeing on a call, unless the filing changes too. STOP and HELP are
-//     promises about the sending number: send both to it once texting is live.
+//     the agent changes, the Calls section changes with it. Jake, 2026-11-07:
+//     "Yes, publish agent only says AI if asked."
+//   Texting: two ways in and no others, the website box and a yes on a recorded
+//     call, matching gwf-bos A2P-REGISTRATION.md. Nothing here may offer a third,
+//     such as texting first, unless the filing changes too. The phone question
+//     is on an unpublished agent draft (v33) as of this commit, so the phone
+//     path is worded "if our phone assistant asks", which is true before and
+//     after it is published. If Jake drops the question or the filing drops the
+//     path, those sentences come out. STOP and HELP are promises about the
+//     sending number: send both to it once texting is live.
+//   Retention: Jake, 2026-11-07, "Keep call recordigns and form submissions for
+//     12 18 months." Claude's reading: a limit of up to 18 months. Nothing deletes
+//     these automatically today, so this page must not say that anything does.
+//   Deletion: Jake, 2026-11-07, "Depends on the rile, not lower level employees.
+//     Only High staff, not low level amnagers and below." No time limit given,
+//     so none is promised.
 //   Email: goldwaterfire.com's MX is smtp.google.com (dig, 2026-11-07), and
 //     Help@ is a Google Group (bytomorrow-bos GWF-PHONE-AGENT-SPEC.md, v13).
+//     Jake, 2026-11-07: "I read help@goldwaterfire.com."
 //
 // BRAND carries the phone, email, address and license. The worker's facts.mjs
 // is the source of truth, but worker/ is not a build input (see
@@ -84,15 +96,18 @@ export function renderPrivacy() {
 
           <h3>When you call ${esc(BRAND.phone)}</h3>
           <p>Calls are recorded, and the call says so at the start. A call may be answered by an AI assistant for ${esc(BRAND.name)}, which takes your details and tries to connect you with a person on our team. If you ask whether you are talking to a real person, it tells you it is an AI assistant.</p>
-          <p>We keep the recording, a transcript and a summary of the call, the number you called from, and the details you give, such as your name, callback number, email address, property address, the reason for your call, and any insurance carrier or claim number you mention. The assistant also sends your contact details, property address and the reason for your call to our on-call staff by text and email so someone can respond. If you would rather not be recorded, send a form instead.</p>
+          <p>We keep the recording, a transcript and a summary of the call, the number you called from, and the details you give, such as your name, callback number, email address, property address, the reason for your call, and any insurance carrier or claim number you mention. The assistant also sends your contact details, property address and the reason for your call to our on-call staff by text and email so someone can respond. If the assistant asks whether you would like texts about your job, we also keep your answer. If you would rather not be recorded, send a form instead.</p>
 
           <h2>How we use it</h2>
           <p>We use this information to respond to your request, schedule and carry out an inspection, prepare an estimate, do the work you hire us for, and keep a record of the job and the call.</p>
 
+          <h2>How long we keep it</h2>
+          <p>We keep call recordings and form submissions for up to 18 months.</p>
+
           <h2>Text messages</h2>
-          <p>We text customers only when they agree to it by ticking the text-message box on a form on this site. Customers who do not tick the box are not texted. Calling us does not sign you up for texts.</p>
-          <p>The box starts unticked and is separate from sending the form. You can send the form without ticking it, and agreeing is not a condition of purchase.</p>
-          <p>If you tick it, we may text you about that request: appointment confirmations, reminders and estimate updates. We do not send marketing texts. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Twilio, which carries the messages, keeps a record of them and of your replies.</p>
+          <p>We text customers only when they agree to it. There are two ways to agree: ticking the text-message box on a form on this site, or answering yes if our phone assistant asks, on a recorded call, whether you would like texts about your job. Customers who do neither are not texted. Calling us does not by itself sign you up for texts.</p>
+          <p>The box starts unticked and is separate from sending the form. You can send the form without ticking it. On a call, you can say no, and anything other than a clear yes counts as no. Agreeing is not a condition of purchase.</p>
+          <p>If you agree, we may text you about that request or job: appointment confirmations, reminders and estimate updates. We do not send marketing texts. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Twilio, which carries the messages, keeps a record of them and of your replies.</p>
           <p>We also text our own staff about new service calls. The full text-message terms are in our <a href="/terms/">Terms</a>.</p>
 
           <h2>Sharing and selling</h2>
@@ -112,7 +127,7 @@ export function renderPrivacy() {
           </ul>
 
           <h2>Your choices</h2>
-          <p>To ask what we hold about you, or to ask us to correct or delete it, call ${phoneLink} or email ${emailLink}. Some records may have to stay, such as job records we are required to keep. To stop texts, reply STOP to any text from us.</p>
+          <p>To ask what we hold about you, or to ask us to correct or delete it, call ${phoneLink} or email ${emailLink}. A person on our team reads that inbox. Senior staff review and handle deletion requests. Some records may have to stay, such as job records we are required to keep. To stop texts, reply STOP to any text from us.</p>
 
           <h2>Changes</h2>
           <p>We post any change to this policy on this page with a new effective date.</p>
@@ -150,7 +165,7 @@ export function renderTerms() {
 
           <h2>SMS terms: text messages from ${esc(BRAND.name)}</h2>
           <p>${esc(LEGAL_LINE)}, sends these text messages.</p>
-          <p>Customers: if you tick the text-message box on a form on this site, we may text you about that request: appointment confirmations, reminders and estimate updates. Customers who do not tick the box are not texted. The box is optional, you can send the form without ticking it, and agreeing is not a condition of purchase. Calling us does not sign you up for texts.</p>
+          <p>Customers: there are two ways to agree. If you tick the text-message box on a form on this site, we may text you about that request. If our phone assistant asks, on a recorded call, whether you would like texts about your job, and you answer yes, we may text you about that job. Either way, the texts are appointment confirmations, reminders and estimate updates. Customers who do neither are not texted. Both are optional: you can send the form without ticking the box, you can say no on the call, and agreeing is not a condition of purchase. Calling us does not by itself sign you up for texts.</p>
           <p>Staff: we also text our own employees and on-call staff about new service calls.</p>
           <p>We do not send marketing texts.</p>
           <ul>

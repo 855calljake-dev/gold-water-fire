@@ -251,7 +251,7 @@ export function renderHome(craft = null, team = null) {
           <div class="field"><label for="lp-message">Anything we should know? <span class="opt">(optional)</span></label><textarea id="lp-message" name="message" rows="4"></textarea></div>
           ${smsConsentField("lp")}
           <button type="submit">Book a free inspection</button>
-          <p class="note">We use your number to call you back about this. We text you only if you tick the box above.</p>
+          <p class="note">We use your number to call you back about this. This form signs you up for texts only if you tick the box above.</p>
         </form>
       </div>
     </section>

@@ -20,7 +20,8 @@ const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // A literal copy on purpose. This is what the campaign filing says, so changing
 // the box's wording has to be a deliberate edit in two places, and in the filing.
 const FILED_WORDING = "I agree to receive text messages from Gold Water Fire about this request (appointment confirmations, reminders and estimate updates) at the number above. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Agreeing is not a condition of purchase.";
-const NOT_TEXTED = "Customers who do not tick the box are not texted.";
+const NOT_TEXTED = "Customers who do neither are not texted.";
+const NOT_BY_ITSELF = "Calling us does not by itself sign you up for texts.";
 const NO_SHARING = "Mobile phone numbers and text-message consent are never shared with or sold to third parties or affiliates for marketing or promotional purposes.";
 const LEGAL_LINE = "ADL Solutions Inc, doing business as Gold Water Fire";
 
@@ -181,8 +182,18 @@ test("every template with a phone input uses the shared consent field", () => {
   for (const f of withPhone) assert.match(readFileSync(path.join(dir, f), "utf8"), /\$\{smsConsentField\("/, f);
 });
 
-test("the sentence the box made false is gone from every form", () => {
-  for (const [p, html] of pages) assert.ok(!html.includes("We only use your number to call you back"), p);
+test("the sentences the box and the phone path made false are gone from every page", () => {
+  for (const [p, html] of pages) {
+    for (const stale of ["We only use your number to call you back", "We text you only if you tick", "Customers who do not tick the box are not texted", "Calling us does not sign you up"]) {
+      assert.ok(!html.includes(stale), `${p} still says: ${stale}`);
+    }
+  }
+});
+
+test("the note under a form speaks only for that form", () => {
+  for (const p of ["/index.html", "/roof/index.html", "/water-damage-restoration.html", "/fire-damage-restoration.html"]) {
+    assert.ok(page(p).includes("This form signs you up for texts only if you tick the box above."), p);
+  }
 });
 
 test("the pages show the facts from worker/facts.mjs and the legal name", () => {
@@ -205,10 +216,44 @@ test("the pages show the facts from worker/facts.mjs and the legal name", () => 
   assert.ok(page("/terms/index.html").match(/<main[\s\S]*<\/main>/)[0].includes(`AZ ROC ${roc}`), "Terms is missing the ROC");
 });
 
-test("Privacy carries the no-sharing clause and says no tick means no text", () => {
+test("Privacy carries the no-sharing clause and says no agreement means no text", () => {
   const html = page("/privacy/index.html");
   assert.ok(html.includes(NO_SHARING));
   assert.ok(html.includes(NOT_TEXTED));
+});
+
+test("both pages describe both paths, and neither states the phone question as already live", () => {
+  for (const file of ["/privacy/index.html", "/terms/index.html"]) {
+    const main = page(file).match(/<main[\s\S]*<\/main>/)[0];
+    assert.ok(main.includes("two ways to agree"), `${file} must name both paths`);
+    assert.match(main, /tick the text-message box|ticking the text-message box/, file);
+    assert.match(main, /[Ii]f our phone assistant asks, on a recorded call, whether you would like texts about your job/, `${file}: the phone path must stay conditional on being asked, so it is true before the agent is published`);
+    assert.match(main, /answer(ing)? yes/, file);
+    assert.ok(main.includes(NOT_TEXTED), file);
+    assert.ok(main.includes(NOT_BY_ITSELF), file);
+    assert.doesNotMatch(main, /(assistant|agent) (will|always) asks?|(assistant|agent) asks every|every call/i, `${file} states the question as live or universal`);
+  }
+});
+
+test("Privacy says how long records are kept, and promises no automatic deletion", () => {
+  const main = page("/privacy/index.html").match(/<main[\s\S]*<\/main>/)[0];
+  assert.ok(main.includes("We keep call recordings and form submissions for up to 18 months."));
+  assert.doesNotMatch(main, /automatic|auto-delet|purge|we delete .{0,40}after/i, "nothing deletes these automatically today");
+});
+
+test("Privacy says senior staff handle deletion, promises no time limit, and names nobody", () => {
+  const main = page("/privacy/index.html").match(/<main[\s\S]*<\/main>/)[0];
+  assert.ok(main.includes("Senior staff review and handle deletion requests."));
+  assert.ok(main.includes("A person on our team reads that inbox."));
+  const choices = main.match(/<h2>Your choices<\/h2>[\s\S]*?<h2>/)[0];
+  assert.doesNotMatch(choices, /\bwithin\b|\bdays?\b|\bhours?\b|\bweeks?\b/i, "Jake gave no time limit");
+  assert.doesNotMatch(main, /\b(Jake|Jim|Taylor|Bennett)\b/, "no person is named on the page");
+});
+
+test("Privacy describes the AI assistant exactly as the agent behaves: it says so when asked", () => {
+  const main = page("/privacy/index.html").match(/<main[\s\S]*<\/main>/)[0];
+  assert.ok(main.includes("A call may be answered by an AI assistant"));
+  assert.ok(main.includes("If you ask whether you are talking to a real person, it tells you it is an AI assistant."));
 });
 
 test("Terms has the SMS section a carrier looks for", () => {
@@ -220,7 +265,7 @@ test("Terms has the SMS section a carrier looks for", () => {
   assert.match(html, /our own employees and on-call staff/, "Terms must say staff are texted too");
 });
 
-test("neither page offers a way into texts other than the box", () => {
+test("neither page offers a way into texts other than the box or a yes on a recorded call", () => {
   for (const file of ["/privacy/index.html", "/terms/index.html"]) {
     const html = page(file);
     assert.doesNotMatch(html, /texting us first|text us first|lead form in an ad|verbal(ly)?\b/i, `${file} contradicts the filing`);
