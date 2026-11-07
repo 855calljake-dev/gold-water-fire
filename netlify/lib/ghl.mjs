@@ -41,6 +41,7 @@ export async function ghl({ token }, path, opts = {}) {
     method: opts.method ?? 'GET',
     headers: ghlHeaders(token),
     ...(opts.body === undefined ? {} : { body: JSON.stringify(opts.body) }),
+    ...(opts.signal ? { signal: opts.signal } : {}),
   })
   const text = await res.text()
   if (!res.ok) throw new Error(`GHL ${opts.method ?? 'GET'} ${path} -> ${res.status}: ${text}`)
@@ -102,6 +103,30 @@ export async function findContactId(env, input) {
   } catch {
     return null
   }
+}
+
+/**
+ * Tags on the contact an upsert with these details would land on, read first
+ * because upsert overwrites every tag. Both lookups run, because the location's
+ * duplicate setting decides whether upsert matches on email or on phone. Throws
+ * on a failed read, on the time limit, and when email and phone match two
+ * different people, because one person's tags must never land on another's
+ * record. The caller says so and goes on. Read only.
+ */
+export async function existingContactTags(env, input, timeoutMs = 3000) {
+  const signal = AbortSignal.timeout(timeoutMs)
+  const lookups = [
+    ...(input.email ? [{ email: input.email }] : []),
+    ...(input.phone ? [{ number: input.phone }] : []),
+  ]
+  const found = new Map()
+  for (const lookup of lookups) {
+    const qs = new URLSearchParams({ locationId: env.locationId, ...lookup })
+    const data = await ghl(env, `/contacts/search/duplicate?${qs.toString()}`, { signal })
+    if (data?.contact?.id) found.set(data.contact.id, data.contact.tags ?? [])
+  }
+  if (found.size > 1) throw new Error('email and phone match two different contacts')
+  return [...found.values()][0] ?? []
 }
 
 export async function createNote(env, contactId, body) {

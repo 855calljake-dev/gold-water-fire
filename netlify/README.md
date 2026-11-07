@@ -24,6 +24,31 @@ Until `RETELL_API_KEY` is set the function answers 503 and Retell records a fail
 until `GHL_PIT` is set it answers 200 with `ghl: "not_configured"` and logs the dropped call id.
 Both are loud on purpose.
 
+## Text consent on a call
+
+Every contact the phone line writes carries `consent:verbal-call`, which only says the person
+called. It is not consent to text. `consent:sms-verbal` is: the post-call field `sms_text_consent`
+was exactly `yes`, meaning the caller said yes when the agent asked whether they want texts about the
+job. It comes with a note line holding the call time, call id, number and recording.
+
+| Field value | Tag | Note line |
+|---|---|---|
+| `yes` | added | added |
+| `no` | not added; an earlier one is not carried, so the overwrite below removes it | none |
+| `not_asked`, or the field is missing | not added; an earlier one is carried | none |
+| anything else | treated like `no` | none |
+
+GHL's upsert overwrites every tag on a contact, so on calls that say nothing new about texts the
+function first reads the existing tags (by email and by phone, three seconds at most) and carries an
+earlier `consent:sms-verbal`. If that read fails, runs out of time, or finds email and phone on two
+different contacts, the call is written as usual, the problem is logged, and an earlier tag would be
+lost while its note stays. Nothing here sets GHL's SMS or DND settings: the upsert sends no
+`dndSettings`, per Jake's 2026-09-12 ruling. The field exists only on agent versions that ask the
+question.
+
+**The tag means "said yes on a call", not "may be texted now".** It stays after a later STOP reply,
+because this function does not read GHL's DND state. Whatever sends a text has to honour STOP as well.
+
 ## How to know it works
 
 Place one call to (480) 999-3339, hang up after the disclaimer, then open the GWF sub-account →
