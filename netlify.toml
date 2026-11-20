@@ -45,35 +45,9 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# goldwaterroof.com is the roofing domain. Every host and scheme sends the
-# visitor to the roofing page in ONE hop, the pattern bytomorrow-bos set for
-# ADL (HANDOFF-ADL-LIFT-VA-CONTENT.md A4). These only fire once the domain is
-# added to this Netlify site as a domain alias and GoDaddy DNS points here;
-# until then they are inert. Paths are dropped on purpose: the roofing domain
-# has no pages of its own.
-[[redirects]]
-  from = "https://goldwaterroof.com/*"
-  to = "https://www.goldwaterfire.com/roof/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.goldwaterroof.com/*"
-  to = "https://www.goldwaterfire.com/roof/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://goldwaterroof.com/*"
-  to = "https://www.goldwaterfire.com/roof/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.goldwaterroof.com/*"
-  to = "https://www.goldwaterfire.com/roof/"
-  status = 301
-  force = true
+# goldwaterroof.com is Gold Water Roof's own site (tenant gwr, Netlify project
+# gold-water-roof) since its 2026-10-14 launch. The 301 rules that once sent the
+# domain to /roof/ (PR #54) are gone: a domain belongs to one Netlify site.
 
 # Guides merged into an owner page (SEO audit fixes 5, 6, 7, approved by Jake
 # 2026-10-03). The impact and redirect plan is in gwf-bos
